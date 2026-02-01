@@ -763,8 +763,8 @@
             color: #333;
         }
 
-        /* Spacing slider control */
-        .spacing-control {
+        /* Spacing slider controls container */
+        .spacing-controls {
             position: absolute;
             bottom: 80px;
             left: 20px;
@@ -772,9 +772,59 @@
             background: rgba(10, 10, 15, 0.85);
             border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 12px;
-            padding: 12px 16px;
             backdrop-filter: blur(10px);
             min-width: 180px;
+        }
+
+        .spacing-controls-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 16px;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .spacing-controls-header:hover {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+        }
+
+        .spacing-controls-title {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #888;
+        }
+
+        .spacing-controls-arrow {
+            font-size: 10px;
+            color: #888;
+            transition: transform 0.2s ease;
+        }
+
+        .spacing-controls.collapsed .spacing-controls-arrow {
+            transform: rotate(-90deg);
+        }
+
+        .spacing-controls-content {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            padding: 0 16px 12px 16px;
+            overflow: hidden;
+            max-height: 500px;
+            transition: max-height 0.2s ease, padding 0.2s ease;
+        }
+
+        .spacing-controls.collapsed .spacing-controls-content {
+            max-height: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        .spacing-control {
+            /* Individual slider control */
         }
 
         .spacing-control label {
@@ -823,9 +873,18 @@
             margin-top: 4px;
         }
 
-        body.light-mode .spacing-control {
+        body.light-mode .spacing-controls {
             background: rgba(255, 255, 255, 0.9);
             border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        body.light-mode .spacing-controls-header:hover {
+            background: rgba(0, 0, 0, 0.05);
+        }
+
+        body.light-mode .spacing-controls-title,
+        body.light-mode .spacing-controls-arrow {
+            color: #666;
         }
 
         body.light-mode .spacing-control label {
@@ -1121,10 +1180,28 @@
             </div>
         </div>
 
-        <div class="spacing-control">
-            <label>Repo Spacing</label>
-            <input type="range" id="spacing-slider" min="0.5" max="15" step="0.25" value="6" oninput="updateRepoSpacing(this.value)">
-            <div class="spacing-value"><span id="spacing-value">6</span></div>
+        <div class="spacing-controls" id="spacing-controls">
+            <div class="spacing-controls-header" onclick="toggleSpacingControls()">
+                <span class="spacing-controls-title">Layout Controls</span>
+                <span class="spacing-controls-arrow">▼</span>
+            </div>
+            <div class="spacing-controls-content">
+                <div class="spacing-control">
+                    <label>Repo Spacing</label>
+                    <input type="range" id="spacing-slider" min="0.5" max="15" step="0.25" value="6" oninput="updateRepoSpacing(this.value)">
+                    <div class="spacing-value"><span id="spacing-value">6</span></div>
+                </div>
+                <div class="spacing-control">
+                    <label>PR Spacing</label>
+                    <input type="range" id="pr-spacing-slider" min="0.5" max="8" step="0.25" value="3" oninput="updatePRSpacing(this.value)">
+                    <div class="spacing-value"><span id="pr-spacing-value">3</span></div>
+                </div>
+                <div class="spacing-control">
+                    <label>Commit Spacing</label>
+                    <input type="range" id="commit-spacing-slider" min="0.3" max="1" step="0.05" value="1" oninput="updateCommitSpacing(this.value)">
+                    <div class="spacing-value"><span id="commit-spacing-value">1</span></div>
+                </div>
+            </div>
         </div>
 
         <div id="footer">
@@ -1293,6 +1370,8 @@
         autoFit: false,               // Whether to continuously fit content to screen
         fitZoom: 1.0,                 // Zoom multiplier for fit mode (smaller = closer)
         repoSpacing: 6,               // Radius of the circle for repo positioning
+        prSpacing: 3,                 // Distance between parent and child PR nodes
+        commitSpacing: 1.0,           // How spread out commits are along the line (0.3-1.0)
         locked: false,                // Whether scene updates are paused
         colorblind: false,            // Whether colorblind mode is enabled (emojis instead of colors)
     };
@@ -1341,6 +1420,23 @@
         document.getElementById('spacing-value').textContent = value;
         // Rebuild the scene with new spacing
         rebuildScene();
+    }
+
+    function updatePRSpacing(value) {
+        state.prSpacing = parseFloat(value);
+        document.getElementById('pr-spacing-value').textContent = value;
+        rebuildScene();
+    }
+
+    function updateCommitSpacing(value) {
+        state.commitSpacing = parseFloat(value);
+        document.getElementById('commit-spacing-value').textContent = value;
+        rebuildScene();
+    }
+
+    function toggleSpacingControls() {
+        const container = document.getElementById('spacing-controls');
+        container.classList.toggle('collapsed');
     }
 
     function toggleLock() {
@@ -1989,7 +2085,7 @@
             const spreadFactor = 0.6;
             const angleOffset = (index - (nodes.length - 1) / 2) * spreadFactor;
             const nodeAngle = baseAngle + angleOffset;
-            const distance = 3 + depth * 2;
+            const distance = state.prSpacing + depth * 2;
 
             const x = parentX + Math.cos(nodeAngle) * distance;
             const z = parentZ + Math.sin(nodeAngle) * distance;
@@ -2107,9 +2203,10 @@
 
         for (let i = 0; i < numCommits; i++) {
             const commit = commits[i];
-            // Position commits centered along the line with equal spacing from ends
-            // 1 commit: 0.5 (middle), 2 commits: 0.33/0.67, 3 commits: 0.25/0.5/0.75, etc.
-            const t = (i + 1) / (numCommits + 1);
+            // Position commits centered along the line with configurable spacing
+            // baseT spreads from 0 to 1, then we scale by commitSpacing around center
+            const baseT = (i + 1) / (numCommits + 1);
+            const t = 0.5 + (baseT - 0.5) * state.commitSpacing;
 
             const cx = x1 + (x2 - x1) * t;
             const cy = y1 + (y2 - y1) * t;
