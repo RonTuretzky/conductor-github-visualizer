@@ -1,15 +1,423 @@
 {
   "organization": "BreadchainCoop",
-  "generated_at": "2026-01-31T00:15:39.193145+00:00",
-  "generation_time_seconds": 120.77,
+  "generated_at": "2026-02-01T00:18:15.276545+00:00",
+  "generation_time_seconds": 167.43,
   "stats": {
     "total_repos": 46,
     "repos_with_prs": 22,
     "repos_with_issues": 27,
-    "total_open_prs": 90,
-    "total_open_issues": 231
+    "total_open_prs": 91,
+    "total_open_issues": 233
   },
   "trees": {
+    "gas-killer-router": {
+      "name": "gas-killer-router",
+      "branch": "dev",
+      "repo_name": "gas-killer-router",
+      "pr_number": null,
+      "pr_title": null,
+      "pr_url": null,
+      "pr_author": null,
+      "last_updated": "2026-02-01T00:10:29Z",
+      "ci_status": "",
+      "github_url": "https://github.com/BreadchainCoop/gas-killer-router",
+      "is_draft": false,
+      "labels": [],
+      "commits_from_parent": [],
+      "parent_branch_name": null,
+      "children": [
+        {
+          "name": "Add multi-chain support for Sepolia and Gnosis",
+          "branch": "multi-chain-support",
+          "repo_name": "gas-killer-router",
+          "pr_number": 91,
+          "pr_title": "Add multi-chain support for Sepolia and Gnosis",
+          "pr_url": "https://github.com/BreadchainCoop/gas-killer-router/pull/91",
+          "pr_author": "RonTuretzky",
+          "last_updated": "2026-01-31T23:51:16Z",
+          "ci_status": "pass",
+          "github_url": "https://github.com/BreadchainCoop/gas-killer-router",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "8288ac442c79ebc1b73cd8ba9b3cb4e1977cdd87",
+              "short_sha": "8288ac4",
+              "message": "feat: add Kubernetes/Helm support with K8s deployment configurations",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-12-20",
+              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/8288ac442c79ebc1b73cd8ba9b3cb4e1977cdd87"
+            },
+            {
+              "sha": "cf0118b132077355ebdaff3d9d94bf7fdbe2d104",
+              "short_sha": "cf0118b",
+              "message": "fix: add exec-based readiness probes to node and router pods",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-12-20",
+              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/cf0118b132077355ebdaff3d9d94bf7fdbe2d104"
+            },
+            {
+              "sha": "82d7f059793968885dddd6fadc9f3d4a1c118105",
+              "short_sha": "82d7f05",
+              "message": "ci: run helm tests on all pull requests",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-12-20",
+              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/82d7f059793968885dddd6fadc9f3d4a1c118105"
+            },
+            {
+              "sha": "8ce7aa161aae5b030b52337b2afba7a031ead977",
+              "short_sha": "8ce7aa1",
+              "message": "fix: add procps to Docker images for pgrep readiness probes",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-12-20",
+              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/8ce7aa161aae5b030b52337b2afba7a031ead977"
+            },
+            {
+              "sha": "83fe5e4f59e5e5afbe5be74b4530909820dbd225",
+              "short_sha": "83fe5e4",
+              "message": "fix: use /proc/1/cmdline for readiness probes and improve debug logging",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-12-20",
+              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/83fe5e4f59e5e5afbe5be74b4530909820dbd225"
+            }
+          ],
+          "parent_branch_name": "dev",
+          "children": []
+        },
+        {
+          "name": "Use analyzer \"evmsketch\" feature and remove anvil dependency",
+          "branch": "feat/remove-anvil",
+          "repo_name": "gas-killer-router",
+          "pr_number": 90,
+          "pr_title": "Use analyzer \"evmsketch\" feature and remove anvil dependency",
+          "pr_url": "https://github.com/BreadchainCoop/gas-killer-router/pull/90",
+          "pr_author": "bagelface",
+          "last_updated": "2026-01-28T18:34:26Z",
+          "ci_status": "fail",
+          "github_url": "https://github.com/BreadchainCoop/gas-killer-router",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "00f08f0d62901eae18f5e35a6d426fb833621598",
+              "short_sha": "00f08f0",
+              "message": "feat: use sp1-cc library for tx sim",
+              "author": "bagelface",
+              "author_login": "bagelface",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
+              "date": "2026-01-09",
+              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/00f08f0d62901eae18f5e35a6d426fb833621598"
+            },
+            {
+              "sha": "edbf4bad5f519ebfc94d22348b2bd8ed30cc1fb3",
+              "short_sha": "edbf4ba",
+              "message": "build: point to default branch for'gas-analyzer-rs' dependency",
+              "author": "bagelface",
+              "author_login": "bagelface",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
+              "date": "2026-01-12",
+              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/edbf4bad5f519ebfc94d22348b2bd8ed30cc1fb3"
+            },
+            {
+              "sha": "159ce09c2d83c1338c7da9b01a9501c914248267",
+              "short_sha": "159ce09",
+              "message": "feat: use evmsketch analyzer feature and remove anvil",
+              "author": "bagelface",
+              "author_login": "bagelface",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
+              "date": "2026-01-16",
+              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/159ce09c2d83c1338c7da9b01a9501c914248267"
+            },
+            {
+              "sha": "9b9dd72be8212de5509a5c7b12fe7cf7c0956323",
+              "short_sha": "9b9dd72",
+              "message": "Merge branch 'dev' into feat/remove-anvil",
+              "author": "bagelface",
+              "author_login": "bagelface",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
+              "date": "2026-01-16",
+              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/9b9dd72be8212de5509a5c7b12fe7cf7c0956323"
+            },
+            {
+              "sha": "b38aa5d84bb2f08be173fb6a349d135ad7bd22e0",
+              "short_sha": "b38aa5d",
+              "message": "fix: add multi-thread flavor to some tests",
+              "author": "bagelface",
+              "author_login": "bagelface",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
+              "date": "2026-01-19",
+              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/b38aa5d84bb2f08be173fb6a349d135ad7bd22e0"
+            }
+          ],
+          "parent_branch_name": "dev",
+          "children": []
+        },
+        {
+          "name": "feat: add Kubernetes/Helm support for K8s deployments",
+          "branch": "RonTuretzky/k8s-support",
+          "repo_name": "gas-killer-router",
+          "pr_number": 84,
+          "pr_title": "feat: add Kubernetes/Helm support for K8s deployments",
+          "pr_url": "https://github.com/BreadchainCoop/gas-killer-router/pull/84",
+          "pr_author": "RonTuretzky",
+          "last_updated": "2026-01-06T16:55:48Z",
+          "ci_status": "pass",
+          "github_url": "https://github.com/BreadchainCoop/gas-killer-router",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "8288ac442c79ebc1b73cd8ba9b3cb4e1977cdd87",
+              "short_sha": "8288ac4",
+              "message": "feat: add Kubernetes/Helm support with K8s deployment configurations",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-12-20",
+              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/8288ac442c79ebc1b73cd8ba9b3cb4e1977cdd87"
+            },
+            {
+              "sha": "cf0118b132077355ebdaff3d9d94bf7fdbe2d104",
+              "short_sha": "cf0118b",
+              "message": "fix: add exec-based readiness probes to node and router pods",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-12-20",
+              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/cf0118b132077355ebdaff3d9d94bf7fdbe2d104"
+            },
+            {
+              "sha": "82d7f059793968885dddd6fadc9f3d4a1c118105",
+              "short_sha": "82d7f05",
+              "message": "ci: run helm tests on all pull requests",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-12-20",
+              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/82d7f059793968885dddd6fadc9f3d4a1c118105"
+            },
+            {
+              "sha": "8ce7aa161aae5b030b52337b2afba7a031ead977",
+              "short_sha": "8ce7aa1",
+              "message": "fix: add procps to Docker images for pgrep readiness probes",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-12-20",
+              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/8ce7aa161aae5b030b52337b2afba7a031ead977"
+            },
+            {
+              "sha": "83fe5e4f59e5e5afbe5be74b4530909820dbd225",
+              "short_sha": "83fe5e4",
+              "message": "fix: use /proc/1/cmdline for readiness probes and improve debug logging",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-12-20",
+              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/83fe5e4f59e5e5afbe5be74b4530909820dbd225"
+            }
+          ],
+          "parent_branch_name": "dev",
+          "children": [
+            {
+              "name": "feat: add Terraform AWS deployment for Gas Killer Router",
+              "branch": "RonTuretzky/terraform-aws-deploy",
+              "repo_name": "gas-killer-router",
+              "pr_number": 87,
+              "pr_title": "feat: add Terraform AWS deployment for Gas Killer Router",
+              "pr_url": "https://github.com/BreadchainCoop/gas-killer-router/pull/87",
+              "pr_author": "RonTuretzky",
+              "last_updated": "2026-01-06T17:19:07Z",
+              "ci_status": "pass",
+              "github_url": "https://github.com/BreadchainCoop/gas-killer-router",
+              "is_draft": false,
+              "labels": [],
+              "commits_from_parent": [
+                {
+                  "sha": "76663d3c21fc43062a3a9860998595cce47ca8c3",
+                  "short_sha": "76663d3",
+                  "message": "feat: add Terraform AWS deployment for Gas Killer Router",
+                  "author": "Ron Turetzky",
+                  "author_login": "RonTuretzky",
+                  "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+                  "date": "2025-12-29",
+                  "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/76663d3c21fc43062a3a9860998595cce47ca8c3"
+                },
+                {
+                  "sha": "33c1120b92a8720673601d4e1a2721658ec719e1",
+                  "short_sha": "33c1120",
+                  "message": "fix: remove invalid self reference in terraform outputs",
+                  "author": "Ron Turetzky",
+                  "author_login": "RonTuretzky",
+                  "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+                  "date": "2025-12-29",
+                  "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/33c1120b92a8720673601d4e1a2721658ec719e1"
+                },
+                {
+                  "sha": "433773f4a8d88a753a92792d58b1c366e3727a83",
+                  "short_sha": "433773f",
+                  "message": "feat: add E2E test job to terraform deployment",
+                  "author": "Ron Turetzky",
+                  "author_login": "RonTuretzky",
+                  "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+                  "date": "2025-12-29",
+                  "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/433773f4a8d88a753a92792d58b1c366e3727a83"
+                },
+                {
+                  "sha": "71c3fb482128dc0f4cb9143323cd60d8746395dc",
+                  "short_sha": "71c3fb4",
+                  "message": "fix: escape shell variables in terraform heredoc",
+                  "author": "Ron Turetzky",
+                  "author_login": "RonTuretzky",
+                  "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+                  "date": "2025-12-29",
+                  "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/71c3fb482128dc0f4cb9143323cd60d8746395dc"
+                },
+                {
+                  "sha": "40912f26f1a7d15f5296ba4488eac64a2cb3bdd4",
+                  "short_sha": "40912f2",
+                  "message": "fix: add pre-destroy cleanup for ALB resources",
+                  "author": "Ron Turetzky",
+                  "author_login": "RonTuretzky",
+                  "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+                  "date": "2025-12-29",
+                  "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/40912f26f1a7d15f5296ba4488eac64a2cb3bdd4"
+                }
+              ],
+              "parent_branch_name": "RonTuretzky/k8s-support",
+              "children": [
+                {
+                  "name": "Dijar llozana/terraform aws deploy",
+                  "branch": "DijarLlozana/terraform-aws-deploy",
+                  "repo_name": "gas-killer-router",
+                  "pr_number": 88,
+                  "pr_title": "Dijar llozana/terraform aws deploy",
+                  "pr_url": "https://github.com/BreadchainCoop/gas-killer-router/pull/88",
+                  "pr_author": "dijarllozana",
+                  "last_updated": "2026-01-28T16:23:40Z",
+                  "ci_status": "pass",
+                  "github_url": "https://github.com/BreadchainCoop/gas-killer-router",
+                  "is_draft": false,
+                  "labels": [],
+                  "commits_from_parent": [
+                    {
+                      "sha": "f30f106ffd0806a83c39161e6af10c9b6689fdbe",
+                      "short_sha": "f30f106",
+                      "message": "Fixes for terraform deploy and destroy in gas router",
+                      "author": "Dijar Llozana",
+                      "author_login": "dijarllozana",
+                      "author_avatar_url": "https://avatars.githubusercontent.com/u/45999272?v=4",
+                      "date": "2026-01-07",
+                      "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/f30f106ffd0806a83c39161e6af10c9b6689fdbe"
+                    },
+                    {
+                      "sha": "308a91d6d2324213aae46088bb23081289c656b1",
+                      "short_sha": "308a91d",
+                      "message": "Fixed terraform destroy",
+                      "author": "Dijar Llozana",
+                      "author_login": "dijarllozana",
+                      "author_avatar_url": "https://avatars.githubusercontent.com/u/45999272?v=4",
+                      "date": "2026-01-07",
+                      "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/308a91d6d2324213aae46088bb23081289c656b1"
+                    },
+                    {
+                      "sha": "e96d100c85a20fc615bbe2b02b0fb809b39605f3",
+                      "short_sha": "e96d100",
+                      "message": "Updated router, eigenlayer and node images",
+                      "author": "Dijar Llozana",
+                      "author_login": "dijarllozana",
+                      "author_avatar_url": "https://avatars.githubusercontent.com/u/45999272?v=4",
+                      "date": "2026-01-21",
+                      "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/e96d100c85a20fc615bbe2b02b0fb809b39605f3"
+                    },
+                    {
+                      "sha": "86fe4dcb87398cfc5484f856f646da2420658e0e",
+                      "short_sha": "86fe4dc",
+                      "message": "Fix image tags and pull policy for TESTNET deployment",
+                      "author": "Ron Turetzky",
+                      "author_login": "RonTuretzky",
+                      "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+                      "date": "2026-01-22",
+                      "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/86fe4dcb87398cfc5484f856f646da2420658e0e"
+                    },
+                    {
+                      "sha": "6ff71e56f85afd48c2f031e1a7f91f33345bbde1",
+                      "short_sha": "6ff71e5",
+                      "message": "chore: stash working without e2e through a local curl\"",
+                      "author": "Ron Turetzky",
+                      "author_login": "RonTuretzky",
+                      "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+                      "date": "2026-01-26",
+                      "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/6ff71e56f85afd48c2f031e1a7f91f33345bbde1"
+                    }
+                  ],
+                  "parent_branch_name": "RonTuretzky/terraform-aws-deploy",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "Add custom priority class",
+              "branch": "feat/custom-priority-class",
+              "repo_name": "gas-killer-router",
+              "pr_number": 85,
+              "pr_title": "Add custom priority class",
+              "pr_url": "https://github.com/BreadchainCoop/gas-killer-router/pull/85",
+              "pr_author": "bagelface",
+              "last_updated": "2026-01-05T16:54:35Z",
+              "ci_status": "pass",
+              "github_url": "https://github.com/BreadchainCoop/gas-killer-router",
+              "is_draft": false,
+              "labels": [],
+              "commits_from_parent": [
+                {
+                  "sha": "462b617d53dc633e3a194ffe9bcb1b7307456409",
+                  "short_sha": "462b617",
+                  "message": "feat: add custom priority class so we don't rely on system cluster priority clas",
+                  "author": "bagelface",
+                  "author_login": "bagelface",
+                  "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
+                  "date": "2025-12-24",
+                  "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/462b617d53dc633e3a194ffe9bcb1b7307456409"
+                },
+                {
+                  "sha": "2dda1aed482bff3d93fc39871f814bc9ba83b4f8",
+                  "short_sha": "2dda1ae",
+                  "message": "refactor: flatten helm directory",
+                  "author": "bagelface",
+                  "author_login": "bagelface",
+                  "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
+                  "date": "2025-12-24",
+                  "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/2dda1aed482bff3d93fc39871f814bc9ba83b4f8"
+                },
+                {
+                  "sha": "96cdb64591cbf5f1dc34c20ed499224e636350cb",
+                  "short_sha": "96cdb64",
+                  "message": "test: extend timeout so script runs locally",
+                  "author": "bagelface",
+                  "author_login": "bagelface",
+                  "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
+                  "date": "2025-12-27",
+                  "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/96cdb64591cbf5f1dc34c20ed499224e636350cb"
+                }
+              ],
+              "parent_branch_name": "RonTuretzky/k8s-support",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
     "app-stacks": {
       "name": "app-stacks",
       "branch": "main",
@@ -824,346 +1232,6 @@
           ],
           "parent_branch_name": "main",
           "children": []
-        }
-      ]
-    },
-    "gas-killer-router": {
-      "name": "gas-killer-router",
-      "branch": "dev",
-      "repo_name": "gas-killer-router",
-      "pr_number": null,
-      "pr_title": null,
-      "pr_url": null,
-      "pr_author": null,
-      "last_updated": "2026-01-28T18:34:25Z",
-      "ci_status": "",
-      "github_url": "https://github.com/BreadchainCoop/gas-killer-router",
-      "is_draft": false,
-      "labels": [],
-      "commits_from_parent": [],
-      "parent_branch_name": null,
-      "children": [
-        {
-          "name": "Use analyzer \"evmsketch\" feature and remove anvil dependency",
-          "branch": "feat/remove-anvil",
-          "repo_name": "gas-killer-router",
-          "pr_number": 90,
-          "pr_title": "Use analyzer \"evmsketch\" feature and remove anvil dependency",
-          "pr_url": "https://github.com/BreadchainCoop/gas-killer-router/pull/90",
-          "pr_author": "bagelface",
-          "last_updated": "2026-01-28T18:34:26Z",
-          "ci_status": "fail",
-          "github_url": "https://github.com/BreadchainCoop/gas-killer-router",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "00f08f0d62901eae18f5e35a6d426fb833621598",
-              "short_sha": "00f08f0",
-              "message": "feat: use sp1-cc library for tx sim",
-              "author": "bagelface",
-              "author_login": "bagelface",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
-              "date": "2026-01-09",
-              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/00f08f0d62901eae18f5e35a6d426fb833621598"
-            },
-            {
-              "sha": "edbf4bad5f519ebfc94d22348b2bd8ed30cc1fb3",
-              "short_sha": "edbf4ba",
-              "message": "build: point to default branch for'gas-analyzer-rs' dependency",
-              "author": "bagelface",
-              "author_login": "bagelface",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
-              "date": "2026-01-12",
-              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/edbf4bad5f519ebfc94d22348b2bd8ed30cc1fb3"
-            },
-            {
-              "sha": "159ce09c2d83c1338c7da9b01a9501c914248267",
-              "short_sha": "159ce09",
-              "message": "feat: use evmsketch analyzer feature and remove anvil",
-              "author": "bagelface",
-              "author_login": "bagelface",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
-              "date": "2026-01-16",
-              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/159ce09c2d83c1338c7da9b01a9501c914248267"
-            },
-            {
-              "sha": "9b9dd72be8212de5509a5c7b12fe7cf7c0956323",
-              "short_sha": "9b9dd72",
-              "message": "Merge branch 'dev' into feat/remove-anvil",
-              "author": "bagelface",
-              "author_login": "bagelface",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
-              "date": "2026-01-16",
-              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/9b9dd72be8212de5509a5c7b12fe7cf7c0956323"
-            },
-            {
-              "sha": "b38aa5d84bb2f08be173fb6a349d135ad7bd22e0",
-              "short_sha": "b38aa5d",
-              "message": "fix: add multi-thread flavor to some tests",
-              "author": "bagelface",
-              "author_login": "bagelface",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
-              "date": "2026-01-19",
-              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/b38aa5d84bb2f08be173fb6a349d135ad7bd22e0"
-            }
-          ],
-          "parent_branch_name": "dev",
-          "children": []
-        },
-        {
-          "name": "feat: add Kubernetes/Helm support for K8s deployments",
-          "branch": "RonTuretzky/k8s-support",
-          "repo_name": "gas-killer-router",
-          "pr_number": 84,
-          "pr_title": "feat: add Kubernetes/Helm support for K8s deployments",
-          "pr_url": "https://github.com/BreadchainCoop/gas-killer-router/pull/84",
-          "pr_author": "RonTuretzky",
-          "last_updated": "2026-01-06T16:55:48Z",
-          "ci_status": "pass",
-          "github_url": "https://github.com/BreadchainCoop/gas-killer-router",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "8288ac442c79ebc1b73cd8ba9b3cb4e1977cdd87",
-              "short_sha": "8288ac4",
-              "message": "feat: add Kubernetes/Helm support with K8s deployment configurations",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-12-20",
-              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/8288ac442c79ebc1b73cd8ba9b3cb4e1977cdd87"
-            },
-            {
-              "sha": "cf0118b132077355ebdaff3d9d94bf7fdbe2d104",
-              "short_sha": "cf0118b",
-              "message": "fix: add exec-based readiness probes to node and router pods",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-12-20",
-              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/cf0118b132077355ebdaff3d9d94bf7fdbe2d104"
-            },
-            {
-              "sha": "82d7f059793968885dddd6fadc9f3d4a1c118105",
-              "short_sha": "82d7f05",
-              "message": "ci: run helm tests on all pull requests",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-12-20",
-              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/82d7f059793968885dddd6fadc9f3d4a1c118105"
-            },
-            {
-              "sha": "8ce7aa161aae5b030b52337b2afba7a031ead977",
-              "short_sha": "8ce7aa1",
-              "message": "fix: add procps to Docker images for pgrep readiness probes",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-12-20",
-              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/8ce7aa161aae5b030b52337b2afba7a031ead977"
-            },
-            {
-              "sha": "83fe5e4f59e5e5afbe5be74b4530909820dbd225",
-              "short_sha": "83fe5e4",
-              "message": "fix: use /proc/1/cmdline for readiness probes and improve debug logging",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-12-20",
-              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/83fe5e4f59e5e5afbe5be74b4530909820dbd225"
-            }
-          ],
-          "parent_branch_name": "dev",
-          "children": [
-            {
-              "name": "feat: add Terraform AWS deployment for Gas Killer Router",
-              "branch": "RonTuretzky/terraform-aws-deploy",
-              "repo_name": "gas-killer-router",
-              "pr_number": 87,
-              "pr_title": "feat: add Terraform AWS deployment for Gas Killer Router",
-              "pr_url": "https://github.com/BreadchainCoop/gas-killer-router/pull/87",
-              "pr_author": "RonTuretzky",
-              "last_updated": "2026-01-06T17:19:07Z",
-              "ci_status": "pass",
-              "github_url": "https://github.com/BreadchainCoop/gas-killer-router",
-              "is_draft": false,
-              "labels": [],
-              "commits_from_parent": [
-                {
-                  "sha": "76663d3c21fc43062a3a9860998595cce47ca8c3",
-                  "short_sha": "76663d3",
-                  "message": "feat: add Terraform AWS deployment for Gas Killer Router",
-                  "author": "Ron Turetzky",
-                  "author_login": "RonTuretzky",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-                  "date": "2025-12-29",
-                  "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/76663d3c21fc43062a3a9860998595cce47ca8c3"
-                },
-                {
-                  "sha": "33c1120b92a8720673601d4e1a2721658ec719e1",
-                  "short_sha": "33c1120",
-                  "message": "fix: remove invalid self reference in terraform outputs",
-                  "author": "Ron Turetzky",
-                  "author_login": "RonTuretzky",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-                  "date": "2025-12-29",
-                  "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/33c1120b92a8720673601d4e1a2721658ec719e1"
-                },
-                {
-                  "sha": "433773f4a8d88a753a92792d58b1c366e3727a83",
-                  "short_sha": "433773f",
-                  "message": "feat: add E2E test job to terraform deployment",
-                  "author": "Ron Turetzky",
-                  "author_login": "RonTuretzky",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-                  "date": "2025-12-29",
-                  "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/433773f4a8d88a753a92792d58b1c366e3727a83"
-                },
-                {
-                  "sha": "71c3fb482128dc0f4cb9143323cd60d8746395dc",
-                  "short_sha": "71c3fb4",
-                  "message": "fix: escape shell variables in terraform heredoc",
-                  "author": "Ron Turetzky",
-                  "author_login": "RonTuretzky",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-                  "date": "2025-12-29",
-                  "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/71c3fb482128dc0f4cb9143323cd60d8746395dc"
-                },
-                {
-                  "sha": "40912f26f1a7d15f5296ba4488eac64a2cb3bdd4",
-                  "short_sha": "40912f2",
-                  "message": "fix: add pre-destroy cleanup for ALB resources",
-                  "author": "Ron Turetzky",
-                  "author_login": "RonTuretzky",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-                  "date": "2025-12-29",
-                  "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/40912f26f1a7d15f5296ba4488eac64a2cb3bdd4"
-                }
-              ],
-              "parent_branch_name": "RonTuretzky/k8s-support",
-              "children": [
-                {
-                  "name": "Dijar llozana/terraform aws deploy",
-                  "branch": "DijarLlozana/terraform-aws-deploy",
-                  "repo_name": "gas-killer-router",
-                  "pr_number": 88,
-                  "pr_title": "Dijar llozana/terraform aws deploy",
-                  "pr_url": "https://github.com/BreadchainCoop/gas-killer-router/pull/88",
-                  "pr_author": "dijarllozana",
-                  "last_updated": "2026-01-28T16:23:40Z",
-                  "ci_status": "pass",
-                  "github_url": "https://github.com/BreadchainCoop/gas-killer-router",
-                  "is_draft": false,
-                  "labels": [],
-                  "commits_from_parent": [
-                    {
-                      "sha": "f30f106ffd0806a83c39161e6af10c9b6689fdbe",
-                      "short_sha": "f30f106",
-                      "message": "Fixes for terraform deploy and destroy in gas router",
-                      "author": "Dijar Llozana",
-                      "author_login": "dijarllozana",
-                      "author_avatar_url": "https://avatars.githubusercontent.com/u/45999272?v=4",
-                      "date": "2026-01-07",
-                      "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/f30f106ffd0806a83c39161e6af10c9b6689fdbe"
-                    },
-                    {
-                      "sha": "308a91d6d2324213aae46088bb23081289c656b1",
-                      "short_sha": "308a91d",
-                      "message": "Fixed terraform destroy",
-                      "author": "Dijar Llozana",
-                      "author_login": "dijarllozana",
-                      "author_avatar_url": "https://avatars.githubusercontent.com/u/45999272?v=4",
-                      "date": "2026-01-07",
-                      "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/308a91d6d2324213aae46088bb23081289c656b1"
-                    },
-                    {
-                      "sha": "e96d100c85a20fc615bbe2b02b0fb809b39605f3",
-                      "short_sha": "e96d100",
-                      "message": "Updated router, eigenlayer and node images",
-                      "author": "Dijar Llozana",
-                      "author_login": "dijarllozana",
-                      "author_avatar_url": "https://avatars.githubusercontent.com/u/45999272?v=4",
-                      "date": "2026-01-21",
-                      "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/e96d100c85a20fc615bbe2b02b0fb809b39605f3"
-                    },
-                    {
-                      "sha": "86fe4dcb87398cfc5484f856f646da2420658e0e",
-                      "short_sha": "86fe4dc",
-                      "message": "Fix image tags and pull policy for TESTNET deployment",
-                      "author": "Ron Turetzky",
-                      "author_login": "RonTuretzky",
-                      "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-                      "date": "2026-01-22",
-                      "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/86fe4dcb87398cfc5484f856f646da2420658e0e"
-                    },
-                    {
-                      "sha": "6ff71e56f85afd48c2f031e1a7f91f33345bbde1",
-                      "short_sha": "6ff71e5",
-                      "message": "chore: stash working without e2e through a local curl\"",
-                      "author": "Ron Turetzky",
-                      "author_login": "RonTuretzky",
-                      "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-                      "date": "2026-01-26",
-                      "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/6ff71e56f85afd48c2f031e1a7f91f33345bbde1"
-                    }
-                  ],
-                  "parent_branch_name": "RonTuretzky/terraform-aws-deploy",
-                  "children": []
-                }
-              ]
-            },
-            {
-              "name": "Add custom priority class",
-              "branch": "feat/custom-priority-class",
-              "repo_name": "gas-killer-router",
-              "pr_number": 85,
-              "pr_title": "Add custom priority class",
-              "pr_url": "https://github.com/BreadchainCoop/gas-killer-router/pull/85",
-              "pr_author": "bagelface",
-              "last_updated": "2026-01-05T16:54:35Z",
-              "ci_status": "pass",
-              "github_url": "https://github.com/BreadchainCoop/gas-killer-router",
-              "is_draft": false,
-              "labels": [],
-              "commits_from_parent": [
-                {
-                  "sha": "462b617d53dc633e3a194ffe9bcb1b7307456409",
-                  "short_sha": "462b617",
-                  "message": "feat: add custom priority class so we don't rely on system cluster priority clas",
-                  "author": "bagelface",
-                  "author_login": "bagelface",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
-                  "date": "2025-12-24",
-                  "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/462b617d53dc633e3a194ffe9bcb1b7307456409"
-                },
-                {
-                  "sha": "2dda1aed482bff3d93fc39871f814bc9ba83b4f8",
-                  "short_sha": "2dda1ae",
-                  "message": "refactor: flatten helm directory",
-                  "author": "bagelface",
-                  "author_login": "bagelface",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
-                  "date": "2025-12-24",
-                  "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/2dda1aed482bff3d93fc39871f814bc9ba83b4f8"
-                },
-                {
-                  "sha": "96cdb64591cbf5f1dc34c20ed499224e636350cb",
-                  "short_sha": "96cdb64",
-                  "message": "test: extend timeout so script runs locally",
-                  "author": "bagelface",
-                  "author_login": "bagelface",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
-                  "date": "2025-12-27",
-                  "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/96cdb64591cbf5f1dc34c20ed499224e636350cb"
-                }
-              ],
-              "parent_branch_name": "RonTuretzky/k8s-support",
-              "children": []
-            }
-          ]
         }
       ]
     },
@@ -4369,6 +4437,117 @@
     }
   },
   "issues": {
+    "gas-killer-router": {
+      "repo_name": "gas-killer-router",
+      "github_url": "https://github.com/BreadchainCoop/gas-killer-router",
+      "issues": [
+        {
+          "number": 82,
+          "title": "Investigate and disable `attempt_unregistered_handshakes` P2P setting",
+          "author": "bagelface",
+          "created_at": "2025-12-17T21:03:57Z",
+          "updated_at": "2025-12-17T21:05:06Z",
+          "html_url": "https://github.com/BreadchainCoop/gas-killer-router/issues/82",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 56,
+          "title": "Merge `gas-killer-node` into `gas-killer-router` repository",
+          "author": "bagelface",
+          "created_at": "2025-11-26T22:32:11Z",
+          "updated_at": "2025-11-26T22:36:48Z",
+          "html_url": "https://github.com/BreadchainCoop/gas-killer-router/issues/56",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 55,
+          "title": "Migrate `gas-killer-router` to use `commonware-restaking` crate",
+          "author": "bagelface",
+          "created_at": "2025-11-26T22:31:48Z",
+          "updated_at": "2025-11-26T22:34:37Z",
+          "html_url": "https://github.com/BreadchainCoop/gas-killer-router/issues/55",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 54,
+          "title": "Meta Issue: Migrate `gas-killer-router` to new library-based architecture",
+          "author": "bagelface",
+          "created_at": "2025-11-26T22:31:14Z",
+          "updated_at": "2025-11-26T22:31:14Z",
+          "html_url": "https://github.com/BreadchainCoop/gas-killer-router/issues/54",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 36,
+          "title": "implement more checks for gas killer requests",
+          "author": "junkicide",
+          "created_at": "2025-09-27T17:13:00Z",
+          "updated_at": "2025-10-21T01:40:36Z",
+          "html_url": "https://github.com/BreadchainCoop/gas-killer-router/issues/36",
+          "labels": [
+            "enhancement"
+          ],
+          "assignees": [
+            "junkicide"
+          ],
+          "comments": [
+            {
+              "id": "IC_kwDOPHRmPM7Hmkne",
+              "author": {
+                "login": "bagelface"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "Can you be more specific with this issue. I'm assuming it's with regards to request validation for the ingress component?",
+              "createdAt": "2025-09-29T19:44:05Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/gas-killer-router/issues/36#issuecomment-3348777438",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOPHRmPM7MFfUZ",
+              "author": {
+                "login": "crystal503"
+              },
+              "authorAssociation": "NONE",
+              "body": "@junkicide can we have more details for this issue?",
+              "createdAt": "2025-10-20T22:40:28Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/gas-killer-router/issues/36#issuecomment-3423991065",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOPHRmPM7MG0PQ",
+              "author": {
+                "login": "junkicide"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "need to cover more possibilities [here](https://github.com/BreadchainCoop/gas-killer-router/blob/7730ea412255480194a7f3a5b51db63269d84e74/src/usecases/gas_killer/ingress.rs#L28C7-L33C43)",
+              "createdAt": "2025-10-21T01:40:36Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/gas-killer-router/issues/36#issuecomment-3424338896",
+              "viewerDidAuthor": false
+            }
+          ]
+        }
+      ]
+    },
     "app-stacks": {
       "repo_name": "app-stacks",
       "github_url": "https://github.com/BreadchainCoop/app-stacks",
@@ -4459,6 +4638,37 @@
       "repo_name": "saving-circles",
       "github_url": "https://github.com/BreadchainCoop/saving-circles",
       "issues": [
+        {
+          "number": 109,
+          "title": "Implement a shorter link structure",
+          "author": "brendaasfjnso",
+          "created_at": "2026-01-31T04:08:21Z",
+          "updated_at": "2026-01-31T04:08:21Z",
+          "html_url": "https://github.com/BreadchainCoop/saving-circles/issues/109",
+          "labels": [
+            "enhancement"
+          ],
+          "assignees": [
+            "exo404"
+          ],
+          "comments": []
+        },
+        {
+          "number": 108,
+          "title": "Batch transaction when creating invite links",
+          "author": "brendaasfjnso",
+          "created_at": "2026-01-31T04:03:53Z",
+          "updated_at": "2026-01-31T04:03:53Z",
+          "html_url": "https://github.com/BreadchainCoop/saving-circles/issues/108",
+          "labels": [
+            "enhancement"
+          ],
+          "assignees": [
+            "franrolotti",
+            "exo404"
+          ],
+          "comments": []
+        },
         {
           "number": 105,
           "title": "Apply UI changes to the front-end of the app",
@@ -5731,117 +5941,6 @@
           ],
           "assignees": [],
           "comments": []
-        }
-      ]
-    },
-    "gas-killer-router": {
-      "repo_name": "gas-killer-router",
-      "github_url": "https://github.com/BreadchainCoop/gas-killer-router",
-      "issues": [
-        {
-          "number": 82,
-          "title": "Investigate and disable `attempt_unregistered_handshakes` P2P setting",
-          "author": "bagelface",
-          "created_at": "2025-12-17T21:03:57Z",
-          "updated_at": "2025-12-17T21:05:06Z",
-          "html_url": "https://github.com/BreadchainCoop/gas-killer-router/issues/82",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 56,
-          "title": "Merge `gas-killer-node` into `gas-killer-router` repository",
-          "author": "bagelface",
-          "created_at": "2025-11-26T22:32:11Z",
-          "updated_at": "2025-11-26T22:36:48Z",
-          "html_url": "https://github.com/BreadchainCoop/gas-killer-router/issues/56",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 55,
-          "title": "Migrate `gas-killer-router` to use `commonware-restaking` crate",
-          "author": "bagelface",
-          "created_at": "2025-11-26T22:31:48Z",
-          "updated_at": "2025-11-26T22:34:37Z",
-          "html_url": "https://github.com/BreadchainCoop/gas-killer-router/issues/55",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 54,
-          "title": "Meta Issue: Migrate `gas-killer-router` to new library-based architecture",
-          "author": "bagelface",
-          "created_at": "2025-11-26T22:31:14Z",
-          "updated_at": "2025-11-26T22:31:14Z",
-          "html_url": "https://github.com/BreadchainCoop/gas-killer-router/issues/54",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 36,
-          "title": "implement more checks for gas killer requests",
-          "author": "junkicide",
-          "created_at": "2025-09-27T17:13:00Z",
-          "updated_at": "2025-10-21T01:40:36Z",
-          "html_url": "https://github.com/BreadchainCoop/gas-killer-router/issues/36",
-          "labels": [
-            "enhancement"
-          ],
-          "assignees": [
-            "junkicide"
-          ],
-          "comments": [
-            {
-              "id": "IC_kwDOPHRmPM7Hmkne",
-              "author": {
-                "login": "bagelface"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "Can you be more specific with this issue. I'm assuming it's with regards to request validation for the ingress component?",
-              "createdAt": "2025-09-29T19:44:05Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/gas-killer-router/issues/36#issuecomment-3348777438",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOPHRmPM7MFfUZ",
-              "author": {
-                "login": "crystal503"
-              },
-              "authorAssociation": "NONE",
-              "body": "@junkicide can we have more details for this issue?",
-              "createdAt": "2025-10-20T22:40:28Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/gas-killer-router/issues/36#issuecomment-3423991065",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOPHRmPM7MG0PQ",
-              "author": {
-                "login": "junkicide"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "need to cover more possibilities [here](https://github.com/BreadchainCoop/gas-killer-router/blob/7730ea412255480194a7f3a5b51db63269d84e74/src/usecases/gas_killer/ingress.rs#L28C7-L33C43)",
-              "createdAt": "2025-10-21T01:40:36Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/gas-killer-router/issues/36#issuecomment-3424338896",
-              "viewerDidAuthor": false
-            }
-          ]
         }
       ]
     },
