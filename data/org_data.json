@@ -1,15 +1,250 @@
 {
   "organization": "BreadchainCoop",
-  "generated_at": "2026-02-04T00:15:52.449829+00:00",
-  "generation_time_seconds": 187.62,
+  "generated_at": "2026-02-05T00:17:28.132294+00:00",
+  "generation_time_seconds": 142.83,
   "stats": {
     "total_repos": 46,
     "repos_with_prs": 23,
     "repos_with_issues": 27,
-    "total_open_prs": 96,
+    "total_open_prs": 100,
     "total_open_issues": 236
   },
   "trees": {
+    "breadchain": {
+      "name": "breadchain",
+      "branch": "dev",
+      "repo_name": "breadchain",
+      "pr_number": null,
+      "pr_title": null,
+      "pr_url": null,
+      "pr_author": null,
+      "last_updated": "2026-02-04T23:04:20Z",
+      "ci_status": "",
+      "github_url": "https://github.com/BreadchainCoop/breadchain",
+      "is_draft": false,
+      "labels": [],
+      "commits_from_parent": [],
+      "parent_branch_name": null,
+      "children": [
+        {
+          "name": "Short circuit updating projects if there are no updates",
+          "branch": "feat/update-projects-short-circuit",
+          "repo_name": "breadchain",
+          "pr_number": 179,
+          "pr_title": "Short circuit updating projects if there are no updates",
+          "pr_url": "https://github.com/BreadchainCoop/breadchain/pull/179",
+          "pr_author": "bagelface",
+          "last_updated": "2026-02-04T23:13:06Z",
+          "ci_status": "",
+          "github_url": "https://github.com/BreadchainCoop/breadchain",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "7469014114462aedbcfad9d038bd3a319c5f6874",
+              "short_sha": "7469014",
+              "message": "feat: add short circuit for _updateBreadchcainProjects if there are no updates",
+              "author": "bagelface",
+              "author_login": "bagelface",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
+              "date": "2026-02-04",
+              "html_url": "https://github.com/BreadchainCoop/breadchain/commit/7469014114462aedbcfad9d038bd3a319c5f6874"
+            }
+          ],
+          "parent_branch_name": "dev",
+          "children": []
+        },
+        {
+          "name": "Fix CI",
+          "branch": "fix-ci",
+          "repo_name": "breadchain",
+          "pr_number": 178,
+          "pr_title": "Fix CI",
+          "pr_url": "https://github.com/BreadchainCoop/breadchain/pull/178",
+          "pr_author": "bagelface",
+          "last_updated": "2026-02-04T23:13:23Z",
+          "ci_status": "pass",
+          "github_url": "https://github.com/BreadchainCoop/breadchain",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "ea6f25e0514a4d3ac48f25e23089f91ad23c88f3",
+              "short_sha": "ea6f25e",
+              "message": "build: remove CI profile for test workflow",
+              "author": "bagelface",
+              "author_login": "bagelface",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
+              "date": "2026-02-04",
+              "html_url": "https://github.com/BreadchainCoop/breadchain/commit/ea6f25e0514a4d3ac48f25e23089f91ad23c88f3"
+            },
+            {
+              "sha": "c52159953366fd25b56f1fbc12b2896f3a07bc42",
+              "short_sha": "c521599",
+              "message": "fix: set owner in initializer to fix tests",
+              "author": "bagelface",
+              "author_login": "bagelface",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
+              "date": "2026-02-04",
+              "html_url": "https://github.com/BreadchainCoop/breadchain/commit/c52159953366fd25b56f1fbc12b2896f3a07bc42"
+            },
+            {
+              "sha": "6a09c9a27ebb4a4153a0345602d32bc0a680e59c",
+              "short_sha": "6a09c9a",
+              "message": "fix: add envars for RPCs and update CI",
+              "author": "bagelface",
+              "author_login": "bagelface",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
+              "date": "2026-02-04",
+              "html_url": "https://github.com/BreadchainCoop/breadchain/commit/6a09c9a27ebb4a4153a0345602d32bc0a680e59c"
+            }
+          ],
+          "parent_branch_name": "dev",
+          "children": []
+        },
+        {
+          "name": "fix: include current cycle in getCurrentVotingPower",
+          "branch": "fix-voting-power-current",
+          "repo_name": "breadchain",
+          "pr_number": 177,
+          "pr_title": "fix: include current cycle in getCurrentVotingPower",
+          "pr_url": "https://github.com/BreadchainCoop/breadchain/pull/177",
+          "pr_author": "RonTuretzky",
+          "last_updated": "2025-11-30T02:57:14Z",
+          "ci_status": "",
+          "github_url": "https://github.com/BreadchainCoop/breadchain",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "6efd17fadbca941d00633d5f5f56b66da02db1d2",
+              "short_sha": "6efd17f",
+              "message": "fix: include current cycle in getCurrentVotingPower",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-11-30",
+              "html_url": "https://github.com/BreadchainCoop/breadchain/commit/6efd17fadbca941d00633d5f5f56b66da02db1d2"
+            }
+          ],
+          "parent_branch_name": "dev",
+          "children": []
+        },
+        {
+          "name": "Remove minimum voting power requirement",
+          "branch": "remove-min-voting-power",
+          "repo_name": "breadchain",
+          "pr_number": 176,
+          "pr_title": "Remove minimum voting power requirement",
+          "pr_url": "https://github.com/BreadchainCoop/breadchain/pull/176",
+          "pr_author": "RonTuretzky",
+          "last_updated": "2025-11-30T02:35:13Z",
+          "ci_status": "",
+          "github_url": "https://github.com/BreadchainCoop/breadchain",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "9a490906fe675fa06fd16689cb98e5085bddc00f",
+              "short_sha": "9a49090",
+              "message": "feat: remove minimum voting power requirement",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-11-30",
+              "html_url": "https://github.com/BreadchainCoop/breadchain/commit/9a490906fe675fa06fd16689cb98e5085bddc00f"
+            }
+          ],
+          "parent_branch_name": "dev",
+          "children": []
+        },
+        {
+          "name": "Staging deployment",
+          "branch": "staging-deployment",
+          "repo_name": "breadchain",
+          "pr_number": 163,
+          "pr_title": "Staging deployment",
+          "pr_url": "https://github.com/BreadchainCoop/breadchain/pull/163",
+          "pr_author": "RonTuretzky",
+          "last_updated": "2025-08-10T19:05:35Z",
+          "ci_status": "pass",
+          "github_url": "https://github.com/BreadchainCoop/breadchain",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "8d88aace1f68e8552a66fe58b9dc452cf4feffc7",
+              "short_sha": "8d88aac",
+              "message": "Add GitHub Actions workflow for automatic testnet deployment",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-07-22",
+              "html_url": "https://github.com/BreadchainCoop/breadchain/commit/8d88aace1f68e8552a66fe58b9dc452cf4feffc7"
+            },
+            {
+              "sha": "da1e2954166c86a817fa3034670d99f8812ffe98",
+              "short_sha": "da1e295",
+              "message": "Add staging branch trigger to testnet deployment workflow",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-07-22",
+              "html_url": "https://github.com/BreadchainCoop/breadchain/commit/da1e2954166c86a817fa3034670d99f8812ffe98"
+            },
+            {
+              "sha": "dabe818ed1450e9c762af7ae358801e9645d6cf6",
+              "short_sha": "dabe818",
+              "message": "Add comprehensive testnet deployment documentation",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-07-22",
+              "html_url": "https://github.com/BreadchainCoop/breadchain/commit/dabe818ed1450e9c762af7ae358801e9645d6cf6"
+            },
+            {
+              "sha": "cfee5d8886590311335da0444bcdeed518b54af0",
+              "short_sha": "cfee5d8",
+              "message": "Add deployment tracking, verification, and artifact generation",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-07-22",
+              "html_url": "https://github.com/BreadchainCoop/breadchain/commit/cfee5d8886590311335da0444bcdeed518b54af0"
+            },
+            {
+              "sha": "41f20d519b705573ec7a880b68e4bc2a35071d1d",
+              "short_sha": "41f20d5",
+              "message": "Update documentation with verification and artifact details",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-07-22",
+              "html_url": "https://github.com/BreadchainCoop/breadchain/commit/41f20d519b705573ec7a880b68e4bc2a35071d1d"
+            }
+          ],
+          "parent_branch_name": "dev",
+          "children": []
+        },
+        {
+          "name": "feat: add timelock for upgrades",
+          "branch": "issue-132-fix",
+          "repo_name": "breadchain",
+          "pr_number": 145,
+          "pr_title": "feat: add timelock for upgrades",
+          "pr_url": "https://github.com/BreadchainCoop/breadchain/pull/145",
+          "pr_author": "RonTuretzky",
+          "last_updated": "2025-07-22T17:29:02Z",
+          "ci_status": "",
+          "github_url": "https://github.com/BreadchainCoop/breadchain",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [],
+          "parent_branch_name": "dev",
+          "children": []
+        }
+      ]
+    },
     "gas-killer-router": {
       "name": "gas-killer-router",
       "branch": "dev",
@@ -18,7 +253,7 @@
       "pr_title": null,
       "pr_url": null,
       "pr_author": null,
-      "last_updated": "2026-02-04T00:02:20Z",
+      "last_updated": "2026-02-04T21:25:22Z",
       "ci_status": "",
       "github_url": "https://github.com/BreadchainCoop/gas-killer-router",
       "is_draft": false,
@@ -237,7 +472,7 @@
               "pr_title": "feat: add Terraform AWS deployment for Gas Killer Router",
               "pr_url": "https://github.com/BreadchainCoop/gas-killer-router/pull/87",
               "pr_author": "RonTuretzky",
-              "last_updated": "2026-02-01T22:59:00Z",
+              "last_updated": "2026-02-04T18:18:31Z",
               "ci_status": "pass",
               "github_url": "https://github.com/BreadchainCoop/gas-killer-router",
               "is_draft": false,
@@ -438,7 +673,7 @@
                           "pr_title": "Add Gnosis factory job to deploy ArraySummation",
                           "pr_url": "https://github.com/BreadchainCoop/gas-killer-router/pull/96",
                           "pr_author": "RonTuretzky",
-                          "last_updated": "2026-02-03T20:50:35Z",
+                          "last_updated": "2026-02-04T20:10:02Z",
                           "ci_status": "pass",
                           "github_url": "https://github.com/BreadchainCoop/gas-killer-router",
                           "is_draft": false,
@@ -505,61 +740,61 @@
                               "pr_title": "Add yield distribution e2e test to helm charts",
                               "pr_url": "https://github.com/BreadchainCoop/gas-killer-router/pull/98",
                               "pr_author": "RonTuretzky",
-                              "last_updated": "2026-02-04T00:02:21Z",
-                              "ci_status": "pending",
+                              "last_updated": "2026-02-04T21:25:23Z",
+                              "ci_status": "fail",
                               "github_url": "https://github.com/BreadchainCoop/gas-killer-router",
                               "is_draft": false,
                               "labels": [],
                               "commits_from_parent": [
                                 {
-                                  "sha": "256bbe22e66d0d8ba7b5452f9458ed7a622192d3",
-                                  "short_sha": "256bbe2",
-                                  "message": "Add yield distribution e2e test to helm charts",
-                                  "author": "Ron Turetzky",
-                                  "author_login": "RonTuretzky",
-                                  "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-                                  "date": "2026-02-02",
-                                  "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/256bbe22e66d0d8ba7b5452f9458ed7a622192d3"
+                                  "sha": "00f08f0d62901eae18f5e35a6d426fb833621598",
+                                  "short_sha": "00f08f0",
+                                  "message": "feat: use sp1-cc library for tx sim",
+                                  "author": "bagelface",
+                                  "author_login": "bagelface",
+                                  "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
+                                  "date": "2026-01-09",
+                                  "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/00f08f0d62901eae18f5e35a6d426fb833621598"
                                 },
                                 {
-                                  "sha": "13f24bc9d4e0ce138b3fe9688660d42e9d80f272",
-                                  "short_sha": "13f24bc",
-                                  "message": "Enable helm e2e tests on PR #98 branch with bridge and yield distribution",
-                                  "author": "Ron Turetzky",
-                                  "author_login": "RonTuretzky",
-                                  "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-                                  "date": "2026-02-02",
-                                  "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/13f24bc9d4e0ce138b3fe9688660d42e9d80f272"
+                                  "sha": "edbf4bad5f519ebfc94d22348b2bd8ed30cc1fb3",
+                                  "short_sha": "edbf4ba",
+                                  "message": "build: point to default branch for'gas-analyzer-rs' dependency",
+                                  "author": "bagelface",
+                                  "author_login": "bagelface",
+                                  "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
+                                  "date": "2026-01-12",
+                                  "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/edbf4bad5f519ebfc94d22348b2bd8ed30cc1fb3"
                                 },
                                 {
-                                  "sha": "130269bbfaf532639d68f6207a430057d977b2fd",
-                                  "short_sha": "130269b",
-                                  "message": "Fix yield distribution job to handle already-initialized contracts on Gnosis for",
-                                  "author": "Ron Turetzky",
-                                  "author_login": "RonTuretzky",
-                                  "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-                                  "date": "2026-02-03",
-                                  "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/130269bbfaf532639d68f6207a430057d977b2fd"
+                                  "sha": "2b223f2677680c9d28b69bf21284c36cb172706c",
+                                  "short_sha": "2b223f2",
+                                  "message": "Use `sp1-cc` library for transaction simulation (#89)",
+                                  "author": "bagelface.eth",
+                                  "author_login": "bagelface",
+                                  "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
+                                  "date": "2026-01-15",
+                                  "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/2b223f2677680c9d28b69bf21284c36cb172706c"
                                 },
                                 {
-                                  "sha": "9bf442db96bce46e994876d11da66b216d8d077b",
-                                  "short_sha": "9bf442d",
-                                  "message": "Reset initialization storage slots to allow re-init with bridge-deployed address",
-                                  "author": "Ron Turetzky",
-                                  "author_login": "RonTuretzky",
-                                  "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-                                  "date": "2026-02-03",
-                                  "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/9bf442db96bce46e994876d11da66b216d8d077b"
+                                  "sha": "159ce09c2d83c1338c7da9b01a9501c914248267",
+                                  "short_sha": "159ce09",
+                                  "message": "feat: use evmsketch analyzer feature and remove anvil",
+                                  "author": "bagelface",
+                                  "author_login": "bagelface",
+                                  "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
+                                  "date": "2026-01-16",
+                                  "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/159ce09c2d83c1338c7da9b01a9501c914248267"
                                 },
                                 {
-                                  "sha": "4ca8928265c44303dd49e3036cc95d28942614cd",
-                                  "short_sha": "4ca8928",
-                                  "message": "Fix yield distribution test: remove slot 0 reset and reduce CI triggers",
-                                  "author": "Ron Turetzky",
-                                  "author_login": "RonTuretzky",
-                                  "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-                                  "date": "2026-02-03",
-                                  "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/4ca8928265c44303dd49e3036cc95d28942614cd"
+                                  "sha": "9b9dd72be8212de5509a5c7b12fe7cf7c0956323",
+                                  "short_sha": "9b9dd72",
+                                  "message": "Merge branch 'dev' into feat/remove-anvil",
+                                  "author": "bagelface",
+                                  "author_login": "bagelface",
+                                  "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
+                                  "date": "2026-01-16",
+                                  "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/9b9dd72be8212de5509a5c7b12fe7cf7c0956323"
                                 }
                               ],
                               "parent_branch_name": "RonTuretzky/gnosis-factory-call",
@@ -739,6 +974,314 @@
               "children": []
             }
           ]
+        }
+      ]
+    },
+    "app-stacks": {
+      "name": "app-stacks",
+      "branch": "main",
+      "repo_name": "app-stacks",
+      "pr_number": null,
+      "pr_title": null,
+      "pr_url": null,
+      "pr_author": null,
+      "last_updated": "2026-02-04T18:11:02Z",
+      "ci_status": "",
+      "github_url": "https://github.com/BreadchainCoop/app-stacks",
+      "is_draft": false,
+      "labels": [],
+      "commits_from_parent": [],
+      "parent_branch_name": null,
+      "children": [
+        {
+          "name": "Add Privy authentication integration",
+          "branch": "RonTuretzky/add-privy-auth",
+          "repo_name": "app-stacks",
+          "pr_number": 17,
+          "pr_title": "Add Privy authentication integration",
+          "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/17",
+          "pr_author": "RonTuretzky",
+          "last_updated": "2026-02-04T18:06:34Z",
+          "ci_status": "pass",
+          "github_url": "https://github.com/BreadchainCoop/app-stacks",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "18a053e8a0211e65f5c6a9caf177cd2380d5813a",
+              "short_sha": "18a053e",
+              "message": "Replace RainbowKit with Privy authentication",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2026-02-04",
+              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/18a053e8a0211e65f5c6a9caf177cd2380d5813a"
+            },
+            {
+              "sha": "34bfaa987bc4fd2ed704bf6dff5ba4ef1a561440",
+              "short_sha": "34bfaa9",
+              "message": "Restore ssr config and Navbar static prop",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2026-02-04",
+              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/34bfaa987bc4fd2ed704bf6dff5ba4ef1a561440"
+            }
+          ],
+          "parent_branch_name": "main",
+          "children": [
+            {
+              "name": "Disable wallet popup on invite link creation page",
+              "branch": "RonTuretzky/disable-wallet-invite",
+              "repo_name": "app-stacks",
+              "pr_number": 18,
+              "pr_title": "Disable wallet popup on invite link creation page",
+              "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/18",
+              "pr_author": "RonTuretzky",
+              "last_updated": "2026-02-04T18:11:29Z",
+              "ci_status": "",
+              "github_url": "https://github.com/BreadchainCoop/app-stacks",
+              "is_draft": false,
+              "labels": [],
+              "commits_from_parent": [
+                {
+                  "sha": "7c3df1b55e787db66942fc49dd0de6a703bceca4",
+                  "short_sha": "7c3df1b",
+                  "message": "Disable wallet popup on invite link creation page",
+                  "author": "Ron Turetzky",
+                  "author_login": "RonTuretzky",
+                  "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+                  "date": "2026-02-04",
+                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/7c3df1b55e787db66942fc49dd0de6a703bceca4"
+                }
+              ],
+              "parent_branch_name": "RonTuretzky/add-privy-auth",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Implement UI design",
+          "branch": "dev",
+          "repo_name": "app-stacks",
+          "pr_number": 5,
+          "pr_title": "Implement UI design",
+          "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/5",
+          "pr_author": "Olaleye-Blessing",
+          "last_updated": "2026-01-12T18:30:48Z",
+          "ci_status": "pass",
+          "github_url": "https://github.com/BreadchainCoop/app-stacks",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "78ba1ea530993071591e848fcff5bee6c240d316",
+              "short_sha": "78ba1ea",
+              "message": "feat(contracts): add local SavingCircles deployment script",
+              "author": "Francisco Rolotti",
+              "author_login": "franrolotti",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
+              "date": "2025-12-09",
+              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/78ba1ea530993071591e848fcff5bee6c240d316"
+            },
+            {
+              "sha": "8201375af7561d5aadfe540a4da3149f8432f6fb",
+              "short_sha": "8201375",
+              "message": "feat: deploy mock BREAD token + bump saving-circles submodule (invite)",
+              "author": "Francisco Rolotti",
+              "author_login": "franrolotti",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
+              "date": "2025-12-18",
+              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/8201375af7561d5aadfe540a4da3149f8432f6fb"
+            },
+            {
+              "sha": "d4ac048146c52ff586c953bdb5d668cca8ef2a0e",
+              "short_sha": "d4ac048",
+              "message": "chore: track saving-circles dev branch and bump submodule",
+              "author": "Francisco Rolotti",
+              "author_login": "franrolotti",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
+              "date": "2025-12-31",
+              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/d4ac048146c52ff586c953bdb5d668cca8ef2a0e"
+            },
+            {
+              "sha": "901991a328fd90fb9f779ec2644ef3909a961c58",
+              "short_sha": "901991a",
+              "message": "docs: add command to update submodules to latest",
+              "author": "Francisco Rolotti",
+              "author_login": "franrolotti",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
+              "date": "2025-12-31",
+              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/901991a328fd90fb9f779ec2644ef3909a961c58"
+            },
+            {
+              "sha": "a910f8c351a59572acb3c84210f70e721d58e3f0",
+              "short_sha": "a910f8c",
+              "message": "Resolve TS error and remove storybook files",
+              "author": "Olaleye Blessing",
+              "author_login": "Olaleye-Blessing",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/70102539?v=4",
+              "date": "2025-12-16",
+              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/a910f8c351a59572acb3c84210f70e721d58e3f0"
+            }
+          ],
+          "parent_branch_name": "main",
+          "children": [
+            {
+              "name": "Install updated library",
+              "branch": "dev-improvement",
+              "repo_name": "app-stacks",
+              "pr_number": 16,
+              "pr_title": "Install updated library",
+              "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/16",
+              "pr_author": "Olaleye-Blessing",
+              "last_updated": "2026-02-02T23:15:33Z",
+              "ci_status": "pass",
+              "github_url": "https://github.com/BreadchainCoop/app-stacks",
+              "is_draft": false,
+              "labels": [],
+              "commits_from_parent": [
+                {
+                  "sha": "8b99204ff20810e4fb48d8a4f5bfad80befd6bdf",
+                  "short_sha": "8b99204",
+                  "message": "Install updated library",
+                  "author": "Olaleye Blessing",
+                  "author_login": "Olaleye-Blessing",
+                  "author_avatar_url": "https://avatars.githubusercontent.com/u/70102539?v=4",
+                  "date": "2026-01-12",
+                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/8b99204ff20810e4fb48d8a4f5bfad80befd6bdf"
+                },
+                {
+                  "sha": "bd50b3785a62f9d53599404193da3d96f54f40fb",
+                  "short_sha": "bd50b37",
+                  "message": "Show ENS name for circle members",
+                  "author": "Olaleye Blessing",
+                  "author_login": "Olaleye-Blessing",
+                  "author_avatar_url": "https://avatars.githubusercontent.com/u/70102539?v=4",
+                  "date": "2026-01-14",
+                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/bd50b3785a62f9d53599404193da3d96f54f40fb"
+                },
+                {
+                  "sha": "7989f13a78a64c2b849c3a5de606de56d5e55724",
+                  "short_sha": "7989f13",
+                  "message": "Use unlimited approval (max uint256) for deposits",
+                  "author": "Olaleye Blessing",
+                  "author_login": "Olaleye-Blessing",
+                  "author_avatar_url": "https://avatars.githubusercontent.com/u/70102539?v=4",
+                  "date": "2026-01-20",
+                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/7989f13a78a64c2b849c3a5de606de56d5e55724"
+                },
+                {
+                  "sha": "fef8b0bd649a0d5c9fce7d757896249daa8b604f",
+                  "short_sha": "fef8b0b",
+                  "message": "Provide commands to reset anvil accounts",
+                  "author": "Olaleye Blessing",
+                  "author_login": "Olaleye-Blessing",
+                  "author_avatar_url": "https://avatars.githubusercontent.com/u/70102539?v=4",
+                  "date": "2026-01-22",
+                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/fef8b0bd649a0d5c9fce7d757896249daa8b604f"
+                },
+                {
+                  "sha": "0ff24edc31d3179bd3b1cb998b2a590ca8ca16c7",
+                  "short_sha": "0ff24ed",
+                  "message": "Allow numbers only when specifying circle members and deposit amount",
+                  "author": "Olaleye Blessing",
+                  "author_login": "Olaleye-Blessing",
+                  "author_avatar_url": "https://avatars.githubusercontent.com/u/70102539?v=4",
+                  "date": "2026-01-22",
+                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/0ff24edc31d3179bd3b1cb998b2a590ca8ca16c7"
+                }
+              ],
+              "parent_branch_name": "dev",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Add local SavingCircles deployment script",
+          "branch": "2-add-local-savingcircles-deployment-script",
+          "repo_name": "app-stacks",
+          "pr_number": 4,
+          "pr_title": "Add local SavingCircles deployment script",
+          "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/4",
+          "pr_author": "franrolotti",
+          "last_updated": "2025-12-31T12:31:33Z",
+          "ci_status": "fail",
+          "github_url": "https://github.com/BreadchainCoop/app-stacks",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "78ba1ea530993071591e848fcff5bee6c240d316",
+              "short_sha": "78ba1ea",
+              "message": "feat(contracts): add local SavingCircles deployment script",
+              "author": "Francisco Rolotti",
+              "author_login": "franrolotti",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
+              "date": "2025-12-09",
+              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/78ba1ea530993071591e848fcff5bee6c240d316"
+            },
+            {
+              "sha": "8201375af7561d5aadfe540a4da3149f8432f6fb",
+              "short_sha": "8201375",
+              "message": "feat: deploy mock BREAD token + bump saving-circles submodule (invite)",
+              "author": "Francisco Rolotti",
+              "author_login": "franrolotti",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
+              "date": "2025-12-18",
+              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/8201375af7561d5aadfe540a4da3149f8432f6fb"
+            },
+            {
+              "sha": "d4ac048146c52ff586c953bdb5d668cca8ef2a0e",
+              "short_sha": "d4ac048",
+              "message": "chore: track saving-circles dev branch and bump submodule",
+              "author": "Francisco Rolotti",
+              "author_login": "franrolotti",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
+              "date": "2025-12-31",
+              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/d4ac048146c52ff586c953bdb5d668cca8ef2a0e"
+            },
+            {
+              "sha": "901991a328fd90fb9f779ec2644ef3909a961c58",
+              "short_sha": "901991a",
+              "message": "docs: add command to update submodules to latest",
+              "author": "Francisco Rolotti",
+              "author_login": "franrolotti",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
+              "date": "2025-12-31",
+              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/901991a328fd90fb9f779ec2644ef3909a961c58"
+            }
+          ],
+          "parent_branch_name": "main",
+          "children": []
+        },
+        {
+          "name": "git submodule for stack smart contracts and anvil deployment",
+          "branch": "sb-anvil-deployment",
+          "repo_name": "app-stacks",
+          "pr_number": 3,
+          "pr_title": "git submodule for stack smart contracts and anvil deployment setup",
+          "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/3",
+          "pr_author": "secbajor",
+          "last_updated": "2025-12-08T22:40:44Z",
+          "ci_status": "",
+          "github_url": "https://github.com/BreadchainCoop/app-stacks",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "fedd1f6cfbf1e4c8a280b9c96f6ad9eec7b5ebae",
+              "short_sha": "fedd1f6",
+              "message": "git submodule for stack smart contracts and anvil deployment setup",
+              "author": "Sara",
+              "author_login": "sarace",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/24276454?v=4",
+              "date": "2025-12-08",
+              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/fedd1f6cfbf1e4c8a280b9c96f6ad9eec7b5ebae"
+            }
+          ],
+          "parent_branch_name": "main",
+          "children": []
         }
       ]
     },
@@ -1437,247 +1980,6 @@
               "author_avatar_url": "https://avatars.githubusercontent.com/in/29110?v=4",
               "date": "2025-12-15",
               "html_url": "https://github.com/BreadchainCoop/shared-quartz/commit/99b855fd82a9a42d337223feadcbb2ac9dfb9017"
-            }
-          ],
-          "parent_branch_name": "main",
-          "children": []
-        }
-      ]
-    },
-    "app-stacks": {
-      "name": "app-stacks",
-      "branch": "main",
-      "repo_name": "app-stacks",
-      "pr_number": null,
-      "pr_title": null,
-      "pr_url": null,
-      "pr_author": null,
-      "last_updated": "2026-02-02T23:13:25Z",
-      "ci_status": "",
-      "github_url": "https://github.com/BreadchainCoop/app-stacks",
-      "is_draft": false,
-      "labels": [],
-      "commits_from_parent": [],
-      "parent_branch_name": null,
-      "children": [
-        {
-          "name": "Implement UI design",
-          "branch": "dev",
-          "repo_name": "app-stacks",
-          "pr_number": 5,
-          "pr_title": "Implement UI design",
-          "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/5",
-          "pr_author": "Olaleye-Blessing",
-          "last_updated": "2026-01-12T18:30:48Z",
-          "ci_status": "pass",
-          "github_url": "https://github.com/BreadchainCoop/app-stacks",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "78ba1ea530993071591e848fcff5bee6c240d316",
-              "short_sha": "78ba1ea",
-              "message": "feat(contracts): add local SavingCircles deployment script",
-              "author": "Francisco Rolotti",
-              "author_login": "franrolotti",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-              "date": "2025-12-09",
-              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/78ba1ea530993071591e848fcff5bee6c240d316"
-            },
-            {
-              "sha": "8201375af7561d5aadfe540a4da3149f8432f6fb",
-              "short_sha": "8201375",
-              "message": "feat: deploy mock BREAD token + bump saving-circles submodule (invite)",
-              "author": "Francisco Rolotti",
-              "author_login": "franrolotti",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-              "date": "2025-12-18",
-              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/8201375af7561d5aadfe540a4da3149f8432f6fb"
-            },
-            {
-              "sha": "d4ac048146c52ff586c953bdb5d668cca8ef2a0e",
-              "short_sha": "d4ac048",
-              "message": "chore: track saving-circles dev branch and bump submodule",
-              "author": "Francisco Rolotti",
-              "author_login": "franrolotti",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-              "date": "2025-12-31",
-              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/d4ac048146c52ff586c953bdb5d668cca8ef2a0e"
-            },
-            {
-              "sha": "901991a328fd90fb9f779ec2644ef3909a961c58",
-              "short_sha": "901991a",
-              "message": "docs: add command to update submodules to latest",
-              "author": "Francisco Rolotti",
-              "author_login": "franrolotti",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-              "date": "2025-12-31",
-              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/901991a328fd90fb9f779ec2644ef3909a961c58"
-            },
-            {
-              "sha": "a910f8c351a59572acb3c84210f70e721d58e3f0",
-              "short_sha": "a910f8c",
-              "message": "Resolve TS error and remove storybook files",
-              "author": "Olaleye Blessing",
-              "author_login": "Olaleye-Blessing",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/70102539?v=4",
-              "date": "2025-12-16",
-              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/a910f8c351a59572acb3c84210f70e721d58e3f0"
-            }
-          ],
-          "parent_branch_name": "main",
-          "children": [
-            {
-              "name": "Install updated library",
-              "branch": "dev-improvement",
-              "repo_name": "app-stacks",
-              "pr_number": 16,
-              "pr_title": "Install updated library",
-              "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/16",
-              "pr_author": "Olaleye-Blessing",
-              "last_updated": "2026-02-02T23:15:33Z",
-              "ci_status": "pass",
-              "github_url": "https://github.com/BreadchainCoop/app-stacks",
-              "is_draft": false,
-              "labels": [],
-              "commits_from_parent": [
-                {
-                  "sha": "8b99204ff20810e4fb48d8a4f5bfad80befd6bdf",
-                  "short_sha": "8b99204",
-                  "message": "Install updated library",
-                  "author": "Olaleye Blessing",
-                  "author_login": "Olaleye-Blessing",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/70102539?v=4",
-                  "date": "2026-01-12",
-                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/8b99204ff20810e4fb48d8a4f5bfad80befd6bdf"
-                },
-                {
-                  "sha": "bd50b3785a62f9d53599404193da3d96f54f40fb",
-                  "short_sha": "bd50b37",
-                  "message": "Show ENS name for circle members",
-                  "author": "Olaleye Blessing",
-                  "author_login": "Olaleye-Blessing",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/70102539?v=4",
-                  "date": "2026-01-14",
-                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/bd50b3785a62f9d53599404193da3d96f54f40fb"
-                },
-                {
-                  "sha": "7989f13a78a64c2b849c3a5de606de56d5e55724",
-                  "short_sha": "7989f13",
-                  "message": "Use unlimited approval (max uint256) for deposits",
-                  "author": "Olaleye Blessing",
-                  "author_login": "Olaleye-Blessing",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/70102539?v=4",
-                  "date": "2026-01-20",
-                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/7989f13a78a64c2b849c3a5de606de56d5e55724"
-                },
-                {
-                  "sha": "fef8b0bd649a0d5c9fce7d757896249daa8b604f",
-                  "short_sha": "fef8b0b",
-                  "message": "Provide commands to reset anvil accounts",
-                  "author": "Olaleye Blessing",
-                  "author_login": "Olaleye-Blessing",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/70102539?v=4",
-                  "date": "2026-01-22",
-                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/fef8b0bd649a0d5c9fce7d757896249daa8b604f"
-                },
-                {
-                  "sha": "0ff24edc31d3179bd3b1cb998b2a590ca8ca16c7",
-                  "short_sha": "0ff24ed",
-                  "message": "Allow numbers only when specifying circle members and deposit amount",
-                  "author": "Olaleye Blessing",
-                  "author_login": "Olaleye-Blessing",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/70102539?v=4",
-                  "date": "2026-01-22",
-                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/0ff24edc31d3179bd3b1cb998b2a590ca8ca16c7"
-                }
-              ],
-              "parent_branch_name": "dev",
-              "children": []
-            }
-          ]
-        },
-        {
-          "name": "Add local SavingCircles deployment script",
-          "branch": "2-add-local-savingcircles-deployment-script",
-          "repo_name": "app-stacks",
-          "pr_number": 4,
-          "pr_title": "Add local SavingCircles deployment script",
-          "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/4",
-          "pr_author": "franrolotti",
-          "last_updated": "2025-12-31T12:31:33Z",
-          "ci_status": "fail",
-          "github_url": "https://github.com/BreadchainCoop/app-stacks",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "78ba1ea530993071591e848fcff5bee6c240d316",
-              "short_sha": "78ba1ea",
-              "message": "feat(contracts): add local SavingCircles deployment script",
-              "author": "Francisco Rolotti",
-              "author_login": "franrolotti",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-              "date": "2025-12-09",
-              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/78ba1ea530993071591e848fcff5bee6c240d316"
-            },
-            {
-              "sha": "8201375af7561d5aadfe540a4da3149f8432f6fb",
-              "short_sha": "8201375",
-              "message": "feat: deploy mock BREAD token + bump saving-circles submodule (invite)",
-              "author": "Francisco Rolotti",
-              "author_login": "franrolotti",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-              "date": "2025-12-18",
-              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/8201375af7561d5aadfe540a4da3149f8432f6fb"
-            },
-            {
-              "sha": "d4ac048146c52ff586c953bdb5d668cca8ef2a0e",
-              "short_sha": "d4ac048",
-              "message": "chore: track saving-circles dev branch and bump submodule",
-              "author": "Francisco Rolotti",
-              "author_login": "franrolotti",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-              "date": "2025-12-31",
-              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/d4ac048146c52ff586c953bdb5d668cca8ef2a0e"
-            },
-            {
-              "sha": "901991a328fd90fb9f779ec2644ef3909a961c58",
-              "short_sha": "901991a",
-              "message": "docs: add command to update submodules to latest",
-              "author": "Francisco Rolotti",
-              "author_login": "franrolotti",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-              "date": "2025-12-31",
-              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/901991a328fd90fb9f779ec2644ef3909a961c58"
-            }
-          ],
-          "parent_branch_name": "main",
-          "children": []
-        },
-        {
-          "name": "git submodule for stack smart contracts and anvil deployment",
-          "branch": "sb-anvil-deployment",
-          "repo_name": "app-stacks",
-          "pr_number": 3,
-          "pr_title": "git submodule for stack smart contracts and anvil deployment setup",
-          "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/3",
-          "pr_author": "secbajor",
-          "last_updated": "2025-12-08T22:40:44Z",
-          "ci_status": "",
-          "github_url": "https://github.com/BreadchainCoop/app-stacks",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "fedd1f6cfbf1e4c8a280b9c96f6ad9eec7b5ebae",
-              "short_sha": "fedd1f6",
-              "message": "git submodule for stack smart contracts and anvil deployment setup",
-              "author": "Sara",
-              "author_login": "sarace",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/24276454?v=4",
-              "date": "2025-12-08",
-              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/fedd1f6cfbf1e4c8a280b9c96f6ad9eec7b5ebae"
             }
           ],
           "parent_branch_name": "main",
@@ -4083,165 +4385,6 @@
         }
       ]
     },
-    "breadchain": {
-      "name": "breadchain",
-      "branch": "dev",
-      "repo_name": "breadchain",
-      "pr_number": null,
-      "pr_title": null,
-      "pr_url": null,
-      "pr_author": null,
-      "last_updated": "2025-11-30T02:49:49Z",
-      "ci_status": "",
-      "github_url": "https://github.com/BreadchainCoop/breadchain",
-      "is_draft": false,
-      "labels": [],
-      "commits_from_parent": [],
-      "parent_branch_name": null,
-      "children": [
-        {
-          "name": "fix: include current cycle in getCurrentVotingPower",
-          "branch": "fix-voting-power-current",
-          "repo_name": "breadchain",
-          "pr_number": 177,
-          "pr_title": "fix: include current cycle in getCurrentVotingPower",
-          "pr_url": "https://github.com/BreadchainCoop/breadchain/pull/177",
-          "pr_author": "RonTuretzky",
-          "last_updated": "2025-11-30T02:57:14Z",
-          "ci_status": "",
-          "github_url": "https://github.com/BreadchainCoop/breadchain",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "6efd17fadbca941d00633d5f5f56b66da02db1d2",
-              "short_sha": "6efd17f",
-              "message": "fix: include current cycle in getCurrentVotingPower",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-11-30",
-              "html_url": "https://github.com/BreadchainCoop/breadchain/commit/6efd17fadbca941d00633d5f5f56b66da02db1d2"
-            }
-          ],
-          "parent_branch_name": "dev",
-          "children": []
-        },
-        {
-          "name": "Remove minimum voting power requirement",
-          "branch": "remove-min-voting-power",
-          "repo_name": "breadchain",
-          "pr_number": 176,
-          "pr_title": "Remove minimum voting power requirement",
-          "pr_url": "https://github.com/BreadchainCoop/breadchain/pull/176",
-          "pr_author": "RonTuretzky",
-          "last_updated": "2025-11-30T02:35:13Z",
-          "ci_status": "",
-          "github_url": "https://github.com/BreadchainCoop/breadchain",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "9a490906fe675fa06fd16689cb98e5085bddc00f",
-              "short_sha": "9a49090",
-              "message": "feat: remove minimum voting power requirement",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-11-30",
-              "html_url": "https://github.com/BreadchainCoop/breadchain/commit/9a490906fe675fa06fd16689cb98e5085bddc00f"
-            }
-          ],
-          "parent_branch_name": "dev",
-          "children": []
-        },
-        {
-          "name": "Staging deployment",
-          "branch": "staging-deployment",
-          "repo_name": "breadchain",
-          "pr_number": 163,
-          "pr_title": "Staging deployment",
-          "pr_url": "https://github.com/BreadchainCoop/breadchain/pull/163",
-          "pr_author": "RonTuretzky",
-          "last_updated": "2025-08-10T19:05:35Z",
-          "ci_status": "pass",
-          "github_url": "https://github.com/BreadchainCoop/breadchain",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "8d88aace1f68e8552a66fe58b9dc452cf4feffc7",
-              "short_sha": "8d88aac",
-              "message": "Add GitHub Actions workflow for automatic testnet deployment",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-07-22",
-              "html_url": "https://github.com/BreadchainCoop/breadchain/commit/8d88aace1f68e8552a66fe58b9dc452cf4feffc7"
-            },
-            {
-              "sha": "da1e2954166c86a817fa3034670d99f8812ffe98",
-              "short_sha": "da1e295",
-              "message": "Add staging branch trigger to testnet deployment workflow",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-07-22",
-              "html_url": "https://github.com/BreadchainCoop/breadchain/commit/da1e2954166c86a817fa3034670d99f8812ffe98"
-            },
-            {
-              "sha": "dabe818ed1450e9c762af7ae358801e9645d6cf6",
-              "short_sha": "dabe818",
-              "message": "Add comprehensive testnet deployment documentation",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-07-22",
-              "html_url": "https://github.com/BreadchainCoop/breadchain/commit/dabe818ed1450e9c762af7ae358801e9645d6cf6"
-            },
-            {
-              "sha": "cfee5d8886590311335da0444bcdeed518b54af0",
-              "short_sha": "cfee5d8",
-              "message": "Add deployment tracking, verification, and artifact generation",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-07-22",
-              "html_url": "https://github.com/BreadchainCoop/breadchain/commit/cfee5d8886590311335da0444bcdeed518b54af0"
-            },
-            {
-              "sha": "41f20d519b705573ec7a880b68e4bc2a35071d1d",
-              "short_sha": "41f20d5",
-              "message": "Update documentation with verification and artifact details",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-07-22",
-              "html_url": "https://github.com/BreadchainCoop/breadchain/commit/41f20d519b705573ec7a880b68e4bc2a35071d1d"
-            }
-          ],
-          "parent_branch_name": "dev",
-          "children": []
-        },
-        {
-          "name": "feat: add timelock for upgrades",
-          "branch": "issue-132-fix",
-          "repo_name": "breadchain",
-          "pr_number": 145,
-          "pr_title": "feat: add timelock for upgrades",
-          "pr_url": "https://github.com/BreadchainCoop/breadchain/pull/145",
-          "pr_author": "RonTuretzky",
-          "last_updated": "2025-07-22T17:29:02Z",
-          "ci_status": "",
-          "github_url": "https://github.com/BreadchainCoop/breadchain",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [],
-          "parent_branch_name": "dev",
-          "children": []
-        }
-      ]
-    },
     "sp1-contract-call": {
       "name": "sp1-contract-call",
       "branch": "main",
@@ -4739,6 +4882,522 @@
     }
   },
   "issues": {
+    "breadchain": {
+      "repo_name": "breadchain",
+      "github_url": "https://github.com/BreadchainCoop/breadchain",
+      "issues": [
+        {
+          "number": 173,
+          "title": "Rename this repo",
+          "author": "tbsoc",
+          "created_at": "2025-08-11T09:54:00Z",
+          "updated_at": "2025-08-11T09:54:00Z",
+          "html_url": "https://github.com/BreadchainCoop/breadchain/issues/173",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 172,
+          "title": "Test Upgrade Simulation for Latest Release",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-10T13:16:58Z",
+          "updated_at": "2025-08-10T13:16:58Z",
+          "html_url": "https://github.com/BreadchainCoop/breadchain/issues/172",
+          "labels": [
+            "question"
+          ],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 171,
+          "title": "Release v1.0.5",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-10T13:00:36Z",
+          "updated_at": "2025-08-10T13:00:36Z",
+          "html_url": "https://github.com/BreadchainCoop/breadchain/issues/171",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 170,
+          "title": "Voting Boost for Users with BREAD Transactions",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-10T12:55:47Z",
+          "updated_at": "2025-08-10T13:12:44Z",
+          "html_url": "https://github.com/BreadchainCoop/breadchain/issues/170",
+          "labels": [
+            "enhancement"
+          ],
+          "assignees": [],
+          "comments": [
+            {
+              "id": "IC_kwDOLJ8tZs69GmIf",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "COLLABORATOR",
+              "body": "This may be trivially accounted for by summing up the amount of checkpoints the user has in the last voting cycle, can be easily gamed so unclear if this issue should specify additional parameters, include sybil detection , etc. ",
+              "createdAt": "2025-08-10T13:12:44Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/breadchain/issues/170#issuecomment-3172622879",
+              "viewerDidAuthor": false
+            }
+          ]
+        },
+        {
+          "number": 169,
+          "title": "Boost for Never Burning BREAD in Previous Cycle",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-10T12:55:44Z",
+          "updated_at": "2025-08-10T13:11:18Z",
+          "html_url": "https://github.com/BreadchainCoop/breadchain/issues/169",
+          "labels": [
+            "enhancement"
+          ],
+          "assignees": [],
+          "comments": [
+            {
+              "id": "IC_kwDOLJ8tZs69Gl6b",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "COLLABORATOR",
+              "body": "This issue is non trivial, as ERC20Votes does not specify whether a balance decrease is a burn or a transfer, but by cross-referencing with `getPastTotalSupply` , we may be able to ascertain whether a balance decrease is a burn or a transfer (as a transfer should not decrease the total supply). there may be conflicts with other users burns at the same `timepoint` potentially creating a obfuscation , needs to be looked into further. ",
+              "createdAt": "2025-08-10T13:11:18Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/breadchain/issues/169#issuecomment-3172621979",
+              "viewerDidAuthor": false
+            }
+          ]
+        },
+        {
+          "number": 168,
+          "title": "Boost for Baking at Least 10 BREAD in Previous Cycle",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-10T12:55:43Z",
+          "updated_at": "2025-08-10T13:04:50Z",
+          "html_url": "https://github.com/BreadchainCoop/breadchain/issues/168",
+          "labels": [
+            "enhancement"
+          ],
+          "assignees": [],
+          "comments": [
+            {
+              "id": "IC_kwDOLJ8tZs69Gk6S",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "COLLABORATOR",
+              "body": "Open questions: \n\n- what if they baked 10 $BREAD but then burned it? should we account for net $BREAD balance gain?\n- should we use the last ERC20Votes checkpoint to get the balance in the last cycle for reference? \n- is 10 really the number we want to incentivize?",
+              "createdAt": "2025-08-10T13:04:50Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/breadchain/issues/168#issuecomment-3172617874",
+              "viewerDidAuthor": false
+            }
+          ]
+        },
+        {
+          "number": 167,
+          "title": "Add POAP Boost for Attending Community Calls",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-10T12:55:41Z",
+          "updated_at": "2025-08-10T13:03:25Z",
+          "html_url": "https://github.com/BreadchainCoop/breadchain/issues/167",
+          "labels": [
+            "enhancement"
+          ],
+          "assignees": [],
+          "comments": [
+            {
+              "id": "IC_kwDOLJ8tZs69Gkrh",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "COLLABORATOR",
+              "body": "seems this would be as simple as #166 ",
+              "createdAt": "2025-08-10T13:03:25Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/breadchain/issues/167#issuecomment-3172616929",
+              "viewerDidAuthor": false
+            }
+          ]
+        },
+        {
+          "number": 166,
+          "title": "Voting Boost for TBS NFT Holders",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-10T12:55:37Z",
+          "updated_at": "2025-08-10T13:02:50Z",
+          "html_url": "https://github.com/BreadchainCoop/breadchain/issues/166",
+          "labels": [
+            "enhancement"
+          ],
+          "assignees": [],
+          "comments": [
+            {
+              "id": "IC_kwDOLJ8tZs69Gkl3",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "COLLABORATOR",
+              "body": "@secbajor please advise, with the current impl is it as simple as just using [this](https://github.com/BreadchainCoop/breadchain/blob/dev/script/deploy/DeployNFTMultiplier.s.sol) script and then calling [this](https://github.com/BreadchainCoop/breadchain/blob/d74a84c8c8dce4187040edced2160c828eafb938/src/VotingMultipliers.sol#L49) ? I assume there would be frontend changes necessary as well ",
+              "createdAt": "2025-08-10T13:02:50Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/breadchain/issues/166#issuecomment-3172616567",
+              "viewerDidAuthor": false
+            }
+          ]
+        },
+        {
+          "number": 164,
+          "title": "Release v1.0.4",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-10T12:44:12Z",
+          "updated_at": "2025-08-10T12:44:12Z",
+          "html_url": "https://github.com/BreadchainCoop/breadchain/issues/164",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 156,
+          "title": "Explore Extending VotesExtendedUpgradeable for Variable Delegations",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-06T04:37:13Z",
+          "updated_at": "2025-08-06T04:37:13Z",
+          "html_url": "https://github.com/BreadchainCoop/breadchain/issues/156",
+          "labels": [
+            "enhancement"
+          ],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 142,
+          "title": "Add CI/CD to automatically deploy all contracts to testnet on merge to dev",
+          "author": "RonTuretzky",
+          "created_at": "2025-07-20T01:18:44Z",
+          "updated_at": "2025-07-20T01:18:44Z",
+          "html_url": "https://github.com/BreadchainCoop/breadchain/issues/142",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 141,
+          "title": "Automate Upgrade Safety Check in CI Pipeline",
+          "author": "RonTuretzky",
+          "created_at": "2025-07-20T01:16:40Z",
+          "updated_at": "2025-07-20T01:16:40Z",
+          "html_url": "https://github.com/BreadchainCoop/breadchain/issues/141",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 136,
+          "title": "Gelato Automation",
+          "author": "RonTuretzky",
+          "created_at": "2025-06-26T18:35:52Z",
+          "updated_at": "2025-08-10T14:49:16Z",
+          "html_url": "https://github.com/BreadchainCoop/breadchain/issues/136",
+          "labels": [],
+          "assignees": [
+            "lirona"
+          ],
+          "comments": [
+            {
+              "id": "IC_kwDOLJ8tZs652kP-",
+              "author": {
+                "login": "lirona"
+              },
+              "authorAssociation": "COLLABORATOR",
+              "body": "so will create an automation that will check daily for available yield and distribute if possible",
+              "createdAt": "2025-07-25T14:30:32Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/breadchain/issues/136#issuecomment-3118089214",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOLJ8tZs6566_X",
+              "author": {
+                "login": "diterra-code"
+              },
+              "authorAssociation": "NONE",
+              "body": "@lirona should be monthly i assume. @RonTuretzky ",
+              "createdAt": "2025-07-25T16:29:28Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/breadchain/issues/136#issuecomment-3119230935",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOLJ8tZs659m3U",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "COLLABORATOR",
+              "body": "yea but it's safer to just check once a day over like once an hour or whatever \ntheoretically someone can distribute ahead of the automation but it doesn't really matter @diterra-code \n\nthe distribution frequency is determined at the smart contract level that automation doesn't affect it anyways ",
+              "createdAt": "2025-07-25T18:35:29Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [
+                {
+                  "content": "THUMBS_UP",
+                  "users": {
+                    "totalCount": 1
+                  }
+                }
+              ],
+              "url": "https://github.com/BreadchainCoop/breadchain/issues/136#issuecomment-3119934932",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOLJ8tZs69G1pS",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "COLLABORATOR",
+              "body": "yd is deployed [here](https://gnosisscan.io/address/0xeE95A62b749d8a2520E0128D9b3aCa241269024b)",
+              "createdAt": "2025-08-10T14:49:16Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/breadchain/issues/136#issuecomment-3172686418",
+              "viewerDidAuthor": false
+            }
+          ]
+        },
+        {
+          "number": 132,
+          "title": "Add timelock for upgrades ",
+          "author": "RonTuretzky",
+          "created_at": "2025-06-18T17:59:15Z",
+          "updated_at": "2025-08-06T16:26:27Z",
+          "html_url": "https://github.com/BreadchainCoop/breadchain/issues/132",
+          "labels": [
+            "enhancement",
+            "help wanted"
+          ],
+          "assignees": [],
+          "comments": [
+            {
+              "id": "IC_kwDOLJ8tZs67j3uD",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "COLLABORATOR",
+              "body": "Reccomending adding this add the multisig level instead of at the smart contract level through a zodiac safe module (can be seen [here](https://app.safe.global/apps/open?safe=gno:0x918dEf5d593F46735f74F9E2B280Fe51AF3A99ad&appUrl=https%3A%2F%2Fzodiac.gnosisguild.org%2F) \n\nthoughts @bagelface @hudsonhrh @lirona ?",
+              "createdAt": "2025-08-02T21:44:44Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/breadchain/issues/132#issuecomment-3146742659",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOLJ8tZs67j9Xx",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "COLLABORATOR",
+              "body": "This could possibly require us to create another nested multsig for upgrades so that we don't incur the timelock delay on standard multisig operations but is still simpler than the implementation cost of implementing this at the smart contract level ",
+              "createdAt": "2025-08-02T22:02:59Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/breadchain/issues/132#issuecomment-3146765809",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOLJ8tZs674U4y",
+              "author": {
+                "login": "hudsonhrh"
+              },
+              "authorAssociation": "NONE",
+              "body": "> Reccomending adding this add the multisig level instead of at the smart contract level through a zodiac safe module (can be seen [here](https://app.safe.global/apps/open?safe=gno:0x918dEf5d593F46735f74F9E2B280Fe51AF3A99ad&appUrl=https%3A%2F%2Fzodiac.gnosisguild.org%2F)\n> \n> thoughts [@bagelface](https://github.com/bagelface) [@hudsonhrh](https://github.com/hudsonhrh) [@lirona](https://github.com/lirona) ?\n\nI think it would be better practice to do it at the smart contract level. Better guarantee for bread holders that the time lock will actually happen. multisig could always remove the time lock on the multisig for upgrades",
+              "createdAt": "2025-08-04T19:39:05Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/breadchain/issues/132#issuecomment-3152105010",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOLJ8tZs68Fx3G",
+              "author": {
+                "login": "bagelface"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "Sorry, can you elaborate on this? \"Ensure upgrades can only go through after q timelock\" isn't very descriptive and I'm trying to understand the motivation and mechanism being proposed.\n\nUPDATE: Talked with Ron about this async. The proposal is to add a \"timelock\" (i.e. delayed execution or a period of time where an upgrade is easily revertable) to the upgrade functionality of the contract. For example, a transaction is initiated, signers sign the tx, when the threshold is met a countdown timer starts (of, say 48 hours), and only after the timer has expired can the transaction be executed. The motivation is increased security so that we can't all be held hostage at a conference or something and forced to sign and execute a malicious upgrade.",
+              "createdAt": "2025-08-05T15:13:54Z",
+              "includesCreatedEdit": true,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/breadchain/issues/132#issuecomment-3155631558",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOLJ8tZs68IMda",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "COLLABORATOR",
+              "body": "me and @bagelface talked async",
+              "createdAt": "2025-08-05T19:02:25Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/breadchain/issues/132#issuecomment-3156264794",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOLJ8tZs68IM_P",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "COLLABORATOR",
+              "body": "step 1 seems easy to add to the safe and we should prob add timelocks at the sc level at a later date as @hudsonhrh reccomends",
+              "createdAt": "2025-08-05T19:03:17Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/breadchain/issues/132#issuecomment-3156266959",
+              "viewerDidAuthor": false
+            }
+          ]
+        },
+        {
+          "number": 122,
+          "title": "Update Foundry Template",
+          "author": "RonTuretzky",
+          "created_at": "2025-01-02T12:07:29Z",
+          "updated_at": "2025-01-03T16:47:35Z",
+          "html_url": "https://github.com/BreadchainCoop/breadchain/issues/122",
+          "labels": [
+            "enhancement",
+            "good first issue"
+          ],
+          "assignees": [],
+          "comments": [
+            {
+              "id": "IC_kwDOLJ8tZs6ZJ3V0",
+              "author": {
+                "login": "HMSagar2701"
+              },
+              "authorAssociation": "NONE",
+              "body": "Hi @RonTuretzky , Can I work on this issue ?\r\n",
+              "createdAt": "2025-01-03T16:28:32Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/breadchain/issues/122#issuecomment-2569500020",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOLJ8tZs6ZJ9wb",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "COLLABORATOR",
+              "body": "> Hi @RonTuretzky , Can I work on this issue ?\n> \n\nYes please! ",
+              "createdAt": "2025-01-03T16:47:34Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/breadchain/issues/122#issuecomment-2569526299",
+              "viewerDidAuthor": false
+            }
+          ]
+        },
+        {
+          "number": 112,
+          "title": "Refactor contracts to use namespaced storage layouts (ERC-7201)",
+          "author": "bagelface",
+          "created_at": "2024-12-12T21:13:49Z",
+          "updated_at": "2024-12-12T21:13:49Z",
+          "html_url": "https://github.com/BreadchainCoop/breadchain/issues/112",
+          "labels": [
+            "enhancement"
+          ],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 111,
+          "title": "Documentation Scope",
+          "author": "RonTuretzky",
+          "created_at": "2024-12-12T14:58:58Z",
+          "updated_at": "2024-12-12T14:58:58Z",
+          "html_url": "https://github.com/BreadchainCoop/breadchain/issues/111",
+          "labels": [
+            "documentation"
+          ],
+          "assignees": [
+            "daopunk",
+            "diterra-code",
+            "RonTuretzky",
+            "tbsoc"
+          ],
+          "comments": []
+        },
+        {
+          "number": 97,
+          "title": "Testing refactor ",
+          "author": "RonTuretzky",
+          "created_at": "2024-09-22T10:27:17Z",
+          "updated_at": "2024-09-22T10:27:17Z",
+          "html_url": "https://github.com/BreadchainCoop/breadchain/issues/97",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 81,
+          "title": "Coupling project addresses and project distributions ",
+          "author": "RonTuretzky",
+          "created_at": "2024-08-23T08:48:03Z",
+          "updated_at": "2024-08-23T09:13:51Z",
+          "html_url": "https://github.com/BreadchainCoop/breadchain/issues/81",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        }
+      ]
+    },
     "gas-killer-router": {
       "repo_name": "gas-killer-router",
       "github_url": "https://github.com/BreadchainCoop/gas-killer-router",
@@ -4844,6 +5503,92 @@
               "minimizedReason": "",
               "reactionGroups": [],
               "url": "https://github.com/BreadchainCoop/gas-killer-router/issues/36#issuecomment-3424338896",
+              "viewerDidAuthor": false
+            }
+          ]
+        }
+      ]
+    },
+    "app-stacks": {
+      "repo_name": "app-stacks",
+      "github_url": "https://github.com/BreadchainCoop/app-stacks",
+      "issues": [
+        {
+          "number": 6,
+          "title": "add cookie management for Stacks names",
+          "author": "exo404",
+          "created_at": "2026-01-05T14:47:18Z",
+          "updated_at": "2026-01-05T14:47:18Z",
+          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/6",
+          "labels": [],
+          "assignees": [
+            "exo404"
+          ],
+          "comments": []
+        },
+        {
+          "number": 2,
+          "title": "Add local SavingCircles deployment script",
+          "author": "franrolotti",
+          "created_at": "2025-12-08T20:24:00Z",
+          "updated_at": "2025-12-08T20:24:00Z",
+          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/2",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 1,
+          "title": "Abstract BREAD Token \u2014 Show Only USD Balances on Frontend (Inspired by Hyperliquid & Polymarket)",
+          "author": "diterra-code",
+          "created_at": "2025-10-15T21:14:26Z",
+          "updated_at": "2025-10-16T04:28:41Z",
+          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/1",
+          "labels": [
+            "documentation",
+            "help wanted"
+          ],
+          "assignees": [
+            "diterra-code",
+            "RonTuretzky",
+            "tbsoc"
+          ],
+          "comments": [
+            {
+              "id": "IC_kwDOQBrnic7LJut_",
+              "author": {
+                "login": "diterra-code"
+              },
+              "authorAssociation": "NONE",
+              "body": "Dropping this here @RonTuretzky @tbsoc @bagelface for further discussion.\n\n@RonTuretzky what do you think of my mermaid diagram skills? \n\nThe idea is to maybe after MVP of Stacks/Safety Net try to work on this UX.",
+              "createdAt": "2025-10-15T21:17:43Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [
+                {
+                  "content": "HEART",
+                  "users": {
+                    "totalCount": 1
+                  }
+                }
+              ],
+              "url": "https://github.com/BreadchainCoop/app-stacks/issues/1#issuecomment-3408325503",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOQBrnic7LMzo-",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "NONE",
+              "body": "> Dropping this here @RonTuretzky @tbsoc @bagelface for further discussion.\n> \n> @RonTuretzky what do you think of my mermaid diagram skills? \n> \n> The idea is to maybe after MVP of Stacks/Safety Net try to work on this UX.\n\n\n\n\ud83d\ude0d\ud83d\ude0d\ud83d\ude0d\ud83d\ude0d\ud83d\ude0d\n\n\nI think with the lifi widget like we have in the crowdstaking app this is quite doable. ",
+              "createdAt": "2025-10-16T04:28:41Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/app-stacks/issues/1#issuecomment-3409132094",
               "viewerDidAuthor": false
             }
           ]
@@ -5532,6 +6277,21 @@
       "github_url": "https://github.com/BreadchainCoop/saving-circles",
       "issues": [
         {
+          "number": 114,
+          "title": "Hide \"Your Stacks\" section for the alpha group testing",
+          "author": "brendaasfjnso",
+          "created_at": "2026-02-05T00:06:28Z",
+          "updated_at": "2026-02-05T00:06:28Z",
+          "html_url": "https://github.com/BreadchainCoop/saving-circles/issues/114",
+          "labels": [
+            "help wanted"
+          ],
+          "assignees": [
+            "Olaleye-Blessing"
+          ],
+          "comments": []
+        },
+        {
           "number": 113,
           "title": "Code duplication issues ",
           "author": "RonTuretzky",
@@ -5745,22 +6505,6 @@
             "nice to have"
           ],
           "assignees": [
-            "brendaasfjnso"
-          ],
-          "comments": []
-        },
-        {
-          "number": 99,
-          "title": "Check issues regarding wallet connections on the app",
-          "author": "brendaasfjnso",
-          "created_at": "2026-01-21T17:10:44Z",
-          "updated_at": "2026-01-21T17:10:44Z",
-          "html_url": "https://github.com/BreadchainCoop/saving-circles/issues/99",
-          "labels": [
-            "bug"
-          ],
-          "assignees": [
-            "Olaleye-Blessing",
             "brendaasfjnso"
           ],
           "comments": []
@@ -6453,92 +7197,6 @@
               "minimizedReason": "",
               "reactionGroups": [],
               "url": "https://github.com/BreadchainCoop/saving-circles/issues/8#issuecomment-2832375345",
-              "viewerDidAuthor": false
-            }
-          ]
-        }
-      ]
-    },
-    "app-stacks": {
-      "repo_name": "app-stacks",
-      "github_url": "https://github.com/BreadchainCoop/app-stacks",
-      "issues": [
-        {
-          "number": 6,
-          "title": "add cookie management for Stacks names",
-          "author": "exo404",
-          "created_at": "2026-01-05T14:47:18Z",
-          "updated_at": "2026-01-05T14:47:18Z",
-          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/6",
-          "labels": [],
-          "assignees": [
-            "exo404"
-          ],
-          "comments": []
-        },
-        {
-          "number": 2,
-          "title": "Add local SavingCircles deployment script",
-          "author": "franrolotti",
-          "created_at": "2025-12-08T20:24:00Z",
-          "updated_at": "2025-12-08T20:24:00Z",
-          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/2",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 1,
-          "title": "Abstract BREAD Token \u2014 Show Only USD Balances on Frontend (Inspired by Hyperliquid & Polymarket)",
-          "author": "diterra-code",
-          "created_at": "2025-10-15T21:14:26Z",
-          "updated_at": "2025-10-16T04:28:41Z",
-          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/1",
-          "labels": [
-            "documentation",
-            "help wanted"
-          ],
-          "assignees": [
-            "diterra-code",
-            "RonTuretzky",
-            "tbsoc"
-          ],
-          "comments": [
-            {
-              "id": "IC_kwDOQBrnic7LJut_",
-              "author": {
-                "login": "diterra-code"
-              },
-              "authorAssociation": "NONE",
-              "body": "Dropping this here @RonTuretzky @tbsoc @bagelface for further discussion.\n\n@RonTuretzky what do you think of my mermaid diagram skills? \n\nThe idea is to maybe after MVP of Stacks/Safety Net try to work on this UX.",
-              "createdAt": "2025-10-15T21:17:43Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [
-                {
-                  "content": "HEART",
-                  "users": {
-                    "totalCount": 1
-                  }
-                }
-              ],
-              "url": "https://github.com/BreadchainCoop/app-stacks/issues/1#issuecomment-3408325503",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOQBrnic7LMzo-",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "NONE",
-              "body": "> Dropping this here @RonTuretzky @tbsoc @bagelface for further discussion.\n> \n> @RonTuretzky what do you think of my mermaid diagram skills? \n> \n> The idea is to maybe after MVP of Stacks/Safety Net try to work on this UX.\n\n\n\n\ud83d\ude0d\ud83d\ude0d\ud83d\ude0d\ud83d\ude0d\ud83d\ude0d\n\n\nI think with the lifi widget like we have in the crowdstaking app this is quite doable. ",
-              "createdAt": "2025-10-16T04:28:41Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/app-stacks/issues/1#issuecomment-3409132094",
               "viewerDidAuthor": false
             }
           ]
@@ -10178,522 +10836,6 @@
           "created_at": "2025-10-06T01:55:25Z",
           "updated_at": "2025-10-06T01:55:25Z",
           "html_url": "https://github.com/BreadchainCoop/bread-ui-kit/issues/3",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        }
-      ]
-    },
-    "breadchain": {
-      "repo_name": "breadchain",
-      "github_url": "https://github.com/BreadchainCoop/breadchain",
-      "issues": [
-        {
-          "number": 173,
-          "title": "Rename this repo",
-          "author": "tbsoc",
-          "created_at": "2025-08-11T09:54:00Z",
-          "updated_at": "2025-08-11T09:54:00Z",
-          "html_url": "https://github.com/BreadchainCoop/breadchain/issues/173",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 172,
-          "title": "Test Upgrade Simulation for Latest Release",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-10T13:16:58Z",
-          "updated_at": "2025-08-10T13:16:58Z",
-          "html_url": "https://github.com/BreadchainCoop/breadchain/issues/172",
-          "labels": [
-            "question"
-          ],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 171,
-          "title": "Release v1.0.5",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-10T13:00:36Z",
-          "updated_at": "2025-08-10T13:00:36Z",
-          "html_url": "https://github.com/BreadchainCoop/breadchain/issues/171",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 170,
-          "title": "Voting Boost for Users with BREAD Transactions",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-10T12:55:47Z",
-          "updated_at": "2025-08-10T13:12:44Z",
-          "html_url": "https://github.com/BreadchainCoop/breadchain/issues/170",
-          "labels": [
-            "enhancement"
-          ],
-          "assignees": [],
-          "comments": [
-            {
-              "id": "IC_kwDOLJ8tZs69GmIf",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "COLLABORATOR",
-              "body": "This may be trivially accounted for by summing up the amount of checkpoints the user has in the last voting cycle, can be easily gamed so unclear if this issue should specify additional parameters, include sybil detection , etc. ",
-              "createdAt": "2025-08-10T13:12:44Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/breadchain/issues/170#issuecomment-3172622879",
-              "viewerDidAuthor": false
-            }
-          ]
-        },
-        {
-          "number": 169,
-          "title": "Boost for Never Burning BREAD in Previous Cycle",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-10T12:55:44Z",
-          "updated_at": "2025-08-10T13:11:18Z",
-          "html_url": "https://github.com/BreadchainCoop/breadchain/issues/169",
-          "labels": [
-            "enhancement"
-          ],
-          "assignees": [],
-          "comments": [
-            {
-              "id": "IC_kwDOLJ8tZs69Gl6b",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "COLLABORATOR",
-              "body": "This issue is non trivial, as ERC20Votes does not specify whether a balance decrease is a burn or a transfer, but by cross-referencing with `getPastTotalSupply` , we may be able to ascertain whether a balance decrease is a burn or a transfer (as a transfer should not decrease the total supply). there may be conflicts with other users burns at the same `timepoint` potentially creating a obfuscation , needs to be looked into further. ",
-              "createdAt": "2025-08-10T13:11:18Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/breadchain/issues/169#issuecomment-3172621979",
-              "viewerDidAuthor": false
-            }
-          ]
-        },
-        {
-          "number": 168,
-          "title": "Boost for Baking at Least 10 BREAD in Previous Cycle",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-10T12:55:43Z",
-          "updated_at": "2025-08-10T13:04:50Z",
-          "html_url": "https://github.com/BreadchainCoop/breadchain/issues/168",
-          "labels": [
-            "enhancement"
-          ],
-          "assignees": [],
-          "comments": [
-            {
-              "id": "IC_kwDOLJ8tZs69Gk6S",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "COLLABORATOR",
-              "body": "Open questions: \n\n- what if they baked 10 $BREAD but then burned it? should we account for net $BREAD balance gain?\n- should we use the last ERC20Votes checkpoint to get the balance in the last cycle for reference? \n- is 10 really the number we want to incentivize?",
-              "createdAt": "2025-08-10T13:04:50Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/breadchain/issues/168#issuecomment-3172617874",
-              "viewerDidAuthor": false
-            }
-          ]
-        },
-        {
-          "number": 167,
-          "title": "Add POAP Boost for Attending Community Calls",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-10T12:55:41Z",
-          "updated_at": "2025-08-10T13:03:25Z",
-          "html_url": "https://github.com/BreadchainCoop/breadchain/issues/167",
-          "labels": [
-            "enhancement"
-          ],
-          "assignees": [],
-          "comments": [
-            {
-              "id": "IC_kwDOLJ8tZs69Gkrh",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "COLLABORATOR",
-              "body": "seems this would be as simple as #166 ",
-              "createdAt": "2025-08-10T13:03:25Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/breadchain/issues/167#issuecomment-3172616929",
-              "viewerDidAuthor": false
-            }
-          ]
-        },
-        {
-          "number": 166,
-          "title": "Voting Boost for TBS NFT Holders",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-10T12:55:37Z",
-          "updated_at": "2025-08-10T13:02:50Z",
-          "html_url": "https://github.com/BreadchainCoop/breadchain/issues/166",
-          "labels": [
-            "enhancement"
-          ],
-          "assignees": [],
-          "comments": [
-            {
-              "id": "IC_kwDOLJ8tZs69Gkl3",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "COLLABORATOR",
-              "body": "@secbajor please advise, with the current impl is it as simple as just using [this](https://github.com/BreadchainCoop/breadchain/blob/dev/script/deploy/DeployNFTMultiplier.s.sol) script and then calling [this](https://github.com/BreadchainCoop/breadchain/blob/d74a84c8c8dce4187040edced2160c828eafb938/src/VotingMultipliers.sol#L49) ? I assume there would be frontend changes necessary as well ",
-              "createdAt": "2025-08-10T13:02:50Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/breadchain/issues/166#issuecomment-3172616567",
-              "viewerDidAuthor": false
-            }
-          ]
-        },
-        {
-          "number": 164,
-          "title": "Release v1.0.4",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-10T12:44:12Z",
-          "updated_at": "2025-08-10T12:44:12Z",
-          "html_url": "https://github.com/BreadchainCoop/breadchain/issues/164",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 156,
-          "title": "Explore Extending VotesExtendedUpgradeable for Variable Delegations",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-06T04:37:13Z",
-          "updated_at": "2025-08-06T04:37:13Z",
-          "html_url": "https://github.com/BreadchainCoop/breadchain/issues/156",
-          "labels": [
-            "enhancement"
-          ],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 142,
-          "title": "Add CI/CD to automatically deploy all contracts to testnet on merge to dev",
-          "author": "RonTuretzky",
-          "created_at": "2025-07-20T01:18:44Z",
-          "updated_at": "2025-07-20T01:18:44Z",
-          "html_url": "https://github.com/BreadchainCoop/breadchain/issues/142",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 141,
-          "title": "Automate Upgrade Safety Check in CI Pipeline",
-          "author": "RonTuretzky",
-          "created_at": "2025-07-20T01:16:40Z",
-          "updated_at": "2025-07-20T01:16:40Z",
-          "html_url": "https://github.com/BreadchainCoop/breadchain/issues/141",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 136,
-          "title": "Gelato Automation",
-          "author": "RonTuretzky",
-          "created_at": "2025-06-26T18:35:52Z",
-          "updated_at": "2025-08-10T14:49:16Z",
-          "html_url": "https://github.com/BreadchainCoop/breadchain/issues/136",
-          "labels": [],
-          "assignees": [
-            "lirona"
-          ],
-          "comments": [
-            {
-              "id": "IC_kwDOLJ8tZs652kP-",
-              "author": {
-                "login": "lirona"
-              },
-              "authorAssociation": "COLLABORATOR",
-              "body": "so will create an automation that will check daily for available yield and distribute if possible",
-              "createdAt": "2025-07-25T14:30:32Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/breadchain/issues/136#issuecomment-3118089214",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOLJ8tZs6566_X",
-              "author": {
-                "login": "diterra-code"
-              },
-              "authorAssociation": "NONE",
-              "body": "@lirona should be monthly i assume. @RonTuretzky ",
-              "createdAt": "2025-07-25T16:29:28Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/breadchain/issues/136#issuecomment-3119230935",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOLJ8tZs659m3U",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "COLLABORATOR",
-              "body": "yea but it's safer to just check once a day over like once an hour or whatever \ntheoretically someone can distribute ahead of the automation but it doesn't really matter @diterra-code \n\nthe distribution frequency is determined at the smart contract level that automation doesn't affect it anyways ",
-              "createdAt": "2025-07-25T18:35:29Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [
-                {
-                  "content": "THUMBS_UP",
-                  "users": {
-                    "totalCount": 1
-                  }
-                }
-              ],
-              "url": "https://github.com/BreadchainCoop/breadchain/issues/136#issuecomment-3119934932",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOLJ8tZs69G1pS",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "COLLABORATOR",
-              "body": "yd is deployed [here](https://gnosisscan.io/address/0xeE95A62b749d8a2520E0128D9b3aCa241269024b)",
-              "createdAt": "2025-08-10T14:49:16Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/breadchain/issues/136#issuecomment-3172686418",
-              "viewerDidAuthor": false
-            }
-          ]
-        },
-        {
-          "number": 132,
-          "title": "Add timelock for upgrades ",
-          "author": "RonTuretzky",
-          "created_at": "2025-06-18T17:59:15Z",
-          "updated_at": "2025-08-06T16:26:27Z",
-          "html_url": "https://github.com/BreadchainCoop/breadchain/issues/132",
-          "labels": [
-            "enhancement",
-            "help wanted"
-          ],
-          "assignees": [],
-          "comments": [
-            {
-              "id": "IC_kwDOLJ8tZs67j3uD",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "COLLABORATOR",
-              "body": "Reccomending adding this add the multisig level instead of at the smart contract level through a zodiac safe module (can be seen [here](https://app.safe.global/apps/open?safe=gno:0x918dEf5d593F46735f74F9E2B280Fe51AF3A99ad&appUrl=https%3A%2F%2Fzodiac.gnosisguild.org%2F) \n\nthoughts @bagelface @hudsonhrh @lirona ?",
-              "createdAt": "2025-08-02T21:44:44Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/breadchain/issues/132#issuecomment-3146742659",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOLJ8tZs67j9Xx",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "COLLABORATOR",
-              "body": "This could possibly require us to create another nested multsig for upgrades so that we don't incur the timelock delay on standard multisig operations but is still simpler than the implementation cost of implementing this at the smart contract level ",
-              "createdAt": "2025-08-02T22:02:59Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/breadchain/issues/132#issuecomment-3146765809",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOLJ8tZs674U4y",
-              "author": {
-                "login": "hudsonhrh"
-              },
-              "authorAssociation": "NONE",
-              "body": "> Reccomending adding this add the multisig level instead of at the smart contract level through a zodiac safe module (can be seen [here](https://app.safe.global/apps/open?safe=gno:0x918dEf5d593F46735f74F9E2B280Fe51AF3A99ad&appUrl=https%3A%2F%2Fzodiac.gnosisguild.org%2F)\n> \n> thoughts [@bagelface](https://github.com/bagelface) [@hudsonhrh](https://github.com/hudsonhrh) [@lirona](https://github.com/lirona) ?\n\nI think it would be better practice to do it at the smart contract level. Better guarantee for bread holders that the time lock will actually happen. multisig could always remove the time lock on the multisig for upgrades",
-              "createdAt": "2025-08-04T19:39:05Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/breadchain/issues/132#issuecomment-3152105010",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOLJ8tZs68Fx3G",
-              "author": {
-                "login": "bagelface"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "Sorry, can you elaborate on this? \"Ensure upgrades can only go through after q timelock\" isn't very descriptive and I'm trying to understand the motivation and mechanism being proposed.\n\nUPDATE: Talked with Ron about this async. The proposal is to add a \"timelock\" (i.e. delayed execution or a period of time where an upgrade is easily revertable) to the upgrade functionality of the contract. For example, a transaction is initiated, signers sign the tx, when the threshold is met a countdown timer starts (of, say 48 hours), and only after the timer has expired can the transaction be executed. The motivation is increased security so that we can't all be held hostage at a conference or something and forced to sign and execute a malicious upgrade.",
-              "createdAt": "2025-08-05T15:13:54Z",
-              "includesCreatedEdit": true,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/breadchain/issues/132#issuecomment-3155631558",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOLJ8tZs68IMda",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "COLLABORATOR",
-              "body": "me and @bagelface talked async",
-              "createdAt": "2025-08-05T19:02:25Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/breadchain/issues/132#issuecomment-3156264794",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOLJ8tZs68IM_P",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "COLLABORATOR",
-              "body": "step 1 seems easy to add to the safe and we should prob add timelocks at the sc level at a later date as @hudsonhrh reccomends",
-              "createdAt": "2025-08-05T19:03:17Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/breadchain/issues/132#issuecomment-3156266959",
-              "viewerDidAuthor": false
-            }
-          ]
-        },
-        {
-          "number": 122,
-          "title": "Update Foundry Template",
-          "author": "RonTuretzky",
-          "created_at": "2025-01-02T12:07:29Z",
-          "updated_at": "2025-01-03T16:47:35Z",
-          "html_url": "https://github.com/BreadchainCoop/breadchain/issues/122",
-          "labels": [
-            "enhancement",
-            "good first issue"
-          ],
-          "assignees": [],
-          "comments": [
-            {
-              "id": "IC_kwDOLJ8tZs6ZJ3V0",
-              "author": {
-                "login": "HMSagar2701"
-              },
-              "authorAssociation": "NONE",
-              "body": "Hi @RonTuretzky , Can I work on this issue ?\r\n",
-              "createdAt": "2025-01-03T16:28:32Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/breadchain/issues/122#issuecomment-2569500020",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOLJ8tZs6ZJ9wb",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "COLLABORATOR",
-              "body": "> Hi @RonTuretzky , Can I work on this issue ?\n> \n\nYes please! ",
-              "createdAt": "2025-01-03T16:47:34Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/breadchain/issues/122#issuecomment-2569526299",
-              "viewerDidAuthor": false
-            }
-          ]
-        },
-        {
-          "number": 112,
-          "title": "Refactor contracts to use namespaced storage layouts (ERC-7201)",
-          "author": "bagelface",
-          "created_at": "2024-12-12T21:13:49Z",
-          "updated_at": "2024-12-12T21:13:49Z",
-          "html_url": "https://github.com/BreadchainCoop/breadchain/issues/112",
-          "labels": [
-            "enhancement"
-          ],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 111,
-          "title": "Documentation Scope",
-          "author": "RonTuretzky",
-          "created_at": "2024-12-12T14:58:58Z",
-          "updated_at": "2024-12-12T14:58:58Z",
-          "html_url": "https://github.com/BreadchainCoop/breadchain/issues/111",
-          "labels": [
-            "documentation"
-          ],
-          "assignees": [
-            "daopunk",
-            "diterra-code",
-            "RonTuretzky",
-            "tbsoc"
-          ],
-          "comments": []
-        },
-        {
-          "number": 97,
-          "title": "Testing refactor ",
-          "author": "RonTuretzky",
-          "created_at": "2024-09-22T10:27:17Z",
-          "updated_at": "2024-09-22T10:27:17Z",
-          "html_url": "https://github.com/BreadchainCoop/breadchain/issues/97",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 81,
-          "title": "Coupling project addresses and project distributions ",
-          "author": "RonTuretzky",
-          "created_at": "2024-08-23T08:48:03Z",
-          "updated_at": "2024-08-23T09:13:51Z",
-          "html_url": "https://github.com/BreadchainCoop/breadchain/issues/81",
           "labels": [],
           "assignees": [],
           "comments": []
