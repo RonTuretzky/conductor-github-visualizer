@@ -789,6 +789,108 @@
         body.light-mode #tooltip .tooltip-title {
             color: #1a1a1a;
         }
+
+        /* Mobile Responsive Styles */
+        @media (max-width: 768px) {
+            #header {
+                padding: 10px 15px;
+            }
+
+            #header h1 {
+                font-size: 14px;
+                letter-spacing: 2px;
+            }
+
+            #header .subtitle {
+                font-size: 10px;
+            }
+
+            #header .org-link {
+                font-size: 10px;
+            }
+
+            /* Stack top buttons */
+            .top-button {
+                padding: 6px 10px;
+                font-size: 11px;
+                gap: 4px;
+            }
+
+            .theme-toggle { right: 10px; top: 70px; }
+            .fit-button { right: 10px; top: 110px; }
+            .lock-button { right: 10px; top: 150px; }
+            .view-toggle { right: 10px; top: 190px; }
+
+            /* Smaller side panels */
+            #status-panel, #legend-panel {
+                padding: 10px;
+                max-width: 140px;
+            }
+
+            #status-panel h3, #legend-panel h3 {
+                font-size: 11px;
+            }
+
+            .status-item, .legend-item {
+                font-size: 10px;
+            }
+
+            .pr-badge {
+                font-size: 9px;
+                padding: 2px 4px;
+            }
+
+            /* Footer */
+            #footer {
+                padding: 8px 15px;
+                font-size: 10px;
+            }
+
+            .controls-hint {
+                display: none;
+            }
+
+            /* Hide menu adjustments */
+            #hide-menu {
+                width: 85%;
+                max-width: 300px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            #tooltip {
+                max-width: 250px;
+                font-size: 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            #header h1 {
+                font-size: 12px;
+                letter-spacing: 1px;
+            }
+
+            #header .subtitle, #header .org-link {
+                display: none;
+            }
+
+            #status-panel, #legend-panel {
+                display: none;
+            }
+
+            .top-button span:last-child {
+                display: none;
+            }
+
+            .top-button {
+                padding: 8px;
+            }
+
+            .theme-toggle { right: 10px; top: 60px; }
+            .fit-button { right: 50px; top: 60px; }
+            .lock-button { right: 90px; top: 60px; }
+            .view-toggle { right: 130px; top: 60px; }
+        }
     </style>
 </head>
 <body>
@@ -1081,8 +1183,9 @@
     let sortMode = 'default';  // 'default', 'alphabetical', 'recent', 'prs', 'issues', 'activity'
     let sortDirection = 'desc'; // 'asc' or 'desc'
 
-    // Avatar texture cache
+    // Avatar texture cache and pending materials waiting for textures
     const avatarTextureCache = new Map();
+    const pendingAvatarMaterials = new Map(); // URL -> [materials waiting for this texture]
 
     // Camera controls
     let cameraAngle = 0.3;
@@ -1158,6 +1261,11 @@
         canvas.addEventListener('mouseleave', onMouseUp);
         canvas.addEventListener('wheel', onMouseWheel, { passive: false });
         canvas.addEventListener('click', onClick);
+
+        // Touch events for mobile
+        canvas.addEventListener('touchstart', onTouchStart, { passive: false });
+        canvas.addEventListener('touchmove', onTouchMove, { passive: false });
+        canvas.addEventListener('touchend', onTouchEnd);
     }
 
     function onWindowResize() {
@@ -1577,12 +1685,15 @@
         const material = new THREE.SpriteMaterial({
             map: placeholderTexture,
             transparent: true,
+            depthTest: false,
+            depthWrite: false,
         });
         const sprite = new THREE.Sprite(material);
 
         // Load the actual avatar image
         if (avatarUrl && !avatarTextureCache.has(avatarUrl)) {
             avatarTextureCache.set(avatarUrl, 'loading');
+            pendingAvatarMaterials.set(avatarUrl, [material]);
 
             const img = new Image();
             // Only use crossOrigin for remote URLs, not local files
@@ -1594,17 +1705,27 @@
                 const texture = createCircularAvatarTexture(img);
                 avatarTextureCache.set(avatarUrl, texture);
 
-                // Update the material with the circular texture
-                material.map = texture;
-                material.needsUpdate = true;
+                // Update ALL pending materials waiting for this texture
+                const pendingMaterials = pendingAvatarMaterials.get(avatarUrl) || [];
+                pendingMaterials.forEach(mat => {
+                    mat.map = texture;
+                    mat.needsUpdate = true;
+                });
+                pendingAvatarMaterials.delete(avatarUrl);
             };
             img.onerror = function() {
                 console.warn('Failed to load avatar:', avatarUrl);
                 avatarTextureCache.set(avatarUrl, 'error');
+                pendingAvatarMaterials.delete(avatarUrl);
             };
             // For local paths, use as-is; for remote, add size param
             img.src = isLocalPath ? avatarUrl : (avatarUrl.includes('?') ? `${avatarUrl}&s=64` : `${avatarUrl}?s=64`);
-        } else if (avatarUrl && avatarTextureCache.get(avatarUrl) !== 'loading' && avatarTextureCache.get(avatarUrl) !== 'error') {
+        } else if (avatarUrl && avatarTextureCache.get(avatarUrl) === 'loading') {
+            // Texture is loading, register this material to be updated when it's ready
+            const pending = pendingAvatarMaterials.get(avatarUrl) || [];
+            pending.push(material);
+            pendingAvatarMaterials.set(avatarUrl, pending);
+        } else if (avatarUrl && avatarTextureCache.get(avatarUrl) !== 'error') {
             // Use cached texture
             material.map = avatarTextureCache.get(avatarUrl);
             material.needsUpdate = true;
@@ -1726,7 +1847,7 @@
         // Repo label
         const repoLabel = createTextSprite(repoName, 0.8, isDarkMode ? '#ffffff' : '#1a1a1a');
         repoLabel.position.set(x, y - 2.5, z);
-        repoLabel.userData = { isDataObject: true };
+        repoLabel.userData.isDataObject = true;
         scene.add(repoLabel);
 
         // Build issues radially around the repo as SQUARES
@@ -1788,7 +1909,7 @@
         // Issue label
         const label = createTextSprite(`#${issue.number}`, 0.5, isDarkMode ? '#eab308' : '#ca8a04');
         label.position.set(x, y + 1, z);
-        label.userData = { isDataObject: true };
+        label.userData.isDataObject = true;
         scene.add(label);
     }
 
@@ -1819,7 +1940,7 @@
         // Repo label (below the repo)
         const repoLabel = createTextSprite(repoName, 0.8, isDarkMode ? '#ffffff' : '#1a1a1a');
         repoLabel.position.set(x, y - 2.5, z);
-        repoLabel.userData = { isDataObject: true };
+        repoLabel.userData.isDataObject = true;
         scene.add(repoLabel);
 
         // Build PRs radially around the repo
@@ -1965,7 +2086,7 @@
         const ciIcon = getCIIcon(node.ci_status);
         const label = createTextSprite(`${labelText} ${ciIcon}`, 0.5, getLabelColor(node.ci_status));
         label.position.set(x, y + 1, z);
-        label.userData = { isDataObject: true };
+        label.userData.isDataObject = true;
         scene.add(label);
 
         // Recursive children (stacked PRs) - continue outward radially
@@ -2447,6 +2568,80 @@
         // cameraAngle stays the same
 
         camera.lookAt(cameraTargetX, 0, cameraTargetZ);
+    }
+
+    // Touch state for mobile
+    let lastTouchX = 0;
+    let lastTouchY = 0;
+    let lastPinchDistance = 0;
+    let isTouching = false;
+    let isPinching = false;
+
+    function onTouchStart(event) {
+        event.preventDefault();
+        if (event.touches.length === 1) {
+            isTouching = true;
+            isPinching = false;
+            lastTouchX = event.touches[0].clientX;
+            lastTouchY = event.touches[0].clientY;
+        } else if (event.touches.length === 2) {
+            isPinching = true;
+            isTouching = false;
+            lastPinchDistance = Math.hypot(
+                event.touches[0].clientX - event.touches[1].clientX,
+                event.touches[0].clientY - event.touches[1].clientY
+            );
+            // Calculate center point for panning
+            lastTouchX = (event.touches[0].clientX + event.touches[1].clientX) / 2;
+            lastTouchY = (event.touches[0].clientY + event.touches[1].clientY) / 2;
+        }
+    }
+
+    function onTouchMove(event) {
+        event.preventDefault();
+        if (event.touches.length === 1 && isTouching) {
+            // Single finger: rotate
+            const deltaX = event.touches[0].clientX - lastTouchX;
+            const deltaY = event.touches[0].clientY - lastTouchY;
+            cameraAngle -= deltaX * 0.005;
+            cameraHeight += deltaY * 0.1;
+            cameraHeight = Math.max(5, Math.min(80, cameraHeight));
+            updateCameraPosition();
+            lastTouchX = event.touches[0].clientX;
+            lastTouchY = event.touches[0].clientY;
+        } else if (event.touches.length === 2 && isPinching) {
+            // Two fingers: pinch to zoom + pan
+            const currentDistance = Math.hypot(
+                event.touches[0].clientX - event.touches[1].clientX,
+                event.touches[0].clientY - event.touches[1].clientY
+            );
+            const centerX = (event.touches[0].clientX + event.touches[1].clientX) / 2;
+            const centerY = (event.touches[0].clientY + event.touches[1].clientY) / 2;
+
+            // Zoom based on pinch
+            const pinchDelta = lastPinchDistance - currentDistance;
+            cameraRadius += pinchDelta * 0.1;
+            cameraRadius = Math.max(10, Math.min(150, cameraRadius));
+
+            // Pan based on center movement
+            const panDeltaX = centerX - lastTouchX;
+            const panDeltaY = centerY - lastTouchY;
+            const panSpeed = 0.02 * cameraRadius;
+            cameraTargetX -= panDeltaX * panSpeed * Math.cos(cameraAngle);
+            cameraTargetZ += panDeltaX * panSpeed * Math.sin(cameraAngle);
+            cameraTargetX -= panDeltaY * panSpeed * Math.sin(cameraAngle) * 0.5;
+            cameraTargetZ -= panDeltaY * panSpeed * Math.cos(cameraAngle) * 0.5;
+
+            updateCameraPosition();
+            lastPinchDistance = currentDistance;
+            lastTouchX = centerX;
+            lastTouchY = centerY;
+        }
+    }
+
+    function onTouchEnd() {
+        isTouching = false;
+        isPinching = false;
     }
 
     function onClick(event) {
