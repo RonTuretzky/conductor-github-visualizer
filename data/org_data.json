@@ -1,278 +1,15 @@
 {
   "organization": "BreadchainCoop",
-  "generated_at": "2026-02-07T00:16:33.307081+00:00",
-  "generation_time_seconds": 150.48,
+  "generated_at": "2026-02-08T00:21:54.743352+00:00",
+  "generation_time_seconds": 154.12,
   "stats": {
     "total_repos": 46,
     "repos_with_prs": 23,
     "repos_with_issues": 27,
-    "total_open_prs": 101,
+    "total_open_prs": 103,
     "total_open_issues": 236
   },
   "trees": {
-    "subgraphform": {
-      "name": "subgraphform",
-      "branch": "main",
-      "repo_name": "subgraphform",
-      "pr_number": null,
-      "pr_title": null,
-      "pr_url": null,
-      "pr_author": null,
-      "last_updated": "2026-02-06T19:53:02Z",
-      "ci_status": "",
-      "github_url": "https://github.com/BreadchainCoop/subgraphform",
-      "is_draft": false,
-      "labels": [],
-      "commits_from_parent": [],
-      "parent_branch_name": null,
-      "children": [
-        {
-          "name": "Add GND integration testing to CI/CD",
-          "branch": "hudsonhrh/graph-local-dev-ci",
-          "repo_name": "subgraphform",
-          "pr_number": 5,
-          "pr_title": "Add GND integration testing to CI/CD",
-          "pr_url": "https://github.com/BreadchainCoop/subgraphform/pull/5",
-          "pr_author": "hudsonhrh",
-          "last_updated": "2025-12-08T09:11:40Z",
-          "ci_status": "pass",
-          "github_url": "https://github.com/BreadchainCoop/subgraphform",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "7606a184133d5ff9abef1b442156f1c6635df1c7",
-              "short_sha": "7606a18",
-              "message": "Add Graph Node Dev Mode (GND) integration testing to CI/CD",
-              "author": "hudsonhrh",
-              "author_login": "hudsonhrh",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/76409831?v=4",
-              "date": "2025-12-08",
-              "html_url": "https://github.com/BreadchainCoop/subgraphform/commit/7606a184133d5ff9abef1b442156f1c6635df1c7"
-            }
-          ],
-          "parent_branch_name": "main",
-          "children": []
-        }
-      ]
-    },
-    "breadchain": {
-      "name": "breadchain",
-      "branch": "dev",
-      "repo_name": "breadchain",
-      "pr_number": null,
-      "pr_title": null,
-      "pr_url": null,
-      "pr_author": null,
-      "last_updated": "2026-02-06T19:16:20Z",
-      "ci_status": "",
-      "github_url": "https://github.com/BreadchainCoop/breadchain",
-      "is_draft": false,
-      "labels": [],
-      "commits_from_parent": [],
-      "parent_branch_name": null,
-      "children": [
-        {
-          "name": "Add voting cycles for more gas efficient distribution",
-          "branch": "feat/voting-cycles",
-          "repo_name": "breadchain",
-          "pr_number": 180,
-          "pr_title": "Add voting cycles for more gas efficient distribution",
-          "pr_url": "https://github.com/BreadchainCoop/breadchain/pull/180",
-          "pr_author": "bagelface",
-          "last_updated": "2026-02-06T19:05:05Z",
-          "ci_status": "pass",
-          "github_url": "https://github.com/BreadchainCoop/breadchain",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "08d702ceb8fac457e452a0cd9de4dd3a3c7e75dd",
-              "short_sha": "08d702c",
-              "message": "feat: add voting cycles for more gas efficient distribution",
-              "author": "bagelface",
-              "author_login": "bagelface",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
-              "date": "2026-02-05",
-              "html_url": "https://github.com/BreadchainCoop/breadchain/commit/08d702ceb8fac457e452a0cd9de4dd3a3c7e75dd"
-            },
-            {
-              "sha": "8f56c2ac2b9cc96c3dbdc41b1c0a1e45061ec0f1",
-              "short_sha": "8f56c2a",
-              "message": "fix: add non-zero check to voting cycle initializer",
-              "author": "bagelface",
-              "author_login": "bagelface",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
-              "date": "2026-02-05",
-              "html_url": "https://github.com/BreadchainCoop/breadchain/commit/8f56c2ac2b9cc96c3dbdc41b1c0a1e45061ec0f1"
-            },
-            {
-              "sha": "ddf1de1d1b1d6192fd3fef2e900d977e65718601",
-              "short_sha": "ddf1de1",
-              "message": "feat: make holderToDistribution mappings internal and send error for stale data ",
-              "author": "bagelface",
-              "author_login": "bagelface",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
-              "date": "2026-02-06",
-              "html_url": "https://github.com/BreadchainCoop/breadchain/commit/ddf1de1d1b1d6192fd3fef2e900d977e65718601"
-            },
-            {
-              "sha": "26b5a9ac4f04a879a7332dcf7c5e379a82cf87cb",
-              "short_sha": "26b5a9a",
-              "message": "refactor: remove test comment that isn't needed",
-              "author": "bagelface",
-              "author_login": "bagelface",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
-              "date": "2026-02-06",
-              "html_url": "https://github.com/BreadchainCoop/breadchain/commit/26b5a9ac4f04a879a7332dcf7c5e379a82cf87cb"
-            }
-          ],
-          "parent_branch_name": "dev",
-          "children": []
-        },
-        {
-          "name": "fix: include current cycle in getCurrentVotingPower",
-          "branch": "fix-voting-power-current",
-          "repo_name": "breadchain",
-          "pr_number": 177,
-          "pr_title": "fix: include current cycle in getCurrentVotingPower",
-          "pr_url": "https://github.com/BreadchainCoop/breadchain/pull/177",
-          "pr_author": "RonTuretzky",
-          "last_updated": "2025-11-30T02:57:14Z",
-          "ci_status": "",
-          "github_url": "https://github.com/BreadchainCoop/breadchain",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "6efd17fadbca941d00633d5f5f56b66da02db1d2",
-              "short_sha": "6efd17f",
-              "message": "fix: include current cycle in getCurrentVotingPower",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-11-30",
-              "html_url": "https://github.com/BreadchainCoop/breadchain/commit/6efd17fadbca941d00633d5f5f56b66da02db1d2"
-            }
-          ],
-          "parent_branch_name": "dev",
-          "children": []
-        },
-        {
-          "name": "Remove minimum voting power requirement",
-          "branch": "remove-min-voting-power",
-          "repo_name": "breadchain",
-          "pr_number": 176,
-          "pr_title": "Remove minimum voting power requirement",
-          "pr_url": "https://github.com/BreadchainCoop/breadchain/pull/176",
-          "pr_author": "RonTuretzky",
-          "last_updated": "2025-11-30T02:35:13Z",
-          "ci_status": "",
-          "github_url": "https://github.com/BreadchainCoop/breadchain",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "9a490906fe675fa06fd16689cb98e5085bddc00f",
-              "short_sha": "9a49090",
-              "message": "feat: remove minimum voting power requirement",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-11-30",
-              "html_url": "https://github.com/BreadchainCoop/breadchain/commit/9a490906fe675fa06fd16689cb98e5085bddc00f"
-            }
-          ],
-          "parent_branch_name": "dev",
-          "children": []
-        },
-        {
-          "name": "Staging deployment",
-          "branch": "staging-deployment",
-          "repo_name": "breadchain",
-          "pr_number": 163,
-          "pr_title": "Staging deployment",
-          "pr_url": "https://github.com/BreadchainCoop/breadchain/pull/163",
-          "pr_author": "RonTuretzky",
-          "last_updated": "2025-08-10T19:05:35Z",
-          "ci_status": "pass",
-          "github_url": "https://github.com/BreadchainCoop/breadchain",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "8d88aace1f68e8552a66fe58b9dc452cf4feffc7",
-              "short_sha": "8d88aac",
-              "message": "Add GitHub Actions workflow for automatic testnet deployment",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-07-22",
-              "html_url": "https://github.com/BreadchainCoop/breadchain/commit/8d88aace1f68e8552a66fe58b9dc452cf4feffc7"
-            },
-            {
-              "sha": "da1e2954166c86a817fa3034670d99f8812ffe98",
-              "short_sha": "da1e295",
-              "message": "Add staging branch trigger to testnet deployment workflow",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-07-22",
-              "html_url": "https://github.com/BreadchainCoop/breadchain/commit/da1e2954166c86a817fa3034670d99f8812ffe98"
-            },
-            {
-              "sha": "dabe818ed1450e9c762af7ae358801e9645d6cf6",
-              "short_sha": "dabe818",
-              "message": "Add comprehensive testnet deployment documentation",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-07-22",
-              "html_url": "https://github.com/BreadchainCoop/breadchain/commit/dabe818ed1450e9c762af7ae358801e9645d6cf6"
-            },
-            {
-              "sha": "cfee5d8886590311335da0444bcdeed518b54af0",
-              "short_sha": "cfee5d8",
-              "message": "Add deployment tracking, verification, and artifact generation",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-07-22",
-              "html_url": "https://github.com/BreadchainCoop/breadchain/commit/cfee5d8886590311335da0444bcdeed518b54af0"
-            },
-            {
-              "sha": "41f20d519b705573ec7a880b68e4bc2a35071d1d",
-              "short_sha": "41f20d5",
-              "message": "Update documentation with verification and artifact details",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-07-22",
-              "html_url": "https://github.com/BreadchainCoop/breadchain/commit/41f20d519b705573ec7a880b68e4bc2a35071d1d"
-            }
-          ],
-          "parent_branch_name": "dev",
-          "children": []
-        },
-        {
-          "name": "feat: add timelock for upgrades",
-          "branch": "issue-132-fix",
-          "repo_name": "breadchain",
-          "pr_number": 145,
-          "pr_title": "feat: add timelock for upgrades",
-          "pr_url": "https://github.com/BreadchainCoop/breadchain/pull/145",
-          "pr_author": "RonTuretzky",
-          "last_updated": "2025-07-22T17:29:02Z",
-          "ci_status": "",
-          "github_url": "https://github.com/BreadchainCoop/breadchain",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [],
-          "parent_branch_name": "dev",
-          "children": []
-        }
-      ]
-    },
     "app-stacks": {
       "name": "app-stacks",
       "branch": "main",
@@ -281,7 +18,7 @@
       "pr_title": null,
       "pr_url": null,
       "pr_author": null,
-      "last_updated": "2026-02-06T00:04:22Z",
+      "last_updated": "2026-02-07T20:43:05Z",
       "ci_status": "",
       "github_url": "https://github.com/BreadchainCoop/app-stacks",
       "is_draft": false,
@@ -423,6 +160,74 @@
           ],
           "parent_branch_name": "main",
           "children": [
+            {
+              "name": "Dev privy",
+              "branch": "dev-privy",
+              "repo_name": "app-stacks",
+              "pr_number": 19,
+              "pr_title": "Dev privy",
+              "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/19",
+              "pr_author": "Olaleye-Blessing",
+              "last_updated": "2026-02-07T20:46:31Z",
+              "ci_status": "pass",
+              "github_url": "https://github.com/BreadchainCoop/app-stacks",
+              "is_draft": false,
+              "labels": [],
+              "commits_from_parent": [
+                {
+                  "sha": "8b99204ff20810e4fb48d8a4f5bfad80befd6bdf",
+                  "short_sha": "8b99204",
+                  "message": "Install updated library",
+                  "author": "Olaleye Blessing",
+                  "author_login": "Olaleye-Blessing",
+                  "author_avatar_url": "https://avatars.githubusercontent.com/u/70102539?v=4",
+                  "date": "2026-01-12",
+                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/8b99204ff20810e4fb48d8a4f5bfad80befd6bdf"
+                },
+                {
+                  "sha": "bd50b3785a62f9d53599404193da3d96f54f40fb",
+                  "short_sha": "bd50b37",
+                  "message": "Show ENS name for circle members",
+                  "author": "Olaleye Blessing",
+                  "author_login": "Olaleye-Blessing",
+                  "author_avatar_url": "https://avatars.githubusercontent.com/u/70102539?v=4",
+                  "date": "2026-01-14",
+                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/bd50b3785a62f9d53599404193da3d96f54f40fb"
+                },
+                {
+                  "sha": "7989f13a78a64c2b849c3a5de606de56d5e55724",
+                  "short_sha": "7989f13",
+                  "message": "Use unlimited approval (max uint256) for deposits",
+                  "author": "Olaleye Blessing",
+                  "author_login": "Olaleye-Blessing",
+                  "author_avatar_url": "https://avatars.githubusercontent.com/u/70102539?v=4",
+                  "date": "2026-01-20",
+                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/7989f13a78a64c2b849c3a5de606de56d5e55724"
+                },
+                {
+                  "sha": "fef8b0bd649a0d5c9fce7d757896249daa8b604f",
+                  "short_sha": "fef8b0b",
+                  "message": "Provide commands to reset anvil accounts",
+                  "author": "Olaleye Blessing",
+                  "author_login": "Olaleye-Blessing",
+                  "author_avatar_url": "https://avatars.githubusercontent.com/u/70102539?v=4",
+                  "date": "2026-01-22",
+                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/fef8b0bd649a0d5c9fce7d757896249daa8b604f"
+                },
+                {
+                  "sha": "0ff24edc31d3179bd3b1cb998b2a590ca8ca16c7",
+                  "short_sha": "0ff24ed",
+                  "message": "Allow numbers only when specifying circle members and deposit amount",
+                  "author": "Olaleye Blessing",
+                  "author_login": "Olaleye-Blessing",
+                  "author_avatar_url": "https://avatars.githubusercontent.com/u/70102539?v=4",
+                  "date": "2026-01-22",
+                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/0ff24edc31d3179bd3b1cb998b2a590ca8ca16c7"
+                }
+              ],
+              "parent_branch_name": "dev",
+              "children": []
+            },
             {
               "name": "Install updated library",
               "branch": "dev-improvement",
@@ -589,7 +394,7 @@
       "pr_title": null,
       "pr_url": null,
       "pr_author": null,
-      "last_updated": "2026-02-05T22:28:35Z",
+      "last_updated": "2026-02-07T20:00:24Z",
       "ci_status": "",
       "github_url": "https://github.com/BreadchainCoop/gas-killer-router",
       "is_draft": false,
@@ -935,6 +740,34 @@
               ],
               "parent_branch_name": "RonTuretzky/k8s-support",
               "children": [
+                {
+                  "name": "fix: point view-only provider and BLS contracts to L2",
+                  "branch": "RonTuretzky/fix-l2-block-ref",
+                  "repo_name": "gas-killer-router",
+                  "pr_number": 101,
+                  "pr_title": "fix: point view-only provider and BLS contracts to L2",
+                  "pr_url": "https://github.com/BreadchainCoop/gas-killer-router/pull/101",
+                  "pr_author": "RonTuretzky",
+                  "last_updated": "2026-02-07T20:00:25Z",
+                  "ci_status": "pass",
+                  "github_url": "https://github.com/BreadchainCoop/gas-killer-router",
+                  "is_draft": false,
+                  "labels": [],
+                  "commits_from_parent": [
+                    {
+                      "sha": "9543361d9ea9ad0285050867ad3d5def2c0494b6",
+                      "short_sha": "9543361",
+                      "message": "fix: route executor to correct chain based on target contract",
+                      "author": "Ron Turetzky",
+                      "author_login": "RonTuretzky",
+                      "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+                      "date": "2026-02-07",
+                      "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/9543361d9ea9ad0285050867ad3d5def2c0494b6"
+                    }
+                  ],
+                  "parent_branch_name": "RonTuretzky/terraform-aws-deploy",
+                  "children": []
+                },
                 {
                   "name": "Dijar llozana/terraform aws deploy",
                   "branch": "DijarLlozana/terraform-aws-deploy",
@@ -1378,6 +1211,269 @@
               "children": []
             }
           ]
+        }
+      ]
+    },
+    "subgraphform": {
+      "name": "subgraphform",
+      "branch": "main",
+      "repo_name": "subgraphform",
+      "pr_number": null,
+      "pr_title": null,
+      "pr_url": null,
+      "pr_author": null,
+      "last_updated": "2026-02-06T19:53:02Z",
+      "ci_status": "",
+      "github_url": "https://github.com/BreadchainCoop/subgraphform",
+      "is_draft": false,
+      "labels": [],
+      "commits_from_parent": [],
+      "parent_branch_name": null,
+      "children": [
+        {
+          "name": "Add GND integration testing to CI/CD",
+          "branch": "hudsonhrh/graph-local-dev-ci",
+          "repo_name": "subgraphform",
+          "pr_number": 5,
+          "pr_title": "Add GND integration testing to CI/CD",
+          "pr_url": "https://github.com/BreadchainCoop/subgraphform/pull/5",
+          "pr_author": "hudsonhrh",
+          "last_updated": "2025-12-08T09:11:40Z",
+          "ci_status": "pass",
+          "github_url": "https://github.com/BreadchainCoop/subgraphform",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "7606a184133d5ff9abef1b442156f1c6635df1c7",
+              "short_sha": "7606a18",
+              "message": "Add Graph Node Dev Mode (GND) integration testing to CI/CD",
+              "author": "hudsonhrh",
+              "author_login": "hudsonhrh",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/76409831?v=4",
+              "date": "2025-12-08",
+              "html_url": "https://github.com/BreadchainCoop/subgraphform/commit/7606a184133d5ff9abef1b442156f1c6635df1c7"
+            }
+          ],
+          "parent_branch_name": "main",
+          "children": []
+        }
+      ]
+    },
+    "breadchain": {
+      "name": "breadchain",
+      "branch": "dev",
+      "repo_name": "breadchain",
+      "pr_number": null,
+      "pr_title": null,
+      "pr_url": null,
+      "pr_author": null,
+      "last_updated": "2026-02-06T19:16:20Z",
+      "ci_status": "",
+      "github_url": "https://github.com/BreadchainCoop/breadchain",
+      "is_draft": false,
+      "labels": [],
+      "commits_from_parent": [],
+      "parent_branch_name": null,
+      "children": [
+        {
+          "name": "Add voting cycles for more gas efficient distribution",
+          "branch": "feat/voting-cycles",
+          "repo_name": "breadchain",
+          "pr_number": 180,
+          "pr_title": "Add voting cycles for more gas efficient distribution",
+          "pr_url": "https://github.com/BreadchainCoop/breadchain/pull/180",
+          "pr_author": "bagelface",
+          "last_updated": "2026-02-06T19:05:05Z",
+          "ci_status": "pass",
+          "github_url": "https://github.com/BreadchainCoop/breadchain",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "08d702ceb8fac457e452a0cd9de4dd3a3c7e75dd",
+              "short_sha": "08d702c",
+              "message": "feat: add voting cycles for more gas efficient distribution",
+              "author": "bagelface",
+              "author_login": "bagelface",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
+              "date": "2026-02-05",
+              "html_url": "https://github.com/BreadchainCoop/breadchain/commit/08d702ceb8fac457e452a0cd9de4dd3a3c7e75dd"
+            },
+            {
+              "sha": "8f56c2ac2b9cc96c3dbdc41b1c0a1e45061ec0f1",
+              "short_sha": "8f56c2a",
+              "message": "fix: add non-zero check to voting cycle initializer",
+              "author": "bagelface",
+              "author_login": "bagelface",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
+              "date": "2026-02-05",
+              "html_url": "https://github.com/BreadchainCoop/breadchain/commit/8f56c2ac2b9cc96c3dbdc41b1c0a1e45061ec0f1"
+            },
+            {
+              "sha": "ddf1de1d1b1d6192fd3fef2e900d977e65718601",
+              "short_sha": "ddf1de1",
+              "message": "feat: make holderToDistribution mappings internal and send error for stale data ",
+              "author": "bagelface",
+              "author_login": "bagelface",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
+              "date": "2026-02-06",
+              "html_url": "https://github.com/BreadchainCoop/breadchain/commit/ddf1de1d1b1d6192fd3fef2e900d977e65718601"
+            },
+            {
+              "sha": "26b5a9ac4f04a879a7332dcf7c5e379a82cf87cb",
+              "short_sha": "26b5a9a",
+              "message": "refactor: remove test comment that isn't needed",
+              "author": "bagelface",
+              "author_login": "bagelface",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
+              "date": "2026-02-06",
+              "html_url": "https://github.com/BreadchainCoop/breadchain/commit/26b5a9ac4f04a879a7332dcf7c5e379a82cf87cb"
+            }
+          ],
+          "parent_branch_name": "dev",
+          "children": []
+        },
+        {
+          "name": "fix: include current cycle in getCurrentVotingPower",
+          "branch": "fix-voting-power-current",
+          "repo_name": "breadchain",
+          "pr_number": 177,
+          "pr_title": "fix: include current cycle in getCurrentVotingPower",
+          "pr_url": "https://github.com/BreadchainCoop/breadchain/pull/177",
+          "pr_author": "RonTuretzky",
+          "last_updated": "2025-11-30T02:57:14Z",
+          "ci_status": "",
+          "github_url": "https://github.com/BreadchainCoop/breadchain",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "6efd17fadbca941d00633d5f5f56b66da02db1d2",
+              "short_sha": "6efd17f",
+              "message": "fix: include current cycle in getCurrentVotingPower",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-11-30",
+              "html_url": "https://github.com/BreadchainCoop/breadchain/commit/6efd17fadbca941d00633d5f5f56b66da02db1d2"
+            }
+          ],
+          "parent_branch_name": "dev",
+          "children": []
+        },
+        {
+          "name": "Remove minimum voting power requirement",
+          "branch": "remove-min-voting-power",
+          "repo_name": "breadchain",
+          "pr_number": 176,
+          "pr_title": "Remove minimum voting power requirement",
+          "pr_url": "https://github.com/BreadchainCoop/breadchain/pull/176",
+          "pr_author": "RonTuretzky",
+          "last_updated": "2025-11-30T02:35:13Z",
+          "ci_status": "",
+          "github_url": "https://github.com/BreadchainCoop/breadchain",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "9a490906fe675fa06fd16689cb98e5085bddc00f",
+              "short_sha": "9a49090",
+              "message": "feat: remove minimum voting power requirement",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-11-30",
+              "html_url": "https://github.com/BreadchainCoop/breadchain/commit/9a490906fe675fa06fd16689cb98e5085bddc00f"
+            }
+          ],
+          "parent_branch_name": "dev",
+          "children": []
+        },
+        {
+          "name": "Staging deployment",
+          "branch": "staging-deployment",
+          "repo_name": "breadchain",
+          "pr_number": 163,
+          "pr_title": "Staging deployment",
+          "pr_url": "https://github.com/BreadchainCoop/breadchain/pull/163",
+          "pr_author": "RonTuretzky",
+          "last_updated": "2025-08-10T19:05:35Z",
+          "ci_status": "pass",
+          "github_url": "https://github.com/BreadchainCoop/breadchain",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "8d88aace1f68e8552a66fe58b9dc452cf4feffc7",
+              "short_sha": "8d88aac",
+              "message": "Add GitHub Actions workflow for automatic testnet deployment",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-07-22",
+              "html_url": "https://github.com/BreadchainCoop/breadchain/commit/8d88aace1f68e8552a66fe58b9dc452cf4feffc7"
+            },
+            {
+              "sha": "da1e2954166c86a817fa3034670d99f8812ffe98",
+              "short_sha": "da1e295",
+              "message": "Add staging branch trigger to testnet deployment workflow",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-07-22",
+              "html_url": "https://github.com/BreadchainCoop/breadchain/commit/da1e2954166c86a817fa3034670d99f8812ffe98"
+            },
+            {
+              "sha": "dabe818ed1450e9c762af7ae358801e9645d6cf6",
+              "short_sha": "dabe818",
+              "message": "Add comprehensive testnet deployment documentation",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-07-22",
+              "html_url": "https://github.com/BreadchainCoop/breadchain/commit/dabe818ed1450e9c762af7ae358801e9645d6cf6"
+            },
+            {
+              "sha": "cfee5d8886590311335da0444bcdeed518b54af0",
+              "short_sha": "cfee5d8",
+              "message": "Add deployment tracking, verification, and artifact generation",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-07-22",
+              "html_url": "https://github.com/BreadchainCoop/breadchain/commit/cfee5d8886590311335da0444bcdeed518b54af0"
+            },
+            {
+              "sha": "41f20d519b705573ec7a880b68e4bc2a35071d1d",
+              "short_sha": "41f20d5",
+              "message": "Update documentation with verification and artifact details",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-07-22",
+              "html_url": "https://github.com/BreadchainCoop/breadchain/commit/41f20d519b705573ec7a880b68e4bc2a35071d1d"
+            }
+          ],
+          "parent_branch_name": "dev",
+          "children": []
+        },
+        {
+          "name": "feat: add timelock for upgrades",
+          "branch": "issue-132-fix",
+          "repo_name": "breadchain",
+          "pr_number": 145,
+          "pr_title": "feat: add timelock for upgrades",
+          "pr_url": "https://github.com/BreadchainCoop/breadchain/pull/145",
+          "pr_author": "RonTuretzky",
+          "last_updated": "2025-07-22T17:29:02Z",
+          "ci_status": "",
+          "github_url": "https://github.com/BreadchainCoop/breadchain",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [],
+          "parent_branch_name": "dev",
+          "children": []
         }
       ]
     },
@@ -4980,6 +5076,216 @@
     }
   },
   "issues": {
+    "app-stacks": {
+      "repo_name": "app-stacks",
+      "github_url": "https://github.com/BreadchainCoop/app-stacks",
+      "issues": [
+        {
+          "number": 6,
+          "title": "add cookie management for Stacks names",
+          "author": "exo404",
+          "created_at": "2026-01-05T14:47:18Z",
+          "updated_at": "2026-01-05T14:47:18Z",
+          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/6",
+          "labels": [],
+          "assignees": [
+            "exo404"
+          ],
+          "comments": []
+        },
+        {
+          "number": 2,
+          "title": "Add local SavingCircles deployment script",
+          "author": "franrolotti",
+          "created_at": "2025-12-08T20:24:00Z",
+          "updated_at": "2025-12-08T20:24:00Z",
+          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/2",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 1,
+          "title": "Abstract BREAD Token \u2014 Show Only USD Balances on Frontend (Inspired by Hyperliquid & Polymarket)",
+          "author": "diterra-code",
+          "created_at": "2025-10-15T21:14:26Z",
+          "updated_at": "2025-10-16T04:28:41Z",
+          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/1",
+          "labels": [
+            "documentation",
+            "help wanted"
+          ],
+          "assignees": [
+            "diterra-code",
+            "RonTuretzky",
+            "tbsoc"
+          ],
+          "comments": [
+            {
+              "id": "IC_kwDOQBrnic7LJut_",
+              "author": {
+                "login": "diterra-code"
+              },
+              "authorAssociation": "NONE",
+              "body": "Dropping this here @RonTuretzky @tbsoc @bagelface for further discussion.\n\n@RonTuretzky what do you think of my mermaid diagram skills? \n\nThe idea is to maybe after MVP of Stacks/Safety Net try to work on this UX.",
+              "createdAt": "2025-10-15T21:17:43Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [
+                {
+                  "content": "HEART",
+                  "users": {
+                    "totalCount": 1
+                  }
+                }
+              ],
+              "url": "https://github.com/BreadchainCoop/app-stacks/issues/1#issuecomment-3408325503",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOQBrnic7LMzo-",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "NONE",
+              "body": "> Dropping this here @RonTuretzky @tbsoc @bagelface for further discussion.\n> \n> @RonTuretzky what do you think of my mermaid diagram skills? \n> \n> The idea is to maybe after MVP of Stacks/Safety Net try to work on this UX.\n\n\n\n\ud83d\ude0d\ud83d\ude0d\ud83d\ude0d\ud83d\ude0d\ud83d\ude0d\n\n\nI think with the lifi widget like we have in the crowdstaking app this is quite doable. ",
+              "createdAt": "2025-10-16T04:28:41Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/app-stacks/issues/1#issuecomment-3409132094",
+              "viewerDidAuthor": false
+            }
+          ]
+        }
+      ]
+    },
+    "gas-killer-router": {
+      "repo_name": "gas-killer-router",
+      "github_url": "https://github.com/BreadchainCoop/gas-killer-router",
+      "issues": [
+        {
+          "number": 99,
+          "title": "fix: cast logs event detection broken in helm integration test",
+          "author": "RonTuretzky",
+          "created_at": "2026-02-05T20:52:59Z",
+          "updated_at": "2026-02-05T20:52:59Z",
+          "html_url": "https://github.com/BreadchainCoop/gas-killer-router/issues/99",
+          "labels": [
+            "bug"
+          ],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 82,
+          "title": "Investigate and disable `attempt_unregistered_handshakes` P2P setting",
+          "author": "bagelface",
+          "created_at": "2025-12-17T21:03:57Z",
+          "updated_at": "2025-12-17T21:05:06Z",
+          "html_url": "https://github.com/BreadchainCoop/gas-killer-router/issues/82",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 56,
+          "title": "Merge `gas-killer-node` into `gas-killer-router` repository",
+          "author": "bagelface",
+          "created_at": "2025-11-26T22:32:11Z",
+          "updated_at": "2025-11-26T22:36:48Z",
+          "html_url": "https://github.com/BreadchainCoop/gas-killer-router/issues/56",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 55,
+          "title": "Migrate `gas-killer-router` to use `commonware-restaking` crate",
+          "author": "bagelface",
+          "created_at": "2025-11-26T22:31:48Z",
+          "updated_at": "2025-11-26T22:34:37Z",
+          "html_url": "https://github.com/BreadchainCoop/gas-killer-router/issues/55",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 54,
+          "title": "Meta Issue: Migrate `gas-killer-router` to new library-based architecture",
+          "author": "bagelface",
+          "created_at": "2025-11-26T22:31:14Z",
+          "updated_at": "2025-11-26T22:31:14Z",
+          "html_url": "https://github.com/BreadchainCoop/gas-killer-router/issues/54",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 36,
+          "title": "implement more checks for gas killer requests",
+          "author": "junkicide",
+          "created_at": "2025-09-27T17:13:00Z",
+          "updated_at": "2025-10-21T01:40:36Z",
+          "html_url": "https://github.com/BreadchainCoop/gas-killer-router/issues/36",
+          "labels": [
+            "enhancement"
+          ],
+          "assignees": [
+            "junkicide"
+          ],
+          "comments": [
+            {
+              "id": "IC_kwDOPHRmPM7Hmkne",
+              "author": {
+                "login": "bagelface"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "Can you be more specific with this issue. I'm assuming it's with regards to request validation for the ingress component?",
+              "createdAt": "2025-09-29T19:44:05Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/gas-killer-router/issues/36#issuecomment-3348777438",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOPHRmPM7MFfUZ",
+              "author": {
+                "login": "crystal503"
+              },
+              "authorAssociation": "NONE",
+              "body": "@junkicide can we have more details for this issue?",
+              "createdAt": "2025-10-20T22:40:28Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/gas-killer-router/issues/36#issuecomment-3423991065",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOPHRmPM7MG0PQ",
+              "author": {
+                "login": "junkicide"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "need to cover more possibilities [here](https://github.com/BreadchainCoop/gas-killer-router/blob/7730ea412255480194a7f3a5b51db63269d84e74/src/usecases/gas_killer/ingress.rs#L28C7-L33C43)",
+              "createdAt": "2025-10-21T01:40:36Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/gas-killer-router/issues/36#issuecomment-3424338896",
+              "viewerDidAuthor": false
+            }
+          ]
+        }
+      ]
+    },
     "breadchain": {
       "repo_name": "breadchain",
       "github_url": "https://github.com/BreadchainCoop/breadchain",
@@ -5493,216 +5799,6 @@
           "labels": [],
           "assignees": [],
           "comments": []
-        }
-      ]
-    },
-    "app-stacks": {
-      "repo_name": "app-stacks",
-      "github_url": "https://github.com/BreadchainCoop/app-stacks",
-      "issues": [
-        {
-          "number": 6,
-          "title": "add cookie management for Stacks names",
-          "author": "exo404",
-          "created_at": "2026-01-05T14:47:18Z",
-          "updated_at": "2026-01-05T14:47:18Z",
-          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/6",
-          "labels": [],
-          "assignees": [
-            "exo404"
-          ],
-          "comments": []
-        },
-        {
-          "number": 2,
-          "title": "Add local SavingCircles deployment script",
-          "author": "franrolotti",
-          "created_at": "2025-12-08T20:24:00Z",
-          "updated_at": "2025-12-08T20:24:00Z",
-          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/2",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 1,
-          "title": "Abstract BREAD Token \u2014 Show Only USD Balances on Frontend (Inspired by Hyperliquid & Polymarket)",
-          "author": "diterra-code",
-          "created_at": "2025-10-15T21:14:26Z",
-          "updated_at": "2025-10-16T04:28:41Z",
-          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/1",
-          "labels": [
-            "documentation",
-            "help wanted"
-          ],
-          "assignees": [
-            "diterra-code",
-            "RonTuretzky",
-            "tbsoc"
-          ],
-          "comments": [
-            {
-              "id": "IC_kwDOQBrnic7LJut_",
-              "author": {
-                "login": "diterra-code"
-              },
-              "authorAssociation": "NONE",
-              "body": "Dropping this here @RonTuretzky @tbsoc @bagelface for further discussion.\n\n@RonTuretzky what do you think of my mermaid diagram skills? \n\nThe idea is to maybe after MVP of Stacks/Safety Net try to work on this UX.",
-              "createdAt": "2025-10-15T21:17:43Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [
-                {
-                  "content": "HEART",
-                  "users": {
-                    "totalCount": 1
-                  }
-                }
-              ],
-              "url": "https://github.com/BreadchainCoop/app-stacks/issues/1#issuecomment-3408325503",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOQBrnic7LMzo-",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "NONE",
-              "body": "> Dropping this here @RonTuretzky @tbsoc @bagelface for further discussion.\n> \n> @RonTuretzky what do you think of my mermaid diagram skills? \n> \n> The idea is to maybe after MVP of Stacks/Safety Net try to work on this UX.\n\n\n\n\ud83d\ude0d\ud83d\ude0d\ud83d\ude0d\ud83d\ude0d\ud83d\ude0d\n\n\nI think with the lifi widget like we have in the crowdstaking app this is quite doable. ",
-              "createdAt": "2025-10-16T04:28:41Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/app-stacks/issues/1#issuecomment-3409132094",
-              "viewerDidAuthor": false
-            }
-          ]
-        }
-      ]
-    },
-    "gas-killer-router": {
-      "repo_name": "gas-killer-router",
-      "github_url": "https://github.com/BreadchainCoop/gas-killer-router",
-      "issues": [
-        {
-          "number": 99,
-          "title": "fix: cast logs event detection broken in helm integration test",
-          "author": "RonTuretzky",
-          "created_at": "2026-02-05T20:52:59Z",
-          "updated_at": "2026-02-05T20:52:59Z",
-          "html_url": "https://github.com/BreadchainCoop/gas-killer-router/issues/99",
-          "labels": [
-            "bug"
-          ],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 82,
-          "title": "Investigate and disable `attempt_unregistered_handshakes` P2P setting",
-          "author": "bagelface",
-          "created_at": "2025-12-17T21:03:57Z",
-          "updated_at": "2025-12-17T21:05:06Z",
-          "html_url": "https://github.com/BreadchainCoop/gas-killer-router/issues/82",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 56,
-          "title": "Merge `gas-killer-node` into `gas-killer-router` repository",
-          "author": "bagelface",
-          "created_at": "2025-11-26T22:32:11Z",
-          "updated_at": "2025-11-26T22:36:48Z",
-          "html_url": "https://github.com/BreadchainCoop/gas-killer-router/issues/56",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 55,
-          "title": "Migrate `gas-killer-router` to use `commonware-restaking` crate",
-          "author": "bagelface",
-          "created_at": "2025-11-26T22:31:48Z",
-          "updated_at": "2025-11-26T22:34:37Z",
-          "html_url": "https://github.com/BreadchainCoop/gas-killer-router/issues/55",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 54,
-          "title": "Meta Issue: Migrate `gas-killer-router` to new library-based architecture",
-          "author": "bagelface",
-          "created_at": "2025-11-26T22:31:14Z",
-          "updated_at": "2025-11-26T22:31:14Z",
-          "html_url": "https://github.com/BreadchainCoop/gas-killer-router/issues/54",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 36,
-          "title": "implement more checks for gas killer requests",
-          "author": "junkicide",
-          "created_at": "2025-09-27T17:13:00Z",
-          "updated_at": "2025-10-21T01:40:36Z",
-          "html_url": "https://github.com/BreadchainCoop/gas-killer-router/issues/36",
-          "labels": [
-            "enhancement"
-          ],
-          "assignees": [
-            "junkicide"
-          ],
-          "comments": [
-            {
-              "id": "IC_kwDOPHRmPM7Hmkne",
-              "author": {
-                "login": "bagelface"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "Can you be more specific with this issue. I'm assuming it's with regards to request validation for the ingress component?",
-              "createdAt": "2025-09-29T19:44:05Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/gas-killer-router/issues/36#issuecomment-3348777438",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOPHRmPM7MFfUZ",
-              "author": {
-                "login": "crystal503"
-              },
-              "authorAssociation": "NONE",
-              "body": "@junkicide can we have more details for this issue?",
-              "createdAt": "2025-10-20T22:40:28Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/gas-killer-router/issues/36#issuecomment-3423991065",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOPHRmPM7MG0PQ",
-              "author": {
-                "login": "junkicide"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "need to cover more possibilities [here](https://github.com/BreadchainCoop/gas-killer-router/blob/7730ea412255480194a7f3a5b51db63269d84e74/src/usecases/gas_killer/ingress.rs#L28C7-L33C43)",
-              "createdAt": "2025-10-21T01:40:36Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/gas-killer-router/issues/36#issuecomment-3424338896",
-              "viewerDidAuthor": false
-            }
-          ]
         }
       ]
     },
