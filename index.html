@@ -338,6 +338,321 @@
             margin-top: 15px;
         }
 
+        #hide-menu .menu-actions {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        #hide-menu .menu-actions button {
+            flex: 1;
+            padding: 8px 12px;
+            border-radius: 6px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.1);
+            color: #e0e0e0;
+            cursor: pointer;
+            font-size: 12px;
+            transition: background 0.2s;
+        }
+
+        #hide-menu .menu-actions button:hover {
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        body.light-mode #hide-menu .menu-actions button {
+            background: rgba(0, 0, 0, 0.05);
+            border-color: rgba(0, 0, 0, 0.1);
+            color: #333;
+        }
+
+        body.light-mode #hide-menu .menu-actions button:hover {
+            background: rgba(0, 0, 0, 0.1);
+        }
+
+        /* Project Manager Modal */
+        #project-manager, #project-creator {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 300;
+        }
+
+        .modal-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(5px);
+        }
+
+        .modal-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(15, 15, 25, 0.95);
+            padding: 30px;
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            min-width: 400px;
+            max-width: 600px;
+            max-height: 70vh;
+            overflow-y: auto;
+        }
+
+        body.light-mode .modal-content {
+            background: rgba(255, 255, 255, 0.95);
+            border-color: rgba(0, 0, 0, 0.1);
+        }
+
+        .modal-content h2 {
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        body.light-mode .modal-content h2 {
+            color: #1a1a1a;
+        }
+
+        .modal-actions {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+            justify-content: flex-end;
+        }
+
+        .modal-actions button {
+            padding: 8px 16px;
+            border-radius: 6px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            background: rgba(99, 102, 241, 0.3);
+            color: #e0e0e0;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .modal-actions button:hover {
+            background: rgba(99, 102, 241, 0.5);
+        }
+
+        body.light-mode .modal-actions button {
+            border-color: rgba(0, 0, 0, 0.1);
+            color: #333;
+        }
+
+        /* Project list item styling */
+        .project-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px;
+            margin-bottom: 8px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.2s;
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .project-item:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .project-item.active {
+            background: rgba(99, 102, 241, 0.3);
+            border: 1px solid rgba(99, 102, 241, 0.5);
+        }
+
+        .project-item .name {
+            flex: 1;
+            font-size: 14px;
+        }
+
+        .project-item .repo-count {
+            font-size: 11px;
+            color: #888;
+            margin-right: 10px;
+        }
+
+        .project-item .actions {
+            display: flex;
+            gap: 8px;
+        }
+
+        .project-item button {
+            padding: 4px 8px;
+            font-size: 11px;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+            background: rgba(255, 255, 255, 0.1);
+            color: #e0e0e0;
+        }
+
+        .project-item button:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .project-item button.delete {
+            background: rgba(239, 68, 68, 0.3);
+        }
+
+        .project-item button.delete:hover {
+            background: rgba(239, 68, 68, 0.5);
+        }
+
+        /* Repo selector */
+        #repo-selector {
+            max-height: 300px;
+            overflow-y: auto;
+            margin: 15px 0;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+        }
+
+        .repo-checkbox {
+            display: flex;
+            align-items: center;
+            padding: 6px;
+            margin-bottom: 4px;
+        }
+
+        .repo-checkbox input {
+            margin-right: 10px;
+        }
+
+        .repo-checkbox label {
+            flex: 1;
+            cursor: pointer;
+            font-size: 13px;
+        }
+
+        #project-name-input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.1);
+            color: #e0e0e0;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        body.light-mode #project-name-input {
+            background: rgba(0, 0, 0, 0.05);
+            border-color: rgba(0, 0, 0, 0.1);
+            color: #333;
+        }
+
+        /* Sort Menu Modal */
+        .sort-menu-content {
+            min-width: 450px;
+        }
+
+        .sort-options {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        .sort-option {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 15px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s;
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid transparent;
+        }
+
+        .sort-option:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .sort-option.active {
+            background: rgba(99, 102, 241, 0.3);
+            border-color: rgba(99, 102, 241, 0.5);
+        }
+
+        .sort-option .sort-icon {
+            font-size: 24px;
+            width: 40px;
+            text-align: center;
+            flex-shrink: 0;
+        }
+
+        .sort-option .sort-info {
+            flex: 1;
+        }
+
+        .sort-option .sort-name {
+            font-size: 14px;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 2px;
+        }
+
+        body.light-mode .sort-option .sort-name {
+            color: #1a1a1a;
+        }
+
+        .sort-option .sort-desc {
+            font-size: 12px;
+            color: #888;
+        }
+
+        .sort-option .sort-indicator {
+            font-size: 18px;
+            color: #6366f1;
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+
+        .sort-option.active .sort-indicator {
+            opacity: 1;
+        }
+
+        .sort-direction {
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .sort-direction label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .sort-direction input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+        }
+
+        body.light-mode .sort-option {
+            background: rgba(0, 0, 0, 0.03);
+        }
+
+        body.light-mode .sort-option:hover {
+            background: rgba(0, 0, 0, 0.08);
+        }
+
+        body.light-mode .sort-direction {
+            background: rgba(0, 0, 0, 0.05);
+        }
+
         .loading {
             position: absolute;
             top: 50%;
@@ -371,11 +686,19 @@
             text-align: center;
         }
 
-        /* Top buttons */
-        .top-button {
+        /* Top buttons container */
+        #top-buttons-container {
             position: absolute;
             top: 20px;
+            right: 220px;
             z-index: 100;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        /* Top buttons */
+        .top-button {
             background: rgba(10, 10, 15, 0.85);
             border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 8px;
@@ -388,6 +711,7 @@
             align-items: center;
             gap: 6px;
             transition: all 0.3s ease;
+            white-space: nowrap;
         }
 
         .top-button:hover {
@@ -398,11 +722,6 @@
             background: rgba(34, 197, 94, 0.3);
             border-color: rgba(34, 197, 94, 0.5);
         }
-
-        .theme-toggle { right: 220px; }
-        .fit-button { right: 305px; }
-        .lock-button { right: 380px; }
-        .view-toggle { right: 455px; }
 
         .lock-button.active {
             background: rgba(239, 68, 68, 0.3);
@@ -482,25 +801,32 @@
             <a href="#" id="org-link" class="org-link" target="_blank">View on GitHub</a>
         </div>
 
-        <button class="top-button view-toggle" id="view-toggle" onclick="toggleView()">
-            <span id="view-icon">⬡</span>
-            <span id="view-label">PRs</span>
-        </button>
+        <div id="top-buttons-container">
+            <button class="top-button view-toggle" id="view-toggle" onclick="toggleView()">
+                <span id="view-icon">⬡</span>
+                <span id="view-label">PRs</span>
+            </button>
 
-        <button class="top-button lock-button" id="lock-button" onclick="toggleLock()">
-            <span id="lock-icon">🔓</span>
-            <span id="lock-label">Lock</span>
-        </button>
+            <button class="top-button lock-button" id="lock-button" onclick="toggleLock()">
+                <span id="lock-icon">🔓</span>
+                <span id="lock-label">Lock</span>
+            </button>
 
-        <button class="top-button fit-button" id="fit-button" onclick="fitToScreen()">
-            <span>⊡</span>
-            <span>Fit</span>
-        </button>
+            <button class="top-button fit-button" id="fit-button" onclick="fitToScreen()">
+                <span>⊡</span>
+                <span>Fit</span>
+            </button>
 
-        <button class="top-button theme-toggle" id="theme-toggle" onclick="toggleTheme()">
-            <span id="theme-icon">☾</span>
-            <span id="theme-label">Light</span>
-        </button>
+            <button class="top-button sort-button" id="sort-button" onclick="toggleSortMenu()">
+                <span id="sort-icon">⊞</span>
+                <span id="sort-label">Sort</span>
+            </button>
+
+            <button class="top-button theme-toggle" id="theme-toggle" onclick="toggleTheme()">
+                <span id="theme-icon">☾</span>
+                <span id="theme-label">Light</span>
+            </button>
+        </div>
 
         <div id="status-panel">
             <h3>CI Status</h3>
@@ -556,6 +882,7 @@
 
         <div id="footer">
             <div class="tracking-info">
+                <span id="project-filter-info"></span>
                 Tracking: <span id="repo-count">0</span> repos |
                 <span id="pr-count">0</span> open PRs |
                 Press <kbd>`</kbd> to hide/show
@@ -575,11 +902,115 @@
 
         <div id="hide-menu">
             <h2>Hide/Show Repositories</h2>
+
+            <!-- NEW: Projects section -->
+            <div id="projects-section" class="menu-section">
+                <h4>Projects</h4>
+                <div class="menu-actions">
+                    <button onclick="createProjectFromVisible()">Create from Visible</button>
+                    <button onclick="showProjectManager()">Manage Projects</button>
+                </div>
+                <div id="projects-list"></div>
+            </div>
+
+            <!-- Existing: Show/Hide All buttons -->
+            <div class="menu-actions">
+                <button onclick="showAllRepos()">Show All</button>
+                <button onclick="hideAllRepos()">Hide All</button>
+            </div>
+
+            <!-- Existing: Repos section -->
             <div id="repos-section" class="menu-section">
                 <h4>Repositories</h4>
                 <div id="repos-list"></div>
             </div>
-            <div class="close-hint">Press <kbd>`</kbd> or <kbd>Esc</kbd> to close | <kbd>0</kbd> show all</div>
+
+            <div class="close-hint">Press <kbd>`</kbd> or <kbd>Esc</kbd> to close | <kbd>0</kbd> show all | <kbd>P</kbd> projects</div>
+        </div>
+
+        <div id="project-manager" style="display: none;">
+            <div class="modal-overlay" onclick="closeProjectManager()"></div>
+            <div class="modal-content">
+                <h2>Manage Projects</h2>
+                <div id="project-list-manager"></div>
+                <div class="modal-actions">
+                    <button onclick="closeProjectManager()">Close</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="sort-menu" style="display: none;">
+            <div class="modal-overlay" onclick="closeSortMenu()"></div>
+            <div class="modal-content sort-menu-content">
+                <h2>Sort Repositories</h2>
+
+                <div class="sort-options">
+                    <div class="sort-option" data-sort="default" onclick="selectSortMode('default')">
+                        <span class="sort-icon">⊞</span>
+                        <div class="sort-info">
+                            <div class="sort-name">Default</div>
+                            <div class="sort-desc">Original order</div>
+                        </div>
+                        <span class="sort-indicator">✓</span>
+                    </div>
+
+                    <div class="sort-option" data-sort="alphabetical" onclick="selectSortMode('alphabetical')">
+                        <span class="sort-icon">A-Z</span>
+                        <div class="sort-info">
+                            <div class="sort-name">Alphabetical</div>
+                            <div class="sort-desc">Sort by repository name</div>
+                        </div>
+                        <span class="sort-indicator">✓</span>
+                    </div>
+
+                    <div class="sort-option" data-sort="recent" onclick="selectSortMode('recent')">
+                        <span class="sort-icon">🕐</span>
+                        <div class="sort-info">
+                            <div class="sort-name">Recently Updated</div>
+                            <div class="sort-desc">Sort by last push time</div>
+                        </div>
+                        <span class="sort-indicator">✓</span>
+                    </div>
+
+                    <div class="sort-option" data-sort="prs" onclick="selectSortMode('prs')">
+                        <span class="sort-icon">#</span>
+                        <div class="sort-info">
+                            <div class="sort-name">Open PRs</div>
+                            <div class="sort-desc">Sort by number of pull requests</div>
+                        </div>
+                        <span class="sort-indicator">✓</span>
+                    </div>
+
+                    <div class="sort-option" data-sort="issues" onclick="selectSortMode('issues')">
+                        <span class="sort-icon">!</span>
+                        <div class="sort-info">
+                            <div class="sort-name">Open Issues</div>
+                            <div class="sort-desc">Sort by number of issues</div>
+                        </div>
+                        <span class="sort-indicator">✓</span>
+                    </div>
+
+                    <div class="sort-option" data-sort="activity" onclick="selectSortMode('activity')">
+                        <span class="sort-icon">⚡</span>
+                        <div class="sort-info">
+                            <div class="sort-name">Most Active</div>
+                            <div class="sort-desc">Sort by PRs + issues combined</div>
+                        </div>
+                        <span class="sort-indicator">✓</span>
+                    </div>
+                </div>
+
+                <div class="sort-direction">
+                    <label>
+                        <input type="checkbox" id="sort-direction-toggle" onchange="toggleSortDirection()">
+                        Reverse order (ascending)
+                    </label>
+                </div>
+
+                <div class="modal-actions">
+                    <button onclick="closeSortMenu()">Close</button>
+                </div>
+            </div>
         </div>
 
         <div class="loading" id="loading">
@@ -588,7 +1019,7 @@
         </div>
 
         <div class="controls-hint">
-            Drag to rotate | Shift+drag to pan | Scroll to zoom | Click to open PR | T theme | L lock | ` hide menu
+            Drag to rotate | Shift+drag to pan | Scroll to zoom | Click to open PR | T theme | L lock | S sort | ` hide menu
         </div>
     </div>
 
@@ -641,6 +1072,15 @@
     let hideMenuOpen = false;
     let viewMode = 'prs';  // 'prs' or 'issues'
 
+    // Project filtering state
+    let customProjects = [];           // User-created project definitions
+    let selectedProject = null;        // Currently active project filter (null = show all)
+    let projectFilterActive = false;   // Whether project filtering is enabled
+
+    // Sorting state
+    let sortMode = 'default';  // 'default', 'alphabetical', 'recent', 'prs', 'issues', 'activity'
+    let sortDirection = 'desc'; // 'asc' or 'desc'
+
     // Avatar texture cache
     const avatarTextureCache = new Map();
 
@@ -654,12 +1094,19 @@
     let isPanning = false;
     let lastMouseX = 0;
     let lastMouseY = 0;
+    const keysPressed = { w: false, a: false, s: false, d: false };  // WASD key tracking for camera panning
 
     // ============================================================================
     // Initialization
     // ============================================================================
 
     function init() {
+        // Load custom projects from localStorage
+        customProjects = loadCustomProjects();
+
+        // Load sort preference from localStorage
+        loadSortPreference();
+
         const themeColors = getThemeColors();
         scene = new THREE.Scene();
         scene.background = new THREE.Color(themeColors.background);
@@ -702,6 +1149,7 @@
     function setupEventListeners() {
         window.addEventListener('resize', onWindowResize);
         window.addEventListener('keydown', onKeyDown);
+        window.addEventListener('keyup', onKeyUp);
 
         const canvas = renderer.domElement;
         canvas.addEventListener('mousedown', onMouseDown);
@@ -719,7 +1167,12 @@
     }
 
     function onKeyDown(event) {
-        if (event.key === '`' || event.key === 'Escape') {
+        const key = event.key.toLowerCase();
+
+        // WASD camera panning
+        if (key === 'w' || key === 'a' || key === 's' || key === 'd') {
+            keysPressed[key] = true;
+        } else if (event.key === '`' || event.key === 'Escape') {
             toggleHideMenu();
         } else if (event.key === '0' && hideMenuOpen) {
             showAllRepos();
@@ -729,6 +1182,19 @@
             toggleLock();
         } else if (event.key === 'f' || event.key === 'F') {
             fitToScreen();
+        } else if (event.key === 'p' || event.key === 'P') {
+            showProjectManager();
+        } else if (event.key === 's' || event.key === 'S') {
+            toggleSortMenu();
+        }
+    }
+
+    function onKeyUp(event) {
+        const key = event.key.toLowerCase();
+
+        // Release WASD keys
+        if (key === 'w' || key === 'a' || key === 's' || key === 'd') {
+            keysPressed[key] = false;
         }
     }
 
@@ -741,6 +1207,7 @@
             const response = await fetch(CONFIG.dataUrl);
             if (!response.ok) throw new Error(`Failed to load data: ${response.status}`);
             currentData = await response.json();
+
             document.getElementById('loading').style.display = 'none';
             updateStats();
             buildScene();
@@ -793,15 +1260,26 @@
     function updateFooterCounts() {
         if (!currentData) return;
 
+        const projectInfo = document.getElementById('project-filter-info');
+        let projectInfoText = '';
+        if (projectFilterActive && selectedProject) {
+            const project = customProjects.find(p => p.id === selectedProject);
+            if (project) {
+                projectInfoText = `<span style="color: #6366f1; font-weight: 600;">Project: ${project.name}</span> | `;
+            }
+        }
+
         const trackingInfo = document.querySelector('.tracking-info');
         if (viewMode === 'prs') {
             trackingInfo.innerHTML = `
+                <span id="project-filter-info">${projectInfoText}</span>
                 Tracking: <span id="repo-count">${currentData.stats?.repos_with_prs || 0}</span> repos |
                 <span id="pr-count">${currentData.stats?.total_open_prs || 0}</span> open PRs |
                 Press <kbd>\`</kbd> to hide/show
             `;
         } else {
             trackingInfo.innerHTML = `
+                <span id="project-filter-info">${projectInfoText}</span>
                 Tracking: <span id="repo-count">${currentData.stats?.repos_with_issues || 0}</span> repos |
                 <span id="issue-count">${currentData.stats?.total_open_issues || 0}</span> open issues |
                 Press <kbd>\`</kbd> to hide/show
@@ -892,6 +1370,152 @@
         if (node.children) {
             for (const child of node.children) countCIStatus(child, callback);
         }
+    }
+
+    // ============================================================================
+    // Project Management & Storage
+    // ============================================================================
+
+    const PROJECTS_STORAGE_KEY = 'breadcoop-custom-projects';
+
+    function saveCustomProjects() {
+        const data = {
+            version: 1,
+            projects: customProjects,
+            lastModified: new Date().toISOString()
+        };
+        localStorage.setItem(PROJECTS_STORAGE_KEY, JSON.stringify(data));
+    }
+
+    function loadCustomProjects() {
+        try {
+            const stored = localStorage.getItem(PROJECTS_STORAGE_KEY);
+            if (!stored) return [];
+
+            const data = JSON.parse(stored);
+            return data.projects || [];
+        } catch (error) {
+            console.error('Error loading custom projects:', error);
+            return [];
+        }
+    }
+
+    function addCustomProject(name, repos) {
+        const project = {
+            id: `proj-${Date.now()}`,
+            name: name,
+            repos: repos,
+            color: null,
+            createdAt: new Date().toISOString(),
+            updatedAt: new Date().toISOString()
+        };
+        customProjects.push(project);
+        saveCustomProjects();
+        return project;
+    }
+
+    function updateCustomProject(id, updates) {
+        const project = customProjects.find(p => p.id === id);
+        if (!project) return null;
+
+        Object.assign(project, updates, {
+            updatedAt: new Date().toISOString()
+        });
+        saveCustomProjects();
+        return project;
+    }
+
+    function deleteCustomProject(id) {
+        const index = customProjects.findIndex(p => p.id === id);
+        if (index === -1) return false;
+
+        customProjects.splice(index, 1);
+        if (selectedProject === id) {
+            selectedProject = null;
+            projectFilterActive = false;
+        }
+        saveCustomProjects();
+        return true;
+    }
+
+    // ============================================================================
+    // Repository Sorting
+    // ============================================================================
+
+    function getPRCount(repoName) {
+        if (!currentData?.trees?.[repoName]) return 0;
+        const tree = currentData.trees[repoName];
+        return tree.children?.length || 0;
+    }
+
+    function getIssueCount(repoName) {
+        if (!currentData?.issues?.[repoName]) return 0;
+        const issues = currentData.issues[repoName];
+        return issues.issues?.length || 0;
+    }
+
+    const SORT_MODES = {
+        default: {
+            label: 'Default',
+            icon: '⊞',
+            sortFn: null
+        },
+        alphabetical: {
+            label: 'Alphabetical',
+            icon: 'A-Z',
+            sortFn: (a, b) => a[0].localeCompare(b[0])
+        },
+        recent: {
+            label: 'Recently Updated',
+            icon: '🕐',
+            sortFn: (a, b) => {
+                const dateA = new Date(a[1].pushed_at || 0);
+                const dateB = new Date(b[1].pushed_at || 0);
+                return dateB - dateA;
+            }
+        },
+        prs: {
+            label: 'Open PRs',
+            icon: '#',
+            sortFn: (a, b) => {
+                const countA = getPRCount(a[0]);
+                const countB = getPRCount(b[0]);
+                return countB - countA;
+            }
+        },
+        issues: {
+            label: 'Open Issues',
+            icon: '!',
+            sortFn: (a, b) => {
+                const countA = getIssueCount(a[0]);
+                const countB = getIssueCount(b[0]);
+                return countB - countA;
+            }
+        },
+        activity: {
+            label: 'Most Active',
+            icon: '⚡',
+            sortFn: (a, b) => {
+                const activityA = getPRCount(a[0]) + getIssueCount(a[0]);
+                const activityB = getPRCount(b[0]) + getIssueCount(b[0]);
+                return activityB - activityA;
+            }
+        }
+    };
+
+    function sortRepositories(repos) {
+        if (sortMode === 'default') return repos;
+
+        const sortConfig = SORT_MODES[sortMode];
+        if (!sortConfig || !sortConfig.sortFn) return repos;
+
+        const sorted = [...repos].sort(sortConfig.sortFn);
+
+        if (sortDirection === 'asc') {
+            sorted.reverse();
+        }
+
+        return sorted;
     }
 
     // ============================================================================
@@ -1019,10 +1643,15 @@
     }
 
     function buildPRsScene() {
-        if (!currentData?.trees) return;
+        if (!currentData?.repositories) return;
 
         const themeColors = getThemeColors();
-        const repos = Object.entries(currentData.trees).filter(([name]) => !hiddenRepos.has(name));
+        // Use all repositories, not just ones with PRs
+        let repos = Object.entries(currentData.repositories).filter(([name]) => !hiddenRepos.has(name));
+
+        // Apply sorting
+        repos = sortRepositories(repos);
+
         const numRepos = repos.length;
 
         if (numRepos === 0) return;
@@ -1031,21 +1660,31 @@
         const cols = Math.ceil(Math.sqrt(numRepos));
         const spacing = 25; // Larger spacing for radial PR layout
 
-        repos.forEach(([repoName, tree], index) => {
+        repos.forEach(([repoName, repoData], index) => {
             const col = index % cols;
             const row = Math.floor(index / cols);
             const x = (col - (cols - 1) / 2) * spacing;
             const z = (row - Math.floor(numRepos / cols) / 2) * spacing;
 
-            buildRepoTree(tree, x, 0, z, repoName, themeColors);
+            // If repo has PRs, build full tree. Otherwise, just a blue dot.
+            if (repoData.has_prs && currentData.trees[repoName]) {
+                buildRepoTree(currentData.trees[repoName], x, 0, z, repoName, themeColors);
+            } else {
+                buildSimpleRepoDot(repoData, x, 0, z, repoName, themeColors);
+            }
         });
     }
 
     function buildIssuesScene() {
-        if (!currentData?.issues) return;
+        if (!currentData?.repositories) return;
 
         const themeColors = getThemeColors();
-        const repos = Object.entries(currentData.issues).filter(([name]) => !hiddenRepos.has(name));
+        // Use all repositories, not just ones with issues
+        let repos = Object.entries(currentData.repositories).filter(([name]) => !hiddenRepos.has(name));
+
+        // Apply sorting
+        repos = sortRepositories(repos);
+
         const numRepos = repos.length;
 
         if (numRepos === 0) return;
@@ -1060,7 +1699,12 @@
             const x = (col - (cols - 1) / 2) * spacing;
             const z = (row - Math.floor(numRepos / cols) / 2) * spacing;
 
-            buildIssueRepoTree(repoData, x, 0, z, repoName, themeColors);
+            // If repo has issues, build full tree. Otherwise, just a blue dot.
+            if (repoData.has_issues && currentData.issues[repoName]) {
+                buildIssueRepoTree(currentData.issues[repoName], x, 0, z, repoName, themeColors);
+            } else {
+                buildSimpleRepoDot(repoData, x, 0, z, repoName, themeColors);
+            }
         });
     }
 
@@ -1080,7 +1724,7 @@
         hoverableObjects.push(repoSphere);
 
         // Repo label
-        const repoLabel = createTextSprite(repoName, 0.8, '#ffffff');
+        const repoLabel = createTextSprite(repoName, 0.8, isDarkMode ? '#ffffff' : '#1a1a1a');
         repoLabel.position.set(x, y - 2.5, z);
         repoLabel.userData = { isDataObject: true };
         scene.add(repoLabel);
@@ -1142,7 +1786,7 @@
         scene.add(line);
 
         // Issue label
-        const label = createTextSprite(`#${issue.number}`, 0.5, '#eab308');
+        const label = createTextSprite(`#${issue.number}`, 0.5, isDarkMode ? '#eab308' : '#ca8a04');
         label.position.set(x, y + 1, z);
         label.userData = { isDataObject: true };
         scene.add(label);
@@ -1173,7 +1817,7 @@
         hoverableObjects.push(repoSphere);
 
         // Repo label (below the repo)
-        const repoLabel = createTextSprite(repoName, 0.8, '#ffffff');
+        const repoLabel = createTextSprite(repoName, 0.8, isDarkMode ? '#ffffff' : '#1a1a1a');
         repoLabel.position.set(x, y - 2.5, z);
         repoLabel.userData = { isDataObject: true };
         scene.add(repoLabel);
@@ -1194,6 +1838,35 @@
                 buildPRNode(child, childX, childY, childZ, x, y, z, repoName, themeColors, 0, angle);
             });
         }
+    }
+
+    function buildSimpleRepoDot(repoData, x, y, z, repoName, themeColors) {
+        // Simple blue dot for repos without PRs
+        const repoGeom = new THREE.SphereGeometry(1.2, 32, 32);
+        const repoMat = new THREE.MeshPhongMaterial({
+            color: CONFIG.colors.default,
+            emissive: CONFIG.colors.default,
+            emissiveIntensity: 0.2,
+        });
+        const repoSphere = new THREE.Mesh(repoGeom, repoMat);
+        repoSphere.position.set(x, y, z);
+        repoSphere.userData = {
+            isDataObject: true,
+            type: 'repo',
+            name: repoName,
+            url: repoData.html_url,
+            description: repoData.description,
+            projects: repoData.projects
+        };
+        scene.add(repoSphere);
+        clickableObjects.push(repoSphere);
+        hoverableObjects.push(repoSphere);
+
+        // Repo label (below the repo)
+        const repoLabel = createTextSprite(repoName, 0.8, isDarkMode ? '#ffffff' : '#1a1a1a');
+        repoLabel.position.set(x, y - 2.5, z);
+        repoLabel.userData = { isDataObject: true };
+        scene.add(repoLabel);
     }
 
     function buildPRNode(node, x, y, z, parentX, parentY, parentZ, repoName, themeColors, depth, angle = 0) {
@@ -1332,34 +2005,55 @@
     }
 
     function getLabelColor(status) {
-        if (status === 'pass') return '#22c55e';
-        if (status === 'fail') return '#ef4444';
-        if (status === 'pending') return '#eab308';
-        return '#aaaaaa';
+        if (isDarkMode) {
+            if (status === 'pass') return '#22c55e';
+            if (status === 'fail') return '#ef4444';
+            if (status === 'pending') return '#eab308';
+            return '#aaaaaa';
+        } else {
+            if (status === 'pass') return '#15803d';
+            if (status === 'fail') return '#dc2626';
+            if (status === 'pending') return '#ca8a04';
+            return '#525252';
+        }
     }
 
     function createTextSprite(text, scale, color) {
         const canvas = document.createElement('canvas');
         const ctx = canvas.getContext('2d');
-        canvas.width = 512;
+
+        // Set font first to measure text
+        const fontSize = 96;
+        ctx.font = `bold ${fontSize}px -apple-system, BlinkMacSystemFont, sans-serif`;
+
+        // Measure text width and set canvas size accordingly
+        const metrics = ctx.measureText(text);
+        const textWidth = metrics.width;
+        const padding = 40; // Add padding around text
+
+        canvas.width = Math.max(512, textWidth + padding * 2);
         canvas.height = 128;
 
+        // Re-set font after changing canvas size (canvas resets on size change)
+        ctx.font = `bold ${fontSize}px -apple-system, BlinkMacSystemFont, sans-serif`;
         ctx.fillStyle = color;
-        ctx.font = 'bold 48px -apple-system, BlinkMacSystemFont, sans-serif';
         ctx.textAlign = 'center';
         ctx.textBaseline = 'middle';
-        ctx.fillText(text, 256, 64);
+        ctx.fillText(text, canvas.width / 2, canvas.height / 2);
 
         const texture = new THREE.CanvasTexture(canvas);
         texture.minFilter = THREE.LinearFilter;
 
         const material = new THREE.SpriteMaterial({ map: texture, transparent: true });
         const sprite = new THREE.Sprite(material);
-        sprite.scale.set(scale * 4, scale, 1);
+
+        // Scale based on actual canvas width
+        const aspectRatio = canvas.width / canvas.height;
+        sprite.scale.set(scale * aspectRatio, scale, 1);
 
         // Mark as label for zoom-independent scaling
         sprite.userData.isLabel = true;
-        sprite.userData.baseScale = { x: scale * 4, y: scale, z: 1 };
+        sprite.userData.baseScale = { x: scale * aspectRatio, y: scale, z: 1 };
 
         return sprite;
     }
@@ -1369,20 +2063,22 @@
     // ============================================================================
 
     function buildHideMenu() {
+        buildProjectsList();
+        buildReposList();
+    }
+
+    function buildReposList() {
         const reposList = document.getElementById('repos-list');
         reposList.innerHTML = '';
 
-        // Get repos based on current view mode
-        let repoNames = [];
-        if (viewMode === 'prs' && currentData?.trees) {
-            repoNames = Object.keys(currentData.trees);
-        } else if (viewMode === 'issues' && currentData?.issues) {
-            repoNames = Object.keys(currentData.issues);
-        }
+        // Get ALL repos from repositories field
+        if (!currentData?.repositories) return;
+
+        const repoNames = Object.keys(currentData.repositories).sort();
 
         if (repoNames.length === 0) return;
 
-        repoNames.sort().forEach(repoName => {
+        repoNames.forEach(repoName => {
             const isHidden = hiddenRepos.has(repoName);
             const item = document.createElement('div');
             item.className = `menu-item ${isHidden ? 'hidden' : ''}`;
@@ -1405,8 +2101,261 @@
         if (!isLocked) buildScene();
     }
 
+    function buildProjectsList() {
+        const projectsList = document.getElementById('projects-list');
+        if (!projectsList) return;
+
+        projectsList.innerHTML = '';
+
+        if (customProjects.length === 0) {
+            projectsList.innerHTML = '<div style="font-size: 12px; color: #888; padding: 10px;">No projects yet. Create one to organize your repos.</div>';
+            return;
+        }
+
+        customProjects.forEach(project => {
+            const isActive = selectedProject === project.id;
+            const item = document.createElement('div');
+            item.className = `project-item ${isActive ? 'active' : ''}`;
+            item.innerHTML = `
+                <span class="name">${project.name}</span>
+                <span class="repo-count">${project.repos.length} repos</span>
+            `;
+            item.onclick = () => selectProject(project.id);
+            projectsList.appendChild(item);
+        });
+    }
+
+    function selectProject(projectId) {
+        if (selectedProject === projectId) {
+            // Deselect
+            selectedProject = null;
+            projectFilterActive = false;
+            showAllRepos();
+        } else {
+            // Select and filter
+            selectedProject = projectId;
+            projectFilterActive = true;
+            applyProjectFilter(projectId);
+        }
+        buildProjectsList();
+        updateFooterCounts();
+    }
+
+    function applyProjectFilter(projectId) {
+        const project = customProjects.find(p => p.id === projectId);
+        if (!project) return;
+
+        // Hide all repos first
+        if (!currentData?.repositories) return;
+        const allRepos = Object.keys(currentData.repositories);
+
+        // Clear hidden set
+        hiddenRepos.clear();
+
+        // Add all repos that are NOT in this project to hidden set
+        allRepos.forEach(repoName => {
+            if (!project.repos.includes(repoName)) {
+                hiddenRepos.add(repoName);
+            }
+        });
+
+        // Rebuild UI
+        buildHideMenu();
+        if (!isLocked) buildScene();
+    }
+
+    function createProjectFromVisible() {
+        // Get currently visible repos
+        if (!currentData?.repositories) return;
+        const allRepos = Object.keys(currentData.repositories);
+        const visibleRepos = allRepos.filter(name => !hiddenRepos.has(name));
+
+        if (visibleRepos.length === 0) {
+            alert('No repositories are visible. Show some repos first.');
+            return;
+        }
+
+        const projectName = prompt('Enter project name:');
+        if (!projectName) return;
+
+        addCustomProject(projectName, visibleRepos);
+        buildProjectsList();
+    }
+
+    function showProjectManager() {
+        const modal = document.getElementById('project-manager');
+        const listContainer = document.getElementById('project-list-manager');
+
+        listContainer.innerHTML = '';
+
+        if (customProjects.length === 0) {
+            listContainer.innerHTML = '<p style="color: #888;">No projects yet.</p>';
+        } else {
+            customProjects.forEach(project => {
+                const item = document.createElement('div');
+                item.className = 'project-item';
+                item.innerHTML = `
+                    <span class="name">${project.name}</span>
+                    <span class="repo-count">${project.repos.length} repos</span>
+                    <div class="actions">
+                        <button onclick="editProject('${project.id}')">Edit</button>
+                        <button class="delete" onclick="confirmDeleteProject('${project.id}')">Delete</button>
+                    </div>
+                `;
+                listContainer.appendChild(item);
+            });
+        }
+
+        modal.style.display = 'block';
+    }
+
+    function closeProjectManager() {
+        document.getElementById('project-manager').style.display = 'none';
+    }
+
+    function confirmDeleteProject(projectId) {
+        const project = customProjects.find(p => p.id === projectId);
+        if (!project) return;
+
+        if (confirm(`Delete project "${project.name}"?`)) {
+            deleteCustomProject(projectId);
+            showProjectManager(); // Refresh
+            buildProjectsList();
+        }
+    }
+
+    function editProject(projectId) {
+        const project = customProjects.find(p => p.id === projectId);
+        if (!project) return;
+
+        // Simple name edit for now
+        const newName = prompt('Enter new name:', project.name);
+        if (newName && newName !== project.name) {
+            updateCustomProject(projectId, { name: newName });
+            showProjectManager(); // Refresh
+            buildProjectsList();
+        }
+    }
+
+    // ============================================================================
+    // Sort Menu Functions
+    // ============================================================================
+
+    function toggleSortMenu() {
+        const menu = document.getElementById('sort-menu');
+        const isOpen = menu.style.display === 'block';
+
+        if (isOpen) {
+            closeSortMenu();
+        } else {
+            openSortMenu();
+        }
+    }
+
+    function openSortMenu() {
+        const menu = document.getElementById('sort-menu');
+
+        // Update active state
+        document.querySelectorAll('.sort-option').forEach(option => {
+            const sortType = option.getAttribute('data-sort');
+            if (sortType === sortMode) {
+                option.classList.add('active');
+            } else {
+                option.classList.remove('active');
+            }
+        });
+
+        // Update direction checkbox
+        const checkbox = document.getElementById('sort-direction-toggle');
+        checkbox.checked = sortDirection === 'asc';
+
+        menu.style.display = 'block';
+    }
+
+    function closeSortMenu() {
+        document.getElementById('sort-menu').style.display = 'none';
+    }
+
+    function selectSortMode(mode) {
+        sortMode = mode;
+
+        // Update button UI
+        const sortConfig = SORT_MODES[mode];
+        document.getElementById('sort-icon').textContent = sortConfig.icon;
+        document.getElementById('sort-label').textContent = sortConfig.label;
+
+        // Update active state in menu
+        document.querySelectorAll('.sort-option').forEach(option => {
+            const sortType = option.getAttribute('data-sort');
+            if (sortType === mode) {
+                option.classList.add('active');
+            } else {
+                option.classList.remove('active');
+            }
+        });
+
+        // Save to localStorage
+        saveSortPreference();
+
+        // Rebuild scene
+        if (!isLocked) buildScene();
+    }
+
+    function toggleSortDirection() {
+        const checkbox = document.getElementById('sort-direction-toggle');
+        sortDirection = checkbox.checked ? 'asc' : 'desc';
+
+        // Save to localStorage
+        saveSortPreference();
+
+        // Rebuild scene
+        if (!isLocked) buildScene();
+    }
+
+    const SORT_STORAGE_KEY = 'breadcoop-sort-preference';
+
+    function saveSortPreference() {
+        const data = {
+            mode: sortMode,
+            direction: sortDirection
+        };
+        localStorage.setItem(SORT_STORAGE_KEY, JSON.stringify(data));
+    }
+
+    function loadSortPreference() {
+        try {
+            const stored = localStorage.getItem(SORT_STORAGE_KEY);
+            if (!stored) return;
+
+            const data = JSON.parse(stored);
+            sortMode = data.mode || 'default';
+            sortDirection = data.direction || 'desc';
+
+            // Update button UI
+            const sortConfig = SORT_MODES[sortMode];
+            if (sortConfig) {
+                document.getElementById('sort-icon').textContent = sortConfig.icon;
+                document.getElementById('sort-label').textContent = sortConfig.label;
+            }
+        } catch (error) {
+            console.error('Error loading sort preference:', error);
+        }
+    }
+
     function showAllRepos() {
         hiddenRepos.clear();
+        selectedProject = null;
+        projectFilterActive = false;
+        buildHideMenu();
+        if (!isLocked) buildScene();
+    }
+
+    function hideAllRepos() {
+        if (!currentData?.repositories) return;
+        const repoNames = Object.keys(currentData.repositories);
+        repoNames.forEach(name => hiddenRepos.add(name));
+        selectedProject = null;
+        projectFilterActive = false;
         buildHideMenu();
         if (!isLocked) buildScene();
     }
@@ -1467,9 +2416,37 @@
 
     function onMouseWheel(event) {
         event.preventDefault();
-        cameraRadius += event.deltaY * 0.05;
-        cameraRadius = Math.max(10, Math.min(150, cameraRadius));
-        updateCameraPosition();
+
+        // Zoom by moving camera along its view direction (straight line)
+        const zoomSpeed = 3;
+        const zoomDelta = -event.deltaY * 0.01 * zoomSpeed;  // Negative to reverse direction
+
+        // Calculate current view direction (from camera to target)
+        const dx = cameraTargetX - camera.position.x;
+        const dy = 0 - camera.position.y;
+        const dz = cameraTargetZ - camera.position.z;
+        const distance = Math.sqrt(dx * dx + dy * dy + dz * dz);
+
+        // Normalize direction
+        const ndx = dx / distance;
+        const ndy = dy / distance;
+        const ndz = dz / distance;
+
+        // Move camera along view direction
+        camera.position.x += ndx * zoomDelta;
+        camera.position.y += ndy * zoomDelta;
+        camera.position.z += ndz * zoomDelta;
+
+        // Update cameraRadius and cameraHeight to match new position (for other controls to work)
+        const newDx = cameraTargetX - camera.position.x;
+        const newDz = cameraTargetZ - camera.position.z;
+        cameraRadius = Math.sqrt(newDx * newDx + newDz * newDz);
+        cameraHeight = camera.position.y;
+
+        // Don't recalculate angle - keep it stable to prevent flipping
+        // cameraAngle stays the same
+
+        camera.lookAt(cameraTargetX, 0, cameraTargetZ);
     }
 
     function onClick(event) {
@@ -1596,7 +2573,7 @@
             scene.remove(oldGrid);
             oldGrid.geometry.dispose();
             oldGrid.material.dispose();
-            const newGrid = new THREE.GridHelper(100, 50, themeColors.gridColor, themeColors.gridColor);
+            const newGrid = new THREE.GridHelper(200, 50, themeColors.gridColor, themeColors.gridColor);
             newGrid.position.y = -3;
             newGrid.name = 'gridHelper';
             scene.add(newGrid);
@@ -1660,6 +2637,32 @@
 
     function animate() {
         requestAnimationFrame(animate);
+
+        // WASD camera panning
+        const panSpeed = 0.46875;
+        if (keysPressed.w || keysPressed.a || keysPressed.s || keysPressed.d) {
+            const forward = { x: Math.sin(cameraAngle), z: Math.cos(cameraAngle) };
+            const right = { x: Math.cos(cameraAngle), z: -Math.sin(cameraAngle) };
+
+            if (keysPressed.w) {
+                cameraTargetX -= forward.x * panSpeed;
+                cameraTargetZ -= forward.z * panSpeed;
+            }
+            if (keysPressed.s) {
+                cameraTargetX += forward.x * panSpeed;
+                cameraTargetZ += forward.z * panSpeed;
+            }
+            if (keysPressed.a) {
+                cameraTargetX -= right.x * panSpeed;
+                cameraTargetZ -= right.z * panSpeed;
+            }
+            if (keysPressed.d) {
+                cameraTargetX += right.x * panSpeed;
+                cameraTargetZ += right.z * panSpeed;
+            }
+
+            updateCameraPosition();
+        }
 
         // Scale labels to maintain constant apparent size regardless of zoom
         const referenceRadius = 80; // Default camera radius
