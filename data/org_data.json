@@ -1,13 +1,13 @@
 {
   "organization": "BreadchainCoop",
-  "generated_at": "2026-02-12T00:17:27.022462+00:00",
-  "generation_time_seconds": 198.92,
+  "generated_at": "2026-02-13T00:19:04.036148+00:00",
+  "generation_time_seconds": 165.0,
   "stats": {
     "total_repos": 46,
     "repos_with_prs": 23,
     "repos_with_issues": 28,
-    "total_open_prs": 103,
-    "total_open_issues": 234
+    "total_open_prs": 100,
+    "total_open_issues": 237
   },
   "trees": {
     "breadchain": {
@@ -18,7 +18,7 @@
       "pr_title": null,
       "pr_url": null,
       "pr_author": null,
-      "last_updated": "2026-02-11T22:09:05Z",
+      "last_updated": "2026-02-12T22:55:23Z",
       "ci_status": "",
       "github_url": "https://github.com/BreadchainCoop/breadchain",
       "is_draft": false,
@@ -27,124 +27,28 @@
       "parent_branch_name": null,
       "children": [
         {
-          "name": "Add voting cycles for more gas efficient distribution",
-          "branch": "feat/voting-cycles",
+          "name": "Refactor upgrade scripts and docs",
+          "branch": "refactor-upgrade-scripts",
           "repo_name": "breadchain",
-          "pr_number": 180,
-          "pr_title": "Add voting cycles for more gas efficient distribution",
-          "pr_url": "https://github.com/BreadchainCoop/breadchain/pull/180",
+          "pr_number": 182,
+          "pr_title": "Refactor upgrade scripts and docs",
+          "pr_url": "https://github.com/BreadchainCoop/breadchain/pull/182",
           "pr_author": "bagelface",
-          "last_updated": "2026-02-11T22:09:07Z",
+          "last_updated": "2026-02-12T22:58:02Z",
           "ci_status": "pass",
           "github_url": "https://github.com/BreadchainCoop/breadchain",
           "is_draft": false,
           "labels": [],
           "commits_from_parent": [
             {
-              "sha": "08d702ceb8fac457e452a0cd9de4dd3a3c7e75dd",
-              "short_sha": "08d702c",
-              "message": "feat: add voting cycles for more gas efficient distribution",
+              "sha": "817cded942a40aad3876a461fe83c38336ed3e2a",
+              "short_sha": "817cded",
+              "message": "refactor: remove old flattened contracts and simplify upgrade docs",
               "author": "bagelface",
               "author_login": "bagelface",
               "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
-              "date": "2026-02-05",
-              "html_url": "https://github.com/BreadchainCoop/breadchain/commit/08d702ceb8fac457e452a0cd9de4dd3a3c7e75dd"
-            },
-            {
-              "sha": "8f56c2ac2b9cc96c3dbdc41b1c0a1e45061ec0f1",
-              "short_sha": "8f56c2a",
-              "message": "fix: add non-zero check to voting cycle initializer",
-              "author": "bagelface",
-              "author_login": "bagelface",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
-              "date": "2026-02-05",
-              "html_url": "https://github.com/BreadchainCoop/breadchain/commit/8f56c2ac2b9cc96c3dbdc41b1c0a1e45061ec0f1"
-            },
-            {
-              "sha": "ddf1de1d1b1d6192fd3fef2e900d977e65718601",
-              "short_sha": "ddf1de1",
-              "message": "feat: make holderToDistribution mappings internal and send error for stale data ",
-              "author": "bagelface",
-              "author_login": "bagelface",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
-              "date": "2026-02-06",
-              "html_url": "https://github.com/BreadchainCoop/breadchain/commit/ddf1de1d1b1d6192fd3fef2e900d977e65718601"
-            },
-            {
-              "sha": "26b5a9ac4f04a879a7332dcf7c5e379a82cf87cb",
-              "short_sha": "26b5a9a",
-              "message": "refactor: remove test comment that isn't needed",
-              "author": "bagelface",
-              "author_login": "bagelface",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
-              "date": "2026-02-06",
-              "html_url": "https://github.com/BreadchainCoop/breadchain/commit/26b5a9ac4f04a879a7332dcf7c5e379a82cf87cb"
-            },
-            {
-              "sha": "81a200744c8f7fd0bac388e53eccb3f4667aca61",
-              "short_sha": "81a2007",
-              "message": "refactor: make voters a deprecated internal variable and add annotations to pass",
-              "author": "bagelface",
-              "author_login": "bagelface",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
-              "date": "2026-02-11",
-              "html_url": "https://github.com/BreadchainCoop/breadchain/commit/81a200744c8f7fd0bac388e53eccb3f4667aca61"
-            }
-          ],
-          "parent_branch_name": "dev",
-          "children": []
-        },
-        {
-          "name": "fix: include current cycle in getCurrentVotingPower",
-          "branch": "fix-voting-power-current",
-          "repo_name": "breadchain",
-          "pr_number": 177,
-          "pr_title": "fix: include current cycle in getCurrentVotingPower",
-          "pr_url": "https://github.com/BreadchainCoop/breadchain/pull/177",
-          "pr_author": "RonTuretzky",
-          "last_updated": "2026-02-12T00:08:28Z",
-          "ci_status": "",
-          "github_url": "https://github.com/BreadchainCoop/breadchain",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "6efd17fadbca941d00633d5f5f56b66da02db1d2",
-              "short_sha": "6efd17f",
-              "message": "fix: include current cycle in getCurrentVotingPower",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-11-30",
-              "html_url": "https://github.com/BreadchainCoop/breadchain/commit/6efd17fadbca941d00633d5f5f56b66da02db1d2"
-            }
-          ],
-          "parent_branch_name": "dev",
-          "children": []
-        },
-        {
-          "name": "Remove minimum voting power requirement",
-          "branch": "remove-min-voting-power",
-          "repo_name": "breadchain",
-          "pr_number": 176,
-          "pr_title": "Remove minimum voting power requirement",
-          "pr_url": "https://github.com/BreadchainCoop/breadchain/pull/176",
-          "pr_author": "RonTuretzky",
-          "last_updated": "2025-11-30T02:35:13Z",
-          "ci_status": "",
-          "github_url": "https://github.com/BreadchainCoop/breadchain",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "9a490906fe675fa06fd16689cb98e5085bddc00f",
-              "short_sha": "9a49090",
-              "message": "feat: remove minimum voting power requirement",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-11-30",
-              "html_url": "https://github.com/BreadchainCoop/breadchain/commit/9a490906fe675fa06fd16689cb98e5085bddc00f"
+              "date": "2026-02-12",
+              "html_url": "https://github.com/BreadchainCoop/breadchain/commit/817cded942a40aad3876a461fe83c38336ed3e2a"
             }
           ],
           "parent_branch_name": "dev",
@@ -237,6 +141,245 @@
         }
       ]
     },
+    "app-stacks": {
+      "name": "app-stacks",
+      "branch": "main",
+      "repo_name": "app-stacks",
+      "pr_number": null,
+      "pr_title": null,
+      "pr_url": null,
+      "pr_author": null,
+      "last_updated": "2026-02-12T22:51:58Z",
+      "ci_status": "",
+      "github_url": "https://github.com/BreadchainCoop/app-stacks",
+      "is_draft": false,
+      "labels": [],
+      "commits_from_parent": [],
+      "parent_branch_name": null,
+      "children": [
+        {
+          "name": "Add Privy authentication integration",
+          "branch": "RonTuretzky/add-privy-auth",
+          "repo_name": "app-stacks",
+          "pr_number": 17,
+          "pr_title": "Add Privy authentication integration",
+          "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/17",
+          "pr_author": "RonTuretzky",
+          "last_updated": "2026-02-04T18:06:34Z",
+          "ci_status": "pass",
+          "github_url": "https://github.com/BreadchainCoop/app-stacks",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "18a053e8a0211e65f5c6a9caf177cd2380d5813a",
+              "short_sha": "18a053e",
+              "message": "Replace RainbowKit with Privy authentication",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2026-02-04",
+              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/18a053e8a0211e65f5c6a9caf177cd2380d5813a"
+            },
+            {
+              "sha": "34bfaa987bc4fd2ed704bf6dff5ba4ef1a561440",
+              "short_sha": "34bfaa9",
+              "message": "Restore ssr config and Navbar static prop",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2026-02-04",
+              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/34bfaa987bc4fd2ed704bf6dff5ba4ef1a561440"
+            }
+          ],
+          "parent_branch_name": "main",
+          "children": [
+            {
+              "name": "Disable wallet popup on invite link creation page",
+              "branch": "RonTuretzky/disable-wallet-invite",
+              "repo_name": "app-stacks",
+              "pr_number": 18,
+              "pr_title": "Disable wallet popup on invite link creation page",
+              "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/18",
+              "pr_author": "RonTuretzky",
+              "last_updated": "2026-02-04T18:11:29Z",
+              "ci_status": "",
+              "github_url": "https://github.com/BreadchainCoop/app-stacks",
+              "is_draft": false,
+              "labels": [],
+              "commits_from_parent": [
+                {
+                  "sha": "7c3df1b55e787db66942fc49dd0de6a703bceca4",
+                  "short_sha": "7c3df1b",
+                  "message": "Disable wallet popup on invite link creation page",
+                  "author": "Ron Turetzky",
+                  "author_login": "RonTuretzky",
+                  "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+                  "date": "2026-02-04",
+                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/7c3df1b55e787db66942fc49dd0de6a703bceca4"
+                }
+              ],
+              "parent_branch_name": "RonTuretzky/add-privy-auth",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Implement UI design",
+          "branch": "dev",
+          "repo_name": "app-stacks",
+          "pr_number": 5,
+          "pr_title": "Implement UI design",
+          "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/5",
+          "pr_author": "Olaleye-Blessing",
+          "last_updated": "2026-02-12T22:56:40Z",
+          "ci_status": "fail",
+          "github_url": "https://github.com/BreadchainCoop/app-stacks",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "78ba1ea530993071591e848fcff5bee6c240d316",
+              "short_sha": "78ba1ea",
+              "message": "feat(contracts): add local SavingCircles deployment script",
+              "author": "Francisco Rolotti",
+              "author_login": "franrolotti",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
+              "date": "2025-12-09",
+              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/78ba1ea530993071591e848fcff5bee6c240d316"
+            },
+            {
+              "sha": "8201375af7561d5aadfe540a4da3149f8432f6fb",
+              "short_sha": "8201375",
+              "message": "feat: deploy mock BREAD token + bump saving-circles submodule (invite)",
+              "author": "Francisco Rolotti",
+              "author_login": "franrolotti",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
+              "date": "2025-12-18",
+              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/8201375af7561d5aadfe540a4da3149f8432f6fb"
+            },
+            {
+              "sha": "d4ac048146c52ff586c953bdb5d668cca8ef2a0e",
+              "short_sha": "d4ac048",
+              "message": "chore: track saving-circles dev branch and bump submodule",
+              "author": "Francisco Rolotti",
+              "author_login": "franrolotti",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
+              "date": "2025-12-31",
+              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/d4ac048146c52ff586c953bdb5d668cca8ef2a0e"
+            },
+            {
+              "sha": "901991a328fd90fb9f779ec2644ef3909a961c58",
+              "short_sha": "901991a",
+              "message": "docs: add command to update submodules to latest",
+              "author": "Francisco Rolotti",
+              "author_login": "franrolotti",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
+              "date": "2025-12-31",
+              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/901991a328fd90fb9f779ec2644ef3909a961c58"
+            },
+            {
+              "sha": "a910f8c351a59572acb3c84210f70e721d58e3f0",
+              "short_sha": "a910f8c",
+              "message": "Resolve TS error and remove storybook files",
+              "author": "Olaleye Blessing",
+              "author_login": "Olaleye-Blessing",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/70102539?v=4",
+              "date": "2025-12-16",
+              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/a910f8c351a59572acb3c84210f70e721d58e3f0"
+            }
+          ],
+          "parent_branch_name": "main",
+          "children": []
+        },
+        {
+          "name": "Add local SavingCircles deployment script",
+          "branch": "2-add-local-savingcircles-deployment-script",
+          "repo_name": "app-stacks",
+          "pr_number": 4,
+          "pr_title": "Add local SavingCircles deployment script",
+          "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/4",
+          "pr_author": "franrolotti",
+          "last_updated": "2025-12-31T12:31:33Z",
+          "ci_status": "fail",
+          "github_url": "https://github.com/BreadchainCoop/app-stacks",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "78ba1ea530993071591e848fcff5bee6c240d316",
+              "short_sha": "78ba1ea",
+              "message": "feat(contracts): add local SavingCircles deployment script",
+              "author": "Francisco Rolotti",
+              "author_login": "franrolotti",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
+              "date": "2025-12-09",
+              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/78ba1ea530993071591e848fcff5bee6c240d316"
+            },
+            {
+              "sha": "8201375af7561d5aadfe540a4da3149f8432f6fb",
+              "short_sha": "8201375",
+              "message": "feat: deploy mock BREAD token + bump saving-circles submodule (invite)",
+              "author": "Francisco Rolotti",
+              "author_login": "franrolotti",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
+              "date": "2025-12-18",
+              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/8201375af7561d5aadfe540a4da3149f8432f6fb"
+            },
+            {
+              "sha": "d4ac048146c52ff586c953bdb5d668cca8ef2a0e",
+              "short_sha": "d4ac048",
+              "message": "chore: track saving-circles dev branch and bump submodule",
+              "author": "Francisco Rolotti",
+              "author_login": "franrolotti",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
+              "date": "2025-12-31",
+              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/d4ac048146c52ff586c953bdb5d668cca8ef2a0e"
+            },
+            {
+              "sha": "901991a328fd90fb9f779ec2644ef3909a961c58",
+              "short_sha": "901991a",
+              "message": "docs: add command to update submodules to latest",
+              "author": "Francisco Rolotti",
+              "author_login": "franrolotti",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
+              "date": "2025-12-31",
+              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/901991a328fd90fb9f779ec2644ef3909a961c58"
+            }
+          ],
+          "parent_branch_name": "main",
+          "children": []
+        },
+        {
+          "name": "git submodule for stack smart contracts and anvil deployment",
+          "branch": "sb-anvil-deployment",
+          "repo_name": "app-stacks",
+          "pr_number": 3,
+          "pr_title": "git submodule for stack smart contracts and anvil deployment setup",
+          "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/3",
+          "pr_author": "secbajor",
+          "last_updated": "2025-12-08T22:40:44Z",
+          "ci_status": "",
+          "github_url": "https://github.com/BreadchainCoop/app-stacks",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "fedd1f6cfbf1e4c8a280b9c96f6ad9eec7b5ebae",
+              "short_sha": "fedd1f6",
+              "message": "git submodule for stack smart contracts and anvil deployment setup",
+              "author": "Sara",
+              "author_login": "sarace",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/24276454?v=4",
+              "date": "2025-12-08",
+              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/fedd1f6cfbf1e4c8a280b9c96f6ad9eec7b5ebae"
+            }
+          ],
+          "parent_branch_name": "main",
+          "children": []
+        }
+      ]
+    },
     "crowdstaking-v2": {
       "name": "crowdstaking-v2",
       "branch": "main",
@@ -245,7 +388,7 @@
       "pr_title": null,
       "pr_url": null,
       "pr_author": null,
-      "last_updated": "2026-02-11T14:32:57Z",
+      "last_updated": "2026-02-12T20:43:48Z",
       "ci_status": "",
       "github_url": "https://github.com/BreadchainCoop/crowdstaking-v2",
       "is_draft": false,
@@ -253,34 +396,6 @@
       "commits_from_parent": [],
       "parent_branch_name": null,
       "children": [
-        {
-          "name": "Add https:// prefix to project homepage if no protocol prese",
-          "branch": "fixes",
-          "repo_name": "crowdstaking-v2",
-          "pr_number": 392,
-          "pr_title": "Add https:// prefix to project homepage if no protocol present",
-          "pr_url": "https://github.com/BreadchainCoop/crowdstaking-v2/pull/392",
-          "pr_author": "Olaleye-Blessing",
-          "last_updated": "2026-02-11T14:38:49Z",
-          "ci_status": "pass",
-          "github_url": "https://github.com/BreadchainCoop/crowdstaking-v2",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "5625248bdd6d50f97988552854752f66bda30565",
-              "short_sha": "5625248",
-              "message": "Add https:// prefix to project homepage if no protocol present",
-              "author": "Olaleye Blessing",
-              "author_login": "Olaleye-Blessing",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/70102539?v=4",
-              "date": "2026-02-11",
-              "html_url": "https://github.com/BreadchainCoop/crowdstaking-v2/commit/5625248bdd6d50f97988552854752f66bda30565"
-            }
-          ],
-          "parent_branch_name": "main",
-          "children": []
-        },
         {
           "name": "Add User Profile Page with ENS Subdomain Support",
           "branch": "profile-page-final",
@@ -561,595 +676,236 @@
         }
       ]
     },
-    "saving-circles": {
-      "name": "saving-circles",
-      "branch": "dev",
-      "repo_name": "saving-circles",
-      "pr_number": null,
-      "pr_title": null,
-      "pr_url": null,
-      "pr_author": null,
-      "last_updated": "2026-02-11T11:15:04Z",
-      "ci_status": "",
-      "github_url": "https://github.com/BreadchainCoop/saving-circles",
-      "is_draft": false,
-      "labels": [],
-      "commits_from_parent": [],
-      "parent_branch_name": null,
-      "children": [
-        {
-          "name": "Fix decommissioned circle data access in viewer",
-          "branch": "112-decommission-deletes-circle-data-causing-getusercircledata-to-revert",
-          "repo_name": "saving-circles",
-          "pr_number": 117,
-          "pr_title": "Fix decommissioned circle data access in viewer",
-          "pr_url": "https://github.com/BreadchainCoop/saving-circles/pull/117",
-          "pr_author": "franrolotti",
-          "last_updated": "2026-02-11T21:33:14Z",
-          "ci_status": "pass",
-          "github_url": "https://github.com/BreadchainCoop/saving-circles",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "ffb863bea82d2229b28cc8c1a595ea74120ecba1",
-              "short_sha": "ffb863b",
-              "message": "feat: preserve decommissioned circle data for viewer access",
-              "author": "Francisco Rolotti",
-              "author_login": "franrolotti",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-              "date": "2026-02-09",
-              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/ffb863bea82d2229b28cc8c1a595ea74120ecba1"
-            },
-            {
-              "sha": "0fe8d1ba75440b1386a58abfdf56ce859d85d175",
-              "short_sha": "0fe8d1b",
-              "message": "test: handle zero amount and interval in fuzz creation",
-              "author": "Francisco Rolotti",
-              "author_login": "franrolotti",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-              "date": "2026-02-09",
-              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/0fe8d1ba75440b1386a58abfdf56ce859d85d175"
-            }
-          ],
-          "parent_branch_name": "dev",
-          "children": []
-        },
-        {
-          "name": "Assess time based rounds and allow late claims",
-          "branch": "104-assess-time-based-rounds-derive-currentindex-from-time-define-behavior-for-unclaimed-rounds",
-          "repo_name": "saving-circles",
-          "pr_number": 107,
-          "pr_title": "Assess time based rounds and allow late claims",
-          "pr_url": "https://github.com/BreadchainCoop/saving-circles/pull/107",
-          "pr_author": "franrolotti",
-          "last_updated": "2026-02-11T23:16:59Z",
-          "ci_status": "pass",
-          "github_url": "https://github.com/BreadchainCoop/saving-circles",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "a86bfa0f1c176627d6d58f85b7bb0a4b418772cd",
-              "short_sha": "a86bfa0",
-              "message": "feat: make rounds time based and allow late claims",
-              "author": "Francisco Rolotti",
-              "author_login": "franrolotti",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-              "date": "2026-01-28",
-              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/a86bfa0f1c176627d6d58f85b7bb0a4b418772cd"
-            },
-            {
-              "sha": "4a8f59ac3849f8d847f62a5900d32ea8748c59b0",
-              "short_sha": "4a8f59a",
-              "message": "test: update deposit timing fuzz for time-based rounds",
-              "author": "Francisco Rolotti",
-              "author_login": "franrolotti",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-              "date": "2026-01-29",
-              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/4a8f59ac3849f8d847f62a5900d32ea8748c59b0"
-            },
-            {
-              "sha": "a858838d9be368ecdc11876ecf594022224effaf",
-              "short_sha": "a858838",
-              "message": "test: align SavingCirclesMultiRound tests with time-based rounds",
-              "author": "Francisco Rolotti",
-              "author_login": "franrolotti",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-              "date": "2026-01-29",
-              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/a858838d9be368ecdc11876ecf594022224effaf"
-            },
-            {
-              "sha": "6d80f0229efce4d6a92643325c92b6dde200d1bf",
-              "short_sha": "6d80f02",
-              "message": "test: align unit tests with time-based rounds",
-              "author": "Francisco Rolotti",
-              "author_login": "franrolotti",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-              "date": "2026-01-29",
-              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/6d80f0229efce4d6a92643325c92b6dde200d1bf"
-            },
-            {
-              "sha": "fabe307cb613d12b0147b5246b79a7ac446259a5",
-              "short_sha": "fabe307",
-              "message": "fix: disallow claims on decommissionable circles",
-              "author": "Francisco Rolotti",
-              "author_login": "franrolotti",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-              "date": "2026-01-29",
-              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/fabe307cb613d12b0147b5246b79a7ac446259a5"
-            }
-          ],
-          "parent_branch_name": "dev",
-          "children": []
-        },
-        {
-          "name": "Integrate Etherform to saving-circles repo",
-          "branch": "71-integrate-etherform-cicd-deployment-into-savingcircles",
-          "repo_name": "saving-circles",
-          "pr_number": 72,
-          "pr_title": "Integrate Etherform to saving-circles repo",
-          "pr_url": "https://github.com/BreadchainCoop/saving-circles/pull/72",
-          "pr_author": "franrolotti",
-          "last_updated": "2026-02-10T14:59:58Z",
-          "ci_status": "pass",
-          "github_url": "https://github.com/BreadchainCoop/saving-circles",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "7df19e0e94687967223a133353938bc632227853",
-              "short_sha": "7df19e0",
-              "message": "feat: integrate etherform CI/CD pipeline",
-              "author": "Francisco Rolotti",
-              "author_login": "franrolotti",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-              "date": "2025-12-04",
-              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/7df19e0e94687967223a133353938bc632227853"
-            },
-            {
-              "sha": "1e19dc66255832a31794622fdf1dd81b0f723db9",
-              "short_sha": "1e19dc6",
-              "message": "refactor(script): rename Deploy.sol to Deploy.s.sol",
-              "author": "Francisco Rolotti",
-              "author_login": "franrolotti",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-              "date": "2025-12-04",
-              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/1e19dc66255832a31794622fdf1dd81b0f723db9"
-            },
-            {
-              "sha": "9b7f59a6411be01110ea4a9901d2b2437ddadb18",
-              "short_sha": "9b7f59a",
-              "message": "chore: fix OZ remappings for lib submodules",
-              "author": "Francisco Rolotti",
-              "author_login": "franrolotti",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-              "date": "2025-12-08",
-              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/9b7f59a6411be01110ea4a9901d2b2437ddadb18"
-            },
-            {
-              "sha": "164a515d974c16d06fe14b47d9a1a80977303e4a",
-              "short_sha": "164a515",
-              "message": "chore: enable Sepolia deploy on PRs",
-              "author": "Francisco Rolotti",
-              "author_login": "franrolotti",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-              "date": "2025-12-08",
-              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/164a515d974c16d06fe14b47d9a1a80977303e4a"
-            },
-            {
-              "sha": "ad366ada0e3c2de2d73751aee80215570fc95145",
-              "short_sha": "ad366ad",
-              "message": "chore(ci): pass ADMIN_ADDRESS for testnet deploy",
-              "author": "Francisco Rolotti",
-              "author_login": "franrolotti",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-              "date": "2025-12-08",
-              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/ad366ada0e3c2de2d73751aee80215570fc95145"
-            }
-          ],
-          "parent_branch_name": "dev",
-          "children": []
-        },
-        {
-          "name": "Add comprehensive static frontend specification",
-          "branch": "frontend-spec",
-          "repo_name": "saving-circles",
-          "pr_number": 48,
-          "pr_title": "Add comprehensive static frontend specification",
-          "pr_url": "https://github.com/BreadchainCoop/saving-circles/pull/48",
-          "pr_author": "RonTuretzky",
-          "last_updated": "2025-10-20T21:48:36Z",
-          "ci_status": "pass",
-          "github_url": "https://github.com/BreadchainCoop/saving-circles",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "97070abd5689a5d10e5c75fd17e4c974380b0e11",
-              "short_sha": "97070ab",
-              "message": "feat: add comprehensive static frontend specification",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-09-28",
-              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/97070abd5689a5d10e5c75fd17e4c974380b0e11"
-            }
-          ],
-          "parent_branch_name": "dev",
-          "children": []
-        }
-      ]
-    },
-    "app-stacks": {
-      "name": "app-stacks",
+    "crowdstake.fun": {
+      "name": "crowdstake.fun",
       "branch": "main",
-      "repo_name": "app-stacks",
+      "repo_name": "crowdstake.fun",
       "pr_number": null,
       "pr_title": null,
       "pr_url": null,
       "pr_author": null,
-      "last_updated": "2026-02-10T22:46:56Z",
+      "last_updated": "2026-02-12T19:17:08Z",
       "ci_status": "",
-      "github_url": "https://github.com/BreadchainCoop/app-stacks",
+      "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
       "is_draft": false,
       "labels": [],
       "commits_from_parent": [],
       "parent_branch_name": null,
       "children": [
         {
-          "name": "Add Privy authentication integration",
-          "branch": "RonTuretzky/add-privy-auth",
-          "repo_name": "app-stacks",
-          "pr_number": 17,
-          "pr_title": "Add Privy authentication integration",
-          "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/17",
+          "name": "fix: Resolve all 14 reported issues",
+          "branch": "feat/issues-batch",
+          "repo_name": "crowdstake.fun",
+          "pr_number": 81,
+          "pr_title": "fix: Resolve all 14 reported issues",
+          "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/81",
           "pr_author": "RonTuretzky",
-          "last_updated": "2026-02-04T18:06:34Z",
-          "ci_status": "pass",
-          "github_url": "https://github.com/BreadchainCoop/app-stacks",
+          "last_updated": "2026-02-12T19:17:09Z",
+          "ci_status": "",
+          "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
           "is_draft": false,
           "labels": [],
           "commits_from_parent": [
             {
-              "sha": "18a053e8a0211e65f5c6a9caf177cd2380d5813a",
-              "short_sha": "18a053e",
-              "message": "Replace RainbowKit with Privy authentication",
+              "sha": "638e1c8cb07028ad3170811aa0aa18eab6026c66",
+              "short_sha": "638e1c8",
+              "message": "fix: resolve all 14 reported issues",
               "author": "Ron Turetzky",
               "author_login": "RonTuretzky",
               "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2026-02-04",
-              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/18a053e8a0211e65f5c6a9caf177cd2380d5813a"
+              "date": "2026-02-12",
+              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/638e1c8cb07028ad3170811aa0aa18eab6026c66"
             },
             {
-              "sha": "34bfaa987bc4fd2ed704bf6dff5ba4ef1a561440",
-              "short_sha": "34bfaa9",
-              "message": "Restore ssr config and Navbar static prop",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2026-02-04",
-              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/34bfaa987bc4fd2ed704bf6dff5ba4ef1a561440"
-            }
-          ],
-          "parent_branch_name": "main",
-          "children": [
-            {
-              "name": "Disable wallet popup on invite link creation page",
-              "branch": "RonTuretzky/disable-wallet-invite",
-              "repo_name": "app-stacks",
-              "pr_number": 18,
-              "pr_title": "Disable wallet popup on invite link creation page",
-              "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/18",
-              "pr_author": "RonTuretzky",
-              "last_updated": "2026-02-04T18:11:29Z",
-              "ci_status": "",
-              "github_url": "https://github.com/BreadchainCoop/app-stacks",
-              "is_draft": false,
-              "labels": [],
-              "commits_from_parent": [
-                {
-                  "sha": "7c3df1b55e787db66942fc49dd0de6a703bceca4",
-                  "short_sha": "7c3df1b",
-                  "message": "Disable wallet popup on invite link creation page",
-                  "author": "Ron Turetzky",
-                  "author_login": "RonTuretzky",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-                  "date": "2026-02-04",
-                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/7c3df1b55e787db66942fc49dd0de6a703bceca4"
-                }
-              ],
-              "parent_branch_name": "RonTuretzky/add-privy-auth",
-              "children": []
-            }
-          ]
-        },
-        {
-          "name": "Implement UI design",
-          "branch": "dev",
-          "repo_name": "app-stacks",
-          "pr_number": 5,
-          "pr_title": "Implement UI design",
-          "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/5",
-          "pr_author": "Olaleye-Blessing",
-          "last_updated": "2026-01-12T18:30:48Z",
-          "ci_status": "pass",
-          "github_url": "https://github.com/BreadchainCoop/app-stacks",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "78ba1ea530993071591e848fcff5bee6c240d316",
-              "short_sha": "78ba1ea",
-              "message": "feat(contracts): add local SavingCircles deployment script",
-              "author": "Francisco Rolotti",
-              "author_login": "franrolotti",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-              "date": "2025-12-09",
-              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/78ba1ea530993071591e848fcff5bee6c240d316"
-            },
-            {
-              "sha": "8201375af7561d5aadfe540a4da3149f8432f6fb",
-              "short_sha": "8201375",
-              "message": "feat: deploy mock BREAD token + bump saving-circles submodule (invite)",
-              "author": "Francisco Rolotti",
-              "author_login": "franrolotti",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-              "date": "2025-12-18",
-              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/8201375af7561d5aadfe540a4da3149f8432f6fb"
-            },
-            {
-              "sha": "d4ac048146c52ff586c953bdb5d668cca8ef2a0e",
-              "short_sha": "d4ac048",
-              "message": "chore: track saving-circles dev branch and bump submodule",
-              "author": "Francisco Rolotti",
-              "author_login": "franrolotti",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-              "date": "2025-12-31",
-              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/d4ac048146c52ff586c953bdb5d668cca8ef2a0e"
-            },
-            {
-              "sha": "901991a328fd90fb9f779ec2644ef3909a961c58",
-              "short_sha": "901991a",
-              "message": "docs: add command to update submodules to latest",
-              "author": "Francisco Rolotti",
-              "author_login": "franrolotti",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-              "date": "2025-12-31",
-              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/901991a328fd90fb9f779ec2644ef3909a961c58"
-            },
-            {
-              "sha": "a910f8c351a59572acb3c84210f70e721d58e3f0",
-              "short_sha": "a910f8c",
-              "message": "Resolve TS error and remove storybook files",
-              "author": "Olaleye Blessing",
-              "author_login": "Olaleye-Blessing",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/70102539?v=4",
-              "date": "2025-12-16",
-              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/a910f8c351a59572acb3c84210f70e721d58e3f0"
-            }
-          ],
-          "parent_branch_name": "main",
-          "children": [
-            {
-              "name": "Dev privy",
-              "branch": "dev-privy",
-              "repo_name": "app-stacks",
-              "pr_number": 19,
-              "pr_title": "Dev privy",
-              "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/19",
-              "pr_author": "Olaleye-Blessing",
-              "last_updated": "2026-02-10T22:49:52Z",
-              "ci_status": "pass",
-              "github_url": "https://github.com/BreadchainCoop/app-stacks",
-              "is_draft": false,
-              "labels": [],
-              "commits_from_parent": [
-                {
-                  "sha": "8b99204ff20810e4fb48d8a4f5bfad80befd6bdf",
-                  "short_sha": "8b99204",
-                  "message": "Install updated library",
-                  "author": "Olaleye Blessing",
-                  "author_login": "Olaleye-Blessing",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/70102539?v=4",
-                  "date": "2026-01-12",
-                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/8b99204ff20810e4fb48d8a4f5bfad80befd6bdf"
-                },
-                {
-                  "sha": "bd50b3785a62f9d53599404193da3d96f54f40fb",
-                  "short_sha": "bd50b37",
-                  "message": "Show ENS name for circle members",
-                  "author": "Olaleye Blessing",
-                  "author_login": "Olaleye-Blessing",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/70102539?v=4",
-                  "date": "2026-01-14",
-                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/bd50b3785a62f9d53599404193da3d96f54f40fb"
-                },
-                {
-                  "sha": "7989f13a78a64c2b849c3a5de606de56d5e55724",
-                  "short_sha": "7989f13",
-                  "message": "Use unlimited approval (max uint256) for deposits",
-                  "author": "Olaleye Blessing",
-                  "author_login": "Olaleye-Blessing",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/70102539?v=4",
-                  "date": "2026-01-20",
-                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/7989f13a78a64c2b849c3a5de606de56d5e55724"
-                },
-                {
-                  "sha": "fef8b0bd649a0d5c9fce7d757896249daa8b604f",
-                  "short_sha": "fef8b0b",
-                  "message": "Provide commands to reset anvil accounts",
-                  "author": "Olaleye Blessing",
-                  "author_login": "Olaleye-Blessing",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/70102539?v=4",
-                  "date": "2026-01-22",
-                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/fef8b0bd649a0d5c9fce7d757896249daa8b604f"
-                },
-                {
-                  "sha": "0ff24edc31d3179bd3b1cb998b2a590ca8ca16c7",
-                  "short_sha": "0ff24ed",
-                  "message": "Allow numbers only when specifying circle members and deposit amount",
-                  "author": "Olaleye Blessing",
-                  "author_login": "Olaleye-Blessing",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/70102539?v=4",
-                  "date": "2026-01-22",
-                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/0ff24edc31d3179bd3b1cb998b2a590ca8ca16c7"
-                }
-              ],
-              "parent_branch_name": "dev",
-              "children": []
-            },
-            {
-              "name": "Install updated library",
-              "branch": "dev-improvement",
-              "repo_name": "app-stacks",
-              "pr_number": 16,
-              "pr_title": "Install updated library",
-              "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/16",
-              "pr_author": "Olaleye-Blessing",
-              "last_updated": "2026-02-06T00:06:42Z",
-              "ci_status": "pass",
-              "github_url": "https://github.com/BreadchainCoop/app-stacks",
-              "is_draft": false,
-              "labels": [],
-              "commits_from_parent": [
-                {
-                  "sha": "8b99204ff20810e4fb48d8a4f5bfad80befd6bdf",
-                  "short_sha": "8b99204",
-                  "message": "Install updated library",
-                  "author": "Olaleye Blessing",
-                  "author_login": "Olaleye-Blessing",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/70102539?v=4",
-                  "date": "2026-01-12",
-                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/8b99204ff20810e4fb48d8a4f5bfad80befd6bdf"
-                },
-                {
-                  "sha": "bd50b3785a62f9d53599404193da3d96f54f40fb",
-                  "short_sha": "bd50b37",
-                  "message": "Show ENS name for circle members",
-                  "author": "Olaleye Blessing",
-                  "author_login": "Olaleye-Blessing",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/70102539?v=4",
-                  "date": "2026-01-14",
-                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/bd50b3785a62f9d53599404193da3d96f54f40fb"
-                },
-                {
-                  "sha": "7989f13a78a64c2b849c3a5de606de56d5e55724",
-                  "short_sha": "7989f13",
-                  "message": "Use unlimited approval (max uint256) for deposits",
-                  "author": "Olaleye Blessing",
-                  "author_login": "Olaleye-Blessing",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/70102539?v=4",
-                  "date": "2026-01-20",
-                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/7989f13a78a64c2b849c3a5de606de56d5e55724"
-                },
-                {
-                  "sha": "fef8b0bd649a0d5c9fce7d757896249daa8b604f",
-                  "short_sha": "fef8b0b",
-                  "message": "Provide commands to reset anvil accounts",
-                  "author": "Olaleye Blessing",
-                  "author_login": "Olaleye-Blessing",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/70102539?v=4",
-                  "date": "2026-01-22",
-                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/fef8b0bd649a0d5c9fce7d757896249daa8b604f"
-                },
-                {
-                  "sha": "0ff24edc31d3179bd3b1cb998b2a590ca8ca16c7",
-                  "short_sha": "0ff24ed",
-                  "message": "Allow numbers only when specifying circle members and deposit amount",
-                  "author": "Olaleye Blessing",
-                  "author_login": "Olaleye-Blessing",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/70102539?v=4",
-                  "date": "2026-01-22",
-                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/0ff24edc31d3179bd3b1cb998b2a590ca8ca16c7"
-                }
-              ],
-              "parent_branch_name": "dev",
-              "children": []
-            }
-          ]
-        },
-        {
-          "name": "Add local SavingCircles deployment script",
-          "branch": "2-add-local-savingcircles-deployment-script",
-          "repo_name": "app-stacks",
-          "pr_number": 4,
-          "pr_title": "Add local SavingCircles deployment script",
-          "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/4",
-          "pr_author": "franrolotti",
-          "last_updated": "2025-12-31T12:31:33Z",
-          "ci_status": "fail",
-          "github_url": "https://github.com/BreadchainCoop/app-stacks",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "78ba1ea530993071591e848fcff5bee6c240d316",
-              "short_sha": "78ba1ea",
-              "message": "feat(contracts): add local SavingCircles deployment script",
-              "author": "Francisco Rolotti",
-              "author_login": "franrolotti",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-              "date": "2025-12-09",
-              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/78ba1ea530993071591e848fcff5bee6c240d316"
-            },
-            {
-              "sha": "8201375af7561d5aadfe540a4da3149f8432f6fb",
-              "short_sha": "8201375",
-              "message": "feat: deploy mock BREAD token + bump saving-circles submodule (invite)",
-              "author": "Francisco Rolotti",
-              "author_login": "franrolotti",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-              "date": "2025-12-18",
-              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/8201375af7561d5aadfe540a4da3149f8432f6fb"
-            },
-            {
-              "sha": "d4ac048146c52ff586c953bdb5d668cca8ef2a0e",
-              "short_sha": "d4ac048",
-              "message": "chore: track saving-circles dev branch and bump submodule",
-              "author": "Francisco Rolotti",
-              "author_login": "franrolotti",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-              "date": "2025-12-31",
-              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/d4ac048146c52ff586c953bdb5d668cca8ef2a0e"
-            },
-            {
-              "sha": "901991a328fd90fb9f779ec2644ef3909a961c58",
-              "short_sha": "901991a",
-              "message": "docs: add command to update submodules to latest",
-              "author": "Francisco Rolotti",
-              "author_login": "franrolotti",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-              "date": "2025-12-31",
-              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/901991a328fd90fb9f779ec2644ef3909a961c58"
+              "sha": "e96e7d29be88372dcce7ac0183cb8c43d4936aea",
+              "short_sha": "e96e7d2",
+              "message": "chore: auto-format code with forge fmt [auto-format]",
+              "author": "github-actions[bot]",
+              "author_login": "github-actions[bot]",
+              "author_avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+              "date": "2026-02-12",
+              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/e96e7d29be88372dcce7ac0183cb8c43d4936aea"
             }
           ],
           "parent_branch_name": "main",
           "children": []
         },
         {
-          "name": "git submodule for stack smart contracts and anvil deployment",
-          "branch": "sb-anvil-deployment",
-          "repo_name": "app-stacks",
-          "pr_number": 3,
-          "pr_title": "git submodule for stack smart contracts and anvil deployment setup",
-          "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/3",
-          "pr_author": "secbajor",
-          "last_updated": "2025-12-08T22:40:44Z",
+          "name": "refactor: enhance QueueProcessed event with detailed recipie",
+          "branch": "refactor/queue-processed-event",
+          "repo_name": "crowdstake.fun",
+          "pr_number": 79,
+          "pr_title": "refactor: enhance QueueProcessed event with detailed recipient information (issue #42)",
+          "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/79",
+          "pr_author": "ss251",
+          "last_updated": "2025-10-19T14:11:08Z",
           "ci_status": "",
-          "github_url": "https://github.com/BreadchainCoop/app-stacks",
+          "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [],
+          "parent_branch_name": "main",
+          "children": []
+        },
+        {
+          "name": "Set up conductor.json",
+          "branch": "conductor-json-6e5f1529",
+          "repo_name": "crowdstake.fun",
+          "pr_number": 76,
+          "pr_title": "Set up conductor.json",
+          "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/76",
+          "pr_author": "RonTuretzky",
+          "last_updated": "2025-09-22T18:38:41Z",
+          "ci_status": "pass",
+          "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
           "is_draft": false,
           "labels": [],
           "commits_from_parent": [
             {
-              "sha": "fedd1f6cfbf1e4c8a280b9c96f6ad9eec7b5ebae",
-              "short_sha": "fedd1f6",
-              "message": "git submodule for stack smart contracts and anvil deployment setup",
-              "author": "Sara",
-              "author_login": "sarace",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/24276454?v=4",
-              "date": "2025-12-08",
-              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/fedd1f6cfbf1e4c8a280b9c96f6ad9eec7b5ebae"
+              "sha": "2d54ac0ea8a96ca30c7a264b5e4e230bcf5cffd3",
+              "short_sha": "2d54ac0",
+              "message": "Add conductor.json",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-09-22",
+              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/2d54ac0ea8a96ca30c7a264b5e4e230bcf5cffd3"
+            }
+          ],
+          "parent_branch_name": "main",
+          "children": []
+        },
+        {
+          "name": "fix: Implement Distribution Strategy Module (Issue #9)",
+          "branch": "issue-9-distribution-strategy-module",
+          "repo_name": "crowdstake.fun",
+          "pr_number": 37,
+          "pr_title": "fix: Implement Distribution Strategy Module (Issue #9)",
+          "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/37",
+          "pr_author": "RonTuretzky",
+          "last_updated": "2025-09-28T04:26:14Z",
+          "ci_status": "",
+          "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "193905ed3b4b8c321675c52b8406f9ce0bc541f2",
+              "short_sha": "193905e",
+              "message": "Initial commit with Distribution Strategy Module",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-08-16",
+              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/193905ed3b4b8c321675c52b8406f9ce0bc541f2"
+            },
+            {
+              "sha": "3756e7208d30de8c44d72b488fc9f49ce787115f",
+              "short_sha": "3756e72",
+              "message": "feat: Implement Distribution Strategy Module for issue #9",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-08-16",
+              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/3756e7208d30de8c44d72b488fc9f49ce787115f"
+            },
+            {
+              "sha": "ae48b73e35c21b27e1e5c34e0bde58d61887625e",
+              "short_sha": "ae48b73",
+              "message": "Merge remote-tracking branch 'origin/main' into RonTuretzky/palenque",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-08-16",
+              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/ae48b73e35c21b27e1e5c34e0bde58d61887625e"
+            },
+            {
+              "sha": "b7bc414702cb0f84dfc497071758ad3f31f9dfd5",
+              "short_sha": "b7bc414",
+              "message": "fix: Restore submodules and remappings to original state",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-08-16",
+              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/b7bc414702cb0f84dfc497071758ad3f31f9dfd5"
+            },
+            {
+              "sha": "2525cad619bb1d041c791edb02644525d0ad1dc9",
+              "short_sha": "2525cad",
+              "message": "chore: fmt",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-08-16",
+              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/2525cad619bb1d041c791edb02644525d0ad1dc9"
+            }
+          ],
+          "parent_branch_name": "main",
+          "children": []
+        },
+        {
+          "name": "Voting Module ",
+          "branch": "feat/voting-module-implementation",
+          "repo_name": "crowdstake.fun",
+          "pr_number": 22,
+          "pr_title": "Voting Module ",
+          "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/22",
+          "pr_author": "RonTuretzky",
+          "last_updated": "2025-11-17T15:43:01Z",
+          "ci_status": "pass",
+          "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "a92265439217247d1ba14ff13d9cfd0d2ce5c347",
+              "short_sha": "a922654",
+              "message": "chore: init\"",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-08-16",
+              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/a92265439217247d1ba14ff13d9cfd0d2ce5c347"
+            },
+            {
+              "sha": "a174db6aea01daa3c4b7f5bbd864a80a869933f6",
+              "short_sha": "a174db6",
+              "message": "feat: implement voting module with signature-based voting and multiple strategie",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-08-16",
+              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/a174db6aea01daa3c4b7f5bbd864a80a869933f6"
+            },
+            {
+              "sha": "b3204c85d0a19d02c4353d05494c893a39b486e8",
+              "short_sha": "b3204c8",
+              "message": "docs: add comprehensive signature generation documentation",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-08-16",
+              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/b3204c85d0a19d02c4353d05494c893a39b486e8"
+            },
+            {
+              "sha": "e6525c463b328d2779c7768310cb0f152b870497",
+              "short_sha": "e6525c4",
+              "message": "feat: integrate recipient registry with voting module for validation",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-08-16",
+              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/e6525c463b328d2779c7768310cb0f152b870497"
+            },
+            {
+              "sha": "a2882a2fb547b11ea9217a0829ba30b4bd561d9a",
+              "short_sha": "a2882a2",
+              "message": "Merge pull request #26 from BreadchainCoop/main",
+              "author": "RonTuretzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-08-16",
+              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/a2882a2fb547b11ea9217a0829ba30b4bd561d9a"
             }
           ],
           "parent_branch_name": "main",
@@ -1165,7 +921,7 @@
       "pr_title": null,
       "pr_url": null,
       "pr_author": null,
-      "last_updated": "2026-02-09T21:10:34Z",
+      "last_updated": "2026-02-12T19:16:46Z",
       "ci_status": "",
       "github_url": "https://github.com/BreadchainCoop/etherform",
       "is_draft": false,
@@ -1173,6 +929,34 @@
       "commits_from_parent": [],
       "parent_branch_name": null,
       "children": [
+        {
+          "name": "fix: Resolve all 13 reported issues",
+          "branch": "feat/all-issues",
+          "repo_name": "etherform",
+          "pr_number": 21,
+          "pr_title": "fix: Resolve all 13 reported issues",
+          "pr_url": "https://github.com/BreadchainCoop/etherform/pull/21",
+          "pr_author": "RonTuretzky",
+          "last_updated": "2026-02-12T19:16:47Z",
+          "ci_status": "",
+          "github_url": "https://github.com/BreadchainCoop/etherform",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "bfe2da1afc2f05f455fb7a796595e78e193c2383",
+              "short_sha": "bfe2da1",
+              "message": "fix: resolve all 13 reported issues",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2026-02-12",
+              "html_url": "https://github.com/BreadchainCoop/etherform/commit/bfe2da1afc2f05f455fb7a796595e78e193c2383"
+            }
+          ],
+          "parent_branch_name": "main",
+          "children": []
+        },
         {
           "name": "Fix Blockscout verification false positives and add blocking",
           "branch": "hudsonhrh/fix-blockscout-verify",
@@ -1420,6 +1204,226 @@
             }
           ],
           "parent_branch_name": "main",
+          "children": []
+        }
+      ]
+    },
+    "saving-circles": {
+      "name": "saving-circles",
+      "branch": "dev",
+      "repo_name": "saving-circles",
+      "pr_number": null,
+      "pr_title": null,
+      "pr_url": null,
+      "pr_author": null,
+      "last_updated": "2026-02-12T16:28:49Z",
+      "ci_status": "",
+      "github_url": "https://github.com/BreadchainCoop/saving-circles",
+      "is_draft": false,
+      "labels": [],
+      "commits_from_parent": [],
+      "parent_branch_name": null,
+      "children": [
+        {
+          "name": "Fix decommissioned circle data access in viewer",
+          "branch": "112-decommission-deletes-circle-data-causing-getusercircledata-to-revert",
+          "repo_name": "saving-circles",
+          "pr_number": 117,
+          "pr_title": "Fix decommissioned circle data access in viewer",
+          "pr_url": "https://github.com/BreadchainCoop/saving-circles/pull/117",
+          "pr_author": "franrolotti",
+          "last_updated": "2026-02-12T15:16:29Z",
+          "ci_status": "pass",
+          "github_url": "https://github.com/BreadchainCoop/saving-circles",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "ffb863bea82d2229b28cc8c1a595ea74120ecba1",
+              "short_sha": "ffb863b",
+              "message": "feat: preserve decommissioned circle data for viewer access",
+              "author": "Francisco Rolotti",
+              "author_login": "franrolotti",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
+              "date": "2026-02-09",
+              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/ffb863bea82d2229b28cc8c1a595ea74120ecba1"
+            },
+            {
+              "sha": "0fe8d1ba75440b1386a58abfdf56ce859d85d175",
+              "short_sha": "0fe8d1b",
+              "message": "test: handle zero amount and interval in fuzz creation",
+              "author": "Francisco Rolotti",
+              "author_login": "franrolotti",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
+              "date": "2026-02-09",
+              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/0fe8d1ba75440b1386a58abfdf56ce859d85d175"
+            }
+          ],
+          "parent_branch_name": "dev",
+          "children": []
+        },
+        {
+          "name": "Assess time based rounds and allow late claims",
+          "branch": "104-assess-time-based-rounds-derive-currentindex-from-time-define-behavior-for-unclaimed-rounds",
+          "repo_name": "saving-circles",
+          "pr_number": 107,
+          "pr_title": "Assess time based rounds and allow late claims",
+          "pr_url": "https://github.com/BreadchainCoop/saving-circles/pull/107",
+          "pr_author": "franrolotti",
+          "last_updated": "2026-02-12T19:31:47Z",
+          "ci_status": "pass",
+          "github_url": "https://github.com/BreadchainCoop/saving-circles",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "a86bfa0f1c176627d6d58f85b7bb0a4b418772cd",
+              "short_sha": "a86bfa0",
+              "message": "feat: make rounds time based and allow late claims",
+              "author": "Francisco Rolotti",
+              "author_login": "franrolotti",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
+              "date": "2026-01-28",
+              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/a86bfa0f1c176627d6d58f85b7bb0a4b418772cd"
+            },
+            {
+              "sha": "4a8f59ac3849f8d847f62a5900d32ea8748c59b0",
+              "short_sha": "4a8f59a",
+              "message": "test: update deposit timing fuzz for time-based rounds",
+              "author": "Francisco Rolotti",
+              "author_login": "franrolotti",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
+              "date": "2026-01-29",
+              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/4a8f59ac3849f8d847f62a5900d32ea8748c59b0"
+            },
+            {
+              "sha": "a858838d9be368ecdc11876ecf594022224effaf",
+              "short_sha": "a858838",
+              "message": "test: align SavingCirclesMultiRound tests with time-based rounds",
+              "author": "Francisco Rolotti",
+              "author_login": "franrolotti",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
+              "date": "2026-01-29",
+              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/a858838d9be368ecdc11876ecf594022224effaf"
+            },
+            {
+              "sha": "6d80f0229efce4d6a92643325c92b6dde200d1bf",
+              "short_sha": "6d80f02",
+              "message": "test: align unit tests with time-based rounds",
+              "author": "Francisco Rolotti",
+              "author_login": "franrolotti",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
+              "date": "2026-01-29",
+              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/6d80f0229efce4d6a92643325c92b6dde200d1bf"
+            },
+            {
+              "sha": "fabe307cb613d12b0147b5246b79a7ac446259a5",
+              "short_sha": "fabe307",
+              "message": "fix: disallow claims on decommissionable circles",
+              "author": "Francisco Rolotti",
+              "author_login": "franrolotti",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
+              "date": "2026-01-29",
+              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/fabe307cb613d12b0147b5246b79a7ac446259a5"
+            }
+          ],
+          "parent_branch_name": "dev",
+          "children": []
+        },
+        {
+          "name": "Integrate Etherform to saving-circles repo",
+          "branch": "71-integrate-etherform-cicd-deployment-into-savingcircles",
+          "repo_name": "saving-circles",
+          "pr_number": 72,
+          "pr_title": "Integrate Etherform to saving-circles repo",
+          "pr_url": "https://github.com/BreadchainCoop/saving-circles/pull/72",
+          "pr_author": "franrolotti",
+          "last_updated": "2026-02-10T14:59:58Z",
+          "ci_status": "pass",
+          "github_url": "https://github.com/BreadchainCoop/saving-circles",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "7df19e0e94687967223a133353938bc632227853",
+              "short_sha": "7df19e0",
+              "message": "feat: integrate etherform CI/CD pipeline",
+              "author": "Francisco Rolotti",
+              "author_login": "franrolotti",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
+              "date": "2025-12-04",
+              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/7df19e0e94687967223a133353938bc632227853"
+            },
+            {
+              "sha": "1e19dc66255832a31794622fdf1dd81b0f723db9",
+              "short_sha": "1e19dc6",
+              "message": "refactor(script): rename Deploy.sol to Deploy.s.sol",
+              "author": "Francisco Rolotti",
+              "author_login": "franrolotti",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
+              "date": "2025-12-04",
+              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/1e19dc66255832a31794622fdf1dd81b0f723db9"
+            },
+            {
+              "sha": "9b7f59a6411be01110ea4a9901d2b2437ddadb18",
+              "short_sha": "9b7f59a",
+              "message": "chore: fix OZ remappings for lib submodules",
+              "author": "Francisco Rolotti",
+              "author_login": "franrolotti",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
+              "date": "2025-12-08",
+              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/9b7f59a6411be01110ea4a9901d2b2437ddadb18"
+            },
+            {
+              "sha": "164a515d974c16d06fe14b47d9a1a80977303e4a",
+              "short_sha": "164a515",
+              "message": "chore: enable Sepolia deploy on PRs",
+              "author": "Francisco Rolotti",
+              "author_login": "franrolotti",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
+              "date": "2025-12-08",
+              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/164a515d974c16d06fe14b47d9a1a80977303e4a"
+            },
+            {
+              "sha": "ad366ada0e3c2de2d73751aee80215570fc95145",
+              "short_sha": "ad366ad",
+              "message": "chore(ci): pass ADMIN_ADDRESS for testnet deploy",
+              "author": "Francisco Rolotti",
+              "author_login": "franrolotti",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
+              "date": "2025-12-08",
+              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/ad366ada0e3c2de2d73751aee80215570fc95145"
+            }
+          ],
+          "parent_branch_name": "dev",
+          "children": []
+        },
+        {
+          "name": "Add comprehensive static frontend specification",
+          "branch": "frontend-spec",
+          "repo_name": "saving-circles",
+          "pr_number": 48,
+          "pr_title": "Add comprehensive static frontend specification",
+          "pr_url": "https://github.com/BreadchainCoop/saving-circles/pull/48",
+          "pr_author": "RonTuretzky",
+          "last_updated": "2025-10-20T21:48:36Z",
+          "ci_status": "pass",
+          "github_url": "https://github.com/BreadchainCoop/saving-circles",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "97070abd5689a5d10e5c75fd17e4c974380b0e11",
+              "short_sha": "97070ab",
+              "message": "feat: add comprehensive static frontend specification",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-09-28",
+              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/97070abd5689a5d10e5c75fd17e4c974380b0e11"
+            }
+          ],
+          "parent_branch_name": "dev",
           "children": []
         }
       ]
@@ -2842,205 +2846,6 @@
               "children": []
             }
           ]
-        }
-      ]
-    },
-    "crowdstake.fun": {
-      "name": "crowdstake.fun",
-      "branch": "main",
-      "repo_name": "crowdstake.fun",
-      "pr_number": null,
-      "pr_title": null,
-      "pr_url": null,
-      "pr_author": null,
-      "last_updated": "2026-01-23T21:24:12Z",
-      "ci_status": "",
-      "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
-      "is_draft": false,
-      "labels": [],
-      "commits_from_parent": [],
-      "parent_branch_name": null,
-      "children": [
-        {
-          "name": "refactor: enhance QueueProcessed event with detailed recipie",
-          "branch": "refactor/queue-processed-event",
-          "repo_name": "crowdstake.fun",
-          "pr_number": 79,
-          "pr_title": "refactor: enhance QueueProcessed event with detailed recipient information (issue #42)",
-          "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/79",
-          "pr_author": "ss251",
-          "last_updated": "2025-10-19T14:11:08Z",
-          "ci_status": "",
-          "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [],
-          "parent_branch_name": "main",
-          "children": []
-        },
-        {
-          "name": "Set up conductor.json",
-          "branch": "conductor-json-6e5f1529",
-          "repo_name": "crowdstake.fun",
-          "pr_number": 76,
-          "pr_title": "Set up conductor.json",
-          "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/76",
-          "pr_author": "RonTuretzky",
-          "last_updated": "2025-09-22T18:38:41Z",
-          "ci_status": "pass",
-          "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "2d54ac0ea8a96ca30c7a264b5e4e230bcf5cffd3",
-              "short_sha": "2d54ac0",
-              "message": "Add conductor.json",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-09-22",
-              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/2d54ac0ea8a96ca30c7a264b5e4e230bcf5cffd3"
-            }
-          ],
-          "parent_branch_name": "main",
-          "children": []
-        },
-        {
-          "name": "fix: Implement Distribution Strategy Module (Issue #9)",
-          "branch": "issue-9-distribution-strategy-module",
-          "repo_name": "crowdstake.fun",
-          "pr_number": 37,
-          "pr_title": "fix: Implement Distribution Strategy Module (Issue #9)",
-          "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/37",
-          "pr_author": "RonTuretzky",
-          "last_updated": "2025-09-28T04:26:14Z",
-          "ci_status": "",
-          "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "193905ed3b4b8c321675c52b8406f9ce0bc541f2",
-              "short_sha": "193905e",
-              "message": "Initial commit with Distribution Strategy Module",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-08-16",
-              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/193905ed3b4b8c321675c52b8406f9ce0bc541f2"
-            },
-            {
-              "sha": "3756e7208d30de8c44d72b488fc9f49ce787115f",
-              "short_sha": "3756e72",
-              "message": "feat: Implement Distribution Strategy Module for issue #9",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-08-16",
-              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/3756e7208d30de8c44d72b488fc9f49ce787115f"
-            },
-            {
-              "sha": "ae48b73e35c21b27e1e5c34e0bde58d61887625e",
-              "short_sha": "ae48b73",
-              "message": "Merge remote-tracking branch 'origin/main' into RonTuretzky/palenque",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-08-16",
-              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/ae48b73e35c21b27e1e5c34e0bde58d61887625e"
-            },
-            {
-              "sha": "b7bc414702cb0f84dfc497071758ad3f31f9dfd5",
-              "short_sha": "b7bc414",
-              "message": "fix: Restore submodules and remappings to original state",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-08-16",
-              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/b7bc414702cb0f84dfc497071758ad3f31f9dfd5"
-            },
-            {
-              "sha": "2525cad619bb1d041c791edb02644525d0ad1dc9",
-              "short_sha": "2525cad",
-              "message": "chore: fmt",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-08-16",
-              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/2525cad619bb1d041c791edb02644525d0ad1dc9"
-            }
-          ],
-          "parent_branch_name": "main",
-          "children": []
-        },
-        {
-          "name": "Voting Module ",
-          "branch": "feat/voting-module-implementation",
-          "repo_name": "crowdstake.fun",
-          "pr_number": 22,
-          "pr_title": "Voting Module ",
-          "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/22",
-          "pr_author": "RonTuretzky",
-          "last_updated": "2025-11-17T15:43:01Z",
-          "ci_status": "pass",
-          "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "a92265439217247d1ba14ff13d9cfd0d2ce5c347",
-              "short_sha": "a922654",
-              "message": "chore: init\"",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-08-16",
-              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/a92265439217247d1ba14ff13d9cfd0d2ce5c347"
-            },
-            {
-              "sha": "a174db6aea01daa3c4b7f5bbd864a80a869933f6",
-              "short_sha": "a174db6",
-              "message": "feat: implement voting module with signature-based voting and multiple strategie",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-08-16",
-              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/a174db6aea01daa3c4b7f5bbd864a80a869933f6"
-            },
-            {
-              "sha": "b3204c85d0a19d02c4353d05494c893a39b486e8",
-              "short_sha": "b3204c8",
-              "message": "docs: add comprehensive signature generation documentation",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-08-16",
-              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/b3204c85d0a19d02c4353d05494c893a39b486e8"
-            },
-            {
-              "sha": "e6525c463b328d2779c7768310cb0f152b870497",
-              "short_sha": "e6525c4",
-              "message": "feat: integrate recipient registry with voting module for validation",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-08-16",
-              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/e6525c463b328d2779c7768310cb0f152b870497"
-            },
-            {
-              "sha": "a2882a2fb547b11ea9217a0829ba30b4bd561d9a",
-              "short_sha": "a2882a2",
-              "message": "Merge pull request #26 from BreadchainCoop/main",
-              "author": "RonTuretzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-08-16",
-              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/a2882a2fb547b11ea9217a0829ba30b4bd561d9a"
-            }
-          ],
-          "parent_branch_name": "main",
-          "children": []
         }
       ]
     },
@@ -5532,6 +5337,127 @@
         }
       ]
     },
+    "app-stacks": {
+      "repo_name": "app-stacks",
+      "github_url": "https://github.com/BreadchainCoop/app-stacks",
+      "issues": [
+        {
+          "number": 23,
+          "title": "Shorten links",
+          "author": "Olaleye-Blessing",
+          "created_at": "2026-02-12T23:52:39Z",
+          "updated_at": "2026-02-12T23:52:39Z",
+          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/23",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 22,
+          "title": "Implement the deposit module",
+          "author": "Olaleye-Blessing",
+          "created_at": "2026-02-12T23:43:52Z",
+          "updated_at": "2026-02-12T23:43:52Z",
+          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/22",
+          "labels": [
+            "not-ready"
+          ],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 21,
+          "title": "Implement the withdrawal module",
+          "author": "Olaleye-Blessing",
+          "created_at": "2026-02-12T23:36:25Z",
+          "updated_at": "2026-02-12T23:38:08Z",
+          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/21",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 6,
+          "title": "add cookie management for Stacks names",
+          "author": "exo404",
+          "created_at": "2026-01-05T14:47:18Z",
+          "updated_at": "2026-01-05T14:47:18Z",
+          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/6",
+          "labels": [],
+          "assignees": [
+            "exo404"
+          ],
+          "comments": []
+        },
+        {
+          "number": 2,
+          "title": "Add local SavingCircles deployment script",
+          "author": "franrolotti",
+          "created_at": "2025-12-08T20:24:00Z",
+          "updated_at": "2025-12-08T20:24:00Z",
+          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/2",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 1,
+          "title": "Abstract BREAD Token \u2014 Show Only USD Balances on Frontend (Inspired by Hyperliquid & Polymarket)",
+          "author": "diterra-code",
+          "created_at": "2025-10-15T21:14:26Z",
+          "updated_at": "2025-10-16T04:28:41Z",
+          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/1",
+          "labels": [
+            "documentation",
+            "help wanted"
+          ],
+          "assignees": [
+            "diterra-code",
+            "RonTuretzky",
+            "tbsoc"
+          ],
+          "comments": [
+            {
+              "id": "IC_kwDOQBrnic7LJut_",
+              "author": {
+                "login": "diterra-code"
+              },
+              "authorAssociation": "NONE",
+              "body": "Dropping this here @RonTuretzky @tbsoc @bagelface for further discussion.\n\n@RonTuretzky what do you think of my mermaid diagram skills? \n\nThe idea is to maybe after MVP of Stacks/Safety Net try to work on this UX.",
+              "createdAt": "2025-10-15T21:17:43Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [
+                {
+                  "content": "HEART",
+                  "users": {
+                    "totalCount": 1
+                  }
+                }
+              ],
+              "url": "https://github.com/BreadchainCoop/app-stacks/issues/1#issuecomment-3408325503",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOQBrnic7LMzo-",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "NONE",
+              "body": "> Dropping this here @RonTuretzky @tbsoc @bagelface for further discussion.\n> \n> @RonTuretzky what do you think of my mermaid diagram skills? \n> \n> The idea is to maybe after MVP of Stacks/Safety Net try to work on this UX.\n\n\n\n\ud83d\ude0d\ud83d\ude0d\ud83d\ude0d\ud83d\ude0d\ud83d\ude0d\n\n\nI think with the lifi widget like we have in the crowdstaking app this is quite doable. ",
+              "createdAt": "2025-10-16T04:28:41Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/app-stacks/issues/1#issuecomment-3409132094",
+              "viewerDidAuthor": false
+            }
+          ]
+        }
+      ]
+    },
     "crowdstaking-v2": {
       "repo_name": "crowdstaking-v2",
       "github_url": "https://github.com/BreadchainCoop/crowdstaking-v2",
@@ -7296,6 +7222,442 @@
         }
       ]
     },
+    "crowdstake.fun": {
+      "repo_name": "crowdstake.fun",
+      "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
+      "issues": [
+        {
+          "number": 80,
+          "title": "Validate project distribution addresses ",
+          "author": "RonTuretzky",
+          "created_at": "2025-11-19T21:06:15Z",
+          "updated_at": "2025-11-19T21:06:15Z",
+          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/80",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 77,
+          "title": "Should distros be activated with 0 voters or not?",
+          "author": "RonTuretzky",
+          "created_at": "2025-10-08T01:56:32Z",
+          "updated_at": "2025-10-08T01:56:32Z",
+          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/77",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 73,
+          "title": "Refactor automation system for generic provider payment management",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-19T00:42:48Z",
+          "updated_at": "2025-08-19T01:10:50Z",
+          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/73",
+          "labels": [],
+          "assignees": [],
+          "comments": [
+            {
+              "id": "IC_kwDOPeu91c6-qt3n",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "Ai -generated pr here #74 ",
+              "createdAt": "2025-08-19T01:10:11Z",
+              "includesCreatedEdit": true,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/73#issuecomment-3198868967",
+              "viewerDidAuthor": false
+            }
+          ]
+        },
+        {
+          "number": 72,
+          "title": "Release 0.0.2",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-19T00:23:31Z",
+          "updated_at": "2025-08-19T00:23:31Z",
+          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/72",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 70,
+          "title": "Release 0.0.1",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-19T00:23:05Z",
+          "updated_at": "2025-08-19T01:39:14Z",
+          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/70",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 65,
+          "title": "End-to-End Testing with Decentralized Frontend Deployment",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-18T23:33:29Z",
+          "updated_at": "2025-08-19T00:44:11Z",
+          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/65",
+          "labels": [
+            "enhancement"
+          ],
+          "assignees": [],
+          "comments": [
+            {
+              "id": "IC_kwDOPeu91c6-qk69",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "cc @hudsonhrh ",
+              "createdAt": "2025-08-19T00:44:11Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/65#issuecomment-3198832317",
+              "viewerDidAuthor": false
+            }
+          ]
+        },
+        {
+          "number": 64,
+          "title": "Add Fuzz Testing to BreadKit Protocol",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-18T23:33:22Z",
+          "updated_at": "2025-08-18T23:33:22Z",
+          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/64",
+          "labels": [
+            "enhancement"
+          ],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 63,
+          "title": "Refactor Unit Tests to Bulloak Format and Review",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-18T23:33:15Z",
+          "updated_at": "2025-08-19T00:42:26Z",
+          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/63",
+          "labels": [
+            "enhancement",
+            "good first issue"
+          ],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 62,
+          "title": "Add voting functions with additional bytes parameter for downstream implementations (e.g., multipliers)",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-18T23:24:07Z",
+          "updated_at": "2025-08-18T23:24:07Z",
+          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/62",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 48,
+          "title": "Implement TimeWeightedVotingPower Strategy",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-17T07:47:01Z",
+          "updated_at": "2025-08-17T07:48:38Z",
+          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/48",
+          "labels": [
+            "enhancement"
+          ],
+          "assignees": [],
+          "comments": [
+            {
+              "id": "IC_kwDOPeu91c6-Y7P7",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "## Introduction\n\nThe TimeWeightedVotingPower strategy is a crucial component for implementing fair and sustainable voting mechanics in the BreadKit voting module. This strategy calculates voting power based on how long tokens have been held during a specific period, encouraging long-term participation and reducing the impact of short-term token accumulation for voting manipulation.\n\n## Problem Statement\n\n### Current Limitations\nThe current voting system only supports `TokenBasedVotingPower`, which calculates voting power based on the token balance at a specific point in time. This approach has several limitations:\n\n1. **Susceptible to Flash Loan Attacks**: Users can temporarily acquire large amounts of tokens just before voting\n2. **No Incentive for Long-term Holding**: Short-term holders have the same voting power as long-term committed members\n3. **Potential for Vote Buying**: Large token holders can easily influence outcomes without long-term alignment\n4. **Lack of Historical Context**: Current balance doesn't reflect a user's commitment to the protocol over time\n\n### Proposed Solution\nImplement a time-weighted voting power calculation that:\n- Calculates voting power based on the average token balance over a defined period\n- Integrates with the cycle management system for proper period tracking\n- Prevents gaming through flash loans or temporary token accumulation\n- Rewards long-term holders with proportionally higher voting influence\n\n## Technical Design\n\n### Sequence Diagram\n\n```mermaid\nsequenceDiagram\n    participant User\n    participant VotingModule\n    participant TimeWeightedStrategy\n    participant VotingToken\n    participant CycleModule\n    \n    User->>VotingModule: castVoteWithSignature()\n    VotingModule->>TimeWeightedStrategy: getCurrentVotingPower(user)\n    \n    TimeWeightedStrategy->>CycleModule: getCurrentCycle()\n    CycleModule-->>TimeWeightedStrategy: cycleNumber, startBlock, endBlock\n    \n    TimeWeightedStrategy->>TimeWeightedStrategy: getVotingPowerForPeriod(user, startBlock, endBlock)\n    \n    loop For each checkpoint in period\n        TimeWeightedStrategy->>VotingToken: getPastVotes(user, block)\n        VotingToken-->>TimeWeightedStrategy: votingPower at block\n    end\n    \n    TimeWeightedStrategy->>TimeWeightedStrategy: calculateTimeWeightedAverage()\n    TimeWeightedStrategy-->>VotingModule: timeWeightedPower\n    \n    VotingModule->>VotingModule: _processVote(user, points, timeWeightedPower)\n    VotingModule-->>User: Vote recorded with time-weighted power\n```\n\n### Class Diagram\n\n```mermaid\nclassDiagram\n    class IVotingPowerStrategy {\n        <<interface>>\n        +getCurrentVotingPower(address account) uint256\n    }\n    \n    class TimeWeightedVotingPower {\n        -IVotes votingToken\n        -ICycleModule cycleModule\n        -uint256 lookbackPeriod\n        -uint256 minHoldingPeriod\n        -mapping(address => Checkpoint[]) checkpoints\n        \n        +constructor(IVotes token, ICycleModule cycle)\n        +getCurrentVotingPower(address account) uint256\n        +getVotingPowerForPeriod(address account, uint256 start, uint256 end) uint256\n        +calculateTimeWeightedAverage(uint256[] powers, uint256[] timestamps) uint256\n        +setLookbackPeriod(uint256 blocks) onlyOwner\n        +setMinHoldingPeriod(uint256 blocks) onlyOwner\n    }\n    \n    class CycleModule {\n        +getCurrentCycle() uint256\n        +getCycleStartBlock(uint256 cycle) uint256\n        +getCycleEndBlock(uint256 cycle) uint256\n        +getBlocksInCycle() uint256\n    }\n    \n    class IVotes {\n        <<interface>>\n        +getPastVotes(address account, uint256 blockNumber) uint256\n        +getPastTotalSupply(uint256 blockNumber) uint256\n        +delegates(address account) address\n    }\n    \n    IVotingPowerStrategy <|.. TimeWeightedVotingPower : implements\n    TimeWeightedVotingPower --> IVotes : uses\n    TimeWeightedVotingPower --> CycleModule : uses\n```",
+              "createdAt": "2025-08-17T07:47:28Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/48#issuecomment-3194205179",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOPeu91c6-Y7UN",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "## Implementation Details\n\n### Core Contract Structure\n\n```solidity\n// SPDX-License-Identifier: MIT\npragma solidity ^0.8.20;\n\nimport {IVotingPowerStrategy} from \"../../interfaces/IVotingPowerStrategy.sol\";\nimport {IVotes} from \"@openzeppelin/contracts/governance/utils/IVotes.sol\";\nimport {ICycleModule} from \"../../interfaces/ICycleModule.sol\";\nimport {Math} from \"@openzeppelin/contracts/utils/math/Math.sol\";\nimport {SafeCast} from \"@openzeppelin/contracts/utils/math/SafeCast.sol\";\nimport {Ownable} from \"@solady/contracts/auth/Ownable.sol\";\n\ncontract TimeWeightedVotingPower is IVotingPowerStrategy, Ownable {\n    using SafeCast for uint256;\n    \n    // ============ Constants ============\n    uint256 private constant PRECISION = 1e18;\n    uint256 private constant MAX_CHECKPOINTS = 50; // Limit checkpoints per period to prevent DOS\n    \n    // ============ Immutable Storage ============\n    IVotes public immutable votingToken;\n    \n    // ============ State Variables ============\n    ICycleModule public cycleModule;\n    uint256 public lookbackPeriod; // Number of blocks to look back for averaging\n    uint256 public minHoldingPeriod; // Minimum blocks tokens must be held for voting power\n    \n    // ============ Errors ============\n    error InvalidToken();\n    error InvalidCycleModule();\n    error InvalidPeriod();\n    error PeriodTooLong();\n    error StartAfterEnd();\n    error FuturePeriod();\n    \n    constructor(\n        IVotes _votingToken,\n        ICycleModule _cycleModule,\n        uint256 _lookbackPeriod,\n        uint256 _minHoldingPeriod\n    ) {\n        if (address(_votingToken) == address(0)) revert InvalidToken();\n        if (address(_cycleModule) == address(0)) revert InvalidCycleModule();\n        if (_lookbackPeriod == 0) revert InvalidPeriod();\n        \n        votingToken = _votingToken;\n        cycleModule = _cycleModule;\n        lookbackPeriod = _lookbackPeriod;\n        minHoldingPeriod = _minHoldingPeriod;\n        \n        _initializeOwner(msg.sender);\n    }\n    \n    /// @inheritdoc IVotingPowerStrategy\n    function getCurrentVotingPower(address account) external view override returns (uint256) {\n        uint256 currentCycle = cycleModule.getCurrentCycle();\n        uint256 cycleStart = cycleModule.getCycleStartBlock(currentCycle);\n        \n        // Calculate the period for time weighting\n        uint256 periodEnd = block.number;\n        uint256 periodStart = periodEnd > lookbackPeriod ? periodEnd - lookbackPeriod : 0;\n        \n        // Ensure we don't go before cycle start\n        if (periodStart < cycleStart) {\n            periodStart = cycleStart;\n        }\n        \n        return _calculateTimeWeightedPower(account, periodStart, periodEnd);\n    }\n    \n    /// @notice Calculate time-weighted voting power for a specific period\n    function _calculateTimeWeightedPower(\n        address account,\n        uint256 startBlock,\n        uint256 endBlock\n    ) internal view returns (uint256) {\n        if (startBlock >= endBlock) revert StartAfterEnd();\n        if (endBlock > block.number) revert FuturePeriod();\n        \n        uint256 periodLength = endBlock - startBlock;\n        if (periodLength > lookbackPeriod) revert PeriodTooLong();\n        \n        // For very short periods, use simple average\n        if (periodLength <= 2) {\n            uint256 startPower = votingToken.getPastVotes(account, startBlock);\n            uint256 endPower = votingToken.getPastVotes(account, endBlock - 1);\n            return (startPower + endPower) / 2;\n        }\n        \n        // Sample voting power at regular intervals\n        uint256 samplingInterval = Math.max(periodLength / MAX_CHECKPOINTS, 1);\n        uint256 totalWeightedPower = 0;\n        uint256 totalWeight = 0;\n        \n        for (uint256 block = startBlock; block < endBlock; block += samplingInterval) {\n            uint256 power = votingToken.getPastVotes(account, block);\n            uint256 weight = Math.min(samplingInterval, endBlock - block);\n            \n            totalWeightedPower += power * weight;\n            totalWeight += weight;\n        }\n        \n        // Apply minimum holding period penalty\n        if (periodLength < minHoldingPeriod && minHoldingPeriod > 0) {\n            totalWeightedPower = totalWeightedPower * periodLength / minHoldingPeriod;\n        }\n        \n        return totalWeight > 0 ? totalWeightedPower / totalWeight : 0;\n    }\n    \n    /// @notice Update the lookback period for voting power calculation\n    function setLookbackPeriod(uint256 _lookbackPeriod) external onlyOwner {\n        if (_lookbackPeriod == 0) revert InvalidPeriod();\n        lookbackPeriod = _lookbackPeriod;\n        emit LookbackPeriodUpdated(_lookbackPeriod);\n    }\n    \n    /// @notice Update the minimum holding period\n    function setMinHoldingPeriod(uint256 _minHoldingPeriod) external onlyOwner {\n        minHoldingPeriod = _minHoldingPeriod;\n        emit MinHoldingPeriodUpdated(_minHoldingPeriod);\n    }\n    \n    // ============ Events ============\n    event LookbackPeriodUpdated(uint256 newPeriod);\n    event MinHoldingPeriodUpdated(uint256 newPeriod);\n}\n```\n\n### Integration with BasisPointsVotingModule\n\n```solidity\n// In BasisPointsVotingModule initialization\nIVotingPowerStrategy[] memory strategies = new IVotingPowerStrategy[](2);\nstrategies[0] = new TokenBasedVotingPower(votingToken);\nstrategies[1] = new TimeWeightedVotingPower(\n    votingToken,\n    cycleModule,\n    7200, // ~1 day lookback at 12s blocks\n    3600  // ~12 hours minimum holding\n);\n\n// The module will aggregate voting power from all strategies\nfunction _calculateTotalVotingPower(address account) internal view returns (uint256) {\n    uint256 totalPower = 0;\n    for (uint256 i = 0; i < votingPowerStrategies.length; i++) {\n        totalPower += votingPowerStrategies[i].getCurrentVotingPower(account);\n    }\n    return totalPower / votingPowerStrategies.length; // Average of strategies\n}\n```",
+              "createdAt": "2025-08-17T07:48:02Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/48#issuecomment-3194205453",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOPeu91c6-Y7Xp",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "## Testing Requirements\n\n### Unit Tests\n```solidity\ncontract TimeWeightedVotingPowerTest is Test {\n    function testTimeWeightedCalculation() public {\n        // Setup: User acquires tokens over time\n        vm.roll(1000);\n        token.mint(user, 100 ether);\n        \n        vm.roll(2000);\n        token.mint(user, 50 ether); // Total: 150\n        \n        vm.roll(3000);\n        // Expected: Weighted average over lookback period\n        uint256 power = strategy.getCurrentVotingPower(user);\n        \n        // Assert power reflects time-weighted average, not current balance\n        assertLt(power, 150 ether);\n        assertGt(power, 100 ether);\n    }\n    \n    function testFlashLoanProtection() public {\n        // Setup: User holds minimal tokens\n        token.mint(user, 1 ether);\n        vm.roll(1000);\n        \n        // User acquires large amount just before voting\n        token.mint(user, 1000 ether);\n        \n        // Power should still be low due to time weighting\n        uint256 power = strategy.getCurrentVotingPower(user);\n        assertLt(power, 10 ether); // Much less than current balance\n    }\n    \n    function testMinimumHoldingPeriod() public {\n        // Test that recent acquisitions have reduced weight\n        token.mint(user, 100 ether);\n        \n        // Immediately check power (no holding period)\n        uint256 immediatePower = strategy.getCurrentVotingPower(user);\n        \n        // Roll forward half the minimum holding period\n        vm.roll(block.number + minHoldingPeriod / 2);\n        uint256 halfPeriodPower = strategy.getCurrentVotingPower(user);\n        \n        // Roll forward to full minimum holding period\n        vm.roll(block.number + minHoldingPeriod / 2);\n        uint256 fullPeriodPower = strategy.getCurrentVotingPower(user);\n        \n        // Verify gradual increase\n        assertLt(immediatePower, halfPeriodPower);\n        assertLt(halfPeriodPower, fullPeriodPower);\n        assertEq(fullPeriodPower, 100 ether);\n    }\n    \n    function testCycleBoundaryHandling() public {\n        // Test voting power calculation at cycle transitions\n        // Ensure no loss of voting power when cycles change\n    }\n    \n    function testGasOptimization() public {\n        // Measure gas for various period lengths\n        // Ensure it stays under 150k gas\n    }\n}\n```\n\n## Security Considerations\n\n1. **Gas Optimization**: \n   - Limit checkpoint sampling to MAX_CHECKPOINTS (50) to prevent DOS attacks\n   - Use interval sampling for long periods to reduce iteration costs\n\n2. **Overflow Protection**: \n   - Use SafeCast for all block number calculations\n   - Validate period lengths to prevent overflows\n\n3. **Period Validation**: \n   - Ensure start < end for all periods\n   - Prevent future block queries\n   - Cap maximum lookback period\n\n4. **Cycle Boundary Handling**: \n   - Properly handle voting power calculations at cycle transitions\n   - Ensure consistency when cycles change\n\n5. **Flash Loan Mitigation**:\n   - Time weighting naturally prevents flash loan attacks\n   - Minimum holding period further reduces manipulation potential\n\n## Implementation Milestones\n\n- [ ] Core TimeWeightedVotingPower contract implementation\n- [ ] Integration with CycleModule for period management  \n- [ ] Comprehensive unit test suite with >95% coverage\n- [ ] Gas optimization for checkpoint calculations (<150k gas)\n- [ ] Fuzz testing for edge cases and security\n- [ ] Integration tests with BasisPointsVotingModule\n- [ ] Security audit of time-weighting logic\n- [ ] Documentation and integration guide\n- [ ] Deployment scripts for testnet and mainnet\n\n## Acceptance Criteria\n\n- [ ] Strategy correctly calculates time-weighted voting power based on historical balances\n- [ ] Flash loan attacks are effectively mitigated (voting power not instantly available)\n- [ ] Gas costs remain reasonable (< 150k gas for power calculation)\n- [ ] Integration with existing voting module is seamless\n- [ ] All edge cases are handled properly:\n  - [ ] Zero balances throughout period\n  - [ ] Cycle boundaries and transitions\n  - [ ] Very short periods (1-2 blocks)\n  - [ ] Maximum lookback periods\n  - [ ] Token transfers mid-period\n- [ ] Comprehensive test coverage (>95%)\n- [ ] No security vulnerabilities in audit\n\n## Benefits\n\n1. **Enhanced Security**: Protects against flash loan attacks and vote buying\n2. **Fair Distribution**: Rewards long-term token holders appropriately\n3. **Reduced Manipulation**: Makes it expensive to temporarily influence votes\n4. **Community Alignment**: Encourages sustained participation over speculation\n5. **Flexible Configuration**: Adjustable lookback and minimum holding periods\n\n## References\n\n- [Compound's Comp Token Checkpointing](https://github.com/compound-finance/compound-protocol/blob/master/contracts/Governance/Comp.sol)\n- [OpenZeppelin ERC20Votes](https://docs.openzeppelin.com/contracts/4.x/api/token/erc20#ERC20Votes)\n- [Curve's Vote-Escrowed CRV (veCRV)](https://curve.readthedocs.io/dao-vecrv.html)\n- [Breadchain Voting Specification](https://github.com/BreadchainCoop/breadkit/blob/main/docs/voting.md)\n\n## Related Work\n\n- Current PR implementing BasisPointsVotingModule\n- Issue #43: Store required votes at proposal creation\n- CycleModule integration for period management",
+              "createdAt": "2025-08-17T07:48:38Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/48#issuecomment-3194205673",
+              "viewerDidAuthor": false
+            }
+          ]
+        },
+        {
+          "number": 47,
+          "title": "Add identifier emission to DistributionStrategy",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-17T05:47:30Z",
+          "updated_at": "2025-09-22T19:11:51Z",
+          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/47",
+          "labels": [
+            "enhancement"
+          ],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 46,
+          "title": "Review and Implement Gelato Automation Integration",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-17T05:31:19Z",
+          "updated_at": "2025-08-19T00:24:32Z",
+          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/46",
+          "labels": [
+            "documentation"
+          ],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 45,
+          "title": "Optimize Recipient Queue Lookup in BaseRecipeIntRegistry for Large Queues (addition and removal)",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-17T05:25:26Z",
+          "updated_at": "2025-08-17T05:25:26Z",
+          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/45",
+          "labels": [
+            "enhancement"
+          ],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 44,
+          "title": "Add support to pay the automation as an extension of Chainlink Automation from yield",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-17T04:45:15Z",
+          "updated_at": "2025-08-17T04:45:15Z",
+          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/44",
+          "labels": [
+            "enhancement"
+          ],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 43,
+          "title": "Backlog: Store required votes at proposal creation in VotingRecipientRegistry",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-17T04:17:48Z",
+          "updated_at": "2025-08-19T00:30:13Z",
+          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/43",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 42,
+          "title": "Refactor QueueProcessed event on Recipient Registry",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-17T04:09:26Z",
+          "updated_at": "2025-08-19T00:33:13Z",
+          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/42",
+          "labels": [
+            "good first issue"
+          ],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 38,
+          "title": "Validate yield amount against recipients array and divisibility for voting power",
+          "author": "deepsp94",
+          "created_at": "2025-08-16T23:53:48Z",
+          "updated_at": "2025-08-19T00:37:09Z",
+          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/38",
+          "labels": [
+            "bug",
+            "good first issue"
+          ],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 36,
+          "title": "Refactor all modules and manager to Factory Pattern similar to BaseToken",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-16T23:17:11Z",
+          "updated_at": "2025-08-19T00:38:18Z",
+          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/36",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 24,
+          "title": "Add generic NFT awarding and burning module for base token holders during distribution",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-16T21:27:11Z",
+          "updated_at": "2025-08-19T00:38:38Z",
+          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/24",
+          "labels": [
+            "enhancement",
+            "good first issue"
+          ],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 10,
+          "title": "Distribution Module Implementation",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-16T06:04:13Z",
+          "updated_at": "2025-08-16T06:04:13Z",
+          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/10",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 9,
+          "title": "Distribution Strategy Module Implementation",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-16T06:04:11Z",
+          "updated_at": "2025-08-16T06:04:11Z",
+          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/9",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 2,
+          "title": "Implement Voting Module with Signature-Based Voting and Multiple Strategies",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-16T05:44:50Z",
+          "updated_at": "2025-08-18T23:17:20Z",
+          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/2",
+          "labels": [
+            "enhancement"
+          ],
+          "assignees": [],
+          "comments": []
+        }
+      ]
+    },
+    "etherform": {
+      "repo_name": "etherform",
+      "github_url": "https://github.com/BreadchainCoop/etherform",
+      "issues": [
+        {
+          "number": 17,
+          "title": "Add constructor args and method call params to deployment summary",
+          "author": "RonTuretzky",
+          "created_at": "2026-01-09T22:41:54Z",
+          "updated_at": "2026-01-09T22:41:54Z",
+          "html_url": "https://github.com/BreadchainCoop/etherform/issues/17",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 16,
+          "title": "Blockscout verification detection returns false positives",
+          "author": "RonTuretzky",
+          "created_at": "2026-01-09T22:35:00Z",
+          "updated_at": "2026-01-09T22:35:00Z",
+          "html_url": "https://github.com/BreadchainCoop/etherform/issues/16",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 8,
+          "title": "Blockscout verification url bad format check",
+          "author": "hudsonhrh",
+          "created_at": "2025-12-04T20:50:47Z",
+          "updated_at": "2025-12-04T20:50:47Z",
+          "html_url": "https://github.com/BreadchainCoop/etherform/issues/8",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 7,
+          "title": "Blockscout verification optional",
+          "author": "hudsonhrh",
+          "created_at": "2025-12-04T20:49:48Z",
+          "updated_at": "2025-12-04T20:49:48Z",
+          "html_url": "https://github.com/BreadchainCoop/etherform/issues/7",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 5,
+          "title": "Better integration docs",
+          "author": "hudsonhrh",
+          "created_at": "2025-12-04T17:13:13Z",
+          "updated_at": "2025-12-04T17:13:13Z",
+          "html_url": "https://github.com/BreadchainCoop/etherform/issues/5",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 4,
+          "title": "Accept different profiles",
+          "author": "hudsonhrh",
+          "created_at": "2025-12-04T17:10:54Z",
+          "updated_at": "2025-12-04T17:10:54Z",
+          "html_url": "https://github.com/BreadchainCoop/etherform/issues/4",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 2,
+          "title": "Expose optional `ADMIN_ADDRESS` env var to deploy scripts",
+          "author": "franrolotti",
+          "created_at": "2025-12-04T12:58:06Z",
+          "updated_at": "2025-12-04T12:58:06Z",
+          "html_url": "https://github.com/BreadchainCoop/etherform/issues/2",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        }
+      ]
+    },
     "saving-circles": {
       "repo_name": "saving-circles",
       "github_url": "https://github.com/BreadchainCoop/saving-circles",
@@ -8057,175 +8419,6 @@
               "viewerDidAuthor": false
             }
           ]
-        }
-      ]
-    },
-    "app-stacks": {
-      "repo_name": "app-stacks",
-      "github_url": "https://github.com/BreadchainCoop/app-stacks",
-      "issues": [
-        {
-          "number": 6,
-          "title": "add cookie management for Stacks names",
-          "author": "exo404",
-          "created_at": "2026-01-05T14:47:18Z",
-          "updated_at": "2026-01-05T14:47:18Z",
-          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/6",
-          "labels": [],
-          "assignees": [
-            "exo404"
-          ],
-          "comments": []
-        },
-        {
-          "number": 2,
-          "title": "Add local SavingCircles deployment script",
-          "author": "franrolotti",
-          "created_at": "2025-12-08T20:24:00Z",
-          "updated_at": "2025-12-08T20:24:00Z",
-          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/2",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 1,
-          "title": "Abstract BREAD Token \u2014 Show Only USD Balances on Frontend (Inspired by Hyperliquid & Polymarket)",
-          "author": "diterra-code",
-          "created_at": "2025-10-15T21:14:26Z",
-          "updated_at": "2025-10-16T04:28:41Z",
-          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/1",
-          "labels": [
-            "documentation",
-            "help wanted"
-          ],
-          "assignees": [
-            "diterra-code",
-            "RonTuretzky",
-            "tbsoc"
-          ],
-          "comments": [
-            {
-              "id": "IC_kwDOQBrnic7LJut_",
-              "author": {
-                "login": "diterra-code"
-              },
-              "authorAssociation": "NONE",
-              "body": "Dropping this here @RonTuretzky @tbsoc @bagelface for further discussion.\n\n@RonTuretzky what do you think of my mermaid diagram skills? \n\nThe idea is to maybe after MVP of Stacks/Safety Net try to work on this UX.",
-              "createdAt": "2025-10-15T21:17:43Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [
-                {
-                  "content": "HEART",
-                  "users": {
-                    "totalCount": 1
-                  }
-                }
-              ],
-              "url": "https://github.com/BreadchainCoop/app-stacks/issues/1#issuecomment-3408325503",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOQBrnic7LMzo-",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "NONE",
-              "body": "> Dropping this here @RonTuretzky @tbsoc @bagelface for further discussion.\n> \n> @RonTuretzky what do you think of my mermaid diagram skills? \n> \n> The idea is to maybe after MVP of Stacks/Safety Net try to work on this UX.\n\n\n\n\ud83d\ude0d\ud83d\ude0d\ud83d\ude0d\ud83d\ude0d\ud83d\ude0d\n\n\nI think with the lifi widget like we have in the crowdstaking app this is quite doable. ",
-              "createdAt": "2025-10-16T04:28:41Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/app-stacks/issues/1#issuecomment-3409132094",
-              "viewerDidAuthor": false
-            }
-          ]
-        }
-      ]
-    },
-    "etherform": {
-      "repo_name": "etherform",
-      "github_url": "https://github.com/BreadchainCoop/etherform",
-      "issues": [
-        {
-          "number": 17,
-          "title": "Add constructor args and method call params to deployment summary",
-          "author": "RonTuretzky",
-          "created_at": "2026-01-09T22:41:54Z",
-          "updated_at": "2026-01-09T22:41:54Z",
-          "html_url": "https://github.com/BreadchainCoop/etherform/issues/17",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 16,
-          "title": "Blockscout verification detection returns false positives",
-          "author": "RonTuretzky",
-          "created_at": "2026-01-09T22:35:00Z",
-          "updated_at": "2026-01-09T22:35:00Z",
-          "html_url": "https://github.com/BreadchainCoop/etherform/issues/16",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 8,
-          "title": "Blockscout verification url bad format check",
-          "author": "hudsonhrh",
-          "created_at": "2025-12-04T20:50:47Z",
-          "updated_at": "2025-12-04T20:50:47Z",
-          "html_url": "https://github.com/BreadchainCoop/etherform/issues/8",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 7,
-          "title": "Blockscout verification optional",
-          "author": "hudsonhrh",
-          "created_at": "2025-12-04T20:49:48Z",
-          "updated_at": "2025-12-04T20:49:48Z",
-          "html_url": "https://github.com/BreadchainCoop/etherform/issues/7",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 5,
-          "title": "Better integration docs",
-          "author": "hudsonhrh",
-          "created_at": "2025-12-04T17:13:13Z",
-          "updated_at": "2025-12-04T17:13:13Z",
-          "html_url": "https://github.com/BreadchainCoop/etherform/issues/5",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 4,
-          "title": "Accept different profiles",
-          "author": "hudsonhrh",
-          "created_at": "2025-12-04T17:10:54Z",
-          "updated_at": "2025-12-04T17:10:54Z",
-          "html_url": "https://github.com/BreadchainCoop/etherform/issues/4",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 2,
-          "title": "Expose optional `ADMIN_ADDRESS` env var to deploy scripts",
-          "author": "franrolotti",
-          "created_at": "2025-12-04T12:58:06Z",
-          "updated_at": "2025-12-04T12:58:06Z",
-          "html_url": "https://github.com/BreadchainCoop/etherform/issues/2",
-          "labels": [],
-          "assignees": [],
-          "comments": []
         }
       ]
     },
@@ -9243,359 +9436,6 @@
           "assignees": [
             "dijarllozana"
           ],
-          "comments": []
-        }
-      ]
-    },
-    "crowdstake.fun": {
-      "repo_name": "crowdstake.fun",
-      "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
-      "issues": [
-        {
-          "number": 80,
-          "title": "Validate project distribution addresses ",
-          "author": "RonTuretzky",
-          "created_at": "2025-11-19T21:06:15Z",
-          "updated_at": "2025-11-19T21:06:15Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/80",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 77,
-          "title": "Should distros be activated with 0 voters or not?",
-          "author": "RonTuretzky",
-          "created_at": "2025-10-08T01:56:32Z",
-          "updated_at": "2025-10-08T01:56:32Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/77",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 73,
-          "title": "Refactor automation system for generic provider payment management",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-19T00:42:48Z",
-          "updated_at": "2025-08-19T01:10:50Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/73",
-          "labels": [],
-          "assignees": [],
-          "comments": [
-            {
-              "id": "IC_kwDOPeu91c6-qt3n",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "Ai -generated pr here #74 ",
-              "createdAt": "2025-08-19T01:10:11Z",
-              "includesCreatedEdit": true,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/73#issuecomment-3198868967",
-              "viewerDidAuthor": false
-            }
-          ]
-        },
-        {
-          "number": 72,
-          "title": "Release 0.0.2",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-19T00:23:31Z",
-          "updated_at": "2025-08-19T00:23:31Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/72",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 70,
-          "title": "Release 0.0.1",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-19T00:23:05Z",
-          "updated_at": "2025-08-19T01:39:14Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/70",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 65,
-          "title": "End-to-End Testing with Decentralized Frontend Deployment",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-18T23:33:29Z",
-          "updated_at": "2025-08-19T00:44:11Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/65",
-          "labels": [
-            "enhancement"
-          ],
-          "assignees": [],
-          "comments": [
-            {
-              "id": "IC_kwDOPeu91c6-qk69",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "cc @hudsonhrh ",
-              "createdAt": "2025-08-19T00:44:11Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/65#issuecomment-3198832317",
-              "viewerDidAuthor": false
-            }
-          ]
-        },
-        {
-          "number": 64,
-          "title": "Add Fuzz Testing to BreadKit Protocol",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-18T23:33:22Z",
-          "updated_at": "2025-08-18T23:33:22Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/64",
-          "labels": [
-            "enhancement"
-          ],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 63,
-          "title": "Refactor Unit Tests to Bulloak Format and Review",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-18T23:33:15Z",
-          "updated_at": "2025-08-19T00:42:26Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/63",
-          "labels": [
-            "enhancement",
-            "good first issue"
-          ],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 62,
-          "title": "Add voting functions with additional bytes parameter for downstream implementations (e.g., multipliers)",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-18T23:24:07Z",
-          "updated_at": "2025-08-18T23:24:07Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/62",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 48,
-          "title": "Implement TimeWeightedVotingPower Strategy",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-17T07:47:01Z",
-          "updated_at": "2025-08-17T07:48:38Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/48",
-          "labels": [
-            "enhancement"
-          ],
-          "assignees": [],
-          "comments": [
-            {
-              "id": "IC_kwDOPeu91c6-Y7P7",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "## Introduction\n\nThe TimeWeightedVotingPower strategy is a crucial component for implementing fair and sustainable voting mechanics in the BreadKit voting module. This strategy calculates voting power based on how long tokens have been held during a specific period, encouraging long-term participation and reducing the impact of short-term token accumulation for voting manipulation.\n\n## Problem Statement\n\n### Current Limitations\nThe current voting system only supports `TokenBasedVotingPower`, which calculates voting power based on the token balance at a specific point in time. This approach has several limitations:\n\n1. **Susceptible to Flash Loan Attacks**: Users can temporarily acquire large amounts of tokens just before voting\n2. **No Incentive for Long-term Holding**: Short-term holders have the same voting power as long-term committed members\n3. **Potential for Vote Buying**: Large token holders can easily influence outcomes without long-term alignment\n4. **Lack of Historical Context**: Current balance doesn't reflect a user's commitment to the protocol over time\n\n### Proposed Solution\nImplement a time-weighted voting power calculation that:\n- Calculates voting power based on the average token balance over a defined period\n- Integrates with the cycle management system for proper period tracking\n- Prevents gaming through flash loans or temporary token accumulation\n- Rewards long-term holders with proportionally higher voting influence\n\n## Technical Design\n\n### Sequence Diagram\n\n```mermaid\nsequenceDiagram\n    participant User\n    participant VotingModule\n    participant TimeWeightedStrategy\n    participant VotingToken\n    participant CycleModule\n    \n    User->>VotingModule: castVoteWithSignature()\n    VotingModule->>TimeWeightedStrategy: getCurrentVotingPower(user)\n    \n    TimeWeightedStrategy->>CycleModule: getCurrentCycle()\n    CycleModule-->>TimeWeightedStrategy: cycleNumber, startBlock, endBlock\n    \n    TimeWeightedStrategy->>TimeWeightedStrategy: getVotingPowerForPeriod(user, startBlock, endBlock)\n    \n    loop For each checkpoint in period\n        TimeWeightedStrategy->>VotingToken: getPastVotes(user, block)\n        VotingToken-->>TimeWeightedStrategy: votingPower at block\n    end\n    \n    TimeWeightedStrategy->>TimeWeightedStrategy: calculateTimeWeightedAverage()\n    TimeWeightedStrategy-->>VotingModule: timeWeightedPower\n    \n    VotingModule->>VotingModule: _processVote(user, points, timeWeightedPower)\n    VotingModule-->>User: Vote recorded with time-weighted power\n```\n\n### Class Diagram\n\n```mermaid\nclassDiagram\n    class IVotingPowerStrategy {\n        <<interface>>\n        +getCurrentVotingPower(address account) uint256\n    }\n    \n    class TimeWeightedVotingPower {\n        -IVotes votingToken\n        -ICycleModule cycleModule\n        -uint256 lookbackPeriod\n        -uint256 minHoldingPeriod\n        -mapping(address => Checkpoint[]) checkpoints\n        \n        +constructor(IVotes token, ICycleModule cycle)\n        +getCurrentVotingPower(address account) uint256\n        +getVotingPowerForPeriod(address account, uint256 start, uint256 end) uint256\n        +calculateTimeWeightedAverage(uint256[] powers, uint256[] timestamps) uint256\n        +setLookbackPeriod(uint256 blocks) onlyOwner\n        +setMinHoldingPeriod(uint256 blocks) onlyOwner\n    }\n    \n    class CycleModule {\n        +getCurrentCycle() uint256\n        +getCycleStartBlock(uint256 cycle) uint256\n        +getCycleEndBlock(uint256 cycle) uint256\n        +getBlocksInCycle() uint256\n    }\n    \n    class IVotes {\n        <<interface>>\n        +getPastVotes(address account, uint256 blockNumber) uint256\n        +getPastTotalSupply(uint256 blockNumber) uint256\n        +delegates(address account) address\n    }\n    \n    IVotingPowerStrategy <|.. TimeWeightedVotingPower : implements\n    TimeWeightedVotingPower --> IVotes : uses\n    TimeWeightedVotingPower --> CycleModule : uses\n```",
-              "createdAt": "2025-08-17T07:47:28Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/48#issuecomment-3194205179",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOPeu91c6-Y7UN",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "## Implementation Details\n\n### Core Contract Structure\n\n```solidity\n// SPDX-License-Identifier: MIT\npragma solidity ^0.8.20;\n\nimport {IVotingPowerStrategy} from \"../../interfaces/IVotingPowerStrategy.sol\";\nimport {IVotes} from \"@openzeppelin/contracts/governance/utils/IVotes.sol\";\nimport {ICycleModule} from \"../../interfaces/ICycleModule.sol\";\nimport {Math} from \"@openzeppelin/contracts/utils/math/Math.sol\";\nimport {SafeCast} from \"@openzeppelin/contracts/utils/math/SafeCast.sol\";\nimport {Ownable} from \"@solady/contracts/auth/Ownable.sol\";\n\ncontract TimeWeightedVotingPower is IVotingPowerStrategy, Ownable {\n    using SafeCast for uint256;\n    \n    // ============ Constants ============\n    uint256 private constant PRECISION = 1e18;\n    uint256 private constant MAX_CHECKPOINTS = 50; // Limit checkpoints per period to prevent DOS\n    \n    // ============ Immutable Storage ============\n    IVotes public immutable votingToken;\n    \n    // ============ State Variables ============\n    ICycleModule public cycleModule;\n    uint256 public lookbackPeriod; // Number of blocks to look back for averaging\n    uint256 public minHoldingPeriod; // Minimum blocks tokens must be held for voting power\n    \n    // ============ Errors ============\n    error InvalidToken();\n    error InvalidCycleModule();\n    error InvalidPeriod();\n    error PeriodTooLong();\n    error StartAfterEnd();\n    error FuturePeriod();\n    \n    constructor(\n        IVotes _votingToken,\n        ICycleModule _cycleModule,\n        uint256 _lookbackPeriod,\n        uint256 _minHoldingPeriod\n    ) {\n        if (address(_votingToken) == address(0)) revert InvalidToken();\n        if (address(_cycleModule) == address(0)) revert InvalidCycleModule();\n        if (_lookbackPeriod == 0) revert InvalidPeriod();\n        \n        votingToken = _votingToken;\n        cycleModule = _cycleModule;\n        lookbackPeriod = _lookbackPeriod;\n        minHoldingPeriod = _minHoldingPeriod;\n        \n        _initializeOwner(msg.sender);\n    }\n    \n    /// @inheritdoc IVotingPowerStrategy\n    function getCurrentVotingPower(address account) external view override returns (uint256) {\n        uint256 currentCycle = cycleModule.getCurrentCycle();\n        uint256 cycleStart = cycleModule.getCycleStartBlock(currentCycle);\n        \n        // Calculate the period for time weighting\n        uint256 periodEnd = block.number;\n        uint256 periodStart = periodEnd > lookbackPeriod ? periodEnd - lookbackPeriod : 0;\n        \n        // Ensure we don't go before cycle start\n        if (periodStart < cycleStart) {\n            periodStart = cycleStart;\n        }\n        \n        return _calculateTimeWeightedPower(account, periodStart, periodEnd);\n    }\n    \n    /// @notice Calculate time-weighted voting power for a specific period\n    function _calculateTimeWeightedPower(\n        address account,\n        uint256 startBlock,\n        uint256 endBlock\n    ) internal view returns (uint256) {\n        if (startBlock >= endBlock) revert StartAfterEnd();\n        if (endBlock > block.number) revert FuturePeriod();\n        \n        uint256 periodLength = endBlock - startBlock;\n        if (periodLength > lookbackPeriod) revert PeriodTooLong();\n        \n        // For very short periods, use simple average\n        if (periodLength <= 2) {\n            uint256 startPower = votingToken.getPastVotes(account, startBlock);\n            uint256 endPower = votingToken.getPastVotes(account, endBlock - 1);\n            return (startPower + endPower) / 2;\n        }\n        \n        // Sample voting power at regular intervals\n        uint256 samplingInterval = Math.max(periodLength / MAX_CHECKPOINTS, 1);\n        uint256 totalWeightedPower = 0;\n        uint256 totalWeight = 0;\n        \n        for (uint256 block = startBlock; block < endBlock; block += samplingInterval) {\n            uint256 power = votingToken.getPastVotes(account, block);\n            uint256 weight = Math.min(samplingInterval, endBlock - block);\n            \n            totalWeightedPower += power * weight;\n            totalWeight += weight;\n        }\n        \n        // Apply minimum holding period penalty\n        if (periodLength < minHoldingPeriod && minHoldingPeriod > 0) {\n            totalWeightedPower = totalWeightedPower * periodLength / minHoldingPeriod;\n        }\n        \n        return totalWeight > 0 ? totalWeightedPower / totalWeight : 0;\n    }\n    \n    /// @notice Update the lookback period for voting power calculation\n    function setLookbackPeriod(uint256 _lookbackPeriod) external onlyOwner {\n        if (_lookbackPeriod == 0) revert InvalidPeriod();\n        lookbackPeriod = _lookbackPeriod;\n        emit LookbackPeriodUpdated(_lookbackPeriod);\n    }\n    \n    /// @notice Update the minimum holding period\n    function setMinHoldingPeriod(uint256 _minHoldingPeriod) external onlyOwner {\n        minHoldingPeriod = _minHoldingPeriod;\n        emit MinHoldingPeriodUpdated(_minHoldingPeriod);\n    }\n    \n    // ============ Events ============\n    event LookbackPeriodUpdated(uint256 newPeriod);\n    event MinHoldingPeriodUpdated(uint256 newPeriod);\n}\n```\n\n### Integration with BasisPointsVotingModule\n\n```solidity\n// In BasisPointsVotingModule initialization\nIVotingPowerStrategy[] memory strategies = new IVotingPowerStrategy[](2);\nstrategies[0] = new TokenBasedVotingPower(votingToken);\nstrategies[1] = new TimeWeightedVotingPower(\n    votingToken,\n    cycleModule,\n    7200, // ~1 day lookback at 12s blocks\n    3600  // ~12 hours minimum holding\n);\n\n// The module will aggregate voting power from all strategies\nfunction _calculateTotalVotingPower(address account) internal view returns (uint256) {\n    uint256 totalPower = 0;\n    for (uint256 i = 0; i < votingPowerStrategies.length; i++) {\n        totalPower += votingPowerStrategies[i].getCurrentVotingPower(account);\n    }\n    return totalPower / votingPowerStrategies.length; // Average of strategies\n}\n```",
-              "createdAt": "2025-08-17T07:48:02Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/48#issuecomment-3194205453",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOPeu91c6-Y7Xp",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "## Testing Requirements\n\n### Unit Tests\n```solidity\ncontract TimeWeightedVotingPowerTest is Test {\n    function testTimeWeightedCalculation() public {\n        // Setup: User acquires tokens over time\n        vm.roll(1000);\n        token.mint(user, 100 ether);\n        \n        vm.roll(2000);\n        token.mint(user, 50 ether); // Total: 150\n        \n        vm.roll(3000);\n        // Expected: Weighted average over lookback period\n        uint256 power = strategy.getCurrentVotingPower(user);\n        \n        // Assert power reflects time-weighted average, not current balance\n        assertLt(power, 150 ether);\n        assertGt(power, 100 ether);\n    }\n    \n    function testFlashLoanProtection() public {\n        // Setup: User holds minimal tokens\n        token.mint(user, 1 ether);\n        vm.roll(1000);\n        \n        // User acquires large amount just before voting\n        token.mint(user, 1000 ether);\n        \n        // Power should still be low due to time weighting\n        uint256 power = strategy.getCurrentVotingPower(user);\n        assertLt(power, 10 ether); // Much less than current balance\n    }\n    \n    function testMinimumHoldingPeriod() public {\n        // Test that recent acquisitions have reduced weight\n        token.mint(user, 100 ether);\n        \n        // Immediately check power (no holding period)\n        uint256 immediatePower = strategy.getCurrentVotingPower(user);\n        \n        // Roll forward half the minimum holding period\n        vm.roll(block.number + minHoldingPeriod / 2);\n        uint256 halfPeriodPower = strategy.getCurrentVotingPower(user);\n        \n        // Roll forward to full minimum holding period\n        vm.roll(block.number + minHoldingPeriod / 2);\n        uint256 fullPeriodPower = strategy.getCurrentVotingPower(user);\n        \n        // Verify gradual increase\n        assertLt(immediatePower, halfPeriodPower);\n        assertLt(halfPeriodPower, fullPeriodPower);\n        assertEq(fullPeriodPower, 100 ether);\n    }\n    \n    function testCycleBoundaryHandling() public {\n        // Test voting power calculation at cycle transitions\n        // Ensure no loss of voting power when cycles change\n    }\n    \n    function testGasOptimization() public {\n        // Measure gas for various period lengths\n        // Ensure it stays under 150k gas\n    }\n}\n```\n\n## Security Considerations\n\n1. **Gas Optimization**: \n   - Limit checkpoint sampling to MAX_CHECKPOINTS (50) to prevent DOS attacks\n   - Use interval sampling for long periods to reduce iteration costs\n\n2. **Overflow Protection**: \n   - Use SafeCast for all block number calculations\n   - Validate period lengths to prevent overflows\n\n3. **Period Validation**: \n   - Ensure start < end for all periods\n   - Prevent future block queries\n   - Cap maximum lookback period\n\n4. **Cycle Boundary Handling**: \n   - Properly handle voting power calculations at cycle transitions\n   - Ensure consistency when cycles change\n\n5. **Flash Loan Mitigation**:\n   - Time weighting naturally prevents flash loan attacks\n   - Minimum holding period further reduces manipulation potential\n\n## Implementation Milestones\n\n- [ ] Core TimeWeightedVotingPower contract implementation\n- [ ] Integration with CycleModule for period management  \n- [ ] Comprehensive unit test suite with >95% coverage\n- [ ] Gas optimization for checkpoint calculations (<150k gas)\n- [ ] Fuzz testing for edge cases and security\n- [ ] Integration tests with BasisPointsVotingModule\n- [ ] Security audit of time-weighting logic\n- [ ] Documentation and integration guide\n- [ ] Deployment scripts for testnet and mainnet\n\n## Acceptance Criteria\n\n- [ ] Strategy correctly calculates time-weighted voting power based on historical balances\n- [ ] Flash loan attacks are effectively mitigated (voting power not instantly available)\n- [ ] Gas costs remain reasonable (< 150k gas for power calculation)\n- [ ] Integration with existing voting module is seamless\n- [ ] All edge cases are handled properly:\n  - [ ] Zero balances throughout period\n  - [ ] Cycle boundaries and transitions\n  - [ ] Very short periods (1-2 blocks)\n  - [ ] Maximum lookback periods\n  - [ ] Token transfers mid-period\n- [ ] Comprehensive test coverage (>95%)\n- [ ] No security vulnerabilities in audit\n\n## Benefits\n\n1. **Enhanced Security**: Protects against flash loan attacks and vote buying\n2. **Fair Distribution**: Rewards long-term token holders appropriately\n3. **Reduced Manipulation**: Makes it expensive to temporarily influence votes\n4. **Community Alignment**: Encourages sustained participation over speculation\n5. **Flexible Configuration**: Adjustable lookback and minimum holding periods\n\n## References\n\n- [Compound's Comp Token Checkpointing](https://github.com/compound-finance/compound-protocol/blob/master/contracts/Governance/Comp.sol)\n- [OpenZeppelin ERC20Votes](https://docs.openzeppelin.com/contracts/4.x/api/token/erc20#ERC20Votes)\n- [Curve's Vote-Escrowed CRV (veCRV)](https://curve.readthedocs.io/dao-vecrv.html)\n- [Breadchain Voting Specification](https://github.com/BreadchainCoop/breadkit/blob/main/docs/voting.md)\n\n## Related Work\n\n- Current PR implementing BasisPointsVotingModule\n- Issue #43: Store required votes at proposal creation\n- CycleModule integration for period management",
-              "createdAt": "2025-08-17T07:48:38Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/48#issuecomment-3194205673",
-              "viewerDidAuthor": false
-            }
-          ]
-        },
-        {
-          "number": 47,
-          "title": "Add identifier emission to DistributionStrategy",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-17T05:47:30Z",
-          "updated_at": "2025-09-22T19:11:51Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/47",
-          "labels": [
-            "enhancement"
-          ],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 46,
-          "title": "Review and Implement Gelato Automation Integration",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-17T05:31:19Z",
-          "updated_at": "2025-08-19T00:24:32Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/46",
-          "labels": [
-            "documentation"
-          ],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 45,
-          "title": "Optimize Recipient Queue Lookup in BaseRecipeIntRegistry for Large Queues (addition and removal)",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-17T05:25:26Z",
-          "updated_at": "2025-08-17T05:25:26Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/45",
-          "labels": [
-            "enhancement"
-          ],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 44,
-          "title": "Add support to pay the automation as an extension of Chainlink Automation from yield",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-17T04:45:15Z",
-          "updated_at": "2025-08-17T04:45:15Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/44",
-          "labels": [
-            "enhancement"
-          ],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 43,
-          "title": "Backlog: Store required votes at proposal creation in VotingRecipientRegistry",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-17T04:17:48Z",
-          "updated_at": "2025-08-19T00:30:13Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/43",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 42,
-          "title": "Refactor QueueProcessed event on Recipient Registry",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-17T04:09:26Z",
-          "updated_at": "2025-08-19T00:33:13Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/42",
-          "labels": [
-            "good first issue"
-          ],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 38,
-          "title": "Validate yield amount against recipients array and divisibility for voting power",
-          "author": "deepsp94",
-          "created_at": "2025-08-16T23:53:48Z",
-          "updated_at": "2025-08-19T00:37:09Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/38",
-          "labels": [
-            "bug",
-            "good first issue"
-          ],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 36,
-          "title": "Refactor all modules and manager to Factory Pattern similar to BaseToken",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-16T23:17:11Z",
-          "updated_at": "2025-08-19T00:38:18Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/36",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 24,
-          "title": "Add generic NFT awarding and burning module for base token holders during distribution",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-16T21:27:11Z",
-          "updated_at": "2025-08-19T00:38:38Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/24",
-          "labels": [
-            "enhancement",
-            "good first issue"
-          ],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 10,
-          "title": "Distribution Module Implementation",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-16T06:04:13Z",
-          "updated_at": "2025-08-16T06:04:13Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/10",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 9,
-          "title": "Distribution Strategy Module Implementation",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-16T06:04:11Z",
-          "updated_at": "2025-08-16T06:04:11Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/9",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 2,
-          "title": "Implement Voting Module with Signature-Based Voting and Multiple Strategies",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-16T05:44:50Z",
-          "updated_at": "2025-08-18T23:17:20Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/2",
-          "labels": [
-            "enhancement"
-          ],
-          "assignees": [],
           "comments": []
         }
       ]
