@@ -1,15 +1,232 @@
 {
   "organization": "BreadchainCoop",
-  "generated_at": "2026-02-15T00:17:22.519514+00:00",
-  "generation_time_seconds": 144.64,
+  "generated_at": "2026-02-16T00:17:21.500773+00:00",
+  "generation_time_seconds": 147.7,
   "stats": {
     "total_repos": 45,
     "repos_with_prs": 22,
     "repos_with_issues": 27,
-    "total_open_prs": 99,
+    "total_open_prs": 100,
     "total_open_issues": 234
   },
   "trees": {
+    "app-stacks": {
+      "name": "app-stacks",
+      "branch": "dev",
+      "repo_name": "app-stacks",
+      "pr_number": null,
+      "pr_title": null,
+      "pr_url": null,
+      "pr_author": null,
+      "last_updated": "2026-02-15T22:17:07Z",
+      "ci_status": "",
+      "github_url": "https://github.com/BreadchainCoop/app-stacks",
+      "is_draft": false,
+      "labels": [],
+      "commits_from_parent": [],
+      "parent_branch_name": null,
+      "children": [
+        {
+          "name": "Add Privy authentication integration",
+          "branch": "RonTuretzky/add-privy-auth",
+          "repo_name": "app-stacks",
+          "pr_number": 17,
+          "pr_title": "Add Privy authentication integration",
+          "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/17",
+          "pr_author": "RonTuretzky",
+          "last_updated": "2026-02-04T18:06:34Z",
+          "ci_status": "pass",
+          "github_url": "https://github.com/BreadchainCoop/app-stacks",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "18a053e8a0211e65f5c6a9caf177cd2380d5813a",
+              "short_sha": "18a053e",
+              "message": "Replace RainbowKit with Privy authentication",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2026-02-04",
+              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/18a053e8a0211e65f5c6a9caf177cd2380d5813a"
+            },
+            {
+              "sha": "34bfaa987bc4fd2ed704bf6dff5ba4ef1a561440",
+              "short_sha": "34bfaa9",
+              "message": "Restore ssr config and Navbar static prop",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2026-02-04",
+              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/34bfaa987bc4fd2ed704bf6dff5ba4ef1a561440"
+            }
+          ],
+          "parent_branch_name": "dev",
+          "children": [
+            {
+              "name": "Disable wallet popup on invite link creation page",
+              "branch": "RonTuretzky/disable-wallet-invite",
+              "repo_name": "app-stacks",
+              "pr_number": 18,
+              "pr_title": "Disable wallet popup on invite link creation page",
+              "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/18",
+              "pr_author": "RonTuretzky",
+              "last_updated": "2026-02-04T18:11:29Z",
+              "ci_status": "",
+              "github_url": "https://github.com/BreadchainCoop/app-stacks",
+              "is_draft": false,
+              "labels": [],
+              "commits_from_parent": [
+                {
+                  "sha": "7c3df1b55e787db66942fc49dd0de6a703bceca4",
+                  "short_sha": "7c3df1b",
+                  "message": "Disable wallet popup on invite link creation page",
+                  "author": "Ron Turetzky",
+                  "author_login": "RonTuretzky",
+                  "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+                  "date": "2026-02-04",
+                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/7c3df1b55e787db66942fc49dd0de6a703bceca4"
+                }
+              ],
+              "parent_branch_name": "RonTuretzky/add-privy-auth",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Implement UI design",
+          "branch": "dev",
+          "repo_name": "app-stacks",
+          "pr_number": 5,
+          "pr_title": "Implement UI design",
+          "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/5",
+          "pr_author": "Olaleye-Blessing",
+          "last_updated": "2026-02-14T09:50:01Z",
+          "ci_status": "pass",
+          "github_url": "https://github.com/BreadchainCoop/app-stacks",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [],
+          "parent_branch_name": "dev",
+          "children": [
+            {
+              "name": "Generate short links on the fly",
+              "branch": "shorten-links",
+              "repo_name": "app-stacks",
+              "pr_number": 26,
+              "pr_title": "Generate short links on the fly",
+              "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/26",
+              "pr_author": "Olaleye-Blessing",
+              "last_updated": "2026-02-15T22:20:53Z",
+              "ci_status": "pass",
+              "github_url": "https://github.com/BreadchainCoop/app-stacks",
+              "is_draft": false,
+              "labels": [],
+              "commits_from_parent": [
+                {
+                  "sha": "41d2ff11f4092f98fe43ff159395df95cb719e08",
+                  "short_sha": "41d2ff1",
+                  "message": "Generate short links on the fly",
+                  "author": "Olaleye Blessing",
+                  "author_login": "Olaleye-Blessing",
+                  "author_avatar_url": "https://avatars.githubusercontent.com/u/70102539?v=4",
+                  "date": "2026-02-15",
+                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/41d2ff11f4092f98fe43ff159395df95cb719e08"
+                }
+              ],
+              "parent_branch_name": "dev",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Add local SavingCircles deployment script",
+          "branch": "2-add-local-savingcircles-deployment-script",
+          "repo_name": "app-stacks",
+          "pr_number": 4,
+          "pr_title": "Add local SavingCircles deployment script",
+          "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/4",
+          "pr_author": "franrolotti",
+          "last_updated": "2025-12-31T12:31:33Z",
+          "ci_status": "fail",
+          "github_url": "https://github.com/BreadchainCoop/app-stacks",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "78ba1ea530993071591e848fcff5bee6c240d316",
+              "short_sha": "78ba1ea",
+              "message": "feat(contracts): add local SavingCircles deployment script",
+              "author": "Francisco Rolotti",
+              "author_login": "franrolotti",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
+              "date": "2025-12-09",
+              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/78ba1ea530993071591e848fcff5bee6c240d316"
+            },
+            {
+              "sha": "8201375af7561d5aadfe540a4da3149f8432f6fb",
+              "short_sha": "8201375",
+              "message": "feat: deploy mock BREAD token + bump saving-circles submodule (invite)",
+              "author": "Francisco Rolotti",
+              "author_login": "franrolotti",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
+              "date": "2025-12-18",
+              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/8201375af7561d5aadfe540a4da3149f8432f6fb"
+            },
+            {
+              "sha": "d4ac048146c52ff586c953bdb5d668cca8ef2a0e",
+              "short_sha": "d4ac048",
+              "message": "chore: track saving-circles dev branch and bump submodule",
+              "author": "Francisco Rolotti",
+              "author_login": "franrolotti",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
+              "date": "2025-12-31",
+              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/d4ac048146c52ff586c953bdb5d668cca8ef2a0e"
+            },
+            {
+              "sha": "901991a328fd90fb9f779ec2644ef3909a961c58",
+              "short_sha": "901991a",
+              "message": "docs: add command to update submodules to latest",
+              "author": "Francisco Rolotti",
+              "author_login": "franrolotti",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
+              "date": "2025-12-31",
+              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/901991a328fd90fb9f779ec2644ef3909a961c58"
+            }
+          ],
+          "parent_branch_name": "dev",
+          "children": []
+        },
+        {
+          "name": "git submodule for stack smart contracts and anvil deployment",
+          "branch": "sb-anvil-deployment",
+          "repo_name": "app-stacks",
+          "pr_number": 3,
+          "pr_title": "git submodule for stack smart contracts and anvil deployment setup",
+          "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/3",
+          "pr_author": "secbajor",
+          "last_updated": "2025-12-08T22:40:44Z",
+          "ci_status": "",
+          "github_url": "https://github.com/BreadchainCoop/app-stacks",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "fedd1f6cfbf1e4c8a280b9c96f6ad9eec7b5ebae",
+              "short_sha": "fedd1f6",
+              "message": "git submodule for stack smart contracts and anvil deployment setup",
+              "author": "Sara",
+              "author_login": "sarace",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/24276454?v=4",
+              "date": "2025-12-08",
+              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/fedd1f6cfbf1e4c8a280b9c96f6ad9eec7b5ebae"
+            }
+          ],
+          "parent_branch_name": "dev",
+          "children": []
+        }
+      ]
+    },
     "saving-circles": {
       "name": "saving-circles",
       "branch": "dev",
@@ -72,7 +289,7 @@
           "pr_title": "Assess time based rounds and allow late claims",
           "pr_url": "https://github.com/BreadchainCoop/saving-circles/pull/107",
           "pr_author": "franrolotti",
-          "last_updated": "2026-02-14T10:23:19Z",
+          "last_updated": "2026-02-15T20:45:23Z",
           "ci_status": "pass",
           "github_url": "https://github.com/BreadchainCoop/saving-circles",
           "is_draft": false,
@@ -230,194 +447,6 @@
         }
       ]
     },
-    "app-stacks": {
-      "name": "app-stacks",
-      "branch": "dev",
-      "repo_name": "app-stacks",
-      "pr_number": null,
-      "pr_title": null,
-      "pr_url": null,
-      "pr_author": null,
-      "last_updated": "2026-02-14T09:42:50Z",
-      "ci_status": "",
-      "github_url": "https://github.com/BreadchainCoop/app-stacks",
-      "is_draft": false,
-      "labels": [],
-      "commits_from_parent": [],
-      "parent_branch_name": null,
-      "children": [
-        {
-          "name": "Add Privy authentication integration",
-          "branch": "RonTuretzky/add-privy-auth",
-          "repo_name": "app-stacks",
-          "pr_number": 17,
-          "pr_title": "Add Privy authentication integration",
-          "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/17",
-          "pr_author": "RonTuretzky",
-          "last_updated": "2026-02-04T18:06:34Z",
-          "ci_status": "pass",
-          "github_url": "https://github.com/BreadchainCoop/app-stacks",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "18a053e8a0211e65f5c6a9caf177cd2380d5813a",
-              "short_sha": "18a053e",
-              "message": "Replace RainbowKit with Privy authentication",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2026-02-04",
-              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/18a053e8a0211e65f5c6a9caf177cd2380d5813a"
-            },
-            {
-              "sha": "34bfaa987bc4fd2ed704bf6dff5ba4ef1a561440",
-              "short_sha": "34bfaa9",
-              "message": "Restore ssr config and Navbar static prop",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2026-02-04",
-              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/34bfaa987bc4fd2ed704bf6dff5ba4ef1a561440"
-            }
-          ],
-          "parent_branch_name": "dev",
-          "children": [
-            {
-              "name": "Disable wallet popup on invite link creation page",
-              "branch": "RonTuretzky/disable-wallet-invite",
-              "repo_name": "app-stacks",
-              "pr_number": 18,
-              "pr_title": "Disable wallet popup on invite link creation page",
-              "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/18",
-              "pr_author": "RonTuretzky",
-              "last_updated": "2026-02-04T18:11:29Z",
-              "ci_status": "",
-              "github_url": "https://github.com/BreadchainCoop/app-stacks",
-              "is_draft": false,
-              "labels": [],
-              "commits_from_parent": [
-                {
-                  "sha": "7c3df1b55e787db66942fc49dd0de6a703bceca4",
-                  "short_sha": "7c3df1b",
-                  "message": "Disable wallet popup on invite link creation page",
-                  "author": "Ron Turetzky",
-                  "author_login": "RonTuretzky",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-                  "date": "2026-02-04",
-                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/7c3df1b55e787db66942fc49dd0de6a703bceca4"
-                }
-              ],
-              "parent_branch_name": "RonTuretzky/add-privy-auth",
-              "children": []
-            }
-          ]
-        },
-        {
-          "name": "Implement UI design",
-          "branch": "dev",
-          "repo_name": "app-stacks",
-          "pr_number": 5,
-          "pr_title": "Implement UI design",
-          "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/5",
-          "pr_author": "Olaleye-Blessing",
-          "last_updated": "2026-02-14T09:50:01Z",
-          "ci_status": "pass",
-          "github_url": "https://github.com/BreadchainCoop/app-stacks",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [],
-          "parent_branch_name": "dev",
-          "children": []
-        },
-        {
-          "name": "Add local SavingCircles deployment script",
-          "branch": "2-add-local-savingcircles-deployment-script",
-          "repo_name": "app-stacks",
-          "pr_number": 4,
-          "pr_title": "Add local SavingCircles deployment script",
-          "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/4",
-          "pr_author": "franrolotti",
-          "last_updated": "2025-12-31T12:31:33Z",
-          "ci_status": "fail",
-          "github_url": "https://github.com/BreadchainCoop/app-stacks",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "78ba1ea530993071591e848fcff5bee6c240d316",
-              "short_sha": "78ba1ea",
-              "message": "feat(contracts): add local SavingCircles deployment script",
-              "author": "Francisco Rolotti",
-              "author_login": "franrolotti",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-              "date": "2025-12-09",
-              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/78ba1ea530993071591e848fcff5bee6c240d316"
-            },
-            {
-              "sha": "8201375af7561d5aadfe540a4da3149f8432f6fb",
-              "short_sha": "8201375",
-              "message": "feat: deploy mock BREAD token + bump saving-circles submodule (invite)",
-              "author": "Francisco Rolotti",
-              "author_login": "franrolotti",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-              "date": "2025-12-18",
-              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/8201375af7561d5aadfe540a4da3149f8432f6fb"
-            },
-            {
-              "sha": "d4ac048146c52ff586c953bdb5d668cca8ef2a0e",
-              "short_sha": "d4ac048",
-              "message": "chore: track saving-circles dev branch and bump submodule",
-              "author": "Francisco Rolotti",
-              "author_login": "franrolotti",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-              "date": "2025-12-31",
-              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/d4ac048146c52ff586c953bdb5d668cca8ef2a0e"
-            },
-            {
-              "sha": "901991a328fd90fb9f779ec2644ef3909a961c58",
-              "short_sha": "901991a",
-              "message": "docs: add command to update submodules to latest",
-              "author": "Francisco Rolotti",
-              "author_login": "franrolotti",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-              "date": "2025-12-31",
-              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/901991a328fd90fb9f779ec2644ef3909a961c58"
-            }
-          ],
-          "parent_branch_name": "dev",
-          "children": []
-        },
-        {
-          "name": "git submodule for stack smart contracts and anvil deployment",
-          "branch": "sb-anvil-deployment",
-          "repo_name": "app-stacks",
-          "pr_number": 3,
-          "pr_title": "git submodule for stack smart contracts and anvil deployment setup",
-          "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/3",
-          "pr_author": "secbajor",
-          "last_updated": "2025-12-08T22:40:44Z",
-          "ci_status": "",
-          "github_url": "https://github.com/BreadchainCoop/app-stacks",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "fedd1f6cfbf1e4c8a280b9c96f6ad9eec7b5ebae",
-              "short_sha": "fedd1f6",
-              "message": "git submodule for stack smart contracts and anvil deployment setup",
-              "author": "Sara",
-              "author_login": "sarace",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/24276454?v=4",
-              "date": "2025-12-08",
-              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/fedd1f6cfbf1e4c8a280b9c96f6ad9eec7b5ebae"
-            }
-          ],
-          "parent_branch_name": "dev",
-          "children": []
-        }
-      ]
-    },
     "breadchain": {
       "name": "breadchain",
       "branch": "dev",
@@ -442,7 +471,7 @@
           "pr_title": "Refactor upgrade scripts and docs",
           "pr_url": "https://github.com/BreadchainCoop/breadchain/pull/182",
           "pr_author": "bagelface",
-          "last_updated": "2026-02-13T15:49:07Z",
+          "last_updated": "2026-02-15T20:46:27Z",
           "ci_status": "pass",
           "github_url": "https://github.com/BreadchainCoop/breadchain",
           "is_draft": false,
@@ -4724,6 +4753,119 @@
     }
   },
   "issues": {
+    "app-stacks": {
+      "repo_name": "app-stacks",
+      "github_url": "https://github.com/BreadchainCoop/app-stacks",
+      "issues": [
+        {
+          "number": 24,
+          "title": "Technical Spec for the Stacks Supabase integration",
+          "author": "exo404",
+          "created_at": "2026-02-13T18:25:42Z",
+          "updated_at": "2026-02-13T18:25:42Z",
+          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/24",
+          "labels": [
+            "documentation",
+            "enhancement"
+          ],
+          "assignees": [
+            "exo404"
+          ],
+          "comments": []
+        },
+        {
+          "number": 23,
+          "title": "Shorten links",
+          "author": "Olaleye-Blessing",
+          "created_at": "2026-02-12T23:52:39Z",
+          "updated_at": "2026-02-12T23:52:39Z",
+          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/23",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 22,
+          "title": "Implement the deposit module",
+          "author": "Olaleye-Blessing",
+          "created_at": "2026-02-12T23:43:52Z",
+          "updated_at": "2026-02-12T23:43:52Z",
+          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/22",
+          "labels": [
+            "not-ready"
+          ],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 2,
+          "title": "Add local SavingCircles deployment script",
+          "author": "franrolotti",
+          "created_at": "2025-12-08T20:24:00Z",
+          "updated_at": "2025-12-08T20:24:00Z",
+          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/2",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 1,
+          "title": "Abstract BREAD Token \u2014 Show Only USD Balances on Frontend (Inspired by Hyperliquid & Polymarket)",
+          "author": "diterra-code",
+          "created_at": "2025-10-15T21:14:26Z",
+          "updated_at": "2025-10-16T04:28:41Z",
+          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/1",
+          "labels": [
+            "documentation",
+            "help wanted"
+          ],
+          "assignees": [
+            "diterra-code",
+            "RonTuretzky",
+            "tbsoc"
+          ],
+          "comments": [
+            {
+              "id": "IC_kwDOQBrnic7LJut_",
+              "author": {
+                "login": "diterra-code"
+              },
+              "authorAssociation": "NONE",
+              "body": "Dropping this here @RonTuretzky @tbsoc @bagelface for further discussion.\n\n@RonTuretzky what do you think of my mermaid diagram skills? \n\nThe idea is to maybe after MVP of Stacks/Safety Net try to work on this UX.",
+              "createdAt": "2025-10-15T21:17:43Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [
+                {
+                  "content": "HEART",
+                  "users": {
+                    "totalCount": 1
+                  }
+                }
+              ],
+              "url": "https://github.com/BreadchainCoop/app-stacks/issues/1#issuecomment-3408325503",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOQBrnic7LMzo-",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "NONE",
+              "body": "> Dropping this here @RonTuretzky @tbsoc @bagelface for further discussion.\n> \n> @RonTuretzky what do you think of my mermaid diagram skills? \n> \n> The idea is to maybe after MVP of Stacks/Safety Net try to work on this UX.\n\n\n\n\ud83d\ude0d\ud83d\ude0d\ud83d\ude0d\ud83d\ude0d\ud83d\ude0d\n\n\nI think with the lifi widget like we have in the crowdstaking app this is quite doable. ",
+              "createdAt": "2025-10-16T04:28:41Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/app-stacks/issues/1#issuecomment-3409132094",
+              "viewerDidAuthor": false
+            }
+          ]
+        }
+      ]
+    },
     "bread-ui-kit": {
       "repo_name": "bread-ui-kit",
       "github_url": "https://github.com/BreadchainCoop/bread-ui-kit",
@@ -4777,7 +4919,7 @@
           "title": "Show the card details information in the \"Your Stack\" section",
           "author": "brendaasfjnso",
           "created_at": "2026-02-05T20:04:39Z",
-          "updated_at": "2026-02-10T16:51:52Z",
+          "updated_at": "2026-02-15T18:59:37Z",
           "html_url": "https://github.com/BreadchainCoop/saving-circles/issues/116",
           "labels": [
             "bug"
@@ -4800,6 +4942,21 @@
               "minimizedReason": "",
               "reactionGroups": [],
               "url": "https://github.com/BreadchainCoop/saving-circles/issues/116#issuecomment-3879326729",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDONW6FcM7owapm",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "I would propose to add the stack label to the contract over adding a supabase instance to project scope. ",
+              "createdAt": "2026-02-15T18:59:37Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/saving-circles/issues/116#issuecomment-3905006182",
               "viewerDidAuthor": false
             }
           ]
@@ -5526,119 +5683,6 @@
               "minimizedReason": "",
               "reactionGroups": [],
               "url": "https://github.com/BreadchainCoop/saving-circles/issues/8#issuecomment-2832375345",
-              "viewerDidAuthor": false
-            }
-          ]
-        }
-      ]
-    },
-    "app-stacks": {
-      "repo_name": "app-stacks",
-      "github_url": "https://github.com/BreadchainCoop/app-stacks",
-      "issues": [
-        {
-          "number": 24,
-          "title": "Technical Spec for the Stacks Supabase integration",
-          "author": "exo404",
-          "created_at": "2026-02-13T18:25:42Z",
-          "updated_at": "2026-02-13T18:25:42Z",
-          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/24",
-          "labels": [
-            "documentation",
-            "enhancement"
-          ],
-          "assignees": [
-            "exo404"
-          ],
-          "comments": []
-        },
-        {
-          "number": 23,
-          "title": "Shorten links",
-          "author": "Olaleye-Blessing",
-          "created_at": "2026-02-12T23:52:39Z",
-          "updated_at": "2026-02-12T23:52:39Z",
-          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/23",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 22,
-          "title": "Implement the deposit module",
-          "author": "Olaleye-Blessing",
-          "created_at": "2026-02-12T23:43:52Z",
-          "updated_at": "2026-02-12T23:43:52Z",
-          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/22",
-          "labels": [
-            "not-ready"
-          ],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 2,
-          "title": "Add local SavingCircles deployment script",
-          "author": "franrolotti",
-          "created_at": "2025-12-08T20:24:00Z",
-          "updated_at": "2025-12-08T20:24:00Z",
-          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/2",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 1,
-          "title": "Abstract BREAD Token \u2014 Show Only USD Balances on Frontend (Inspired by Hyperliquid & Polymarket)",
-          "author": "diterra-code",
-          "created_at": "2025-10-15T21:14:26Z",
-          "updated_at": "2025-10-16T04:28:41Z",
-          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/1",
-          "labels": [
-            "documentation",
-            "help wanted"
-          ],
-          "assignees": [
-            "diterra-code",
-            "RonTuretzky",
-            "tbsoc"
-          ],
-          "comments": [
-            {
-              "id": "IC_kwDOQBrnic7LJut_",
-              "author": {
-                "login": "diterra-code"
-              },
-              "authorAssociation": "NONE",
-              "body": "Dropping this here @RonTuretzky @tbsoc @bagelface for further discussion.\n\n@RonTuretzky what do you think of my mermaid diagram skills? \n\nThe idea is to maybe after MVP of Stacks/Safety Net try to work on this UX.",
-              "createdAt": "2025-10-15T21:17:43Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [
-                {
-                  "content": "HEART",
-                  "users": {
-                    "totalCount": 1
-                  }
-                }
-              ],
-              "url": "https://github.com/BreadchainCoop/app-stacks/issues/1#issuecomment-3408325503",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOQBrnic7LMzo-",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "NONE",
-              "body": "> Dropping this here @RonTuretzky @tbsoc @bagelface for further discussion.\n> \n> @RonTuretzky what do you think of my mermaid diagram skills? \n> \n> The idea is to maybe after MVP of Stacks/Safety Net try to work on this UX.\n\n\n\n\ud83d\ude0d\ud83d\ude0d\ud83d\ude0d\ud83d\ude0d\ud83d\ude0d\n\n\nI think with the lifi widget like we have in the crowdstaking app this is quite doable. ",
-              "createdAt": "2025-10-16T04:28:41Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/app-stacks/issues/1#issuecomment-3409132094",
               "viewerDidAuthor": false
             }
           ]
