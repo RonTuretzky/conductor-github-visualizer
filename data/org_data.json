@@ -1,7 +1,7 @@
 {
   "organization": "BreadchainCoop",
-  "generated_at": "2026-02-22T00:16:28.359500+00:00",
-  "generation_time_seconds": 140.82,
+  "generated_at": "2026-02-23T00:16:56.027058+00:00",
+  "generation_time_seconds": 129.54,
   "stats": {
     "total_repos": 46,
     "repos_with_prs": 22,
@@ -18,7 +18,7 @@
       "pr_title": null,
       "pr_url": null,
       "pr_author": null,
-      "last_updated": "2026-02-21T22:14:08Z",
+      "last_updated": "2026-02-22T09:54:31Z",
       "ci_status": "",
       "github_url": "https://github.com/BreadchainCoop/app-stacks",
       "is_draft": false,
@@ -101,7 +101,7 @@
           "pr_title": "Implement UI design",
           "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/5",
           "pr_author": "Olaleye-Blessing",
-          "last_updated": "2026-02-21T22:20:25Z",
+          "last_updated": "2026-02-22T10:01:42Z",
           "ci_status": "pass",
           "github_url": "https://github.com/BreadchainCoop/app-stacks",
           "is_draft": false,
