@@ -1,15 +1,136 @@
 {
   "organization": "BreadchainCoop",
-  "generated_at": "2026-02-25T00:19:26.846113+00:00",
-  "generation_time_seconds": 162.52,
+  "generated_at": "2026-02-26T00:15:35.508625+00:00",
+  "generation_time_seconds": 131.07,
   "stats": {
     "total_repos": 46,
-    "repos_with_prs": 21,
+    "repos_with_prs": 22,
     "repos_with_issues": 28,
-    "total_open_prs": 98,
-    "total_open_issues": 231
+    "total_open_prs": 89,
+    "total_open_issues": 230
   },
   "trees": {
+    "Crowdstaking-Landing-Page": {
+      "name": "Crowdstaking-Landing-Page",
+      "branch": "main",
+      "repo_name": "Crowdstaking-Landing-Page",
+      "pr_number": null,
+      "pr_title": null,
+      "pr_url": null,
+      "pr_author": null,
+      "last_updated": "2026-02-25T23:01:14Z",
+      "ci_status": "",
+      "github_url": "https://github.com/BreadchainCoop/Crowdstaking-Landing-Page",
+      "is_draft": false,
+      "labels": [],
+      "commits_from_parent": [],
+      "parent_branch_name": null,
+      "children": [
+        {
+          "name": "Update landing page to match bread.coop branding",
+          "branch": "v0/ronturetzky-40aedb6f-2",
+          "repo_name": "Crowdstaking-Landing-Page",
+          "pr_number": 2,
+          "pr_title": "Update landing page to match bread.coop branding",
+          "pr_url": "https://github.com/BreadchainCoop/Crowdstaking-Landing-Page/pull/2",
+          "pr_author": "RonTuretzky",
+          "last_updated": "2026-02-25T23:01:42Z",
+          "ci_status": "pass",
+          "github_url": "https://github.com/BreadchainCoop/Crowdstaking-Landing-Page",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "f0b7ff9b706c32539d80c77355bb86bb3f9eb930",
+              "short_sha": "f0b7ff9",
+              "message": "Update LandingPage to match bread.coop branding and add link",
+              "author": "v0",
+              "author_login": "v0[bot]",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/215908095?v=4",
+              "date": "2026-02-25",
+              "html_url": "https://github.com/BreadchainCoop/Crowdstaking-Landing-Page/commit/f0b7ff9b706c32539d80c77355bb86bb3f9eb930"
+            },
+            {
+              "sha": "3e887e3f72553dc40459d4487abd7de2497e1751",
+              "short_sha": "3e887e3",
+              "message": "fix: remove version numbers from UI component imports",
+              "author": "v0",
+              "author_login": "v0[bot]",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/215908095?v=4",
+              "date": "2026-02-25",
+              "html_url": "https://github.com/BreadchainCoop/Crowdstaking-Landing-Page/commit/3e887e3f72553dc40459d4487abd7de2497e1751"
+            },
+            {
+              "sha": "f3a4800b793b8abdb2b158c73273f87f2150b6f7",
+              "short_sha": "f3a4800",
+              "message": "fix: correct corrupted import paths in UI components",
+              "author": "v0",
+              "author_login": "v0[bot]",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/215908095?v=4",
+              "date": "2026-02-25",
+              "html_url": "https://github.com/BreadchainCoop/Crowdstaking-Landing-Page/commit/f3a4800b793b8abdb2b158c73273f87f2150b6f7"
+            },
+            {
+              "sha": "fac926a369d98d8674ec842c6a74d8627e443e39",
+              "short_sha": "fac926a",
+              "message": "refactor: remove unused shadcn UI component files",
+              "author": "v0",
+              "author_login": "v0[bot]",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/215908095?v=4",
+              "date": "2026-02-25",
+              "html_url": "https://github.com/BreadchainCoop/Crowdstaking-Landing-Page/commit/fac926a369d98d8674ec842c6a74d8627e443e39"
+            },
+            {
+              "sha": "450ae3593a69440f6c7e485cff3d78459a02e3b1",
+              "short_sha": "450ae35",
+              "message": "fix: sync updated files to Vercel deployment directory",
+              "author": "v0",
+              "author_login": "v0[bot]",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/215908095?v=4",
+              "date": "2026-02-25",
+              "html_url": "https://github.com/BreadchainCoop/Crowdstaking-Landing-Page/commit/450ae3593a69440f6c7e485cff3d78459a02e3b1"
+            }
+          ],
+          "parent_branch_name": "main",
+          "children": []
+        }
+      ]
+    },
+    "app-stacks": {
+      "name": "app-stacks",
+      "branch": "dev",
+      "repo_name": "app-stacks",
+      "pr_number": null,
+      "pr_title": null,
+      "pr_url": null,
+      "pr_author": null,
+      "last_updated": "2026-02-25T18:30:03Z",
+      "ci_status": "",
+      "github_url": "https://github.com/BreadchainCoop/app-stacks",
+      "is_draft": false,
+      "labels": [],
+      "commits_from_parent": [],
+      "parent_branch_name": null,
+      "children": [
+        {
+          "name": "Implement UI design",
+          "branch": "dev",
+          "repo_name": "app-stacks",
+          "pr_number": 5,
+          "pr_title": "Implement UI design",
+          "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/5",
+          "pr_author": "Olaleye-Blessing",
+          "last_updated": "2026-02-25T18:36:51Z",
+          "ci_status": "pass",
+          "github_url": "https://github.com/BreadchainCoop/app-stacks",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [],
+          "parent_branch_name": "dev",
+          "children": []
+        }
+      ]
+    },
     "gas-killer-router": {
       "name": "gas-killer-router",
       "branch": "main",
@@ -18,7 +139,7 @@
       "pr_title": null,
       "pr_url": null,
       "pr_author": null,
-      "last_updated": "2026-02-24T23:25:05Z",
+      "last_updated": "2026-02-25T17:42:26Z",
       "ci_status": "",
       "github_url": "https://github.com/BreadchainCoop/gas-killer-router",
       "is_draft": false,
@@ -55,14 +176,218 @@
           "children": []
         },
         {
-          "name": "feat: add Kubernetes/Helm support for K8s deployments",
-          "branch": "RonTuretzky/k8s-support",
+          "name": "fix: point view-only provider and BLS contracts to L2",
+          "branch": "RonTuretzky/fix-l2-block-ref",
           "repo_name": "gas-killer-router",
-          "pr_number": 84,
-          "pr_title": "feat: add Kubernetes/Helm support for K8s deployments",
-          "pr_url": "https://github.com/BreadchainCoop/gas-killer-router/pull/84",
+          "pr_number": 101,
+          "pr_title": "fix: point view-only provider and BLS contracts to L2",
+          "pr_url": "https://github.com/BreadchainCoop/gas-killer-router/pull/101",
           "pr_author": "RonTuretzky",
-          "last_updated": "2026-02-18T19:27:03Z",
+          "last_updated": "2026-02-25T17:35:27Z",
+          "ci_status": "pass",
+          "github_url": "https://github.com/BreadchainCoop/gas-killer-router",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "8288ac442c79ebc1b73cd8ba9b3cb4e1977cdd87",
+              "short_sha": "8288ac4",
+              "message": "feat: add Kubernetes/Helm support with K8s deployment configurations",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-12-20",
+              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/8288ac442c79ebc1b73cd8ba9b3cb4e1977cdd87"
+            },
+            {
+              "sha": "cf0118b132077355ebdaff3d9d94bf7fdbe2d104",
+              "short_sha": "cf0118b",
+              "message": "fix: add exec-based readiness probes to node and router pods",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-12-20",
+              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/cf0118b132077355ebdaff3d9d94bf7fdbe2d104"
+            },
+            {
+              "sha": "82d7f059793968885dddd6fadc9f3d4a1c118105",
+              "short_sha": "82d7f05",
+              "message": "ci: run helm tests on all pull requests",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-12-20",
+              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/82d7f059793968885dddd6fadc9f3d4a1c118105"
+            },
+            {
+              "sha": "8ce7aa161aae5b030b52337b2afba7a031ead977",
+              "short_sha": "8ce7aa1",
+              "message": "fix: add procps to Docker images for pgrep readiness probes",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-12-20",
+              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/8ce7aa161aae5b030b52337b2afba7a031ead977"
+            },
+            {
+              "sha": "83fe5e4f59e5e5afbe5be74b4530909820dbd225",
+              "short_sha": "83fe5e4",
+              "message": "fix: use /proc/1/cmdline for readiness probes and improve debug logging",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-12-20",
+              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/83fe5e4f59e5e5afbe5be74b4530909820dbd225"
+            }
+          ],
+          "parent_branch_name": "main",
+          "children": []
+        },
+        {
+          "name": "test: trigger router multiple times in helm integration test",
+          "branch": "RonTuretzky/helm-multi-trigger",
+          "repo_name": "gas-killer-router",
+          "pr_number": 97,
+          "pr_title": "test: trigger router multiple times in helm integration test",
+          "pr_url": "https://github.com/BreadchainCoop/gas-killer-router/pull/97",
+          "pr_author": "RonTuretzky",
+          "last_updated": "2026-02-25T17:42:29Z",
+          "ci_status": "pass",
+          "github_url": "https://github.com/BreadchainCoop/gas-killer-router",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "8288ac442c79ebc1b73cd8ba9b3cb4e1977cdd87",
+              "short_sha": "8288ac4",
+              "message": "feat: add Kubernetes/Helm support with K8s deployment configurations",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-12-20",
+              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/8288ac442c79ebc1b73cd8ba9b3cb4e1977cdd87"
+            },
+            {
+              "sha": "cf0118b132077355ebdaff3d9d94bf7fdbe2d104",
+              "short_sha": "cf0118b",
+              "message": "fix: add exec-based readiness probes to node and router pods",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-12-20",
+              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/cf0118b132077355ebdaff3d9d94bf7fdbe2d104"
+            },
+            {
+              "sha": "82d7f059793968885dddd6fadc9f3d4a1c118105",
+              "short_sha": "82d7f05",
+              "message": "ci: run helm tests on all pull requests",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-12-20",
+              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/82d7f059793968885dddd6fadc9f3d4a1c118105"
+            },
+            {
+              "sha": "8ce7aa161aae5b030b52337b2afba7a031ead977",
+              "short_sha": "8ce7aa1",
+              "message": "fix: add procps to Docker images for pgrep readiness probes",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-12-20",
+              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/8ce7aa161aae5b030b52337b2afba7a031ead977"
+            },
+            {
+              "sha": "83fe5e4f59e5e5afbe5be74b4530909820dbd225",
+              "short_sha": "83fe5e4",
+              "message": "fix: use /proc/1/cmdline for readiness probes and improve debug logging",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-12-20",
+              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/83fe5e4f59e5e5afbe5be74b4530909820dbd225"
+            }
+          ],
+          "parent_branch_name": "main",
+          "children": []
+        },
+        {
+          "name": "Add bridge job to helm e2e tests",
+          "branch": "RonTuretzky/helm-bridge-e2e",
+          "repo_name": "gas-killer-router",
+          "pr_number": 94,
+          "pr_title": "Add bridge job to helm e2e tests",
+          "pr_url": "https://github.com/BreadchainCoop/gas-killer-router/pull/94",
+          "pr_author": "RonTuretzky",
+          "last_updated": "2026-02-25T17:35:53Z",
+          "ci_status": "pass",
+          "github_url": "https://github.com/BreadchainCoop/gas-killer-router",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "8288ac442c79ebc1b73cd8ba9b3cb4e1977cdd87",
+              "short_sha": "8288ac4",
+              "message": "feat: add Kubernetes/Helm support with K8s deployment configurations",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-12-20",
+              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/8288ac442c79ebc1b73cd8ba9b3cb4e1977cdd87"
+            },
+            {
+              "sha": "cf0118b132077355ebdaff3d9d94bf7fdbe2d104",
+              "short_sha": "cf0118b",
+              "message": "fix: add exec-based readiness probes to node and router pods",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-12-20",
+              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/cf0118b132077355ebdaff3d9d94bf7fdbe2d104"
+            },
+            {
+              "sha": "82d7f059793968885dddd6fadc9f3d4a1c118105",
+              "short_sha": "82d7f05",
+              "message": "ci: run helm tests on all pull requests",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-12-20",
+              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/82d7f059793968885dddd6fadc9f3d4a1c118105"
+            },
+            {
+              "sha": "8ce7aa161aae5b030b52337b2afba7a031ead977",
+              "short_sha": "8ce7aa1",
+              "message": "fix: add procps to Docker images for pgrep readiness probes",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-12-20",
+              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/8ce7aa161aae5b030b52337b2afba7a031ead977"
+            },
+            {
+              "sha": "83fe5e4f59e5e5afbe5be74b4530909820dbd225",
+              "short_sha": "83fe5e4",
+              "message": "fix: use /proc/1/cmdline for readiness probes and improve debug logging",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-12-20",
+              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/83fe5e4f59e5e5afbe5be74b4530909820dbd225"
+            }
+          ],
+          "parent_branch_name": "main",
+          "children": []
+        },
+        {
+          "name": "Add L1-L2 bridge job before gas-killer deployment",
+          "branch": "RonTuretzky/add-l1-l2-bridge",
+          "repo_name": "gas-killer-router",
+          "pr_number": 93,
+          "pr_title": "Add L1-L2 bridge job before gas-killer deployment",
+          "pr_url": "https://github.com/BreadchainCoop/gas-killer-router/pull/93",
+          "pr_author": "RonTuretzky",
+          "last_updated": "2026-02-25T17:37:27Z",
           "ci_status": "pass",
           "github_url": "https://github.com/BreadchainCoop/gas-killer-router",
           "is_draft": false,
@@ -122,82 +447,220 @@
           "parent_branch_name": "main",
           "children": [
             {
-              "name": "test: trigger router multiple times in helm integration test",
-              "branch": "RonTuretzky/helm-multi-trigger",
+              "name": "Add Gnosis factory job to deploy ArraySummation",
+              "branch": "RonTuretzky/gnosis-factory-call",
               "repo_name": "gas-killer-router",
-              "pr_number": 97,
-              "pr_title": "test: trigger router multiple times in helm integration test",
-              "pr_url": "https://github.com/BreadchainCoop/gas-killer-router/pull/97",
+              "pr_number": 96,
+              "pr_title": "Add Gnosis factory job to deploy ArraySummation",
+              "pr_url": "https://github.com/BreadchainCoop/gas-killer-router/pull/96",
               "pr_author": "RonTuretzky",
-              "last_updated": "2026-02-23T18:35:44Z",
+              "last_updated": "2026-02-23T18:14:27Z",
               "ci_status": "pass",
               "github_url": "https://github.com/BreadchainCoop/gas-killer-router",
               "is_draft": false,
               "labels": [],
               "commits_from_parent": [
                 {
-                  "sha": "e79b512448241138d9904834bb223d3e3e0729c7",
-                  "short_sha": "e79b512",
-                  "message": "test: trigger router multiple times in helm integration test",
+                  "sha": "49cfd88015f5db73508ebb665ad7ec3e4e9eb833",
+                  "short_sha": "49cfd88",
+                  "message": "Add Gnosis factory job to deploy ArraySummation after bridge",
                   "author": "Ron Turetzky",
                   "author_login": "RonTuretzky",
                   "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
                   "date": "2026-02-01",
-                  "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/e79b512448241138d9904834bb223d3e3e0729c7"
+                  "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/49cfd88015f5db73508ebb665ad7ec3e4e9eb833"
                 },
                 {
-                  "sha": "f6a4db6a3ff892a16b0678409b930172155f1e94",
-                  "short_sha": "f6a4db6",
-                  "message": "ci: trigger helm test on PRs to k8s-support branch",
+                  "sha": "9055ed0a5e4af7461c2958c78e4988a7bcde9000",
+                  "short_sha": "9055ed0",
+                  "message": "Merge remote-tracking branch 'origin/RonTuretzky/add-l1-l2-bridge' into RonTuret",
                   "author": "Ron Turetzky",
                   "author_login": "RonTuretzky",
                   "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
                   "date": "2026-02-01",
-                  "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/f6a4db6a3ff892a16b0678409b930172155f1e94"
+                  "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/9055ed0a5e4af7461c2958c78e4988a7bcde9000"
                 },
                 {
-                  "sha": "bc41242573cfd851a2006d7d7097dadb1b58a0ed",
-                  "short_sha": "bc41242",
-                  "message": "fix: optimize helm test to trigger before 180s timeout",
+                  "sha": "85d7799cd89a0ca583047368898e46c003a4190a",
+                  "short_sha": "85d7799",
+                  "message": "Add Gnosis factory variable passthrough to dev environment",
                   "author": "Ron Turetzky",
                   "author_login": "RonTuretzky",
                   "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
                   "date": "2026-02-01",
-                  "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/bc41242573cfd851a2006d7d7097dadb1b58a0ed"
+                  "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/85d7799cd89a0ca583047368898e46c003a4190a"
                 },
                 {
-                  "sha": "e820e908842649e2940fc79cc07b64e4c3cb01a1",
-                  "short_sha": "e820e90",
-                  "message": "fix: increase router ingress timeout to 10 minutes",
+                  "sha": "2981274c089307abfbcc06c1065e49e543a0e790",
+                  "short_sha": "2981274",
+                  "message": "Improve VPC cleanup to handle EKS orphaned security groups",
                   "author": "Ron Turetzky",
                   "author_login": "RonTuretzky",
                   "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-                  "date": "2026-02-01",
-                  "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/e820e908842649e2940fc79cc07b64e4c3cb01a1"
+                  "date": "2026-02-02",
+                  "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/2981274c089307abfbcc06c1065e49e543a0e790"
                 },
                 {
-                  "sha": "d6da7a87f2c20411f05434c86524c774c7949196",
-                  "short_sha": "d6da7a8",
-                  "message": "fix: increment round counter for each task to support multiple triggers",
+                  "sha": "af12a4e3f7e151dbdae165f49b2c401a47125452",
+                  "short_sha": "af12a4e",
+                  "message": "Fix JSON key parsing to use camelCase (blsSignatureChecker, registryCoordinatorM",
                   "author": "Ron Turetzky",
                   "author_login": "RonTuretzky",
                   "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-                  "date": "2026-02-01",
-                  "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/d6da7a87f2c20411f05434c86524c774c7949196"
+                  "date": "2026-02-02",
+                  "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/af12a4e3f7e151dbdae165f49b2c401a47125452"
                 }
               ],
-              "parent_branch_name": "RonTuretzky/k8s-support",
-              "children": []
+              "parent_branch_name": "RonTuretzky/add-l1-l2-bridge",
+              "children": [
+                {
+                  "name": "Add yield distribution e2e test to helm charts",
+                  "branch": "RonTuretzky/yield-dist-e2e",
+                  "repo_name": "gas-killer-router",
+                  "pr_number": 98,
+                  "pr_title": "Add yield distribution e2e test to helm charts",
+                  "pr_url": "https://github.com/BreadchainCoop/gas-killer-router/pull/98",
+                  "pr_author": "RonTuretzky",
+                  "last_updated": "2026-02-05T22:14:33Z",
+                  "ci_status": "fail",
+                  "github_url": "https://github.com/BreadchainCoop/gas-killer-router",
+                  "is_draft": false,
+                  "labels": [],
+                  "commits_from_parent": [
+                    {
+                      "sha": "00f08f0d62901eae18f5e35a6d426fb833621598",
+                      "short_sha": "00f08f0",
+                      "message": "feat: use sp1-cc library for tx sim",
+                      "author": "bagelface",
+                      "author_login": "bagelface",
+                      "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
+                      "date": "2026-01-09",
+                      "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/00f08f0d62901eae18f5e35a6d426fb833621598"
+                    },
+                    {
+                      "sha": "edbf4bad5f519ebfc94d22348b2bd8ed30cc1fb3",
+                      "short_sha": "edbf4ba",
+                      "message": "build: point to default branch for'gas-analyzer-rs' dependency",
+                      "author": "bagelface",
+                      "author_login": "bagelface",
+                      "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
+                      "date": "2026-01-12",
+                      "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/edbf4bad5f519ebfc94d22348b2bd8ed30cc1fb3"
+                    },
+                    {
+                      "sha": "2b223f2677680c9d28b69bf21284c36cb172706c",
+                      "short_sha": "2b223f2",
+                      "message": "Use `sp1-cc` library for transaction simulation (#89)",
+                      "author": "bagelface.eth",
+                      "author_login": "bagelface",
+                      "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
+                      "date": "2026-01-15",
+                      "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/2b223f2677680c9d28b69bf21284c36cb172706c"
+                    },
+                    {
+                      "sha": "159ce09c2d83c1338c7da9b01a9501c914248267",
+                      "short_sha": "159ce09",
+                      "message": "feat: use evmsketch analyzer feature and remove anvil",
+                      "author": "bagelface",
+                      "author_login": "bagelface",
+                      "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
+                      "date": "2026-01-16",
+                      "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/159ce09c2d83c1338c7da9b01a9501c914248267"
+                    },
+                    {
+                      "sha": "9b9dd72be8212de5509a5c7b12fe7cf7c0956323",
+                      "short_sha": "9b9dd72",
+                      "message": "Merge branch 'dev' into feat/remove-anvil",
+                      "author": "bagelface",
+                      "author_login": "bagelface",
+                      "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
+                      "date": "2026-01-16",
+                      "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/9b9dd72be8212de5509a5c7b12fe7cf7c0956323"
+                    }
+                  ],
+                  "parent_branch_name": "RonTuretzky/gnosis-factory-call",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "[DRAFT] feat: add Kubernetes/Helm support for K8s deployment",
+          "branch": "RonTuretzky/k8s-support",
+          "repo_name": "gas-killer-router",
+          "pr_number": 84,
+          "pr_title": "[DRAFT] feat: add Kubernetes/Helm support for K8s deployments",
+          "pr_url": "https://github.com/BreadchainCoop/gas-killer-router/pull/84",
+          "pr_author": "RonTuretzky",
+          "last_updated": "2026-02-25T17:47:57Z",
+          "ci_status": "pass",
+          "github_url": "https://github.com/BreadchainCoop/gas-killer-router",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "8288ac442c79ebc1b73cd8ba9b3cb4e1977cdd87",
+              "short_sha": "8288ac4",
+              "message": "feat: add Kubernetes/Helm support with K8s deployment configurations",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-12-20",
+              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/8288ac442c79ebc1b73cd8ba9b3cb4e1977cdd87"
             },
             {
-              "name": "feat: add Terraform AWS deployment for Gas Killer Router",
+              "sha": "cf0118b132077355ebdaff3d9d94bf7fdbe2d104",
+              "short_sha": "cf0118b",
+              "message": "fix: add exec-based readiness probes to node and router pods",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-12-20",
+              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/cf0118b132077355ebdaff3d9d94bf7fdbe2d104"
+            },
+            {
+              "sha": "82d7f059793968885dddd6fadc9f3d4a1c118105",
+              "short_sha": "82d7f05",
+              "message": "ci: run helm tests on all pull requests",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-12-20",
+              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/82d7f059793968885dddd6fadc9f3d4a1c118105"
+            },
+            {
+              "sha": "8ce7aa161aae5b030b52337b2afba7a031ead977",
+              "short_sha": "8ce7aa1",
+              "message": "fix: add procps to Docker images for pgrep readiness probes",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-12-20",
+              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/8ce7aa161aae5b030b52337b2afba7a031ead977"
+            },
+            {
+              "sha": "83fe5e4f59e5e5afbe5be74b4530909820dbd225",
+              "short_sha": "83fe5e4",
+              "message": "fix: use /proc/1/cmdline for readiness probes and improve debug logging",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-12-20",
+              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/83fe5e4f59e5e5afbe5be74b4530909820dbd225"
+            }
+          ],
+          "parent_branch_name": "main",
+          "children": [
+            {
+              "name": "[DRAFT] feat: add Terraform AWS deployment for Gas Killer Ro",
               "branch": "RonTuretzky/terraform-aws-deploy",
               "repo_name": "gas-killer-router",
               "pr_number": 87,
-              "pr_title": "feat: add Terraform AWS deployment for Gas Killer Router",
+              "pr_title": "[DRAFT] feat: add Terraform AWS deployment for Gas Killer Router",
               "pr_url": "https://github.com/BreadchainCoop/gas-killer-router/pull/87",
               "pr_author": "RonTuretzky",
-              "last_updated": "2026-02-05T20:08:43Z",
+              "last_updated": "2026-02-25T17:48:26Z",
               "ci_status": "pass",
               "github_url": "https://github.com/BreadchainCoop/gas-killer-router",
               "is_draft": false,
@@ -255,882 +718,9 @@
                 }
               ],
               "parent_branch_name": "RonTuretzky/k8s-support",
-              "children": [
-                {
-                  "name": "Enum implementation of multi-chain functionality",
-                  "branch": "RonTuretzky/terraform-aws-deploy-enum-multi-chain",
-                  "repo_name": "gas-killer-router",
-                  "pr_number": 108,
-                  "pr_title": "Enum implementation of multi-chain functionality",
-                  "pr_url": "https://github.com/BreadchainCoop/gas-killer-router/pull/108",
-                  "pr_author": "bagelface",
-                  "last_updated": "2026-02-24T23:31:16Z",
-                  "ci_status": "pass",
-                  "github_url": "https://github.com/BreadchainCoop/gas-killer-router",
-                  "is_draft": false,
-                  "labels": [],
-                  "commits_from_parent": [
-                    {
-                      "sha": "f30f106ffd0806a83c39161e6af10c9b6689fdbe",
-                      "short_sha": "f30f106",
-                      "message": "Fixes for terraform deploy and destroy in gas router",
-                      "author": "Dijar Llozana",
-                      "author_login": "dijarllozana",
-                      "author_avatar_url": "https://avatars.githubusercontent.com/u/45999272?v=4",
-                      "date": "2026-01-07",
-                      "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/f30f106ffd0806a83c39161e6af10c9b6689fdbe"
-                    },
-                    {
-                      "sha": "308a91d6d2324213aae46088bb23081289c656b1",
-                      "short_sha": "308a91d",
-                      "message": "Fixed terraform destroy",
-                      "author": "Dijar Llozana",
-                      "author_login": "dijarllozana",
-                      "author_avatar_url": "https://avatars.githubusercontent.com/u/45999272?v=4",
-                      "date": "2026-01-07",
-                      "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/308a91d6d2324213aae46088bb23081289c656b1"
-                    },
-                    {
-                      "sha": "e96d100c85a20fc615bbe2b02b0fb809b39605f3",
-                      "short_sha": "e96d100",
-                      "message": "Updated router, eigenlayer and node images",
-                      "author": "Dijar Llozana",
-                      "author_login": "dijarllozana",
-                      "author_avatar_url": "https://avatars.githubusercontent.com/u/45999272?v=4",
-                      "date": "2026-01-21",
-                      "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/e96d100c85a20fc615bbe2b02b0fb809b39605f3"
-                    },
-                    {
-                      "sha": "86fe4dcb87398cfc5484f856f646da2420658e0e",
-                      "short_sha": "86fe4dc",
-                      "message": "Fix image tags and pull policy for TESTNET deployment",
-                      "author": "Ron Turetzky",
-                      "author_login": "RonTuretzky",
-                      "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-                      "date": "2026-01-22",
-                      "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/86fe4dcb87398cfc5484f856f646da2420658e0e"
-                    },
-                    {
-                      "sha": "6ff71e56f85afd48c2f031e1a7f91f33345bbde1",
-                      "short_sha": "6ff71e5",
-                      "message": "chore: stash working without e2e through a local curl\"",
-                      "author": "Ron Turetzky",
-                      "author_login": "RonTuretzky",
-                      "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-                      "date": "2026-01-26",
-                      "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/6ff71e56f85afd48c2f031e1a7f91f33345bbde1"
-                    }
-                  ],
-                  "parent_branch_name": "RonTuretzky/terraform-aws-deploy",
-                  "children": []
-                },
-                {
-                  "name": "fix: point view-only provider and BLS contracts to L2",
-                  "branch": "RonTuretzky/fix-l2-block-ref",
-                  "repo_name": "gas-killer-router",
-                  "pr_number": 101,
-                  "pr_title": "fix: point view-only provider and BLS contracts to L2",
-                  "pr_url": "https://github.com/BreadchainCoop/gas-killer-router/pull/101",
-                  "pr_author": "RonTuretzky",
-                  "last_updated": "2026-02-20T17:59:16Z",
-                  "ci_status": "pass",
-                  "github_url": "https://github.com/BreadchainCoop/gas-killer-router",
-                  "is_draft": false,
-                  "labels": [],
-                  "commits_from_parent": [
-                    {
-                      "sha": "9543361d9ea9ad0285050867ad3d5def2c0494b6",
-                      "short_sha": "9543361",
-                      "message": "fix: route executor to correct chain based on target contract",
-                      "author": "Ron Turetzky",
-                      "author_login": "RonTuretzky",
-                      "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-                      "date": "2026-02-07",
-                      "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/9543361d9ea9ad0285050867ad3d5def2c0494b6"
-                    }
-                  ],
-                  "parent_branch_name": "RonTuretzky/terraform-aws-deploy",
-                  "children": [
-                    {
-                      "name": "Add Helm support for provisioning the L2 AVS deployment conf",
-                      "branch": "bagelface/fix-l2-block-ref",
-                      "repo_name": "gas-killer-router",
-                      "pr_number": 106,
-                      "pr_title": "Add Helm support for provisioning the L2 AVS deployment config",
-                      "pr_url": "https://github.com/BreadchainCoop/gas-killer-router/pull/106",
-                      "pr_author": "bagelface",
-                      "last_updated": "2026-02-20T21:44:00Z",
-                      "ci_status": "pass",
-                      "github_url": "https://github.com/BreadchainCoop/gas-killer-router",
-                      "is_draft": false,
-                      "labels": [],
-                      "commits_from_parent": [
-                        {
-                          "sha": "1fff16ad44612bd2c92c0c69fac53c10bbb49a77",
-                          "short_sha": "1fff16a",
-                          "message": "feat: add Helm support for provisioning the L2 AVS deployment config",
-                          "author": "bagelface",
-                          "author_login": "bagelface",
-                          "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
-                          "date": "2026-02-20",
-                          "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/1fff16ad44612bd2c92c0c69fac53c10bbb49a77"
-                        },
-                        {
-                          "sha": "43cc7f3c5864c9f060f9038443590afcc3504997",
-                          "short_sha": "43cc7f3",
-                          "message": "refactor: improve error propogation and catching for missing gnosis RPC",
-                          "author": "bagelface",
-                          "author_login": "bagelface",
-                          "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
-                          "date": "2026-02-20",
-                          "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/43cc7f3c5864c9f060f9038443590afcc3504997"
-                        }
-                      ],
-                      "parent_branch_name": "RonTuretzky/fix-l2-block-ref",
-                      "children": []
-                    }
-                  ]
-                },
-                {
-                  "name": "Dijar llozana/terraform aws deploy",
-                  "branch": "DijarLlozana/terraform-aws-deploy",
-                  "repo_name": "gas-killer-router",
-                  "pr_number": 88,
-                  "pr_title": "Dijar llozana/terraform aws deploy",
-                  "pr_url": "https://github.com/BreadchainCoop/gas-killer-router/pull/88",
-                  "pr_author": "dijarllozana",
-                  "last_updated": "2026-01-28T16:23:40Z",
-                  "ci_status": "pass",
-                  "github_url": "https://github.com/BreadchainCoop/gas-killer-router",
-                  "is_draft": false,
-                  "labels": [],
-                  "commits_from_parent": [
-                    {
-                      "sha": "f30f106ffd0806a83c39161e6af10c9b6689fdbe",
-                      "short_sha": "f30f106",
-                      "message": "Fixes for terraform deploy and destroy in gas router",
-                      "author": "Dijar Llozana",
-                      "author_login": "dijarllozana",
-                      "author_avatar_url": "https://avatars.githubusercontent.com/u/45999272?v=4",
-                      "date": "2026-01-07",
-                      "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/f30f106ffd0806a83c39161e6af10c9b6689fdbe"
-                    },
-                    {
-                      "sha": "308a91d6d2324213aae46088bb23081289c656b1",
-                      "short_sha": "308a91d",
-                      "message": "Fixed terraform destroy",
-                      "author": "Dijar Llozana",
-                      "author_login": "dijarllozana",
-                      "author_avatar_url": "https://avatars.githubusercontent.com/u/45999272?v=4",
-                      "date": "2026-01-07",
-                      "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/308a91d6d2324213aae46088bb23081289c656b1"
-                    },
-                    {
-                      "sha": "e96d100c85a20fc615bbe2b02b0fb809b39605f3",
-                      "short_sha": "e96d100",
-                      "message": "Updated router, eigenlayer and node images",
-                      "author": "Dijar Llozana",
-                      "author_login": "dijarllozana",
-                      "author_avatar_url": "https://avatars.githubusercontent.com/u/45999272?v=4",
-                      "date": "2026-01-21",
-                      "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/e96d100c85a20fc615bbe2b02b0fb809b39605f3"
-                    },
-                    {
-                      "sha": "86fe4dcb87398cfc5484f856f646da2420658e0e",
-                      "short_sha": "86fe4dc",
-                      "message": "Fix image tags and pull policy for TESTNET deployment",
-                      "author": "Ron Turetzky",
-                      "author_login": "RonTuretzky",
-                      "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-                      "date": "2026-01-22",
-                      "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/86fe4dcb87398cfc5484f856f646da2420658e0e"
-                    },
-                    {
-                      "sha": "6ff71e56f85afd48c2f031e1a7f91f33345bbde1",
-                      "short_sha": "6ff71e5",
-                      "message": "chore: stash working without e2e through a local curl\"",
-                      "author": "Ron Turetzky",
-                      "author_login": "RonTuretzky",
-                      "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-                      "date": "2026-01-26",
-                      "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/6ff71e56f85afd48c2f031e1a7f91f33345bbde1"
-                    }
-                  ],
-                  "parent_branch_name": "RonTuretzky/terraform-aws-deploy",
-                  "children": [
-                    {
-                      "name": "Add multi-chain support using enums",
-                      "branch": "bagelface/multi-chain-support",
-                      "repo_name": "gas-killer-router",
-                      "pr_number": 104,
-                      "pr_title": "Add multi-chain support using enums",
-                      "pr_url": "https://github.com/BreadchainCoop/gas-killer-router/pull/104",
-                      "pr_author": "bagelface",
-                      "last_updated": "2026-02-24T17:24:44Z",
-                      "ci_status": "pass",
-                      "github_url": "https://github.com/BreadchainCoop/gas-killer-router",
-                      "is_draft": false,
-                      "labels": [],
-                      "commits_from_parent": [
-                        {
-                          "sha": "50fbb287b0feb9c8d4c6fd6e546afc203f0c5d28",
-                          "short_sha": "50fbb28",
-                          "message": "Add multi-chain support for Sepolia and Gnosis",
-                          "author": "Ron Turetzky",
-                          "author_login": "RonTuretzky",
-                          "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-                          "date": "2026-01-31",
-                          "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/50fbb287b0feb9c8d4c6fd6e546afc203f0c5d28"
-                        },
-                        {
-                          "sha": "db02844d4195b30cb29e6b7e553016759d9d9192",
-                          "short_sha": "db02844",
-                          "message": "Fix formatting issues",
-                          "author": "Ron Turetzky",
-                          "author_login": "RonTuretzky",
-                          "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-                          "date": "2026-01-31",
-                          "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/db02844d4195b30cb29e6b7e553016759d9d9192"
-                        },
-                        {
-                          "sha": "37fdb731ebc07caed3f68b19329a0d60e62b0205",
-                          "short_sha": "37fdb73",
-                          "message": "Remove stale GAS_KILLER_CHAIN_ID documentation",
-                          "author": "Ron Turetzky",
-                          "author_login": "RonTuretzky",
-                          "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-                          "date": "2026-01-31",
-                          "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/37fdb731ebc07caed3f68b19329a0d60e62b0205"
-                        },
-                        {
-                          "sha": "5f279895feb3b85320f7490cb60fa376afd6ba50",
-                          "short_sha": "5f27989",
-                          "message": "Simplify multi-chain support by removing unused code",
-                          "author": "Ron Turetzky",
-                          "author_login": "RonTuretzky",
-                          "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-                          "date": "2026-01-31",
-                          "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/5f279895feb3b85320f7490cb60fa376afd6ba50"
-                        },
-                        {
-                          "sha": "7dae2eb233589b3586692c09ef2fa6b6c6bb42aa",
-                          "short_sha": "7dae2eb",
-                          "message": "Revert node/src/main.rs changes",
-                          "author": "Ron Turetzky",
-                          "author_login": "RonTuretzky",
-                          "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-                          "date": "2026-01-31",
-                          "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/7dae2eb233589b3586692c09ef2fa6b6c6bb42aa"
-                        }
-                      ],
-                      "parent_branch_name": "DijarLlozana/terraform-aws-deploy",
-                      "children": [
-                        {
-                          "name": "Add bridge job to helm e2e tests",
-                          "branch": "RonTuretzky/helm-bridge-e2e",
-                          "repo_name": "gas-killer-router",
-                          "pr_number": 94,
-                          "pr_title": "Add bridge job to helm e2e tests",
-                          "pr_url": "https://github.com/BreadchainCoop/gas-killer-router/pull/94",
-                          "pr_author": "RonTuretzky",
-                          "last_updated": "2026-02-24T17:22:24Z",
-                          "ci_status": "pass",
-                          "github_url": "https://github.com/BreadchainCoop/gas-killer-router",
-                          "is_draft": false,
-                          "labels": [],
-                          "commits_from_parent": [
-                            {
-                              "sha": "2b223f2677680c9d28b69bf21284c36cb172706c",
-                              "short_sha": "2b223f2",
-                              "message": "Use `sp1-cc` library for transaction simulation (#89)",
-                              "author": "bagelface.eth",
-                              "author_login": "bagelface",
-                              "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
-                              "date": "2026-01-15",
-                              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/2b223f2677680c9d28b69bf21284c36cb172706c"
-                            },
-                            {
-                              "sha": "1e882b74f016788e8ced817f7e0ab06133a7508d",
-                              "short_sha": "1e882b7",
-                              "message": "Add multi-chain support with dynamic chain detection",
-                              "author": "Ron Turetzky",
-                              "author_login": "RonTuretzky",
-                              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-                              "date": "2026-02-01",
-                              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/1e882b74f016788e8ced817f7e0ab06133a7508d"
-                            },
-                            {
-                              "sha": "029153b5b6ae36d668deefeab1c6a76e18580542",
-                              "short_sha": "029153b",
-                              "message": "Remove chain name from return value and logging",
-                              "author": "Ron Turetzky",
-                              "author_login": "RonTuretzky",
-                              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-                              "date": "2026-02-01",
-                              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/029153b5b6ae36d668deefeab1c6a76e18580542"
-                            },
-                            {
-                              "sha": "6ae140776801186ee178b74c922f35d7c2778dd4",
-                              "short_sha": "6ae1407",
-                              "message": "refactor: simplify multi-chain detection by removing chain name tracking",
-                              "author": "Ron Turetzky",
-                              "author_login": "RonTuretzky",
-                              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-                              "date": "2026-02-01",
-                              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/6ae140776801186ee178b74c922f35d7c2778dd4"
-                            },
-                            {
-                              "sha": "179a8884c6a04c02c30a802b61a273046fe94c8e",
-                              "short_sha": "179a888",
-                              "message": "feat(helm): add bridge job for L1->L2 operator state bridging",
-                              "author": "Ron Turetzky",
-                              "author_login": "RonTuretzky",
-                              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-                              "date": "2026-02-01",
-                              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/179a8884c6a04c02c30a802b61a273046fe94c8e"
-                            }
-                          ],
-                          "parent_branch_name": "bagelface/multi-chain-support",
-                          "children": []
-                        }
-                      ]
-                    },
-                    {
-                      "name": "Add L1-L2 bridge job before gas-killer deployment",
-                      "branch": "RonTuretzky/add-l1-l2-bridge",
-                      "repo_name": "gas-killer-router",
-                      "pr_number": 93,
-                      "pr_title": "Add L1-L2 bridge job before gas-killer deployment",
-                      "pr_url": "https://github.com/BreadchainCoop/gas-killer-router/pull/93",
-                      "pr_author": "RonTuretzky",
-                      "last_updated": "2026-02-23T17:13:18Z",
-                      "ci_status": "pass",
-                      "github_url": "https://github.com/BreadchainCoop/gas-killer-router",
-                      "is_draft": false,
-                      "labels": [],
-                      "commits_from_parent": [
-                        {
-                          "sha": "bc93ef6d162bf4a119d047979a5305300a410bea",
-                          "short_sha": "bc93ef6",
-                          "message": "Add L1-L2 bridge job before gas-killer deployment",
-                          "author": "Ron Turetzky",
-                          "author_login": "RonTuretzky",
-                          "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-                          "date": "2026-02-01",
-                          "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/bc93ef6d162bf4a119d047979a5305300a410bea"
-                        },
-                        {
-                          "sha": "fbe616155b5c7c06cbd0d6024ed728f83514ed40",
-                          "short_sha": "fbe6161",
-                          "message": "Move bridge job to run after helm release, add registry coordinator extraction",
-                          "author": "Ron Turetzky",
-                          "author_login": "RonTuretzky",
-                          "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-                          "date": "2026-02-01",
-                          "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/fbe616155b5c7c06cbd0d6024ed728f83514ed40"
-                        },
-                        {
-                          "sha": "b015a2cf54188a28549b1b59a37ea76f33fbafaf",
-                          "short_sha": "b015a2c",
-                          "message": "Fix nonce collision: e2e test waits for bridge job to complete",
-                          "author": "Ron Turetzky",
-                          "author_login": "RonTuretzky",
-                          "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-                          "date": "2026-02-01",
-                          "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/b015a2cf54188a28549b1b59a37ea76f33fbafaf"
-                        },
-                        {
-                          "sha": "4e1c097f85d9168dc2b58e2a213cd411cadf126f",
-                          "short_sha": "4e1c097",
-                          "message": "Restructure deployment: setup -> bridge -> nodes/router",
-                          "author": "Ron Turetzky",
-                          "author_login": "RonTuretzky",
-                          "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-                          "date": "2026-02-01",
-                          "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/4e1c097f85d9168dc2b58e2a213cd411cadf126f"
-                        },
-                        {
-                          "sha": "22e382cc8489b300738948ba076d9a7cea2e2fcb",
-                          "short_sha": "22e382c",
-                          "message": "Set waitForBridge=true as default",
-                          "author": "Ron Turetzky",
-                          "author_login": "RonTuretzky",
-                          "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-                          "date": "2026-02-01",
-                          "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/22e382cc8489b300738948ba076d9a7cea2e2fcb"
-                        }
-                      ],
-                      "parent_branch_name": "DijarLlozana/terraform-aws-deploy",
-                      "children": [
-                        {
-                          "name": "Add Gnosis factory job to deploy ArraySummation",
-                          "branch": "RonTuretzky/gnosis-factory-call",
-                          "repo_name": "gas-killer-router",
-                          "pr_number": 96,
-                          "pr_title": "Add Gnosis factory job to deploy ArraySummation",
-                          "pr_url": "https://github.com/BreadchainCoop/gas-killer-router/pull/96",
-                          "pr_author": "RonTuretzky",
-                          "last_updated": "2026-02-23T18:14:27Z",
-                          "ci_status": "pass",
-                          "github_url": "https://github.com/BreadchainCoop/gas-killer-router",
-                          "is_draft": false,
-                          "labels": [],
-                          "commits_from_parent": [
-                            {
-                              "sha": "49cfd88015f5db73508ebb665ad7ec3e4e9eb833",
-                              "short_sha": "49cfd88",
-                              "message": "Add Gnosis factory job to deploy ArraySummation after bridge",
-                              "author": "Ron Turetzky",
-                              "author_login": "RonTuretzky",
-                              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-                              "date": "2026-02-01",
-                              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/49cfd88015f5db73508ebb665ad7ec3e4e9eb833"
-                            },
-                            {
-                              "sha": "9055ed0a5e4af7461c2958c78e4988a7bcde9000",
-                              "short_sha": "9055ed0",
-                              "message": "Merge remote-tracking branch 'origin/RonTuretzky/add-l1-l2-bridge' into RonTuret",
-                              "author": "Ron Turetzky",
-                              "author_login": "RonTuretzky",
-                              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-                              "date": "2026-02-01",
-                              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/9055ed0a5e4af7461c2958c78e4988a7bcde9000"
-                            },
-                            {
-                              "sha": "85d7799cd89a0ca583047368898e46c003a4190a",
-                              "short_sha": "85d7799",
-                              "message": "Add Gnosis factory variable passthrough to dev environment",
-                              "author": "Ron Turetzky",
-                              "author_login": "RonTuretzky",
-                              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-                              "date": "2026-02-01",
-                              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/85d7799cd89a0ca583047368898e46c003a4190a"
-                            },
-                            {
-                              "sha": "2981274c089307abfbcc06c1065e49e543a0e790",
-                              "short_sha": "2981274",
-                              "message": "Improve VPC cleanup to handle EKS orphaned security groups",
-                              "author": "Ron Turetzky",
-                              "author_login": "RonTuretzky",
-                              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-                              "date": "2026-02-02",
-                              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/2981274c089307abfbcc06c1065e49e543a0e790"
-                            },
-                            {
-                              "sha": "af12a4e3f7e151dbdae165f49b2c401a47125452",
-                              "short_sha": "af12a4e",
-                              "message": "Fix JSON key parsing to use camelCase (blsSignatureChecker, registryCoordinatorM",
-                              "author": "Ron Turetzky",
-                              "author_login": "RonTuretzky",
-                              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-                              "date": "2026-02-02",
-                              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/af12a4e3f7e151dbdae165f49b2c401a47125452"
-                            }
-                          ],
-                          "parent_branch_name": "RonTuretzky/add-l1-l2-bridge",
-                          "children": [
-                            {
-                              "name": "Add yield distribution e2e test to helm charts",
-                              "branch": "RonTuretzky/yield-dist-e2e",
-                              "repo_name": "gas-killer-router",
-                              "pr_number": 98,
-                              "pr_title": "Add yield distribution e2e test to helm charts",
-                              "pr_url": "https://github.com/BreadchainCoop/gas-killer-router/pull/98",
-                              "pr_author": "RonTuretzky",
-                              "last_updated": "2026-02-05T22:14:33Z",
-                              "ci_status": "fail",
-                              "github_url": "https://github.com/BreadchainCoop/gas-killer-router",
-                              "is_draft": false,
-                              "labels": [],
-                              "commits_from_parent": [
-                                {
-                                  "sha": "00f08f0d62901eae18f5e35a6d426fb833621598",
-                                  "short_sha": "00f08f0",
-                                  "message": "feat: use sp1-cc library for tx sim",
-                                  "author": "bagelface",
-                                  "author_login": "bagelface",
-                                  "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
-                                  "date": "2026-01-09",
-                                  "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/00f08f0d62901eae18f5e35a6d426fb833621598"
-                                },
-                                {
-                                  "sha": "edbf4bad5f519ebfc94d22348b2bd8ed30cc1fb3",
-                                  "short_sha": "edbf4ba",
-                                  "message": "build: point to default branch for'gas-analyzer-rs' dependency",
-                                  "author": "bagelface",
-                                  "author_login": "bagelface",
-                                  "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
-                                  "date": "2026-01-12",
-                                  "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/edbf4bad5f519ebfc94d22348b2bd8ed30cc1fb3"
-                                },
-                                {
-                                  "sha": "2b223f2677680c9d28b69bf21284c36cb172706c",
-                                  "short_sha": "2b223f2",
-                                  "message": "Use `sp1-cc` library for transaction simulation (#89)",
-                                  "author": "bagelface.eth",
-                                  "author_login": "bagelface",
-                                  "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
-                                  "date": "2026-01-15",
-                                  "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/2b223f2677680c9d28b69bf21284c36cb172706c"
-                                },
-                                {
-                                  "sha": "159ce09c2d83c1338c7da9b01a9501c914248267",
-                                  "short_sha": "159ce09",
-                                  "message": "feat: use evmsketch analyzer feature and remove anvil",
-                                  "author": "bagelface",
-                                  "author_login": "bagelface",
-                                  "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
-                                  "date": "2026-01-16",
-                                  "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/159ce09c2d83c1338c7da9b01a9501c914248267"
-                                },
-                                {
-                                  "sha": "9b9dd72be8212de5509a5c7b12fe7cf7c0956323",
-                                  "short_sha": "9b9dd72",
-                                  "message": "Merge branch 'dev' into feat/remove-anvil",
-                                  "author": "bagelface",
-                                  "author_login": "bagelface",
-                                  "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
-                                  "date": "2026-01-16",
-                                  "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/9b9dd72be8212de5509a5c7b12fe7cf7c0956323"
-                                }
-                              ],
-                              "parent_branch_name": "RonTuretzky/gnosis-factory-call",
-                              "children": []
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "Add custom priority class",
-              "branch": "feat/custom-priority-class",
-              "repo_name": "gas-killer-router",
-              "pr_number": 85,
-              "pr_title": "Add custom priority class",
-              "pr_url": "https://github.com/BreadchainCoop/gas-killer-router/pull/85",
-              "pr_author": "bagelface",
-              "last_updated": "2026-01-05T16:54:35Z",
-              "ci_status": "pass",
-              "github_url": "https://github.com/BreadchainCoop/gas-killer-router",
-              "is_draft": false,
-              "labels": [],
-              "commits_from_parent": [
-                {
-                  "sha": "462b617d53dc633e3a194ffe9bcb1b7307456409",
-                  "short_sha": "462b617",
-                  "message": "feat: add custom priority class so we don't rely on system cluster priority clas",
-                  "author": "bagelface",
-                  "author_login": "bagelface",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
-                  "date": "2025-12-24",
-                  "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/462b617d53dc633e3a194ffe9bcb1b7307456409"
-                },
-                {
-                  "sha": "2dda1aed482bff3d93fc39871f814bc9ba83b4f8",
-                  "short_sha": "2dda1ae",
-                  "message": "refactor: flatten helm directory",
-                  "author": "bagelface",
-                  "author_login": "bagelface",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
-                  "date": "2025-12-24",
-                  "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/2dda1aed482bff3d93fc39871f814bc9ba83b4f8"
-                },
-                {
-                  "sha": "96cdb64591cbf5f1dc34c20ed499224e636350cb",
-                  "short_sha": "96cdb64",
-                  "message": "test: extend timeout so script runs locally",
-                  "author": "bagelface",
-                  "author_login": "bagelface",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
-                  "date": "2025-12-27",
-                  "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/96cdb64591cbf5f1dc34c20ed499224e636350cb"
-                }
-              ],
-              "parent_branch_name": "RonTuretzky/k8s-support",
               "children": []
             }
           ]
-        }
-      ]
-    },
-    "eigenlayer-bls-local": {
-      "name": "eigenlayer-bls-local",
-      "branch": "dev",
-      "repo_name": "eigenlayer-bls-local",
-      "pr_number": null,
-      "pr_title": null,
-      "pr_url": null,
-      "pr_author": null,
-      "last_updated": "2026-02-24T21:42:06Z",
-      "ci_status": "",
-      "github_url": "https://github.com/BreadchainCoop/eigenlayer-bls-local",
-      "is_draft": false,
-      "labels": [],
-      "commits_from_parent": [],
-      "parent_branch_name": null,
-      "children": [
-        {
-          "name": "Add diagnostic image with full error output",
-          "branch": "RonTuretzky/diag-full-error",
-          "repo_name": "eigenlayer-bls-local",
-          "pr_number": 27,
-          "pr_title": "Add diagnostic image with full error output",
-          "pr_url": "https://github.com/BreadchainCoop/eigenlayer-bls-local/pull/27",
-          "pr_author": "RonTuretzky",
-          "last_updated": "2026-01-21T23:17:42Z",
-          "ci_status": "pass",
-          "github_url": "https://github.com/BreadchainCoop/eigenlayer-bls-local",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "f3ddb2cd97afc08769373b84bf3edab45897dae7",
-              "short_sha": "f3ddb2c",
-              "message": "feat: add diagnostic image with full error output",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2026-01-07",
-              "html_url": "https://github.com/BreadchainCoop/eigenlayer-bls-local/commit/f3ddb2cd97afc08769373b84bf3edab45897dae7"
-            },
-            {
-              "sha": "51a669674fab44c9a3f34d33a65fcde2fe5c8ffc",
-              "short_sha": "51a6696",
-              "message": "Merge branch 'dev' into RonTuretzky/diag-full-error",
-              "author": "Dijar Llozana",
-              "author_login": "dijarllozana",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/45999272?v=4",
-              "date": "2026-01-08",
-              "html_url": "https://github.com/BreadchainCoop/eigenlayer-bls-local/commit/51a669674fab44c9a3f34d33a65fcde2fe5c8ffc"
-            },
-            {
-              "sha": "9d4a77a5e71213635ec2b3e54f144378598f8601",
-              "short_sha": "9d4a77a",
-              "message": "feat: add full error output for mint LST failure",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2026-01-21",
-              "html_url": "https://github.com/BreadchainCoop/eigenlayer-bls-local/commit/9d4a77a5e71213635ec2b3e54f144378598f8601"
-            }
-          ],
-          "parent_branch_name": "dev",
-          "children": []
-        }
-      ]
-    },
-    "gas-killer-analyzer": {
-      "name": "gas-killer-analyzer",
-      "branch": "main",
-      "repo_name": "gas-killer-analyzer",
-      "pr_number": null,
-      "pr_title": null,
-      "pr_url": null,
-      "pr_author": null,
-      "last_updated": "2026-02-24T17:11:18Z",
-      "ci_status": "",
-      "github_url": "https://github.com/BreadchainCoop/gas-killer-analyzer",
-      "is_draft": false,
-      "labels": [],
-      "commits_from_parent": [],
-      "parent_branch_name": null,
-      "children": [
-        {
-          "name": "refactor: WASM-compatible workspace crates",
-          "branch": "hudsonhrh/browser-integration",
-          "repo_name": "gas-killer-analyzer",
-          "pr_number": 88,
-          "pr_title": "refactor: WASM-compatible workspace crates",
-          "pr_url": "https://github.com/BreadchainCoop/gas-killer-analyzer/pull/88",
-          "pr_author": "hudsonhrh",
-          "last_updated": "2026-02-24T16:33:34Z",
-          "ci_status": "pass",
-          "github_url": "https://github.com/BreadchainCoop/gas-killer-analyzer",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "ff5d180f7a48820a538e8bef2dc8fc5ef2c89e5e",
-              "short_sha": "ff5d180",
-              "message": "refactor: split into WASM-compatible workspace crates",
-              "author": "hudsonhrh",
-              "author_login": "hudsonhrh",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/76409831?v=4",
-              "date": "2026-02-17",
-              "html_url": "https://github.com/BreadchainCoop/gas-killer-analyzer/commit/ff5d180f7a48820a538e8bef2dc8fc5ef2c89e5e"
-            },
-            {
-              "sha": "f1b28daacf25c882dd4bf5dbd3204010e7374458",
-              "short_sha": "f1b28da",
-              "message": "style: apply cargo fmt formatting",
-              "author": "hudsonhrh",
-              "author_login": "hudsonhrh",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/76409831?v=4",
-              "date": "2026-02-17",
-              "html_url": "https://github.com/BreadchainCoop/gas-killer-analyzer/commit/f1b28daacf25c882dd4bf5dbd3204010e7374458"
-            },
-            {
-              "sha": "6b3c5199106396ca5aec2396461e57e85e55f097",
-              "short_sha": "6b3c519",
-              "message": "fix: use secrets.RPC_URL instead of vars.RPC_URL in CI",
-              "author": "hudsonhrh",
-              "author_login": "hudsonhrh",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/76409831?v=4",
-              "date": "2026-02-17",
-              "html_url": "https://github.com/BreadchainCoop/gas-killer-analyzer/commit/6b3c5199106396ca5aec2396461e57e85e55f097"
-            },
-            {
-              "sha": "61553598b6a39204c5c0f9115f165ae87c8e62a3",
-              "short_sha": "6155359",
-              "message": "fix (#91)",
-              "author": "Ram",
-              "author_login": "rubydusa",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/97784987?v=4",
-              "date": "2026-02-18",
-              "html_url": "https://github.com/BreadchainCoop/gas-killer-analyzer/commit/61553598b6a39204c5c0f9115f165ae87c8e62a3"
-            },
-            {
-              "sha": "64dedb998bddb0814f4dae8ec44939c5f09ee62a",
-              "short_sha": "64dedb9",
-              "message": "refactor: merge WASM adapter into workspace as crates/wasm/",
-              "author": "hudsonhrh",
-              "author_login": "hudsonhrh",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/76409831?v=4",
-              "date": "2026-02-18",
-              "html_url": "https://github.com/BreadchainCoop/gas-killer-analyzer/commit/64dedb998bddb0814f4dae8ec44939c5f09ee62a"
-            }
-          ],
-          "parent_branch_name": "main",
-          "children": [
-            {
-              "name": "feat: debug tx",
-              "branch": "Rubydusa/debug-command",
-              "repo_name": "gas-killer-analyzer",
-              "pr_number": 94,
-              "pr_title": "feat: debug tx",
-              "pr_url": "https://github.com/BreadchainCoop/gas-killer-analyzer/pull/94",
-              "pr_author": "rubydusa",
-              "last_updated": "2026-02-24T17:12:36Z",
-              "ci_status": "pass",
-              "github_url": "https://github.com/BreadchainCoop/gas-killer-analyzer",
-              "is_draft": true,
-              "labels": [],
-              "commits_from_parent": [
-                {
-                  "sha": "e23c17b0b59252399577f3e44e104d771954d33e",
-                  "short_sha": "e23c17b",
-                  "message": "feat: debug tx",
-                  "author": "rubydusa",
-                  "author_login": "rubydusa",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/97784987?v=4",
-                  "date": "2026-02-24",
-                  "html_url": "https://github.com/BreadchainCoop/gas-killer-analyzer/commit/e23c17b0b59252399577f3e44e104d771954d33e"
-                }
-              ],
-              "parent_branch_name": "hudsonhrh/browser-integration",
-              "children": []
-            }
-          ]
-        },
-        {
-          "name": "fix: snapshot/revert Anvil state between trace and gas estim",
-          "branch": "RonTuretzky/gas-killer-analyzer",
-          "repo_name": "gas-killer-analyzer",
-          "pr_number": 87,
-          "pr_title": "fix: snapshot/revert Anvil state between trace and gas estimation",
-          "pr_url": "https://github.com/BreadchainCoop/gas-killer-analyzer/pull/87",
-          "pr_author": "RonTuretzky",
-          "last_updated": "2026-02-24T16:24:43Z",
-          "ci_status": "pass",
-          "github_url": "https://github.com/BreadchainCoop/gas-killer-analyzer",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "9c973bb9b02fcc86c3cdb08bea43d411ce246273",
-              "short_sha": "9c973bb",
-              "message": "fix: snapshot/revert Anvil state between trace and gas estimation",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2026-02-05",
-              "html_url": "https://github.com/BreadchainCoop/gas-killer-analyzer/commit/9c973bb9b02fcc86c3cdb08bea43d411ce246273"
-            },
-            {
-              "sha": "c0a77ea9249184b111e4b3b9ee8f45aa40a74457",
-              "short_sha": "c0a77ea",
-              "message": "style: fix cargo fmt formatting",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2026-02-05",
-              "html_url": "https://github.com/BreadchainCoop/gas-killer-analyzer/commit/c0a77ea9249184b111e4b3b9ee8f45aa40a74457"
-            },
-            {
-              "sha": "45656e4bd60efb59eabd0d3a513ed5b2672c9d77",
-              "short_sha": "45656e4",
-              "message": "ci: trigger CI run",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2026-02-05",
-              "html_url": "https://github.com/BreadchainCoop/gas-killer-analyzer/commit/45656e4bd60efb59eabd0d3a513ed5b2672c9d77"
-            }
-          ],
-          "parent_branch_name": "main",
-          "children": []
-        },
-        {
-          "name": "docs: ZK-Provable EVM Execution Traces for AVS Fraud Proofs",
-          "branch": "zk-avs-fraud-proofs-spec",
-          "repo_name": "gas-killer-analyzer",
-          "pr_number": 75,
-          "pr_title": "docs: ZK-Provable EVM Execution Traces for AVS Fraud Proofs",
-          "pr_url": "https://github.com/BreadchainCoop/gas-killer-analyzer/pull/75",
-          "pr_author": "RonTuretzky",
-          "last_updated": "2025-12-03T17:58:07Z",
-          "ci_status": "pass",
-          "github_url": "https://github.com/BreadchainCoop/gas-killer-analyzer",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "3a9d20f0edcd48cd5dbea9b8a363c098874150b2",
-              "short_sha": "3a9d20f",
-              "message": "docs: add ZK-provable EVM execution traces spec for AVS fraud proofs",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-11-28",
-              "html_url": "https://github.com/BreadchainCoop/gas-killer-analyzer/commit/3a9d20f0edcd48cd5dbea9b8a363c098874150b2"
-            },
-            {
-              "sha": "2329b1b3caaa1dda88e2838befc737d605add821",
-              "short_sha": "2329b1b",
-              "message": "refactor: align spec with Gas Killer slashing context",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-11-28",
-              "html_url": "https://github.com/BreadchainCoop/gas-killer-analyzer/commit/2329b1b3caaa1dda88e2838befc737d605add821"
-            },
-            {
-              "sha": "e8ecdce364c018060373d4168d3c6e900c5413e7",
-              "short_sha": "e8ecdce",
-              "message": "refactor: align spec with Gas Killer slashing context",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-11-28",
-              "html_url": "https://github.com/BreadchainCoop/gas-killer-analyzer/commit/e8ecdce364c018060373d4168d3c6e900c5413e7"
-            }
-          ],
-          "parent_branch_name": "main",
-          "children": []
         }
       ]
     },
@@ -1142,7 +732,7 @@
       "pr_title": null,
       "pr_url": null,
       "pr_author": null,
-      "last_updated": "2026-02-24T16:48:34Z",
+      "last_updated": "2026-02-25T17:14:01Z",
       "ci_status": "",
       "github_url": "https://github.com/BreadchainCoop/etherform",
       "is_draft": false,
@@ -1150,34 +740,6 @@
       "commits_from_parent": [],
       "parent_branch_name": null,
       "children": [
-        {
-          "name": "feat: add coverage report job to CI workflows",
-          "branch": "hudsonhrh/add-permit2",
-          "repo_name": "etherform",
-          "pr_number": 22,
-          "pr_title": "feat: add coverage report job to CI workflows",
-          "pr_url": "https://github.com/BreadchainCoop/etherform/pull/22",
-          "pr_author": "hudsonhrh",
-          "last_updated": "2026-02-24T16:48:49Z",
-          "ci_status": "",
-          "github_url": "https://github.com/BreadchainCoop/etherform",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "32b95bdaecd5ca720e60a8c0b87402d024140422",
-              "short_sha": "32b95bd",
-              "message": "feat: add coverage report job to CI workflows",
-              "author": "hudsonhrh",
-              "author_login": "hudsonhrh",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/76409831?v=4",
-              "date": "2026-02-24",
-              "html_url": "https://github.com/BreadchainCoop/etherform/commit/32b95bdaecd5ca720e60a8c0b87402d024140422"
-            }
-          ],
-          "parent_branch_name": "main",
-          "children": []
-        },
         {
           "name": "fix: Resolve all 13 reported issues",
           "branch": "feat/all-issues",
@@ -1397,6 +959,283 @@
             }
           ],
           "parent_branch_name": "main",
+          "children": []
+        }
+      ]
+    },
+    "gas-killer-analyzer": {
+      "name": "gas-killer-analyzer",
+      "branch": "main",
+      "repo_name": "gas-killer-analyzer",
+      "pr_number": null,
+      "pr_title": null,
+      "pr_url": null,
+      "pr_author": null,
+      "last_updated": "2026-02-25T16:02:03Z",
+      "ci_status": "",
+      "github_url": "https://github.com/BreadchainCoop/gas-killer-analyzer",
+      "is_draft": false,
+      "labels": [],
+      "commits_from_parent": [],
+      "parent_branch_name": null,
+      "children": [
+        {
+          "name": "refactor: WASM-compatible workspace crates",
+          "branch": "hudsonhrh/browser-integration",
+          "repo_name": "gas-killer-analyzer",
+          "pr_number": 88,
+          "pr_title": "refactor: WASM-compatible workspace crates",
+          "pr_url": "https://github.com/BreadchainCoop/gas-killer-analyzer/pull/88",
+          "pr_author": "hudsonhrh",
+          "last_updated": "2026-02-25T16:02:05Z",
+          "ci_status": "pass",
+          "github_url": "https://github.com/BreadchainCoop/gas-killer-analyzer",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "ff5d180f7a48820a538e8bef2dc8fc5ef2c89e5e",
+              "short_sha": "ff5d180",
+              "message": "refactor: split into WASM-compatible workspace crates",
+              "author": "hudsonhrh",
+              "author_login": "hudsonhrh",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/76409831?v=4",
+              "date": "2026-02-17",
+              "html_url": "https://github.com/BreadchainCoop/gas-killer-analyzer/commit/ff5d180f7a48820a538e8bef2dc8fc5ef2c89e5e"
+            },
+            {
+              "sha": "f1b28daacf25c882dd4bf5dbd3204010e7374458",
+              "short_sha": "f1b28da",
+              "message": "style: apply cargo fmt formatting",
+              "author": "hudsonhrh",
+              "author_login": "hudsonhrh",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/76409831?v=4",
+              "date": "2026-02-17",
+              "html_url": "https://github.com/BreadchainCoop/gas-killer-analyzer/commit/f1b28daacf25c882dd4bf5dbd3204010e7374458"
+            },
+            {
+              "sha": "6b3c5199106396ca5aec2396461e57e85e55f097",
+              "short_sha": "6b3c519",
+              "message": "fix: use secrets.RPC_URL instead of vars.RPC_URL in CI",
+              "author": "hudsonhrh",
+              "author_login": "hudsonhrh",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/76409831?v=4",
+              "date": "2026-02-17",
+              "html_url": "https://github.com/BreadchainCoop/gas-killer-analyzer/commit/6b3c5199106396ca5aec2396461e57e85e55f097"
+            },
+            {
+              "sha": "61553598b6a39204c5c0f9115f165ae87c8e62a3",
+              "short_sha": "6155359",
+              "message": "fix (#91)",
+              "author": "Ram",
+              "author_login": "rubydusa",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/97784987?v=4",
+              "date": "2026-02-18",
+              "html_url": "https://github.com/BreadchainCoop/gas-killer-analyzer/commit/61553598b6a39204c5c0f9115f165ae87c8e62a3"
+            },
+            {
+              "sha": "64dedb998bddb0814f4dae8ec44939c5f09ee62a",
+              "short_sha": "64dedb9",
+              "message": "refactor: merge WASM adapter into workspace as crates/wasm/",
+              "author": "hudsonhrh",
+              "author_login": "hudsonhrh",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/76409831?v=4",
+              "date": "2026-02-18",
+              "html_url": "https://github.com/BreadchainCoop/gas-killer-analyzer/commit/64dedb998bddb0814f4dae8ec44939c5f09ee62a"
+            }
+          ],
+          "parent_branch_name": "main",
+          "children": [
+            {
+              "name": "feat: debug tx",
+              "branch": "Rubydusa/debug-command",
+              "repo_name": "gas-killer-analyzer",
+              "pr_number": 94,
+              "pr_title": "feat: debug tx",
+              "pr_url": "https://github.com/BreadchainCoop/gas-killer-analyzer/pull/94",
+              "pr_author": "rubydusa",
+              "last_updated": "2026-02-24T17:12:36Z",
+              "ci_status": "pass",
+              "github_url": "https://github.com/BreadchainCoop/gas-killer-analyzer",
+              "is_draft": true,
+              "labels": [],
+              "commits_from_parent": [
+                {
+                  "sha": "e23c17b0b59252399577f3e44e104d771954d33e",
+                  "short_sha": "e23c17b",
+                  "message": "feat: debug tx",
+                  "author": "rubydusa",
+                  "author_login": "rubydusa",
+                  "author_avatar_url": "https://avatars.githubusercontent.com/u/97784987?v=4",
+                  "date": "2026-02-24",
+                  "html_url": "https://github.com/BreadchainCoop/gas-killer-analyzer/commit/e23c17b0b59252399577f3e44e104d771954d33e"
+                }
+              ],
+              "parent_branch_name": "hudsonhrh/browser-integration",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "fix: snapshot/revert Anvil state between trace and gas estim",
+          "branch": "RonTuretzky/gas-killer-analyzer",
+          "repo_name": "gas-killer-analyzer",
+          "pr_number": 87,
+          "pr_title": "fix: snapshot/revert Anvil state between trace and gas estimation",
+          "pr_url": "https://github.com/BreadchainCoop/gas-killer-analyzer/pull/87",
+          "pr_author": "RonTuretzky",
+          "last_updated": "2026-02-24T16:24:43Z",
+          "ci_status": "pass",
+          "github_url": "https://github.com/BreadchainCoop/gas-killer-analyzer",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "9c973bb9b02fcc86c3cdb08bea43d411ce246273",
+              "short_sha": "9c973bb",
+              "message": "fix: snapshot/revert Anvil state between trace and gas estimation",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2026-02-05",
+              "html_url": "https://github.com/BreadchainCoop/gas-killer-analyzer/commit/9c973bb9b02fcc86c3cdb08bea43d411ce246273"
+            },
+            {
+              "sha": "c0a77ea9249184b111e4b3b9ee8f45aa40a74457",
+              "short_sha": "c0a77ea",
+              "message": "style: fix cargo fmt formatting",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2026-02-05",
+              "html_url": "https://github.com/BreadchainCoop/gas-killer-analyzer/commit/c0a77ea9249184b111e4b3b9ee8f45aa40a74457"
+            },
+            {
+              "sha": "45656e4bd60efb59eabd0d3a513ed5b2672c9d77",
+              "short_sha": "45656e4",
+              "message": "ci: trigger CI run",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2026-02-05",
+              "html_url": "https://github.com/BreadchainCoop/gas-killer-analyzer/commit/45656e4bd60efb59eabd0d3a513ed5b2672c9d77"
+            }
+          ],
+          "parent_branch_name": "main",
+          "children": []
+        },
+        {
+          "name": "docs: ZK-Provable EVM Execution Traces for AVS Fraud Proofs",
+          "branch": "zk-avs-fraud-proofs-spec",
+          "repo_name": "gas-killer-analyzer",
+          "pr_number": 75,
+          "pr_title": "docs: ZK-Provable EVM Execution Traces for AVS Fraud Proofs",
+          "pr_url": "https://github.com/BreadchainCoop/gas-killer-analyzer/pull/75",
+          "pr_author": "RonTuretzky",
+          "last_updated": "2026-02-25T21:47:18Z",
+          "ci_status": "pass",
+          "github_url": "https://github.com/BreadchainCoop/gas-killer-analyzer",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "3a9d20f0edcd48cd5dbea9b8a363c098874150b2",
+              "short_sha": "3a9d20f",
+              "message": "docs: add ZK-provable EVM execution traces spec for AVS fraud proofs",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-11-28",
+              "html_url": "https://github.com/BreadchainCoop/gas-killer-analyzer/commit/3a9d20f0edcd48cd5dbea9b8a363c098874150b2"
+            },
+            {
+              "sha": "2329b1b3caaa1dda88e2838befc737d605add821",
+              "short_sha": "2329b1b",
+              "message": "refactor: align spec with Gas Killer slashing context",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-11-28",
+              "html_url": "https://github.com/BreadchainCoop/gas-killer-analyzer/commit/2329b1b3caaa1dda88e2838befc737d605add821"
+            },
+            {
+              "sha": "e8ecdce364c018060373d4168d3c6e900c5413e7",
+              "short_sha": "e8ecdce",
+              "message": "refactor: align spec with Gas Killer slashing context",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-11-28",
+              "html_url": "https://github.com/BreadchainCoop/gas-killer-analyzer/commit/e8ecdce364c018060373d4168d3c6e900c5413e7"
+            }
+          ],
+          "parent_branch_name": "main",
+          "children": []
+        }
+      ]
+    },
+    "eigenlayer-bls-local": {
+      "name": "eigenlayer-bls-local",
+      "branch": "dev",
+      "repo_name": "eigenlayer-bls-local",
+      "pr_number": null,
+      "pr_title": null,
+      "pr_url": null,
+      "pr_author": null,
+      "last_updated": "2026-02-24T21:42:06Z",
+      "ci_status": "",
+      "github_url": "https://github.com/BreadchainCoop/eigenlayer-bls-local",
+      "is_draft": false,
+      "labels": [],
+      "commits_from_parent": [],
+      "parent_branch_name": null,
+      "children": [
+        {
+          "name": "Add diagnostic image with full error output",
+          "branch": "RonTuretzky/diag-full-error",
+          "repo_name": "eigenlayer-bls-local",
+          "pr_number": 27,
+          "pr_title": "Add diagnostic image with full error output",
+          "pr_url": "https://github.com/BreadchainCoop/eigenlayer-bls-local/pull/27",
+          "pr_author": "RonTuretzky",
+          "last_updated": "2026-01-21T23:17:42Z",
+          "ci_status": "pass",
+          "github_url": "https://github.com/BreadchainCoop/eigenlayer-bls-local",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "f3ddb2cd97afc08769373b84bf3edab45897dae7",
+              "short_sha": "f3ddb2c",
+              "message": "feat: add diagnostic image with full error output",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2026-01-07",
+              "html_url": "https://github.com/BreadchainCoop/eigenlayer-bls-local/commit/f3ddb2cd97afc08769373b84bf3edab45897dae7"
+            },
+            {
+              "sha": "51a669674fab44c9a3f34d33a65fcde2fe5c8ffc",
+              "short_sha": "51a6696",
+              "message": "Merge branch 'dev' into RonTuretzky/diag-full-error",
+              "author": "Dijar Llozana",
+              "author_login": "dijarllozana",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/45999272?v=4",
+              "date": "2026-01-08",
+              "html_url": "https://github.com/BreadchainCoop/eigenlayer-bls-local/commit/51a669674fab44c9a3f34d33a65fcde2fe5c8ffc"
+            },
+            {
+              "sha": "9d4a77a5e71213635ec2b3e54f144378598f8601",
+              "short_sha": "9d4a77a",
+              "message": "feat: add full error output for mint LST failure",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2026-01-21",
+              "html_url": "https://github.com/BreadchainCoop/eigenlayer-bls-local/commit/9d4a77a5e71213635ec2b3e54f144378598f8601"
+            }
+          ],
+          "parent_branch_name": "dev",
           "children": []
         }
       ]
@@ -1652,194 +1491,6 @@
               "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
               "date": "2025-09-28",
               "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/97070abd5689a5d10e5c75fd17e4c974380b0e11"
-            }
-          ],
-          "parent_branch_name": "dev",
-          "children": []
-        }
-      ]
-    },
-    "app-stacks": {
-      "name": "app-stacks",
-      "branch": "dev",
-      "repo_name": "app-stacks",
-      "pr_number": null,
-      "pr_title": null,
-      "pr_url": null,
-      "pr_author": null,
-      "last_updated": "2026-02-22T09:54:31Z",
-      "ci_status": "",
-      "github_url": "https://github.com/BreadchainCoop/app-stacks",
-      "is_draft": false,
-      "labels": [],
-      "commits_from_parent": [],
-      "parent_branch_name": null,
-      "children": [
-        {
-          "name": "Add Privy authentication integration",
-          "branch": "RonTuretzky/add-privy-auth",
-          "repo_name": "app-stacks",
-          "pr_number": 17,
-          "pr_title": "Add Privy authentication integration",
-          "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/17",
-          "pr_author": "RonTuretzky",
-          "last_updated": "2026-02-04T18:06:34Z",
-          "ci_status": "pass",
-          "github_url": "https://github.com/BreadchainCoop/app-stacks",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "18a053e8a0211e65f5c6a9caf177cd2380d5813a",
-              "short_sha": "18a053e",
-              "message": "Replace RainbowKit with Privy authentication",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2026-02-04",
-              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/18a053e8a0211e65f5c6a9caf177cd2380d5813a"
-            },
-            {
-              "sha": "34bfaa987bc4fd2ed704bf6dff5ba4ef1a561440",
-              "short_sha": "34bfaa9",
-              "message": "Restore ssr config and Navbar static prop",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2026-02-04",
-              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/34bfaa987bc4fd2ed704bf6dff5ba4ef1a561440"
-            }
-          ],
-          "parent_branch_name": "dev",
-          "children": [
-            {
-              "name": "Disable wallet popup on invite link creation page",
-              "branch": "RonTuretzky/disable-wallet-invite",
-              "repo_name": "app-stacks",
-              "pr_number": 18,
-              "pr_title": "Disable wallet popup on invite link creation page",
-              "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/18",
-              "pr_author": "RonTuretzky",
-              "last_updated": "2026-02-04T18:11:29Z",
-              "ci_status": "",
-              "github_url": "https://github.com/BreadchainCoop/app-stacks",
-              "is_draft": false,
-              "labels": [],
-              "commits_from_parent": [
-                {
-                  "sha": "7c3df1b55e787db66942fc49dd0de6a703bceca4",
-                  "short_sha": "7c3df1b",
-                  "message": "Disable wallet popup on invite link creation page",
-                  "author": "Ron Turetzky",
-                  "author_login": "RonTuretzky",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-                  "date": "2026-02-04",
-                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/7c3df1b55e787db66942fc49dd0de6a703bceca4"
-                }
-              ],
-              "parent_branch_name": "RonTuretzky/add-privy-auth",
-              "children": []
-            }
-          ]
-        },
-        {
-          "name": "Implement UI design",
-          "branch": "dev",
-          "repo_name": "app-stacks",
-          "pr_number": 5,
-          "pr_title": "Implement UI design",
-          "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/5",
-          "pr_author": "Olaleye-Blessing",
-          "last_updated": "2026-02-22T10:01:42Z",
-          "ci_status": "pass",
-          "github_url": "https://github.com/BreadchainCoop/app-stacks",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [],
-          "parent_branch_name": "dev",
-          "children": []
-        },
-        {
-          "name": "Add local SavingCircles deployment script",
-          "branch": "2-add-local-savingcircles-deployment-script",
-          "repo_name": "app-stacks",
-          "pr_number": 4,
-          "pr_title": "Add local SavingCircles deployment script",
-          "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/4",
-          "pr_author": "franrolotti",
-          "last_updated": "2025-12-31T12:31:33Z",
-          "ci_status": "fail",
-          "github_url": "https://github.com/BreadchainCoop/app-stacks",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "78ba1ea530993071591e848fcff5bee6c240d316",
-              "short_sha": "78ba1ea",
-              "message": "feat(contracts): add local SavingCircles deployment script",
-              "author": "Francisco Rolotti",
-              "author_login": "franrolotti",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-              "date": "2025-12-09",
-              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/78ba1ea530993071591e848fcff5bee6c240d316"
-            },
-            {
-              "sha": "8201375af7561d5aadfe540a4da3149f8432f6fb",
-              "short_sha": "8201375",
-              "message": "feat: deploy mock BREAD token + bump saving-circles submodule (invite)",
-              "author": "Francisco Rolotti",
-              "author_login": "franrolotti",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-              "date": "2025-12-18",
-              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/8201375af7561d5aadfe540a4da3149f8432f6fb"
-            },
-            {
-              "sha": "d4ac048146c52ff586c953bdb5d668cca8ef2a0e",
-              "short_sha": "d4ac048",
-              "message": "chore: track saving-circles dev branch and bump submodule",
-              "author": "Francisco Rolotti",
-              "author_login": "franrolotti",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-              "date": "2025-12-31",
-              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/d4ac048146c52ff586c953bdb5d668cca8ef2a0e"
-            },
-            {
-              "sha": "901991a328fd90fb9f779ec2644ef3909a961c58",
-              "short_sha": "901991a",
-              "message": "docs: add command to update submodules to latest",
-              "author": "Francisco Rolotti",
-              "author_login": "franrolotti",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-              "date": "2025-12-31",
-              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/901991a328fd90fb9f779ec2644ef3909a961c58"
-            }
-          ],
-          "parent_branch_name": "dev",
-          "children": []
-        },
-        {
-          "name": "git submodule for stack smart contracts and anvil deployment",
-          "branch": "sb-anvil-deployment",
-          "repo_name": "app-stacks",
-          "pr_number": 3,
-          "pr_title": "git submodule for stack smart contracts and anvil deployment setup",
-          "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/3",
-          "pr_author": "secbajor",
-          "last_updated": "2025-12-08T22:40:44Z",
-          "ci_status": "",
-          "github_url": "https://github.com/BreadchainCoop/app-stacks",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "fedd1f6cfbf1e4c8a280b9c96f6ad9eec7b5ebae",
-              "short_sha": "fedd1f6",
-              "message": "git submodule for stack smart contracts and anvil deployment setup",
-              "author": "Sara",
-              "author_login": "sarace",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/24276454?v=4",
-              "date": "2025-12-08",
-              "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/fedd1f6cfbf1e4c8a280b9c96f6ad9eec7b5ebae"
             }
           ],
           "parent_branch_name": "dev",
@@ -2322,7 +1973,7 @@
           "pr_title": "Get votes from subgraph",
           "pr_url": "https://github.com/BreadchainCoop/crowdstaking-v2/pull/337",
           "pr_author": "Olaleye-Blessing",
-          "last_updated": "2025-10-10T00:12:12Z",
+          "last_updated": "2026-02-25T21:32:33Z",
           "ci_status": "pass",
           "github_url": "https://github.com/BreadchainCoop/crowdstaking-v2",
           "is_draft": false,
@@ -2350,7 +2001,7 @@
           "pr_title": "Improve countdown display with hours & minutes",
           "pr_url": "https://github.com/BreadchainCoop/crowdstaking-v2/pull/321",
           "pr_author": "Olaleye-Blessing",
-          "last_updated": "2025-08-11T03:33:16Z",
+          "last_updated": "2026-02-25T21:09:37Z",
           "ci_status": "pass",
           "github_url": "https://github.com/BreadchainCoop/crowdstaking-v2",
           "is_draft": false,
@@ -4602,6 +4253,110 @@
     }
   },
   "issues": {
+    "app-stacks": {
+      "repo_name": "app-stacks",
+      "github_url": "https://github.com/BreadchainCoop/app-stacks",
+      "issues": [
+        {
+          "number": 34,
+          "title": "Implement funding flow for Privy embedded wallets",
+          "author": "franrolotti",
+          "created_at": "2026-02-25T17:47:26Z",
+          "updated_at": "2026-02-25T17:47:26Z",
+          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/34",
+          "labels": [],
+          "assignees": [
+            "franrolotti"
+          ],
+          "comments": []
+        },
+        {
+          "number": 24,
+          "title": "Technical Spec for the Stacks Supabase integration",
+          "author": "exo404",
+          "created_at": "2026-02-13T18:25:42Z",
+          "updated_at": "2026-02-13T18:25:42Z",
+          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/24",
+          "labels": [
+            "documentation",
+            "enhancement"
+          ],
+          "assignees": [
+            "exo404"
+          ],
+          "comments": []
+        },
+        {
+          "number": 22,
+          "title": "Implement the deposit module",
+          "author": "Olaleye-Blessing",
+          "created_at": "2026-02-12T23:43:52Z",
+          "updated_at": "2026-02-12T23:43:52Z",
+          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/22",
+          "labels": [
+            "not-ready"
+          ],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 1,
+          "title": "Abstract BREAD Token \u2014 Show Only USD Balances on Frontend (Inspired by Hyperliquid & Polymarket)",
+          "author": "diterra-code",
+          "created_at": "2025-10-15T21:14:26Z",
+          "updated_at": "2025-10-16T04:28:41Z",
+          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/1",
+          "labels": [
+            "documentation",
+            "help wanted"
+          ],
+          "assignees": [
+            "diterra-code",
+            "RonTuretzky",
+            "tbsoc"
+          ],
+          "comments": [
+            {
+              "id": "IC_kwDOQBrnic7LJut_",
+              "author": {
+                "login": "diterra-code"
+              },
+              "authorAssociation": "NONE",
+              "body": "Dropping this here @RonTuretzky @tbsoc @bagelface for further discussion.\n\n@RonTuretzky what do you think of my mermaid diagram skills? \n\nThe idea is to maybe after MVP of Stacks/Safety Net try to work on this UX.",
+              "createdAt": "2025-10-15T21:17:43Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [
+                {
+                  "content": "HEART",
+                  "users": {
+                    "totalCount": 1
+                  }
+                }
+              ],
+              "url": "https://github.com/BreadchainCoop/app-stacks/issues/1#issuecomment-3408325503",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOQBrnic7LMzo-",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "NONE",
+              "body": "> Dropping this here @RonTuretzky @tbsoc @bagelface for further discussion.\n> \n> @RonTuretzky what do you think of my mermaid diagram skills? \n> \n> The idea is to maybe after MVP of Stacks/Safety Net try to work on this UX.\n\n\n\n\ud83d\ude0d\ud83d\ude0d\ud83d\ude0d\ud83d\ude0d\ud83d\ude0d\n\n\nI think with the lifi widget like we have in the crowdstaking app this is quite doable. ",
+              "createdAt": "2025-10-16T04:28:41Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/app-stacks/issues/1#issuecomment-3409132094",
+              "viewerDidAuthor": false
+            }
+          ]
+        }
+      ]
+    },
     "gas-killer-router": {
       "repo_name": "gas-killer-router",
       "github_url": "https://github.com/BreadchainCoop/gas-killer-router",
@@ -4752,135 +4507,83 @@
         }
       ]
     },
-    "eigenlayer-bls-local": {
-      "repo_name": "eigenlayer-bls-local",
-      "github_url": "https://github.com/BreadchainCoop/eigenlayer-bls-local",
+    "etherform": {
+      "repo_name": "etherform",
+      "github_url": "https://github.com/BreadchainCoop/etherform",
       "issues": [
         {
-          "number": 16,
-          "title": "Improve README",
+          "number": 17,
+          "title": "Add constructor args and method call params to deployment summary",
           "author": "RonTuretzky",
-          "created_at": "2025-07-17T14:24:58Z",
-          "updated_at": "2025-07-17T14:24:58Z",
-          "html_url": "https://github.com/BreadchainCoop/eigenlayer-bls-local/issues/16",
+          "created_at": "2026-01-09T22:41:54Z",
+          "updated_at": "2026-01-09T22:41:54Z",
+          "html_url": "https://github.com/BreadchainCoop/etherform/issues/17",
           "labels": [],
-          "assignees": [
-            "hudsonhrh"
-          ],
+          "assignees": [],
           "comments": []
         },
         {
-          "number": 15,
-          "title": "If Local Mode and testnet mode have different Avs deploy json",
+          "number": 16,
+          "title": "Blockscout verification detection returns false positives",
+          "author": "RonTuretzky",
+          "created_at": "2026-01-09T22:35:00Z",
+          "updated_at": "2026-01-09T22:35:00Z",
+          "html_url": "https://github.com/BreadchainCoop/etherform/issues/16",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 8,
+          "title": "Blockscout verification url bad format check",
           "author": "hudsonhrh",
-          "created_at": "2025-06-06T22:30:11Z",
-          "updated_at": "2025-06-06T22:30:11Z",
-          "html_url": "https://github.com/BreadchainCoop/eigenlayer-bls-local/issues/15",
+          "created_at": "2025-12-04T20:50:47Z",
+          "updated_at": "2025-12-04T20:50:47Z",
+          "html_url": "https://github.com/BreadchainCoop/etherform/issues/8",
           "labels": [],
           "assignees": [],
           "comments": []
-        },
-        {
-          "number": 10,
-          "title": "[Bug] `get_bls_key.sh` is flakey, can't rely on bls json artifacts",
-          "author": "rubydusa",
-          "created_at": "2025-05-25T21:41:16Z",
-          "updated_at": "2025-05-29T13:35:46Z",
-          "html_url": "https://github.com/BreadchainCoop/eigenlayer-bls-local/issues/10",
-          "labels": [],
-          "assignees": [],
-          "comments": [
-            {
-              "id": "IC_kwDON_h51M6tV9he",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "NONE",
-              "body": "Recommending to backlog until upstream [standardization](https://github.com/Layr-Labs/hourglass-monorepo/pull/61) prs are resolved and merged ",
-              "createdAt": "2025-05-26T00:42:49Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [
-                {
-                  "content": "THUMBS_UP",
-                  "users": {
-                    "totalCount": 1
-                  }
-                }
-              ],
-              "url": "https://github.com/BreadchainCoop/eigenlayer-bls-local/issues/10#issuecomment-2908215390",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDON_h51M6tV9yr",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "NONE",
-              "body": "I've not seen flakey behavior yet with the tmux approach, what's the os ur seeing this on?",
-              "createdAt": "2025-05-26T00:44:00Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/eigenlayer-bls-local/issues/10#issuecomment-2908216491",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDON_h51M6t8kEa",
-              "author": {
-                "login": "rubydusa"
-              },
-              "authorAssociation": "NONE",
-              "body": "My os is PopOs 20.04",
-              "createdAt": "2025-05-29T05:28:14Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/eigenlayer-bls-local/issues/10#issuecomment-2918334746",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDON_h51M6t-mLB",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "NONE",
-              "body": "> My os is PopOs 20.04\n\ni bet this is the issue \ud83e\udd72",
-              "createdAt": "2025-05-29T09:42:26Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/eigenlayer-bls-local/issues/10#issuecomment-2918867649",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDON_h51M6uAtnW",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "NONE",
-              "body": "@dijarllozana familiar with this os in any way?",
-              "createdAt": "2025-05-29T13:35:45Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/eigenlayer-bls-local/issues/10#issuecomment-2919422422",
-              "viewerDidAuthor": false
-            }
-          ]
         },
         {
           "number": 7,
-          "title": "[Research] Better logging",
-          "author": "rubydusa",
-          "created_at": "2025-05-16T11:26:01Z",
-          "updated_at": "2025-05-16T11:26:01Z",
-          "html_url": "https://github.com/BreadchainCoop/eigenlayer-bls-local/issues/7",
+          "title": "Blockscout verification optional",
+          "author": "hudsonhrh",
+          "created_at": "2025-12-04T20:49:48Z",
+          "updated_at": "2025-12-04T20:49:48Z",
+          "html_url": "https://github.com/BreadchainCoop/etherform/issues/7",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 5,
+          "title": "Better integration docs",
+          "author": "hudsonhrh",
+          "created_at": "2025-12-04T17:13:13Z",
+          "updated_at": "2025-12-04T17:13:13Z",
+          "html_url": "https://github.com/BreadchainCoop/etherform/issues/5",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 4,
+          "title": "Accept different profiles",
+          "author": "hudsonhrh",
+          "created_at": "2025-12-04T17:10:54Z",
+          "updated_at": "2025-12-04T17:10:54Z",
+          "html_url": "https://github.com/BreadchainCoop/etherform/issues/4",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 2,
+          "title": "Expose optional `ADMIN_ADDRESS` env var to deploy scripts",
+          "author": "franrolotti",
+          "created_at": "2025-12-04T12:58:06Z",
+          "updated_at": "2025-12-04T12:58:06Z",
+          "html_url": "https://github.com/BreadchainCoop/etherform/issues/2",
           "labels": [],
           "assignees": [],
           "comments": []
@@ -5430,83 +5133,135 @@
         }
       ]
     },
-    "etherform": {
-      "repo_name": "etherform",
-      "github_url": "https://github.com/BreadchainCoop/etherform",
+    "eigenlayer-bls-local": {
+      "repo_name": "eigenlayer-bls-local",
+      "github_url": "https://github.com/BreadchainCoop/eigenlayer-bls-local",
       "issues": [
         {
-          "number": 17,
-          "title": "Add constructor args and method call params to deployment summary",
-          "author": "RonTuretzky",
-          "created_at": "2026-01-09T22:41:54Z",
-          "updated_at": "2026-01-09T22:41:54Z",
-          "html_url": "https://github.com/BreadchainCoop/etherform/issues/17",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
           "number": 16,
-          "title": "Blockscout verification detection returns false positives",
+          "title": "Improve README",
           "author": "RonTuretzky",
-          "created_at": "2026-01-09T22:35:00Z",
-          "updated_at": "2026-01-09T22:35:00Z",
-          "html_url": "https://github.com/BreadchainCoop/etherform/issues/16",
+          "created_at": "2025-07-17T14:24:58Z",
+          "updated_at": "2025-07-17T14:24:58Z",
+          "html_url": "https://github.com/BreadchainCoop/eigenlayer-bls-local/issues/16",
+          "labels": [],
+          "assignees": [
+            "hudsonhrh"
+          ],
+          "comments": []
+        },
+        {
+          "number": 15,
+          "title": "If Local Mode and testnet mode have different Avs deploy json",
+          "author": "hudsonhrh",
+          "created_at": "2025-06-06T22:30:11Z",
+          "updated_at": "2025-06-06T22:30:11Z",
+          "html_url": "https://github.com/BreadchainCoop/eigenlayer-bls-local/issues/15",
           "labels": [],
           "assignees": [],
           "comments": []
         },
         {
-          "number": 8,
-          "title": "Blockscout verification url bad format check",
-          "author": "hudsonhrh",
-          "created_at": "2025-12-04T20:50:47Z",
-          "updated_at": "2025-12-04T20:50:47Z",
-          "html_url": "https://github.com/BreadchainCoop/etherform/issues/8",
+          "number": 10,
+          "title": "[Bug] `get_bls_key.sh` is flakey, can't rely on bls json artifacts",
+          "author": "rubydusa",
+          "created_at": "2025-05-25T21:41:16Z",
+          "updated_at": "2025-05-29T13:35:46Z",
+          "html_url": "https://github.com/BreadchainCoop/eigenlayer-bls-local/issues/10",
           "labels": [],
           "assignees": [],
-          "comments": []
+          "comments": [
+            {
+              "id": "IC_kwDON_h51M6tV9he",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "NONE",
+              "body": "Recommending to backlog until upstream [standardization](https://github.com/Layr-Labs/hourglass-monorepo/pull/61) prs are resolved and merged ",
+              "createdAt": "2025-05-26T00:42:49Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [
+                {
+                  "content": "THUMBS_UP",
+                  "users": {
+                    "totalCount": 1
+                  }
+                }
+              ],
+              "url": "https://github.com/BreadchainCoop/eigenlayer-bls-local/issues/10#issuecomment-2908215390",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDON_h51M6tV9yr",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "NONE",
+              "body": "I've not seen flakey behavior yet with the tmux approach, what's the os ur seeing this on?",
+              "createdAt": "2025-05-26T00:44:00Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/eigenlayer-bls-local/issues/10#issuecomment-2908216491",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDON_h51M6t8kEa",
+              "author": {
+                "login": "rubydusa"
+              },
+              "authorAssociation": "NONE",
+              "body": "My os is PopOs 20.04",
+              "createdAt": "2025-05-29T05:28:14Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/eigenlayer-bls-local/issues/10#issuecomment-2918334746",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDON_h51M6t-mLB",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "NONE",
+              "body": "> My os is PopOs 20.04\n\ni bet this is the issue \ud83e\udd72",
+              "createdAt": "2025-05-29T09:42:26Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/eigenlayer-bls-local/issues/10#issuecomment-2918867649",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDON_h51M6uAtnW",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "NONE",
+              "body": "@dijarllozana familiar with this os in any way?",
+              "createdAt": "2025-05-29T13:35:45Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/eigenlayer-bls-local/issues/10#issuecomment-2919422422",
+              "viewerDidAuthor": false
+            }
+          ]
         },
         {
           "number": 7,
-          "title": "Blockscout verification optional",
-          "author": "hudsonhrh",
-          "created_at": "2025-12-04T20:49:48Z",
-          "updated_at": "2025-12-04T20:49:48Z",
-          "html_url": "https://github.com/BreadchainCoop/etherform/issues/7",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 5,
-          "title": "Better integration docs",
-          "author": "hudsonhrh",
-          "created_at": "2025-12-04T17:13:13Z",
-          "updated_at": "2025-12-04T17:13:13Z",
-          "html_url": "https://github.com/BreadchainCoop/etherform/issues/5",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 4,
-          "title": "Accept different profiles",
-          "author": "hudsonhrh",
-          "created_at": "2025-12-04T17:10:54Z",
-          "updated_at": "2025-12-04T17:10:54Z",
-          "html_url": "https://github.com/BreadchainCoop/etherform/issues/4",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 2,
-          "title": "Expose optional `ADMIN_ADDRESS` env var to deploy scripts",
-          "author": "franrolotti",
-          "created_at": "2025-12-04T12:58:06Z",
-          "updated_at": "2025-12-04T12:58:06Z",
-          "html_url": "https://github.com/BreadchainCoop/etherform/issues/2",
+          "title": "[Research] Better logging",
+          "author": "rubydusa",
+          "created_at": "2025-05-16T11:26:01Z",
+          "updated_at": "2025-05-16T11:26:01Z",
+          "html_url": "https://github.com/BreadchainCoop/eigenlayer-bls-local/issues/7",
           "labels": [],
           "assignees": [],
           "comments": []
@@ -5517,6 +5272,34 @@
       "repo_name": "saving-circles",
       "github_url": "https://github.com/BreadchainCoop/saving-circles",
       "issues": [
+        {
+          "number": 125,
+          "title": "Fix Viewer `canWithdraw` for late claims",
+          "author": "franrolotti",
+          "created_at": "2026-02-25T17:52:38Z",
+          "updated_at": "2026-02-25T17:52:38Z",
+          "html_url": "https://github.com/BreadchainCoop/saving-circles/issues/125",
+          "labels": [],
+          "assignees": [
+            "franrolotti"
+          ],
+          "comments": []
+        },
+        {
+          "number": 124,
+          "title": "Create spec for the optimization for this issue",
+          "author": "brendaasfjnso",
+          "created_at": "2026-02-25T17:35:01Z",
+          "updated_at": "2026-02-25T17:35:01Z",
+          "html_url": "https://github.com/BreadchainCoop/saving-circles/issues/124",
+          "labels": [
+            "help wanted"
+          ],
+          "assignees": [
+            "franrolotti"
+          ],
+          "comments": []
+        },
         {
           "number": 122,
           "title": "Fee-on-transfer / rebasing ERC20s break deposit accounting and can cause cross-circle fund loss / insolvency",
@@ -5694,66 +5477,6 @@
           "comments": []
         },
         {
-          "number": 98,
-          "title": "Move claim availability to the last day of deposit period (maximize token holding time)",
-          "author": "franrolotti",
-          "created_at": "2026-01-19T00:11:08Z",
-          "updated_at": "2026-01-19T00:11:08Z",
-          "html_url": "https://github.com/BreadchainCoop/saving-circles/issues/98",
-          "labels": [
-            "bug"
-          ],
-          "assignees": [
-            "franrolotti"
-          ],
-          "comments": []
-        },
-        {
-          "number": 97,
-          "title": "Deposit UX: avoid repeated \"spending cap\" tx by setting a total default allowance",
-          "author": "franrolotti",
-          "created_at": "2026-01-15T17:32:27Z",
-          "updated_at": "2026-01-16T11:15:01Z",
-          "html_url": "https://github.com/BreadchainCoop/saving-circles/issues/97",
-          "labels": [],
-          "assignees": [
-            "Olaleye-Blessing",
-            "franrolotti"
-          ],
-          "comments": [
-            {
-              "id": "IC_kwDONW6FcM7f5Rjd",
-              "author": {
-                "login": "franrolotti"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "Talked with @Olaleye-Blessing about this.\n\n* He will **implement to approve all the tokens needed for the full circle**: `memberCount * depositAmount`.\n\nFor a future scope, we could include the **possibility to make a partial deposit and then complete it in the same round**. For this, we need to coordinate with the designers @brendaasfjnso . In the smart contract this is already a possibility.\n\n@tbsoc ",
-              "createdAt": "2026-01-15T18:40:34Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/saving-circles/issues/97#issuecomment-3756333277",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDONW6FcM7gFjic",
-              "author": {
-                "login": "tbsoc"
-              },
-              "authorAssociation": "MEMBER",
-              "body": "Low priority for now but a good question to ask in user research\r\n\r\nOn Thu, Jan 15, 2026 at 7:40\u202fPM Francisco Rolotti ***@***.***>\r\nwrote:\r\n\r\n> *franrolotti* left a comment (BreadchainCoop/saving-circles#97)\r\n> <https://github.com/BreadchainCoop/saving-circles/issues/97#issuecomment-3756333277>\r\n>\r\n> Talked with @Olaleye-Blessing <https://github.com/Olaleye-Blessing> about\r\n> this.\r\n>\r\n>    - He will *implement to approve all the tokens needed for the full\r\n>    circle*: memberCount * depositAmount.\r\n>\r\n> For a future scope, we could include the *possibility to make a partial\r\n> deposit and then complete it in the same round*. For this, we need to\r\n> coordinate with the designers @brendaasfjnso\r\n> <https://github.com/brendaasfjnso> . In the smart contract this is\r\n> already a possibility.\r\n>\r\n> @tbsoc <https://github.com/tbsoc>\r\n>\r\n> \u2014\r\n> Reply to this email directly, view it on GitHub\r\n> <https://github.com/BreadchainCoop/saving-circles/issues/97#issuecomment-3756333277>,\r\n> or unsubscribe\r\n> <https://github.com/notifications/unsubscribe-auth/ATI4Q7JOFXTXACI52Y2KOST4G7NLRAVCNFSM6AAAAACR2HYDCKVHI2DSMVQWIX3LMV43OSLTON2WKQ3PNVWWK3TUHMZTONJWGMZTGMRXG4>\r\n> .\r\n> You are receiving this because you were mentioned.Message ID:\r\n> ***@***.***>\r\n>\r\n",
-              "createdAt": "2026-01-16T11:15:01Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/saving-circles/issues/97#issuecomment-3759552668",
-              "viewerDidAuthor": false
-            }
-          ]
-        },
-        {
           "number": 96,
           "title": "Clarify decommission + missed deposit behavior (is it ideal?)",
           "author": "franrolotti",
@@ -5893,187 +5616,6 @@
               "viewerDidAuthor": false
             }
           ]
-        },
-        {
-          "number": 95,
-          "title": "Verify periods/time logic : when deposits and claims are allowed",
-          "author": "franrolotti",
-          "created_at": "2026-01-15T16:41:03Z",
-          "updated_at": "2026-01-28T10:37:11Z",
-          "html_url": "https://github.com/BreadchainCoop/saving-circles/issues/95",
-          "labels": [],
-          "assignees": [
-            "franrolotti"
-          ],
-          "comments": [
-            {
-              "id": "IC_kwDONW6FcM7ikGpI",
-              "author": {
-                "login": "franrolotti"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "#103 Here we move the withdrawal timing to the last day of the round and further. This fixes the depositing too many days before the round starts too, because users can only withdraw on the last day, and after that deposit for the next round.\n\nNote that the round only advances on withdrawal. if a claim is late, the next round\u2019s window does not extend (time continues to run, and deposits stay blocked until the withdrawal happens). \n\n@tbsoc @brendaasfjnso @exo404 @RonTuretzky ",
-              "createdAt": "2026-01-26T18:38:34Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/saving-circles/issues/95#issuecomment-3801115208",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDONW6FcM7inEnx",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "\"This fixes the depositing too many days before the round starts too,\" can you explain this? \n\nI dont understand why we limit the withdraw time instead of allowing to withdraw right away ",
-              "createdAt": "2026-01-26T21:41:31Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/saving-circles/issues/95#issuecomment-3801893361",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDONW6FcM7inpa2",
-              "author": {
-                "login": "franrolotti"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "In our Stacks group with Josh and Gilberto, we talked about an issue that comes up when you claim early. For instance, if you claim at the third of the seven days, the next round starts, but it ends in 11 days (4 missing from the previous round and the 7 days from the new round). This was a bit confusing and strange in the UX.\n\nA proposal to address both the UX confusion and keep the funds in the contract for the full window (which was something we talked about with Josh and Bren before) was to restrict claiming to the last day of the period. \n\nThis came up in the last meeting too, and we thought this could be an option to solve the issues without doing big changes in the contracts or the frontend.\n\nDoes this direction make sense to you? Wdyt? @RonTuretzky \n\n@brendaasfjnso @tbsoc \n\n",
-              "createdAt": "2026-01-26T22:24:28Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/saving-circles/issues/95#issuecomment-3802044086",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDONW6FcM7inwVI",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "> In our Stacks group with Josh and Gilberto, we talked about an issue that comes up when you claim early. For instance, if you claim at the third of the seven days, the next round starts, but it ends in 11 days (4 missing from the previous round and the 7 days from the new round). This was a bit confusing and strange in the UX.\n> \n> A proposal to address both the UX confusion and keep the funds in the contract for the full window (which was something we talked about with Josh and Bren before) was to restrict claiming to the last day of the period. \n> \n> This came up in the last meeting too, and we thought this could be an option to solve the issues without doing big changes in the contracts or the frontend.\n> \n> Does this direction make sense to you? Wdyt? @RonTuretzky \n> \n> @brendaasfjnso @tbsoc \n> \n> \n\nWhy not just adjust the contracts so that claiming early does not change the next deposit period? \n",
-              "createdAt": "2026-01-26T22:33:02Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/saving-circles/issues/95#issuecomment-3802072392",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDONW6FcM7ioDdq",
-              "author": {
-                "login": "franrolotti"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "> > In our Stacks group with Josh and Gilberto, we talked about an issue that comes up when you claim early. For instance, if you claim at the third of the seven days, the next round starts, but it ends in 11 days (4 missing from the previous round and the 7 days from the new round). This was a bit confusing and strange in the UX.\n> > A proposal to address both the UX confusion and keep the funds in the contract for the full window (which was something we talked about with Josh and Bren before) was to restrict claiming to the last day of the period.\n> > This came up in the last meeting too, and we thought this could be an option to solve the issues without doing big changes in the contracts or the frontend.\n> > Does this direction make sense to you? Wdyt? [@RonTuretzky](https://github.com/RonTuretzky)\n> > [@brendaasfjnso](https://github.com/brendaasfjnso) [@tbsoc](https://github.com/tbsoc)\n> \n> Why not just adjust the contracts so that claiming early does not change the next deposit period?\n\nRight now we calculate time in two different ways:\n\n1) **Round progression** is based on `currentIndex`, which only increments when a withdrawal happens.\nThat means claiming early advances the round even if we\u2019re still early in the time window.\n2) **Deposit windows** are based on fixed timestamps derived from `effectiveCircleStartTime` and `depositInterval`.\nThat means time keeps running on schedule even if a withdrawal hasn\u2019t happened yet.\n\nBecause those two aren\u2019t aligned, we can end up in weird states:\n\n**Claim early:** round index moves forward, but the next round\u2019s deposit window ends far in the future.\n**Claim late:** round index is behind, but the next round\u2019s deposit window may have already started or even ended.\n\nIf we want an alternative to the \"only claim at end of period\" restriction, I think we need to pick one:\n\nA) **Time based rounds:** Round index is derived from time only. Early claims do not advance the round. This keeps windows consistent.\nB) **Claim based rounds:** Round index advances on withdrawal and the next round\u2019s time window restarts from the claim time. \n\n\nI think that time based rounds are the most intuitive. It keeps the schedule predictable and prevents claims from shifting the time windows. The trade off is that we need to handle what happens with a missed claim correctly.\n\nWhich direction do you think is the best?",
-              "createdAt": "2026-01-26T22:55:30Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/saving-circles/issues/95#issuecomment-3802150762",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDONW6FcM7ioGh2",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "> > > In our Stacks group with Josh and Gilberto, we talked about an issue that comes up when you claim early. For instance, if you claim at the third of the seven days, the next round starts, but it ends in 11 days (4 missing from the previous round and the 7 days from the new round). This was a bit confusing and strange in the UX.\n> > > A proposal to address both the UX confusion and keep the funds in the contract for the full window (which was something we talked about with Josh and Bren before) was to restrict claiming to the last day of the period.\n> > > This came up in the last meeting too, and we thought this could be an option to solve the issues without doing big changes in the contracts or the frontend.\n> > > Does this direction make sense to you? Wdyt? [@RonTuretzky](https://github.com/RonTuretzky)\n> > > [@brendaasfjnso](https://github.com/brendaasfjnso) [@tbsoc](https://github.com/tbsoc)\n> > \n> > Why not just adjust the contracts so that claiming early does not change the next deposit period?\n> \n> Right now we calculate time in two different ways:\n> \n> 1) **Round progression** is based on `currentIndex`, which only increments when a withdrawal happens.\n> That means claiming early advances the round even if we\u2019re still early in the time window.\n> 2) **Deposit windows** are based on fixed timestamps derived from `effectiveCircleStartTime` and `depositInterval`.\n> That means time keeps running on schedule even if a withdrawal hasn\u2019t happened yet.\n> \n> Because those two aren\u2019t aligned, we can end up in weird states:\n> \n> **Claim early:** round index moves forward, but the next round\u2019s deposit window ends far in the future.\n> **Claim late:** round index is behind, but the next round\u2019s deposit window may have already started or even ended.\n> \n> If we want an alternative to the \"only claim at end of period\" restriction, I think we need to pick one:\n> \n> A) **Time based rounds:** Round index is derived from time only. Early claims do not advance the round. This keeps windows consistent.\n> B) **Claim based rounds:** Round index advances on withdrawal and the next round\u2019s time window restarts from the claim time. \n> \n> \n> I think that time based rounds are the most intuitive. It keeps the schedule predictable and prevents claims from shifting the time windows. The trade off is that we need to handle what happens with a missed claim correctly.\n> \n> Which direction do you think is the best?\n\nFrom those two A. ",
-              "createdAt": "2026-01-26T22:59:42Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [
-                {
-                  "content": "THUMBS_UP",
-                  "users": {
-                    "totalCount": 1
-                  }
-                }
-              ],
-              "url": "https://github.com/BreadchainCoop/saving-circles/issues/95#issuecomment-3802163318",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDONW6FcM7i1z_-",
-              "author": {
-                "login": "exo404"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "I agree, the Time based round solution seems better to me @franrolotti ",
-              "createdAt": "2026-01-27T15:10:01Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/saving-circles/issues/95#issuecomment-3805757438",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDONW6FcM7i5o5i",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "@franrolotti just to be clear, does this mean that the circle can fully execute without anyone claiming anything? ",
-              "createdAt": "2026-01-27T18:19:02Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/saving-circles/issues/95#issuecomment-3806760546",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDONW6FcM7jH4DS",
-              "author": {
-                "login": "franrolotti"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "> [@franrolotti](https://github.com/franrolotti) just to be clear, does this mean that the circle can fully execute without anyone claiming anything?\n\n\nWith the time based change we agreed on, it could, but we need to check if anything else prevents late claims and whether claims are allowed after the full circle time has passed.\n\nFor now, i see that we have to change this two checks on the `_withdraw`function\n\n```solidity\n    if (circleMembers[_id][_circle.currentIndex] != _member) revert NotWithdrawable();\n    if (_circle.currentIndex >= circleMembers[_id].length) revert NotWithdrawable();\n```\n\nI can add to the **time based round** together with the **possibility to claim whenever the user wants on their turn or afterwards**. Also, I shoud coordinate this with @Olaleye-Blessing to see if the frontend already handles this behavior.\n\n@RonTuretzky ",
-              "createdAt": "2026-01-28T10:37:11Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [
-                {
-                  "content": "THUMBS_UP",
-                  "users": {
-                    "totalCount": 1
-                  }
-                }
-              ],
-              "url": "https://github.com/BreadchainCoop/saving-circles/issues/95#issuecomment-3810492626",
-              "viewerDidAuthor": false
-            }
-          ]
-        },
-        {
-          "number": 93,
-          "title": "Create a spec for autodeposit functions and automations",
-          "author": "franrolotti",
-          "created_at": "2026-01-15T16:23:30Z",
-          "updated_at": "2026-02-05T20:06:40Z",
-          "html_url": "https://github.com/BreadchainCoop/saving-circles/issues/93",
-          "labels": [
-            "documentation"
-          ],
-          "assignees": [
-            "diterra-code",
-            "franrolotti",
-            "exo404",
-            "brendaasfjnso"
-          ],
-          "comments": []
         },
         {
           "number": 84,
@@ -6274,97 +5816,6 @@
           "labels": [],
           "assignees": [],
           "comments": []
-        }
-      ]
-    },
-    "app-stacks": {
-      "repo_name": "app-stacks",
-      "github_url": "https://github.com/BreadchainCoop/app-stacks",
-      "issues": [
-        {
-          "number": 24,
-          "title": "Technical Spec for the Stacks Supabase integration",
-          "author": "exo404",
-          "created_at": "2026-02-13T18:25:42Z",
-          "updated_at": "2026-02-13T18:25:42Z",
-          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/24",
-          "labels": [
-            "documentation",
-            "enhancement"
-          ],
-          "assignees": [
-            "exo404"
-          ],
-          "comments": []
-        },
-        {
-          "number": 22,
-          "title": "Implement the deposit module",
-          "author": "Olaleye-Blessing",
-          "created_at": "2026-02-12T23:43:52Z",
-          "updated_at": "2026-02-12T23:43:52Z",
-          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/22",
-          "labels": [
-            "not-ready"
-          ],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 1,
-          "title": "Abstract BREAD Token \u2014 Show Only USD Balances on Frontend (Inspired by Hyperliquid & Polymarket)",
-          "author": "diterra-code",
-          "created_at": "2025-10-15T21:14:26Z",
-          "updated_at": "2025-10-16T04:28:41Z",
-          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/1",
-          "labels": [
-            "documentation",
-            "help wanted"
-          ],
-          "assignees": [
-            "diterra-code",
-            "RonTuretzky",
-            "tbsoc"
-          ],
-          "comments": [
-            {
-              "id": "IC_kwDOQBrnic7LJut_",
-              "author": {
-                "login": "diterra-code"
-              },
-              "authorAssociation": "NONE",
-              "body": "Dropping this here @RonTuretzky @tbsoc @bagelface for further discussion.\n\n@RonTuretzky what do you think of my mermaid diagram skills? \n\nThe idea is to maybe after MVP of Stacks/Safety Net try to work on this UX.",
-              "createdAt": "2025-10-15T21:17:43Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [
-                {
-                  "content": "HEART",
-                  "users": {
-                    "totalCount": 1
-                  }
-                }
-              ],
-              "url": "https://github.com/BreadchainCoop/app-stacks/issues/1#issuecomment-3408325503",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOQBrnic7LMzo-",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "NONE",
-              "body": "> Dropping this here @RonTuretzky @tbsoc @bagelface for further discussion.\n> \n> @RonTuretzky what do you think of my mermaid diagram skills? \n> \n> The idea is to maybe after MVP of Stacks/Safety Net try to work on this UX.\n\n\n\n\ud83d\ude0d\ud83d\ude0d\ud83d\ude0d\ud83d\ude0d\ud83d\ude0d\n\n\nI think with the lifi widget like we have in the crowdstaking app this is quite doable. ",
-              "createdAt": "2025-10-16T04:28:41Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/app-stacks/issues/1#issuecomment-3409132094",
-              "viewerDidAuthor": false
-            }
-          ]
         }
       ]
     },
