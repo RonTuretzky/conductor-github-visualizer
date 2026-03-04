@@ -1,15 +1,367 @@
 {
   "organization": "BreadchainCoop",
-  "generated_at": "2026-03-03T00:17:54.004539+00:00",
-  "generation_time_seconds": 184.96,
+  "generated_at": "2026-03-04T00:16:17.088937+00:00",
+  "generation_time_seconds": 141.9,
   "stats": {
     "total_repos": 44,
     "repos_with_prs": 22,
     "repos_with_issues": 27,
-    "total_open_prs": 97,
-    "total_open_issues": 233
+    "total_open_prs": 95,
+    "total_open_issues": 232
   },
   "trees": {
+    "app-stacks": {
+      "name": "app-stacks",
+      "branch": "dev",
+      "repo_name": "app-stacks",
+      "pr_number": null,
+      "pr_title": null,
+      "pr_url": null,
+      "pr_author": null,
+      "last_updated": "2026-03-03T20:44:12Z",
+      "ci_status": "",
+      "github_url": "https://github.com/BreadchainCoop/app-stacks",
+      "is_draft": false,
+      "labels": [],
+      "commits_from_parent": [],
+      "parent_branch_name": null,
+      "children": [
+        {
+          "name": "Implement UI design",
+          "branch": "dev",
+          "repo_name": "app-stacks",
+          "pr_number": 5,
+          "pr_title": "Implement UI design",
+          "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/5",
+          "pr_author": "Olaleye-Blessing",
+          "last_updated": "2026-03-03T20:51:09Z",
+          "ci_status": "pass",
+          "github_url": "https://github.com/BreadchainCoop/app-stacks",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [],
+          "parent_branch_name": "dev",
+          "children": [
+            {
+              "name": "Privy embedded wallet funding",
+              "branch": "feat/privy-embedded-wallet-funding",
+              "repo_name": "app-stacks",
+              "pr_number": 36,
+              "pr_title": "Privy embedded wallet funding",
+              "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/36",
+              "pr_author": "franrolotti",
+              "last_updated": "2026-03-03T16:39:46Z",
+              "ci_status": "pass",
+              "github_url": "https://github.com/BreadchainCoop/app-stacks",
+              "is_draft": false,
+              "labels": [],
+              "commits_from_parent": [
+                {
+                  "sha": "58495a02dcc6952889b97f275cdff91d14737800",
+                  "short_sha": "58495a0",
+                  "message": "feat(privy): add embedded wallet funding button via Privy fundWallet",
+                  "author": "Francisco Rolotti",
+                  "author_login": "franrolotti",
+                  "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
+                  "date": "2026-02-25",
+                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/58495a02dcc6952889b97f275cdff91d14737800"
+                },
+                {
+                  "sha": "f6a19829837c216cf60479c01c1ca00e32f6eded",
+                  "short_sha": "f6a1982",
+                  "message": "feat(privy): improve stacks wallet funding flow and make chain ID configurable",
+                  "author": "Francisco Rolotti",
+                  "author_login": "franrolotti",
+                  "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
+                  "date": "2026-02-27",
+                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/f6a19829837c216cf60479c01c1ca00e32f6eded"
+                },
+                {
+                  "sha": "96fd5f7742a3753bcec3628bee7dc9cf40db6dfc",
+                  "short_sha": "96fd5f7",
+                  "message": "Use copy component & hook from lib",
+                  "author": "Olaleye Blessing",
+                  "author_login": "Olaleye-Blessing",
+                  "author_avatar_url": "https://avatars.githubusercontent.com/u/70102539?v=4",
+                  "date": "2026-02-25",
+                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/96fd5f7742a3753bcec3628bee7dc9cf40db6dfc"
+                },
+                {
+                  "sha": "fb7a84b5c3d2343bbec116c7644f7276048a9bbd",
+                  "short_sha": "fb7a84b",
+                  "message": "refactor(navbar): extract Privy wallet funding flow into useWalletFunding hook",
+                  "author": "Francisco Rolotti",
+                  "author_login": "franrolotti",
+                  "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
+                  "date": "2026-03-02",
+                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/fb7a84b5c3d2343bbec116c7644f7276048a9bbd"
+                },
+                {
+                  "sha": "c9af57b17d11ab6eaf5f65dc44556b1f9acb4532",
+                  "short_sha": "c9af57b",
+                  "message": "fix(wallet-funding): validate chain/address inputs and handle native refresh err",
+                  "author": "Francisco Rolotti",
+                  "author_login": "franrolotti",
+                  "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
+                  "date": "2026-03-02",
+                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/c9af57b17d11ab6eaf5f65dc44556b1f9acb4532"
+                }
+              ],
+              "parent_branch_name": "dev",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    "saving-circles": {
+      "name": "saving-circles",
+      "branch": "dev",
+      "repo_name": "saving-circles",
+      "pr_number": null,
+      "pr_title": null,
+      "pr_url": null,
+      "pr_author": null,
+      "last_updated": "2026-03-03T18:06:56Z",
+      "ci_status": "",
+      "github_url": "https://github.com/BreadchainCoop/saving-circles",
+      "is_draft": false,
+      "labels": [],
+      "commits_from_parent": [],
+      "parent_branch_name": null,
+      "children": [
+        {
+          "name": "feat: add member-level withdrawability and fix viewer canWit",
+          "branch": "feat/member-withdrawable-view",
+          "repo_name": "saving-circles",
+          "pr_number": 121,
+          "pr_title": "feat: add member-level withdrawability and fix viewer canWithdraw for late claims",
+          "pr_url": "https://github.com/BreadchainCoop/saving-circles/pull/121",
+          "pr_author": "franrolotti",
+          "last_updated": "2026-03-03T18:38:05Z",
+          "ci_status": "pass",
+          "github_url": "https://github.com/BreadchainCoop/saving-circles",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "ed1f7b87d915a37412b518ae87ef274274270199",
+              "short_sha": "ed1f7b8",
+              "message": "feat: add member-level withdrawability and update viewer canWithdraw",
+              "author": "Francisco Rolotti",
+              "author_login": "franrolotti",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
+              "date": "2026-02-19",
+              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/ed1f7b87d915a37412b518ae87ef274274270199"
+            },
+            {
+              "sha": "1979c0a82c5b45e48f95a2f2c7274c0eafab5311",
+              "short_sha": "1979c0a",
+              "message": "fix: make isWithdrawable return true when any member has a pending claim",
+              "author": "Francisco Rolotti",
+              "author_login": "franrolotti",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
+              "date": "2026-02-23",
+              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/1979c0a82c5b45e48f95a2f2c7274c0eafab5311"
+            },
+            {
+              "sha": "0c281d53a34c935e2b5c6afe3ff2b4fe5ec9bbd8",
+              "short_sha": "0c281d5",
+              "message": "test(fuzz): use member-specific withdrawability check in multi-round withdrawal ",
+              "author": "Francisco Rolotti",
+              "author_login": "franrolotti",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
+              "date": "2026-02-23",
+              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/0c281d53a34c935e2b5c6afe3ff2b4fe5ec9bbd8"
+            },
+            {
+              "sha": "a8944661c7a55586b320613d0647820150085dad",
+              "short_sha": "a894466",
+              "message": "test(unit): add coverage for isMemberWithdrawable and viewer late-claim canWithd",
+              "author": "Francisco Rolotti",
+              "author_login": "franrolotti",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
+              "date": "2026-03-02",
+              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/a8944661c7a55586b320613d0647820150085dad"
+            },
+            {
+              "sha": "486c156c8e1b482306e6d159632c2895a6867e4f",
+              "short_sha": "486c156",
+              "message": "refactor: hoist decommission check out of isWithdrawable loop",
+              "author": "Francisco Rolotti",
+              "author_login": "franrolotti",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
+              "date": "2026-03-02",
+              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/486c156c8e1b482306e6d159632c2895a6867e4f"
+            }
+          ],
+          "parent_branch_name": "dev",
+          "children": []
+        },
+        {
+          "name": "Deploy script fix and guardrails",
+          "branch": "104-deploy-guardrails",
+          "repo_name": "saving-circles",
+          "pr_number": 119,
+          "pr_title": "Deploy script fix and guardrails",
+          "pr_url": "https://github.com/BreadchainCoop/saving-circles/pull/119",
+          "pr_author": "franrolotti",
+          "last_updated": "2026-02-23T14:19:56Z",
+          "ci_status": "pass",
+          "github_url": "https://github.com/BreadchainCoop/saving-circles",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "3a017d6de359630d5e664b9a9bb155905f05b59c",
+              "short_sha": "3a017d6",
+              "message": "fix(deploy): prevent nested ProxyAdmin ownership and enforce direct admin contro",
+              "author": "Francisco Rolotti",
+              "author_login": "franrolotti",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
+              "date": "2026-02-16",
+              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/3a017d6de359630d5e664b9a9bb155905f05b59c"
+            }
+          ],
+          "parent_branch_name": "dev",
+          "children": []
+        },
+        {
+          "name": "Fix decommissioned circle data access in viewer",
+          "branch": "112-decommission-deletes-circle-data-causing-getusercircledata-to-revert",
+          "repo_name": "saving-circles",
+          "pr_number": 117,
+          "pr_title": "Fix decommissioned circle data access in viewer",
+          "pr_url": "https://github.com/BreadchainCoop/saving-circles/pull/117",
+          "pr_author": "franrolotti",
+          "last_updated": "2026-02-12T15:16:29Z",
+          "ci_status": "pass",
+          "github_url": "https://github.com/BreadchainCoop/saving-circles",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "ffb863bea82d2229b28cc8c1a595ea74120ecba1",
+              "short_sha": "ffb863b",
+              "message": "feat: preserve decommissioned circle data for viewer access",
+              "author": "Francisco Rolotti",
+              "author_login": "franrolotti",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
+              "date": "2026-02-09",
+              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/ffb863bea82d2229b28cc8c1a595ea74120ecba1"
+            },
+            {
+              "sha": "0fe8d1ba75440b1386a58abfdf56ce859d85d175",
+              "short_sha": "0fe8d1b",
+              "message": "test: handle zero amount and interval in fuzz creation",
+              "author": "Francisco Rolotti",
+              "author_login": "franrolotti",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
+              "date": "2026-02-09",
+              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/0fe8d1ba75440b1386a58abfdf56ce859d85d175"
+            }
+          ],
+          "parent_branch_name": "dev",
+          "children": []
+        },
+        {
+          "name": "Integrate Etherform to saving-circles repo",
+          "branch": "71-integrate-etherform-cicd-deployment-into-savingcircles",
+          "repo_name": "saving-circles",
+          "pr_number": 72,
+          "pr_title": "Integrate Etherform to saving-circles repo",
+          "pr_url": "https://github.com/BreadchainCoop/saving-circles/pull/72",
+          "pr_author": "franrolotti",
+          "last_updated": "2026-02-10T14:59:58Z",
+          "ci_status": "pass",
+          "github_url": "https://github.com/BreadchainCoop/saving-circles",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "7df19e0e94687967223a133353938bc632227853",
+              "short_sha": "7df19e0",
+              "message": "feat: integrate etherform CI/CD pipeline",
+              "author": "Francisco Rolotti",
+              "author_login": "franrolotti",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
+              "date": "2025-12-04",
+              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/7df19e0e94687967223a133353938bc632227853"
+            },
+            {
+              "sha": "1e19dc66255832a31794622fdf1dd81b0f723db9",
+              "short_sha": "1e19dc6",
+              "message": "refactor(script): rename Deploy.sol to Deploy.s.sol",
+              "author": "Francisco Rolotti",
+              "author_login": "franrolotti",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
+              "date": "2025-12-04",
+              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/1e19dc66255832a31794622fdf1dd81b0f723db9"
+            },
+            {
+              "sha": "9b7f59a6411be01110ea4a9901d2b2437ddadb18",
+              "short_sha": "9b7f59a",
+              "message": "chore: fix OZ remappings for lib submodules",
+              "author": "Francisco Rolotti",
+              "author_login": "franrolotti",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
+              "date": "2025-12-08",
+              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/9b7f59a6411be01110ea4a9901d2b2437ddadb18"
+            },
+            {
+              "sha": "164a515d974c16d06fe14b47d9a1a80977303e4a",
+              "short_sha": "164a515",
+              "message": "chore: enable Sepolia deploy on PRs",
+              "author": "Francisco Rolotti",
+              "author_login": "franrolotti",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
+              "date": "2025-12-08",
+              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/164a515d974c16d06fe14b47d9a1a80977303e4a"
+            },
+            {
+              "sha": "ad366ada0e3c2de2d73751aee80215570fc95145",
+              "short_sha": "ad366ad",
+              "message": "chore(ci): pass ADMIN_ADDRESS for testnet deploy",
+              "author": "Francisco Rolotti",
+              "author_login": "franrolotti",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
+              "date": "2025-12-08",
+              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/ad366ada0e3c2de2d73751aee80215570fc95145"
+            }
+          ],
+          "parent_branch_name": "dev",
+          "children": []
+        },
+        {
+          "name": "Add comprehensive static frontend specification",
+          "branch": "frontend-spec",
+          "repo_name": "saving-circles",
+          "pr_number": 48,
+          "pr_title": "Add comprehensive static frontend specification",
+          "pr_url": "https://github.com/BreadchainCoop/saving-circles/pull/48",
+          "pr_author": "RonTuretzky",
+          "last_updated": "2025-10-20T21:48:36Z",
+          "ci_status": "pass",
+          "github_url": "https://github.com/BreadchainCoop/saving-circles",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "97070abd5689a5d10e5c75fd17e4c974380b0e11",
+              "short_sha": "97070ab",
+              "message": "feat: add comprehensive static frontend specification",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-09-28",
+              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/97070abd5689a5d10e5c75fd17e4c974380b0e11"
+            }
+          ],
+          "parent_branch_name": "dev",
+          "children": []
+        }
+      ]
+    },
     "gas-killer-router": {
       "name": "gas-killer-router",
       "branch": "main",
@@ -18,7 +370,7 @@
       "pr_title": null,
       "pr_url": null,
       "pr_author": null,
-      "last_updated": "2026-03-03T00:11:28Z",
+      "last_updated": "2026-03-03T17:09:31Z",
       "ci_status": "",
       "github_url": "https://github.com/BreadchainCoop/gas-killer-router",
       "is_draft": false,
@@ -477,8 +829,8 @@
                       "pr_title": "Add yield distribution e2e test to helm charts",
                       "pr_url": "https://github.com/BreadchainCoop/gas-killer-router/pull/98",
                       "pr_author": "RonTuretzky",
-                      "last_updated": "2026-03-03T00:11:29Z",
-                      "ci_status": "pending",
+                      "last_updated": "2026-03-03T20:52:13Z",
+                      "ci_status": "pass",
                       "github_url": "https://github.com/BreadchainCoop/gas-killer-router",
                       "is_draft": false,
                       "labels": [],
@@ -865,456 +1217,6 @@
           "commits_from_parent": [],
           "parent_branch_name": "dev",
           "children": []
-        }
-      ]
-    },
-    "saving-circles": {
-      "name": "saving-circles",
-      "branch": "dev",
-      "repo_name": "saving-circles",
-      "pr_number": null,
-      "pr_title": null,
-      "pr_url": null,
-      "pr_author": null,
-      "last_updated": "2026-03-02T16:59:35Z",
-      "ci_status": "",
-      "github_url": "https://github.com/BreadchainCoop/saving-circles",
-      "is_draft": false,
-      "labels": [],
-      "commits_from_parent": [],
-      "parent_branch_name": null,
-      "children": [
-        {
-          "name": "Add Stacks Card details",
-          "branch": "116-show-the-card-details-information-in-the-your-stack-section",
-          "repo_name": "saving-circles",
-          "pr_number": 123,
-          "pr_title": "Add Stacks Card details",
-          "pr_url": "https://github.com/BreadchainCoop/saving-circles/pull/123",
-          "pr_author": "exo404",
-          "last_updated": "2026-03-02T17:02:40Z",
-          "ci_status": "pass",
-          "github_url": "https://github.com/BreadchainCoop/saving-circles",
-          "is_draft": false,
-          "labels": [
-            "enhancement"
-          ],
-          "commits_from_parent": [
-            {
-              "sha": "f730d11763bd7783e97ed9151bb3446b343920a8",
-              "short_sha": "f730d11",
-              "message": "feat: get stack card details",
-              "author": "exo404",
-              "author_login": "exo404",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/115696623?v=4",
-              "date": "2026-02-24",
-              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/f730d11763bd7783e97ed9151bb3446b343920a8"
-            },
-            {
-              "sha": "dfd390660b8c79c015c9124456462525cd898a84",
-              "short_sha": "dfd3906",
-              "message": "feat: add Enums for states",
-              "author": "exo404",
-              "author_login": "exo404",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/115696623?v=4",
-              "date": "2026-03-02",
-              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/dfd390660b8c79c015c9124456462525cd898a84"
-            },
-            {
-              "sha": "d9fdbd0b1d3b6decc7d191c0af512f4989cd3beb",
-              "short_sha": "d9fdbd0",
-              "message": "fix: unreachable branches and reverts",
-              "author": "exo404",
-              "author_login": "exo404",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/115696623?v=4",
-              "date": "2026-03-02",
-              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/d9fdbd0b1d3b6decc7d191c0af512f4989cd3beb"
-            },
-            {
-              "sha": "1f44f309224dcb014e33eddefa6a5b4b122a60bb",
-              "short_sha": "1f44f30",
-              "message": "fix: viewer to reflect contract changes",
-              "author": "exo404",
-              "author_login": "exo404",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/115696623?v=4",
-              "date": "2026-03-02",
-              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/1f44f309224dcb014e33eddefa6a5b4b122a60bb"
-            },
-            {
-              "sha": "3580e397e82c5588f47c72e430b9078d633f1500",
-              "short_sha": "3580e39",
-              "message": "test: update after fixes",
-              "author": "exo404",
-              "author_login": "exo404",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/115696623?v=4",
-              "date": "2026-03-02",
-              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/3580e397e82c5588f47c72e430b9078d633f1500"
-            }
-          ],
-          "parent_branch_name": "dev",
-          "children": []
-        },
-        {
-          "name": "feat: add member-level withdrawability and fix viewer canWit",
-          "branch": "feat/member-withdrawable-view",
-          "repo_name": "saving-circles",
-          "pr_number": 121,
-          "pr_title": "feat: add member-level withdrawability and fix viewer canWithdraw for late claims",
-          "pr_url": "https://github.com/BreadchainCoop/saving-circles/pull/121",
-          "pr_author": "franrolotti",
-          "last_updated": "2026-03-02T12:58:39Z",
-          "ci_status": "pass",
-          "github_url": "https://github.com/BreadchainCoop/saving-circles",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "ed1f7b87d915a37412b518ae87ef274274270199",
-              "short_sha": "ed1f7b8",
-              "message": "feat: add member-level withdrawability and update viewer canWithdraw",
-              "author": "Francisco Rolotti",
-              "author_login": "franrolotti",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-              "date": "2026-02-19",
-              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/ed1f7b87d915a37412b518ae87ef274274270199"
-            },
-            {
-              "sha": "1979c0a82c5b45e48f95a2f2c7274c0eafab5311",
-              "short_sha": "1979c0a",
-              "message": "fix: make isWithdrawable return true when any member has a pending claim",
-              "author": "Francisco Rolotti",
-              "author_login": "franrolotti",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-              "date": "2026-02-23",
-              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/1979c0a82c5b45e48f95a2f2c7274c0eafab5311"
-            },
-            {
-              "sha": "0c281d53a34c935e2b5c6afe3ff2b4fe5ec9bbd8",
-              "short_sha": "0c281d5",
-              "message": "test(fuzz): use member-specific withdrawability check in multi-round withdrawal ",
-              "author": "Francisco Rolotti",
-              "author_login": "franrolotti",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-              "date": "2026-02-23",
-              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/0c281d53a34c935e2b5c6afe3ff2b4fe5ec9bbd8"
-            },
-            {
-              "sha": "a8944661c7a55586b320613d0647820150085dad",
-              "short_sha": "a894466",
-              "message": "test(unit): add coverage for isMemberWithdrawable and viewer late-claim canWithd",
-              "author": "Francisco Rolotti",
-              "author_login": "franrolotti",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-              "date": "2026-03-02",
-              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/a8944661c7a55586b320613d0647820150085dad"
-            },
-            {
-              "sha": "486c156c8e1b482306e6d159632c2895a6867e4f",
-              "short_sha": "486c156",
-              "message": "refactor: hoist decommission check out of isWithdrawable loop",
-              "author": "Francisco Rolotti",
-              "author_login": "franrolotti",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-              "date": "2026-03-02",
-              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/486c156c8e1b482306e6d159632c2895a6867e4f"
-            }
-          ],
-          "parent_branch_name": "dev",
-          "children": []
-        },
-        {
-          "name": "Deploy script fix and guardrails",
-          "branch": "104-deploy-guardrails",
-          "repo_name": "saving-circles",
-          "pr_number": 119,
-          "pr_title": "Deploy script fix and guardrails",
-          "pr_url": "https://github.com/BreadchainCoop/saving-circles/pull/119",
-          "pr_author": "franrolotti",
-          "last_updated": "2026-02-23T14:19:56Z",
-          "ci_status": "pass",
-          "github_url": "https://github.com/BreadchainCoop/saving-circles",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "3a017d6de359630d5e664b9a9bb155905f05b59c",
-              "short_sha": "3a017d6",
-              "message": "fix(deploy): prevent nested ProxyAdmin ownership and enforce direct admin contro",
-              "author": "Francisco Rolotti",
-              "author_login": "franrolotti",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-              "date": "2026-02-16",
-              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/3a017d6de359630d5e664b9a9bb155905f05b59c"
-            }
-          ],
-          "parent_branch_name": "dev",
-          "children": []
-        },
-        {
-          "name": "Fix decommissioned circle data access in viewer",
-          "branch": "112-decommission-deletes-circle-data-causing-getusercircledata-to-revert",
-          "repo_name": "saving-circles",
-          "pr_number": 117,
-          "pr_title": "Fix decommissioned circle data access in viewer",
-          "pr_url": "https://github.com/BreadchainCoop/saving-circles/pull/117",
-          "pr_author": "franrolotti",
-          "last_updated": "2026-02-12T15:16:29Z",
-          "ci_status": "pass",
-          "github_url": "https://github.com/BreadchainCoop/saving-circles",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "ffb863bea82d2229b28cc8c1a595ea74120ecba1",
-              "short_sha": "ffb863b",
-              "message": "feat: preserve decommissioned circle data for viewer access",
-              "author": "Francisco Rolotti",
-              "author_login": "franrolotti",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-              "date": "2026-02-09",
-              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/ffb863bea82d2229b28cc8c1a595ea74120ecba1"
-            },
-            {
-              "sha": "0fe8d1ba75440b1386a58abfdf56ce859d85d175",
-              "short_sha": "0fe8d1b",
-              "message": "test: handle zero amount and interval in fuzz creation",
-              "author": "Francisco Rolotti",
-              "author_login": "franrolotti",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-              "date": "2026-02-09",
-              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/0fe8d1ba75440b1386a58abfdf56ce859d85d175"
-            }
-          ],
-          "parent_branch_name": "dev",
-          "children": []
-        },
-        {
-          "name": "Integrate Etherform to saving-circles repo",
-          "branch": "71-integrate-etherform-cicd-deployment-into-savingcircles",
-          "repo_name": "saving-circles",
-          "pr_number": 72,
-          "pr_title": "Integrate Etherform to saving-circles repo",
-          "pr_url": "https://github.com/BreadchainCoop/saving-circles/pull/72",
-          "pr_author": "franrolotti",
-          "last_updated": "2026-02-10T14:59:58Z",
-          "ci_status": "pass",
-          "github_url": "https://github.com/BreadchainCoop/saving-circles",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "7df19e0e94687967223a133353938bc632227853",
-              "short_sha": "7df19e0",
-              "message": "feat: integrate etherform CI/CD pipeline",
-              "author": "Francisco Rolotti",
-              "author_login": "franrolotti",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-              "date": "2025-12-04",
-              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/7df19e0e94687967223a133353938bc632227853"
-            },
-            {
-              "sha": "1e19dc66255832a31794622fdf1dd81b0f723db9",
-              "short_sha": "1e19dc6",
-              "message": "refactor(script): rename Deploy.sol to Deploy.s.sol",
-              "author": "Francisco Rolotti",
-              "author_login": "franrolotti",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-              "date": "2025-12-04",
-              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/1e19dc66255832a31794622fdf1dd81b0f723db9"
-            },
-            {
-              "sha": "9b7f59a6411be01110ea4a9901d2b2437ddadb18",
-              "short_sha": "9b7f59a",
-              "message": "chore: fix OZ remappings for lib submodules",
-              "author": "Francisco Rolotti",
-              "author_login": "franrolotti",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-              "date": "2025-12-08",
-              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/9b7f59a6411be01110ea4a9901d2b2437ddadb18"
-            },
-            {
-              "sha": "164a515d974c16d06fe14b47d9a1a80977303e4a",
-              "short_sha": "164a515",
-              "message": "chore: enable Sepolia deploy on PRs",
-              "author": "Francisco Rolotti",
-              "author_login": "franrolotti",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-              "date": "2025-12-08",
-              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/164a515d974c16d06fe14b47d9a1a80977303e4a"
-            },
-            {
-              "sha": "ad366ada0e3c2de2d73751aee80215570fc95145",
-              "short_sha": "ad366ad",
-              "message": "chore(ci): pass ADMIN_ADDRESS for testnet deploy",
-              "author": "Francisco Rolotti",
-              "author_login": "franrolotti",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-              "date": "2025-12-08",
-              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/ad366ada0e3c2de2d73751aee80215570fc95145"
-            }
-          ],
-          "parent_branch_name": "dev",
-          "children": []
-        },
-        {
-          "name": "Add comprehensive static frontend specification",
-          "branch": "frontend-spec",
-          "repo_name": "saving-circles",
-          "pr_number": 48,
-          "pr_title": "Add comprehensive static frontend specification",
-          "pr_url": "https://github.com/BreadchainCoop/saving-circles/pull/48",
-          "pr_author": "RonTuretzky",
-          "last_updated": "2025-10-20T21:48:36Z",
-          "ci_status": "pass",
-          "github_url": "https://github.com/BreadchainCoop/saving-circles",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "97070abd5689a5d10e5c75fd17e4c974380b0e11",
-              "short_sha": "97070ab",
-              "message": "feat: add comprehensive static frontend specification",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-09-28",
-              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/97070abd5689a5d10e5c75fd17e4c974380b0e11"
-            }
-          ],
-          "parent_branch_name": "dev",
-          "children": []
-        }
-      ]
-    },
-    "app-stacks": {
-      "name": "app-stacks",
-      "branch": "dev",
-      "repo_name": "app-stacks",
-      "pr_number": null,
-      "pr_title": null,
-      "pr_url": null,
-      "pr_author": null,
-      "last_updated": "2026-03-02T14:44:46Z",
-      "ci_status": "",
-      "github_url": "https://github.com/BreadchainCoop/app-stacks",
-      "is_draft": false,
-      "labels": [],
-      "commits_from_parent": [],
-      "parent_branch_name": null,
-      "children": [
-        {
-          "name": "Implement UI design",
-          "branch": "dev",
-          "repo_name": "app-stacks",
-          "pr_number": 5,
-          "pr_title": "Implement UI design",
-          "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/5",
-          "pr_author": "Olaleye-Blessing",
-          "last_updated": "2026-02-27T14:11:17Z",
-          "ci_status": "pass",
-          "github_url": "https://github.com/BreadchainCoop/app-stacks",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [],
-          "parent_branch_name": "dev",
-          "children": [
-            {
-              "name": "Switch to npm library",
-              "branch": "switch-npm-lib",
-              "repo_name": "app-stacks",
-              "pr_number": 38,
-              "pr_title": "Switch to npm library",
-              "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/38",
-              "pr_author": "Olaleye-Blessing",
-              "last_updated": "2026-03-01T15:23:04Z",
-              "ci_status": "pass",
-              "github_url": "https://github.com/BreadchainCoop/app-stacks",
-              "is_draft": false,
-              "labels": [],
-              "commits_from_parent": [
-                {
-                  "sha": "2d8debdb04c8a555ebe7f9d469a2ae0de609b3b8",
-                  "short_sha": "2d8debd",
-                  "message": "Switch to npm library",
-                  "author": "Olaleye Blessing",
-                  "author_login": "Olaleye-Blessing",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/70102539?v=4",
-                  "date": "2026-03-01",
-                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/2d8debdb04c8a555ebe7f9d469a2ae0de609b3b8"
-                }
-              ],
-              "parent_branch_name": "dev",
-              "children": []
-            },
-            {
-              "name": "Privy embedded wallet funding",
-              "branch": "feat/privy-embedded-wallet-funding",
-              "repo_name": "app-stacks",
-              "pr_number": 36,
-              "pr_title": "Privy embedded wallet funding",
-              "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/36",
-              "pr_author": "franrolotti",
-              "last_updated": "2026-03-02T14:48:31Z",
-              "ci_status": "pass",
-              "github_url": "https://github.com/BreadchainCoop/app-stacks",
-              "is_draft": false,
-              "labels": [],
-              "commits_from_parent": [
-                {
-                  "sha": "58495a02dcc6952889b97f275cdff91d14737800",
-                  "short_sha": "58495a0",
-                  "message": "feat(privy): add embedded wallet funding button via Privy fundWallet",
-                  "author": "Francisco Rolotti",
-                  "author_login": "franrolotti",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-                  "date": "2026-02-25",
-                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/58495a02dcc6952889b97f275cdff91d14737800"
-                },
-                {
-                  "sha": "f6a19829837c216cf60479c01c1ca00e32f6eded",
-                  "short_sha": "f6a1982",
-                  "message": "feat(privy): improve stacks wallet funding flow and make chain ID configurable",
-                  "author": "Francisco Rolotti",
-                  "author_login": "franrolotti",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-                  "date": "2026-02-27",
-                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/f6a19829837c216cf60479c01c1ca00e32f6eded"
-                },
-                {
-                  "sha": "96fd5f7742a3753bcec3628bee7dc9cf40db6dfc",
-                  "short_sha": "96fd5f7",
-                  "message": "Use copy component & hook from lib",
-                  "author": "Olaleye Blessing",
-                  "author_login": "Olaleye-Blessing",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/70102539?v=4",
-                  "date": "2026-02-25",
-                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/96fd5f7742a3753bcec3628bee7dc9cf40db6dfc"
-                },
-                {
-                  "sha": "fb7a84b5c3d2343bbec116c7644f7276048a9bbd",
-                  "short_sha": "fb7a84b",
-                  "message": "refactor(navbar): extract Privy wallet funding flow into useWalletFunding hook",
-                  "author": "Francisco Rolotti",
-                  "author_login": "franrolotti",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-                  "date": "2026-03-02",
-                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/fb7a84b5c3d2343bbec116c7644f7276048a9bbd"
-                },
-                {
-                  "sha": "c9af57b17d11ab6eaf5f65dc44556b1f9acb4532",
-                  "short_sha": "c9af57b",
-                  "message": "fix(wallet-funding): validate chain/address inputs and handle native refresh err",
-                  "author": "Francisco Rolotti",
-                  "author_login": "franrolotti",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-                  "date": "2026-03-02",
-                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/c9af57b17d11ab6eaf5f65dc44556b1f9acb4532"
-                }
-              ],
-              "parent_branch_name": "dev",
-              "children": []
-            }
-          ]
         }
       ]
     },
@@ -4647,6 +4549,518 @@
     }
   },
   "issues": {
+    "app-stacks": {
+      "repo_name": "app-stacks",
+      "github_url": "https://github.com/BreadchainCoop/app-stacks",
+      "issues": [
+        {
+          "number": 34,
+          "title": "Implement funding flow for Privy embedded wallets",
+          "author": "franrolotti",
+          "created_at": "2026-02-25T17:47:26Z",
+          "updated_at": "2026-02-25T17:47:26Z",
+          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/34",
+          "labels": [],
+          "assignees": [
+            "franrolotti"
+          ],
+          "comments": []
+        },
+        {
+          "number": 24,
+          "title": "Technical Spec for the Stacks Supabase integration",
+          "author": "exo404",
+          "created_at": "2026-02-13T18:25:42Z",
+          "updated_at": "2026-03-02T17:30:01Z",
+          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/24",
+          "labels": [
+            "documentation",
+            "enhancement"
+          ],
+          "assignees": [
+            "exo404"
+          ],
+          "comments": []
+        },
+        {
+          "number": 22,
+          "title": "Implement the deposit module",
+          "author": "Olaleye-Blessing",
+          "created_at": "2026-02-12T23:43:52Z",
+          "updated_at": "2026-02-12T23:43:52Z",
+          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/22",
+          "labels": [
+            "not-ready"
+          ],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 1,
+          "title": "Abstract BREAD Token \u2014 Show Only USD Balances on Frontend (Inspired by Hyperliquid & Polymarket)",
+          "author": "diterra-code",
+          "created_at": "2025-10-15T21:14:26Z",
+          "updated_at": "2025-10-16T04:28:41Z",
+          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/1",
+          "labels": [
+            "documentation",
+            "help wanted"
+          ],
+          "assignees": [
+            "diterra-code",
+            "RonTuretzky",
+            "tbsoc"
+          ],
+          "comments": [
+            {
+              "id": "IC_kwDOQBrnic7LJut_",
+              "author": {
+                "login": "diterra-code"
+              },
+              "authorAssociation": "NONE",
+              "body": "Dropping this here @RonTuretzky @tbsoc @bagelface for further discussion.\n\n@RonTuretzky what do you think of my mermaid diagram skills? \n\nThe idea is to maybe after MVP of Stacks/Safety Net try to work on this UX.",
+              "createdAt": "2025-10-15T21:17:43Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [
+                {
+                  "content": "HEART",
+                  "users": {
+                    "totalCount": 1
+                  }
+                }
+              ],
+              "url": "https://github.com/BreadchainCoop/app-stacks/issues/1#issuecomment-3408325503",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOQBrnic7LMzo-",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "NONE",
+              "body": "> Dropping this here @RonTuretzky @tbsoc @bagelface for further discussion.\n> \n> @RonTuretzky what do you think of my mermaid diagram skills? \n> \n> The idea is to maybe after MVP of Stacks/Safety Net try to work on this UX.\n\n\n\n\ud83d\ude0d\ud83d\ude0d\ud83d\ude0d\ud83d\ude0d\ud83d\ude0d\n\n\nI think with the lifi widget like we have in the crowdstaking app this is quite doable. ",
+              "createdAt": "2025-10-16T04:28:41Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/app-stacks/issues/1#issuecomment-3409132094",
+              "viewerDidAuthor": false
+            }
+          ]
+        }
+      ]
+    },
+    "saving-circles": {
+      "repo_name": "saving-circles",
+      "github_url": "https://github.com/BreadchainCoop/saving-circles",
+      "issues": [
+        {
+          "number": 125,
+          "title": "Fix Viewer `canWithdraw` for late claims",
+          "author": "franrolotti",
+          "created_at": "2026-02-25T17:52:38Z",
+          "updated_at": "2026-02-25T17:52:38Z",
+          "html_url": "https://github.com/BreadchainCoop/saving-circles/issues/125",
+          "labels": [],
+          "assignees": [
+            "franrolotti"
+          ],
+          "comments": []
+        },
+        {
+          "number": 124,
+          "title": "Create spec for the optimization for this issue",
+          "author": "brendaasfjnso",
+          "created_at": "2026-02-25T17:35:01Z",
+          "updated_at": "2026-02-25T17:35:01Z",
+          "html_url": "https://github.com/BreadchainCoop/saving-circles/issues/124",
+          "labels": [
+            "help wanted"
+          ],
+          "assignees": [
+            "franrolotti"
+          ],
+          "comments": []
+        },
+        {
+          "number": 122,
+          "title": "Fee-on-transfer / rebasing ERC20s break deposit accounting and can cause cross-circle fund loss / insolvency",
+          "author": "franrolotti",
+          "created_at": "2026-02-24T10:18:45Z",
+          "updated_at": "2026-02-24T10:18:45Z",
+          "html_url": "https://github.com/BreadchainCoop/saving-circles/issues/122",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 120,
+          "title": "Optimize `decommission()` refund logic to avoid gas blowups",
+          "author": "franrolotti",
+          "created_at": "2026-02-23T09:41:14Z",
+          "updated_at": "2026-02-23T09:41:14Z",
+          "html_url": "https://github.com/BreadchainCoop/saving-circles/issues/120",
+          "labels": [],
+          "assignees": [
+            "franrolotti"
+          ],
+          "comments": []
+        },
+        {
+          "number": 118,
+          "title": "Technical Spec for Gelato Automation Integration for Stacks",
+          "author": "exo404",
+          "created_at": "2026-02-13T18:24:38Z",
+          "updated_at": "2026-02-18T17:55:07Z",
+          "html_url": "https://github.com/BreadchainCoop/saving-circles/issues/118",
+          "labels": [
+            "documentation",
+            "enhancement"
+          ],
+          "assignees": [
+            "exo404"
+          ],
+          "comments": [
+            {
+              "id": "IC_kwDONW6FcM7pyZPx",
+              "author": {
+                "login": "exo404"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "#8 ",
+              "createdAt": "2026-02-18T17:55:06Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/saving-circles/issues/118#issuecomment-3922301937",
+              "viewerDidAuthor": false
+            }
+          ]
+        },
+        {
+          "number": 113,
+          "title": "Code duplication issues ",
+          "author": "RonTuretzky",
+          "created_at": "2026-02-03T20:49:26Z",
+          "updated_at": "2026-02-03T20:49:46Z",
+          "html_url": "https://github.com/BreadchainCoop/saving-circles/issues/113",
+          "labels": [],
+          "assignees": [],
+          "comments": [
+            {
+              "id": "IC_kwDONW6FcM7lGKHO",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "@brendaasfjnso ",
+              "createdAt": "2026-02-03T20:49:46Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/saving-circles/issues/113#issuecomment-3843596750",
+              "viewerDidAuthor": false
+            }
+          ]
+        },
+        {
+          "number": 112,
+          "title": "`decommission` deletes circle data, causing `getUserCircleData` to revert",
+          "author": "franrolotti",
+          "created_at": "2026-02-03T10:03:45Z",
+          "updated_at": "2026-02-03T10:03:45Z",
+          "html_url": "https://github.com/BreadchainCoop/saving-circles/issues/112",
+          "labels": [
+            "bug"
+          ],
+          "assignees": [
+            "franrolotti"
+          ],
+          "comments": []
+        },
+        {
+          "number": 110,
+          "title": "Work on the Stacks glossary in order to ensure consistency between products",
+          "author": "brendaasfjnso",
+          "created_at": "2026-02-01T20:35:27Z",
+          "updated_at": "2026-02-01T20:35:57Z",
+          "html_url": "https://github.com/BreadchainCoop/saving-circles/issues/110",
+          "labels": [
+            "documentation"
+          ],
+          "assignees": [
+            "diterra-code",
+            "brendaasfjnso"
+          ],
+          "comments": []
+        },
+        {
+          "number": 96,
+          "title": "Clarify decommission + missed deposit behavior (is it ideal?)",
+          "author": "franrolotti",
+          "created_at": "2026-01-15T16:43:48Z",
+          "updated_at": "2026-01-15T22:16:58Z",
+          "html_url": "https://github.com/BreadchainCoop/saving-circles/issues/96",
+          "labels": [],
+          "assignees": [
+            "franrolotti"
+          ],
+          "comments": [
+            {
+              "id": "IC_kwDONW6FcM7f44CG",
+              "author": {
+                "login": "franrolotti"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "A circle is **decommissionable** iff:\n\n1. **Time condition:** the current round\u2019s deposit window has fully passed\n\n```solidity\nblock.timestamp > effectiveCircleStartTime + depositInterval * (currentIndex + 1)\n```\n\n2. **State condition:** **at least one member is incomplete** for this round\n   i.e., \u2203 member with `balances[id][member] < depositAmount`\n\nSo decommission is explicitly the \u201c**window is over + someone didn\u2019t deposit fully**\u201d path.\n\n---\n\n### Why one missed deposit forces decommission (circle can\u2019t continue)\n\n* **Withdraw** requires `_withdrawable()`: **everyone** must have deposited `depositAmount`.\n* **Deposit** is only allowed until the same cutoff; after that `_deposit()` reverts `DepositWindowClosed`.\n\nSo if **anyone misses**, then:\n\n* the current recipient **can\u2019t withdraw**,\n* nobody can **repair it with a late deposit**,\n* the only remaining escape is **decommission**.\n\n---\n\n### Why decommission is unfair\n\nOnce decommission becomes possible, it creates a bad asymmetry:\n\n* Members who **already claimed earlier rounds** can now stop depositing later with little downside, and the circle will decommission.\n* Members who **haven\u2019t claimed yet** get punished: they lose the chance to ever claim, even if they deposited correctly in earlier rounds, while earlier claimers benefit at their expense.\n\n",
+              "createdAt": "2026-01-15T18:13:50Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/saving-circles/issues/96#issuecomment-3756228742",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDONW6FcM7f5Avk",
+              "author": {
+                "login": "franrolotti"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "One possible fix to avoid forced decommission:\n\n* Add a **grace period** after `DepositWindowClosed` where the missing member(s) can still complete their deposit (late but allowed). This should be a simple extra time window (e.g., `lateDepositGracePeriod`) checked in `_deposit()`.\n\n* If the grace period also expires and someone is still incomplete, introduce **two paths**:\n\n  1. **Decommission** (same as today), or\n  2. **Continue without the non-payer(s)**: remove them from `circleMembers[_id]` (and `isMember`), and proceed with a reduced member count so future payouts are `depositAmount * newMemberCount`.\n\nMinimal code-change sketch:\n\n* Add `uint256 lateDepositGracePeriod;` (settable by owner or per-circle field).\n* In `_deposit()`: change the window check from `>= windowEnd` to `>= windowEnd + lateDepositGracePeriod`.\n* Add a new function like `removeDefaulters(uint256 id)` callable after `windowEnd + lateDepositGracePeriod` that filters `circleMembers[id]` to only fully-paid members for the round (or specifically removes those with `balance < depositAmount`). After removal, payouts automatically shrink because `_withdraw()` already uses `circleMembers[_id].length`.\n\n@brendaasfjnso @exo404 @RonTuretzky @tbsoc wdyt?",
+              "createdAt": "2026-01-15T18:22:14Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/saving-circles/issues/96#issuecomment-3756264420",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDONW6FcM7f6Wu6",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "> A circle is **decommissionable** iff:\n> \n> 1. **Time condition:** the current round\u2019s deposit window has fully passed\n> \n> block.timestamp > effectiveCircleStartTime + depositInterval * (currentIndex + 1)\n> 2. **State condition:** **at least one member is incomplete** for this round\n>    i.e., \u2203 member with `balances[id][member] < depositAmount`\n> \n> So decommission is explicitly the \u201c**window is over + someone didn\u2019t deposit fully**\u201d path.\n> \n> ### Why one missed deposit forces decommission (circle can\u2019t continue)\n> * **Withdraw** requires `_withdrawable()`: **everyone** must have deposited `depositAmount`.\n> * **Deposit** is only allowed until the same cutoff; after that `_deposit()` reverts `DepositWindowClosed`.\n> \n> So if **anyone misses**, then:\n> \n> * the current recipient **can\u2019t withdraw**,\n> * nobody can **repair it with a late deposit**,\n> * the only remaining escape is **decommission**.\n> \n> ### Why decommission is unfair\n> Once decommission becomes possible, it creates a bad asymmetry:\n> \n> * Members who **already claimed earlier rounds** can now stop depositing later with little downside, and the circle will decommission.\n> * Members who **haven\u2019t claimed yet** get punished: they lose the chance to ever claim, even if they deposited correctly in earlier rounds, while earlier claimers benefit at their expense.\n\nDecomissioning is the only fair option at that point, because the second someone misses their payment, the circle becomes economically uneven, and the only game theoritically sound choice is to fully stop the circle and return everyone's money. Once someone missed their payment, no matter what, someone is gettings screwed, that is not the fault of the decomission function but a result of how saving circles work",
+              "createdAt": "2026-01-15T19:56:53Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/saving-circles/issues/96#issuecomment-3756616634",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDONW6FcM7f6X8A",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "> One possible fix to avoid forced decommission:\n> \n> * Add a **grace period** after `DepositWindowClosed` where the missing member(s) can still complete their deposit (late but allowed). This should be a simple extra time window (e.g., `lateDepositGracePeriod`) checked in `_deposit()`.\n> * If the grace period also expires and someone is still incomplete, introduce **two paths**:\n>   \n>   1. **Decommission** (same as today), or\n>   2. **Continue without the non-payer(s)**: remove them from `circleMembers[_id]` (and `isMember`), and proceed with a reduced member count so future payouts are `depositAmount * newMemberCount`.\n> \n> Minimal code-change sketch:\n> \n> * Add `uint256 lateDepositGracePeriod;` (settable by owner or per-circle field).\n> * In `_deposit()`: change the window check from `>= windowEnd` to `>= windowEnd + lateDepositGracePeriod`.\n> * Add a new function like `removeDefaulters(uint256 id)` callable after `windowEnd + lateDepositGracePeriod` that filters `circleMembers[id]` to only fully-paid members for the round (or specifically removes those with `balance < depositAmount`). After removal, payouts automatically shrink because `_withdraw()` already uses `circleMembers[_id].length`.\n> \n> [@brendaasfjnso](https://github.com/brendaasfjnso) [@exo404](https://github.com/exo404) [@RonTuretzky](https://github.com/RonTuretzky) [@tbsoc](https://github.com/tbsoc) wdyt?\n\ngrace period feature is basically the same as just setting a longer interval... I don't think this jusitifies its own feature.\nyou cannot continue without the non payer unless everyone decides to cover the non payer at a loss. at that point the mechanism is already insolvent and continuing without the user puts everyone at a net loss.",
+              "createdAt": "2026-01-15T19:58:22Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/saving-circles/issues/96#issuecomment-3756621568",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDONW6FcM7f8P0l",
+              "author": {
+                "login": "franrolotti"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "> > A circle is **decommissionable** iff:\n> > \n> > 1. **Time condition:** the current round\u2019s deposit window has fully passed\n> > \n> > block.timestamp > effectiveCircleStartTime + depositInterval * (currentIndex + 1)\n> > 2. **State condition:** **at least one member is incomplete** for this round\n> > i.e., \u2203 member with `balances[id][member] < depositAmount`\n> > So decommission is explicitly the \u201c**window is over + someone didn\u2019t deposit fully**\u201d path.\n> > ### Why one missed deposit forces decommission (circle can\u2019t continue)\n> > \n> > * **Withdraw** requires `_withdrawable()`: **everyone** must have deposited `depositAmount`.\n> > * **Deposit** is only allowed until the same cutoff; after that `_deposit()` reverts `DepositWindowClosed`.\n> > \n> > So if **anyone misses**, then:\n> > \n> > * the current recipient **can\u2019t withdraw**,\n> > * nobody can **repair it with a late deposit**,\n> > * the only remaining escape is **decommission**.\n> > \n> > ### Why decommission is unfair\n> > Once decommission becomes possible, it creates a bad asymmetry:\n> > \n> > * Members who **already claimed earlier rounds** can now stop depositing later with little downside, and the circle will decommission.\n> > * Members who **haven\u2019t claimed yet** get punished: they lose the chance to ever claim, even if they deposited correctly in earlier rounds, while earlier claimers benefit at their expense.\n> \n> Decomissioning is the only fair option at that point, because the second someone misses their payment, the circle becomes economically uneven, and the only game theoritically sound choice is to fully stop the circle and return everyone's money. Once someone missed their payment, no matter what, someone is gettings screwed, that is not the fault of the decomission function but a result of how saving circles work\n\nDecommission doesn\u2019t return everyone\u2019s money overall: it can only refund what\u2019s still in the contract (the current round\u2019s deposits), am i right here? \n\nAnyone who already withdrew earlier rounds keeps `memberCount * depositAmount`, while members who haven\u2019t withdrawn yet may end up with nothing, even if they deposited correctly in previous rounds.\n\nI'm pointing a possible alternative that is allowing the circle to continue after a missed payment (e.g., remove/skip the defaulter and proceed with a reduced pot like `(memberCount - 1) * depositAmount`.\n\nI know that this isn't ideal, but is what I would suggest if I were on a saving circles and I didn't get the chance to claim.",
+              "createdAt": "2026-01-15T22:07:19Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/saving-circles/issues/96#issuecomment-3757112613",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDONW6FcM7f8SFb",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "> > > A circle is **decommissionable** iff:\n> > > \n> > > 1. **Time condition:** the current round\u2019s deposit window has fully passed\n> > > \n> > > block.timestamp > effectiveCircleStartTime + depositInterval * (currentIndex + 1)\n> > > 2. **State condition:** **at least one member is incomplete** for this round\n> > > i.e., \u2203 member with `balances[id][member] < depositAmount`\n> > > So decommission is explicitly the \u201c**window is over + someone didn\u2019t deposit fully**\u201d path.\n> > > ### Why one missed deposit forces decommission (circle can\u2019t continue)\n> > > \n> > > * **Withdraw** requires `_withdrawable()`: **everyone** must have deposited `depositAmount`.\n> > > * **Deposit** is only allowed until the same cutoff; after that `_deposit()` reverts `DepositWindowClosed`.\n> > > \n> > > So if **anyone misses**, then:\n> > > \n> > > * the current recipient **can\u2019t withdraw**,\n> > > * nobody can **repair it with a late deposit**,\n> > > * the only remaining escape is **decommission**.\n> > > \n> > > ### Why decommission is unfair\n> > > Once decommission becomes possible, it creates a bad asymmetry:\n> > > \n> > > * Members who **already claimed earlier rounds** can now stop depositing later with little downside, and the circle will decommission.\n> > > * Members who **haven\u2019t claimed yet** get punished: they lose the chance to ever claim, even if they deposited correctly in earlier rounds, while earlier claimers benefit at their expense.\n> > \n> > \n> > Decomissioning is the only fair option at that point, because the second someone misses their payment, the circle becomes economically uneven, and the only game theoritically sound choice is to fully stop the circle and return everyone's money. Once someone missed their payment, no matter what, someone is gettings screwed, that is not the fault of the decomission function but a result of how saving circles work\n> \n> Decommission doesn\u2019t return everyone\u2019s money overall: it can only refund what\u2019s still in the contract (the current round\u2019s deposits), am i right here?\n> \n> Anyone who already withdrew earlier rounds keeps `memberCount * depositAmount`, while members who haven\u2019t withdrawn yet may end up with nothing, even if they deposited correctly in previous rounds.\n> \n> I'm pointing a possible alternative that is allowing the circle to continue after a missed payment (e.g., remove/skip the defaulter and proceed with a reduced pot like `(memberCount - 1) * depositAmount`.\n> \n> I know that this isn't ideal, but is what I would suggest if I were on a saving circles and I didn't get the chance to claim.\n\nYes its imposible to return money that hasn't been paid \nyou could change the comission so that everyone loses the same amount of money in the decomission process but either way there's no way to prevent people from losing money and continuing the circle means that you need deposit the amount of the person who didn't deposit. \n\nIf they want to they can all take their money and start a new circle and do exactly what you're saying but I don't think we should be opinionated on recovery of defaulting circles. for v1 we are assuming that we are handling defaults the same way the irl ones handle them. I honestly dont want to spend more time on this during v1 its very very very very very out of scope and requires us to innovate on the original model. ",
+              "createdAt": "2026-01-15T22:09:51Z",
+              "includesCreatedEdit": true,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/saving-circles/issues/96#issuecomment-3757121883",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDONW6FcM7f8Vb6",
+              "author": {
+                "login": "franrolotti"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "> > > > A circle is **decommissionable** iff:\n> > > > \n> > > > 1. **Time condition:** the current round\u2019s deposit window has fully passed\n> > > > \n> > > > block.timestamp > effectiveCircleStartTime + depositInterval * (currentIndex + 1)\n> > > > 2. **State condition:** **at least one member is incomplete** for this round\n> > > > i.e., \u2203 member with `balances[id][member] < depositAmount`\n> > > > So decommission is explicitly the \u201c**window is over + someone didn\u2019t deposit fully**\u201d path.\n> > > > ### Why one missed deposit forces decommission (circle can\u2019t continue)\n> > > > \n> > > > * **Withdraw** requires `_withdrawable()`: **everyone** must have deposited `depositAmount`.\n> > > > * **Deposit** is only allowed until the same cutoff; after that `_deposit()` reverts `DepositWindowClosed`.\n> > > > \n> > > > So if **anyone misses**, then:\n> > > > \n> > > > * the current recipient **can\u2019t withdraw**,\n> > > > * nobody can **repair it with a late deposit**,\n> > > > * the only remaining escape is **decommission**.\n> > > > \n> > > > ### Why decommission is unfair\n> > > > Once decommission becomes possible, it creates a bad asymmetry:\n> > > > \n> > > > * Members who **already claimed earlier rounds** can now stop depositing later with little downside, and the circle will decommission.\n> > > > * Members who **haven\u2019t claimed yet** get punished: they lose the chance to ever claim, even if they deposited correctly in earlier rounds, while earlier claimers benefit at their expense.\n> > > \n> > > \n> > > Decomissioning is the only fair option at that point, because the second someone misses their payment, the circle becomes economically uneven, and the only game theoritically sound choice is to fully stop the circle and return everyone's money. Once someone missed their payment, no matter what, someone is gettings screwed, that is not the fault of the decomission function but a result of how saving circles work\n> > \n> > \n> > Decommission doesn\u2019t return everyone\u2019s money overall: it can only refund what\u2019s still in the contract (the current round\u2019s deposits), am i right here?\n> > Anyone who already withdrew earlier rounds keeps `memberCount * depositAmount`, while members who haven\u2019t withdrawn yet may end up with nothing, even if they deposited correctly in previous rounds.\n> > I'm pointing a possible alternative that is allowing the circle to continue after a missed payment (e.g., remove/skip the defaulter and proceed with a reduced pot like `(memberCount - 1) * depositAmount`.\n> > I know that this isn't ideal, but is what I would suggest if I were on a saving circles and I didn't get the chance to claim.\n> \n> Yes its imposible to return money that hasn't been paid you could change the comission so that everyone loses the same amount of money in the decomission process but either way there's no way to prevent people from losing money and continuing the circle means that you need deposit the amount of the person who didn't deposit.\n> \n> If they want to they can all take their money and start a new circle and do exactly what you're saying but I don't think we should be opinionated on recovery of defaulting circles. for v1 we are assuming that we are handling defaults the same way the irl ones handle them. I honestly dont want to spend more time on this during v1 its very very very very very out of scope and requires us to innovate on the original model.\n\nOkay, understood. That being, said, maybe we can close this issue or take it to an issue to another scope in the future.",
+              "createdAt": "2026-01-15T22:13:27Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/saving-circles/issues/96#issuecomment-3757135610",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDONW6FcM7f8YeP",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "we need to add a backlog status in the kanban and move it to that no need to close it ",
+              "createdAt": "2026-01-15T22:16:58Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [
+                {
+                  "content": "THUMBS_UP",
+                  "users": {
+                    "totalCount": 1
+                  }
+                }
+              ],
+              "url": "https://github.com/BreadchainCoop/saving-circles/issues/96#issuecomment-3757148047",
+              "viewerDidAuthor": false
+            }
+          ]
+        },
+        {
+          "number": 84,
+          "title": "Use Supabase as a storage solution for stacks naming (v2 scope)",
+          "author": "brendaasfjnso",
+          "created_at": "2026-01-09T17:35:01Z",
+          "updated_at": "2026-01-09T17:35:01Z",
+          "html_url": "https://github.com/BreadchainCoop/saving-circles/issues/84",
+          "labels": [
+            "enhancement"
+          ],
+          "assignees": [
+            "exo404"
+          ],
+          "comments": []
+        },
+        {
+          "number": 77,
+          "title": "redeemtInvite() potential abuse",
+          "author": "exo404",
+          "created_at": "2025-12-17T16:57:42Z",
+          "updated_at": "2025-12-17T16:58:00Z",
+          "html_url": "https://github.com/BreadchainCoop/saving-circles/issues/77",
+          "labels": [
+            "bug"
+          ],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 71,
+          "title": "Integrate etherform CI/CD & deployment into SavingCircles",
+          "author": "franrolotti",
+          "created_at": "2025-12-04T12:06:27Z",
+          "updated_at": "2025-12-04T12:06:58Z",
+          "html_url": "https://github.com/BreadchainCoop/saving-circles/issues/71",
+          "labels": [],
+          "assignees": [
+            "franrolotti"
+          ],
+          "comments": []
+        },
+        {
+          "number": 65,
+          "title": "Define policy when a member stops depositing mid-circle [v2 scope]",
+          "author": "franrolotti",
+          "created_at": "2025-12-02T12:34:59Z",
+          "updated_at": "2026-01-15T17:51:20Z",
+          "html_url": "https://github.com/BreadchainCoop/saving-circles/issues/65",
+          "labels": [
+            "question"
+          ],
+          "assignees": [
+            "diterra-code",
+            "franrolotti",
+            "exo404"
+          ],
+          "comments": []
+        },
+        {
+          "number": 37,
+          "title": "Adapt circle creation flow: start off-chain with email, then move on-chain",
+          "author": "diterra-code",
+          "created_at": "2025-07-27T13:14:42Z",
+          "updated_at": "2025-08-20T16:25:09Z",
+          "html_url": "https://github.com/BreadchainCoop/saving-circles/issues/37",
+          "labels": [],
+          "assignees": [
+            "Copilot"
+          ],
+          "comments": [
+            {
+              "id": "IC_kwDONW6FcM6_KEu5",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "Maybe duplicate to frontend repo at a later point ",
+              "createdAt": "2025-08-20T16:24:55Z",
+              "includesCreatedEdit": true,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/saving-circles/issues/37#issuecomment-3207089081",
+              "viewerDidAuthor": false
+            }
+          ]
+        },
+        {
+          "number": 8,
+          "title": "Add Gelato Automation (v2 scope)",
+          "author": "RonTuretzky",
+          "created_at": "2025-01-17T23:38:13Z",
+          "updated_at": "2025-12-02T22:06:23Z",
+          "html_url": "https://github.com/BreadchainCoop/saving-circles/issues/8",
+          "labels": [
+            "enhancement",
+            "nice to have"
+          ],
+          "assignees": [
+            "exo404"
+          ],
+          "comments": [
+            {
+              "id": "IC_kwDONW6FcM6o0p4x",
+              "author": {
+                "login": "tbsoc"
+              },
+              "authorAssociation": "MEMBER",
+              "body": "Hey @bagelface are there any updates here?",
+              "createdAt": "2025-04-26T16:08:52Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/saving-circles/issues/8#issuecomment-2832375345",
+              "viewerDidAuthor": false
+            }
+          ]
+        }
+      ]
+    },
     "gas-killer-router": {
       "repo_name": "gas-killer-router",
       "github_url": "https://github.com/BreadchainCoop/gas-killer-router",
@@ -5439,580 +5853,6 @@
           "labels": [],
           "assignees": [],
           "comments": []
-        }
-      ]
-    },
-    "saving-circles": {
-      "repo_name": "saving-circles",
-      "github_url": "https://github.com/BreadchainCoop/saving-circles",
-      "issues": [
-        {
-          "number": 125,
-          "title": "Fix Viewer `canWithdraw` for late claims",
-          "author": "franrolotti",
-          "created_at": "2026-02-25T17:52:38Z",
-          "updated_at": "2026-02-25T17:52:38Z",
-          "html_url": "https://github.com/BreadchainCoop/saving-circles/issues/125",
-          "labels": [],
-          "assignees": [
-            "franrolotti"
-          ],
-          "comments": []
-        },
-        {
-          "number": 124,
-          "title": "Create spec for the optimization for this issue",
-          "author": "brendaasfjnso",
-          "created_at": "2026-02-25T17:35:01Z",
-          "updated_at": "2026-02-25T17:35:01Z",
-          "html_url": "https://github.com/BreadchainCoop/saving-circles/issues/124",
-          "labels": [
-            "help wanted"
-          ],
-          "assignees": [
-            "franrolotti"
-          ],
-          "comments": []
-        },
-        {
-          "number": 122,
-          "title": "Fee-on-transfer / rebasing ERC20s break deposit accounting and can cause cross-circle fund loss / insolvency",
-          "author": "franrolotti",
-          "created_at": "2026-02-24T10:18:45Z",
-          "updated_at": "2026-02-24T10:18:45Z",
-          "html_url": "https://github.com/BreadchainCoop/saving-circles/issues/122",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 120,
-          "title": "Optimize `decommission()` refund logic to avoid gas blowups",
-          "author": "franrolotti",
-          "created_at": "2026-02-23T09:41:14Z",
-          "updated_at": "2026-02-23T09:41:14Z",
-          "html_url": "https://github.com/BreadchainCoop/saving-circles/issues/120",
-          "labels": [],
-          "assignees": [
-            "franrolotti"
-          ],
-          "comments": []
-        },
-        {
-          "number": 118,
-          "title": "Technical Spec for Gelato Automation Integration for Stacks",
-          "author": "exo404",
-          "created_at": "2026-02-13T18:24:38Z",
-          "updated_at": "2026-02-18T17:55:07Z",
-          "html_url": "https://github.com/BreadchainCoop/saving-circles/issues/118",
-          "labels": [
-            "documentation",
-            "enhancement"
-          ],
-          "assignees": [
-            "exo404"
-          ],
-          "comments": [
-            {
-              "id": "IC_kwDONW6FcM7pyZPx",
-              "author": {
-                "login": "exo404"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "#8 ",
-              "createdAt": "2026-02-18T17:55:06Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/saving-circles/issues/118#issuecomment-3922301937",
-              "viewerDidAuthor": false
-            }
-          ]
-        },
-        {
-          "number": 116,
-          "title": "Show the card details information in the \"Your Stack\" section",
-          "author": "brendaasfjnso",
-          "created_at": "2026-02-05T20:04:39Z",
-          "updated_at": "2026-02-18T17:44:55Z",
-          "html_url": "https://github.com/BreadchainCoop/saving-circles/issues/116",
-          "labels": [
-            "bug"
-          ],
-          "assignees": [
-            "Olaleye-Blessing",
-            "exo404"
-          ],
-          "comments": [
-            {
-              "id": "IC_kwDONW6FcM7nOdQJ",
-              "author": {
-                "login": "exo404"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "#117 ",
-              "createdAt": "2026-02-10T16:51:52Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/saving-circles/issues/116#issuecomment-3879326729",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDONW6FcM7owapm",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "I would propose to add the stack label to the contract over adding a supabase instance to project scope. ",
-              "createdAt": "2026-02-15T18:59:37Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/saving-circles/issues/116#issuecomment-3905006182",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDONW6FcM7pyMTW",
-              "author": {
-                "login": "exo404"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "<img width=\"1440\" height=\"652\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/753c86e8-e4ff-48e4-a5cd-1e0cab3eb177\" />",
-              "createdAt": "2026-02-18T17:44:55Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/saving-circles/issues/116#issuecomment-3922248918",
-              "viewerDidAuthor": false
-            }
-          ]
-        },
-        {
-          "number": 113,
-          "title": "Code duplication issues ",
-          "author": "RonTuretzky",
-          "created_at": "2026-02-03T20:49:26Z",
-          "updated_at": "2026-02-03T20:49:46Z",
-          "html_url": "https://github.com/BreadchainCoop/saving-circles/issues/113",
-          "labels": [],
-          "assignees": [],
-          "comments": [
-            {
-              "id": "IC_kwDONW6FcM7lGKHO",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "@brendaasfjnso ",
-              "createdAt": "2026-02-03T20:49:46Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/saving-circles/issues/113#issuecomment-3843596750",
-              "viewerDidAuthor": false
-            }
-          ]
-        },
-        {
-          "number": 112,
-          "title": "`decommission` deletes circle data, causing `getUserCircleData` to revert",
-          "author": "franrolotti",
-          "created_at": "2026-02-03T10:03:45Z",
-          "updated_at": "2026-02-03T10:03:45Z",
-          "html_url": "https://github.com/BreadchainCoop/saving-circles/issues/112",
-          "labels": [
-            "bug"
-          ],
-          "assignees": [
-            "franrolotti"
-          ],
-          "comments": []
-        },
-        {
-          "number": 110,
-          "title": "Work on the Stacks glossary in order to ensure consistency between products",
-          "author": "brendaasfjnso",
-          "created_at": "2026-02-01T20:35:27Z",
-          "updated_at": "2026-02-01T20:35:57Z",
-          "html_url": "https://github.com/BreadchainCoop/saving-circles/issues/110",
-          "labels": [
-            "documentation"
-          ],
-          "assignees": [
-            "diterra-code",
-            "brendaasfjnso"
-          ],
-          "comments": []
-        },
-        {
-          "number": 96,
-          "title": "Clarify decommission + missed deposit behavior (is it ideal?)",
-          "author": "franrolotti",
-          "created_at": "2026-01-15T16:43:48Z",
-          "updated_at": "2026-01-15T22:16:58Z",
-          "html_url": "https://github.com/BreadchainCoop/saving-circles/issues/96",
-          "labels": [],
-          "assignees": [
-            "franrolotti"
-          ],
-          "comments": [
-            {
-              "id": "IC_kwDONW6FcM7f44CG",
-              "author": {
-                "login": "franrolotti"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "A circle is **decommissionable** iff:\n\n1. **Time condition:** the current round\u2019s deposit window has fully passed\n\n```solidity\nblock.timestamp > effectiveCircleStartTime + depositInterval * (currentIndex + 1)\n```\n\n2. **State condition:** **at least one member is incomplete** for this round\n   i.e., \u2203 member with `balances[id][member] < depositAmount`\n\nSo decommission is explicitly the \u201c**window is over + someone didn\u2019t deposit fully**\u201d path.\n\n---\n\n### Why one missed deposit forces decommission (circle can\u2019t continue)\n\n* **Withdraw** requires `_withdrawable()`: **everyone** must have deposited `depositAmount`.\n* **Deposit** is only allowed until the same cutoff; after that `_deposit()` reverts `DepositWindowClosed`.\n\nSo if **anyone misses**, then:\n\n* the current recipient **can\u2019t withdraw**,\n* nobody can **repair it with a late deposit**,\n* the only remaining escape is **decommission**.\n\n---\n\n### Why decommission is unfair\n\nOnce decommission becomes possible, it creates a bad asymmetry:\n\n* Members who **already claimed earlier rounds** can now stop depositing later with little downside, and the circle will decommission.\n* Members who **haven\u2019t claimed yet** get punished: they lose the chance to ever claim, even if they deposited correctly in earlier rounds, while earlier claimers benefit at their expense.\n\n",
-              "createdAt": "2026-01-15T18:13:50Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/saving-circles/issues/96#issuecomment-3756228742",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDONW6FcM7f5Avk",
-              "author": {
-                "login": "franrolotti"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "One possible fix to avoid forced decommission:\n\n* Add a **grace period** after `DepositWindowClosed` where the missing member(s) can still complete their deposit (late but allowed). This should be a simple extra time window (e.g., `lateDepositGracePeriod`) checked in `_deposit()`.\n\n* If the grace period also expires and someone is still incomplete, introduce **two paths**:\n\n  1. **Decommission** (same as today), or\n  2. **Continue without the non-payer(s)**: remove them from `circleMembers[_id]` (and `isMember`), and proceed with a reduced member count so future payouts are `depositAmount * newMemberCount`.\n\nMinimal code-change sketch:\n\n* Add `uint256 lateDepositGracePeriod;` (settable by owner or per-circle field).\n* In `_deposit()`: change the window check from `>= windowEnd` to `>= windowEnd + lateDepositGracePeriod`.\n* Add a new function like `removeDefaulters(uint256 id)` callable after `windowEnd + lateDepositGracePeriod` that filters `circleMembers[id]` to only fully-paid members for the round (or specifically removes those with `balance < depositAmount`). After removal, payouts automatically shrink because `_withdraw()` already uses `circleMembers[_id].length`.\n\n@brendaasfjnso @exo404 @RonTuretzky @tbsoc wdyt?",
-              "createdAt": "2026-01-15T18:22:14Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/saving-circles/issues/96#issuecomment-3756264420",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDONW6FcM7f6Wu6",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "> A circle is **decommissionable** iff:\n> \n> 1. **Time condition:** the current round\u2019s deposit window has fully passed\n> \n> block.timestamp > effectiveCircleStartTime + depositInterval * (currentIndex + 1)\n> 2. **State condition:** **at least one member is incomplete** for this round\n>    i.e., \u2203 member with `balances[id][member] < depositAmount`\n> \n> So decommission is explicitly the \u201c**window is over + someone didn\u2019t deposit fully**\u201d path.\n> \n> ### Why one missed deposit forces decommission (circle can\u2019t continue)\n> * **Withdraw** requires `_withdrawable()`: **everyone** must have deposited `depositAmount`.\n> * **Deposit** is only allowed until the same cutoff; after that `_deposit()` reverts `DepositWindowClosed`.\n> \n> So if **anyone misses**, then:\n> \n> * the current recipient **can\u2019t withdraw**,\n> * nobody can **repair it with a late deposit**,\n> * the only remaining escape is **decommission**.\n> \n> ### Why decommission is unfair\n> Once decommission becomes possible, it creates a bad asymmetry:\n> \n> * Members who **already claimed earlier rounds** can now stop depositing later with little downside, and the circle will decommission.\n> * Members who **haven\u2019t claimed yet** get punished: they lose the chance to ever claim, even if they deposited correctly in earlier rounds, while earlier claimers benefit at their expense.\n\nDecomissioning is the only fair option at that point, because the second someone misses their payment, the circle becomes economically uneven, and the only game theoritically sound choice is to fully stop the circle and return everyone's money. Once someone missed their payment, no matter what, someone is gettings screwed, that is not the fault of the decomission function but a result of how saving circles work",
-              "createdAt": "2026-01-15T19:56:53Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/saving-circles/issues/96#issuecomment-3756616634",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDONW6FcM7f6X8A",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "> One possible fix to avoid forced decommission:\n> \n> * Add a **grace period** after `DepositWindowClosed` where the missing member(s) can still complete their deposit (late but allowed). This should be a simple extra time window (e.g., `lateDepositGracePeriod`) checked in `_deposit()`.\n> * If the grace period also expires and someone is still incomplete, introduce **two paths**:\n>   \n>   1. **Decommission** (same as today), or\n>   2. **Continue without the non-payer(s)**: remove them from `circleMembers[_id]` (and `isMember`), and proceed with a reduced member count so future payouts are `depositAmount * newMemberCount`.\n> \n> Minimal code-change sketch:\n> \n> * Add `uint256 lateDepositGracePeriod;` (settable by owner or per-circle field).\n> * In `_deposit()`: change the window check from `>= windowEnd` to `>= windowEnd + lateDepositGracePeriod`.\n> * Add a new function like `removeDefaulters(uint256 id)` callable after `windowEnd + lateDepositGracePeriod` that filters `circleMembers[id]` to only fully-paid members for the round (or specifically removes those with `balance < depositAmount`). After removal, payouts automatically shrink because `_withdraw()` already uses `circleMembers[_id].length`.\n> \n> [@brendaasfjnso](https://github.com/brendaasfjnso) [@exo404](https://github.com/exo404) [@RonTuretzky](https://github.com/RonTuretzky) [@tbsoc](https://github.com/tbsoc) wdyt?\n\ngrace period feature is basically the same as just setting a longer interval... I don't think this jusitifies its own feature.\nyou cannot continue without the non payer unless everyone decides to cover the non payer at a loss. at that point the mechanism is already insolvent and continuing without the user puts everyone at a net loss.",
-              "createdAt": "2026-01-15T19:58:22Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/saving-circles/issues/96#issuecomment-3756621568",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDONW6FcM7f8P0l",
-              "author": {
-                "login": "franrolotti"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "> > A circle is **decommissionable** iff:\n> > \n> > 1. **Time condition:** the current round\u2019s deposit window has fully passed\n> > \n> > block.timestamp > effectiveCircleStartTime + depositInterval * (currentIndex + 1)\n> > 2. **State condition:** **at least one member is incomplete** for this round\n> > i.e., \u2203 member with `balances[id][member] < depositAmount`\n> > So decommission is explicitly the \u201c**window is over + someone didn\u2019t deposit fully**\u201d path.\n> > ### Why one missed deposit forces decommission (circle can\u2019t continue)\n> > \n> > * **Withdraw** requires `_withdrawable()`: **everyone** must have deposited `depositAmount`.\n> > * **Deposit** is only allowed until the same cutoff; after that `_deposit()` reverts `DepositWindowClosed`.\n> > \n> > So if **anyone misses**, then:\n> > \n> > * the current recipient **can\u2019t withdraw**,\n> > * nobody can **repair it with a late deposit**,\n> > * the only remaining escape is **decommission**.\n> > \n> > ### Why decommission is unfair\n> > Once decommission becomes possible, it creates a bad asymmetry:\n> > \n> > * Members who **already claimed earlier rounds** can now stop depositing later with little downside, and the circle will decommission.\n> > * Members who **haven\u2019t claimed yet** get punished: they lose the chance to ever claim, even if they deposited correctly in earlier rounds, while earlier claimers benefit at their expense.\n> \n> Decomissioning is the only fair option at that point, because the second someone misses their payment, the circle becomes economically uneven, and the only game theoritically sound choice is to fully stop the circle and return everyone's money. Once someone missed their payment, no matter what, someone is gettings screwed, that is not the fault of the decomission function but a result of how saving circles work\n\nDecommission doesn\u2019t return everyone\u2019s money overall: it can only refund what\u2019s still in the contract (the current round\u2019s deposits), am i right here? \n\nAnyone who already withdrew earlier rounds keeps `memberCount * depositAmount`, while members who haven\u2019t withdrawn yet may end up with nothing, even if they deposited correctly in previous rounds.\n\nI'm pointing a possible alternative that is allowing the circle to continue after a missed payment (e.g., remove/skip the defaulter and proceed with a reduced pot like `(memberCount - 1) * depositAmount`.\n\nI know that this isn't ideal, but is what I would suggest if I were on a saving circles and I didn't get the chance to claim.",
-              "createdAt": "2026-01-15T22:07:19Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/saving-circles/issues/96#issuecomment-3757112613",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDONW6FcM7f8SFb",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "> > > A circle is **decommissionable** iff:\n> > > \n> > > 1. **Time condition:** the current round\u2019s deposit window has fully passed\n> > > \n> > > block.timestamp > effectiveCircleStartTime + depositInterval * (currentIndex + 1)\n> > > 2. **State condition:** **at least one member is incomplete** for this round\n> > > i.e., \u2203 member with `balances[id][member] < depositAmount`\n> > > So decommission is explicitly the \u201c**window is over + someone didn\u2019t deposit fully**\u201d path.\n> > > ### Why one missed deposit forces decommission (circle can\u2019t continue)\n> > > \n> > > * **Withdraw** requires `_withdrawable()`: **everyone** must have deposited `depositAmount`.\n> > > * **Deposit** is only allowed until the same cutoff; after that `_deposit()` reverts `DepositWindowClosed`.\n> > > \n> > > So if **anyone misses**, then:\n> > > \n> > > * the current recipient **can\u2019t withdraw**,\n> > > * nobody can **repair it with a late deposit**,\n> > > * the only remaining escape is **decommission**.\n> > > \n> > > ### Why decommission is unfair\n> > > Once decommission becomes possible, it creates a bad asymmetry:\n> > > \n> > > * Members who **already claimed earlier rounds** can now stop depositing later with little downside, and the circle will decommission.\n> > > * Members who **haven\u2019t claimed yet** get punished: they lose the chance to ever claim, even if they deposited correctly in earlier rounds, while earlier claimers benefit at their expense.\n> > \n> > \n> > Decomissioning is the only fair option at that point, because the second someone misses their payment, the circle becomes economically uneven, and the only game theoritically sound choice is to fully stop the circle and return everyone's money. Once someone missed their payment, no matter what, someone is gettings screwed, that is not the fault of the decomission function but a result of how saving circles work\n> \n> Decommission doesn\u2019t return everyone\u2019s money overall: it can only refund what\u2019s still in the contract (the current round\u2019s deposits), am i right here?\n> \n> Anyone who already withdrew earlier rounds keeps `memberCount * depositAmount`, while members who haven\u2019t withdrawn yet may end up with nothing, even if they deposited correctly in previous rounds.\n> \n> I'm pointing a possible alternative that is allowing the circle to continue after a missed payment (e.g., remove/skip the defaulter and proceed with a reduced pot like `(memberCount - 1) * depositAmount`.\n> \n> I know that this isn't ideal, but is what I would suggest if I were on a saving circles and I didn't get the chance to claim.\n\nYes its imposible to return money that hasn't been paid \nyou could change the comission so that everyone loses the same amount of money in the decomission process but either way there's no way to prevent people from losing money and continuing the circle means that you need deposit the amount of the person who didn't deposit. \n\nIf they want to they can all take their money and start a new circle and do exactly what you're saying but I don't think we should be opinionated on recovery of defaulting circles. for v1 we are assuming that we are handling defaults the same way the irl ones handle them. I honestly dont want to spend more time on this during v1 its very very very very very out of scope and requires us to innovate on the original model. ",
-              "createdAt": "2026-01-15T22:09:51Z",
-              "includesCreatedEdit": true,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/saving-circles/issues/96#issuecomment-3757121883",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDONW6FcM7f8Vb6",
-              "author": {
-                "login": "franrolotti"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "> > > > A circle is **decommissionable** iff:\n> > > > \n> > > > 1. **Time condition:** the current round\u2019s deposit window has fully passed\n> > > > \n> > > > block.timestamp > effectiveCircleStartTime + depositInterval * (currentIndex + 1)\n> > > > 2. **State condition:** **at least one member is incomplete** for this round\n> > > > i.e., \u2203 member with `balances[id][member] < depositAmount`\n> > > > So decommission is explicitly the \u201c**window is over + someone didn\u2019t deposit fully**\u201d path.\n> > > > ### Why one missed deposit forces decommission (circle can\u2019t continue)\n> > > > \n> > > > * **Withdraw** requires `_withdrawable()`: **everyone** must have deposited `depositAmount`.\n> > > > * **Deposit** is only allowed until the same cutoff; after that `_deposit()` reverts `DepositWindowClosed`.\n> > > > \n> > > > So if **anyone misses**, then:\n> > > > \n> > > > * the current recipient **can\u2019t withdraw**,\n> > > > * nobody can **repair it with a late deposit**,\n> > > > * the only remaining escape is **decommission**.\n> > > > \n> > > > ### Why decommission is unfair\n> > > > Once decommission becomes possible, it creates a bad asymmetry:\n> > > > \n> > > > * Members who **already claimed earlier rounds** can now stop depositing later with little downside, and the circle will decommission.\n> > > > * Members who **haven\u2019t claimed yet** get punished: they lose the chance to ever claim, even if they deposited correctly in earlier rounds, while earlier claimers benefit at their expense.\n> > > \n> > > \n> > > Decomissioning is the only fair option at that point, because the second someone misses their payment, the circle becomes economically uneven, and the only game theoritically sound choice is to fully stop the circle and return everyone's money. Once someone missed their payment, no matter what, someone is gettings screwed, that is not the fault of the decomission function but a result of how saving circles work\n> > \n> > \n> > Decommission doesn\u2019t return everyone\u2019s money overall: it can only refund what\u2019s still in the contract (the current round\u2019s deposits), am i right here?\n> > Anyone who already withdrew earlier rounds keeps `memberCount * depositAmount`, while members who haven\u2019t withdrawn yet may end up with nothing, even if they deposited correctly in previous rounds.\n> > I'm pointing a possible alternative that is allowing the circle to continue after a missed payment (e.g., remove/skip the defaulter and proceed with a reduced pot like `(memberCount - 1) * depositAmount`.\n> > I know that this isn't ideal, but is what I would suggest if I were on a saving circles and I didn't get the chance to claim.\n> \n> Yes its imposible to return money that hasn't been paid you could change the comission so that everyone loses the same amount of money in the decomission process but either way there's no way to prevent people from losing money and continuing the circle means that you need deposit the amount of the person who didn't deposit.\n> \n> If they want to they can all take their money and start a new circle and do exactly what you're saying but I don't think we should be opinionated on recovery of defaulting circles. for v1 we are assuming that we are handling defaults the same way the irl ones handle them. I honestly dont want to spend more time on this during v1 its very very very very very out of scope and requires us to innovate on the original model.\n\nOkay, understood. That being, said, maybe we can close this issue or take it to an issue to another scope in the future.",
-              "createdAt": "2026-01-15T22:13:27Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/saving-circles/issues/96#issuecomment-3757135610",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDONW6FcM7f8YeP",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "we need to add a backlog status in the kanban and move it to that no need to close it ",
-              "createdAt": "2026-01-15T22:16:58Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [
-                {
-                  "content": "THUMBS_UP",
-                  "users": {
-                    "totalCount": 1
-                  }
-                }
-              ],
-              "url": "https://github.com/BreadchainCoop/saving-circles/issues/96#issuecomment-3757148047",
-              "viewerDidAuthor": false
-            }
-          ]
-        },
-        {
-          "number": 84,
-          "title": "Use Supabase as a storage solution for stacks naming (v2 scope)",
-          "author": "brendaasfjnso",
-          "created_at": "2026-01-09T17:35:01Z",
-          "updated_at": "2026-01-09T17:35:01Z",
-          "html_url": "https://github.com/BreadchainCoop/saving-circles/issues/84",
-          "labels": [
-            "enhancement"
-          ],
-          "assignees": [
-            "exo404"
-          ],
-          "comments": []
-        },
-        {
-          "number": 77,
-          "title": "redeemtInvite() potential abuse",
-          "author": "exo404",
-          "created_at": "2025-12-17T16:57:42Z",
-          "updated_at": "2025-12-17T16:58:00Z",
-          "html_url": "https://github.com/BreadchainCoop/saving-circles/issues/77",
-          "labels": [
-            "bug"
-          ],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 71,
-          "title": "Integrate etherform CI/CD & deployment into SavingCircles",
-          "author": "franrolotti",
-          "created_at": "2025-12-04T12:06:27Z",
-          "updated_at": "2025-12-04T12:06:58Z",
-          "html_url": "https://github.com/BreadchainCoop/saving-circles/issues/71",
-          "labels": [],
-          "assignees": [
-            "franrolotti"
-          ],
-          "comments": []
-        },
-        {
-          "number": 65,
-          "title": "Define policy when a member stops depositing mid-circle [v2 scope]",
-          "author": "franrolotti",
-          "created_at": "2025-12-02T12:34:59Z",
-          "updated_at": "2026-01-15T17:51:20Z",
-          "html_url": "https://github.com/BreadchainCoop/saving-circles/issues/65",
-          "labels": [
-            "question"
-          ],
-          "assignees": [
-            "diterra-code",
-            "franrolotti",
-            "exo404"
-          ],
-          "comments": []
-        },
-        {
-          "number": 37,
-          "title": "Adapt circle creation flow: start off-chain with email, then move on-chain",
-          "author": "diterra-code",
-          "created_at": "2025-07-27T13:14:42Z",
-          "updated_at": "2025-08-20T16:25:09Z",
-          "html_url": "https://github.com/BreadchainCoop/saving-circles/issues/37",
-          "labels": [],
-          "assignees": [
-            "Copilot"
-          ],
-          "comments": [
-            {
-              "id": "IC_kwDONW6FcM6_KEu5",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "Maybe duplicate to frontend repo at a later point ",
-              "createdAt": "2025-08-20T16:24:55Z",
-              "includesCreatedEdit": true,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/saving-circles/issues/37#issuecomment-3207089081",
-              "viewerDidAuthor": false
-            }
-          ]
-        },
-        {
-          "number": 8,
-          "title": "Add Gelato Automation (v2 scope)",
-          "author": "RonTuretzky",
-          "created_at": "2025-01-17T23:38:13Z",
-          "updated_at": "2025-12-02T22:06:23Z",
-          "html_url": "https://github.com/BreadchainCoop/saving-circles/issues/8",
-          "labels": [
-            "enhancement",
-            "nice to have"
-          ],
-          "assignees": [
-            "exo404"
-          ],
-          "comments": [
-            {
-              "id": "IC_kwDONW6FcM6o0p4x",
-              "author": {
-                "login": "tbsoc"
-              },
-              "authorAssociation": "MEMBER",
-              "body": "Hey @bagelface are there any updates here?",
-              "createdAt": "2025-04-26T16:08:52Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/saving-circles/issues/8#issuecomment-2832375345",
-              "viewerDidAuthor": false
-            }
-          ]
-        }
-      ]
-    },
-    "app-stacks": {
-      "repo_name": "app-stacks",
-      "github_url": "https://github.com/BreadchainCoop/app-stacks",
-      "issues": [
-        {
-          "number": 34,
-          "title": "Implement funding flow for Privy embedded wallets",
-          "author": "franrolotti",
-          "created_at": "2026-02-25T17:47:26Z",
-          "updated_at": "2026-02-25T17:47:26Z",
-          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/34",
-          "labels": [],
-          "assignees": [
-            "franrolotti"
-          ],
-          "comments": []
-        },
-        {
-          "number": 24,
-          "title": "Technical Spec for the Stacks Supabase integration",
-          "author": "exo404",
-          "created_at": "2026-02-13T18:25:42Z",
-          "updated_at": "2026-03-02T17:30:01Z",
-          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/24",
-          "labels": [
-            "documentation",
-            "enhancement"
-          ],
-          "assignees": [
-            "exo404"
-          ],
-          "comments": []
-        },
-        {
-          "number": 22,
-          "title": "Implement the deposit module",
-          "author": "Olaleye-Blessing",
-          "created_at": "2026-02-12T23:43:52Z",
-          "updated_at": "2026-02-12T23:43:52Z",
-          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/22",
-          "labels": [
-            "not-ready"
-          ],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 1,
-          "title": "Abstract BREAD Token \u2014 Show Only USD Balances on Frontend (Inspired by Hyperliquid & Polymarket)",
-          "author": "diterra-code",
-          "created_at": "2025-10-15T21:14:26Z",
-          "updated_at": "2025-10-16T04:28:41Z",
-          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/1",
-          "labels": [
-            "documentation",
-            "help wanted"
-          ],
-          "assignees": [
-            "diterra-code",
-            "RonTuretzky",
-            "tbsoc"
-          ],
-          "comments": [
-            {
-              "id": "IC_kwDOQBrnic7LJut_",
-              "author": {
-                "login": "diterra-code"
-              },
-              "authorAssociation": "NONE",
-              "body": "Dropping this here @RonTuretzky @tbsoc @bagelface for further discussion.\n\n@RonTuretzky what do you think of my mermaid diagram skills? \n\nThe idea is to maybe after MVP of Stacks/Safety Net try to work on this UX.",
-              "createdAt": "2025-10-15T21:17:43Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [
-                {
-                  "content": "HEART",
-                  "users": {
-                    "totalCount": 1
-                  }
-                }
-              ],
-              "url": "https://github.com/BreadchainCoop/app-stacks/issues/1#issuecomment-3408325503",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOQBrnic7LMzo-",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "NONE",
-              "body": "> Dropping this here @RonTuretzky @tbsoc @bagelface for further discussion.\n> \n> @RonTuretzky what do you think of my mermaid diagram skills? \n> \n> The idea is to maybe after MVP of Stacks/Safety Net try to work on this UX.\n\n\n\n\ud83d\ude0d\ud83d\ude0d\ud83d\ude0d\ud83d\ude0d\ud83d\ude0d\n\n\nI think with the lifi widget like we have in the crowdstaking app this is quite doable. ",
-              "createdAt": "2025-10-16T04:28:41Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/app-stacks/issues/1#issuecomment-3409132094",
-              "viewerDidAuthor": false
-            }
-          ]
         }
       ]
     },
@@ -7428,7 +7268,7 @@
           "title": "Add onboarding flow for Solidarity Fund",
           "author": "tbsoc",
           "created_at": "2026-02-24T11:41:07Z",
-          "updated_at": "2026-02-24T17:22:58Z",
+          "updated_at": "2026-03-03T19:07:17Z",
           "html_url": "https://github.com/BreadchainCoop/crowdstaking-v2/issues/394",
           "labels": [],
           "assignees": [],
@@ -7446,6 +7286,36 @@
               "minimizedReason": "",
               "reactionGroups": [],
               "url": "https://github.com/BreadchainCoop/crowdstaking-v2/issues/394#issuecomment-3953602943",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOKde5WM7t_9oG",
+              "author": {
+                "login": "tbsoc"
+              },
+              "authorAssociation": "MEMBER",
+              "body": "I'm honestly not sure this makes much sense when BREAD is meant to spent as currency and we shouldn't really restrict people from being able to bake BREAD from wherever they have xdai. We could use something like Privy but not restrict in the same way that Stacks is currently. A user should be able to link whatever wallet they have to engage imo unless there is a strong reason to restrict for things like UX reasons with Stacks (although to me there's still an open question whether we need to restrict so much with Stacks).",
+              "createdAt": "2026-03-03T19:00:26Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/crowdstaking-v2/issues/394#issuecomment-3992967686",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOKde5WM7uADKQ",
+              "author": {
+                "login": "tbsoc"
+              },
+              "authorAssociation": "MEMBER",
+              "body": "What you're talking about as well is a different issue that needs to be separate from although is related to what is said in the onboarding.",
+              "createdAt": "2026-03-03T19:07:17Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/crowdstaking-v2/issues/394#issuecomment-3992990352",
               "viewerDidAuthor": false
             }
           ]
