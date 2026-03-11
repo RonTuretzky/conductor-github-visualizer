@@ -1,12 +1,12 @@
 {
   "organization": "BreadchainCoop",
-  "generated_at": "2026-03-10T00:14:09.407711+00:00",
-  "generation_time_seconds": 137.72,
+  "generated_at": "2026-03-11T00:14:26.506432+00:00",
+  "generation_time_seconds": 126.01,
   "stats": {
     "total_repos": 44,
     "repos_with_prs": 22,
     "repos_with_issues": 27,
-    "total_open_prs": 91,
+    "total_open_prs": 90,
     "total_open_issues": 234
   },
   "trees": {
@@ -464,54 +464,6 @@
           "children": []
         },
         {
-          "name": "fix: snapshot/revert Anvil state between trace and gas estim",
-          "branch": "RonTuretzky/gas-killer-analyzer",
-          "repo_name": "gas-killer-analyzer",
-          "pr_number": 87,
-          "pr_title": "fix: snapshot/revert Anvil state between trace and gas estimation",
-          "pr_url": "https://github.com/BreadchainCoop/gas-killer-analyzer/pull/87",
-          "pr_author": "RonTuretzky",
-          "last_updated": "2026-03-09T17:56:55Z",
-          "ci_status": "pass",
-          "github_url": "https://github.com/BreadchainCoop/gas-killer-analyzer",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "9c973bb9b02fcc86c3cdb08bea43d411ce246273",
-              "short_sha": "9c973bb",
-              "message": "fix: snapshot/revert Anvil state between trace and gas estimation",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2026-02-05",
-              "html_url": "https://github.com/BreadchainCoop/gas-killer-analyzer/commit/9c973bb9b02fcc86c3cdb08bea43d411ce246273"
-            },
-            {
-              "sha": "c0a77ea9249184b111e4b3b9ee8f45aa40a74457",
-              "short_sha": "c0a77ea",
-              "message": "style: fix cargo fmt formatting",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2026-02-05",
-              "html_url": "https://github.com/BreadchainCoop/gas-killer-analyzer/commit/c0a77ea9249184b111e4b3b9ee8f45aa40a74457"
-            },
-            {
-              "sha": "45656e4bd60efb59eabd0d3a513ed5b2672c9d77",
-              "short_sha": "45656e4",
-              "message": "ci: trigger CI run",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2026-02-05",
-              "html_url": "https://github.com/BreadchainCoop/gas-killer-analyzer/commit/45656e4bd60efb59eabd0d3a513ed5b2672c9d77"
-            }
-          ],
-          "parent_branch_name": "main",
-          "children": []
-        },
-        {
           "name": "docs: ZK-Provable EVM Execution Traces for AVS Fraud Proofs",
           "branch": "zk-avs-fraud-proofs-spec",
           "repo_name": "gas-killer-analyzer",
@@ -585,7 +537,7 @@
           "pr_title": "Deploy script fix and guardrails",
           "pr_url": "https://github.com/BreadchainCoop/saving-circles/pull/119",
           "pr_author": "franrolotti",
-          "last_updated": "2026-03-09T11:19:39Z",
+          "last_updated": "2026-03-10T20:02:50Z",
           "ci_status": "pass",
           "github_url": "https://github.com/BreadchainCoop/saving-circles",
           "is_draft": false,
@@ -805,7 +757,7 @@
           "pr_title": "Implement UI design",
           "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/5",
           "pr_author": "Olaleye-Blessing",
-          "last_updated": "2026-03-08T03:03:10Z",
+          "last_updated": "2026-03-10T06:07:01Z",
           "ci_status": "pass",
           "github_url": "https://github.com/BreadchainCoop/app-stacks",
           "is_draft": false,
@@ -1378,7 +1330,7 @@
               "pr_title": "Collection of fixes for `cloud-staging` (PR #114)",
               "pr_url": "https://github.com/BreadchainCoop/gas-killer-router/pull/120",
               "pr_author": "bagelface",
-              "last_updated": "2026-03-09T16:43:40Z",
+              "last_updated": "2026-03-10T16:39:42Z",
               "ci_status": "pass",
               "github_url": "https://github.com/BreadchainCoop/gas-killer-router",
               "is_draft": false,
@@ -4238,6 +4190,34 @@
     }
   },
   "issues": {
+    "bread-ui-kit": {
+      "repo_name": "bread-ui-kit",
+      "github_url": "https://github.com/BreadchainCoop/bread-ui-kit",
+      "issues": [
+        {
+          "number": 4,
+          "title": "Update LiftedButton to accept `color` param",
+          "author": "secbajor",
+          "created_at": "2025-10-13T21:48:54Z",
+          "updated_at": "2025-10-13T21:48:54Z",
+          "html_url": "https://github.com/BreadchainCoop/bread-ui-kit/issues/4",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 3,
+          "title": "Consider adding Footer",
+          "author": "secbajor",
+          "created_at": "2025-10-06T01:55:25Z",
+          "updated_at": "2025-10-06T01:55:25Z",
+          "html_url": "https://github.com/BreadchainCoop/bread-ui-kit/issues/3",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        }
+      ]
+    },
     "solidarity-fund": {
       "repo_name": "solidarity-fund",
       "github_url": "https://github.com/BreadchainCoop/solidarity-fund",
@@ -5937,34 +5917,6 @@
         }
       ]
     },
-    "bread-ui-kit": {
-      "repo_name": "bread-ui-kit",
-      "github_url": "https://github.com/BreadchainCoop/bread-ui-kit",
-      "issues": [
-        {
-          "number": 4,
-          "title": "Update LiftedButton to accept `color` param",
-          "author": "secbajor",
-          "created_at": "2025-10-13T21:48:54Z",
-          "updated_at": "2025-10-13T21:48:54Z",
-          "html_url": "https://github.com/BreadchainCoop/bread-ui-kit/issues/4",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 3,
-          "title": "Consider adding Footer",
-          "author": "secbajor",
-          "created_at": "2025-10-06T01:55:25Z",
-          "updated_at": "2025-10-06T01:55:25Z",
-          "html_url": "https://github.com/BreadchainCoop/bread-ui-kit/issues/3",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        }
-      ]
-    },
     "commonware-restaking": {
       "repo_name": "commonware-restaking",
       "github_url": "https://github.com/BreadchainCoop/commonware-restaking",
@@ -6371,7 +6323,7 @@
           "title": "Yield distribution job cloned repo and compiled at runtime",
           "author": "bagelface",
           "created_at": "2026-03-06T17:53:18Z",
-          "updated_at": "2026-03-09T16:30:11Z",
+          "updated_at": "2026-03-10T20:04:49Z",
           "html_url": "https://github.com/BreadchainCoop/gas-killer-router/issues/123",
           "labels": [
             "enhancement",
@@ -6422,6 +6374,21 @@
               "minimizedReason": "",
               "reactionGroups": [],
               "url": "https://github.com/BreadchainCoop/gas-killer-router/issues/123#issuecomment-4025043799",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOPHRmPM7wc6r7",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "@bagelface if #145 can be merged without breaking the e2e job lets go ahead with ti ",
+              "createdAt": "2026-03-10T20:04:49Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/gas-killer-router/issues/123#issuecomment-4034112251",
               "viewerDidAuthor": false
             }
           ]
