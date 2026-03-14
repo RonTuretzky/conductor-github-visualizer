@@ -1,15 +1,135 @@
 {
   "organization": "BreadchainCoop",
-  "generated_at": "2026-03-13T00:17:34.229463+00:00",
-  "generation_time_seconds": 180.76,
+  "generated_at": "2026-03-14T00:16:26.699222+00:00",
+  "generation_time_seconds": 120.08,
   "stats": {
     "total_repos": 44,
-    "repos_with_prs": 23,
+    "repos_with_prs": 24,
     "repos_with_issues": 27,
-    "total_open_prs": 94,
-    "total_open_issues": 237
+    "total_open_prs": 90,
+    "total_open_issues": 231
   },
   "trees": {
+    "solidarity-fund": {
+      "name": "solidarity-fund",
+      "branch": "dev",
+      "repo_name": "solidarity-fund",
+      "pr_number": null,
+      "pr_title": null,
+      "pr_url": null,
+      "pr_author": null,
+      "last_updated": "2026-03-13T19:58:40Z",
+      "ci_status": "",
+      "github_url": "https://github.com/BreadchainCoop/solidarity-fund",
+      "is_draft": false,
+      "labels": [],
+      "commits_from_parent": [],
+      "parent_branch_name": null,
+      "children": [
+        {
+          "name": "fix: fee-on-transfer token accounting in ButteredBread depos",
+          "branch": "fix/187-fee-on-transfer-accounting",
+          "repo_name": "solidarity-fund",
+          "pr_number": 188,
+          "pr_title": "fix: fee-on-transfer token accounting in ButteredBread deposit",
+          "pr_url": "https://github.com/BreadchainCoop/solidarity-fund/pull/188",
+          "pr_author": "ss251",
+          "last_updated": "2026-03-02T19:29:30Z",
+          "ci_status": "fail",
+          "github_url": "https://github.com/BreadchainCoop/solidarity-fund",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [],
+          "parent_branch_name": "dev",
+          "children": []
+        },
+        {
+          "name": "Staging deployment",
+          "branch": "staging-deployment",
+          "repo_name": "solidarity-fund",
+          "pr_number": 163,
+          "pr_title": "Staging deployment",
+          "pr_url": "https://github.com/BreadchainCoop/solidarity-fund/pull/163",
+          "pr_author": "RonTuretzky",
+          "last_updated": "2025-08-10T19:05:35Z",
+          "ci_status": "pass",
+          "github_url": "https://github.com/BreadchainCoop/solidarity-fund",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "8d88aace1f68e8552a66fe58b9dc452cf4feffc7",
+              "short_sha": "8d88aac",
+              "message": "Add GitHub Actions workflow for automatic testnet deployment",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-07-22",
+              "html_url": "https://github.com/BreadchainCoop/solidarity-fund/commit/8d88aace1f68e8552a66fe58b9dc452cf4feffc7"
+            },
+            {
+              "sha": "da1e2954166c86a817fa3034670d99f8812ffe98",
+              "short_sha": "da1e295",
+              "message": "Add staging branch trigger to testnet deployment workflow",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-07-22",
+              "html_url": "https://github.com/BreadchainCoop/solidarity-fund/commit/da1e2954166c86a817fa3034670d99f8812ffe98"
+            },
+            {
+              "sha": "dabe818ed1450e9c762af7ae358801e9645d6cf6",
+              "short_sha": "dabe818",
+              "message": "Add comprehensive testnet deployment documentation",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-07-22",
+              "html_url": "https://github.com/BreadchainCoop/solidarity-fund/commit/dabe818ed1450e9c762af7ae358801e9645d6cf6"
+            },
+            {
+              "sha": "cfee5d8886590311335da0444bcdeed518b54af0",
+              "short_sha": "cfee5d8",
+              "message": "Add deployment tracking, verification, and artifact generation",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-07-22",
+              "html_url": "https://github.com/BreadchainCoop/solidarity-fund/commit/cfee5d8886590311335da0444bcdeed518b54af0"
+            },
+            {
+              "sha": "41f20d519b705573ec7a880b68e4bc2a35071d1d",
+              "short_sha": "41f20d5",
+              "message": "Update documentation with verification and artifact details",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-07-22",
+              "html_url": "https://github.com/BreadchainCoop/solidarity-fund/commit/41f20d519b705573ec7a880b68e4bc2a35071d1d"
+            }
+          ],
+          "parent_branch_name": "dev",
+          "children": []
+        },
+        {
+          "name": "feat: add timelock for upgrades",
+          "branch": "issue-132-fix",
+          "repo_name": "solidarity-fund",
+          "pr_number": 145,
+          "pr_title": "feat: add timelock for upgrades",
+          "pr_url": "https://github.com/BreadchainCoop/solidarity-fund/pull/145",
+          "pr_author": "RonTuretzky",
+          "last_updated": "2025-07-22T17:29:02Z",
+          "ci_status": "",
+          "github_url": "https://github.com/BreadchainCoop/solidarity-fund",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [],
+          "parent_branch_name": "dev",
+          "children": []
+        }
+      ]
+    },
     "gas-killer-router": {
       "name": "gas-killer-router",
       "branch": "main",
@@ -18,7 +138,7 @@
       "pr_title": null,
       "pr_url": null,
       "pr_author": null,
-      "last_updated": "2026-03-12T23:52:19Z",
+      "last_updated": "2026-03-13T18:50:13Z",
       "ci_status": "",
       "github_url": "https://github.com/BreadchainCoop/gas-killer-router",
       "is_draft": false,
@@ -27,141 +147,32 @@
       "parent_branch_name": null,
       "children": [
         {
-          "name": "Adds Helm-based deployment, multi-chain L2 support, and e2e ",
-          "branch": "cloud-staging",
+          "name": "[DRAFT] Target mock yield distributor environment",
+          "branch": "bagelface/use-mock-yield-distributor-env",
           "repo_name": "gas-killer-router",
-          "pr_number": 114,
-          "pr_title": "Adds Helm-based deployment, multi-chain L2 support, and e2e integration testing",
-          "pr_url": "https://github.com/BreadchainCoop/gas-killer-router/pull/114",
-          "pr_author": "RonTuretzky",
-          "last_updated": "2026-03-06T18:42:17Z",
-          "ci_status": "fail",
+          "pr_number": 128,
+          "pr_title": "[DRAFT] Target mock yield distributor environment",
+          "pr_url": "https://github.com/BreadchainCoop/gas-killer-router/pull/128",
+          "pr_author": "bagelface",
+          "last_updated": "2026-03-13T18:50:38Z",
+          "ci_status": "pass",
           "github_url": "https://github.com/BreadchainCoop/gas-killer-router",
-          "is_draft": false,
+          "is_draft": true,
           "labels": [],
           "commits_from_parent": [
             {
-              "sha": "8288ac442c79ebc1b73cd8ba9b3cb4e1977cdd87",
-              "short_sha": "8288ac4",
-              "message": "feat: add Kubernetes/Helm support with K8s deployment configurations",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-12-20",
-              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/8288ac442c79ebc1b73cd8ba9b3cb4e1977cdd87"
-            },
-            {
-              "sha": "cf0118b132077355ebdaff3d9d94bf7fdbe2d104",
-              "short_sha": "cf0118b",
-              "message": "fix: add exec-based readiness probes to node and router pods",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-12-20",
-              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/cf0118b132077355ebdaff3d9d94bf7fdbe2d104"
-            },
-            {
-              "sha": "82d7f059793968885dddd6fadc9f3d4a1c118105",
-              "short_sha": "82d7f05",
-              "message": "ci: run helm tests on all pull requests",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-12-20",
-              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/82d7f059793968885dddd6fadc9f3d4a1c118105"
-            },
-            {
-              "sha": "8ce7aa161aae5b030b52337b2afba7a031ead977",
-              "short_sha": "8ce7aa1",
-              "message": "fix: add procps to Docker images for pgrep readiness probes",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-12-20",
-              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/8ce7aa161aae5b030b52337b2afba7a031ead977"
-            },
-            {
-              "sha": "83fe5e4f59e5e5afbe5be74b4530909820dbd225",
-              "short_sha": "83fe5e4",
-              "message": "fix: use /proc/1/cmdline for readiness probes and improve debug logging",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-12-20",
-              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/83fe5e4f59e5e5afbe5be74b4530909820dbd225"
+              "sha": "92e87ed14e7f56d54f5ce405e0ed11465ef4bad0",
+              "short_sha": "92e87ed",
+              "message": "feat: target mock yield distributor environment. remove set yield claimer step",
+              "author": "bagelface",
+              "author_login": "bagelface",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
+              "date": "2026-03-13",
+              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/92e87ed14e7f56d54f5ce405e0ed11465ef4bad0"
             }
           ],
           "parent_branch_name": "main",
-          "children": [
-            {
-              "name": "Collection of fixes for `cloud-staging` (PR #114)",
-              "branch": "cloud-staging-pr-fixes",
-              "repo_name": "gas-killer-router",
-              "pr_number": 120,
-              "pr_title": "Collection of fixes for `cloud-staging` (PR #114)",
-              "pr_url": "https://github.com/BreadchainCoop/gas-killer-router/pull/120",
-              "pr_author": "bagelface",
-              "last_updated": "2026-03-12T23:52:21Z",
-              "ci_status": "pending",
-              "github_url": "https://github.com/BreadchainCoop/gas-killer-router",
-              "is_draft": false,
-              "labels": [],
-              "commits_from_parent": [
-                {
-                  "sha": "c433baa669d078cc50709fbf7dd8e99103bcecde",
-                  "short_sha": "c433baa",
-                  "message": "fix: use default branch of gas-killer-analyzer",
-                  "author": "bagelface",
-                  "author_login": "bagelface",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
-                  "date": "2026-03-05",
-                  "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/c433baa669d078cc50709fbf7dd8e99103bcecde"
-                },
-                {
-                  "sha": "2756a708b2f989870f221cd81e7df4cc25b4fe34",
-                  "short_sha": "2756a70",
-                  "message": "fix: keep logs going both to stdout and the log file and avoid problematic  subp",
-                  "author": "bagelface",
-                  "author_login": "bagelface",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
-                  "date": "2026-03-05",
-                  "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/2756a708b2f989870f221cd81e7df4cc25b4fe34"
-                },
-                {
-                  "sha": "eaef8b96ce4a58f80abd0a5708722492e08907f8",
-                  "short_sha": "eaef8b9",
-                  "message": "build: set 'bridge.enabled' and 'yieldDistribution.enabled' to false by default",
-                  "author": "bagelface",
-                  "author_login": "bagelface",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
-                  "date": "2026-03-05",
-                  "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/eaef8b96ce4a58f80abd0a5708722492e08907f8"
-                },
-                {
-                  "sha": "c9bf1d521e63b31c0ae7447f7da3b4d8876ddfd0",
-                  "short_sha": "c9bf1d5",
-                  "message": "build: update Cargo.lock to use newest version of analyzer",
-                  "author": "bagelface",
-                  "author_login": "bagelface",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
-                  "date": "2026-03-06",
-                  "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/c9bf1d521e63b31c0ae7447f7da3b4d8876ddfd0"
-                },
-                {
-                  "sha": "e9ff93973c7df98babbd576d6d94282d319ee057",
-                  "short_sha": "e9ff939",
-                  "message": "fix: minor nitpick comments",
-                  "author": "bagelface",
-                  "author_login": "bagelface",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
-                  "date": "2026-03-06",
-                  "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/e9ff93973c7df98babbd576d6d94282d319ee057"
-                }
-              ],
-              "parent_branch_name": "cloud-staging",
-              "children": []
-            }
-          ]
+          "children": []
         },
         {
           "name": "Add additional request validation",
@@ -192,141 +203,72 @@
           "children": []
         },
         {
-          "name": "[DRAFT] feat: add Kubernetes/Helm support for K8s deployment",
-          "branch": "RonTuretzky/k8s-support",
+          "name": "[DRAFT] feat: add Terraform AWS deployment for Gas Killer Ro",
+          "branch": "RonTuretzky/terraform-aws-deploy",
           "repo_name": "gas-killer-router",
-          "pr_number": 84,
-          "pr_title": "[DRAFT] feat: add Kubernetes/Helm support for K8s deployments",
-          "pr_url": "https://github.com/BreadchainCoop/gas-killer-router/pull/84",
+          "pr_number": 87,
+          "pr_title": "[DRAFT] feat: add Terraform AWS deployment for Gas Killer Router",
+          "pr_url": "https://github.com/BreadchainCoop/gas-killer-router/pull/87",
           "pr_author": "RonTuretzky",
-          "last_updated": "2026-02-25T17:47:57Z",
+          "last_updated": "2026-03-13T17:21:30Z",
           "ci_status": "pass",
           "github_url": "https://github.com/BreadchainCoop/gas-killer-router",
           "is_draft": false,
           "labels": [],
           "commits_from_parent": [
             {
-              "sha": "8288ac442c79ebc1b73cd8ba9b3cb4e1977cdd87",
-              "short_sha": "8288ac4",
-              "message": "feat: add Kubernetes/Helm support with K8s deployment configurations",
+              "sha": "7fed5936b55dbfd5d6a10206f29d2a157249c6ae",
+              "short_sha": "7fed593",
+              "message": "fix: route executor to correct chain based on target contract",
               "author": "Ron Turetzky",
               "author_login": "RonTuretzky",
               "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-12-20",
-              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/8288ac442c79ebc1b73cd8ba9b3cb4e1977cdd87"
+              "date": "2026-02-07",
+              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/7fed5936b55dbfd5d6a10206f29d2a157249c6ae"
             },
             {
-              "sha": "cf0118b132077355ebdaff3d9d94bf7fdbe2d104",
-              "short_sha": "cf0118b",
-              "message": "fix: add exec-based readiness probes to node and router pods",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-12-20",
-              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/cf0118b132077355ebdaff3d9d94bf7fdbe2d104"
+              "sha": "e8a0185e6db3d2ce8250584e661765975843255c",
+              "short_sha": "e8a0185",
+              "message": "feat: add Helm support for provisioning the L2 AVS deployment config",
+              "author": "bagelface",
+              "author_login": "bagelface",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
+              "date": "2026-02-20",
+              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/e8a0185e6db3d2ce8250584e661765975843255c"
             },
             {
-              "sha": "82d7f059793968885dddd6fadc9f3d4a1c118105",
-              "short_sha": "82d7f05",
-              "message": "ci: run helm tests on all pull requests",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-12-20",
-              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/82d7f059793968885dddd6fadc9f3d4a1c118105"
+              "sha": "59fed26582556c294485d44e70995457c7d485ae",
+              "short_sha": "59fed26",
+              "message": "refactor: improve error propogation and catching for missing gnosis RPC",
+              "author": "bagelface",
+              "author_login": "bagelface",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
+              "date": "2026-02-20",
+              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/59fed26582556c294485d44e70995457c7d485ae"
             },
             {
-              "sha": "8ce7aa161aae5b030b52337b2afba7a031ead977",
-              "short_sha": "8ce7aa1",
-              "message": "fix: add procps to Docker images for pgrep readiness probes",
+              "sha": "7eb70a0fd7b57404def4581b60cfd2eb8a0db8bd",
+              "short_sha": "7eb70a0",
+              "message": "fix: correct function name in cherry-picked conflict resolution",
               "author": "Ron Turetzky",
               "author_login": "RonTuretzky",
               "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-12-20",
-              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/8ce7aa161aae5b030b52337b2afba7a031ead977"
+              "date": "2026-02-28",
+              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/7eb70a0fd7b57404def4581b60cfd2eb8a0db8bd"
             },
             {
-              "sha": "83fe5e4f59e5e5afbe5be74b4530909820dbd225",
-              "short_sha": "83fe5e4",
-              "message": "fix: use /proc/1/cmdline for readiness probes and improve debug logging",
+              "sha": "261164a28dfdffccffde959f59c4453fbe9968fe",
+              "short_sha": "261164a",
+              "message": "fix: split L1/L2 providers to fix both StaleBlockNumber and pubkeyHashToOperator",
               "author": "Ron Turetzky",
               "author_login": "RonTuretzky",
               "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-12-20",
-              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/83fe5e4f59e5e5afbe5be74b4530909820dbd225"
+              "date": "2026-02-28",
+              "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/261164a28dfdffccffde959f59c4453fbe9968fe"
             }
           ],
           "parent_branch_name": "main",
-          "children": [
-            {
-              "name": "[DRAFT] feat: add Terraform AWS deployment for Gas Killer Ro",
-              "branch": "RonTuretzky/terraform-aws-deploy",
-              "repo_name": "gas-killer-router",
-              "pr_number": 87,
-              "pr_title": "[DRAFT] feat: add Terraform AWS deployment for Gas Killer Router",
-              "pr_url": "https://github.com/BreadchainCoop/gas-killer-router/pull/87",
-              "pr_author": "RonTuretzky",
-              "last_updated": "2026-03-02T12:04:54Z",
-              "ci_status": "pass",
-              "github_url": "https://github.com/BreadchainCoop/gas-killer-router",
-              "is_draft": false,
-              "labels": [],
-              "commits_from_parent": [
-                {
-                  "sha": "76663d3c21fc43062a3a9860998595cce47ca8c3",
-                  "short_sha": "76663d3",
-                  "message": "feat: add Terraform AWS deployment for Gas Killer Router",
-                  "author": "Ron Turetzky",
-                  "author_login": "RonTuretzky",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-                  "date": "2025-12-29",
-                  "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/76663d3c21fc43062a3a9860998595cce47ca8c3"
-                },
-                {
-                  "sha": "33c1120b92a8720673601d4e1a2721658ec719e1",
-                  "short_sha": "33c1120",
-                  "message": "fix: remove invalid self reference in terraform outputs",
-                  "author": "Ron Turetzky",
-                  "author_login": "RonTuretzky",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-                  "date": "2025-12-29",
-                  "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/33c1120b92a8720673601d4e1a2721658ec719e1"
-                },
-                {
-                  "sha": "433773f4a8d88a753a92792d58b1c366e3727a83",
-                  "short_sha": "433773f",
-                  "message": "feat: add E2E test job to terraform deployment",
-                  "author": "Ron Turetzky",
-                  "author_login": "RonTuretzky",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-                  "date": "2025-12-29",
-                  "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/433773f4a8d88a753a92792d58b1c366e3727a83"
-                },
-                {
-                  "sha": "71c3fb482128dc0f4cb9143323cd60d8746395dc",
-                  "short_sha": "71c3fb4",
-                  "message": "fix: escape shell variables in terraform heredoc",
-                  "author": "Ron Turetzky",
-                  "author_login": "RonTuretzky",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-                  "date": "2025-12-29",
-                  "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/71c3fb482128dc0f4cb9143323cd60d8746395dc"
-                },
-                {
-                  "sha": "40912f26f1a7d15f5296ba4488eac64a2cb3bdd4",
-                  "short_sha": "40912f2",
-                  "message": "fix: add pre-destroy cleanup for ALB resources",
-                  "author": "Ron Turetzky",
-                  "author_login": "RonTuretzky",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-                  "date": "2025-12-29",
-                  "html_url": "https://github.com/BreadchainCoop/gas-killer-router/commit/40912f26f1a7d15f5296ba4488eac64a2cb3bdd4"
-                }
-              ],
-              "parent_branch_name": "RonTuretzky/k8s-support",
-              "children": []
-            }
-          ]
+          "children": []
         }
       ]
     },
@@ -856,7 +798,7 @@
               "pr_title": "Add Supabase",
               "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/39",
               "pr_author": "exo404",
-              "last_updated": "2026-03-12T18:43:06Z",
+              "last_updated": "2026-03-13T19:54:09Z",
               "ci_status": "fail",
               "github_url": "https://github.com/BreadchainCoop/app-stacks",
               "is_draft": false,
@@ -1439,164 +1381,6 @@
             }
           ],
           "parent_branch_name": "main",
-          "children": []
-        }
-      ]
-    },
-    "solidarity-fund": {
-      "name": "solidarity-fund",
-      "branch": "dev",
-      "repo_name": "solidarity-fund",
-      "pr_number": null,
-      "pr_title": null,
-      "pr_url": null,
-      "pr_author": null,
-      "last_updated": "2026-03-11T16:20:01Z",
-      "ci_status": "",
-      "github_url": "https://github.com/BreadchainCoop/solidarity-fund",
-      "is_draft": false,
-      "labels": [],
-      "commits_from_parent": [],
-      "parent_branch_name": null,
-      "children": [
-        {
-          "name": "Add script for a full mock deployment",
-          "branch": "bagelface/add-test-deploy-script",
-          "repo_name": "solidarity-fund",
-          "pr_number": 189,
-          "pr_title": "Add script for a full mock deployment",
-          "pr_url": "https://github.com/BreadchainCoop/solidarity-fund/pull/189",
-          "pr_author": "bagelface",
-          "last_updated": "2026-03-02T21:54:33Z",
-          "ci_status": "pass",
-          "github_url": "https://github.com/BreadchainCoop/solidarity-fund",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "b66fa0f08205d02fe41f02db87fb758e65f746fa",
-              "short_sha": "b66fa0f",
-              "message": "feat: add script for a full mock deployment",
-              "author": "bagelface",
-              "author_login": "bagelface",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
-              "date": "2026-03-02",
-              "html_url": "https://github.com/BreadchainCoop/solidarity-fund/commit/b66fa0f08205d02fe41f02db87fb758e65f746fa"
-            },
-            {
-              "sha": "1304f31db105df625be16f5b17a657b81cd137a3",
-              "short_sha": "1304f31",
-              "message": "feat: implement MockBread properly and cleanup",
-              "author": "bagelface",
-              "author_login": "bagelface",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
-              "date": "2026-03-02",
-              "html_url": "https://github.com/BreadchainCoop/solidarity-fund/commit/1304f31db105df625be16f5b17a657b81cd137a3"
-            }
-          ],
-          "parent_branch_name": "dev",
-          "children": []
-        },
-        {
-          "name": "fix: fee-on-transfer token accounting in ButteredBread depos",
-          "branch": "fix/187-fee-on-transfer-accounting",
-          "repo_name": "solidarity-fund",
-          "pr_number": 188,
-          "pr_title": "fix: fee-on-transfer token accounting in ButteredBread deposit",
-          "pr_url": "https://github.com/BreadchainCoop/solidarity-fund/pull/188",
-          "pr_author": "ss251",
-          "last_updated": "2026-03-02T19:29:30Z",
-          "ci_status": "fail",
-          "github_url": "https://github.com/BreadchainCoop/solidarity-fund",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [],
-          "parent_branch_name": "dev",
-          "children": []
-        },
-        {
-          "name": "Staging deployment",
-          "branch": "staging-deployment",
-          "repo_name": "solidarity-fund",
-          "pr_number": 163,
-          "pr_title": "Staging deployment",
-          "pr_url": "https://github.com/BreadchainCoop/solidarity-fund/pull/163",
-          "pr_author": "RonTuretzky",
-          "last_updated": "2025-08-10T19:05:35Z",
-          "ci_status": "pass",
-          "github_url": "https://github.com/BreadchainCoop/solidarity-fund",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "8d88aace1f68e8552a66fe58b9dc452cf4feffc7",
-              "short_sha": "8d88aac",
-              "message": "Add GitHub Actions workflow for automatic testnet deployment",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-07-22",
-              "html_url": "https://github.com/BreadchainCoop/solidarity-fund/commit/8d88aace1f68e8552a66fe58b9dc452cf4feffc7"
-            },
-            {
-              "sha": "da1e2954166c86a817fa3034670d99f8812ffe98",
-              "short_sha": "da1e295",
-              "message": "Add staging branch trigger to testnet deployment workflow",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-07-22",
-              "html_url": "https://github.com/BreadchainCoop/solidarity-fund/commit/da1e2954166c86a817fa3034670d99f8812ffe98"
-            },
-            {
-              "sha": "dabe818ed1450e9c762af7ae358801e9645d6cf6",
-              "short_sha": "dabe818",
-              "message": "Add comprehensive testnet deployment documentation",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-07-22",
-              "html_url": "https://github.com/BreadchainCoop/solidarity-fund/commit/dabe818ed1450e9c762af7ae358801e9645d6cf6"
-            },
-            {
-              "sha": "cfee5d8886590311335da0444bcdeed518b54af0",
-              "short_sha": "cfee5d8",
-              "message": "Add deployment tracking, verification, and artifact generation",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-07-22",
-              "html_url": "https://github.com/BreadchainCoop/solidarity-fund/commit/cfee5d8886590311335da0444bcdeed518b54af0"
-            },
-            {
-              "sha": "41f20d519b705573ec7a880b68e4bc2a35071d1d",
-              "short_sha": "41f20d5",
-              "message": "Update documentation with verification and artifact details",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-07-22",
-              "html_url": "https://github.com/BreadchainCoop/solidarity-fund/commit/41f20d519b705573ec7a880b68e4bc2a35071d1d"
-            }
-          ],
-          "parent_branch_name": "dev",
-          "children": []
-        },
-        {
-          "name": "feat: add timelock for upgrades",
-          "branch": "issue-132-fix",
-          "repo_name": "solidarity-fund",
-          "pr_number": 145,
-          "pr_title": "feat: add timelock for upgrades",
-          "pr_url": "https://github.com/BreadchainCoop/solidarity-fund/pull/145",
-          "pr_author": "RonTuretzky",
-          "last_updated": "2025-07-22T17:29:02Z",
-          "ci_status": "",
-          "github_url": "https://github.com/BreadchainCoop/solidarity-fund",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [],
-          "parent_branch_name": "dev",
           "children": []
         }
       ]
@@ -2543,44 +2327,6 @@
           "children": []
         },
         {
-          "name": "fix: Resolve all 14 reported issues",
-          "branch": "feat/issues-batch",
-          "repo_name": "crowdstake.fun",
-          "pr_number": 81,
-          "pr_title": "fix: Resolve all 14 reported issues",
-          "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/81",
-          "pr_author": "RonTuretzky",
-          "last_updated": "2026-02-12T19:17:09Z",
-          "ci_status": "",
-          "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "638e1c8cb07028ad3170811aa0aa18eab6026c66",
-              "short_sha": "638e1c8",
-              "message": "fix: resolve all 14 reported issues",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2026-02-12",
-              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/638e1c8cb07028ad3170811aa0aa18eab6026c66"
-            },
-            {
-              "sha": "e96e7d29be88372dcce7ac0183cb8c43d4936aea",
-              "short_sha": "e96e7d2",
-              "message": "chore: auto-format code with forge fmt [auto-format]",
-              "author": "github-actions[bot]",
-              "author_login": "github-actions[bot]",
-              "author_avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
-              "date": "2026-02-12",
-              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/e96e7d29be88372dcce7ac0183cb8c43d4936aea"
-            }
-          ],
-          "parent_branch_name": "main",
-          "children": []
-        },
-        {
           "name": "refactor: enhance QueueProcessed event with detailed recipie",
           "branch": "refactor/queue-processed-event",
           "repo_name": "crowdstake.fun",
@@ -2588,7 +2334,7 @@
           "pr_title": "refactor: enhance QueueProcessed event with detailed recipient information (issue #42)",
           "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/79",
           "pr_author": "ss251",
-          "last_updated": "2025-10-19T14:11:08Z",
+          "last_updated": "2026-03-13T20:17:32Z",
           "ci_status": "",
           "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
           "is_draft": false,
@@ -2598,42 +2344,14 @@
           "children": []
         },
         {
-          "name": "Set up conductor.json",
-          "branch": "conductor-json-6e5f1529",
-          "repo_name": "crowdstake.fun",
-          "pr_number": 76,
-          "pr_title": "Set up conductor.json",
-          "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/76",
-          "pr_author": "RonTuretzky",
-          "last_updated": "2025-09-22T18:38:41Z",
-          "ci_status": "pass",
-          "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "2d54ac0ea8a96ca30c7a264b5e4e230bcf5cffd3",
-              "short_sha": "2d54ac0",
-              "message": "Add conductor.json",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-09-22",
-              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/2d54ac0ea8a96ca30c7a264b5e4e230bcf5cffd3"
-            }
-          ],
-          "parent_branch_name": "main",
-          "children": []
-        },
-        {
-          "name": "fix: Implement Distribution Strategy Module (Issue #9)",
+          "name": " Implement Distribution Strategy Module ",
           "branch": "issue-9-distribution-strategy-module",
           "repo_name": "crowdstake.fun",
           "pr_number": 37,
-          "pr_title": "fix: Implement Distribution Strategy Module (Issue #9)",
+          "pr_title": " Implement Distribution Strategy Module ",
           "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/37",
           "pr_author": "RonTuretzky",
-          "last_updated": "2025-09-28T04:26:14Z",
+          "last_updated": "2026-03-13T20:14:17Z",
           "ci_status": "",
           "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
           "is_draft": false,
@@ -2953,6 +2671,41 @@
             }
           ],
           "parent_branch_name": "main",
+          "children": []
+        }
+      ]
+    },
+    "safety-net": {
+      "name": "safety-net",
+      "branch": "dev",
+      "repo_name": "safety-net",
+      "pr_number": null,
+      "pr_title": null,
+      "pr_url": null,
+      "pr_author": null,
+      "last_updated": "2026-01-23T21:15:50Z",
+      "ci_status": "",
+      "github_url": "https://github.com/BreadchainCoop/safety-net",
+      "is_draft": false,
+      "labels": [],
+      "commits_from_parent": [],
+      "parent_branch_name": null,
+      "children": [
+        {
+          "name": "Fix issue #14",
+          "branch": "fix-issue-14",
+          "repo_name": "safety-net",
+          "pr_number": 67,
+          "pr_title": "Fix issue #14",
+          "pr_url": "https://github.com/BreadchainCoop/safety-net/pull/67",
+          "pr_author": "Fiuum1",
+          "last_updated": "2026-03-13T19:49:25Z",
+          "ci_status": "",
+          "github_url": "https://github.com/BreadchainCoop/safety-net",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [],
+          "parent_branch_name": "dev",
           "children": []
         }
       ]
@@ -4328,6 +4081,563 @@
     }
   },
   "issues": {
+    "solidarity-fund": {
+      "repo_name": "solidarity-fund",
+      "github_url": "https://github.com/BreadchainCoop/solidarity-fund",
+      "issues": [
+        {
+          "number": 187,
+          "title": "Fee-on-Transfer Token Drains ButteredBread",
+          "author": "bagelface",
+          "created_at": "2026-02-19T01:01:01Z",
+          "updated_at": "2026-02-19T01:01:01Z",
+          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/187",
+          "labels": [
+            "bug"
+          ],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 186,
+          "title": "Voting power can be amplified by repeating multiplier indexes",
+          "author": "bagelface",
+          "created_at": "2026-02-19T00:16:18Z",
+          "updated_at": "2026-02-19T00:16:18Z",
+          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/186",
+          "labels": [
+            "bug"
+          ],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 185,
+          "title": "Voting streak multiplier can be maxed in one cycle by spamming `updateMultiplyingFactor`",
+          "author": "bagelface",
+          "created_at": "2026-02-18T23:44:19Z",
+          "updated_at": "2026-02-18T23:44:19Z",
+          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/185",
+          "labels": [
+            "bug"
+          ],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 184,
+          "title": "Calling `distributeYieldGK` bypasses multipliers",
+          "author": "bagelface",
+          "created_at": "2026-02-18T23:41:22Z",
+          "updated_at": "2026-02-18T23:45:41Z",
+          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/184",
+          "labels": [
+            "bug"
+          ],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 172,
+          "title": "Test Upgrade Simulation for Latest Release",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-10T13:16:58Z",
+          "updated_at": "2025-08-10T13:16:58Z",
+          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/172",
+          "labels": [
+            "question"
+          ],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 171,
+          "title": "Release v1.0.5",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-10T13:00:36Z",
+          "updated_at": "2025-08-10T13:00:36Z",
+          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/171",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 170,
+          "title": "Voting Boost for Users with BREAD Transactions",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-10T12:55:47Z",
+          "updated_at": "2025-08-10T13:12:44Z",
+          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/170",
+          "labels": [
+            "enhancement"
+          ],
+          "assignees": [],
+          "comments": [
+            {
+              "id": "IC_kwDOLJ8tZs69GmIf",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "COLLABORATOR",
+              "body": "This may be trivially accounted for by summing up the amount of checkpoints the user has in the last voting cycle, can be easily gamed so unclear if this issue should specify additional parameters, include sybil detection , etc. ",
+              "createdAt": "2025-08-10T13:12:44Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/170#issuecomment-3172622879",
+              "viewerDidAuthor": false
+            }
+          ]
+        },
+        {
+          "number": 169,
+          "title": "Boost for Never Burning BREAD in Previous Cycle",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-10T12:55:44Z",
+          "updated_at": "2025-08-10T13:11:18Z",
+          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/169",
+          "labels": [
+            "enhancement"
+          ],
+          "assignees": [],
+          "comments": [
+            {
+              "id": "IC_kwDOLJ8tZs69Gl6b",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "COLLABORATOR",
+              "body": "This issue is non trivial, as ERC20Votes does not specify whether a balance decrease is a burn or a transfer, but by cross-referencing with `getPastTotalSupply` , we may be able to ascertain whether a balance decrease is a burn or a transfer (as a transfer should not decrease the total supply). there may be conflicts with other users burns at the same `timepoint` potentially creating a obfuscation , needs to be looked into further. ",
+              "createdAt": "2025-08-10T13:11:18Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/169#issuecomment-3172621979",
+              "viewerDidAuthor": false
+            }
+          ]
+        },
+        {
+          "number": 168,
+          "title": "Boost for Baking at Least 10 BREAD in Previous Cycle",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-10T12:55:43Z",
+          "updated_at": "2025-08-10T13:04:50Z",
+          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/168",
+          "labels": [
+            "enhancement"
+          ],
+          "assignees": [],
+          "comments": [
+            {
+              "id": "IC_kwDOLJ8tZs69Gk6S",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "COLLABORATOR",
+              "body": "Open questions: \n\n- what if they baked 10 $BREAD but then burned it? should we account for net $BREAD balance gain?\n- should we use the last ERC20Votes checkpoint to get the balance in the last cycle for reference? \n- is 10 really the number we want to incentivize?",
+              "createdAt": "2025-08-10T13:04:50Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/168#issuecomment-3172617874",
+              "viewerDidAuthor": false
+            }
+          ]
+        },
+        {
+          "number": 167,
+          "title": "Add POAP Boost for Attending Community Calls",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-10T12:55:41Z",
+          "updated_at": "2025-08-10T13:03:25Z",
+          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/167",
+          "labels": [
+            "enhancement"
+          ],
+          "assignees": [],
+          "comments": [
+            {
+              "id": "IC_kwDOLJ8tZs69Gkrh",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "COLLABORATOR",
+              "body": "seems this would be as simple as #166 ",
+              "createdAt": "2025-08-10T13:03:25Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/167#issuecomment-3172616929",
+              "viewerDidAuthor": false
+            }
+          ]
+        },
+        {
+          "number": 166,
+          "title": "Voting Boost for TBS NFT Holders",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-10T12:55:37Z",
+          "updated_at": "2025-08-10T13:02:50Z",
+          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/166",
+          "labels": [
+            "enhancement"
+          ],
+          "assignees": [],
+          "comments": [
+            {
+              "id": "IC_kwDOLJ8tZs69Gkl3",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "COLLABORATOR",
+              "body": "@secbajor please advise, with the current impl is it as simple as just using [this](https://github.com/BreadchainCoop/breadchain/blob/dev/script/deploy/DeployNFTMultiplier.s.sol) script and then calling [this](https://github.com/BreadchainCoop/breadchain/blob/d74a84c8c8dce4187040edced2160c828eafb938/src/VotingMultipliers.sol#L49) ? I assume there would be frontend changes necessary as well ",
+              "createdAt": "2025-08-10T13:02:50Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/166#issuecomment-3172616567",
+              "viewerDidAuthor": false
+            }
+          ]
+        },
+        {
+          "number": 164,
+          "title": "Release v1.0.4",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-10T12:44:12Z",
+          "updated_at": "2025-08-10T12:44:12Z",
+          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/164",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 156,
+          "title": "Explore Extending VotesExtendedUpgradeable for Variable Delegations",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-06T04:37:13Z",
+          "updated_at": "2025-08-06T04:37:13Z",
+          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/156",
+          "labels": [
+            "enhancement"
+          ],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 142,
+          "title": "Add CI/CD to automatically deploy all contracts to testnet on merge to dev",
+          "author": "RonTuretzky",
+          "created_at": "2025-07-20T01:18:44Z",
+          "updated_at": "2025-07-20T01:18:44Z",
+          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/142",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 141,
+          "title": "Automate Upgrade Safety Check in CI Pipeline",
+          "author": "RonTuretzky",
+          "created_at": "2025-07-20T01:16:40Z",
+          "updated_at": "2025-07-20T01:16:40Z",
+          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/141",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 136,
+          "title": "Gelato Automation",
+          "author": "RonTuretzky",
+          "created_at": "2025-06-26T18:35:52Z",
+          "updated_at": "2025-08-10T14:49:16Z",
+          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/136",
+          "labels": [],
+          "assignees": [
+            "lirona"
+          ],
+          "comments": [
+            {
+              "id": "IC_kwDOLJ8tZs652kP-",
+              "author": {
+                "login": "lirona"
+              },
+              "authorAssociation": "COLLABORATOR",
+              "body": "so will create an automation that will check daily for available yield and distribute if possible",
+              "createdAt": "2025-07-25T14:30:32Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/136#issuecomment-3118089214",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOLJ8tZs6566_X",
+              "author": {
+                "login": "diterra-code"
+              },
+              "authorAssociation": "NONE",
+              "body": "@lirona should be monthly i assume. @RonTuretzky ",
+              "createdAt": "2025-07-25T16:29:28Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/136#issuecomment-3119230935",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOLJ8tZs659m3U",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "COLLABORATOR",
+              "body": "yea but it's safer to just check once a day over like once an hour or whatever \ntheoretically someone can distribute ahead of the automation but it doesn't really matter @diterra-code \n\nthe distribution frequency is determined at the smart contract level that automation doesn't affect it anyways ",
+              "createdAt": "2025-07-25T18:35:29Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [
+                {
+                  "content": "THUMBS_UP",
+                  "users": {
+                    "totalCount": 1
+                  }
+                }
+              ],
+              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/136#issuecomment-3119934932",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOLJ8tZs69G1pS",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "COLLABORATOR",
+              "body": "yd is deployed [here](https://gnosisscan.io/address/0xeE95A62b749d8a2520E0128D9b3aCa241269024b)",
+              "createdAt": "2025-08-10T14:49:16Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/136#issuecomment-3172686418",
+              "viewerDidAuthor": false
+            }
+          ]
+        },
+        {
+          "number": 132,
+          "title": "Add timelock for upgrades ",
+          "author": "RonTuretzky",
+          "created_at": "2025-06-18T17:59:15Z",
+          "updated_at": "2025-08-06T16:26:27Z",
+          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/132",
+          "labels": [
+            "enhancement",
+            "help wanted"
+          ],
+          "assignees": [],
+          "comments": [
+            {
+              "id": "IC_kwDOLJ8tZs67j3uD",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "COLLABORATOR",
+              "body": "Reccomending adding this add the multisig level instead of at the smart contract level through a zodiac safe module (can be seen [here](https://app.safe.global/apps/open?safe=gno:0x918dEf5d593F46735f74F9E2B280Fe51AF3A99ad&appUrl=https%3A%2F%2Fzodiac.gnosisguild.org%2F) \n\nthoughts @bagelface @hudsonhrh @lirona ?",
+              "createdAt": "2025-08-02T21:44:44Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/132#issuecomment-3146742659",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOLJ8tZs67j9Xx",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "COLLABORATOR",
+              "body": "This could possibly require us to create another nested multsig for upgrades so that we don't incur the timelock delay on standard multisig operations but is still simpler than the implementation cost of implementing this at the smart contract level ",
+              "createdAt": "2025-08-02T22:02:59Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/132#issuecomment-3146765809",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOLJ8tZs674U4y",
+              "author": {
+                "login": "hudsonhrh"
+              },
+              "authorAssociation": "NONE",
+              "body": "> Reccomending adding this add the multisig level instead of at the smart contract level through a zodiac safe module (can be seen [here](https://app.safe.global/apps/open?safe=gno:0x918dEf5d593F46735f74F9E2B280Fe51AF3A99ad&appUrl=https%3A%2F%2Fzodiac.gnosisguild.org%2F)\n> \n> thoughts [@bagelface](https://github.com/bagelface) [@hudsonhrh](https://github.com/hudsonhrh) [@lirona](https://github.com/lirona) ?\n\nI think it would be better practice to do it at the smart contract level. Better guarantee for bread holders that the time lock will actually happen. multisig could always remove the time lock on the multisig for upgrades",
+              "createdAt": "2025-08-04T19:39:05Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/132#issuecomment-3152105010",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOLJ8tZs68Fx3G",
+              "author": {
+                "login": "bagelface"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "Sorry, can you elaborate on this? \"Ensure upgrades can only go through after q timelock\" isn't very descriptive and I'm trying to understand the motivation and mechanism being proposed.\n\nUPDATE: Talked with Ron about this async. The proposal is to add a \"timelock\" (i.e. delayed execution or a period of time where an upgrade is easily revertable) to the upgrade functionality of the contract. For example, a transaction is initiated, signers sign the tx, when the threshold is met a countdown timer starts (of, say 48 hours), and only after the timer has expired can the transaction be executed. The motivation is increased security so that we can't all be held hostage at a conference or something and forced to sign and execute a malicious upgrade.",
+              "createdAt": "2025-08-05T15:13:54Z",
+              "includesCreatedEdit": true,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/132#issuecomment-3155631558",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOLJ8tZs68IMda",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "COLLABORATOR",
+              "body": "me and @bagelface talked async",
+              "createdAt": "2025-08-05T19:02:25Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/132#issuecomment-3156264794",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOLJ8tZs68IM_P",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "COLLABORATOR",
+              "body": "step 1 seems easy to add to the safe and we should prob add timelocks at the sc level at a later date as @hudsonhrh reccomends",
+              "createdAt": "2025-08-05T19:03:17Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/132#issuecomment-3156266959",
+              "viewerDidAuthor": false
+            }
+          ]
+        },
+        {
+          "number": 122,
+          "title": "Update Foundry Template",
+          "author": "RonTuretzky",
+          "created_at": "2025-01-02T12:07:29Z",
+          "updated_at": "2025-01-03T16:47:35Z",
+          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/122",
+          "labels": [
+            "enhancement",
+            "good first issue"
+          ],
+          "assignees": [],
+          "comments": [
+            {
+              "id": "IC_kwDOLJ8tZs6ZJ3V0",
+              "author": {
+                "login": "HMSagar2701"
+              },
+              "authorAssociation": "NONE",
+              "body": "Hi @RonTuretzky , Can I work on this issue ?\r\n",
+              "createdAt": "2025-01-03T16:28:32Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/122#issuecomment-2569500020",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOLJ8tZs6ZJ9wb",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "COLLABORATOR",
+              "body": "> Hi @RonTuretzky , Can I work on this issue ?\n> \n\nYes please! ",
+              "createdAt": "2025-01-03T16:47:34Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/122#issuecomment-2569526299",
+              "viewerDidAuthor": false
+            }
+          ]
+        },
+        {
+          "number": 112,
+          "title": "Refactor contracts to use namespaced storage layouts (ERC-7201)",
+          "author": "bagelface",
+          "created_at": "2024-12-12T21:13:49Z",
+          "updated_at": "2024-12-12T21:13:49Z",
+          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/112",
+          "labels": [
+            "enhancement"
+          ],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 111,
+          "title": "Documentation Scope",
+          "author": "RonTuretzky",
+          "created_at": "2024-12-12T14:58:58Z",
+          "updated_at": "2024-12-12T14:58:58Z",
+          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/111",
+          "labels": [
+            "documentation"
+          ],
+          "assignees": [
+            "daopunk",
+            "diterra-code",
+            "RonTuretzky",
+            "tbsoc"
+          ],
+          "comments": []
+        },
+        {
+          "number": 97,
+          "title": "Testing refactor ",
+          "author": "RonTuretzky",
+          "created_at": "2024-09-22T10:27:17Z",
+          "updated_at": "2024-09-22T10:27:17Z",
+          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/97",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 81,
+          "title": "Coupling project addresses and project distributions ",
+          "author": "RonTuretzky",
+          "created_at": "2024-08-23T08:48:03Z",
+          "updated_at": "2024-08-23T09:13:51Z",
+          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/81",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        }
+      ]
+    },
     "gas-killer-router": {
       "repo_name": "gas-killer-router",
       "github_url": "https://github.com/BreadchainCoop/gas-killer-router",
@@ -5684,6 +5994,17 @@
       "github_url": "https://github.com/BreadchainCoop/app-stacks",
       "issues": [
         {
+          "number": 45,
+          "title": "Show stack expiration modal only to circle members (not to every visitor)",
+          "author": "Olaleye-Blessing",
+          "created_at": "2026-03-13T20:20:33Z",
+          "updated_at": "2026-03-13T20:20:33Z",
+          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/45",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
           "number": 43,
           "title": "Add email notifications for Saving Circles users",
           "author": "franrolotti",
@@ -6240,563 +6561,6 @@
           "created_at": "2025-10-06T01:55:25Z",
           "updated_at": "2025-10-06T01:55:25Z",
           "html_url": "https://github.com/BreadchainCoop/bread-ui-kit/issues/3",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        }
-      ]
-    },
-    "solidarity-fund": {
-      "repo_name": "solidarity-fund",
-      "github_url": "https://github.com/BreadchainCoop/solidarity-fund",
-      "issues": [
-        {
-          "number": 187,
-          "title": "Fee-on-Transfer Token Drains ButteredBread",
-          "author": "bagelface",
-          "created_at": "2026-02-19T01:01:01Z",
-          "updated_at": "2026-02-19T01:01:01Z",
-          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/187",
-          "labels": [
-            "bug"
-          ],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 186,
-          "title": "Voting power can be amplified by repeating multiplier indexes",
-          "author": "bagelface",
-          "created_at": "2026-02-19T00:16:18Z",
-          "updated_at": "2026-02-19T00:16:18Z",
-          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/186",
-          "labels": [
-            "bug"
-          ],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 185,
-          "title": "Voting streak multiplier can be maxed in one cycle by spamming `updateMultiplyingFactor`",
-          "author": "bagelface",
-          "created_at": "2026-02-18T23:44:19Z",
-          "updated_at": "2026-02-18T23:44:19Z",
-          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/185",
-          "labels": [
-            "bug"
-          ],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 184,
-          "title": "Calling `distributeYieldGK` bypasses multipliers",
-          "author": "bagelface",
-          "created_at": "2026-02-18T23:41:22Z",
-          "updated_at": "2026-02-18T23:45:41Z",
-          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/184",
-          "labels": [
-            "bug"
-          ],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 172,
-          "title": "Test Upgrade Simulation for Latest Release",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-10T13:16:58Z",
-          "updated_at": "2025-08-10T13:16:58Z",
-          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/172",
-          "labels": [
-            "question"
-          ],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 171,
-          "title": "Release v1.0.5",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-10T13:00:36Z",
-          "updated_at": "2025-08-10T13:00:36Z",
-          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/171",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 170,
-          "title": "Voting Boost for Users with BREAD Transactions",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-10T12:55:47Z",
-          "updated_at": "2025-08-10T13:12:44Z",
-          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/170",
-          "labels": [
-            "enhancement"
-          ],
-          "assignees": [],
-          "comments": [
-            {
-              "id": "IC_kwDOLJ8tZs69GmIf",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "COLLABORATOR",
-              "body": "This may be trivially accounted for by summing up the amount of checkpoints the user has in the last voting cycle, can be easily gamed so unclear if this issue should specify additional parameters, include sybil detection , etc. ",
-              "createdAt": "2025-08-10T13:12:44Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/170#issuecomment-3172622879",
-              "viewerDidAuthor": false
-            }
-          ]
-        },
-        {
-          "number": 169,
-          "title": "Boost for Never Burning BREAD in Previous Cycle",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-10T12:55:44Z",
-          "updated_at": "2025-08-10T13:11:18Z",
-          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/169",
-          "labels": [
-            "enhancement"
-          ],
-          "assignees": [],
-          "comments": [
-            {
-              "id": "IC_kwDOLJ8tZs69Gl6b",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "COLLABORATOR",
-              "body": "This issue is non trivial, as ERC20Votes does not specify whether a balance decrease is a burn or a transfer, but by cross-referencing with `getPastTotalSupply` , we may be able to ascertain whether a balance decrease is a burn or a transfer (as a transfer should not decrease the total supply). there may be conflicts with other users burns at the same `timepoint` potentially creating a obfuscation , needs to be looked into further. ",
-              "createdAt": "2025-08-10T13:11:18Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/169#issuecomment-3172621979",
-              "viewerDidAuthor": false
-            }
-          ]
-        },
-        {
-          "number": 168,
-          "title": "Boost for Baking at Least 10 BREAD in Previous Cycle",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-10T12:55:43Z",
-          "updated_at": "2025-08-10T13:04:50Z",
-          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/168",
-          "labels": [
-            "enhancement"
-          ],
-          "assignees": [],
-          "comments": [
-            {
-              "id": "IC_kwDOLJ8tZs69Gk6S",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "COLLABORATOR",
-              "body": "Open questions: \n\n- what if they baked 10 $BREAD but then burned it? should we account for net $BREAD balance gain?\n- should we use the last ERC20Votes checkpoint to get the balance in the last cycle for reference? \n- is 10 really the number we want to incentivize?",
-              "createdAt": "2025-08-10T13:04:50Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/168#issuecomment-3172617874",
-              "viewerDidAuthor": false
-            }
-          ]
-        },
-        {
-          "number": 167,
-          "title": "Add POAP Boost for Attending Community Calls",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-10T12:55:41Z",
-          "updated_at": "2025-08-10T13:03:25Z",
-          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/167",
-          "labels": [
-            "enhancement"
-          ],
-          "assignees": [],
-          "comments": [
-            {
-              "id": "IC_kwDOLJ8tZs69Gkrh",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "COLLABORATOR",
-              "body": "seems this would be as simple as #166 ",
-              "createdAt": "2025-08-10T13:03:25Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/167#issuecomment-3172616929",
-              "viewerDidAuthor": false
-            }
-          ]
-        },
-        {
-          "number": 166,
-          "title": "Voting Boost for TBS NFT Holders",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-10T12:55:37Z",
-          "updated_at": "2025-08-10T13:02:50Z",
-          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/166",
-          "labels": [
-            "enhancement"
-          ],
-          "assignees": [],
-          "comments": [
-            {
-              "id": "IC_kwDOLJ8tZs69Gkl3",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "COLLABORATOR",
-              "body": "@secbajor please advise, with the current impl is it as simple as just using [this](https://github.com/BreadchainCoop/breadchain/blob/dev/script/deploy/DeployNFTMultiplier.s.sol) script and then calling [this](https://github.com/BreadchainCoop/breadchain/blob/d74a84c8c8dce4187040edced2160c828eafb938/src/VotingMultipliers.sol#L49) ? I assume there would be frontend changes necessary as well ",
-              "createdAt": "2025-08-10T13:02:50Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/166#issuecomment-3172616567",
-              "viewerDidAuthor": false
-            }
-          ]
-        },
-        {
-          "number": 164,
-          "title": "Release v1.0.4",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-10T12:44:12Z",
-          "updated_at": "2025-08-10T12:44:12Z",
-          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/164",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 156,
-          "title": "Explore Extending VotesExtendedUpgradeable for Variable Delegations",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-06T04:37:13Z",
-          "updated_at": "2025-08-06T04:37:13Z",
-          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/156",
-          "labels": [
-            "enhancement"
-          ],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 142,
-          "title": "Add CI/CD to automatically deploy all contracts to testnet on merge to dev",
-          "author": "RonTuretzky",
-          "created_at": "2025-07-20T01:18:44Z",
-          "updated_at": "2025-07-20T01:18:44Z",
-          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/142",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 141,
-          "title": "Automate Upgrade Safety Check in CI Pipeline",
-          "author": "RonTuretzky",
-          "created_at": "2025-07-20T01:16:40Z",
-          "updated_at": "2025-07-20T01:16:40Z",
-          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/141",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 136,
-          "title": "Gelato Automation",
-          "author": "RonTuretzky",
-          "created_at": "2025-06-26T18:35:52Z",
-          "updated_at": "2025-08-10T14:49:16Z",
-          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/136",
-          "labels": [],
-          "assignees": [
-            "lirona"
-          ],
-          "comments": [
-            {
-              "id": "IC_kwDOLJ8tZs652kP-",
-              "author": {
-                "login": "lirona"
-              },
-              "authorAssociation": "COLLABORATOR",
-              "body": "so will create an automation that will check daily for available yield and distribute if possible",
-              "createdAt": "2025-07-25T14:30:32Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/136#issuecomment-3118089214",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOLJ8tZs6566_X",
-              "author": {
-                "login": "diterra-code"
-              },
-              "authorAssociation": "NONE",
-              "body": "@lirona should be monthly i assume. @RonTuretzky ",
-              "createdAt": "2025-07-25T16:29:28Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/136#issuecomment-3119230935",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOLJ8tZs659m3U",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "COLLABORATOR",
-              "body": "yea but it's safer to just check once a day over like once an hour or whatever \ntheoretically someone can distribute ahead of the automation but it doesn't really matter @diterra-code \n\nthe distribution frequency is determined at the smart contract level that automation doesn't affect it anyways ",
-              "createdAt": "2025-07-25T18:35:29Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [
-                {
-                  "content": "THUMBS_UP",
-                  "users": {
-                    "totalCount": 1
-                  }
-                }
-              ],
-              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/136#issuecomment-3119934932",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOLJ8tZs69G1pS",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "COLLABORATOR",
-              "body": "yd is deployed [here](https://gnosisscan.io/address/0xeE95A62b749d8a2520E0128D9b3aCa241269024b)",
-              "createdAt": "2025-08-10T14:49:16Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/136#issuecomment-3172686418",
-              "viewerDidAuthor": false
-            }
-          ]
-        },
-        {
-          "number": 132,
-          "title": "Add timelock for upgrades ",
-          "author": "RonTuretzky",
-          "created_at": "2025-06-18T17:59:15Z",
-          "updated_at": "2025-08-06T16:26:27Z",
-          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/132",
-          "labels": [
-            "enhancement",
-            "help wanted"
-          ],
-          "assignees": [],
-          "comments": [
-            {
-              "id": "IC_kwDOLJ8tZs67j3uD",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "COLLABORATOR",
-              "body": "Reccomending adding this add the multisig level instead of at the smart contract level through a zodiac safe module (can be seen [here](https://app.safe.global/apps/open?safe=gno:0x918dEf5d593F46735f74F9E2B280Fe51AF3A99ad&appUrl=https%3A%2F%2Fzodiac.gnosisguild.org%2F) \n\nthoughts @bagelface @hudsonhrh @lirona ?",
-              "createdAt": "2025-08-02T21:44:44Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/132#issuecomment-3146742659",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOLJ8tZs67j9Xx",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "COLLABORATOR",
-              "body": "This could possibly require us to create another nested multsig for upgrades so that we don't incur the timelock delay on standard multisig operations but is still simpler than the implementation cost of implementing this at the smart contract level ",
-              "createdAt": "2025-08-02T22:02:59Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/132#issuecomment-3146765809",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOLJ8tZs674U4y",
-              "author": {
-                "login": "hudsonhrh"
-              },
-              "authorAssociation": "NONE",
-              "body": "> Reccomending adding this add the multisig level instead of at the smart contract level through a zodiac safe module (can be seen [here](https://app.safe.global/apps/open?safe=gno:0x918dEf5d593F46735f74F9E2B280Fe51AF3A99ad&appUrl=https%3A%2F%2Fzodiac.gnosisguild.org%2F)\n> \n> thoughts [@bagelface](https://github.com/bagelface) [@hudsonhrh](https://github.com/hudsonhrh) [@lirona](https://github.com/lirona) ?\n\nI think it would be better practice to do it at the smart contract level. Better guarantee for bread holders that the time lock will actually happen. multisig could always remove the time lock on the multisig for upgrades",
-              "createdAt": "2025-08-04T19:39:05Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/132#issuecomment-3152105010",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOLJ8tZs68Fx3G",
-              "author": {
-                "login": "bagelface"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "Sorry, can you elaborate on this? \"Ensure upgrades can only go through after q timelock\" isn't very descriptive and I'm trying to understand the motivation and mechanism being proposed.\n\nUPDATE: Talked with Ron about this async. The proposal is to add a \"timelock\" (i.e. delayed execution or a period of time where an upgrade is easily revertable) to the upgrade functionality of the contract. For example, a transaction is initiated, signers sign the tx, when the threshold is met a countdown timer starts (of, say 48 hours), and only after the timer has expired can the transaction be executed. The motivation is increased security so that we can't all be held hostage at a conference or something and forced to sign and execute a malicious upgrade.",
-              "createdAt": "2025-08-05T15:13:54Z",
-              "includesCreatedEdit": true,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/132#issuecomment-3155631558",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOLJ8tZs68IMda",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "COLLABORATOR",
-              "body": "me and @bagelface talked async",
-              "createdAt": "2025-08-05T19:02:25Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/132#issuecomment-3156264794",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOLJ8tZs68IM_P",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "COLLABORATOR",
-              "body": "step 1 seems easy to add to the safe and we should prob add timelocks at the sc level at a later date as @hudsonhrh reccomends",
-              "createdAt": "2025-08-05T19:03:17Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/132#issuecomment-3156266959",
-              "viewerDidAuthor": false
-            }
-          ]
-        },
-        {
-          "number": 122,
-          "title": "Update Foundry Template",
-          "author": "RonTuretzky",
-          "created_at": "2025-01-02T12:07:29Z",
-          "updated_at": "2025-01-03T16:47:35Z",
-          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/122",
-          "labels": [
-            "enhancement",
-            "good first issue"
-          ],
-          "assignees": [],
-          "comments": [
-            {
-              "id": "IC_kwDOLJ8tZs6ZJ3V0",
-              "author": {
-                "login": "HMSagar2701"
-              },
-              "authorAssociation": "NONE",
-              "body": "Hi @RonTuretzky , Can I work on this issue ?\r\n",
-              "createdAt": "2025-01-03T16:28:32Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/122#issuecomment-2569500020",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOLJ8tZs6ZJ9wb",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "COLLABORATOR",
-              "body": "> Hi @RonTuretzky , Can I work on this issue ?\n> \n\nYes please! ",
-              "createdAt": "2025-01-03T16:47:34Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/122#issuecomment-2569526299",
-              "viewerDidAuthor": false
-            }
-          ]
-        },
-        {
-          "number": 112,
-          "title": "Refactor contracts to use namespaced storage layouts (ERC-7201)",
-          "author": "bagelface",
-          "created_at": "2024-12-12T21:13:49Z",
-          "updated_at": "2024-12-12T21:13:49Z",
-          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/112",
-          "labels": [
-            "enhancement"
-          ],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 111,
-          "title": "Documentation Scope",
-          "author": "RonTuretzky",
-          "created_at": "2024-12-12T14:58:58Z",
-          "updated_at": "2024-12-12T14:58:58Z",
-          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/111",
-          "labels": [
-            "documentation"
-          ],
-          "assignees": [
-            "daopunk",
-            "diterra-code",
-            "RonTuretzky",
-            "tbsoc"
-          ],
-          "comments": []
-        },
-        {
-          "number": 97,
-          "title": "Testing refactor ",
-          "author": "RonTuretzky",
-          "created_at": "2024-09-22T10:27:17Z",
-          "updated_at": "2024-09-22T10:27:17Z",
-          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/97",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 81,
-          "title": "Coupling project addresses and project distributions ",
-          "author": "RonTuretzky",
-          "created_at": "2024-08-23T08:48:03Z",
-          "updated_at": "2024-08-23T09:13:51Z",
-          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/81",
           "labels": [],
           "assignees": [],
           "comments": []
@@ -8913,6 +8677,17 @@
       "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
       "issues": [
         {
+          "number": 83,
+          "title": "Make a custom voting implementation for COVA",
+          "author": "RonTuretzky",
+          "created_at": "2026-03-13T21:49:25Z",
+          "updated_at": "2026-03-13T21:49:25Z",
+          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/83",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
           "number": 80,
           "title": "Validate project distribution addresses ",
           "author": "RonTuretzky",
@@ -8982,35 +8757,6 @@
           "labels": [],
           "assignees": [],
           "comments": []
-        },
-        {
-          "number": 65,
-          "title": "End-to-End Testing with Decentralized Frontend Deployment",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-18T23:33:29Z",
-          "updated_at": "2025-08-19T00:44:11Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/65",
-          "labels": [
-            "enhancement"
-          ],
-          "assignees": [],
-          "comments": [
-            {
-              "id": "IC_kwDOPeu91c6-qk69",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "cc @hudsonhrh ",
-              "createdAt": "2025-08-19T00:44:11Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/65#issuecomment-3198832317",
-              "viewerDidAuthor": false
-            }
-          ]
         },
         {
           "number": 64,
@@ -9248,10 +8994,10 @@
         },
         {
           "number": 2,
-          "title": "Implement Voting Module with Signature-Based Voting and Multiple Strategies",
+          "title": "Implement Voting Module",
           "author": "RonTuretzky",
           "created_at": "2025-08-16T05:44:50Z",
-          "updated_at": "2025-08-18T23:17:20Z",
+          "updated_at": "2026-03-13T20:14:02Z",
           "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/2",
           "labels": [
             "enhancement"
@@ -10244,95 +9990,6 @@
           "updated_at": "2025-08-19T00:52:41Z",
           "html_url": "https://github.com/BreadchainCoop/sui-walrus-deployment/issues/10",
           "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 9,
-          "title": "Release 0.0.1",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-19T00:47:00Z",
-          "updated_at": "2025-08-19T01:39:26Z",
-          "html_url": "https://github.com/BreadchainCoop/sui-walrus-deployment/issues/9",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 8,
-          "title": "Add Payment Integration to Sui Script/Job Configuration",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-19T00:02:49Z",
-          "updated_at": "2025-08-19T00:02:49Z",
-          "html_url": "https://github.com/BreadchainCoop/sui-walrus-deployment/issues/8",
-          "labels": [
-            "enhancement"
-          ],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 7,
-          "title": "Add Mainnet Configuration for Sui Walrus Deployment",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-19T00:02:35Z",
-          "updated_at": "2025-08-19T00:02:35Z",
-          "html_url": "https://github.com/BreadchainCoop/sui-walrus-deployment/issues/7",
-          "labels": [
-            "enhancement"
-          ],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 6,
-          "title": "Configurable Auto-Deployment Blocking with Payment Integration",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-19T00:02:22Z",
-          "updated_at": "2025-08-19T00:02:22Z",
-          "html_url": "https://github.com/BreadchainCoop/sui-walrus-deployment/issues/6",
-          "labels": [
-            "enhancement"
-          ],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 5,
-          "title": "GitHub Client-Side PR Creation from External Storage",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-19T00:02:07Z",
-          "updated_at": "2025-08-19T00:02:07Z",
-          "html_url": "https://github.com/BreadchainCoop/sui-walrus-deployment/issues/5",
-          "labels": [
-            "enhancement"
-          ],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 4,
-          "title": "Add Project Merge and Distribution Build Feature",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-19T00:01:52Z",
-          "updated_at": "2025-08-19T00:01:52Z",
-          "html_url": "https://github.com/BreadchainCoop/sui-walrus-deployment/issues/4",
-          "labels": [
-            "enhancement"
-          ],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 3,
-          "title": "Simplify Current CI/CD Pipeline",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-19T00:01:39Z",
-          "updated_at": "2025-08-19T00:01:39Z",
-          "html_url": "https://github.com/BreadchainCoop/sui-walrus-deployment/issues/3",
-          "labels": [
-            "enhancement"
-          ],
           "assignees": [],
           "comments": []
         }
