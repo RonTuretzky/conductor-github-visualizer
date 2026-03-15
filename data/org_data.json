@@ -1,15 +1,207 @@
 {
   "organization": "BreadchainCoop",
-  "generated_at": "2026-03-14T00:16:26.699222+00:00",
-  "generation_time_seconds": 120.08,
+  "generated_at": "2026-03-15T00:18:50.016587+00:00",
+  "generation_time_seconds": 116.16,
   "stats": {
     "total_repos": 44,
     "repos_with_prs": 24,
     "repos_with_issues": 27,
-    "total_open_prs": 90,
+    "total_open_prs": 88,
     "total_open_issues": 231
   },
   "trees": {
+    "app-stacks": {
+      "name": "app-stacks",
+      "branch": "dev",
+      "repo_name": "app-stacks",
+      "pr_number": null,
+      "pr_title": null,
+      "pr_url": null,
+      "pr_author": null,
+      "last_updated": "2026-03-14T10:58:01Z",
+      "ci_status": "",
+      "github_url": "https://github.com/BreadchainCoop/app-stacks",
+      "is_draft": false,
+      "labels": [],
+      "commits_from_parent": [],
+      "parent_branch_name": null,
+      "children": [
+        {
+          "name": "Implement UI design",
+          "branch": "dev",
+          "repo_name": "app-stacks",
+          "pr_number": 5,
+          "pr_title": "Implement UI design",
+          "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/5",
+          "pr_author": "Olaleye-Blessing",
+          "last_updated": "2026-03-14T11:05:06Z",
+          "ci_status": "pass",
+          "github_url": "https://github.com/BreadchainCoop/app-stacks",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [],
+          "parent_branch_name": "dev",
+          "children": [
+            {
+              "name": "WIP: improve stacks state and local development",
+              "branch": "improve-devvv",
+              "repo_name": "app-stacks",
+              "pr_number": 40,
+              "pr_title": "WIP: improve stacks state and local development",
+              "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/40",
+              "pr_author": "Olaleye-Blessing",
+              "last_updated": "2026-03-09T05:20:52Z",
+              "ci_status": "fail",
+              "github_url": "https://github.com/BreadchainCoop/app-stacks",
+              "is_draft": true,
+              "labels": [],
+              "commits_from_parent": [
+                {
+                  "sha": "4f600e5b1668a692a09552072fefe304b0714808",
+                  "short_sha": "4f600e5",
+                  "message": "WIP: improve stacks state and local development",
+                  "author": "Olaleye Blessing",
+                  "author_login": "Olaleye-Blessing",
+                  "author_avatar_url": "https://avatars.githubusercontent.com/u/70102539?v=4",
+                  "date": "2026-03-09",
+                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/4f600e5b1668a692a09552072fefe304b0714808"
+                }
+              ],
+              "parent_branch_name": "dev",
+              "children": []
+            },
+            {
+              "name": "Add Supabase",
+              "branch": "exo404-supabase-integration",
+              "repo_name": "app-stacks",
+              "pr_number": 39,
+              "pr_title": "Add Supabase",
+              "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/39",
+              "pr_author": "exo404",
+              "last_updated": "2026-03-14T10:27:48Z",
+              "ci_status": "pass",
+              "github_url": "https://github.com/BreadchainCoop/app-stacks",
+              "is_draft": false,
+              "labels": [
+                "enhancement"
+              ],
+              "commits_from_parent": [
+                {
+                  "sha": "bd086df3496632c324f7e9c32efb9478be40b914",
+                  "short_sha": "bd086df",
+                  "message": "Track user status after onboarding",
+                  "author": "Olaleye Blessing",
+                  "author_login": "Olaleye-Blessing",
+                  "author_avatar_url": "https://avatars.githubusercontent.com/u/70102539?v=4",
+                  "date": "2026-03-11",
+                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/bd086df3496632c324f7e9c32efb9478be40b914"
+                },
+                {
+                  "sha": "d92a7480d0a2d54759a1368541db7330ac3dd805",
+                  "short_sha": "d92a748",
+                  "message": "feat: add supabase",
+                  "author": "exo404",
+                  "author_login": "exo404",
+                  "author_avatar_url": "https://avatars.githubusercontent.com/u/115696623?v=4",
+                  "date": "2026-03-07",
+                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/d92a7480d0a2d54759a1368541db7330ac3dd805"
+                },
+                {
+                  "sha": "c11b8c27d30e0660bf10579672b316370c11731b",
+                  "short_sha": "c11b8c2",
+                  "message": "Save user and stack data in supabase",
+                  "author": "Olaleye Blessing",
+                  "author_login": "Olaleye-Blessing",
+                  "author_avatar_url": "https://avatars.githubusercontent.com/u/70102539?v=4",
+                  "date": "2026-03-12",
+                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/c11b8c27d30e0660bf10579672b316370c11731b"
+                },
+                {
+                  "sha": "ee594787742fc5ff6beea06e4b16727c4e33e463",
+                  "short_sha": "ee59478",
+                  "message": "Improve user data in supabase",
+                  "author": "Olaleye Blessing",
+                  "author_login": "Olaleye-Blessing",
+                  "author_avatar_url": "https://avatars.githubusercontent.com/u/70102539?v=4",
+                  "date": "2026-03-14",
+                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/ee594787742fc5ff6beea06e4b16727c4e33e463"
+                }
+              ],
+              "parent_branch_name": "dev",
+              "children": []
+            },
+            {
+              "name": "Privy embedded wallet funding",
+              "branch": "feat/privy-embedded-wallet-funding",
+              "repo_name": "app-stacks",
+              "pr_number": 36,
+              "pr_title": "Privy embedded wallet funding",
+              "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/36",
+              "pr_author": "franrolotti",
+              "last_updated": "2026-03-08T02:55:59Z",
+              "ci_status": "pass",
+              "github_url": "https://github.com/BreadchainCoop/app-stacks",
+              "is_draft": false,
+              "labels": [],
+              "commits_from_parent": [
+                {
+                  "sha": "58495a02dcc6952889b97f275cdff91d14737800",
+                  "short_sha": "58495a0",
+                  "message": "feat(privy): add embedded wallet funding button via Privy fundWallet",
+                  "author": "Francisco Rolotti",
+                  "author_login": "franrolotti",
+                  "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
+                  "date": "2026-02-25",
+                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/58495a02dcc6952889b97f275cdff91d14737800"
+                },
+                {
+                  "sha": "f6a19829837c216cf60479c01c1ca00e32f6eded",
+                  "short_sha": "f6a1982",
+                  "message": "feat(privy): improve stacks wallet funding flow and make chain ID configurable",
+                  "author": "Francisco Rolotti",
+                  "author_login": "franrolotti",
+                  "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
+                  "date": "2026-02-27",
+                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/f6a19829837c216cf60479c01c1ca00e32f6eded"
+                },
+                {
+                  "sha": "96fd5f7742a3753bcec3628bee7dc9cf40db6dfc",
+                  "short_sha": "96fd5f7",
+                  "message": "Use copy component & hook from lib",
+                  "author": "Olaleye Blessing",
+                  "author_login": "Olaleye-Blessing",
+                  "author_avatar_url": "https://avatars.githubusercontent.com/u/70102539?v=4",
+                  "date": "2026-02-25",
+                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/96fd5f7742a3753bcec3628bee7dc9cf40db6dfc"
+                },
+                {
+                  "sha": "fb7a84b5c3d2343bbec116c7644f7276048a9bbd",
+                  "short_sha": "fb7a84b",
+                  "message": "refactor(navbar): extract Privy wallet funding flow into useWalletFunding hook",
+                  "author": "Francisco Rolotti",
+                  "author_login": "franrolotti",
+                  "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
+                  "date": "2026-03-02",
+                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/fb7a84b5c3d2343bbec116c7644f7276048a9bbd"
+                },
+                {
+                  "sha": "c9af57b17d11ab6eaf5f65dc44556b1f9acb4532",
+                  "short_sha": "c9af57b",
+                  "message": "fix(wallet-funding): validate chain/address inputs and handle native refresh err",
+                  "author": "Francisco Rolotti",
+                  "author_login": "franrolotti",
+                  "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
+                  "date": "2026-03-02",
+                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/c9af57b17d11ab6eaf5f65dc44556b1f9acb4532"
+                }
+              ],
+              "parent_branch_name": "dev",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
     "solidarity-fund": {
       "name": "solidarity-fund",
       "branch": "dev",
@@ -671,244 +863,6 @@
           ],
           "parent_branch_name": "dev",
           "children": []
-        },
-        {
-          "name": "Add comprehensive static frontend specification",
-          "branch": "frontend-spec",
-          "repo_name": "saving-circles",
-          "pr_number": 48,
-          "pr_title": "Add comprehensive static frontend specification",
-          "pr_url": "https://github.com/BreadchainCoop/saving-circles/pull/48",
-          "pr_author": "RonTuretzky",
-          "last_updated": "2025-10-20T21:48:36Z",
-          "ci_status": "pass",
-          "github_url": "https://github.com/BreadchainCoop/saving-circles",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "97070abd5689a5d10e5c75fd17e4c974380b0e11",
-              "short_sha": "97070ab",
-              "message": "feat: add comprehensive static frontend specification",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-09-28",
-              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/97070abd5689a5d10e5c75fd17e4c974380b0e11"
-            }
-          ],
-          "parent_branch_name": "dev",
-          "children": []
-        }
-      ]
-    },
-    "app-stacks": {
-      "name": "app-stacks",
-      "branch": "dev",
-      "repo_name": "app-stacks",
-      "pr_number": null,
-      "pr_title": null,
-      "pr_url": null,
-      "pr_author": null,
-      "last_updated": "2026-03-12T16:20:40Z",
-      "ci_status": "",
-      "github_url": "https://github.com/BreadchainCoop/app-stacks",
-      "is_draft": false,
-      "labels": [],
-      "commits_from_parent": [],
-      "parent_branch_name": null,
-      "children": [
-        {
-          "name": "Implement UI design",
-          "branch": "dev",
-          "repo_name": "app-stacks",
-          "pr_number": 5,
-          "pr_title": "Implement UI design",
-          "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/5",
-          "pr_author": "Olaleye-Blessing",
-          "last_updated": "2026-03-11T10:13:40Z",
-          "ci_status": "pass",
-          "github_url": "https://github.com/BreadchainCoop/app-stacks",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [],
-          "parent_branch_name": "dev",
-          "children": [
-            {
-              "name": "Track user status after onboarding",
-              "branch": "track-onboarded-user",
-              "repo_name": "app-stacks",
-              "pr_number": 44,
-              "pr_title": "Track user status after onboarding",
-              "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/44",
-              "pr_author": "Olaleye-Blessing",
-              "last_updated": "2026-03-11T19:08:12Z",
-              "ci_status": "pass",
-              "github_url": "https://github.com/BreadchainCoop/app-stacks",
-              "is_draft": false,
-              "labels": [],
-              "commits_from_parent": [
-                {
-                  "sha": "bd086df3496632c324f7e9c32efb9478be40b914",
-                  "short_sha": "bd086df",
-                  "message": "Track user status after onboarding",
-                  "author": "Olaleye Blessing",
-                  "author_login": "Olaleye-Blessing",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/70102539?v=4",
-                  "date": "2026-03-11",
-                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/bd086df3496632c324f7e9c32efb9478be40b914"
-                }
-              ],
-              "parent_branch_name": "dev",
-              "children": []
-            },
-            {
-              "name": "WIP: improve stacks state and local development",
-              "branch": "improve-devvv",
-              "repo_name": "app-stacks",
-              "pr_number": 40,
-              "pr_title": "WIP: improve stacks state and local development",
-              "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/40",
-              "pr_author": "Olaleye-Blessing",
-              "last_updated": "2026-03-09T05:20:52Z",
-              "ci_status": "fail",
-              "github_url": "https://github.com/BreadchainCoop/app-stacks",
-              "is_draft": true,
-              "labels": [],
-              "commits_from_parent": [
-                {
-                  "sha": "4f600e5b1668a692a09552072fefe304b0714808",
-                  "short_sha": "4f600e5",
-                  "message": "WIP: improve stacks state and local development",
-                  "author": "Olaleye Blessing",
-                  "author_login": "Olaleye-Blessing",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/70102539?v=4",
-                  "date": "2026-03-09",
-                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/4f600e5b1668a692a09552072fefe304b0714808"
-                }
-              ],
-              "parent_branch_name": "dev",
-              "children": []
-            },
-            {
-              "name": "Add Supabase",
-              "branch": "exo404-supabase-integration",
-              "repo_name": "app-stacks",
-              "pr_number": 39,
-              "pr_title": "Add Supabase",
-              "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/39",
-              "pr_author": "exo404",
-              "last_updated": "2026-03-13T19:54:09Z",
-              "ci_status": "fail",
-              "github_url": "https://github.com/BreadchainCoop/app-stacks",
-              "is_draft": false,
-              "labels": [
-                "enhancement"
-              ],
-              "commits_from_parent": [
-                {
-                  "sha": "bd086df3496632c324f7e9c32efb9478be40b914",
-                  "short_sha": "bd086df",
-                  "message": "Track user status after onboarding",
-                  "author": "Olaleye Blessing",
-                  "author_login": "Olaleye-Blessing",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/70102539?v=4",
-                  "date": "2026-03-11",
-                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/bd086df3496632c324f7e9c32efb9478be40b914"
-                },
-                {
-                  "sha": "d92a7480d0a2d54759a1368541db7330ac3dd805",
-                  "short_sha": "d92a748",
-                  "message": "feat: add supabase",
-                  "author": "exo404",
-                  "author_login": "exo404",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/115696623?v=4",
-                  "date": "2026-03-07",
-                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/d92a7480d0a2d54759a1368541db7330ac3dd805"
-                },
-                {
-                  "sha": "c11b8c27d30e0660bf10579672b316370c11731b",
-                  "short_sha": "c11b8c2",
-                  "message": "Save user and stack data in supabase",
-                  "author": "Olaleye Blessing",
-                  "author_login": "Olaleye-Blessing",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/70102539?v=4",
-                  "date": "2026-03-12",
-                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/c11b8c27d30e0660bf10579672b316370c11731b"
-                }
-              ],
-              "parent_branch_name": "dev",
-              "children": []
-            },
-            {
-              "name": "Privy embedded wallet funding",
-              "branch": "feat/privy-embedded-wallet-funding",
-              "repo_name": "app-stacks",
-              "pr_number": 36,
-              "pr_title": "Privy embedded wallet funding",
-              "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/36",
-              "pr_author": "franrolotti",
-              "last_updated": "2026-03-08T02:55:59Z",
-              "ci_status": "pass",
-              "github_url": "https://github.com/BreadchainCoop/app-stacks",
-              "is_draft": false,
-              "labels": [],
-              "commits_from_parent": [
-                {
-                  "sha": "58495a02dcc6952889b97f275cdff91d14737800",
-                  "short_sha": "58495a0",
-                  "message": "feat(privy): add embedded wallet funding button via Privy fundWallet",
-                  "author": "Francisco Rolotti",
-                  "author_login": "franrolotti",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-                  "date": "2026-02-25",
-                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/58495a02dcc6952889b97f275cdff91d14737800"
-                },
-                {
-                  "sha": "f6a19829837c216cf60479c01c1ca00e32f6eded",
-                  "short_sha": "f6a1982",
-                  "message": "feat(privy): improve stacks wallet funding flow and make chain ID configurable",
-                  "author": "Francisco Rolotti",
-                  "author_login": "franrolotti",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-                  "date": "2026-02-27",
-                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/f6a19829837c216cf60479c01c1ca00e32f6eded"
-                },
-                {
-                  "sha": "96fd5f7742a3753bcec3628bee7dc9cf40db6dfc",
-                  "short_sha": "96fd5f7",
-                  "message": "Use copy component & hook from lib",
-                  "author": "Olaleye Blessing",
-                  "author_login": "Olaleye-Blessing",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/70102539?v=4",
-                  "date": "2026-02-25",
-                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/96fd5f7742a3753bcec3628bee7dc9cf40db6dfc"
-                },
-                {
-                  "sha": "fb7a84b5c3d2343bbec116c7644f7276048a9bbd",
-                  "short_sha": "fb7a84b",
-                  "message": "refactor(navbar): extract Privy wallet funding flow into useWalletFunding hook",
-                  "author": "Francisco Rolotti",
-                  "author_login": "franrolotti",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-                  "date": "2026-03-02",
-                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/fb7a84b5c3d2343bbec116c7644f7276048a9bbd"
-                },
-                {
-                  "sha": "c9af57b17d11ab6eaf5f65dc44556b1f9acb4532",
-                  "short_sha": "c9af57b",
-                  "message": "fix(wallet-funding): validate chain/address inputs and handle native refresh err",
-                  "author": "Francisco Rolotti",
-                  "author_login": "franrolotti",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-                  "date": "2026-03-02",
-                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/c9af57b17d11ab6eaf5f65dc44556b1f9acb4532"
-                }
-              ],
-              "parent_branch_name": "dev",
-              "children": []
-            }
-          ]
         }
       ]
     },
@@ -2699,7 +2653,7 @@
           "pr_title": "Fix issue #14",
           "pr_url": "https://github.com/BreadchainCoop/safety-net/pull/67",
           "pr_author": "Fiuum1",
-          "last_updated": "2026-03-13T19:49:25Z",
+          "last_updated": "2026-03-14T20:08:46Z",
           "ci_status": "",
           "github_url": "https://github.com/BreadchainCoop/safety-net",
           "is_draft": false,
@@ -4081,6 +4035,237 @@
     }
   },
   "issues": {
+    "app-stacks": {
+      "repo_name": "app-stacks",
+      "github_url": "https://github.com/BreadchainCoop/app-stacks",
+      "issues": [
+        {
+          "number": 45,
+          "title": "Show stack expiration modal only to circle members (not to every visitor)",
+          "author": "Olaleye-Blessing",
+          "created_at": "2026-03-13T20:20:33Z",
+          "updated_at": "2026-03-13T20:20:33Z",
+          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/45",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 43,
+          "title": "Add email notifications for Saving Circles users",
+          "author": "franrolotti",
+          "created_at": "2026-03-11T17:57:07Z",
+          "updated_at": "2026-03-14T18:52:55Z",
+          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/43",
+          "labels": [],
+          "assignees": [],
+          "comments": [
+            {
+              "id": "IC_kwDOQBrnic7yD0wf",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "NONE",
+              "body": "Low hanging fruit for notifications that doesn't require a backend: \n\nCreate an ICS file in the frontend that can be downloaded by the user that has reminders for the deposit events. This allows them to add it to whatever calendar app they have and get reminders",
+              "createdAt": "2026-03-14T18:52:55Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/app-stacks/issues/43#issuecomment-4061088799",
+              "viewerDidAuthor": false
+            }
+          ]
+        },
+        {
+          "number": 42,
+          "title": "Explore integration for hackathon",
+          "author": "franrolotti",
+          "created_at": "2026-03-11T17:48:29Z",
+          "updated_at": "2026-03-14T18:50:15Z",
+          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/42",
+          "labels": [],
+          "assignees": [
+            "franrolotti"
+          ],
+          "comments": [
+            {
+              "id": "IC_kwDOQBrnic7yDyCa",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "NONE",
+              "body": "@franrolotti seems kind of urgent? how can I help?",
+              "createdAt": "2026-03-14T18:46:52Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/app-stacks/issues/42#issuecomment-4061077658",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOQBrnic7yDzlz",
+              "author": {
+                "login": "franrolotti"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "@RonTuretzky the deadline was extended to march the 31st so we have more time to work on a nice application for this. I'll dm you our first idea... It would be nice to have your feedback and ideas for this",
+              "createdAt": "2026-03-14T18:50:15Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [
+                {
+                  "content": "THUMBS_UP",
+                  "users": {
+                    "totalCount": 1
+                  }
+                }
+              ],
+              "url": "https://github.com/BreadchainCoop/app-stacks/issues/42#issuecomment-4061084019",
+              "viewerDidAuthor": false
+            }
+          ]
+        },
+        {
+          "number": 41,
+          "title": "Create a Stacks testnet environment for internal testing",
+          "author": "franrolotti",
+          "created_at": "2026-03-11T17:42:54Z",
+          "updated_at": "2026-03-14T21:18:33Z",
+          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/41",
+          "labels": [
+            "enhancement"
+          ],
+          "assignees": [
+            "franrolotti"
+          ],
+          "comments": [
+            {
+              "id": "IC_kwDOQBrnic7yDyZg",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "NONE",
+              "body": "[this](https://github.com/BreadchainCoop/saving-circles/issues/71) should resolve this issue?\n\n@brendaasfjnso missing a deadline",
+              "createdAt": "2026-03-14T18:47:39Z",
+              "includesCreatedEdit": true,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [
+                {
+                  "content": "THUMBS_UP",
+                  "users": {
+                    "totalCount": 1
+                  }
+                }
+              ],
+              "url": "https://github.com/BreadchainCoop/app-stacks/issues/41#issuecomment-4061079136",
+              "viewerDidAuthor": false
+            }
+          ]
+        },
+        {
+          "number": 34,
+          "title": "Implement funding flow for Privy embedded wallets",
+          "author": "franrolotti",
+          "created_at": "2026-02-25T17:47:26Z",
+          "updated_at": "2026-03-14T18:51:28Z",
+          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/34",
+          "labels": [],
+          "assignees": [
+            "franrolotti"
+          ],
+          "comments": [
+            {
+              "id": "IC_kwDOQBrnic7yD0Hz",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "NONE",
+              "body": "why not just link to fund.bread.coop?",
+              "createdAt": "2026-03-14T18:51:28Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/app-stacks/issues/34#issuecomment-4061086195",
+              "viewerDidAuthor": false
+            }
+          ]
+        },
+        {
+          "number": 22,
+          "title": "Implement the deposit module",
+          "author": "Olaleye-Blessing",
+          "created_at": "2026-02-12T23:43:52Z",
+          "updated_at": "2026-02-12T23:43:52Z",
+          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/22",
+          "labels": [
+            "not-ready"
+          ],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 1,
+          "title": "Abstract BREAD Token \u2014 Show Only USD Balances on Frontend (Inspired by Hyperliquid & Polymarket)",
+          "author": "diterra-code",
+          "created_at": "2025-10-15T21:14:26Z",
+          "updated_at": "2025-10-16T04:28:41Z",
+          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/1",
+          "labels": [
+            "documentation",
+            "help wanted"
+          ],
+          "assignees": [
+            "diterra-code",
+            "RonTuretzky",
+            "tbsoc"
+          ],
+          "comments": [
+            {
+              "id": "IC_kwDOQBrnic7LJut_",
+              "author": {
+                "login": "diterra-code"
+              },
+              "authorAssociation": "NONE",
+              "body": "Dropping this here @RonTuretzky @tbsoc @bagelface for further discussion.\n\n@RonTuretzky what do you think of my mermaid diagram skills? \n\nThe idea is to maybe after MVP of Stacks/Safety Net try to work on this UX.",
+              "createdAt": "2025-10-15T21:17:43Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [
+                {
+                  "content": "HEART",
+                  "users": {
+                    "totalCount": 1
+                  }
+                }
+              ],
+              "url": "https://github.com/BreadchainCoop/app-stacks/issues/1#issuecomment-3408325503",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOQBrnic7LMzo-",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "NONE",
+              "body": "> Dropping this here @RonTuretzky @tbsoc @bagelface for further discussion.\n> \n> @RonTuretzky what do you think of my mermaid diagram skills? \n> \n> The idea is to maybe after MVP of Stacks/Safety Net try to work on this UX.\n\n\n\n\ud83d\ude0d\ud83d\ude0d\ud83d\ude0d\ud83d\ude0d\ud83d\ude0d\n\n\nI think with the lifi widget like we have in the crowdstaking app this is quite doable. ",
+              "createdAt": "2025-10-16T04:28:41Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/app-stacks/issues/1#issuecomment-3409132094",
+              "viewerDidAuthor": false
+            }
+          ]
+        }
+      ]
+    },
     "solidarity-fund": {
       "repo_name": "solidarity-fund",
       "github_url": "https://github.com/BreadchainCoop/solidarity-fund",
@@ -5591,13 +5776,74 @@
           "title": "Improve upgrade safety and deployment guardrail workflows",
           "author": "franrolotti",
           "created_at": "2026-03-09T11:26:48Z",
-          "updated_at": "2026-03-11T17:58:55Z",
+          "updated_at": "2026-03-14T19:05:03Z",
           "html_url": "https://github.com/BreadchainCoop/saving-circles/issues/129",
           "labels": [],
           "assignees": [
             "franrolotti"
           ],
-          "comments": []
+          "comments": [
+            {
+              "id": "IC_kwDONW6FcM7yDy5U",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "etherform literally solves this though?",
+              "createdAt": "2026-03-14T18:48:43Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/saving-circles/issues/129#issuecomment-4061081172",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDONW6FcM7yD11M",
+              "author": {
+                "login": "franrolotti"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "@RonTuretzky yes, and i'm now seeing the importance of etherform for us... do you think we should put an effort to ship a working version of etherform now and add it to this PR?\n\nI did this PR because I needed them for the deployment and upgrading for the testing rounds",
+              "createdAt": "2026-03-14T18:55:15Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/saving-circles/issues/129#issuecomment-4061093196",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDONW6FcM7yD2kv",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "@hudsonhrh you mentioned that etherform is ready now? ",
+              "createdAt": "2026-03-14T18:56:43Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/saving-circles/issues/129#issuecomment-4061096239",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDONW6FcM7yEAJw",
+              "author": {
+                "login": "hudsonhrh"
+              },
+              "authorAssociation": "NONE",
+              "body": "> @hudsonhrh you mentioned that etherform is ready now? \n\nfor certain use cases yes. is cross chain support needed? also block scout verification is still inconsistent. wouldn't say it's fully ready needs some work. will make some progress on it monday but lmk what the needs are for this repo and i can make sure its ready ",
+              "createdAt": "2026-03-14T19:05:03Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/saving-circles/issues/129#issuecomment-4061135472",
+              "viewerDidAuthor": false
+            }
+          ]
         },
         {
           "number": 126,
@@ -5630,20 +5876,36 @@
           "title": "Fee-on-transfer / rebasing ERC20s break deposit accounting and can cause cross-circle fund loss / insolvency",
           "author": "franrolotti",
           "created_at": "2026-02-24T10:18:45Z",
-          "updated_at": "2026-03-11T17:50:39Z",
+          "updated_at": "2026-03-14T18:44:56Z",
           "html_url": "https://github.com/BreadchainCoop/saving-circles/issues/122",
           "labels": [
             "enhancement"
           ],
           "assignees": [],
-          "comments": []
+          "comments": [
+            {
+              "id": "IC_kwDONW6FcM7yDxHv",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "rebasing / transfer on fee tokens need to be handled seperately \n\ngood catch, this is critical and the rebasing token feature is one of our key value props ",
+              "createdAt": "2026-03-14T18:44:56Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/saving-circles/issues/122#issuecomment-4061073903",
+              "viewerDidAuthor": false
+            }
+          ]
         },
         {
           "number": 120,
           "title": "Optimize `decommission()` refund logic to avoid gas blowups",
           "author": "franrolotti",
           "created_at": "2026-02-23T09:41:14Z",
-          "updated_at": "2026-03-11T17:50:09Z",
+          "updated_at": "2026-03-14T18:42:55Z",
           "html_url": "https://github.com/BreadchainCoop/saving-circles/issues/120",
           "labels": [
             "nice to have"
@@ -5651,14 +5913,30 @@
           "assignees": [
             "franrolotti"
           ],
-          "comments": []
+          "comments": [
+            {
+              "id": "IC_kwDONW6FcM7yDwAu",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "proposing to move this into backlog as its an exterme edge case that we probably will never encounter unless we move to mono-permissionless stacks",
+              "createdAt": "2026-03-14T18:42:29Z",
+              "includesCreatedEdit": true,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/saving-circles/issues/120#issuecomment-4061069358",
+              "viewerDidAuthor": false
+            }
+          ]
         },
         {
           "number": 118,
           "title": "Technical Spec for Gelato Automation Integration for Stacks",
           "author": "exo404",
           "created_at": "2026-02-13T18:24:38Z",
-          "updated_at": "2026-03-11T17:57:34Z",
+          "updated_at": "2026-03-14T20:05:05Z",
           "html_url": "https://github.com/BreadchainCoop/saving-circles/issues/118",
           "labels": [
             "documentation",
@@ -5694,8 +5972,45 @@
               "includesCreatedEdit": false,
               "isMinimized": false,
               "minimizedReason": "",
-              "reactionGroups": [],
+              "reactionGroups": [
+                {
+                  "content": "THUMBS_UP",
+                  "users": {
+                    "totalCount": 1
+                  }
+                }
+              ],
               "url": "https://github.com/BreadchainCoop/saving-circles/issues/118#issuecomment-4041052537",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDONW6FcM7yDucY",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "don't understand why we need a spec for this feature? ",
+              "createdAt": "2026-03-14T18:39:12Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/saving-circles/issues/118#issuecomment-4061062936",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDONW6FcM7yEjR_",
+              "author": {
+                "login": "exo404"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "> don't understand why we need a spec for this feature?\n\njust to sync with design team and track progresses",
+              "createdAt": "2026-03-14T20:05:05Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/saving-circles/issues/118#issuecomment-4061279359",
               "viewerDidAuthor": false
             }
           ]
@@ -5914,7 +6229,7 @@
           "title": "Define policy when a member stops depositing mid-circle [v2 scope]",
           "author": "franrolotti",
           "created_at": "2025-12-02T12:34:59Z",
-          "updated_at": "2026-01-15T17:51:20Z",
+          "updated_at": "2026-03-14T18:50:20Z",
           "html_url": "https://github.com/BreadchainCoop/saving-circles/issues/65",
           "labels": [
             "question"
@@ -5924,7 +6239,23 @@
             "franrolotti",
             "exo404"
           ],
-          "comments": []
+          "comments": [
+            {
+              "id": "IC_kwDONW6FcM7yDzoN",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "I don't understand this issue ... this is what saving circles are? \n\nI don't think this is in scope for v1 and i'm very confused by the deadline. ",
+              "createdAt": "2026-03-14T18:50:20Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/saving-circles/issues/65#issuecomment-4061084173",
+              "viewerDidAuthor": false
+            }
+          ]
         },
         {
           "number": 37,
@@ -5983,142 +6314,6 @@
               "minimizedReason": "",
               "reactionGroups": [],
               "url": "https://github.com/BreadchainCoop/saving-circles/issues/8#issuecomment-2832375345",
-              "viewerDidAuthor": false
-            }
-          ]
-        }
-      ]
-    },
-    "app-stacks": {
-      "repo_name": "app-stacks",
-      "github_url": "https://github.com/BreadchainCoop/app-stacks",
-      "issues": [
-        {
-          "number": 45,
-          "title": "Show stack expiration modal only to circle members (not to every visitor)",
-          "author": "Olaleye-Blessing",
-          "created_at": "2026-03-13T20:20:33Z",
-          "updated_at": "2026-03-13T20:20:33Z",
-          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/45",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 43,
-          "title": "Add email notifications for Saving Circles users",
-          "author": "franrolotti",
-          "created_at": "2026-03-11T17:57:07Z",
-          "updated_at": "2026-03-11T17:57:07Z",
-          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/43",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 42,
-          "title": "Explore integration for hackathon",
-          "author": "franrolotti",
-          "created_at": "2026-03-11T17:48:29Z",
-          "updated_at": "2026-03-11T17:58:10Z",
-          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/42",
-          "labels": [],
-          "assignees": [
-            "franrolotti"
-          ],
-          "comments": []
-        },
-        {
-          "number": 41,
-          "title": "Create a Stacks testnet environment for internal testing",
-          "author": "franrolotti",
-          "created_at": "2026-03-11T17:42:54Z",
-          "updated_at": "2026-03-11T17:58:05Z",
-          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/41",
-          "labels": [],
-          "assignees": [
-            "franrolotti"
-          ],
-          "comments": []
-        },
-        {
-          "number": 34,
-          "title": "Implement funding flow for Privy embedded wallets",
-          "author": "franrolotti",
-          "created_at": "2026-02-25T17:47:26Z",
-          "updated_at": "2026-02-25T17:47:26Z",
-          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/34",
-          "labels": [],
-          "assignees": [
-            "franrolotti"
-          ],
-          "comments": []
-        },
-        {
-          "number": 22,
-          "title": "Implement the deposit module",
-          "author": "Olaleye-Blessing",
-          "created_at": "2026-02-12T23:43:52Z",
-          "updated_at": "2026-02-12T23:43:52Z",
-          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/22",
-          "labels": [
-            "not-ready"
-          ],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 1,
-          "title": "Abstract BREAD Token \u2014 Show Only USD Balances on Frontend (Inspired by Hyperliquid & Polymarket)",
-          "author": "diterra-code",
-          "created_at": "2025-10-15T21:14:26Z",
-          "updated_at": "2025-10-16T04:28:41Z",
-          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/1",
-          "labels": [
-            "documentation",
-            "help wanted"
-          ],
-          "assignees": [
-            "diterra-code",
-            "RonTuretzky",
-            "tbsoc"
-          ],
-          "comments": [
-            {
-              "id": "IC_kwDOQBrnic7LJut_",
-              "author": {
-                "login": "diterra-code"
-              },
-              "authorAssociation": "NONE",
-              "body": "Dropping this here @RonTuretzky @tbsoc @bagelface for further discussion.\n\n@RonTuretzky what do you think of my mermaid diagram skills? \n\nThe idea is to maybe after MVP of Stacks/Safety Net try to work on this UX.",
-              "createdAt": "2025-10-15T21:17:43Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [
-                {
-                  "content": "HEART",
-                  "users": {
-                    "totalCount": 1
-                  }
-                }
-              ],
-              "url": "https://github.com/BreadchainCoop/app-stacks/issues/1#issuecomment-3408325503",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOQBrnic7LMzo-",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "NONE",
-              "body": "> Dropping this here @RonTuretzky @tbsoc @bagelface for further discussion.\n> \n> @RonTuretzky what do you think of my mermaid diagram skills? \n> \n> The idea is to maybe after MVP of Stacks/Safety Net try to work on this UX.\n\n\n\n\ud83d\ude0d\ud83d\ude0d\ud83d\ude0d\ud83d\ude0d\ud83d\ude0d\n\n\nI think with the lifi widget like we have in the crowdstaking app this is quite doable. ",
-              "createdAt": "2025-10-16T04:28:41Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/app-stacks/issues/1#issuecomment-3409132094",
               "viewerDidAuthor": false
             }
           ]
