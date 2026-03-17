@@ -1,13 +1,13 @@
 {
   "organization": "BreadchainCoop",
-  "generated_at": "2026-03-16T00:18:42.861204+00:00",
-  "generation_time_seconds": 114.59,
+  "generated_at": "2026-03-17T00:18:10.652662+00:00",
+  "generation_time_seconds": 156.3,
   "stats": {
     "total_repos": 44,
     "repos_with_prs": 24,
     "repos_with_issues": 27,
-    "total_open_prs": 87,
-    "total_open_issues": 230
+    "total_open_prs": 86,
+    "total_open_issues": 227
   },
   "trees": {
     "crowdstake.fun": {
@@ -18,7 +18,7 @@
       "pr_title": null,
       "pr_url": null,
       "pr_author": null,
-      "last_updated": "2026-03-15T21:59:33Z",
+      "last_updated": "2026-03-16T22:02:57Z",
       "ci_status": "",
       "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
       "is_draft": false,
@@ -26,6 +26,74 @@
       "commits_from_parent": [],
       "parent_branch_name": null,
       "children": [
+        {
+          "name": "Implement TimeWeightedVotingPower with exact checkpoint walk",
+          "branch": "RonTuretzky/fix-issue-48",
+          "repo_name": "crowdstake.fun",
+          "pr_number": 88,
+          "pr_title": "Implement TimeWeightedVotingPower with exact checkpoint walking",
+          "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/88",
+          "pr_author": "RonTuretzky",
+          "last_updated": "2026-03-16T21:56:19Z",
+          "ci_status": "pass",
+          "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "84faaf13e36b1f94ae4c72b438b16a208e625531",
+              "short_sha": "84faaf1",
+              "message": "Implement TimeWeightedVotingPower strategy with exact checkpoint walking",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2026-03-16",
+              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/84faaf13e36b1f94ae4c72b438b16a208e625531"
+            },
+            {
+              "sha": "deddaf42570a05c3caa8a28edfe297c9366d749b",
+              "short_sha": "deddaf4",
+              "message": "chore: auto-format code with forge fmt [auto-format]",
+              "author": "github-actions[bot]",
+              "author_login": "github-actions[bot]",
+              "author_avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+              "date": "2026-03-16",
+              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/deddaf42570a05c3caa8a28edfe297c9366d749b"
+            },
+            {
+              "sha": "5f6d2b3c4d9ae938b05cc629339fb3c77ffc0833",
+              "short_sha": "5f6d2b3",
+              "message": "refactor: derive lookback from cycle module instead of separate parameter",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2026-03-16",
+              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/5f6d2b3c4d9ae938b05cc629339fb3c77ffc0833"
+            },
+            {
+              "sha": "c045208c090beec32035c77bb0ddc518e4d7a723",
+              "short_sha": "c045208",
+              "message": "chore: auto-format code with forge fmt [auto-format]",
+              "author": "github-actions[bot]",
+              "author_login": "github-actions[bot]",
+              "author_avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+              "date": "2026-03-16",
+              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/c045208c090beec32035c77bb0ddc518e4d7a723"
+            },
+            {
+              "sha": "4a30b40de9151fbaeb59eaff0f49843e66d8d621",
+              "short_sha": "4a30b40",
+              "message": "Merge branch 'main' of https://github.com/BreadchainCoop/crowdstake.fun into Ron",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2026-03-16",
+              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/4a30b40de9151fbaeb59eaff0f49843e66d8d621"
+            }
+          ],
+          "parent_branch_name": "main",
+          "children": []
+        },
         {
           "name": "feat: add standalone DistributionNFTModule for Issue #24",
           "branch": "feat/issue-24-nft-module",
@@ -59,70 +127,269 @@
           "commits_from_parent": [],
           "parent_branch_name": "main",
           "children": []
-        },
+        }
+      ]
+    },
+    "etherform": {
+      "name": "etherform",
+      "branch": "main",
+      "repo_name": "etherform",
+      "pr_number": null,
+      "pr_title": null,
+      "pr_url": null,
+      "pr_author": null,
+      "last_updated": "2026-03-16T21:59:07Z",
+      "ci_status": "",
+      "github_url": "https://github.com/BreadchainCoop/etherform",
+      "is_draft": false,
+      "labels": [],
+      "commits_from_parent": [],
+      "parent_branch_name": null,
+      "children": [
         {
-          "name": " Implement Distribution Strategy Module ",
-          "branch": "issue-9-distribution-strategy-module",
-          "repo_name": "crowdstake.fun",
-          "pr_number": 37,
-          "pr_title": " Implement Distribution Strategy Module ",
-          "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/37",
-          "pr_author": "RonTuretzky",
-          "last_updated": "2026-03-15T21:59:34Z",
-          "ci_status": "pass",
-          "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
+          "name": "feat: add deployment-foundry-profile input",
+          "branch": "hudsonhrh/deployment-foundry-profile",
+          "repo_name": "etherform",
+          "pr_number": 24,
+          "pr_title": "feat: add deployment-foundry-profile input",
+          "pr_url": "https://github.com/BreadchainCoop/etherform/pull/24",
+          "pr_author": "hudsonhrh",
+          "last_updated": "2026-03-01T22:11:01Z",
+          "ci_status": "",
+          "github_url": "https://github.com/BreadchainCoop/etherform",
           "is_draft": false,
           "labels": [],
           "commits_from_parent": [
             {
-              "sha": "193905ed3b4b8c321675c52b8406f9ce0bc541f2",
-              "short_sha": "193905e",
-              "message": "Initial commit with Distribution Strategy Module",
+              "sha": "e4ef95fbf0a980a069587c729a34bd1947e88bd9",
+              "short_sha": "e4ef95f",
+              "message": "feat: add deployment-foundry-profile input for deploy steps",
+              "author": "hudsonhrh",
+              "author_login": "hudsonhrh",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/76409831?v=4",
+              "date": "2026-03-01",
+              "html_url": "https://github.com/BreadchainCoop/etherform/commit/e4ef95fbf0a980a069587c729a34bd1947e88bd9"
+            }
+          ],
+          "parent_branch_name": "main",
+          "children": []
+        },
+        {
+          "name": "fix: Resolve all 13 reported issues",
+          "branch": "feat/all-issues",
+          "repo_name": "etherform",
+          "pr_number": 21,
+          "pr_title": "fix: Resolve all 13 reported issues",
+          "pr_url": "https://github.com/BreadchainCoop/etherform/pull/21",
+          "pr_author": "RonTuretzky",
+          "last_updated": "2026-02-12T19:16:47Z",
+          "ci_status": "",
+          "github_url": "https://github.com/BreadchainCoop/etherform",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "bfe2da1afc2f05f455fb7a796595e78e193c2383",
+              "short_sha": "bfe2da1",
+              "message": "fix: resolve all 13 reported issues",
               "author": "Ron Turetzky",
               "author_login": "RonTuretzky",
               "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-08-16",
-              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/193905ed3b4b8c321675c52b8406f9ce0bc541f2"
+              "date": "2026-02-12",
+              "html_url": "https://github.com/BreadchainCoop/etherform/commit/bfe2da1afc2f05f455fb7a796595e78e193c2383"
+            }
+          ],
+          "parent_branch_name": "main",
+          "children": []
+        },
+        {
+          "name": "fix: address PR #13 review comments on CI/CD workflow",
+          "branch": "RonTuretzky/pr13-file-rename",
+          "repo_name": "etherform",
+          "pr_number": 18,
+          "pr_title": "fix: address PR #13 review comments on CI/CD workflow",
+          "pr_url": "https://github.com/BreadchainCoop/etherform/pull/18",
+          "pr_author": "RonTuretzky",
+          "last_updated": "2026-01-26T19:10:34Z",
+          "ci_status": "",
+          "github_url": "https://github.com/BreadchainCoop/etherform",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "7ecbc928e85f4d855d32973b1e42045d1c9b34bc",
+              "short_sha": "7ecbc92",
+              "message": "fix: address PR #13 review comments",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2026-01-26",
+              "html_url": "https://github.com/BreadchainCoop/etherform/commit/7ecbc928e85f4d855d32973b1e42045d1c9b34bc"
+            }
+          ],
+          "parent_branch_name": "main",
+          "children": []
+        },
+        {
+          "name": "Update Main ",
+          "branch": "implement-cicd-spec",
+          "repo_name": "etherform",
+          "pr_number": 13,
+          "pr_title": "Update Main ",
+          "pr_url": "https://github.com/BreadchainCoop/etherform/pull/13",
+          "pr_author": "RonTuretzky",
+          "last_updated": "2026-01-12T18:09:43Z",
+          "ci_status": "pass",
+          "github_url": "https://github.com/BreadchainCoop/etherform",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "c8aa306894ad43d1eab73984b85dd546f309504d",
+              "short_sha": "c8aa306",
+              "message": "feat: add all-in-one foundry-cicd reusable workflow",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-11-30",
+              "html_url": "https://github.com/BreadchainCoop/etherform/commit/c8aa306894ad43d1eab73984b85dd546f309504d"
             },
             {
-              "sha": "3756e7208d30de8c44d72b488fc9f49ce787115f",
-              "short_sha": "3756e72",
-              "message": "feat: Implement Distribution Strategy Module for issue #9",
+              "sha": "be6eb8ba4d7ca5c3837da5f432708867a96efbfa",
+              "short_sha": "be6eb8b",
+              "message": "fix: verification step passes RPC_URL and fails properly",
               "author": "Ron Turetzky",
               "author_login": "RonTuretzky",
               "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-08-16",
-              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/3756e7208d30de8c44d72b488fc9f49ce787115f"
+              "date": "2025-11-30",
+              "html_url": "https://github.com/BreadchainCoop/etherform/commit/be6eb8ba4d7ca5c3837da5f432708867a96efbfa"
             },
             {
-              "sha": "ae48b73e35c21b27e1e5c34e0bde58d61887625e",
-              "short_sha": "ae48b73",
-              "message": "Merge remote-tracking branch 'origin/main' into RonTuretzky/palenque",
+              "sha": "a02d53b3cd2179cd5a3b019bba8376838c106e69",
+              "short_sha": "a02d53b",
+              "message": "fix: use fully qualified contract names for verification",
               "author": "Ron Turetzky",
               "author_login": "RonTuretzky",
               "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-08-16",
-              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/ae48b73e35c21b27e1e5c34e0bde58d61887625e"
+              "date": "2025-11-30",
+              "html_url": "https://github.com/BreadchainCoop/etherform/commit/a02d53b3cd2179cd5a3b019bba8376838c106e69"
             },
             {
-              "sha": "b7bc414702cb0f84dfc497071758ad3f31f9dfd5",
-              "short_sha": "b7bc414",
-              "message": "fix: Restore submodules and remappings to original state",
+              "sha": "7edff3542ddf395eaab8135104d56e63318722ff",
+              "short_sha": "7edff35",
+              "message": "fix: use upgrades-path for fallback to fix path resolution",
               "author": "Ron Turetzky",
               "author_login": "RonTuretzky",
               "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-08-16",
-              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/b7bc414702cb0f84dfc497071758ad3f31f9dfd5"
+              "date": "2025-11-30",
+              "html_url": "https://github.com/BreadchainCoop/etherform/commit/7edff3542ddf395eaab8135104d56e63318722ff"
             },
             {
-              "sha": "2525cad619bb1d041c791edb02644525d0ad1dc9",
-              "short_sha": "2525cad",
-              "message": "chore: fmt",
+              "sha": "89122db37219be5ff24f96db3484031ee6106212",
+              "short_sha": "89122db",
+              "message": "refactor: run upgrade validation via OZ CLI instead of script",
               "author": "Ron Turetzky",
               "author_login": "RonTuretzky",
               "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-08-16",
-              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/2525cad619bb1d041c791edb02644525d0ad1dc9"
+              "date": "2025-11-30",
+              "html_url": "https://github.com/BreadchainCoop/etherform/commit/89122db37219be5ff24f96db3484031ee6106212"
+            }
+          ],
+          "parent_branch_name": "main",
+          "children": [
+            {
+              "name": "refactor: replace submodule with local testing framework",
+              "branch": "refactor/workflow-testing-framework",
+              "repo_name": "etherform",
+              "pr_number": 15,
+              "pr_title": "refactor: replace submodule with local testing framework",
+              "pr_url": "https://github.com/BreadchainCoop/etherform/pull/15",
+              "pr_author": "RonTuretzky",
+              "last_updated": "2025-12-27T21:36:05Z",
+              "ci_status": "pass",
+              "github_url": "https://github.com/BreadchainCoop/etherform",
+              "is_draft": false,
+              "labels": [],
+              "commits_from_parent": [
+                {
+                  "sha": "87e5c78d1cb2f207c0e589d0c80c305bcb69d5b8",
+                  "short_sha": "87e5c78",
+                  "message": "refactor: replace submodule with local testing framework",
+                  "author": "Ron Turetzky",
+                  "author_login": "RonTuretzky",
+                  "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+                  "date": "2025-12-27",
+                  "html_url": "https://github.com/BreadchainCoop/etherform/commit/87e5c78d1cb2f207c0e589d0c80c305bcb69d5b8"
+                }
+              ],
+              "parent_branch_name": "implement-cicd-spec",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "feat: Etherform workflow improvements",
+          "branch": "foundry-profile-input",
+          "repo_name": "etherform",
+          "pr_number": 6,
+          "pr_title": "feat: Etherform workflow improvements",
+          "pr_url": "https://github.com/BreadchainCoop/etherform/pull/6",
+          "pr_author": "hudsonhrh",
+          "last_updated": "2025-12-07T01:02:48Z",
+          "ci_status": "",
+          "github_url": "https://github.com/BreadchainCoop/etherform",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "3c3048e7fc3f988abb7dfc9e9bba8933874013e2",
+              "short_sha": "3c3048e",
+              "message": "feat: add deployment-foundry-profile input to workflows",
+              "author": "hudsonhrh",
+              "author_login": "hudsonhrh",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/76409831?v=4",
+              "date": "2025-12-04",
+              "html_url": "https://github.com/BreadchainCoop/etherform/commit/3c3048e7fc3f988abb7dfc9e9bba8933874013e2"
+            },
+            {
+              "sha": "58ddecdeca58e81eae1e18b3bd67dd6fa69e57c6",
+              "short_sha": "58ddecd",
+              "message": "docs: add deployment-foundry-profile documentation",
+              "author": "hudsonhrh",
+              "author_login": "hudsonhrh",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/76409831?v=4",
+              "date": "2025-12-04",
+              "html_url": "https://github.com/BreadchainCoop/etherform/commit/58ddecdeca58e81eae1e18b3bd67dd6fa69e57c6"
+            },
+            {
+              "sha": "77f745e35ab0b03b5fe28d796eee0c038f985973",
+              "short_sha": "77f745e",
+              "message": "feat: make blockscout verification optional",
+              "author": "hudsonhrh",
+              "author_login": "hudsonhrh",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/76409831?v=4",
+              "date": "2025-12-04",
+              "html_url": "https://github.com/BreadchainCoop/etherform/commit/77f745e35ab0b03b5fe28d796eee0c038f985973"
+            },
+            {
+              "sha": "9d2381f8705656677e90ac6c8ab851711331e357",
+              "short_sha": "9d2381f",
+              "message": "fix: fail verification step when all retries exhausted",
+              "author": "hudsonhrh",
+              "author_login": "hudsonhrh",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/76409831?v=4",
+              "date": "2025-12-04",
+              "html_url": "https://github.com/BreadchainCoop/etherform/commit/9d2381f8705656677e90ac6c8ab851711331e357"
+            },
+            {
+              "sha": "7b38f11d9441b5110ef8ed5361e8277c63d9f774",
+              "short_sha": "7b38f11",
+              "message": "fix: pass RPC_URL to verification for --guess-constructor-args",
+              "author": "hudsonhrh",
+              "author_login": "hudsonhrh",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/76409831?v=4",
+              "date": "2025-12-04",
+              "html_url": "https://github.com/BreadchainCoop/etherform/commit/7b38f11d9441b5110ef8ed5361e8277c63d9f774"
             }
           ],
           "parent_branch_name": "main",
@@ -138,7 +405,7 @@
       "pr_title": null,
       "pr_url": null,
       "pr_author": null,
-      "last_updated": "2026-03-15T08:47:16Z",
+      "last_updated": "2026-03-16T05:20:32Z",
       "ci_status": "",
       "github_url": "https://github.com/BreadchainCoop/app-stacks",
       "is_draft": false,
@@ -154,7 +421,7 @@
           "pr_title": "Implement UI design",
           "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/5",
           "pr_author": "Olaleye-Blessing",
-          "last_updated": "2026-03-14T11:05:06Z",
+          "last_updated": "2026-03-16T05:27:44Z",
           "ci_status": "pass",
           "github_url": "https://github.com/BreadchainCoop/app-stacks",
           "is_draft": false,
@@ -185,56 +452,6 @@
                   "author_avatar_url": "https://avatars.githubusercontent.com/u/70102539?v=4",
                   "date": "2026-03-09",
                   "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/4f600e5b1668a692a09552072fefe304b0714808"
-                }
-              ],
-              "parent_branch_name": "dev",
-              "children": []
-            },
-            {
-              "name": "Add Supabase",
-              "branch": "exo404-supabase-integration",
-              "repo_name": "app-stacks",
-              "pr_number": 39,
-              "pr_title": "Add Supabase",
-              "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/39",
-              "pr_author": "exo404",
-              "last_updated": "2026-03-15T17:39:57Z",
-              "ci_status": "pass",
-              "github_url": "https://github.com/BreadchainCoop/app-stacks",
-              "is_draft": false,
-              "labels": [
-                "enhancement"
-              ],
-              "commits_from_parent": [
-                {
-                  "sha": "2491e2ba01f55a8c00ff4e493254614d95639626",
-                  "short_sha": "2491e2b",
-                  "message": "feat: add supabase",
-                  "author": "exo404",
-                  "author_login": "exo404",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/115696623?v=4",
-                  "date": "2026-03-07",
-                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/2491e2ba01f55a8c00ff4e493254614d95639626"
-                },
-                {
-                  "sha": "0454cb7dfd5f3817fb4e308f59243cceab0cb501",
-                  "short_sha": "0454cb7",
-                  "message": "Save user and stack data in supabase",
-                  "author": "Olaleye Blessing",
-                  "author_login": "Olaleye-Blessing",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/70102539?v=4",
-                  "date": "2026-03-12",
-                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/0454cb7dfd5f3817fb4e308f59243cceab0cb501"
-                },
-                {
-                  "sha": "314d3a1eff00ce59992d21db892822fd25ffafb2",
-                  "short_sha": "314d3a1",
-                  "message": "Improve user data in supabase",
-                  "author": "Olaleye Blessing",
-                  "author_login": "Olaleye-Blessing",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/70102539?v=4",
-                  "date": "2026-03-14",
-                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/314d3a1eff00ce59992d21db892822fd25ffafb2"
                 }
               ],
               "parent_branch_name": "dev",
@@ -1633,273 +1850,6 @@
               "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
               "date": "2026-01-21",
               "html_url": "https://github.com/BreadchainCoop/eigenlayer-bls-local/commit/9d4a77a5e71213635ec2b3e54f144378598f8601"
-            }
-          ],
-          "parent_branch_name": "main",
-          "children": []
-        }
-      ]
-    },
-    "etherform": {
-      "name": "etherform",
-      "branch": "main",
-      "repo_name": "etherform",
-      "pr_number": null,
-      "pr_title": null,
-      "pr_url": null,
-      "pr_author": null,
-      "last_updated": "2026-03-01T22:10:53Z",
-      "ci_status": "",
-      "github_url": "https://github.com/BreadchainCoop/etherform",
-      "is_draft": false,
-      "labels": [],
-      "commits_from_parent": [],
-      "parent_branch_name": null,
-      "children": [
-        {
-          "name": "feat: add deployment-foundry-profile input",
-          "branch": "hudsonhrh/deployment-foundry-profile",
-          "repo_name": "etherform",
-          "pr_number": 24,
-          "pr_title": "feat: add deployment-foundry-profile input",
-          "pr_url": "https://github.com/BreadchainCoop/etherform/pull/24",
-          "pr_author": "hudsonhrh",
-          "last_updated": "2026-03-01T22:11:01Z",
-          "ci_status": "",
-          "github_url": "https://github.com/BreadchainCoop/etherform",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "e4ef95fbf0a980a069587c729a34bd1947e88bd9",
-              "short_sha": "e4ef95f",
-              "message": "feat: add deployment-foundry-profile input for deploy steps",
-              "author": "hudsonhrh",
-              "author_login": "hudsonhrh",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/76409831?v=4",
-              "date": "2026-03-01",
-              "html_url": "https://github.com/BreadchainCoop/etherform/commit/e4ef95fbf0a980a069587c729a34bd1947e88bd9"
-            }
-          ],
-          "parent_branch_name": "main",
-          "children": []
-        },
-        {
-          "name": "fix: Resolve all 13 reported issues",
-          "branch": "feat/all-issues",
-          "repo_name": "etherform",
-          "pr_number": 21,
-          "pr_title": "fix: Resolve all 13 reported issues",
-          "pr_url": "https://github.com/BreadchainCoop/etherform/pull/21",
-          "pr_author": "RonTuretzky",
-          "last_updated": "2026-02-12T19:16:47Z",
-          "ci_status": "",
-          "github_url": "https://github.com/BreadchainCoop/etherform",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "bfe2da1afc2f05f455fb7a796595e78e193c2383",
-              "short_sha": "bfe2da1",
-              "message": "fix: resolve all 13 reported issues",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2026-02-12",
-              "html_url": "https://github.com/BreadchainCoop/etherform/commit/bfe2da1afc2f05f455fb7a796595e78e193c2383"
-            }
-          ],
-          "parent_branch_name": "main",
-          "children": []
-        },
-        {
-          "name": "fix: address PR #13 review comments on CI/CD workflow",
-          "branch": "RonTuretzky/pr13-file-rename",
-          "repo_name": "etherform",
-          "pr_number": 18,
-          "pr_title": "fix: address PR #13 review comments on CI/CD workflow",
-          "pr_url": "https://github.com/BreadchainCoop/etherform/pull/18",
-          "pr_author": "RonTuretzky",
-          "last_updated": "2026-01-26T19:10:34Z",
-          "ci_status": "",
-          "github_url": "https://github.com/BreadchainCoop/etherform",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "7ecbc928e85f4d855d32973b1e42045d1c9b34bc",
-              "short_sha": "7ecbc92",
-              "message": "fix: address PR #13 review comments",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2026-01-26",
-              "html_url": "https://github.com/BreadchainCoop/etherform/commit/7ecbc928e85f4d855d32973b1e42045d1c9b34bc"
-            }
-          ],
-          "parent_branch_name": "main",
-          "children": []
-        },
-        {
-          "name": "Update Main ",
-          "branch": "implement-cicd-spec",
-          "repo_name": "etherform",
-          "pr_number": 13,
-          "pr_title": "Update Main ",
-          "pr_url": "https://github.com/BreadchainCoop/etherform/pull/13",
-          "pr_author": "RonTuretzky",
-          "last_updated": "2026-01-12T18:09:43Z",
-          "ci_status": "pass",
-          "github_url": "https://github.com/BreadchainCoop/etherform",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "c8aa306894ad43d1eab73984b85dd546f309504d",
-              "short_sha": "c8aa306",
-              "message": "feat: add all-in-one foundry-cicd reusable workflow",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-11-30",
-              "html_url": "https://github.com/BreadchainCoop/etherform/commit/c8aa306894ad43d1eab73984b85dd546f309504d"
-            },
-            {
-              "sha": "be6eb8ba4d7ca5c3837da5f432708867a96efbfa",
-              "short_sha": "be6eb8b",
-              "message": "fix: verification step passes RPC_URL and fails properly",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-11-30",
-              "html_url": "https://github.com/BreadchainCoop/etherform/commit/be6eb8ba4d7ca5c3837da5f432708867a96efbfa"
-            },
-            {
-              "sha": "a02d53b3cd2179cd5a3b019bba8376838c106e69",
-              "short_sha": "a02d53b",
-              "message": "fix: use fully qualified contract names for verification",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-11-30",
-              "html_url": "https://github.com/BreadchainCoop/etherform/commit/a02d53b3cd2179cd5a3b019bba8376838c106e69"
-            },
-            {
-              "sha": "7edff3542ddf395eaab8135104d56e63318722ff",
-              "short_sha": "7edff35",
-              "message": "fix: use upgrades-path for fallback to fix path resolution",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-11-30",
-              "html_url": "https://github.com/BreadchainCoop/etherform/commit/7edff3542ddf395eaab8135104d56e63318722ff"
-            },
-            {
-              "sha": "89122db37219be5ff24f96db3484031ee6106212",
-              "short_sha": "89122db",
-              "message": "refactor: run upgrade validation via OZ CLI instead of script",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-11-30",
-              "html_url": "https://github.com/BreadchainCoop/etherform/commit/89122db37219be5ff24f96db3484031ee6106212"
-            }
-          ],
-          "parent_branch_name": "main",
-          "children": [
-            {
-              "name": "refactor: replace submodule with local testing framework",
-              "branch": "refactor/workflow-testing-framework",
-              "repo_name": "etherform",
-              "pr_number": 15,
-              "pr_title": "refactor: replace submodule with local testing framework",
-              "pr_url": "https://github.com/BreadchainCoop/etherform/pull/15",
-              "pr_author": "RonTuretzky",
-              "last_updated": "2025-12-27T21:36:05Z",
-              "ci_status": "pass",
-              "github_url": "https://github.com/BreadchainCoop/etherform",
-              "is_draft": false,
-              "labels": [],
-              "commits_from_parent": [
-                {
-                  "sha": "87e5c78d1cb2f207c0e589d0c80c305bcb69d5b8",
-                  "short_sha": "87e5c78",
-                  "message": "refactor: replace submodule with local testing framework",
-                  "author": "Ron Turetzky",
-                  "author_login": "RonTuretzky",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-                  "date": "2025-12-27",
-                  "html_url": "https://github.com/BreadchainCoop/etherform/commit/87e5c78d1cb2f207c0e589d0c80c305bcb69d5b8"
-                }
-              ],
-              "parent_branch_name": "implement-cicd-spec",
-              "children": []
-            }
-          ]
-        },
-        {
-          "name": "feat: Etherform workflow improvements",
-          "branch": "foundry-profile-input",
-          "repo_name": "etherform",
-          "pr_number": 6,
-          "pr_title": "feat: Etherform workflow improvements",
-          "pr_url": "https://github.com/BreadchainCoop/etherform/pull/6",
-          "pr_author": "hudsonhrh",
-          "last_updated": "2025-12-07T01:02:48Z",
-          "ci_status": "",
-          "github_url": "https://github.com/BreadchainCoop/etherform",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "3c3048e7fc3f988abb7dfc9e9bba8933874013e2",
-              "short_sha": "3c3048e",
-              "message": "feat: add deployment-foundry-profile input to workflows",
-              "author": "hudsonhrh",
-              "author_login": "hudsonhrh",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/76409831?v=4",
-              "date": "2025-12-04",
-              "html_url": "https://github.com/BreadchainCoop/etherform/commit/3c3048e7fc3f988abb7dfc9e9bba8933874013e2"
-            },
-            {
-              "sha": "58ddecdeca58e81eae1e18b3bd67dd6fa69e57c6",
-              "short_sha": "58ddecd",
-              "message": "docs: add deployment-foundry-profile documentation",
-              "author": "hudsonhrh",
-              "author_login": "hudsonhrh",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/76409831?v=4",
-              "date": "2025-12-04",
-              "html_url": "https://github.com/BreadchainCoop/etherform/commit/58ddecdeca58e81eae1e18b3bd67dd6fa69e57c6"
-            },
-            {
-              "sha": "77f745e35ab0b03b5fe28d796eee0c038f985973",
-              "short_sha": "77f745e",
-              "message": "feat: make blockscout verification optional",
-              "author": "hudsonhrh",
-              "author_login": "hudsonhrh",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/76409831?v=4",
-              "date": "2025-12-04",
-              "html_url": "https://github.com/BreadchainCoop/etherform/commit/77f745e35ab0b03b5fe28d796eee0c038f985973"
-            },
-            {
-              "sha": "9d2381f8705656677e90ac6c8ab851711331e357",
-              "short_sha": "9d2381f",
-              "message": "fix: fail verification step when all retries exhausted",
-              "author": "hudsonhrh",
-              "author_login": "hudsonhrh",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/76409831?v=4",
-              "date": "2025-12-04",
-              "html_url": "https://github.com/BreadchainCoop/etherform/commit/9d2381f8705656677e90ac6c8ab851711331e357"
-            },
-            {
-              "sha": "7b38f11d9441b5110ef8ed5361e8277c63d9f774",
-              "short_sha": "7b38f11",
-              "message": "fix: pass RPC_URL to verification for --guess-constructor-args",
-              "author": "hudsonhrh",
-              "author_login": "hudsonhrh",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/76409831?v=4",
-              "date": "2025-12-04",
-              "html_url": "https://github.com/BreadchainCoop/etherform/commit/7b38f11d9441b5110ef8ed5361e8277c63d9f774"
             }
           ],
           "parent_branch_name": "main",
@@ -3966,9 +3916,11 @@
           "title": "Fix dust/remainder handling in distribution strategies",
           "author": "RonTuretzky",
           "created_at": "2026-03-15T21:59:24Z",
-          "updated_at": "2026-03-15T21:59:24Z",
+          "updated_at": "2026-03-16T11:57:09Z",
           "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/85",
-          "labels": [],
+          "labels": [
+            "enhancement"
+          ],
           "assignees": [],
           "comments": []
         },
@@ -3979,17 +3931,6 @@
           "created_at": "2026-03-13T21:49:25Z",
           "updated_at": "2026-03-13T21:49:25Z",
           "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/83",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 80,
-          "title": "Validate project distribution addresses ",
-          "author": "RonTuretzky",
-          "created_at": "2025-11-19T21:06:15Z",
-          "updated_at": "2025-11-19T21:06:15Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/80",
           "labels": [],
           "assignees": [],
           "comments": []
@@ -4228,20 +4169,6 @@
           "comments": []
         },
         {
-          "number": 38,
-          "title": "Validate yield amount against recipients array and divisibility for voting power",
-          "author": "deepsp94",
-          "created_at": "2025-08-16T23:53:48Z",
-          "updated_at": "2025-08-19T00:37:09Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/38",
-          "labels": [
-            "bug",
-            "good first issue"
-          ],
-          "assignees": [],
-          "comments": []
-        },
-        {
           "number": 36,
           "title": "Refactor all modules and manager to Factory Pattern similar to BaseToken",
           "author": "RonTuretzky",
@@ -4276,14 +4203,97 @@
           "labels": [],
           "assignees": [],
           "comments": []
+        }
+      ]
+    },
+    "etherform": {
+      "repo_name": "etherform",
+      "github_url": "https://github.com/BreadchainCoop/etherform",
+      "issues": [
+        {
+          "number": 23,
+          "title": "Support --ir-minimum flag for forge coverage",
+          "author": "hudsonhrh",
+          "created_at": "2026-03-01T19:38:36Z",
+          "updated_at": "2026-03-01T19:38:36Z",
+          "html_url": "https://github.com/BreadchainCoop/etherform/issues/23",
+          "labels": [],
+          "assignees": [],
+          "comments": []
         },
         {
-          "number": 9,
-          "title": "Distribution Strategy Module Implementation",
+          "number": 17,
+          "title": "Add constructor args and method call params to deployment summary",
           "author": "RonTuretzky",
-          "created_at": "2025-08-16T06:04:11Z",
-          "updated_at": "2025-08-16T06:04:11Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/9",
+          "created_at": "2026-01-09T22:41:54Z",
+          "updated_at": "2026-01-09T22:41:54Z",
+          "html_url": "https://github.com/BreadchainCoop/etherform/issues/17",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 16,
+          "title": "Blockscout verification detection returns false positives",
+          "author": "RonTuretzky",
+          "created_at": "2026-01-09T22:35:00Z",
+          "updated_at": "2026-01-09T22:35:00Z",
+          "html_url": "https://github.com/BreadchainCoop/etherform/issues/16",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 8,
+          "title": "Blockscout verification url bad format check",
+          "author": "hudsonhrh",
+          "created_at": "2025-12-04T20:50:47Z",
+          "updated_at": "2025-12-04T20:50:47Z",
+          "html_url": "https://github.com/BreadchainCoop/etherform/issues/8",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 7,
+          "title": "Blockscout verification optional",
+          "author": "hudsonhrh",
+          "created_at": "2025-12-04T20:49:48Z",
+          "updated_at": "2025-12-04T20:49:48Z",
+          "html_url": "https://github.com/BreadchainCoop/etherform/issues/7",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 5,
+          "title": "Better integration docs",
+          "author": "hudsonhrh",
+          "created_at": "2025-12-04T17:13:13Z",
+          "updated_at": "2025-12-04T17:13:13Z",
+          "html_url": "https://github.com/BreadchainCoop/etherform/issues/5",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 4,
+          "title": "Accept different profiles",
+          "author": "hudsonhrh",
+          "created_at": "2025-12-04T17:10:54Z",
+          "updated_at": "2025-12-04T17:10:54Z",
+          "html_url": "https://github.com/BreadchainCoop/etherform/issues/4",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 2,
+          "title": "Expose optional `ADMIN_ADDRESS` env var to deploy scripts",
+          "author": "franrolotti",
+          "created_at": "2025-12-04T12:58:06Z",
+          "updated_at": "2025-12-04T12:58:06Z",
+          "html_url": "https://github.com/BreadchainCoop/etherform/issues/2",
           "labels": [],
           "assignees": [],
           "comments": []
@@ -5993,7 +6003,7 @@
           "title": "Improve upgrade safety and deployment guardrail workflows",
           "author": "franrolotti",
           "created_at": "2026-03-09T11:26:48Z",
-          "updated_at": "2026-03-14T19:05:03Z",
+          "updated_at": "2026-03-16T10:21:27Z",
           "html_url": "https://github.com/BreadchainCoop/saving-circles/issues/129",
           "labels": [],
           "assignees": [
@@ -6058,6 +6068,36 @@
               "minimizedReason": "",
               "reactionGroups": [],
               "url": "https://github.com/BreadchainCoop/saving-circles/issues/129#issuecomment-4061135472",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDONW6FcM7yYgte",
+              "author": {
+                "login": "franrolotti"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "@hudsonhrh @RonTuretzky \n\n\nI had AI do a review of `saving-circles` against `etherform`, and the main takeaway was that the integration looks directionally compatible, but not fully ready yet for this repo\u2019s actual needs.\n\nThe biggest point is that for `saving-circles` the main requirement is not fresh deployments, it\u2019s upgrades of already deployed transparent proxies. This branch already has a pretty clear upgrade flow in-repo: validate the target upgrade, execute `ProxyAdmin.upgradeAndCall`, then do post-upgrade validation. So the AI\u2019s view was that `etherform` would need to support that live upgrade workflow well, not just \u201cdeploy contracts from CI\u201d.\n\nIt also called out a few repo-specific needs:\n- support for the env/config this repo uses around upgrades, like proxy address, expected admin owner, current implementation, new implementation, optional calldata, viewer address\n- support for Node/Yarn install in workflows, since this repo depends on `node_modules`\n- upgrade-safety validation that matches this repo\u2019s current OZ build-info based approach, not only a baseline snapshot model\n- better handling of Blockscout / artifact parsing\n\nOn the cross-chain question, i don't think it's the main issue here. The core need is safe upgrades of existing deployments. Fresh proxy/full-stack deployments are still useful as a secondary path, but not the main operational one right now.\n\nSo overall the AI\u2019s conclusion was: etherform seems close enough that it could be adapted for `saving-circles`, but it\u2019s probably not fully ready for this repo until the upgrade path is a first-class workflow.\n\nDoes that line up with how you\u2019re seeing it, or is the AI missing something important?",
+              "createdAt": "2026-03-16T10:03:53Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/saving-circles/issues/129#issuecomment-4066511710",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDONW6FcM7yY6dJ",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "> @hudsonhrh @RonTuretzky \n> \n> \n> I had AI do a review of `saving-circles` against `etherform`, and the main takeaway was that the integration looks directionally compatible, but not fully ready yet for this repo\u2019s actual needs.\n> \n> The biggest point is that for `saving-circles` the main requirement is not fresh deployments, it\u2019s upgrades of already deployed transparent proxies. This branch already has a pretty clear upgrade flow in-repo: validate the target upgrade, execute `ProxyAdmin.upgradeAndCall`, then do post-upgrade validation. So the AI\u2019s view was that `etherform` would need to support that live upgrade workflow well, not just \u201cdeploy contracts from CI\u201d.\n> \n> It also called out a few repo-specific needs:\n> - support for the env/config this repo uses around upgrades, like proxy address, expected admin owner, current implementation, new implementation, optional calldata, viewer address\n> - support for Node/Yarn install in workflows, since this repo depends on `node_modules`\n> - upgrade-safety validation that matches this repo\u2019s current OZ build-info based approach, not only a baseline snapshot model\n> - better handling of Blockscout / artifact parsing\n> \n> On the cross-chain question, i don't think it's the main issue here. The core need is safe upgrades of existing deployments. Fresh proxy/full-stack deployments are still useful as a secondary path, but not the main operational one right now.\n> \n> So overall the AI\u2019s conclusion was: etherform seems close enough that it could be adapted for `saving-circles`, but it\u2019s probably not fully ready for this repo until the upgrade path is a first-class workflow.\n> \n> Does that line up with how you\u2019re seeing it, or is the AI missing something important?\n\nEtherform was expressly created for this repo and safety net. It would have been better to do this work on that repo so that it could be reused. I would recommend doing a fresh deploy, accomdating for proxy admins and yarn compilation etc in etherform rather than here because we're gonna run into duplicate work on safety net with these issues. If you want to go quickly then don't use etherform. ",
+              "createdAt": "2026-03-16T10:21:27Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/saving-circles/issues/129#issuecomment-4066617161",
               "viewerDidAuthor": false
             }
           ]
@@ -7261,100 +7301,6 @@
           "created_at": "2025-05-16T11:26:01Z",
           "updated_at": "2025-05-16T11:26:01Z",
           "html_url": "https://github.com/BreadchainCoop/eigenlayer-bls-local/issues/7",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        }
-      ]
-    },
-    "etherform": {
-      "repo_name": "etherform",
-      "github_url": "https://github.com/BreadchainCoop/etherform",
-      "issues": [
-        {
-          "number": 23,
-          "title": "Support --ir-minimum flag for forge coverage",
-          "author": "hudsonhrh",
-          "created_at": "2026-03-01T19:38:36Z",
-          "updated_at": "2026-03-01T19:38:36Z",
-          "html_url": "https://github.com/BreadchainCoop/etherform/issues/23",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 17,
-          "title": "Add constructor args and method call params to deployment summary",
-          "author": "RonTuretzky",
-          "created_at": "2026-01-09T22:41:54Z",
-          "updated_at": "2026-01-09T22:41:54Z",
-          "html_url": "https://github.com/BreadchainCoop/etherform/issues/17",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 16,
-          "title": "Blockscout verification detection returns false positives",
-          "author": "RonTuretzky",
-          "created_at": "2026-01-09T22:35:00Z",
-          "updated_at": "2026-01-09T22:35:00Z",
-          "html_url": "https://github.com/BreadchainCoop/etherform/issues/16",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 8,
-          "title": "Blockscout verification url bad format check",
-          "author": "hudsonhrh",
-          "created_at": "2025-12-04T20:50:47Z",
-          "updated_at": "2025-12-04T20:50:47Z",
-          "html_url": "https://github.com/BreadchainCoop/etherform/issues/8",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 7,
-          "title": "Blockscout verification optional",
-          "author": "hudsonhrh",
-          "created_at": "2025-12-04T20:49:48Z",
-          "updated_at": "2025-12-04T20:49:48Z",
-          "html_url": "https://github.com/BreadchainCoop/etherform/issues/7",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 5,
-          "title": "Better integration docs",
-          "author": "hudsonhrh",
-          "created_at": "2025-12-04T17:13:13Z",
-          "updated_at": "2025-12-04T17:13:13Z",
-          "html_url": "https://github.com/BreadchainCoop/etherform/issues/5",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 4,
-          "title": "Accept different profiles",
-          "author": "hudsonhrh",
-          "created_at": "2025-12-04T17:10:54Z",
-          "updated_at": "2025-12-04T17:10:54Z",
-          "html_url": "https://github.com/BreadchainCoop/etherform/issues/4",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 2,
-          "title": "Expose optional `ADMIN_ADDRESS` env var to deploy scripts",
-          "author": "franrolotti",
-          "created_at": "2025-12-04T12:58:06Z",
-          "updated_at": "2025-12-04T12:58:06Z",
-          "html_url": "https://github.com/BreadchainCoop/etherform/issues/2",
           "labels": [],
           "assignees": [],
           "comments": []
