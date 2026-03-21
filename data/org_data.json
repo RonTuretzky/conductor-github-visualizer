@@ -1,182 +1,15 @@
 {
   "organization": "BreadchainCoop",
-  "generated_at": "2026-03-20T00:17:57.712898+00:00",
-  "generation_time_seconds": 145.38,
+  "generated_at": "2026-03-21T00:16:06.782339+00:00",
+  "generation_time_seconds": 143.37,
   "stats": {
     "total_repos": 40,
-    "repos_with_prs": 21,
+    "repos_with_prs": 20,
     "repos_with_issues": 24,
     "total_open_prs": 80,
     "total_open_issues": 179
   },
   "trees": {
-    "crowdstake.fun": {
-      "name": "crowdstake.fun",
-      "branch": "main",
-      "repo_name": "crowdstake.fun",
-      "pr_number": null,
-      "pr_title": null,
-      "pr_url": null,
-      "pr_author": null,
-      "last_updated": "2026-03-19T21:05:08Z",
-      "ci_status": "",
-      "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
-      "is_draft": false,
-      "labels": [],
-      "commits_from_parent": [],
-      "parent_branch_name": null,
-      "children": [
-        {
-          "name": "Refactor modules to factory pattern",
-          "branch": "RonTuretzky/factory-pattern",
-          "repo_name": "crowdstake.fun",
-          "pr_number": 92,
-          "pr_title": "Refactor modules to factory pattern",
-          "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/92",
-          "pr_author": "RonTuretzky",
-          "last_updated": "2026-03-19T21:13:29Z",
-          "ci_status": "",
-          "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "5e406d3ac6d959565ccb0d9239e9f620adf6f20f",
-              "short_sha": "5e406d3",
-              "message": "Implement factory pattern for modules and manager",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2026-03-19",
-              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/5e406d3ac6d959565ccb0d9239e9f620adf6f20f"
-            },
-            {
-              "sha": "c1378b3ccb3607f39fa06b144cb72d5334e66aad",
-              "short_sha": "c1378b3",
-              "message": "chore: auto-format code with forge fmt [auto-format]",
-              "author": "github-actions[bot]",
-              "author_login": "github-actions[bot]",
-              "author_avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
-              "date": "2026-03-19",
-              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/c1378b3ccb3607f39fa06b144cb72d5334e66aad"
-            }
-          ],
-          "parent_branch_name": "main",
-          "children": []
-        },
-        {
-          "name": "feat: switch to mapping instead of linear search",
-          "branch": "45-optimize-recipient-queue-lookup-in-baserecipeintregistry-for-large-queues-addition-and-removal",
-          "repo_name": "crowdstake.fun",
-          "pr_number": 90,
-          "pr_title": "feat: switch to mapping instead of linear search",
-          "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/90",
-          "pr_author": "exo404",
-          "last_updated": "2026-03-19T21:12:37Z",
-          "ci_status": "",
-          "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
-          "is_draft": false,
-          "labels": [
-            "enhancement"
-          ],
-          "commits_from_parent": [
-            {
-              "sha": "d833f1d0717da0ed2be5878f061ebdff55268e55",
-              "short_sha": "d833f1d",
-              "message": "feat: switch to mapping instead of linear search-",
-              "author": "exo404",
-              "author_login": "exo404",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/115696623?v=4",
-              "date": "2026-03-17",
-              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/d833f1d0717da0ed2be5878f061ebdff55268e55"
-            },
-            {
-              "sha": "2aa49219596d7fd2a3a9d820d54a2a49eeffbbe9",
-              "short_sha": "2aa4921",
-              "message": "chore: auto-format code with forge fmt [auto-format]",
-              "author": "github-actions[bot]",
-              "author_login": "github-actions[bot]",
-              "author_avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
-              "date": "2026-03-17",
-              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/2aa49219596d7fd2a3a9d820d54a2a49eeffbbe9"
-            }
-          ],
-          "parent_branch_name": "main",
-          "children": []
-        },
-        {
-          "name": "feat: add standalone DistributionNFTModule for Issue #24",
-          "branch": "feat/issue-24-nft-module",
-          "repo_name": "crowdstake.fun",
-          "pr_number": 82,
-          "pr_title": "feat: add standalone DistributionNFTModule for Issue #24",
-          "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/82",
-          "pr_author": "PasqualePaoloSilvenni",
-          "last_updated": "2026-03-12T20:03:45Z",
-          "ci_status": "pass",
-          "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
-          "is_draft": true,
-          "labels": [],
-          "commits_from_parent": [],
-          "parent_branch_name": "main",
-          "children": []
-        },
-        {
-          "name": "refactor: enhance QueueProcessed event with detailed recipie",
-          "branch": "refactor/queue-processed-event",
-          "repo_name": "crowdstake.fun",
-          "pr_number": 79,
-          "pr_title": "refactor: enhance QueueProcessed event with detailed recipient information (issue #42)",
-          "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/79",
-          "pr_author": "ss251",
-          "last_updated": "2026-03-13T20:17:32Z",
-          "ci_status": "",
-          "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [],
-          "parent_branch_name": "main",
-          "children": []
-        }
-      ]
-    },
-    "safety-net": {
-      "name": "safety-net",
-      "branch": "dev",
-      "repo_name": "safety-net",
-      "pr_number": null,
-      "pr_title": null,
-      "pr_url": null,
-      "pr_author": null,
-      "last_updated": "2026-03-19T20:56:08Z",
-      "ci_status": "",
-      "github_url": "https://github.com/BreadchainCoop/safety-net",
-      "is_draft": false,
-      "labels": [],
-      "commits_from_parent": [],
-      "parent_branch_name": null,
-      "children": [
-        {
-          "name": "Fix issue #14",
-          "branch": "fix-issue-14",
-          "repo_name": "safety-net",
-          "pr_number": 67,
-          "pr_title": "Fix issue #14",
-          "pr_url": "https://github.com/BreadchainCoop/safety-net/pull/67",
-          "pr_author": "Fiuum1",
-          "last_updated": "2026-03-19T20:59:20Z",
-          "ci_status": "",
-          "github_url": "https://github.com/BreadchainCoop/safety-net",
-          "is_draft": false,
-          "labels": [
-            "enhancement"
-          ],
-          "commits_from_parent": [],
-          "parent_branch_name": "dev",
-          "children": []
-        }
-      ]
-    },
     "app-stacks": {
       "name": "app-stacks",
       "branch": "dev",
@@ -185,7 +18,7 @@
       "pr_title": null,
       "pr_url": null,
       "pr_author": null,
-      "last_updated": "2026-03-19T15:59:09Z",
+      "last_updated": "2026-03-20T20:48:36Z",
       "ci_status": "",
       "github_url": "https://github.com/BreadchainCoop/app-stacks",
       "is_draft": false,
@@ -269,7 +102,7 @@
           "pr_title": "Implement UI design",
           "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/5",
           "pr_author": "Olaleye-Blessing",
-          "last_updated": "2026-03-16T05:27:44Z",
+          "last_updated": "2026-03-20T20:42:46Z",
           "ci_status": "pass",
           "github_url": "https://github.com/BreadchainCoop/app-stacks",
           "is_draft": false,
@@ -277,6 +110,34 @@
           "commits_from_parent": [],
           "parent_branch_name": "dev",
           "children": [
+            {
+              "name": "Update new stacks onboarding cards",
+              "branch": "update-cards",
+              "repo_name": "app-stacks",
+              "pr_number": 50,
+              "pr_title": "Update new stacks onboarding cards",
+              "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/50",
+              "pr_author": "Olaleye-Blessing",
+              "last_updated": "2026-03-20T20:52:41Z",
+              "ci_status": "pass",
+              "github_url": "https://github.com/BreadchainCoop/app-stacks",
+              "is_draft": false,
+              "labels": [],
+              "commits_from_parent": [
+                {
+                  "sha": "3151a37a629057a0a771cb6ab05e929a8a24471b",
+                  "short_sha": "3151a37",
+                  "message": "Update new stacks onboarding cards",
+                  "author": "Olaleye Blessing",
+                  "author_login": "Olaleye-Blessing",
+                  "author_avatar_url": "https://avatars.githubusercontent.com/u/70102539?v=4",
+                  "date": "2026-03-20",
+                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/3151a37a629057a0a771cb6ab05e929a8a24471b"
+                }
+              ],
+              "parent_branch_name": "dev",
+              "children": []
+            },
             {
               "name": "WIP: improve stacks state and local development",
               "branch": "improve-devvv",
@@ -377,78 +238,474 @@
         }
       ]
     },
-    "bread-ui-kit": {
-      "name": "bread-ui-kit",
+    "commonware-restaking": {
+      "name": "commonware-restaking",
       "branch": "main",
-      "repo_name": "bread-ui-kit",
+      "repo_name": "commonware-restaking",
       "pr_number": null,
       "pr_title": null,
       "pr_url": null,
       "pr_author": null,
-      "last_updated": "2026-03-19T15:50:21Z",
+      "last_updated": "2026-03-20T17:23:12Z",
       "ci_status": "",
-      "github_url": "https://github.com/BreadchainCoop/bread-ui-kit",
+      "github_url": "https://github.com/BreadchainCoop/commonware-restaking",
       "is_draft": false,
       "labels": [],
       "commits_from_parent": [],
       "parent_branch_name": null,
       "children": [
         {
-          "name": "feat: support explicit chain configuration in UI kit (Sepoli",
-          "branch": "sepolia-chain-config",
-          "repo_name": "bread-ui-kit",
-          "pr_number": 5,
-          "pr_title": "feat: support explicit chain configuration in UI kit (Sepolia, Gnosis, local)",
-          "pr_url": "https://github.com/BreadchainCoop/bread-ui-kit/pull/5",
-          "pr_author": "franrolotti",
-          "last_updated": "2026-03-11T11:53:08Z",
+          "name": "Feat/added helm charts support",
+          "branch": "Feat/added-helm-charts-support",
+          "repo_name": "commonware-restaking",
+          "pr_number": 141,
+          "pr_title": "Feat/added helm charts support",
+          "pr_url": "https://github.com/BreadchainCoop/commonware-restaking/pull/141",
+          "pr_author": "dijarllozana",
+          "last_updated": "2025-12-10T03:15:08Z",
           "ci_status": "pass",
-          "github_url": "https://github.com/BreadchainCoop/bread-ui-kit",
+          "github_url": "https://github.com/BreadchainCoop/commonware-restaking",
           "is_draft": false,
           "labels": [],
           "commits_from_parent": [
             {
-              "sha": "84e8cec255f34456cdf08476b747a6f08ae5b6a8",
-              "short_sha": "84e8cec",
-              "message": "feat: add explicit chain config support (Sepolia-ready) and remove Gnosis hardco",
-              "author": "Francisco Rolotti",
-              "author_login": "franrolotti",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-              "date": "2026-03-11",
-              "html_url": "https://github.com/BreadchainCoop/bread-ui-kit/commit/84e8cec255f34456cdf08476b747a6f08ae5b6a8"
+              "sha": "1e7dea6f2f3c951df89aa871f59623a7d5a5ba52",
+              "short_sha": "1e7dea6",
+              "message": "Added elaborate helm chart support for all the components coverted from the dock",
+              "author": "Dijar Llozana",
+              "author_login": "dijarllozana",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/45999272?v=4",
+              "date": "2025-12-09",
+              "html_url": "https://github.com/BreadchainCoop/commonware-restaking/commit/1e7dea6f2f3c951df89aa871f59623a7d5a5ba52"
             },
             {
-              "sha": "d4fbec0f62155d0228b8e82a58961d61e240b948",
-              "short_sha": "d4fbec0",
-              "message": "fix: avoid forced sepolia fallback and remove ignored isProd component props",
-              "author": "Francisco Rolotti",
-              "author_login": "franrolotti",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-              "date": "2026-03-11",
-              "html_url": "https://github.com/BreadchainCoop/bread-ui-kit/commit/d4fbec0f62155d0228b8e82a58961d61e240b948"
+              "sha": "ee3550a8ce85c8f3486c2479cc65765034886ee8",
+              "short_sha": "ee3550a",
+              "message": "Added EOF",
+              "author": "Dijar Llozana",
+              "author_login": "dijarllozana",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/45999272?v=4",
+              "date": "2025-12-09",
+              "html_url": "https://github.com/BreadchainCoop/commonware-restaking/commit/ee3550a8ce85c8f3486c2479cc65765034886ee8"
             },
             {
-              "sha": "0a284d2b812b0a772ef8dfe82a5272dc711b7105",
-              "short_sha": "0a284d2",
-              "message": "fix: restore deprecated isProd TS props and harden Privy chainId parsing",
-              "author": "Francisco Rolotti",
-              "author_login": "franrolotti",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-              "date": "2026-03-11",
-              "html_url": "https://github.com/BreadchainCoop/bread-ui-kit/commit/0a284d2b812b0a772ef8dfe82a5272dc711b7105"
+              "sha": "576b5bc9646fce651494aebc7a368e1c521a1236",
+              "short_sha": "576b5bc",
+              "message": "Added helm chart github integration tests",
+              "author": "Dijar Llozana",
+              "author_login": "dijarllozana",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/45999272?v=4",
+              "date": "2025-12-10",
+              "html_url": "https://github.com/BreadchainCoop/commonware-restaking/commit/576b5bc9646fce651494aebc7a368e1c521a1236"
             },
             {
-              "sha": "8939b96ac33ef5b45d085d08d8038dbe24858e4c",
-              "short_sha": "8939b96",
-              "message": "fix: ensure configured chainId is always included in supportedChainIds to preven",
-              "author": "Francisco Rolotti",
-              "author_login": "franrolotti",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-              "date": "2026-03-11",
-              "html_url": "https://github.com/BreadchainCoop/bread-ui-kit/commit/8939b96ac33ef5b45d085d08d8038dbe24858e4c"
+              "sha": "cb08164960724a0eab4b1cf1dd93f0799e8e9d93",
+              "short_sha": "cb08164",
+              "message": "Fixing secrets in helm install e2e tests",
+              "author": "Dijar Llozana",
+              "author_login": "dijarllozana",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/45999272?v=4",
+              "date": "2025-12-10",
+              "html_url": "https://github.com/BreadchainCoop/commonware-restaking/commit/cb08164960724a0eab4b1cf1dd93f0799e8e9d93"
+            },
+            {
+              "sha": "526a5f1a3b70db8fe7bf4bf11f440e97fa503f26",
+              "short_sha": "526a5f1",
+              "message": "Fixed integration tests to always run fast aggregations and ingress tests",
+              "author": "Dijar Llozana",
+              "author_login": "dijarllozana",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/45999272?v=4",
+              "date": "2025-12-10",
+              "html_url": "https://github.com/BreadchainCoop/commonware-restaking/commit/526a5f1a3b70db8fe7bf4bf11f440e97fa503f26"
             }
           ],
           "parent_branch_name": "main",
+          "children": []
+        },
+        {
+          "name": "feat: Add Kubernetes deployment support with preserved E2E t",
+          "branch": "RonTuretzky/k8s-refactor",
+          "repo_name": "commonware-restaking",
+          "pr_number": 139,
+          "pr_title": "feat: Add Kubernetes deployment support with preserved E2E test coverage",
+          "pr_url": "https://github.com/BreadchainCoop/commonware-restaking/pull/139",
+          "pr_author": "RonTuretzky",
+          "last_updated": "2025-12-09T08:56:23Z",
+          "ci_status": "fail",
+          "github_url": "https://github.com/BreadchainCoop/commonware-restaking",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "c3fbbd194538be56d25d4c3d40f5d5c3e5819dbd",
+              "short_sha": "c3fbbd1",
+              "message": "feat: Add Kubernetes deployment support with preserved E2E test coverage",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-12-09",
+              "html_url": "https://github.com/BreadchainCoop/commonware-restaking/commit/c3fbbd194538be56d25d4c3d40f5d5c3e5819dbd"
+            },
+            {
+              "sha": "dfe94390eabb953ad985a9910d2c361d86d9ee11",
+              "short_sha": "dfe9439",
+              "message": "fix: Address review feedback for K8s refactor",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-12-09",
+              "html_url": "https://github.com/BreadchainCoop/commonware-restaking/commit/dfe94390eabb953ad985a9910d2c361d86d9ee11"
+            }
+          ],
+          "parent_branch_name": "main",
+          "children": [
+            {
+              "name": "fix: update bitnami/kubectl image tag to 'latest'",
+              "branch": "RonTuretzky/fix-pr-139-ci",
+              "repo_name": "commonware-restaking",
+              "pr_number": 140,
+              "pr_title": "fix: update bitnami/kubectl image tag to 'latest'",
+              "pr_url": "https://github.com/BreadchainCoop/commonware-restaking/pull/140",
+              "pr_author": "RonTuretzky",
+              "last_updated": "2025-12-09T14:14:32Z",
+              "ci_status": "pass",
+              "github_url": "https://github.com/BreadchainCoop/commonware-restaking",
+              "is_draft": false,
+              "labels": [],
+              "commits_from_parent": [
+                {
+                  "sha": "469709b624e5ea811cbbc4f57b345a842c44512b",
+                  "short_sha": "469709b",
+                  "message": "fix: update bitnami/kubectl image tag to 'latest'",
+                  "author": "Ron Turetzky",
+                  "author_login": "RonTuretzky",
+                  "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+                  "date": "2025-12-09",
+                  "html_url": "https://github.com/BreadchainCoop/commonware-restaking/commit/469709b624e5ea811cbbc4f57b345a842c44512b"
+                }
+              ],
+              "parent_branch_name": "RonTuretzky/k8s-refactor",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Make quorum number configurable",
+          "branch": "configurable-quorum",
+          "repo_name": "commonware-restaking",
+          "pr_number": 136,
+          "pr_title": "Make quorum number configurable",
+          "pr_url": "https://github.com/BreadchainCoop/commonware-restaking/pull/136",
+          "pr_author": "RonTuretzky",
+          "last_updated": "2025-11-30T04:10:19Z",
+          "ci_status": "pass",
+          "github_url": "https://github.com/BreadchainCoop/commonware-restaking",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "baefbc268f39606c0f14809978209a3e04e7fc67",
+              "short_sha": "baefbc2",
+              "message": "Make quorum number configurable via QUORUM_NUMBER env var",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-11-30",
+              "html_url": "https://github.com/BreadchainCoop/commonware-restaking/commit/baefbc268f39606c0f14809978209a3e04e7fc67"
+            }
+          ],
+          "parent_branch_name": "main",
+          "children": []
+        },
+        {
+          "name": "feat: Add Helm Charts for Kubernetes Deployment",
+          "branch": "add-helm-k8s-charts",
+          "repo_name": "commonware-restaking",
+          "pr_number": 105,
+          "pr_title": "feat: Add Helm Charts for Kubernetes Deployment",
+          "pr_url": "https://github.com/BreadchainCoop/commonware-restaking/pull/105",
+          "pr_author": "RonTuretzky",
+          "last_updated": "2025-10-01T19:32:51Z",
+          "ci_status": "pass",
+          "github_url": "https://github.com/BreadchainCoop/commonware-restaking",
+          "is_draft": true,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "80edd3e6b1caa6a89d8b22ef81fb3add135954dd",
+              "short_sha": "80edd3e",
+              "message": "feat: add Helm charts for Kubernetes deployment",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-09-29",
+              "html_url": "https://github.com/BreadchainCoop/commonware-restaking/commit/80edd3e6b1caa6a89d8b22ef81fb3add135954dd"
+            }
+          ],
+          "parent_branch_name": "main",
+          "children": []
+        },
+        {
+          "name": "Add Helm Charts for Kubernetes Deployment",
+          "branch": "copilot/fix-1c2816df-412f-45c5-96ef-1aaf59329845",
+          "repo_name": "commonware-restaking",
+          "pr_number": 104,
+          "pr_title": "Add Helm Charts for Kubernetes Deployment",
+          "pr_url": "https://github.com/BreadchainCoop/commonware-restaking/pull/104",
+          "pr_author": "app/copilot-swe-agent",
+          "last_updated": "2025-09-29T20:06:49Z",
+          "ci_status": "",
+          "github_url": "https://github.com/BreadchainCoop/commonware-restaking",
+          "is_draft": true,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "297603259fa28561aaa626cdffa620843bb4dcff",
+              "short_sha": "2976032",
+              "message": "Initial plan",
+              "author": "copilot-swe-agent[bot]",
+              "author_login": "Copilot",
+              "author_avatar_url": "https://avatars.githubusercontent.com/in/1143301?v=4",
+              "date": "2025-09-29",
+              "html_url": "https://github.com/BreadchainCoop/commonware-restaking/commit/297603259fa28561aaa626cdffa620843bb4dcff"
+            },
+            {
+              "sha": "d1919e5c02f6b8c990c70253d9bc13e385f27766",
+              "short_sha": "d1919e5",
+              "message": "Implement core Helm chart templates and examples",
+              "author": "copilot-swe-agent[bot]",
+              "author_login": "Copilot",
+              "author_avatar_url": "https://avatars.githubusercontent.com/in/1143301?v=4",
+              "date": "2025-09-29",
+              "html_url": "https://github.com/BreadchainCoop/commonware-restaking/commit/d1919e5c02f6b8c990c70253d9bc13e385f27766"
+            },
+            {
+              "sha": "22b07b3cbd99596b780840c86206e00976b52a12",
+              "short_sha": "22b07b3",
+              "message": "Complete Helm chart implementation with documentation and examples",
+              "author": "copilot-swe-agent[bot]",
+              "author_login": "Copilot",
+              "author_avatar_url": "https://avatars.githubusercontent.com/in/1143301?v=4",
+              "date": "2025-09-29",
+              "html_url": "https://github.com/BreadchainCoop/commonware-restaking/commit/22b07b3cbd99596b780840c86206e00976b52a12"
+            }
+          ],
+          "parent_branch_name": "main",
+          "children": []
+        }
+      ]
+    },
+    "crowdstake.fun": {
+      "name": "crowdstake.fun",
+      "branch": "main",
+      "repo_name": "crowdstake.fun",
+      "pr_number": null,
+      "pr_title": null,
+      "pr_url": null,
+      "pr_author": null,
+      "last_updated": "2026-03-20T14:46:15Z",
+      "ci_status": "",
+      "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
+      "is_draft": false,
+      "labels": [],
+      "commits_from_parent": [],
+      "parent_branch_name": null,
+      "children": [
+        {
+          "name": "refactor: implement EIP-7201 namespaced storage",
+          "branch": "RonTuretzky/eip7201-storage",
+          "repo_name": "crowdstake.fun",
+          "pr_number": 93,
+          "pr_title": "refactor: implement EIP-7201 namespaced storage",
+          "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/93",
+          "pr_author": "RonTuretzky",
+          "last_updated": "2026-03-20T18:08:25Z",
+          "ci_status": "pass",
+          "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "d662763686c69ddfe6435b977664399c8a29d426",
+              "short_sha": "d662763",
+              "message": "refactor: implement EIP-7201 namespaced storage",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2026-03-20",
+              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/d662763686c69ddfe6435b977664399c8a29d426"
+            },
+            {
+              "sha": "12641118c0656a5f2698dd2039692672d1dff4d4",
+              "short_sha": "1264111",
+              "message": "chore: auto-format code with forge fmt [auto-format]",
+              "author": "github-actions[bot]",
+              "author_login": "github-actions[bot]",
+              "author_avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+              "date": "2026-03-20",
+              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/12641118c0656a5f2698dd2039692672d1dff4d4"
+            },
+            {
+              "sha": "0f14dc6e51a3b7d12e74ea6eb37d52ce0a87cb62",
+              "short_sha": "0f14dc6",
+              "message": "fix: add array length getters for RecipientRegistry",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2026-03-20",
+              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/0f14dc6e51a3b7d12e74ea6eb37d52ce0a87cb62"
+            }
+          ],
+          "parent_branch_name": "main",
+          "children": []
+        },
+        {
+          "name": "Refactor modules to factory pattern",
+          "branch": "RonTuretzky/factory-pattern",
+          "repo_name": "crowdstake.fun",
+          "pr_number": 92,
+          "pr_title": "Refactor modules to factory pattern",
+          "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/92",
+          "pr_author": "RonTuretzky",
+          "last_updated": "2026-03-20T17:55:55Z",
+          "ci_status": "",
+          "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
+          "is_draft": true,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "5e406d3ac6d959565ccb0d9239e9f620adf6f20f",
+              "short_sha": "5e406d3",
+              "message": "Implement factory pattern for modules and manager",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2026-03-19",
+              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/5e406d3ac6d959565ccb0d9239e9f620adf6f20f"
+            },
+            {
+              "sha": "c1378b3ccb3607f39fa06b144cb72d5334e66aad",
+              "short_sha": "c1378b3",
+              "message": "chore: auto-format code with forge fmt [auto-format]",
+              "author": "github-actions[bot]",
+              "author_login": "github-actions[bot]",
+              "author_avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+              "date": "2026-03-19",
+              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/c1378b3ccb3607f39fa06b144cb72d5334e66aad"
+            }
+          ],
+          "parent_branch_name": "main",
+          "children": []
+        },
+        {
+          "name": "feat: switch to mapping instead of linear search",
+          "branch": "45-optimize-recipient-queue-lookup-in-baserecipeintregistry-for-large-queues-addition-and-removal",
+          "repo_name": "crowdstake.fun",
+          "pr_number": 90,
+          "pr_title": "feat: switch to mapping instead of linear search",
+          "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/90",
+          "pr_author": "exo404",
+          "last_updated": "2026-03-19T21:12:37Z",
+          "ci_status": "",
+          "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
+          "is_draft": false,
+          "labels": [
+            "enhancement"
+          ],
+          "commits_from_parent": [
+            {
+              "sha": "d833f1d0717da0ed2be5878f061ebdff55268e55",
+              "short_sha": "d833f1d",
+              "message": "feat: switch to mapping instead of linear search-",
+              "author": "exo404",
+              "author_login": "exo404",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/115696623?v=4",
+              "date": "2026-03-17",
+              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/d833f1d0717da0ed2be5878f061ebdff55268e55"
+            },
+            {
+              "sha": "2aa49219596d7fd2a3a9d820d54a2a49eeffbbe9",
+              "short_sha": "2aa4921",
+              "message": "chore: auto-format code with forge fmt [auto-format]",
+              "author": "github-actions[bot]",
+              "author_login": "github-actions[bot]",
+              "author_avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+              "date": "2026-03-17",
+              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/2aa49219596d7fd2a3a9d820d54a2a49eeffbbe9"
+            }
+          ],
+          "parent_branch_name": "main",
+          "children": []
+        },
+        {
+          "name": "feat: add standalone DistributionNFTModule for Issue #24",
+          "branch": "feat/issue-24-nft-module",
+          "repo_name": "crowdstake.fun",
+          "pr_number": 82,
+          "pr_title": "feat: add standalone DistributionNFTModule for Issue #24",
+          "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/82",
+          "pr_author": "PasqualePaoloSilvenni",
+          "last_updated": "2026-03-20T14:55:11Z",
+          "ci_status": "",
+          "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
+          "is_draft": true,
+          "labels": [],
+          "commits_from_parent": [],
+          "parent_branch_name": "main",
+          "children": []
+        },
+        {
+          "name": "refactor: enhance QueueProcessed event with detailed recipie",
+          "branch": "refactor/queue-processed-event",
+          "repo_name": "crowdstake.fun",
+          "pr_number": 79,
+          "pr_title": "refactor: enhance QueueProcessed event with detailed recipient information (issue #42)",
+          "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/79",
+          "pr_author": "ss251",
+          "last_updated": "2026-03-13T20:17:32Z",
+          "ci_status": "",
+          "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [],
+          "parent_branch_name": "main",
+          "children": []
+        }
+      ]
+    },
+    "safety-net": {
+      "name": "safety-net",
+      "branch": "dev",
+      "repo_name": "safety-net",
+      "pr_number": null,
+      "pr_title": null,
+      "pr_url": null,
+      "pr_author": null,
+      "last_updated": "2026-03-19T20:56:08Z",
+      "ci_status": "",
+      "github_url": "https://github.com/BreadchainCoop/safety-net",
+      "is_draft": false,
+      "labels": [],
+      "commits_from_parent": [],
+      "parent_branch_name": null,
+      "children": [
+        {
+          "name": "Fix issue #14",
+          "branch": "fix-issue-14",
+          "repo_name": "safety-net",
+          "pr_number": 67,
+          "pr_title": "Fix issue #14",
+          "pr_url": "https://github.com/BreadchainCoop/safety-net/pull/67",
+          "pr_author": "Fiuum1",
+          "last_updated": "2026-03-20T20:21:53Z",
+          "ci_status": "",
+          "github_url": "https://github.com/BreadchainCoop/safety-net",
+          "is_draft": false,
+          "labels": [
+            "enhancement"
+          ],
+          "commits_from_parent": [],
+          "parent_branch_name": "dev",
           "children": []
         }
       ]
@@ -903,281 +1160,6 @@
           "commits_from_parent": [],
           "parent_branch_name": "dev",
           "children": []
-        }
-      ]
-    },
-    "commonware-restaking": {
-      "name": "commonware-restaking",
-      "branch": "dev",
-      "repo_name": "commonware-restaking",
-      "pr_number": null,
-      "pr_title": null,
-      "pr_url": null,
-      "pr_author": null,
-      "last_updated": "2026-03-18T16:59:32Z",
-      "ci_status": "",
-      "github_url": "https://github.com/BreadchainCoop/commonware-restaking",
-      "is_draft": false,
-      "labels": [],
-      "commits_from_parent": [],
-      "parent_branch_name": null,
-      "children": [
-        {
-          "name": "Sync `main` with `dev`",
-          "branch": "dev",
-          "repo_name": "commonware-restaking",
-          "pr_number": 148,
-          "pr_title": "Sync `main` with `dev`",
-          "pr_url": "https://github.com/BreadchainCoop/commonware-restaking/pull/148",
-          "pr_author": "bagelface",
-          "last_updated": "2026-03-19T15:33:48Z",
-          "ci_status": "fail",
-          "github_url": "https://github.com/BreadchainCoop/commonware-restaking",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [],
-          "parent_branch_name": "dev",
-          "children": [
-            {
-              "name": "Feat/added helm charts support",
-              "branch": "Feat/added-helm-charts-support",
-              "repo_name": "commonware-restaking",
-              "pr_number": 141,
-              "pr_title": "Feat/added helm charts support",
-              "pr_url": "https://github.com/BreadchainCoop/commonware-restaking/pull/141",
-              "pr_author": "dijarllozana",
-              "last_updated": "2025-12-10T03:15:08Z",
-              "ci_status": "pass",
-              "github_url": "https://github.com/BreadchainCoop/commonware-restaking",
-              "is_draft": false,
-              "labels": [],
-              "commits_from_parent": [
-                {
-                  "sha": "1e7dea6f2f3c951df89aa871f59623a7d5a5ba52",
-                  "short_sha": "1e7dea6",
-                  "message": "Added elaborate helm chart support for all the components coverted from the dock",
-                  "author": "Dijar Llozana",
-                  "author_login": "dijarllozana",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/45999272?v=4",
-                  "date": "2025-12-09",
-                  "html_url": "https://github.com/BreadchainCoop/commonware-restaking/commit/1e7dea6f2f3c951df89aa871f59623a7d5a5ba52"
-                },
-                {
-                  "sha": "ee3550a8ce85c8f3486c2479cc65765034886ee8",
-                  "short_sha": "ee3550a",
-                  "message": "Added EOF",
-                  "author": "Dijar Llozana",
-                  "author_login": "dijarllozana",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/45999272?v=4",
-                  "date": "2025-12-09",
-                  "html_url": "https://github.com/BreadchainCoop/commonware-restaking/commit/ee3550a8ce85c8f3486c2479cc65765034886ee8"
-                },
-                {
-                  "sha": "576b5bc9646fce651494aebc7a368e1c521a1236",
-                  "short_sha": "576b5bc",
-                  "message": "Added helm chart github integration tests",
-                  "author": "Dijar Llozana",
-                  "author_login": "dijarllozana",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/45999272?v=4",
-                  "date": "2025-12-10",
-                  "html_url": "https://github.com/BreadchainCoop/commonware-restaking/commit/576b5bc9646fce651494aebc7a368e1c521a1236"
-                },
-                {
-                  "sha": "cb08164960724a0eab4b1cf1dd93f0799e8e9d93",
-                  "short_sha": "cb08164",
-                  "message": "Fixing secrets in helm install e2e tests",
-                  "author": "Dijar Llozana",
-                  "author_login": "dijarllozana",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/45999272?v=4",
-                  "date": "2025-12-10",
-                  "html_url": "https://github.com/BreadchainCoop/commonware-restaking/commit/cb08164960724a0eab4b1cf1dd93f0799e8e9d93"
-                },
-                {
-                  "sha": "526a5f1a3b70db8fe7bf4bf11f440e97fa503f26",
-                  "short_sha": "526a5f1",
-                  "message": "Fixed integration tests to always run fast aggregations and ingress tests",
-                  "author": "Dijar Llozana",
-                  "author_login": "dijarllozana",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/45999272?v=4",
-                  "date": "2025-12-10",
-                  "html_url": "https://github.com/BreadchainCoop/commonware-restaking/commit/526a5f1a3b70db8fe7bf4bf11f440e97fa503f26"
-                }
-              ],
-              "parent_branch_name": "dev",
-              "children": []
-            },
-            {
-              "name": "feat: Add Kubernetes deployment support with preserved E2E t",
-              "branch": "RonTuretzky/k8s-refactor",
-              "repo_name": "commonware-restaking",
-              "pr_number": 139,
-              "pr_title": "feat: Add Kubernetes deployment support with preserved E2E test coverage",
-              "pr_url": "https://github.com/BreadchainCoop/commonware-restaking/pull/139",
-              "pr_author": "RonTuretzky",
-              "last_updated": "2025-12-09T08:56:23Z",
-              "ci_status": "fail",
-              "github_url": "https://github.com/BreadchainCoop/commonware-restaking",
-              "is_draft": false,
-              "labels": [],
-              "commits_from_parent": [
-                {
-                  "sha": "c3fbbd194538be56d25d4c3d40f5d5c3e5819dbd",
-                  "short_sha": "c3fbbd1",
-                  "message": "feat: Add Kubernetes deployment support with preserved E2E test coverage",
-                  "author": "Ron Turetzky",
-                  "author_login": "RonTuretzky",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-                  "date": "2025-12-09",
-                  "html_url": "https://github.com/BreadchainCoop/commonware-restaking/commit/c3fbbd194538be56d25d4c3d40f5d5c3e5819dbd"
-                },
-                {
-                  "sha": "dfe94390eabb953ad985a9910d2c361d86d9ee11",
-                  "short_sha": "dfe9439",
-                  "message": "fix: Address review feedback for K8s refactor",
-                  "author": "Ron Turetzky",
-                  "author_login": "RonTuretzky",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-                  "date": "2025-12-09",
-                  "html_url": "https://github.com/BreadchainCoop/commonware-restaking/commit/dfe94390eabb953ad985a9910d2c361d86d9ee11"
-                }
-              ],
-              "parent_branch_name": "dev",
-              "children": [
-                {
-                  "name": "fix: update bitnami/kubectl image tag to 'latest'",
-                  "branch": "RonTuretzky/fix-pr-139-ci",
-                  "repo_name": "commonware-restaking",
-                  "pr_number": 140,
-                  "pr_title": "fix: update bitnami/kubectl image tag to 'latest'",
-                  "pr_url": "https://github.com/BreadchainCoop/commonware-restaking/pull/140",
-                  "pr_author": "RonTuretzky",
-                  "last_updated": "2025-12-09T14:14:32Z",
-                  "ci_status": "pass",
-                  "github_url": "https://github.com/BreadchainCoop/commonware-restaking",
-                  "is_draft": false,
-                  "labels": [],
-                  "commits_from_parent": [
-                    {
-                      "sha": "469709b624e5ea811cbbc4f57b345a842c44512b",
-                      "short_sha": "469709b",
-                      "message": "fix: update bitnami/kubectl image tag to 'latest'",
-                      "author": "Ron Turetzky",
-                      "author_login": "RonTuretzky",
-                      "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-                      "date": "2025-12-09",
-                      "html_url": "https://github.com/BreadchainCoop/commonware-restaking/commit/469709b624e5ea811cbbc4f57b345a842c44512b"
-                    }
-                  ],
-                  "parent_branch_name": "RonTuretzky/k8s-refactor",
-                  "children": []
-                }
-              ]
-            },
-            {
-              "name": "Make quorum number configurable",
-              "branch": "configurable-quorum",
-              "repo_name": "commonware-restaking",
-              "pr_number": 136,
-              "pr_title": "Make quorum number configurable",
-              "pr_url": "https://github.com/BreadchainCoop/commonware-restaking/pull/136",
-              "pr_author": "RonTuretzky",
-              "last_updated": "2025-11-30T04:10:19Z",
-              "ci_status": "pass",
-              "github_url": "https://github.com/BreadchainCoop/commonware-restaking",
-              "is_draft": false,
-              "labels": [],
-              "commits_from_parent": [
-                {
-                  "sha": "baefbc268f39606c0f14809978209a3e04e7fc67",
-                  "short_sha": "baefbc2",
-                  "message": "Make quorum number configurable via QUORUM_NUMBER env var",
-                  "author": "Ron Turetzky",
-                  "author_login": "RonTuretzky",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-                  "date": "2025-11-30",
-                  "html_url": "https://github.com/BreadchainCoop/commonware-restaking/commit/baefbc268f39606c0f14809978209a3e04e7fc67"
-                }
-              ],
-              "parent_branch_name": "dev",
-              "children": []
-            },
-            {
-              "name": "feat: Add Helm Charts for Kubernetes Deployment",
-              "branch": "add-helm-k8s-charts",
-              "repo_name": "commonware-restaking",
-              "pr_number": 105,
-              "pr_title": "feat: Add Helm Charts for Kubernetes Deployment",
-              "pr_url": "https://github.com/BreadchainCoop/commonware-restaking/pull/105",
-              "pr_author": "RonTuretzky",
-              "last_updated": "2025-10-01T19:32:51Z",
-              "ci_status": "pass",
-              "github_url": "https://github.com/BreadchainCoop/commonware-restaking",
-              "is_draft": true,
-              "labels": [],
-              "commits_from_parent": [
-                {
-                  "sha": "80edd3e6b1caa6a89d8b22ef81fb3add135954dd",
-                  "short_sha": "80edd3e",
-                  "message": "feat: add Helm charts for Kubernetes deployment",
-                  "author": "Ron Turetzky",
-                  "author_login": "RonTuretzky",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-                  "date": "2025-09-29",
-                  "html_url": "https://github.com/BreadchainCoop/commonware-restaking/commit/80edd3e6b1caa6a89d8b22ef81fb3add135954dd"
-                }
-              ],
-              "parent_branch_name": "dev",
-              "children": []
-            },
-            {
-              "name": "Add Helm Charts for Kubernetes Deployment",
-              "branch": "copilot/fix-1c2816df-412f-45c5-96ef-1aaf59329845",
-              "repo_name": "commonware-restaking",
-              "pr_number": 104,
-              "pr_title": "Add Helm Charts for Kubernetes Deployment",
-              "pr_url": "https://github.com/BreadchainCoop/commonware-restaking/pull/104",
-              "pr_author": "app/copilot-swe-agent",
-              "last_updated": "2025-09-29T20:06:49Z",
-              "ci_status": "",
-              "github_url": "https://github.com/BreadchainCoop/commonware-restaking",
-              "is_draft": true,
-              "labels": [],
-              "commits_from_parent": [
-                {
-                  "sha": "297603259fa28561aaa626cdffa620843bb4dcff",
-                  "short_sha": "2976032",
-                  "message": "Initial plan",
-                  "author": "copilot-swe-agent[bot]",
-                  "author_login": "Copilot",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/in/1143301?v=4",
-                  "date": "2025-09-29",
-                  "html_url": "https://github.com/BreadchainCoop/commonware-restaking/commit/297603259fa28561aaa626cdffa620843bb4dcff"
-                },
-                {
-                  "sha": "d1919e5c02f6b8c990c70253d9bc13e385f27766",
-                  "short_sha": "d1919e5",
-                  "message": "Implement core Helm chart templates and examples",
-                  "author": "copilot-swe-agent[bot]",
-                  "author_login": "Copilot",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/in/1143301?v=4",
-                  "date": "2025-09-29",
-                  "html_url": "https://github.com/BreadchainCoop/commonware-restaking/commit/d1919e5c02f6b8c990c70253d9bc13e385f27766"
-                },
-                {
-                  "sha": "22b07b3cbd99596b780840c86206e00976b52a12",
-                  "short_sha": "22b07b3",
-                  "message": "Complete Helm chart implementation with documentation and examples",
-                  "author": "copilot-swe-agent[bot]",
-                  "author_login": "Copilot",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/in/1143301?v=4",
-                  "date": "2025-09-29",
-                  "html_url": "https://github.com/BreadchainCoop/commonware-restaking/commit/22b07b3cbd99596b780840c86206e00976b52a12"
-                }
-              ],
-              "parent_branch_name": "dev",
-              "children": []
-            }
-          ]
         }
       ]
     },
@@ -3538,6 +3520,626 @@
     }
   },
   "issues": {
+    "app-stacks": {
+      "repo_name": "app-stacks",
+      "github_url": "https://github.com/BreadchainCoop/app-stacks",
+      "issues": [
+        {
+          "number": 48,
+          "title": "Update the onboarding cards",
+          "author": "Olaleye-Blessing",
+          "created_at": "2026-03-20T12:42:41Z",
+          "updated_at": "2026-03-20T12:42:41Z",
+          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/48",
+          "labels": [
+            "good first issue"
+          ],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 43,
+          "title": "Add email notifications for Saving Circles users",
+          "author": "franrolotti",
+          "created_at": "2026-03-11T17:57:07Z",
+          "updated_at": "2026-03-14T18:52:55Z",
+          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/43",
+          "labels": [],
+          "assignees": [],
+          "comments": [
+            {
+              "id": "IC_kwDOQBrnic7yD0wf",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "NONE",
+              "body": "Low hanging fruit for notifications that doesn't require a backend: \n\nCreate an ICS file in the frontend that can be downloaded by the user that has reminders for the deposit events. This allows them to add it to whatever calendar app they have and get reminders",
+              "createdAt": "2026-03-14T18:52:55Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/app-stacks/issues/43#issuecomment-4061088799",
+              "viewerDidAuthor": false
+            }
+          ]
+        },
+        {
+          "number": 42,
+          "title": "Explore integration for hackathon",
+          "author": "franrolotti",
+          "created_at": "2026-03-11T17:48:29Z",
+          "updated_at": "2026-03-14T18:50:15Z",
+          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/42",
+          "labels": [],
+          "assignees": [
+            "franrolotti"
+          ],
+          "comments": [
+            {
+              "id": "IC_kwDOQBrnic7yDyCa",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "NONE",
+              "body": "@franrolotti seems kind of urgent? how can I help?",
+              "createdAt": "2026-03-14T18:46:52Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/app-stacks/issues/42#issuecomment-4061077658",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOQBrnic7yDzlz",
+              "author": {
+                "login": "franrolotti"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "@RonTuretzky the deadline was extended to march the 31st so we have more time to work on a nice application for this. I'll dm you our first idea... It would be nice to have your feedback and ideas for this",
+              "createdAt": "2026-03-14T18:50:15Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [
+                {
+                  "content": "THUMBS_UP",
+                  "users": {
+                    "totalCount": 1
+                  }
+                }
+              ],
+              "url": "https://github.com/BreadchainCoop/app-stacks/issues/42#issuecomment-4061084019",
+              "viewerDidAuthor": false
+            }
+          ]
+        },
+        {
+          "number": 34,
+          "title": "Implement funding flow for Privy embedded wallets",
+          "author": "franrolotti",
+          "created_at": "2026-02-25T17:47:26Z",
+          "updated_at": "2026-03-14T18:51:28Z",
+          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/34",
+          "labels": [],
+          "assignees": [
+            "franrolotti"
+          ],
+          "comments": [
+            {
+              "id": "IC_kwDOQBrnic7yD0Hz",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "NONE",
+              "body": "why not just link to fund.bread.coop?",
+              "createdAt": "2026-03-14T18:51:28Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/app-stacks/issues/34#issuecomment-4061086195",
+              "viewerDidAuthor": false
+            }
+          ]
+        },
+        {
+          "number": 22,
+          "title": "Implement the deposit module",
+          "author": "Olaleye-Blessing",
+          "created_at": "2026-02-12T23:43:52Z",
+          "updated_at": "2026-02-12T23:43:52Z",
+          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/22",
+          "labels": [
+            "not-ready"
+          ],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 1,
+          "title": "Abstract BREAD Token \u2014 Show Only USD Balances on Frontend (Inspired by Hyperliquid & Polymarket)",
+          "author": "diterra-code",
+          "created_at": "2025-10-15T21:14:26Z",
+          "updated_at": "2025-10-16T04:28:41Z",
+          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/1",
+          "labels": [
+            "documentation",
+            "help wanted"
+          ],
+          "assignees": [
+            "diterra-code",
+            "RonTuretzky",
+            "tbsoc"
+          ],
+          "comments": [
+            {
+              "id": "IC_kwDOQBrnic7LJut_",
+              "author": {
+                "login": "diterra-code"
+              },
+              "authorAssociation": "NONE",
+              "body": "Dropping this here @RonTuretzky @tbsoc @bagelface for further discussion.\n\n@RonTuretzky what do you think of my mermaid diagram skills? \n\nThe idea is to maybe after MVP of Stacks/Safety Net try to work on this UX.",
+              "createdAt": "2025-10-15T21:17:43Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [
+                {
+                  "content": "HEART",
+                  "users": {
+                    "totalCount": 1
+                  }
+                }
+              ],
+              "url": "https://github.com/BreadchainCoop/app-stacks/issues/1#issuecomment-3408325503",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOQBrnic7LMzo-",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "NONE",
+              "body": "> Dropping this here @RonTuretzky @tbsoc @bagelface for further discussion.\n> \n> @RonTuretzky what do you think of my mermaid diagram skills? \n> \n> The idea is to maybe after MVP of Stacks/Safety Net try to work on this UX.\n\n\n\n\ud83d\ude0d\ud83d\ude0d\ud83d\ude0d\ud83d\ude0d\ud83d\ude0d\n\n\nI think with the lifi widget like we have in the crowdstaking app this is quite doable. ",
+              "createdAt": "2025-10-16T04:28:41Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/app-stacks/issues/1#issuecomment-3409132094",
+              "viewerDidAuthor": false
+            }
+          ]
+        }
+      ]
+    },
+    "bread-ui-kit": {
+      "repo_name": "bread-ui-kit",
+      "github_url": "https://github.com/BreadchainCoop/bread-ui-kit",
+      "issues": [
+        {
+          "number": 4,
+          "title": "Update LiftedButton to accept `color` param",
+          "author": "secbajor",
+          "created_at": "2025-10-13T21:48:54Z",
+          "updated_at": "2025-10-13T21:48:54Z",
+          "html_url": "https://github.com/BreadchainCoop/bread-ui-kit/issues/4",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 3,
+          "title": "Consider adding Footer",
+          "author": "secbajor",
+          "created_at": "2025-10-06T01:55:25Z",
+          "updated_at": "2025-10-06T01:55:25Z",
+          "html_url": "https://github.com/BreadchainCoop/bread-ui-kit/issues/3",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        }
+      ]
+    },
+    "commonware-restaking": {
+      "repo_name": "commonware-restaking",
+      "github_url": "https://github.com/BreadchainCoop/commonware-restaking",
+      "issues": [
+        {
+          "number": 146,
+          "title": "BlsEigenlayerExecutor: support per-task chain routing for view_only_provider",
+          "author": "bagelface",
+          "created_at": "2026-03-06T22:08:07Z",
+          "updated_at": "2026-03-06T22:08:07Z",
+          "html_url": "https://github.com/BreadchainCoop/commonware-restaking/issues/146",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 138,
+          "title": "Refactor Docker Compose to Kubernetes",
+          "author": "RonTuretzky",
+          "created_at": "2025-12-09T08:30:36Z",
+          "updated_at": "2025-12-09T08:30:36Z",
+          "html_url": "https://github.com/BreadchainCoop/commonware-restaking/issues/138",
+          "labels": [],
+          "assignees": [
+            "dijarllozana"
+          ],
+          "comments": []
+        },
+        {
+          "number": 137,
+          "title": "Consider passing validator to creator instead of orchestrator",
+          "author": "bagelface",
+          "created_at": "2025-12-01T22:05:48Z",
+          "updated_at": "2025-12-01T22:05:48Z",
+          "html_url": "https://github.com/BreadchainCoop/commonware-restaking/issues/137",
+          "labels": [
+            "enhancement"
+          ],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 135,
+          "title": "Retrieve aggregation threshold from EigenLayer smart contracts",
+          "author": "RonTuretzky",
+          "created_at": "2025-11-30T02:03:11Z",
+          "updated_at": "2025-11-30T02:27:39Z",
+          "html_url": "https://github.com/BreadchainCoop/commonware-restaking/issues/135",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 134,
+          "title": "Disable unsafe `attempt_unregistered_handshakes` setting",
+          "author": "bagelface",
+          "created_at": "2025-11-26T19:55:06Z",
+          "updated_at": "2025-11-26T19:55:06Z",
+          "html_url": "https://github.com/BreadchainCoop/commonware-restaking/issues/134",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 132,
+          "title": "Implement robust error checking when loading configs",
+          "author": "bagelface",
+          "created_at": "2025-11-26T17:23:39Z",
+          "updated_at": "2025-11-26T17:23:39Z",
+          "html_url": "https://github.com/BreadchainCoop/commonware-restaking/issues/132",
+          "labels": [
+            "enhancement"
+          ],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 127,
+          "title": "`sol!` macro binding generation from sc submodules",
+          "author": "RonTuretzky",
+          "created_at": "2025-11-21T21:32:09Z",
+          "updated_at": "2025-11-21T21:32:09Z",
+          "html_url": "https://github.com/BreadchainCoop/commonware-restaking/issues/127",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 123,
+          "title": "Fetch threshold from AVS/NCN ",
+          "author": "RonTuretzky",
+          "created_at": "2025-11-10T18:15:42Z",
+          "updated_at": "2025-11-10T18:15:42Z",
+          "html_url": "https://github.com/BreadchainCoop/commonware-restaking/issues/123",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 112,
+          "title": "Release v0.2.0",
+          "author": "tbsoc",
+          "created_at": "2025-10-15T14:46:52Z",
+          "updated_at": "2025-11-06T19:45:12Z",
+          "html_url": "https://github.com/BreadchainCoop/commonware-restaking/issues/112",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 103,
+          "title": "Add encrypted json support for orchestrator bls keys instead of plaintext",
+          "author": "RonTuretzky",
+          "created_at": "2025-09-29T17:02:13Z",
+          "updated_at": "2025-11-19T23:08:45Z",
+          "html_url": "https://github.com/BreadchainCoop/commonware-restaking/issues/103",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 102,
+          "title": "Docker compose code duplication reduction",
+          "author": "RonTuretzky",
+          "created_at": "2025-09-29T16:56:50Z",
+          "updated_at": "2025-11-19T23:08:19Z",
+          "html_url": "https://github.com/BreadchainCoop/commonware-restaking/issues/102",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 98,
+          "title": "Refactor `Aggregation` struct for clearer naming of `metadata` field",
+          "author": "bagelface",
+          "created_at": "2025-09-22T20:31:31Z",
+          "updated_at": "2025-09-22T21:21:43Z",
+          "html_url": "https://github.com/BreadchainCoop/commonware-restaking/issues/98",
+          "labels": [
+            "enhancement"
+          ],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 75,
+          "title": "Refactor Executor to Generic Implementation with Standardized Signature Verification",
+          "author": "bagelface",
+          "created_at": "2025-08-22T19:53:06Z",
+          "updated_at": "2026-02-28T00:51:05Z",
+          "html_url": "https://github.com/BreadchainCoop/commonware-restaking/issues/75",
+          "labels": [
+            "enhancement"
+          ],
+          "assignees": [],
+          "comments": [
+            {
+              "id": "IC_kwDOO05XA87s-5YS",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "should be moved to backlog until we have clarity on production curve usage",
+              "createdAt": "2026-02-28T00:51:05Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [
+                {
+                  "content": "THUMBS_UP",
+                  "users": {
+                    "totalCount": 1
+                  }
+                }
+              ],
+              "url": "https://github.com/BreadchainCoop/commonware-restaking/issues/75#issuecomment-3975910930",
+              "viewerDidAuthor": false
+            }
+          ]
+        },
+        {
+          "number": 63,
+          "title": "Add unit tests to improve test coverage",
+          "author": "bagelface",
+          "created_at": "2025-08-13T15:25:40Z",
+          "updated_at": "2025-11-06T19:47:33Z",
+          "html_url": "https://github.com/BreadchainCoop/commonware-restaking/issues/63",
+          "labels": [
+            "enhancement"
+          ],
+          "assignees": [
+            "hudsonhrh"
+          ],
+          "comments": []
+        },
+        {
+          "number": 60,
+          "title": "Refactor HTTP Server to Use Generic Handler Interface",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-11T14:33:12Z",
+          "updated_at": "2025-11-06T19:47:22Z",
+          "html_url": "https://github.com/BreadchainCoop/commonware-restaking/issues/60",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 47,
+          "title": "Update sed command usage in e2e script for cross-platform compatibility",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-07T22:06:00Z",
+          "updated_at": "2025-11-06T19:47:07Z",
+          "html_url": "https://github.com/BreadchainCoop/commonware-restaking/issues/47",
+          "labels": [
+            "bug"
+          ],
+          "assignees": [
+            "dijarllozana"
+          ],
+          "comments": [
+            {
+              "id": "IC_kwDOO05XA868tTz1",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "See comments [here](https://github.com/BreadchainCoop/commonware-avs-router/pull/45#discussion_r2257582136) \n\n@dijarllozana please review and let us know if these changes are required, if not close the issue please \ud83d\ude4f\ud83c\udffb",
+              "createdAt": "2025-08-07T22:10:53Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/commonware-restaking/issues/47#issuecomment-3165994229",
+              "viewerDidAuthor": false
+            }
+          ]
+        },
+        {
+          "number": 41,
+          "title": "Set Up Default Grafana Dashboard and PromQL-Compatible Metrics",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-02T21:30:47Z",
+          "updated_at": "2025-11-19T22:59:29Z",
+          "html_url": "https://github.com/BreadchainCoop/commonware-restaking/issues/41",
+          "labels": [
+            "documentation",
+            "enhancement"
+          ],
+          "assignees": [
+            "junkicide",
+            "RonTuretzky"
+          ],
+          "comments": [
+            {
+              "id": "IC_kwDOO05XA86-0U-t",
+              "author": {
+                "login": "tbsoc"
+              },
+              "authorAssociation": "MEMBER",
+              "body": "move to release 3 and make subissues for rust and devops\n\n@RonTuretzky ",
+              "createdAt": "2025-08-19T16:16:31Z",
+              "includesCreatedEdit": true,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/commonware-restaking/issues/41#issuecomment-3201388461",
+              "viewerDidAuthor": false
+            }
+          ]
+        },
+        {
+          "number": 39,
+          "title": "Add Helm Charts for Kubernetes Deployment",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-02T21:12:58Z",
+          "updated_at": "2025-11-19T22:59:16Z",
+          "html_url": "https://github.com/BreadchainCoop/commonware-restaking/issues/39",
+          "labels": [
+            "enhancement",
+            "help wanted"
+          ],
+          "assignees": [
+            "dijarllozana",
+            "RonTuretzky",
+            "Copilot"
+          ],
+          "comments": []
+        },
+        {
+          "number": 37,
+          "title": "Non hardcoded signature threshold",
+          "author": "junkicide",
+          "created_at": "2025-07-28T04:27:18Z",
+          "updated_at": "2025-11-06T19:46:50Z",
+          "html_url": "https://github.com/BreadchainCoop/commonware-restaking/issues/37",
+          "labels": [],
+          "assignees": [],
+          "comments": [
+            {
+              "id": "IC_kwDOO05XA869G12M",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "This should be picked up from the smart contracts somehow",
+              "createdAt": "2025-08-10T14:50:29Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/commonware-restaking/issues/37#issuecomment-3172687244",
+              "viewerDidAuthor": false
+            }
+          ]
+        },
+        {
+          "number": 36,
+          "title": "use native Impls for wire.rs",
+          "author": "junkicide",
+          "created_at": "2025-07-27T19:38:17Z",
+          "updated_at": "2025-11-06T19:47:02Z",
+          "html_url": "https://github.com/BreadchainCoop/commonware-restaking/issues/36",
+          "labels": [],
+          "assignees": [],
+          "comments": [
+            {
+              "id": "IC_kwDOO05XA87ACD8N",
+              "author": {
+                "login": "bagelface"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "Can you add some more detail to this issue. It isn't clear exactly what needs to be done. Is it just everything mentioned in that issue or a subset of what is mentioned?",
+              "createdAt": "2025-08-25T21:14:08Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/commonware-restaking/issues/36#issuecomment-3221765901",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOO05XA87ANvTo",
+              "author": {
+                "login": "junkicide"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "Basically, we want to refactor to import commonware implementations for things like `read` and `write` and not reimplement them ourselves, wherever possible.",
+              "createdAt": "2025-08-26T16:05:26Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/commonware-restaking/issues/36#issuecomment-3224827112",
+              "viewerDidAuthor": false
+            }
+          ]
+        },
+        {
+          "number": 35,
+          "title": "switch to recommended p2p config",
+          "author": "junkicide",
+          "created_at": "2025-07-27T19:36:04Z",
+          "updated_at": "2025-11-06T19:46:29Z",
+          "html_url": "https://github.com/BreadchainCoop/commonware-restaking/issues/35",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 2,
+          "title": "Offline NonSignerStakesAndSignature fetch",
+          "author": "RonTuretzky",
+          "created_at": "2025-06-03T18:47:51Z",
+          "updated_at": "2025-11-19T23:08:06Z",
+          "html_url": "https://github.com/BreadchainCoop/commonware-restaking/issues/2",
+          "labels": [],
+          "assignees": [],
+          "comments": [
+            {
+              "id": "IC_kwDOO05XA862w154",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "Slotted for after #21 ",
+              "createdAt": "2025-07-12T23:39:17Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/commonware-restaking/issues/2#issuecomment-3066257016",
+              "viewerDidAuthor": false
+            }
+          ]
+        }
+      ]
+    },
     "crowdstake.fun": {
       "repo_name": "crowdstake.fun",
       "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
@@ -3547,7 +4149,7 @@
           "title": "Add per-interval linear scaling to TimeWeightedVotingPower",
           "author": "RonTuretzky",
           "created_at": "2026-03-19T20:24:26Z",
-          "updated_at": "2026-03-19T20:31:49Z",
+          "updated_at": "2026-03-20T18:02:58Z",
           "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/91",
           "labels": [],
           "assignees": [],
@@ -3565,6 +4167,36 @@
               "minimizedReason": "",
               "reactionGroups": [],
               "url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/91#issuecomment-4093119596",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOPeu91c70N6qk",
+              "author": {
+                "login": "rubydusa"
+              },
+              "authorAssociation": "NONE",
+              "body": "Wait but flashloans have to be returned in the same transaction right? Shouldn't the area of them be zero in practice?\n\nThough yes, the problem still exists for short term loans: In practice it would be shorting ETH/BTC/whatev with leverage via a defi lending protocol.\n\nSounds like a good solution to me\n",
+              "createdAt": "2026-03-20T11:08:19Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/91#issuecomment-4097288868",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOPeu91c70YSsP",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "> Wait but flashloans have to be returned in the same transaction right? Shouldn't the area of them be zero in practice?\n> \n> Though yes, the problem still exists for short term loans: In practice it would be shorting ETH/BTC/whatev with leverage via a defi lending protocol.\n> \n> Sounds like a good solution to me\n\nI guess there's a question on if this improves the end goal which is \"you should vote on exactly how much yield you're generating\" \n\nThis means that people who are trying to gain voting power through intermittent mints are normalized somewhat, it encourges holding more over time\n\nI took this off scope because realistically these attacks are very low impact and generally generate more yield than they're worth so I think its ok to release a verison without this improvement over the original bread contracts",
+              "createdAt": "2026-03-20T18:02:58Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/91#issuecomment-4100008719",
               "viewerDidAuthor": false
             }
           ]
@@ -4469,227 +5101,6 @@
         }
       ]
     },
-    "app-stacks": {
-      "repo_name": "app-stacks",
-      "github_url": "https://github.com/BreadchainCoop/app-stacks",
-      "issues": [
-        {
-          "number": 45,
-          "title": "Show stack expiration modal only to circle members (not to every visitor)",
-          "author": "Olaleye-Blessing",
-          "created_at": "2026-03-13T20:20:33Z",
-          "updated_at": "2026-03-13T20:20:33Z",
-          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/45",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 43,
-          "title": "Add email notifications for Saving Circles users",
-          "author": "franrolotti",
-          "created_at": "2026-03-11T17:57:07Z",
-          "updated_at": "2026-03-14T18:52:55Z",
-          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/43",
-          "labels": [],
-          "assignees": [],
-          "comments": [
-            {
-              "id": "IC_kwDOQBrnic7yD0wf",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "NONE",
-              "body": "Low hanging fruit for notifications that doesn't require a backend: \n\nCreate an ICS file in the frontend that can be downloaded by the user that has reminders for the deposit events. This allows them to add it to whatever calendar app they have and get reminders",
-              "createdAt": "2026-03-14T18:52:55Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/app-stacks/issues/43#issuecomment-4061088799",
-              "viewerDidAuthor": false
-            }
-          ]
-        },
-        {
-          "number": 42,
-          "title": "Explore integration for hackathon",
-          "author": "franrolotti",
-          "created_at": "2026-03-11T17:48:29Z",
-          "updated_at": "2026-03-14T18:50:15Z",
-          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/42",
-          "labels": [],
-          "assignees": [
-            "franrolotti"
-          ],
-          "comments": [
-            {
-              "id": "IC_kwDOQBrnic7yDyCa",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "NONE",
-              "body": "@franrolotti seems kind of urgent? how can I help?",
-              "createdAt": "2026-03-14T18:46:52Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/app-stacks/issues/42#issuecomment-4061077658",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOQBrnic7yDzlz",
-              "author": {
-                "login": "franrolotti"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "@RonTuretzky the deadline was extended to march the 31st so we have more time to work on a nice application for this. I'll dm you our first idea... It would be nice to have your feedback and ideas for this",
-              "createdAt": "2026-03-14T18:50:15Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [
-                {
-                  "content": "THUMBS_UP",
-                  "users": {
-                    "totalCount": 1
-                  }
-                }
-              ],
-              "url": "https://github.com/BreadchainCoop/app-stacks/issues/42#issuecomment-4061084019",
-              "viewerDidAuthor": false
-            }
-          ]
-        },
-        {
-          "number": 34,
-          "title": "Implement funding flow for Privy embedded wallets",
-          "author": "franrolotti",
-          "created_at": "2026-02-25T17:47:26Z",
-          "updated_at": "2026-03-14T18:51:28Z",
-          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/34",
-          "labels": [],
-          "assignees": [
-            "franrolotti"
-          ],
-          "comments": [
-            {
-              "id": "IC_kwDOQBrnic7yD0Hz",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "NONE",
-              "body": "why not just link to fund.bread.coop?",
-              "createdAt": "2026-03-14T18:51:28Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/app-stacks/issues/34#issuecomment-4061086195",
-              "viewerDidAuthor": false
-            }
-          ]
-        },
-        {
-          "number": 22,
-          "title": "Implement the deposit module",
-          "author": "Olaleye-Blessing",
-          "created_at": "2026-02-12T23:43:52Z",
-          "updated_at": "2026-02-12T23:43:52Z",
-          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/22",
-          "labels": [
-            "not-ready"
-          ],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 1,
-          "title": "Abstract BREAD Token \u2014 Show Only USD Balances on Frontend (Inspired by Hyperliquid & Polymarket)",
-          "author": "diterra-code",
-          "created_at": "2025-10-15T21:14:26Z",
-          "updated_at": "2025-10-16T04:28:41Z",
-          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/1",
-          "labels": [
-            "documentation",
-            "help wanted"
-          ],
-          "assignees": [
-            "diterra-code",
-            "RonTuretzky",
-            "tbsoc"
-          ],
-          "comments": [
-            {
-              "id": "IC_kwDOQBrnic7LJut_",
-              "author": {
-                "login": "diterra-code"
-              },
-              "authorAssociation": "NONE",
-              "body": "Dropping this here @RonTuretzky @tbsoc @bagelface for further discussion.\n\n@RonTuretzky what do you think of my mermaid diagram skills? \n\nThe idea is to maybe after MVP of Stacks/Safety Net try to work on this UX.",
-              "createdAt": "2025-10-15T21:17:43Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [
-                {
-                  "content": "HEART",
-                  "users": {
-                    "totalCount": 1
-                  }
-                }
-              ],
-              "url": "https://github.com/BreadchainCoop/app-stacks/issues/1#issuecomment-3408325503",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOQBrnic7LMzo-",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "NONE",
-              "body": "> Dropping this here @RonTuretzky @tbsoc @bagelface for further discussion.\n> \n> @RonTuretzky what do you think of my mermaid diagram skills? \n> \n> The idea is to maybe after MVP of Stacks/Safety Net try to work on this UX.\n\n\n\n\ud83d\ude0d\ud83d\ude0d\ud83d\ude0d\ud83d\ude0d\ud83d\ude0d\n\n\nI think with the lifi widget like we have in the crowdstaking app this is quite doable. ",
-              "createdAt": "2025-10-16T04:28:41Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/app-stacks/issues/1#issuecomment-3409132094",
-              "viewerDidAuthor": false
-            }
-          ]
-        }
-      ]
-    },
-    "bread-ui-kit": {
-      "repo_name": "bread-ui-kit",
-      "github_url": "https://github.com/BreadchainCoop/bread-ui-kit",
-      "issues": [
-        {
-          "number": 4,
-          "title": "Update LiftedButton to accept `color` param",
-          "author": "secbajor",
-          "created_at": "2025-10-13T21:48:54Z",
-          "updated_at": "2025-10-13T21:48:54Z",
-          "html_url": "https://github.com/BreadchainCoop/bread-ui-kit/issues/4",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 3,
-          "title": "Consider adding Footer",
-          "author": "secbajor",
-          "created_at": "2025-10-06T01:55:25Z",
-          "updated_at": "2025-10-06T01:55:25Z",
-          "html_url": "https://github.com/BreadchainCoop/bread-ui-kit/issues/3",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        }
-      ]
-    },
     "etherform": {
       "repo_name": "etherform",
       "github_url": "https://github.com/BreadchainCoop/etherform",
@@ -5318,403 +5729,6 @@
           "labels": [],
           "assignees": [],
           "comments": []
-        }
-      ]
-    },
-    "commonware-restaking": {
-      "repo_name": "commonware-restaking",
-      "github_url": "https://github.com/BreadchainCoop/commonware-restaking",
-      "issues": [
-        {
-          "number": 146,
-          "title": "BlsEigenlayerExecutor: support per-task chain routing for view_only_provider",
-          "author": "bagelface",
-          "created_at": "2026-03-06T22:08:07Z",
-          "updated_at": "2026-03-06T22:08:07Z",
-          "html_url": "https://github.com/BreadchainCoop/commonware-restaking/issues/146",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 138,
-          "title": "Refactor Docker Compose to Kubernetes",
-          "author": "RonTuretzky",
-          "created_at": "2025-12-09T08:30:36Z",
-          "updated_at": "2025-12-09T08:30:36Z",
-          "html_url": "https://github.com/BreadchainCoop/commonware-restaking/issues/138",
-          "labels": [],
-          "assignees": [
-            "dijarllozana"
-          ],
-          "comments": []
-        },
-        {
-          "number": 137,
-          "title": "Consider passing validator to creator instead of orchestrator",
-          "author": "bagelface",
-          "created_at": "2025-12-01T22:05:48Z",
-          "updated_at": "2025-12-01T22:05:48Z",
-          "html_url": "https://github.com/BreadchainCoop/commonware-restaking/issues/137",
-          "labels": [
-            "enhancement"
-          ],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 135,
-          "title": "Retrieve aggregation threshold from EigenLayer smart contracts",
-          "author": "RonTuretzky",
-          "created_at": "2025-11-30T02:03:11Z",
-          "updated_at": "2025-11-30T02:27:39Z",
-          "html_url": "https://github.com/BreadchainCoop/commonware-restaking/issues/135",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 134,
-          "title": "Disable unsafe `attempt_unregistered_handshakes` setting",
-          "author": "bagelface",
-          "created_at": "2025-11-26T19:55:06Z",
-          "updated_at": "2025-11-26T19:55:06Z",
-          "html_url": "https://github.com/BreadchainCoop/commonware-restaking/issues/134",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 132,
-          "title": "Implement robust error checking when loading configs",
-          "author": "bagelface",
-          "created_at": "2025-11-26T17:23:39Z",
-          "updated_at": "2025-11-26T17:23:39Z",
-          "html_url": "https://github.com/BreadchainCoop/commonware-restaking/issues/132",
-          "labels": [
-            "enhancement"
-          ],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 127,
-          "title": "`sol!` macro binding generation from sc submodules",
-          "author": "RonTuretzky",
-          "created_at": "2025-11-21T21:32:09Z",
-          "updated_at": "2025-11-21T21:32:09Z",
-          "html_url": "https://github.com/BreadchainCoop/commonware-restaking/issues/127",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 123,
-          "title": "Fetch threshold from AVS/NCN ",
-          "author": "RonTuretzky",
-          "created_at": "2025-11-10T18:15:42Z",
-          "updated_at": "2025-11-10T18:15:42Z",
-          "html_url": "https://github.com/BreadchainCoop/commonware-restaking/issues/123",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 112,
-          "title": "Release v0.2.0",
-          "author": "tbsoc",
-          "created_at": "2025-10-15T14:46:52Z",
-          "updated_at": "2025-11-06T19:45:12Z",
-          "html_url": "https://github.com/BreadchainCoop/commonware-restaking/issues/112",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 103,
-          "title": "Add encrypted json support for orchestrator bls keys instead of plaintext",
-          "author": "RonTuretzky",
-          "created_at": "2025-09-29T17:02:13Z",
-          "updated_at": "2025-11-19T23:08:45Z",
-          "html_url": "https://github.com/BreadchainCoop/commonware-restaking/issues/103",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 102,
-          "title": "Docker compose code duplication reduction",
-          "author": "RonTuretzky",
-          "created_at": "2025-09-29T16:56:50Z",
-          "updated_at": "2025-11-19T23:08:19Z",
-          "html_url": "https://github.com/BreadchainCoop/commonware-restaking/issues/102",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 98,
-          "title": "Refactor `Aggregation` struct for clearer naming of `metadata` field",
-          "author": "bagelface",
-          "created_at": "2025-09-22T20:31:31Z",
-          "updated_at": "2025-09-22T21:21:43Z",
-          "html_url": "https://github.com/BreadchainCoop/commonware-restaking/issues/98",
-          "labels": [
-            "enhancement"
-          ],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 75,
-          "title": "Refactor Executor to Generic Implementation with Standardized Signature Verification",
-          "author": "bagelface",
-          "created_at": "2025-08-22T19:53:06Z",
-          "updated_at": "2026-02-28T00:51:05Z",
-          "html_url": "https://github.com/BreadchainCoop/commonware-restaking/issues/75",
-          "labels": [
-            "enhancement"
-          ],
-          "assignees": [],
-          "comments": [
-            {
-              "id": "IC_kwDOO05XA87s-5YS",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "should be moved to backlog until we have clarity on production curve usage",
-              "createdAt": "2026-02-28T00:51:05Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [
-                {
-                  "content": "THUMBS_UP",
-                  "users": {
-                    "totalCount": 1
-                  }
-                }
-              ],
-              "url": "https://github.com/BreadchainCoop/commonware-restaking/issues/75#issuecomment-3975910930",
-              "viewerDidAuthor": false
-            }
-          ]
-        },
-        {
-          "number": 63,
-          "title": "Add unit tests to improve test coverage",
-          "author": "bagelface",
-          "created_at": "2025-08-13T15:25:40Z",
-          "updated_at": "2025-11-06T19:47:33Z",
-          "html_url": "https://github.com/BreadchainCoop/commonware-restaking/issues/63",
-          "labels": [
-            "enhancement"
-          ],
-          "assignees": [
-            "hudsonhrh"
-          ],
-          "comments": []
-        },
-        {
-          "number": 60,
-          "title": "Refactor HTTP Server to Use Generic Handler Interface",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-11T14:33:12Z",
-          "updated_at": "2025-11-06T19:47:22Z",
-          "html_url": "https://github.com/BreadchainCoop/commonware-restaking/issues/60",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 47,
-          "title": "Update sed command usage in e2e script for cross-platform compatibility",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-07T22:06:00Z",
-          "updated_at": "2025-11-06T19:47:07Z",
-          "html_url": "https://github.com/BreadchainCoop/commonware-restaking/issues/47",
-          "labels": [
-            "bug"
-          ],
-          "assignees": [
-            "dijarllozana"
-          ],
-          "comments": [
-            {
-              "id": "IC_kwDOO05XA868tTz1",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "See comments [here](https://github.com/BreadchainCoop/commonware-avs-router/pull/45#discussion_r2257582136) \n\n@dijarllozana please review and let us know if these changes are required, if not close the issue please \ud83d\ude4f\ud83c\udffb",
-              "createdAt": "2025-08-07T22:10:53Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/commonware-restaking/issues/47#issuecomment-3165994229",
-              "viewerDidAuthor": false
-            }
-          ]
-        },
-        {
-          "number": 41,
-          "title": "Set Up Default Grafana Dashboard and PromQL-Compatible Metrics",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-02T21:30:47Z",
-          "updated_at": "2025-11-19T22:59:29Z",
-          "html_url": "https://github.com/BreadchainCoop/commonware-restaking/issues/41",
-          "labels": [
-            "documentation",
-            "enhancement"
-          ],
-          "assignees": [
-            "junkicide",
-            "RonTuretzky"
-          ],
-          "comments": [
-            {
-              "id": "IC_kwDOO05XA86-0U-t",
-              "author": {
-                "login": "tbsoc"
-              },
-              "authorAssociation": "MEMBER",
-              "body": "move to release 3 and make subissues for rust and devops\n\n@RonTuretzky ",
-              "createdAt": "2025-08-19T16:16:31Z",
-              "includesCreatedEdit": true,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/commonware-restaking/issues/41#issuecomment-3201388461",
-              "viewerDidAuthor": false
-            }
-          ]
-        },
-        {
-          "number": 39,
-          "title": "Add Helm Charts for Kubernetes Deployment",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-02T21:12:58Z",
-          "updated_at": "2025-11-19T22:59:16Z",
-          "html_url": "https://github.com/BreadchainCoop/commonware-restaking/issues/39",
-          "labels": [
-            "enhancement",
-            "help wanted"
-          ],
-          "assignees": [
-            "dijarllozana",
-            "RonTuretzky",
-            "Copilot"
-          ],
-          "comments": []
-        },
-        {
-          "number": 37,
-          "title": "Non hardcoded signature threshold",
-          "author": "junkicide",
-          "created_at": "2025-07-28T04:27:18Z",
-          "updated_at": "2025-11-06T19:46:50Z",
-          "html_url": "https://github.com/BreadchainCoop/commonware-restaking/issues/37",
-          "labels": [],
-          "assignees": [],
-          "comments": [
-            {
-              "id": "IC_kwDOO05XA869G12M",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "This should be picked up from the smart contracts somehow",
-              "createdAt": "2025-08-10T14:50:29Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/commonware-restaking/issues/37#issuecomment-3172687244",
-              "viewerDidAuthor": false
-            }
-          ]
-        },
-        {
-          "number": 36,
-          "title": "use native Impls for wire.rs",
-          "author": "junkicide",
-          "created_at": "2025-07-27T19:38:17Z",
-          "updated_at": "2025-11-06T19:47:02Z",
-          "html_url": "https://github.com/BreadchainCoop/commonware-restaking/issues/36",
-          "labels": [],
-          "assignees": [],
-          "comments": [
-            {
-              "id": "IC_kwDOO05XA87ACD8N",
-              "author": {
-                "login": "bagelface"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "Can you add some more detail to this issue. It isn't clear exactly what needs to be done. Is it just everything mentioned in that issue or a subset of what is mentioned?",
-              "createdAt": "2025-08-25T21:14:08Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/commonware-restaking/issues/36#issuecomment-3221765901",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOO05XA87ANvTo",
-              "author": {
-                "login": "junkicide"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "Basically, we want to refactor to import commonware implementations for things like `read` and `write` and not reimplement them ourselves, wherever possible.",
-              "createdAt": "2025-08-26T16:05:26Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/commonware-restaking/issues/36#issuecomment-3224827112",
-              "viewerDidAuthor": false
-            }
-          ]
-        },
-        {
-          "number": 35,
-          "title": "switch to recommended p2p config",
-          "author": "junkicide",
-          "created_at": "2025-07-27T19:36:04Z",
-          "updated_at": "2025-11-06T19:46:29Z",
-          "html_url": "https://github.com/BreadchainCoop/commonware-restaking/issues/35",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 2,
-          "title": "Offline NonSignerStakesAndSignature fetch",
-          "author": "RonTuretzky",
-          "created_at": "2025-06-03T18:47:51Z",
-          "updated_at": "2025-11-19T23:08:06Z",
-          "html_url": "https://github.com/BreadchainCoop/commonware-restaking/issues/2",
-          "labels": [],
-          "assignees": [],
-          "comments": [
-            {
-              "id": "IC_kwDOO05XA862w154",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "Slotted for after #21 ",
-              "createdAt": "2025-07-12T23:39:17Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/commonware-restaking/issues/2#issuecomment-3066257016",
-              "viewerDidAuthor": false
-            }
-          ]
         }
       ]
     },
