@@ -1,15 +1,52 @@
 {
   "organization": "BreadchainCoop",
-  "generated_at": "2026-03-21T00:16:06.782339+00:00",
-  "generation_time_seconds": 143.37,
+  "generated_at": "2026-03-22T00:17:18.585494+00:00",
+  "generation_time_seconds": 143.57,
   "stats": {
     "total_repos": 40,
     "repos_with_prs": 20,
     "repos_with_issues": 24,
-    "total_open_prs": 80,
+    "total_open_prs": 81,
     "total_open_issues": 179
   },
   "trees": {
+    "safety-net": {
+      "name": "safety-net",
+      "branch": "dev",
+      "repo_name": "safety-net",
+      "pr_number": null,
+      "pr_title": null,
+      "pr_url": null,
+      "pr_author": null,
+      "last_updated": "2026-03-21T19:56:06Z",
+      "ci_status": "",
+      "github_url": "https://github.com/BreadchainCoop/safety-net",
+      "is_draft": false,
+      "labels": [],
+      "commits_from_parent": [],
+      "parent_branch_name": null,
+      "children": [
+        {
+          "name": "Fix issue #14",
+          "branch": "fix-issue-14",
+          "repo_name": "safety-net",
+          "pr_number": 67,
+          "pr_title": "Fix issue #14",
+          "pr_url": "https://github.com/BreadchainCoop/safety-net/pull/67",
+          "pr_author": "Fiuum1",
+          "last_updated": "2026-03-21T19:56:40Z",
+          "ci_status": "",
+          "github_url": "https://github.com/BreadchainCoop/safety-net",
+          "is_draft": false,
+          "labels": [
+            "enhancement"
+          ],
+          "commits_from_parent": [],
+          "parent_branch_name": "dev",
+          "children": []
+        }
+      ]
+    },
     "app-stacks": {
       "name": "app-stacks",
       "branch": "dev",
@@ -18,7 +55,7 @@
       "pr_title": null,
       "pr_url": null,
       "pr_author": null,
-      "last_updated": "2026-03-20T20:48:36Z",
+      "last_updated": "2026-03-21T09:51:37Z",
       "ci_status": "",
       "github_url": "https://github.com/BreadchainCoop/app-stacks",
       "is_draft": false,
@@ -110,6 +147,34 @@
           "commits_from_parent": [],
           "parent_branch_name": "dev",
           "children": [
+            {
+              "name": "Make components react to block timestamp",
+              "branch": "correct-timestamp",
+              "repo_name": "app-stacks",
+              "pr_number": 51,
+              "pr_title": "Make components react to block timestamp",
+              "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/51",
+              "pr_author": "Olaleye-Blessing",
+              "last_updated": "2026-03-21T09:55:21Z",
+              "ci_status": "pass",
+              "github_url": "https://github.com/BreadchainCoop/app-stacks",
+              "is_draft": false,
+              "labels": [],
+              "commits_from_parent": [
+                {
+                  "sha": "a6f7082f38cb37a8b53c902840babfea2bf89cfe",
+                  "short_sha": "a6f7082",
+                  "message": "Make components react to block timestamp",
+                  "author": "Olaleye Blessing",
+                  "author_login": "Olaleye-Blessing",
+                  "author_avatar_url": "https://avatars.githubusercontent.com/u/70102539?v=4",
+                  "date": "2026-03-21",
+                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/a6f7082f38cb37a8b53c902840babfea2bf89cfe"
+                }
+              ],
+              "parent_branch_name": "dev",
+              "children": []
+            },
             {
               "name": "Update new stacks onboarding cards",
               "branch": "update-cards",
@@ -669,43 +734,6 @@
           "labels": [],
           "commits_from_parent": [],
           "parent_branch_name": "main",
-          "children": []
-        }
-      ]
-    },
-    "safety-net": {
-      "name": "safety-net",
-      "branch": "dev",
-      "repo_name": "safety-net",
-      "pr_number": null,
-      "pr_title": null,
-      "pr_url": null,
-      "pr_author": null,
-      "last_updated": "2026-03-19T20:56:08Z",
-      "ci_status": "",
-      "github_url": "https://github.com/BreadchainCoop/safety-net",
-      "is_draft": false,
-      "labels": [],
-      "commits_from_parent": [],
-      "parent_branch_name": null,
-      "children": [
-        {
-          "name": "Fix issue #14",
-          "branch": "fix-issue-14",
-          "repo_name": "safety-net",
-          "pr_number": 67,
-          "pr_title": "Fix issue #14",
-          "pr_url": "https://github.com/BreadchainCoop/safety-net/pull/67",
-          "pr_author": "Fiuum1",
-          "last_updated": "2026-03-20T20:21:53Z",
-          "ci_status": "",
-          "github_url": "https://github.com/BreadchainCoop/safety-net",
-          "is_draft": false,
-          "labels": [
-            "enhancement"
-          ],
-          "commits_from_parent": [],
-          "parent_branch_name": "dev",
           "children": []
         }
       ]
@@ -3520,6 +3548,637 @@
     }
   },
   "issues": {
+    "safety-net": {
+      "repo_name": "safety-net",
+      "github_url": "https://github.com/BreadchainCoop/safety-net",
+      "issues": [
+        {
+          "number": 66,
+          "title": "Frontend component for invite generation",
+          "author": "exo404",
+          "created_at": "2025-10-19T17:57:08Z",
+          "updated_at": "2025-10-21T08:59:35Z",
+          "html_url": "https://github.com/BreadchainCoop/safety-net/issues/66",
+          "labels": [
+            "enhancement"
+          ],
+          "assignees": [
+            "exo404"
+          ],
+          "comments": [
+            {
+              "id": "IC_kwDOPUZJj87MFhWk",
+              "author": {
+                "login": "crystal503"
+              },
+              "authorAssociation": "NONE",
+              "body": "@exo404 do you have a time estimation on this?",
+              "createdAt": "2025-10-20T22:44:42Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/safety-net/issues/66#issuecomment-3423999396",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOPUZJj87MLR3k",
+              "author": {
+                "login": "exo404"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "> @exo404 do you have a time estimation on this?\n\nI want to finish it today in the stacks repo, can you please review the invite generation PR first there? @crystal503 ",
+              "createdAt": "2025-10-21T08:59:20Z",
+              "includesCreatedEdit": true,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/safety-net/issues/66#issuecomment-3425508836",
+              "viewerDidAuthor": false
+            }
+          ]
+        },
+        {
+          "number": 62,
+          "title": "Solhint version update",
+          "author": "exo404",
+          "created_at": "2025-10-13T17:45:25Z",
+          "updated_at": "2025-10-13T17:45:25Z",
+          "html_url": "https://github.com/BreadchainCoop/safety-net/issues/62",
+          "labels": [
+            "enhancement"
+          ],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 56,
+          "title": "Improve Fuzz and Unit Test Quality",
+          "author": "franrolotti",
+          "created_at": "2025-10-08T15:33:51Z",
+          "updated_at": "2025-10-08T15:33:51Z",
+          "html_url": "https://github.com/BreadchainCoop/safety-net/issues/56",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 54,
+          "title": "Should we carry excess deposits to next epoch(s)?",
+          "author": "franrolotti",
+          "created_at": "2025-10-06T15:01:20Z",
+          "updated_at": "2025-10-06T15:01:20Z",
+          "html_url": "https://github.com/BreadchainCoop/safety-net/issues/54",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 52,
+          "title": "Automated CI/CD testnet deployment",
+          "author": "RonTuretzky",
+          "created_at": "2025-10-03T15:59:33Z",
+          "updated_at": "2025-10-20T22:44:07Z",
+          "html_url": "https://github.com/BreadchainCoop/safety-net/issues/52",
+          "labels": [],
+          "assignees": [
+            "RonTuretzky",
+            "franrolotti"
+          ],
+          "comments": [
+            {
+              "id": "IC_kwDOPUZJj87Lnrg9",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "[here](https://github.com/BreadchainCoop/breadchain/blob/fa7dfc15fd8cc2424d28ce8c659c53551ade6174/.github/workflows/test.yml#L50) is a reference to the upgrade safety validation \n\nplease note that the intention of this feature is to be used across multiple repos, but not to make continous automatic upgrades of production environments but rather to know end to end deployments are work and that frontends can be continunally spun up with new smart contract versions without necessitating the frontend team to know anything about smart contract deployment or overloading their environment with that code.",
+              "createdAt": "2025-10-17T16:04:49Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/safety-net/issues/52#issuecomment-3416176701",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOPUZJj87LntwO",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "Please create a spec based on this template (the first page only!) and all presented references \nhttps://docs.fileverse.io/0x86A3a4404EFCF8CEcC492E310015d349A035b96b/6#key=DpO_K6hOcTHxV_2EnTywtpP3KJkgmgr8ydAB2AtPxGFi5X6h0X1xLEAWGw1AiGJF",
+              "createdAt": "2025-10-17T16:06:26Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/safety-net/issues/52#issuecomment-3416185870",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOPUZJj87LnuW-",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "reccomending to use blockscout and drop etherscan support",
+              "createdAt": "2025-10-17T16:06:51Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/safety-net/issues/52#issuecomment-3416188350",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOPUZJj87MFhF0",
+              "author": {
+                "login": "crystal503"
+              },
+              "authorAssociation": "NONE",
+              "body": "now tracked in the etherform repo",
+              "createdAt": "2025-10-20T22:44:07Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/safety-net/issues/52#issuecomment-3423998324",
+              "viewerDidAuthor": false
+            }
+          ]
+        },
+        {
+          "number": 46,
+          "title": "breaking the account abstraction pattern pattern for request creation",
+          "author": "RonTuretzky",
+          "created_at": "2025-09-19T23:37:07Z",
+          "updated_at": "2025-09-19T23:37:07Z",
+          "html_url": "https://github.com/BreadchainCoop/safety-net/issues/46",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 41,
+          "title": "Give the design team a full list of configurable variables after finalization",
+          "author": "RonTuretzky",
+          "created_at": "2025-09-05T15:48:05Z",
+          "updated_at": "2025-09-05T15:48:22Z",
+          "html_url": "https://github.com/BreadchainCoop/safety-net/issues/41",
+          "labels": [],
+          "assignees": [],
+          "comments": [
+            {
+              "id": "IC_kwDOPUZJj87CPgtk",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "cc @diterra-code @brendaasfjnso ",
+              "createdAt": "2025-09-05T15:48:22Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/safety-net/issues/41#issuecomment-3258846052",
+              "viewerDidAuthor": false
+            }
+          ]
+        },
+        {
+          "number": 33,
+          "title": "Research blanket withdrawal delay to prevent liquidity scarcity event",
+          "author": "miawinthertamaki",
+          "created_at": "2025-08-22T16:34:42Z",
+          "updated_at": "2025-09-05T14:59:41Z",
+          "html_url": "https://github.com/BreadchainCoop/safety-net/issues/33",
+          "labels": [
+            "question",
+            "research"
+          ],
+          "assignees": [],
+          "comments": [
+            {
+              "id": "IC_kwDOPUZJj87COzsV",
+              "author": {
+                "login": "franrolotti"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "### Proposal \u2014 \u201cPersonal Surplus \u00d7 Ratio\u201d withdrawal rule\n\n**Goal:** members can continuously withdraw **up to a leverage on what they\u2019ve actually put in**, but if they\u2019ve \u201coverdrawn\u201d (because of the ratio), they must deposit again before withdrawing more. No initial lockups or waiting periods, just small withdrawable balances at the beggining and a waiting period after withdrawing more than deposited.\n\n#### Core definitions\n\n* **Per\u2013member running totals**\n\n  * `totalDeposited[m]`: sum of that member\u2019s *real* deposits (excluding fees).\n  * `totalExtracted[m]`: sum of token amounts withdrawn to that member.\n  * **Personal Surplus:** `surplus[m] = totalDeposited[m] - totalExtracted[m]` (can go negative).\n* **Withdrawal capacity (personal):**\n  `personalCapacity[m] = max(0, surplus[m]) * ratio`\n\n  * Intuition: as long as your *surplus is positive*, you may withdraw up to `surplus \u00d7 ratio`.\n  * If surplus \u2264 0 (because you leveraged previous deposits), you **cannot** withdraw again until you deposit and restore surplus > 0.\n\nThis is stricter (and better aligned to the intent) than the current `memberWithdrawableBalance` logic:\n\n* Today: remaining allowance \u2248 `totalDeposited \u00d7 ratio \u2212 totalExtracted`.\n* Proposed (enforced cap): remaining allowance \u2248 `(totalDeposited \u2212 totalExtracted) \u00d7 ratio` (if positive).\n\n  * When `ratio > 1`, this avoids \u201ccoasting\u201d after heavy withdrawals: if you\u2019ve already withdrawn more than you\u2019ve deposited (surplus \u2264 0), **all** further withdrawals are blocked until you top up.\n\n\n#### Optional anti-\u201cnever deposit again\u201d cap\n\nTo avoid people from executing a very large withdrawal when they accumulated many deposits, we should create a per-epoch cap such as a reasonable amount for living for one month (it can be configurable). This prevents them from making a huge leveraged withdrawal when they deposited many months, which could generate incentives to never deposit again.\n\n\n\n### How it plugs into Breadfunds\u2019 current flow\n\n* **On deposit:**\n\n  * Increase `totalDeposited[fund][member]` by the *member\u2019s amount* (i.e., `_value`).\n  * Keep current `memberWithdrawableBalance += _value * ratio` (back-compat); it just won\u2019t be the only cap anymore.\n* **On withdraw:**\n\n  * Compute the requested `_withdrawAmount` as already done (days \u00d7 daily).\n  * **New gate:** require `surplus > 0` and `_withdrawAmount <= personalCapacity`.\n  * Also keep the existing guard `_withdrawAmount <= memberWithdrawableBalance` and the \u201csmall vs large\u201d handling.\n\n",
+              "createdAt": "2025-09-05T14:59:41Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/safety-net/issues/33#issuecomment-3258661653",
+              "viewerDidAuthor": false
+            }
+          ]
+        },
+        {
+          "number": 32,
+          "title": "Automated ERC20 Allowance-Based Deposits and Batch Account Abstraction",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-20T16:23:39Z",
+          "updated_at": "2025-10-10T18:09:16Z",
+          "html_url": "https://github.com/BreadchainCoop/safety-net/issues/32",
+          "labels": [
+            "enhancement"
+          ],
+          "assignees": [
+            "exo404"
+          ],
+          "comments": []
+        },
+        {
+          "number": 31,
+          "title": "Prime-based crediting (actuarial entitlement, not deposit-linked)",
+          "author": "franrolotti",
+          "created_at": "2025-08-19T09:19:55Z",
+          "updated_at": "2025-08-19T09:19:55Z",
+          "html_url": "https://github.com/BreadchainCoop/safety-net/issues/31",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 30,
+          "title": "Liquidity\u2011aware epoch ratio",
+          "author": "franrolotti",
+          "created_at": "2025-08-19T08:46:26Z",
+          "updated_at": "2025-08-19T08:46:26Z",
+          "html_url": "https://github.com/BreadchainCoop/safety-net/issues/30",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 29,
+          "title": "Develop a Context-Aware Risk Ratio Formula for Breadfunds Use Cases",
+          "author": "miawinthertamaki",
+          "created_at": "2025-08-18T20:48:20Z",
+          "updated_at": "2025-08-18T20:48:20Z",
+          "html_url": "https://github.com/BreadchainCoop/safety-net/issues/29",
+          "labels": [
+            "enhancement"
+          ],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 28,
+          "title": "Proposals for V2",
+          "author": "franrolotti",
+          "created_at": "2025-08-16T14:54:26Z",
+          "updated_at": "2025-08-19T09:20:57Z",
+          "html_url": "https://github.com/BreadchainCoop/safety-net/issues/28",
+          "labels": [],
+          "assignees": [],
+          "comments": [
+            {
+              "id": "IC_kwDOPUZJj86-XFpL",
+              "author": {
+                "login": "diterra-code"
+              },
+              "authorAssociation": "NONE",
+              "body": "Hey @franrolotti ,\n\nSounds interesting, care to explain a user story where these features would be helpfull?",
+              "createdAt": "2025-08-16T15:01:49Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/safety-net/issues/28#issuecomment-3193723467",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOPUZJj86-u04j",
+              "author": {
+                "login": "franrolotti"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "Hey @diterra-code ,\n\nI added two larger explanations with user stories about these proposals. I think that the second one is way better. Let me know what you think.",
+              "createdAt": "2025-08-19T09:20:57Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/safety-net/issues/28#issuecomment-3199946275",
+              "viewerDidAuthor": false
+            }
+          ]
+        },
+        {
+          "number": 27,
+          "title": "Layman explanation",
+          "author": "franrolotti",
+          "created_at": "2025-08-16T14:53:49Z",
+          "updated_at": "2025-08-16T15:02:46Z",
+          "html_url": "https://github.com/BreadchainCoop/safety-net/issues/27",
+          "labels": [],
+          "assignees": [],
+          "comments": [
+            {
+              "id": "IC_kwDOPUZJj86-XFxm",
+              "author": {
+                "login": "diterra-code"
+              },
+              "authorAssociation": "NONE",
+              "body": "Oke dope, I like this.",
+              "createdAt": "2025-08-16T15:02:46Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/safety-net/issues/27#issuecomment-3193724006",
+              "viewerDidAuthor": false
+            }
+          ]
+        },
+        {
+          "number": 25,
+          "title": "Lock ratio to 1 (disable leverage)",
+          "author": "franrolotti",
+          "created_at": "2025-08-15T20:06:06Z",
+          "updated_at": "2025-08-15T20:06:06Z",
+          "html_url": "https://github.com/BreadchainCoop/safety-net/issues/25",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 24,
+          "title": "Notification Options for Withdrawal Voting Result",
+          "author": "miawinthertamaki",
+          "created_at": "2025-08-15T19:41:44Z",
+          "updated_at": "2025-08-18T20:46:07Z",
+          "html_url": "https://github.com/BreadchainCoop/safety-net/issues/24",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 21,
+          "title": "[Wishlist/Research] Liquidity-safe ratio > 1 (leverage & solvency)",
+          "author": "franrolotti",
+          "created_at": "2025-08-15T19:08:11Z",
+          "updated_at": "2025-08-19T09:41:14Z",
+          "html_url": "https://github.com/BreadchainCoop/safety-net/issues/21",
+          "labels": [
+            "v2",
+            "research"
+          ],
+          "assignees": [],
+          "comments": [
+            {
+              "id": "IC_kwDOPUZJj86-XGZR",
+              "author": {
+                "login": "diterra-code"
+              },
+              "authorAssociation": "NONE",
+              "body": "@franrolotti \n\nWould this be able to be adapted where the multiplier is gradual based on the amount of deposits overtime by the user?",
+              "createdAt": "2025-08-16T15:07:18Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/safety-net/issues/21#issuecomment-3193726545",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOPUZJj86-vE68",
+              "author": {
+                "login": "franrolotti"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "@diterra-code \n\nYes, it could be adapted to a user-specific multiplier that changes gradually with deposits over time. But in practice, the \u201cmultiplier\u201d is only a way of redistributing the same underlying liquidity among members: the collective pool determines how much is ultimately available and this is exactly the same as the sum of all deposits, so the *implicit ratio* across the system is 1.\n\nA ratio above 1 temporarily allows some members to withdraw more than they deposited, which effectively means they are drawing on own future contributions or on the credit of other members. This has to be compensated later with a ratio below 1 in subsequent epochs, otherwise the pool becomes insolvent.\n\nThat design has two main implications:\n\n* **Early-withdrawal incentive:** At the beginning, when personal withdrawable balances are low, members may benefit disproportionately if the ratio > 1, because they can access more liquidity than they have personally contributed.\n* **Trust risk when ratio < 1:** If later epochs must reduce the ratio below 1 to compensate, members may feel their accrued credit is being diminished, which could incentivize them to decommission or exit the fund.\n\nIf the multiplier is user-specific rather than pooled, it becomes riskier: a member who already benefitted from a >1 period may have little incentive to keep depositing once they expect their future contributions will be discounted at <1. That creates uneven incentives and could undermine sustainability.\n\nThese are the reasons why I prefer [this option](https://github.com/BreadchainCoop/breadfunds/issues/31#issue-3333597847) over the withdrawable balance increasing in deposits, even though it has it own risks.\n\n",
+              "createdAt": "2025-08-19T09:40:50Z",
+              "includesCreatedEdit": true,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/safety-net/issues/21#issuecomment-3200011964",
+              "viewerDidAuthor": false
+            }
+          ]
+        },
+        {
+          "number": 14,
+          "title": "Proposal: Change Contestation Threshold Logic for Withdrawal Approval",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-05T21:47:15Z",
+          "updated_at": "2026-03-12T19:07:41Z",
+          "html_url": "https://github.com/BreadchainCoop/safety-net/issues/14",
+          "labels": [
+            "enhancement"
+          ],
+          "assignees": [
+            "diterra-code",
+            "Fiuum1",
+            "brendaasfjnso"
+          ],
+          "comments": [
+            {
+              "id": "IC_kwDOPUZJj8691GpW",
+              "author": {
+                "login": "diterra-code"
+              },
+              "authorAssociation": "NONE",
+              "body": "Hey @RonTuretzky & @brendaasfjnso \n\nI think this is a great proposal and creates a different process when claiming insurance. However i do see some components missing to make this as robust as possibel.\n\nIs there a period they can contest against the withdrawal? ....because i don\u2019t see it anywhere. For example, If i claim 3k BREAD to cover the costs of my broken laptop this request is payed out immediatly from the pool or will there be a 2 week period for other members to contest against if they believe it to be unfair or too much?\n\nAlso I suggest creating 3 types of claims.\n\n## Mini claims\n\n**Conditions:** \n\n- Amount e.g. under 50 BREAD ( This could be set by the pool creator)\n- No approval needed from other members\n- Can only conduct 2 mini claims every 6 months orso.\n\n**Case:** \n\nI broke my airpods, i need some funds to replace them.\n\n## Default claims\n\n**Conditions:**\n\n- Amount is higher than 500 BREAD.\n- Takes 2 weeks to \"process or get cleared\"\n- No approval needed by other members, but need 33% of members to contest within the 2 week window to freeze if there is no agreement on claim.\n- If no contests then funds are automatically deposited to claimers wallet\n\n**Case:**\n\nMy laptop screen needs repair I need more funds to replace this.\n\n## Urgent claims\n\n**Conditions:**\n\n- Amount higher than 500 BREAD\n- Takes 1 week for \"process or get cleared\"\n- No approval needed by pther members but only 10% of members needed to contest to freeze this claim if there is disagreement.\n- If no contestations then funds automatically are deposited into claimer wallet/account.\n\n**Case:**\n\nI need that screen to be replaced asap because its my livily hood and have meetings to get too.\n\n\nI think this would be a good start tbh.\n",
+              "createdAt": "2025-08-13T17:26:17Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/safety-net/issues/14#issuecomment-3184814678",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOPUZJj8691aNp",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "Very interesting, have to think about this more \n\nThe proposed change does allow to reject a withdrawal with 1/3 of the total members within a few days from when it was proposed ",
+              "createdAt": "2025-08-13T17:52:58Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/safety-net/issues/14#issuecomment-3184894825",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOPUZJj86958f4",
+              "author": {
+                "login": "diterra-code"
+              },
+              "authorAssociation": "NONE",
+              "body": "@RonTuretzky Definitely.\n\nThis would be a great start for MVP imo. But if we really have to slim it then i would keep it to 2 types: mini and default claims.\n\n.... And then later versions can build upon maybe accredition systems, attestations etc. e.g. Member has a deposit streak of 1 year member can have a higher coverage for mini claims instead of 50 BREAD, 150 BREAD.\n\nThe approaches are infinite and probably best to keep them easily modifiable for each specific insurance pool/group.\n\n",
+              "createdAt": "2025-08-13T22:58:33Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [
+                {
+                  "content": "THUMBS_UP",
+                  "users": {
+                    "totalCount": 1
+                  }
+                }
+              ],
+              "url": "https://github.com/BreadchainCoop/safety-net/issues/14#issuecomment-3186083832",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOPUZJj86961uI",
+              "author": {
+                "login": "brendaasfjnso"
+              },
+              "authorAssociation": "NONE",
+              "body": "Yes I like the idea of a minimum time streak as a member or # of contributions before the users start doing withdrawals requests, like i would saw 150 BREAD would be a valid amount (not much not to little)\n\nFor the other requests I like the idea of mini, default and urgent. The system can always set a recommended amount (bases on a percentage of the monthly request, idk about 50%) but the user can always edit that number.\n\n> [@RonTuretzky](https://github.com/RonTuretzky) Definitely.\n> \n> This would be a great start for MVP imo. But if we really have to slim it then i would keep it to 2 types: mini and default claims.\n> \n> .... And then later versions can build upon maybe accredition systems, attestations etc. e.g. Member has a deposit streak of 1 year member can have a higher coverage for mini claims instead of 50 BREAD, 150 BREAD.\n> \n> The approaches are infinite and probably best to keep them easily modifiable for each specific insurance pool/group.\n\n",
+              "createdAt": "2025-08-14T00:57:14Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [
+                {
+                  "content": "ROCKET",
+                  "users": {
+                    "totalCount": 1
+                  }
+                }
+              ],
+              "url": "https://github.com/BreadchainCoop/safety-net/issues/14#issuecomment-3186318216",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOPUZJj8696145",
+              "author": {
+                "login": "brendaasfjnso"
+              },
+              "authorAssociation": "NONE",
+              "body": "/",
+              "createdAt": "2025-08-14T00:57:27Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/safety-net/issues/14#issuecomment-3186318905",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOPUZJj87wxCAv",
+              "author": {
+                "login": "Fiuum1"
+              },
+              "authorAssociation": "NONE",
+              "body": "Hey @RonTuretzky, \n\nThis is the updated version of the complete Sequence Diagram for \"Withdrawing from a Breadfund\" on the [current spec](https://github.com/BreadchainCoop/safety-net/issues/9):\n\n```mermaid\nsequenceDiagram\n    autonumber\n    %% Actors & contracts %%\n    actor Member\n    participant UI\n    participant Breadfund\n    participant ERC20Token\n\n    %% Member initiates withdrawal %%\n    Member->>UI: Initiate withdrawal<br/>(amount, daysRequested)\n    UI->>Breadfund: withdraw(amount, daysRequested)\n\n    %% Contract checks threshold %%\n    Breadfund->>Breadfund: isSmall = amount \u2264 AUTO_THRESHOLD\n\n    alt Small (isSmall == true)\n        Note right of Breadfund: Quick-access path\n        Breadfund->>ERC20Token: transfer(Member, amount)\n        ERC20Token-->>Breadfund: Transfer OK\n        Breadfund-->>UI: emit WithdrawalAutoExecuted\n        UI-->>Member: Confirm immediate payout\n    else Large (isSmall == false)\n        Note right of Breadfund: Large-amount path<br/>Start contest timer (CONTEST_WINDOW)\n        Breadfund-->>UI: emit WithdrawalPending (execTime)\n        UI-->>Member: Shows \u201cPending - auto-exec in X hrs\u201d\n        \n        loop Until Contest Timer expires OR >33% contested\n            actor Contester\n            Contester->>UI: Contest withdrawal\n            UI->>Breadfund: contest(requestId)\n                          \n            Note right of Breadfund: Dynamic counter\n            Breadfund->>Breadfund: Update contestCount & compute %\n                    \n            alt > 33% Contested\n                Breadfund-->>UI: emit WithdrawalRejected\n                UI-->>Member: Notify rejection\n                break ContestedWithdrawal\n                    Note right of Breadfund: Veto reached!<br/>Withdrawal cancelled immediately.\n                end\n            end\n        end\n        \n        %% Execution phase (only happens if loop finished without breaking, not reaching 33% of contestation)\n        opt If not vetoed (Contest Timer expired)\n            UI->>Breadfund: executeContestedWithdrawal(requestId)\n            Breadfund->>ERC20Token: transfer(Member, amount)\n            ERC20Token-->>Breadfund: Transfer OK\n            Breadfund-->>UI: emit WithdrawalAutoExecuted\n            UI-->>Member: Confirm payout\n        end\n    end\n```",
+              "createdAt": "2026-03-11T13:54:03Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/safety-net/issues/14#issuecomment-4039385135",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOPUZJj87xW6oy",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "> Hey [@RonTuretzky](https://github.com/RonTuretzky),\n> \n> This is the updated version of the complete Sequence Diagram for \"Withdrawing from a Breadfund\" on the [current spec](https://github.com/BreadchainCoop/safety-net/issues/9):\n\nlgtm",
+              "createdAt": "2026-03-12T19:07:40Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/safety-net/issues/14#issuecomment-4049316402",
+              "viewerDidAuthor": false
+            }
+          ]
+        },
+        {
+          "number": 11,
+          "title": "Add view methods aggregating all frontend data",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-03T18:05:09Z",
+          "updated_at": "2025-08-04T20:49:30Z",
+          "html_url": "https://github.com/BreadchainCoop/safety-net/issues/11",
+          "labels": [],
+          "assignees": [],
+          "comments": [
+            {
+              "id": "IC_kwDOPUZJj8675WGj",
+              "author": {
+                "login": "miawinthertamaki"
+              },
+              "authorAssociation": "NONE",
+              "body": "Here is the upstream issue:\nhttps://github.com/BreadchainCoop/breadfunds-app/issues/1#issue-3290745013",
+              "createdAt": "2025-08-04T20:49:30Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [
+                {
+                  "content": "ROCKET",
+                  "users": {
+                    "totalCount": 1
+                  }
+                }
+              ],
+              "url": "https://github.com/BreadchainCoop/safety-net/issues/11#issuecomment-3152372131",
+              "viewerDidAuthor": false
+            }
+          ]
+        },
+        {
+          "number": 9,
+          "title": "Breadfunds Spec",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-03T17:17:13Z",
+          "updated_at": "2025-08-08T20:06:12Z",
+          "html_url": "https://github.com/BreadchainCoop/safety-net/issues/9",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 8,
+          "title": "Bread Mutual Insurance fund (Bread Insurance) spec V1.5",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-03T17:16:56Z",
+          "updated_at": "2025-08-08T17:43:19Z",
+          "html_url": "https://github.com/BreadchainCoop/safety-net/issues/8",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 4,
+          "title": "[Wishlist/Research]  Sliding participation scale for users",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-03T17:15:39Z",
+          "updated_at": "2025-08-03T17:15:39Z",
+          "html_url": "https://github.com/BreadchainCoop/safety-net/issues/4",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 2,
+          "title": "Breadfunds Spec",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-02T22:19:54Z",
+          "updated_at": "2025-08-02T22:19:54Z",
+          "html_url": "https://github.com/BreadchainCoop/safety-net/issues/2",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        }
+      ]
+    },
     "app-stacks": {
       "repo_name": "app-stacks",
       "github_url": "https://github.com/BreadchainCoop/app-stacks",
@@ -4464,637 +5123,6 @@
           "created_at": "2025-08-16T06:04:13Z",
           "updated_at": "2025-08-16T06:04:13Z",
           "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/10",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        }
-      ]
-    },
-    "safety-net": {
-      "repo_name": "safety-net",
-      "github_url": "https://github.com/BreadchainCoop/safety-net",
-      "issues": [
-        {
-          "number": 66,
-          "title": "Frontend component for invite generation",
-          "author": "exo404",
-          "created_at": "2025-10-19T17:57:08Z",
-          "updated_at": "2025-10-21T08:59:35Z",
-          "html_url": "https://github.com/BreadchainCoop/safety-net/issues/66",
-          "labels": [
-            "enhancement"
-          ],
-          "assignees": [
-            "exo404"
-          ],
-          "comments": [
-            {
-              "id": "IC_kwDOPUZJj87MFhWk",
-              "author": {
-                "login": "crystal503"
-              },
-              "authorAssociation": "NONE",
-              "body": "@exo404 do you have a time estimation on this?",
-              "createdAt": "2025-10-20T22:44:42Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/safety-net/issues/66#issuecomment-3423999396",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOPUZJj87MLR3k",
-              "author": {
-                "login": "exo404"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "> @exo404 do you have a time estimation on this?\n\nI want to finish it today in the stacks repo, can you please review the invite generation PR first there? @crystal503 ",
-              "createdAt": "2025-10-21T08:59:20Z",
-              "includesCreatedEdit": true,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/safety-net/issues/66#issuecomment-3425508836",
-              "viewerDidAuthor": false
-            }
-          ]
-        },
-        {
-          "number": 62,
-          "title": "Solhint version update",
-          "author": "exo404",
-          "created_at": "2025-10-13T17:45:25Z",
-          "updated_at": "2025-10-13T17:45:25Z",
-          "html_url": "https://github.com/BreadchainCoop/safety-net/issues/62",
-          "labels": [
-            "enhancement"
-          ],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 56,
-          "title": "Improve Fuzz and Unit Test Quality",
-          "author": "franrolotti",
-          "created_at": "2025-10-08T15:33:51Z",
-          "updated_at": "2025-10-08T15:33:51Z",
-          "html_url": "https://github.com/BreadchainCoop/safety-net/issues/56",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 54,
-          "title": "Should we carry excess deposits to next epoch(s)?",
-          "author": "franrolotti",
-          "created_at": "2025-10-06T15:01:20Z",
-          "updated_at": "2025-10-06T15:01:20Z",
-          "html_url": "https://github.com/BreadchainCoop/safety-net/issues/54",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 52,
-          "title": "Automated CI/CD testnet deployment",
-          "author": "RonTuretzky",
-          "created_at": "2025-10-03T15:59:33Z",
-          "updated_at": "2025-10-20T22:44:07Z",
-          "html_url": "https://github.com/BreadchainCoop/safety-net/issues/52",
-          "labels": [],
-          "assignees": [
-            "RonTuretzky",
-            "franrolotti"
-          ],
-          "comments": [
-            {
-              "id": "IC_kwDOPUZJj87Lnrg9",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "[here](https://github.com/BreadchainCoop/breadchain/blob/fa7dfc15fd8cc2424d28ce8c659c53551ade6174/.github/workflows/test.yml#L50) is a reference to the upgrade safety validation \n\nplease note that the intention of this feature is to be used across multiple repos, but not to make continous automatic upgrades of production environments but rather to know end to end deployments are work and that frontends can be continunally spun up with new smart contract versions without necessitating the frontend team to know anything about smart contract deployment or overloading their environment with that code.",
-              "createdAt": "2025-10-17T16:04:49Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/safety-net/issues/52#issuecomment-3416176701",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOPUZJj87LntwO",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "Please create a spec based on this template (the first page only!) and all presented references \nhttps://docs.fileverse.io/0x86A3a4404EFCF8CEcC492E310015d349A035b96b/6#key=DpO_K6hOcTHxV_2EnTywtpP3KJkgmgr8ydAB2AtPxGFi5X6h0X1xLEAWGw1AiGJF",
-              "createdAt": "2025-10-17T16:06:26Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/safety-net/issues/52#issuecomment-3416185870",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOPUZJj87LnuW-",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "reccomending to use blockscout and drop etherscan support",
-              "createdAt": "2025-10-17T16:06:51Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/safety-net/issues/52#issuecomment-3416188350",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOPUZJj87MFhF0",
-              "author": {
-                "login": "crystal503"
-              },
-              "authorAssociation": "NONE",
-              "body": "now tracked in the etherform repo",
-              "createdAt": "2025-10-20T22:44:07Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/safety-net/issues/52#issuecomment-3423998324",
-              "viewerDidAuthor": false
-            }
-          ]
-        },
-        {
-          "number": 46,
-          "title": "breaking the account abstraction pattern pattern for request creation",
-          "author": "RonTuretzky",
-          "created_at": "2025-09-19T23:37:07Z",
-          "updated_at": "2025-09-19T23:37:07Z",
-          "html_url": "https://github.com/BreadchainCoop/safety-net/issues/46",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 41,
-          "title": "Give the design team a full list of configurable variables after finalization",
-          "author": "RonTuretzky",
-          "created_at": "2025-09-05T15:48:05Z",
-          "updated_at": "2025-09-05T15:48:22Z",
-          "html_url": "https://github.com/BreadchainCoop/safety-net/issues/41",
-          "labels": [],
-          "assignees": [],
-          "comments": [
-            {
-              "id": "IC_kwDOPUZJj87CPgtk",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "cc @diterra-code @brendaasfjnso ",
-              "createdAt": "2025-09-05T15:48:22Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/safety-net/issues/41#issuecomment-3258846052",
-              "viewerDidAuthor": false
-            }
-          ]
-        },
-        {
-          "number": 33,
-          "title": "Research blanket withdrawal delay to prevent liquidity scarcity event",
-          "author": "miawinthertamaki",
-          "created_at": "2025-08-22T16:34:42Z",
-          "updated_at": "2025-09-05T14:59:41Z",
-          "html_url": "https://github.com/BreadchainCoop/safety-net/issues/33",
-          "labels": [
-            "question",
-            "research"
-          ],
-          "assignees": [],
-          "comments": [
-            {
-              "id": "IC_kwDOPUZJj87COzsV",
-              "author": {
-                "login": "franrolotti"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "### Proposal \u2014 \u201cPersonal Surplus \u00d7 Ratio\u201d withdrawal rule\n\n**Goal:** members can continuously withdraw **up to a leverage on what they\u2019ve actually put in**, but if they\u2019ve \u201coverdrawn\u201d (because of the ratio), they must deposit again before withdrawing more. No initial lockups or waiting periods, just small withdrawable balances at the beggining and a waiting period after withdrawing more than deposited.\n\n#### Core definitions\n\n* **Per\u2013member running totals**\n\n  * `totalDeposited[m]`: sum of that member\u2019s *real* deposits (excluding fees).\n  * `totalExtracted[m]`: sum of token amounts withdrawn to that member.\n  * **Personal Surplus:** `surplus[m] = totalDeposited[m] - totalExtracted[m]` (can go negative).\n* **Withdrawal capacity (personal):**\n  `personalCapacity[m] = max(0, surplus[m]) * ratio`\n\n  * Intuition: as long as your *surplus is positive*, you may withdraw up to `surplus \u00d7 ratio`.\n  * If surplus \u2264 0 (because you leveraged previous deposits), you **cannot** withdraw again until you deposit and restore surplus > 0.\n\nThis is stricter (and better aligned to the intent) than the current `memberWithdrawableBalance` logic:\n\n* Today: remaining allowance \u2248 `totalDeposited \u00d7 ratio \u2212 totalExtracted`.\n* Proposed (enforced cap): remaining allowance \u2248 `(totalDeposited \u2212 totalExtracted) \u00d7 ratio` (if positive).\n\n  * When `ratio > 1`, this avoids \u201ccoasting\u201d after heavy withdrawals: if you\u2019ve already withdrawn more than you\u2019ve deposited (surplus \u2264 0), **all** further withdrawals are blocked until you top up.\n\n\n#### Optional anti-\u201cnever deposit again\u201d cap\n\nTo avoid people from executing a very large withdrawal when they accumulated many deposits, we should create a per-epoch cap such as a reasonable amount for living for one month (it can be configurable). This prevents them from making a huge leveraged withdrawal when they deposited many months, which could generate incentives to never deposit again.\n\n\n\n### How it plugs into Breadfunds\u2019 current flow\n\n* **On deposit:**\n\n  * Increase `totalDeposited[fund][member]` by the *member\u2019s amount* (i.e., `_value`).\n  * Keep current `memberWithdrawableBalance += _value * ratio` (back-compat); it just won\u2019t be the only cap anymore.\n* **On withdraw:**\n\n  * Compute the requested `_withdrawAmount` as already done (days \u00d7 daily).\n  * **New gate:** require `surplus > 0` and `_withdrawAmount <= personalCapacity`.\n  * Also keep the existing guard `_withdrawAmount <= memberWithdrawableBalance` and the \u201csmall vs large\u201d handling.\n\n",
-              "createdAt": "2025-09-05T14:59:41Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/safety-net/issues/33#issuecomment-3258661653",
-              "viewerDidAuthor": false
-            }
-          ]
-        },
-        {
-          "number": 32,
-          "title": "Automated ERC20 Allowance-Based Deposits and Batch Account Abstraction",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-20T16:23:39Z",
-          "updated_at": "2025-10-10T18:09:16Z",
-          "html_url": "https://github.com/BreadchainCoop/safety-net/issues/32",
-          "labels": [
-            "enhancement"
-          ],
-          "assignees": [
-            "exo404"
-          ],
-          "comments": []
-        },
-        {
-          "number": 31,
-          "title": "Prime-based crediting (actuarial entitlement, not deposit-linked)",
-          "author": "franrolotti",
-          "created_at": "2025-08-19T09:19:55Z",
-          "updated_at": "2025-08-19T09:19:55Z",
-          "html_url": "https://github.com/BreadchainCoop/safety-net/issues/31",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 30,
-          "title": "Liquidity\u2011aware epoch ratio",
-          "author": "franrolotti",
-          "created_at": "2025-08-19T08:46:26Z",
-          "updated_at": "2025-08-19T08:46:26Z",
-          "html_url": "https://github.com/BreadchainCoop/safety-net/issues/30",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 29,
-          "title": "Develop a Context-Aware Risk Ratio Formula for Breadfunds Use Cases",
-          "author": "miawinthertamaki",
-          "created_at": "2025-08-18T20:48:20Z",
-          "updated_at": "2025-08-18T20:48:20Z",
-          "html_url": "https://github.com/BreadchainCoop/safety-net/issues/29",
-          "labels": [
-            "enhancement"
-          ],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 28,
-          "title": "Proposals for V2",
-          "author": "franrolotti",
-          "created_at": "2025-08-16T14:54:26Z",
-          "updated_at": "2025-08-19T09:20:57Z",
-          "html_url": "https://github.com/BreadchainCoop/safety-net/issues/28",
-          "labels": [],
-          "assignees": [],
-          "comments": [
-            {
-              "id": "IC_kwDOPUZJj86-XFpL",
-              "author": {
-                "login": "diterra-code"
-              },
-              "authorAssociation": "NONE",
-              "body": "Hey @franrolotti ,\n\nSounds interesting, care to explain a user story where these features would be helpfull?",
-              "createdAt": "2025-08-16T15:01:49Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/safety-net/issues/28#issuecomment-3193723467",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOPUZJj86-u04j",
-              "author": {
-                "login": "franrolotti"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "Hey @diterra-code ,\n\nI added two larger explanations with user stories about these proposals. I think that the second one is way better. Let me know what you think.",
-              "createdAt": "2025-08-19T09:20:57Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/safety-net/issues/28#issuecomment-3199946275",
-              "viewerDidAuthor": false
-            }
-          ]
-        },
-        {
-          "number": 27,
-          "title": "Layman explanation",
-          "author": "franrolotti",
-          "created_at": "2025-08-16T14:53:49Z",
-          "updated_at": "2025-08-16T15:02:46Z",
-          "html_url": "https://github.com/BreadchainCoop/safety-net/issues/27",
-          "labels": [],
-          "assignees": [],
-          "comments": [
-            {
-              "id": "IC_kwDOPUZJj86-XFxm",
-              "author": {
-                "login": "diterra-code"
-              },
-              "authorAssociation": "NONE",
-              "body": "Oke dope, I like this.",
-              "createdAt": "2025-08-16T15:02:46Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/safety-net/issues/27#issuecomment-3193724006",
-              "viewerDidAuthor": false
-            }
-          ]
-        },
-        {
-          "number": 25,
-          "title": "Lock ratio to 1 (disable leverage)",
-          "author": "franrolotti",
-          "created_at": "2025-08-15T20:06:06Z",
-          "updated_at": "2025-08-15T20:06:06Z",
-          "html_url": "https://github.com/BreadchainCoop/safety-net/issues/25",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 24,
-          "title": "Notification Options for Withdrawal Voting Result",
-          "author": "miawinthertamaki",
-          "created_at": "2025-08-15T19:41:44Z",
-          "updated_at": "2025-08-18T20:46:07Z",
-          "html_url": "https://github.com/BreadchainCoop/safety-net/issues/24",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 21,
-          "title": "[Wishlist/Research] Liquidity-safe ratio > 1 (leverage & solvency)",
-          "author": "franrolotti",
-          "created_at": "2025-08-15T19:08:11Z",
-          "updated_at": "2025-08-19T09:41:14Z",
-          "html_url": "https://github.com/BreadchainCoop/safety-net/issues/21",
-          "labels": [
-            "v2",
-            "research"
-          ],
-          "assignees": [],
-          "comments": [
-            {
-              "id": "IC_kwDOPUZJj86-XGZR",
-              "author": {
-                "login": "diterra-code"
-              },
-              "authorAssociation": "NONE",
-              "body": "@franrolotti \n\nWould this be able to be adapted where the multiplier is gradual based on the amount of deposits overtime by the user?",
-              "createdAt": "2025-08-16T15:07:18Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/safety-net/issues/21#issuecomment-3193726545",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOPUZJj86-vE68",
-              "author": {
-                "login": "franrolotti"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "@diterra-code \n\nYes, it could be adapted to a user-specific multiplier that changes gradually with deposits over time. But in practice, the \u201cmultiplier\u201d is only a way of redistributing the same underlying liquidity among members: the collective pool determines how much is ultimately available and this is exactly the same as the sum of all deposits, so the *implicit ratio* across the system is 1.\n\nA ratio above 1 temporarily allows some members to withdraw more than they deposited, which effectively means they are drawing on own future contributions or on the credit of other members. This has to be compensated later with a ratio below 1 in subsequent epochs, otherwise the pool becomes insolvent.\n\nThat design has two main implications:\n\n* **Early-withdrawal incentive:** At the beginning, when personal withdrawable balances are low, members may benefit disproportionately if the ratio > 1, because they can access more liquidity than they have personally contributed.\n* **Trust risk when ratio < 1:** If later epochs must reduce the ratio below 1 to compensate, members may feel their accrued credit is being diminished, which could incentivize them to decommission or exit the fund.\n\nIf the multiplier is user-specific rather than pooled, it becomes riskier: a member who already benefitted from a >1 period may have little incentive to keep depositing once they expect their future contributions will be discounted at <1. That creates uneven incentives and could undermine sustainability.\n\nThese are the reasons why I prefer [this option](https://github.com/BreadchainCoop/breadfunds/issues/31#issue-3333597847) over the withdrawable balance increasing in deposits, even though it has it own risks.\n\n",
-              "createdAt": "2025-08-19T09:40:50Z",
-              "includesCreatedEdit": true,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/safety-net/issues/21#issuecomment-3200011964",
-              "viewerDidAuthor": false
-            }
-          ]
-        },
-        {
-          "number": 14,
-          "title": "Proposal: Change Contestation Threshold Logic for Withdrawal Approval",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-05T21:47:15Z",
-          "updated_at": "2026-03-12T19:07:41Z",
-          "html_url": "https://github.com/BreadchainCoop/safety-net/issues/14",
-          "labels": [
-            "enhancement"
-          ],
-          "assignees": [
-            "diterra-code",
-            "Fiuum1",
-            "brendaasfjnso"
-          ],
-          "comments": [
-            {
-              "id": "IC_kwDOPUZJj8691GpW",
-              "author": {
-                "login": "diterra-code"
-              },
-              "authorAssociation": "NONE",
-              "body": "Hey @RonTuretzky & @brendaasfjnso \n\nI think this is a great proposal and creates a different process when claiming insurance. However i do see some components missing to make this as robust as possibel.\n\nIs there a period they can contest against the withdrawal? ....because i don\u2019t see it anywhere. For example, If i claim 3k BREAD to cover the costs of my broken laptop this request is payed out immediatly from the pool or will there be a 2 week period for other members to contest against if they believe it to be unfair or too much?\n\nAlso I suggest creating 3 types of claims.\n\n## Mini claims\n\n**Conditions:** \n\n- Amount e.g. under 50 BREAD ( This could be set by the pool creator)\n- No approval needed from other members\n- Can only conduct 2 mini claims every 6 months orso.\n\n**Case:** \n\nI broke my airpods, i need some funds to replace them.\n\n## Default claims\n\n**Conditions:**\n\n- Amount is higher than 500 BREAD.\n- Takes 2 weeks to \"process or get cleared\"\n- No approval needed by other members, but need 33% of members to contest within the 2 week window to freeze if there is no agreement on claim.\n- If no contests then funds are automatically deposited to claimers wallet\n\n**Case:**\n\nMy laptop screen needs repair I need more funds to replace this.\n\n## Urgent claims\n\n**Conditions:**\n\n- Amount higher than 500 BREAD\n- Takes 1 week for \"process or get cleared\"\n- No approval needed by pther members but only 10% of members needed to contest to freeze this claim if there is disagreement.\n- If no contestations then funds automatically are deposited into claimer wallet/account.\n\n**Case:**\n\nI need that screen to be replaced asap because its my livily hood and have meetings to get too.\n\n\nI think this would be a good start tbh.\n",
-              "createdAt": "2025-08-13T17:26:17Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/safety-net/issues/14#issuecomment-3184814678",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOPUZJj8691aNp",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "Very interesting, have to think about this more \n\nThe proposed change does allow to reject a withdrawal with 1/3 of the total members within a few days from when it was proposed ",
-              "createdAt": "2025-08-13T17:52:58Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/safety-net/issues/14#issuecomment-3184894825",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOPUZJj86958f4",
-              "author": {
-                "login": "diterra-code"
-              },
-              "authorAssociation": "NONE",
-              "body": "@RonTuretzky Definitely.\n\nThis would be a great start for MVP imo. But if we really have to slim it then i would keep it to 2 types: mini and default claims.\n\n.... And then later versions can build upon maybe accredition systems, attestations etc. e.g. Member has a deposit streak of 1 year member can have a higher coverage for mini claims instead of 50 BREAD, 150 BREAD.\n\nThe approaches are infinite and probably best to keep them easily modifiable for each specific insurance pool/group.\n\n",
-              "createdAt": "2025-08-13T22:58:33Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [
-                {
-                  "content": "THUMBS_UP",
-                  "users": {
-                    "totalCount": 1
-                  }
-                }
-              ],
-              "url": "https://github.com/BreadchainCoop/safety-net/issues/14#issuecomment-3186083832",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOPUZJj86961uI",
-              "author": {
-                "login": "brendaasfjnso"
-              },
-              "authorAssociation": "NONE",
-              "body": "Yes I like the idea of a minimum time streak as a member or # of contributions before the users start doing withdrawals requests, like i would saw 150 BREAD would be a valid amount (not much not to little)\n\nFor the other requests I like the idea of mini, default and urgent. The system can always set a recommended amount (bases on a percentage of the monthly request, idk about 50%) but the user can always edit that number.\n\n> [@RonTuretzky](https://github.com/RonTuretzky) Definitely.\n> \n> This would be a great start for MVP imo. But if we really have to slim it then i would keep it to 2 types: mini and default claims.\n> \n> .... And then later versions can build upon maybe accredition systems, attestations etc. e.g. Member has a deposit streak of 1 year member can have a higher coverage for mini claims instead of 50 BREAD, 150 BREAD.\n> \n> The approaches are infinite and probably best to keep them easily modifiable for each specific insurance pool/group.\n\n",
-              "createdAt": "2025-08-14T00:57:14Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [
-                {
-                  "content": "ROCKET",
-                  "users": {
-                    "totalCount": 1
-                  }
-                }
-              ],
-              "url": "https://github.com/BreadchainCoop/safety-net/issues/14#issuecomment-3186318216",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOPUZJj8696145",
-              "author": {
-                "login": "brendaasfjnso"
-              },
-              "authorAssociation": "NONE",
-              "body": "/",
-              "createdAt": "2025-08-14T00:57:27Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/safety-net/issues/14#issuecomment-3186318905",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOPUZJj87wxCAv",
-              "author": {
-                "login": "Fiuum1"
-              },
-              "authorAssociation": "NONE",
-              "body": "Hey @RonTuretzky, \n\nThis is the updated version of the complete Sequence Diagram for \"Withdrawing from a Breadfund\" on the [current spec](https://github.com/BreadchainCoop/safety-net/issues/9):\n\n```mermaid\nsequenceDiagram\n    autonumber\n    %% Actors & contracts %%\n    actor Member\n    participant UI\n    participant Breadfund\n    participant ERC20Token\n\n    %% Member initiates withdrawal %%\n    Member->>UI: Initiate withdrawal<br/>(amount, daysRequested)\n    UI->>Breadfund: withdraw(amount, daysRequested)\n\n    %% Contract checks threshold %%\n    Breadfund->>Breadfund: isSmall = amount \u2264 AUTO_THRESHOLD\n\n    alt Small (isSmall == true)\n        Note right of Breadfund: Quick-access path\n        Breadfund->>ERC20Token: transfer(Member, amount)\n        ERC20Token-->>Breadfund: Transfer OK\n        Breadfund-->>UI: emit WithdrawalAutoExecuted\n        UI-->>Member: Confirm immediate payout\n    else Large (isSmall == false)\n        Note right of Breadfund: Large-amount path<br/>Start contest timer (CONTEST_WINDOW)\n        Breadfund-->>UI: emit WithdrawalPending (execTime)\n        UI-->>Member: Shows \u201cPending - auto-exec in X hrs\u201d\n        \n        loop Until Contest Timer expires OR >33% contested\n            actor Contester\n            Contester->>UI: Contest withdrawal\n            UI->>Breadfund: contest(requestId)\n                          \n            Note right of Breadfund: Dynamic counter\n            Breadfund->>Breadfund: Update contestCount & compute %\n                    \n            alt > 33% Contested\n                Breadfund-->>UI: emit WithdrawalRejected\n                UI-->>Member: Notify rejection\n                break ContestedWithdrawal\n                    Note right of Breadfund: Veto reached!<br/>Withdrawal cancelled immediately.\n                end\n            end\n        end\n        \n        %% Execution phase (only happens if loop finished without breaking, not reaching 33% of contestation)\n        opt If not vetoed (Contest Timer expired)\n            UI->>Breadfund: executeContestedWithdrawal(requestId)\n            Breadfund->>ERC20Token: transfer(Member, amount)\n            ERC20Token-->>Breadfund: Transfer OK\n            Breadfund-->>UI: emit WithdrawalAutoExecuted\n            UI-->>Member: Confirm payout\n        end\n    end\n```",
-              "createdAt": "2026-03-11T13:54:03Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/safety-net/issues/14#issuecomment-4039385135",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOPUZJj87xW6oy",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "> Hey [@RonTuretzky](https://github.com/RonTuretzky),\n> \n> This is the updated version of the complete Sequence Diagram for \"Withdrawing from a Breadfund\" on the [current spec](https://github.com/BreadchainCoop/safety-net/issues/9):\n\nlgtm",
-              "createdAt": "2026-03-12T19:07:40Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/safety-net/issues/14#issuecomment-4049316402",
-              "viewerDidAuthor": false
-            }
-          ]
-        },
-        {
-          "number": 11,
-          "title": "Add view methods aggregating all frontend data",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-03T18:05:09Z",
-          "updated_at": "2025-08-04T20:49:30Z",
-          "html_url": "https://github.com/BreadchainCoop/safety-net/issues/11",
-          "labels": [],
-          "assignees": [],
-          "comments": [
-            {
-              "id": "IC_kwDOPUZJj8675WGj",
-              "author": {
-                "login": "miawinthertamaki"
-              },
-              "authorAssociation": "NONE",
-              "body": "Here is the upstream issue:\nhttps://github.com/BreadchainCoop/breadfunds-app/issues/1#issue-3290745013",
-              "createdAt": "2025-08-04T20:49:30Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [
-                {
-                  "content": "ROCKET",
-                  "users": {
-                    "totalCount": 1
-                  }
-                }
-              ],
-              "url": "https://github.com/BreadchainCoop/safety-net/issues/11#issuecomment-3152372131",
-              "viewerDidAuthor": false
-            }
-          ]
-        },
-        {
-          "number": 9,
-          "title": "Breadfunds Spec",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-03T17:17:13Z",
-          "updated_at": "2025-08-08T20:06:12Z",
-          "html_url": "https://github.com/BreadchainCoop/safety-net/issues/9",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 8,
-          "title": "Bread Mutual Insurance fund (Bread Insurance) spec V1.5",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-03T17:16:56Z",
-          "updated_at": "2025-08-08T17:43:19Z",
-          "html_url": "https://github.com/BreadchainCoop/safety-net/issues/8",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 4,
-          "title": "[Wishlist/Research]  Sliding participation scale for users",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-03T17:15:39Z",
-          "updated_at": "2025-08-03T17:15:39Z",
-          "html_url": "https://github.com/BreadchainCoop/safety-net/issues/4",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 2,
-          "title": "Breadfunds Spec",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-02T22:19:54Z",
-          "updated_at": "2025-08-02T22:19:54Z",
-          "html_url": "https://github.com/BreadchainCoop/safety-net/issues/2",
           "labels": [],
           "assignees": [],
           "comments": []
