@@ -1761,8 +1761,10 @@
         }
         gardenBackground.clouds.forEach(cloud => {
             scene.remove(cloud);
-            if (cloud.geometry) cloud.geometry.dispose();
-            if (cloud.material) cloud.material.dispose();
+            cloud.traverse(child => {
+                if (child.geometry) child.geometry.dispose();
+                if (child.material) child.material.dispose();
+            });
         });
         gardenBackground.clouds = [];
 
@@ -2837,7 +2839,7 @@
         if (!state.trackerData) return;
 
         // Initialize geometries if needed
-        if (!GARDEN_GEOMETRIES.trunk) {
+        if (!GARDEN_GEOMETRIES.trunkBase) {
             GARDEN_GEOMETRIES.init();
         }
 
