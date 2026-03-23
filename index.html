@@ -420,6 +420,34 @@
             border-color: rgba(34, 139, 34, 0.5);
         }
 
+        .zen-button { right: 605px; }
+
+        /* Zen mode transitions */
+        #header, #status-panel, #legend-panel, #footer, .controls-hint,
+        .top-button:not(.zen-button) {
+            transition: opacity 0.4s ease, transform 0.4s ease;
+        }
+
+        body.zen-mode #header,
+        body.zen-mode #status-panel,
+        body.zen-mode #legend-panel,
+        body.zen-mode #footer,
+        body.zen-mode .controls-hint,
+        body.zen-mode .top-button:not(.zen-button) {
+            opacity: 0;
+            pointer-events: none;
+            transform: translateY(-10px);
+        }
+
+        body.zen-mode .zen-button {
+            opacity: 0.3;
+            transition: opacity 0.3s ease;
+        }
+
+        body.zen-mode .zen-button:hover {
+            opacity: 1;
+        }
+
         /* Light mode */
         body.light-mode {
             background: #f5f5f7;
@@ -507,6 +535,7 @@
             .fit-button { right: 10px; top: 110px; }
             .lock-button { right: 10px; top: 150px; }
             .view-toggle { right: 10px; top: 190px; }
+            .zen-button { right: 10px; top: 230px; }
 
             /* Smaller side panels */
             #status-panel, #legend-panel {
@@ -578,6 +607,7 @@
             .lock-button { right: 90px; top: 60px; }
             .view-toggle { right: 130px; top: 60px; }
             .garden-toggle { right: 170px; top: 60px; }
+            .zen-button { right: 210px; top: 60px; }
         }
     </style>
 </head>
@@ -590,6 +620,11 @@
             <div class="subtitle">3D Visualization - Open PRs by Repository</div>
             <a href="#" id="org-link" class="org-link" target="_blank">View on GitHub</a>
         </div>
+
+        <button class="top-button zen-button" id="zen-button" onclick="toggleZen()">
+            <span id="zen-icon">◉</span>
+            <span id="zen-label">Zen</span>
+        </button>
 
         <button class="top-button garden-toggle" id="garden-toggle" onclick="toggleGardenMode()">
             <span id="garden-icon">🌳</span>
@@ -702,7 +737,7 @@
         </div>
 
         <div class="controls-hint">
-            Drag to rotate | Shift+drag to pan | Scroll to zoom | Click to open PR | T theme | L lock | ` hide menu
+            Drag to rotate | Shift+drag to pan | Scroll to zoom | Click to open PR | T theme | L lock | Z zen | ` hide menu
         </div>
     </div>
 
@@ -1277,6 +1312,8 @@
             fitToScreen();
         } else if (event.key === 'g' || event.key === 'G') {
             toggleGardenMode();
+        } else if (event.key === 'z' || event.key === 'Z') {
+            toggleZen();
         }
     }
 
@@ -2759,6 +2796,17 @@
         updateGardenBackground();
 
         if (!isLocked) buildScene();
+    }
+
+    let isZenMode = false;
+
+    function toggleZen() {
+        isZenMode = !isZenMode;
+        document.body.classList.toggle('zen-mode', isZenMode);
+        const btn = document.getElementById('zen-button');
+        btn.classList.toggle('active', isZenMode);
+        document.getElementById('zen-icon').textContent = isZenMode ? '◎' : '◉';
+        document.getElementById('zen-label').textContent = isZenMode ? 'Exit' : 'Zen';
     }
 
     function fitToScreen() {
