@@ -1478,6 +1478,11 @@
             this.foliageSide = new THREE.IcosahedronGeometry(0.7, 1);         // Side clusters
             this.leaf = new THREE.PlaneGeometry(0.25, 0.35);
             this.flower = new THREE.SphereGeometry(0.35, 12, 12);
+        },
+        isShared(geometry) {
+            return geometry === this.trunkBase || geometry === this.trunkMid || geometry === this.trunkTop ||
+                geometry === this.foliageMain || geometry === this.foliageTop || geometry === this.foliageSide ||
+                geometry === this.leaf || geometry === this.flower;
         }
     };
 
@@ -2524,7 +2529,7 @@
         state.repoGroups.forEach((group) => {
             // Recursively dispose of all children
             group.traverse((child) => {
-                if (child.geometry) child.geometry.dispose();
+                if (child.geometry && !GARDEN_GEOMETRIES.isShared(child.geometry)) child.geometry.dispose();
                 if (child.material) {
                     if (Array.isArray(child.material)) {
                         child.material.forEach(m => m.dispose());
