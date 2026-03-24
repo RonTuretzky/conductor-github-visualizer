@@ -1,15 +1,222 @@
 {
   "organization": "BreadchainCoop",
-  "generated_at": "2026-03-23T00:18:30.348108+00:00",
-  "generation_time_seconds": 115.44,
+  "generated_at": "2026-03-24T00:16:30.201410+00:00",
+  "generation_time_seconds": 150.62,
   "stats": {
     "total_repos": 40,
     "repos_with_prs": 20,
     "repos_with_issues": 24,
-    "total_open_prs": 80,
-    "total_open_issues": 178
+    "total_open_prs": 81,
+    "total_open_issues": 180
   },
   "trees": {
+    "crowdstake.fun": {
+      "name": "crowdstake.fun",
+      "branch": "main",
+      "repo_name": "crowdstake.fun",
+      "pr_number": null,
+      "pr_title": null,
+      "pr_url": null,
+      "pr_author": null,
+      "last_updated": "2026-03-23T21:32:29Z",
+      "ci_status": "",
+      "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
+      "is_draft": false,
+      "labels": [],
+      "commits_from_parent": [],
+      "parent_branch_name": null,
+      "children": [
+        {
+          "name": "refactor: implement EIP-7201 namespaced storage",
+          "branch": "RonTuretzky/eip7201-storage",
+          "repo_name": "crowdstake.fun",
+          "pr_number": 93,
+          "pr_title": "refactor: implement EIP-7201 namespaced storage",
+          "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/93",
+          "pr_author": "RonTuretzky",
+          "last_updated": "2026-03-20T18:08:25Z",
+          "ci_status": "pass",
+          "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "d662763686c69ddfe6435b977664399c8a29d426",
+              "short_sha": "d662763",
+              "message": "refactor: implement EIP-7201 namespaced storage",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2026-03-20",
+              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/d662763686c69ddfe6435b977664399c8a29d426"
+            },
+            {
+              "sha": "12641118c0656a5f2698dd2039692672d1dff4d4",
+              "short_sha": "1264111",
+              "message": "chore: auto-format code with forge fmt [auto-format]",
+              "author": "github-actions[bot]",
+              "author_login": "github-actions[bot]",
+              "author_avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+              "date": "2026-03-20",
+              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/12641118c0656a5f2698dd2039692672d1dff4d4"
+            },
+            {
+              "sha": "0f14dc6e51a3b7d12e74ea6eb37d52ce0a87cb62",
+              "short_sha": "0f14dc6",
+              "message": "fix: add array length getters for RecipientRegistry",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2026-03-20",
+              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/0f14dc6e51a3b7d12e74ea6eb37d52ce0a87cb62"
+            }
+          ],
+          "parent_branch_name": "main",
+          "children": [
+            {
+              "name": "Add identifier emission to DistributionStrategy",
+              "branch": "RonTuretzky/fix-issue-47",
+              "repo_name": "crowdstake.fun",
+              "pr_number": 94,
+              "pr_title": "Add identifier emission to DistributionStrategy",
+              "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/94",
+              "pr_author": "RonTuretzky",
+              "last_updated": "2026-03-23T21:32:33Z",
+              "ci_status": "pass",
+              "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
+              "is_draft": false,
+              "labels": [],
+              "commits_from_parent": [
+                {
+                  "sha": "de17ff876d69ebae60c3185f3df335eb49b855a7",
+                  "short_sha": "de17ff8",
+                  "message": "Add distribution identifier emission to DistributionStrategy",
+                  "author": "Ron Turetzky",
+                  "author_login": "RonTuretzky",
+                  "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+                  "date": "2026-03-23",
+                  "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/de17ff876d69ebae60c3185f3df335eb49b855a7"
+                }
+              ],
+              "parent_branch_name": "RonTuretzky/eip7201-storage",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Refactor modules to factory pattern",
+          "branch": "RonTuretzky/factory-pattern",
+          "repo_name": "crowdstake.fun",
+          "pr_number": 92,
+          "pr_title": "Refactor modules to factory pattern",
+          "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/92",
+          "pr_author": "RonTuretzky",
+          "last_updated": "2026-03-20T17:55:55Z",
+          "ci_status": "",
+          "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
+          "is_draft": true,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "5e406d3ac6d959565ccb0d9239e9f620adf6f20f",
+              "short_sha": "5e406d3",
+              "message": "Implement factory pattern for modules and manager",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2026-03-19",
+              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/5e406d3ac6d959565ccb0d9239e9f620adf6f20f"
+            },
+            {
+              "sha": "c1378b3ccb3607f39fa06b144cb72d5334e66aad",
+              "short_sha": "c1378b3",
+              "message": "chore: auto-format code with forge fmt [auto-format]",
+              "author": "github-actions[bot]",
+              "author_login": "github-actions[bot]",
+              "author_avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+              "date": "2026-03-19",
+              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/c1378b3ccb3607f39fa06b144cb72d5334e66aad"
+            }
+          ],
+          "parent_branch_name": "main",
+          "children": []
+        },
+        {
+          "name": "feat: switch to mapping instead of linear search",
+          "branch": "45-optimize-recipient-queue-lookup-in-baserecipeintregistry-for-large-queues-addition-and-removal",
+          "repo_name": "crowdstake.fun",
+          "pr_number": 90,
+          "pr_title": "feat: switch to mapping instead of linear search",
+          "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/90",
+          "pr_author": "exo404",
+          "last_updated": "2026-03-19T21:12:37Z",
+          "ci_status": "",
+          "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
+          "is_draft": false,
+          "labels": [
+            "enhancement"
+          ],
+          "commits_from_parent": [
+            {
+              "sha": "d833f1d0717da0ed2be5878f061ebdff55268e55",
+              "short_sha": "d833f1d",
+              "message": "feat: switch to mapping instead of linear search-",
+              "author": "exo404",
+              "author_login": "exo404",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/115696623?v=4",
+              "date": "2026-03-17",
+              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/d833f1d0717da0ed2be5878f061ebdff55268e55"
+            },
+            {
+              "sha": "2aa49219596d7fd2a3a9d820d54a2a49eeffbbe9",
+              "short_sha": "2aa4921",
+              "message": "chore: auto-format code with forge fmt [auto-format]",
+              "author": "github-actions[bot]",
+              "author_login": "github-actions[bot]",
+              "author_avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+              "date": "2026-03-17",
+              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/2aa49219596d7fd2a3a9d820d54a2a49eeffbbe9"
+            }
+          ],
+          "parent_branch_name": "main",
+          "children": []
+        },
+        {
+          "name": "feat: add standalone DistributionNFTModule for Issue #24",
+          "branch": "feat/issue-24-nft-module",
+          "repo_name": "crowdstake.fun",
+          "pr_number": 82,
+          "pr_title": "feat: add standalone DistributionNFTModule for Issue #24",
+          "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/82",
+          "pr_author": "PasqualePaoloSilvenni",
+          "last_updated": "2026-03-23T22:23:36Z",
+          "ci_status": "",
+          "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
+          "is_draft": true,
+          "labels": [],
+          "commits_from_parent": [],
+          "parent_branch_name": "main",
+          "children": []
+        },
+        {
+          "name": "refactor: enhance QueueProcessed event with detailed recipie",
+          "branch": "refactor/queue-processed-event",
+          "repo_name": "crowdstake.fun",
+          "pr_number": 79,
+          "pr_title": "refactor: enhance QueueProcessed event with detailed recipient information (issue #42)",
+          "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/79",
+          "pr_author": "ss251",
+          "last_updated": "2026-03-13T20:17:32Z",
+          "ci_status": "",
+          "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [],
+          "parent_branch_name": "main",
+          "children": []
+        }
+      ]
+    },
     "app-stacks": {
       "name": "app-stacks",
       "branch": "dev",
@@ -18,7 +225,7 @@
       "pr_title": null,
       "pr_url": null,
       "pr_author": null,
-      "last_updated": "2026-03-22T23:35:24Z",
+      "last_updated": "2026-03-23T13:20:18Z",
       "ci_status": "",
       "github_url": "https://github.com/BreadchainCoop/app-stacks",
       "is_draft": false,
@@ -27,17 +234,17 @@
       "parent_branch_name": null,
       "children": [
         {
-          "name": "Lit autopay for automated deposits",
+          "name": "WIP: Lit autopay for automated deposits",
           "branch": "feat/lit-autopay-mvp",
           "repo_name": "app-stacks",
           "pr_number": 46,
-          "pr_title": "Lit autopay for automated deposits",
+          "pr_title": "WIP: Lit autopay for automated deposits",
           "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/46",
           "pr_author": "franrolotti",
-          "last_updated": "2026-03-19T15:59:10Z",
+          "last_updated": "2026-03-23T14:58:09Z",
           "ci_status": "",
           "github_url": "https://github.com/BreadchainCoop/app-stacks",
-          "is_draft": false,
+          "is_draft": true,
           "labels": [],
           "commits_from_parent": [
             {
@@ -146,21 +353,41 @@
               "pr_title": "WIP: improve stacks state and local development",
               "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/40",
               "pr_author": "Olaleye-Blessing",
-              "last_updated": "2026-03-09T05:20:52Z",
-              "ci_status": "fail",
+              "last_updated": "2026-03-23T01:20:57Z",
+              "ci_status": "pass",
               "github_url": "https://github.com/BreadchainCoop/app-stacks",
               "is_draft": true,
               "labels": [],
               "commits_from_parent": [
                 {
-                  "sha": "4f600e5b1668a692a09552072fefe304b0714808",
-                  "short_sha": "4f600e5",
-                  "message": "WIP: improve stacks state and local development",
+                  "sha": "a6f7082f38cb37a8b53c902840babfea2bf89cfe",
+                  "short_sha": "a6f7082",
+                  "message": "Make components react to block timestamp",
                   "author": "Olaleye Blessing",
                   "author_login": "Olaleye-Blessing",
                   "author_avatar_url": "https://avatars.githubusercontent.com/u/70102539?v=4",
-                  "date": "2026-03-09",
-                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/4f600e5b1668a692a09552072fefe304b0714808"
+                  "date": "2026-03-21",
+                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/a6f7082f38cb37a8b53c902840babfea2bf89cfe"
+                },
+                {
+                  "sha": "e1e85663504896008ac9348557f8a98cb2370a6b",
+                  "short_sha": "e1e8566",
+                  "message": "Improve stacks list state and local development",
+                  "author": "Olaleye Blessing",
+                  "author_login": "Olaleye-Blessing",
+                  "author_avatar_url": "https://avatars.githubusercontent.com/u/70102539?v=4",
+                  "date": "2026-03-23",
+                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/e1e85663504896008ac9348557f8a98cb2370a6b"
+                },
+                {
+                  "sha": "6bd7217a66c2f8a0e573920611ac9dfcdd526150",
+                  "short_sha": "6bd7217",
+                  "message": "Temporary prevent 0 division error",
+                  "author": "Olaleye Blessing",
+                  "author_login": "Olaleye-Blessing",
+                  "author_avatar_url": "https://avatars.githubusercontent.com/u/70102539?v=4",
+                  "date": "2026-03-23",
+                  "html_url": "https://github.com/BreadchainCoop/app-stacks/commit/6bd7217a66c2f8a0e573920611ac9dfcdd526150"
                 }
               ],
               "parent_branch_name": "dev",
@@ -262,7 +489,7 @@
           "pr_title": "Fix issue #14",
           "pr_url": "https://github.com/BreadchainCoop/safety-net/pull/67",
           "pr_author": "Fiuum1",
-          "last_updated": "2026-03-21T19:56:40Z",
+          "last_updated": "2026-03-23T22:20:26Z",
           "ci_status": "",
           "github_url": "https://github.com/BreadchainCoop/safety-net",
           "is_draft": false,
@@ -527,184 +754,6 @@
               "html_url": "https://github.com/BreadchainCoop/commonware-restaking/commit/22b07b3cbd99596b780840c86206e00976b52a12"
             }
           ],
-          "parent_branch_name": "main",
-          "children": []
-        }
-      ]
-    },
-    "crowdstake.fun": {
-      "name": "crowdstake.fun",
-      "branch": "main",
-      "repo_name": "crowdstake.fun",
-      "pr_number": null,
-      "pr_title": null,
-      "pr_url": null,
-      "pr_author": null,
-      "last_updated": "2026-03-20T14:46:15Z",
-      "ci_status": "",
-      "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
-      "is_draft": false,
-      "labels": [],
-      "commits_from_parent": [],
-      "parent_branch_name": null,
-      "children": [
-        {
-          "name": "refactor: implement EIP-7201 namespaced storage",
-          "branch": "RonTuretzky/eip7201-storage",
-          "repo_name": "crowdstake.fun",
-          "pr_number": 93,
-          "pr_title": "refactor: implement EIP-7201 namespaced storage",
-          "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/93",
-          "pr_author": "RonTuretzky",
-          "last_updated": "2026-03-20T18:08:25Z",
-          "ci_status": "pass",
-          "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "d662763686c69ddfe6435b977664399c8a29d426",
-              "short_sha": "d662763",
-              "message": "refactor: implement EIP-7201 namespaced storage",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2026-03-20",
-              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/d662763686c69ddfe6435b977664399c8a29d426"
-            },
-            {
-              "sha": "12641118c0656a5f2698dd2039692672d1dff4d4",
-              "short_sha": "1264111",
-              "message": "chore: auto-format code with forge fmt [auto-format]",
-              "author": "github-actions[bot]",
-              "author_login": "github-actions[bot]",
-              "author_avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
-              "date": "2026-03-20",
-              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/12641118c0656a5f2698dd2039692672d1dff4d4"
-            },
-            {
-              "sha": "0f14dc6e51a3b7d12e74ea6eb37d52ce0a87cb62",
-              "short_sha": "0f14dc6",
-              "message": "fix: add array length getters for RecipientRegistry",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2026-03-20",
-              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/0f14dc6e51a3b7d12e74ea6eb37d52ce0a87cb62"
-            }
-          ],
-          "parent_branch_name": "main",
-          "children": []
-        },
-        {
-          "name": "Refactor modules to factory pattern",
-          "branch": "RonTuretzky/factory-pattern",
-          "repo_name": "crowdstake.fun",
-          "pr_number": 92,
-          "pr_title": "Refactor modules to factory pattern",
-          "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/92",
-          "pr_author": "RonTuretzky",
-          "last_updated": "2026-03-20T17:55:55Z",
-          "ci_status": "",
-          "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
-          "is_draft": true,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "5e406d3ac6d959565ccb0d9239e9f620adf6f20f",
-              "short_sha": "5e406d3",
-              "message": "Implement factory pattern for modules and manager",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2026-03-19",
-              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/5e406d3ac6d959565ccb0d9239e9f620adf6f20f"
-            },
-            {
-              "sha": "c1378b3ccb3607f39fa06b144cb72d5334e66aad",
-              "short_sha": "c1378b3",
-              "message": "chore: auto-format code with forge fmt [auto-format]",
-              "author": "github-actions[bot]",
-              "author_login": "github-actions[bot]",
-              "author_avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
-              "date": "2026-03-19",
-              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/c1378b3ccb3607f39fa06b144cb72d5334e66aad"
-            }
-          ],
-          "parent_branch_name": "main",
-          "children": []
-        },
-        {
-          "name": "feat: switch to mapping instead of linear search",
-          "branch": "45-optimize-recipient-queue-lookup-in-baserecipeintregistry-for-large-queues-addition-and-removal",
-          "repo_name": "crowdstake.fun",
-          "pr_number": 90,
-          "pr_title": "feat: switch to mapping instead of linear search",
-          "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/90",
-          "pr_author": "exo404",
-          "last_updated": "2026-03-19T21:12:37Z",
-          "ci_status": "",
-          "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
-          "is_draft": false,
-          "labels": [
-            "enhancement"
-          ],
-          "commits_from_parent": [
-            {
-              "sha": "d833f1d0717da0ed2be5878f061ebdff55268e55",
-              "short_sha": "d833f1d",
-              "message": "feat: switch to mapping instead of linear search-",
-              "author": "exo404",
-              "author_login": "exo404",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/115696623?v=4",
-              "date": "2026-03-17",
-              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/d833f1d0717da0ed2be5878f061ebdff55268e55"
-            },
-            {
-              "sha": "2aa49219596d7fd2a3a9d820d54a2a49eeffbbe9",
-              "short_sha": "2aa4921",
-              "message": "chore: auto-format code with forge fmt [auto-format]",
-              "author": "github-actions[bot]",
-              "author_login": "github-actions[bot]",
-              "author_avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
-              "date": "2026-03-17",
-              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/2aa49219596d7fd2a3a9d820d54a2a49eeffbbe9"
-            }
-          ],
-          "parent_branch_name": "main",
-          "children": []
-        },
-        {
-          "name": "feat: add standalone DistributionNFTModule for Issue #24",
-          "branch": "feat/issue-24-nft-module",
-          "repo_name": "crowdstake.fun",
-          "pr_number": 82,
-          "pr_title": "feat: add standalone DistributionNFTModule for Issue #24",
-          "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/82",
-          "pr_author": "PasqualePaoloSilvenni",
-          "last_updated": "2026-03-22T19:44:13Z",
-          "ci_status": "",
-          "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
-          "is_draft": true,
-          "labels": [],
-          "commits_from_parent": [],
-          "parent_branch_name": "main",
-          "children": []
-        },
-        {
-          "name": "refactor: enhance QueueProcessed event with detailed recipie",
-          "branch": "refactor/queue-processed-event",
-          "repo_name": "crowdstake.fun",
-          "pr_number": 79,
-          "pr_title": "refactor: enhance QueueProcessed event with detailed recipient information (issue #42)",
-          "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/79",
-          "pr_author": "ss251",
-          "last_updated": "2026-03-13T20:17:32Z",
-          "ci_status": "",
-          "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [],
           "parent_branch_name": "main",
           "children": []
         }
@@ -1067,7 +1116,7 @@
           "pr_title": "fix: fee-on-transfer token accounting in ButteredBread deposit",
           "pr_url": "https://github.com/BreadchainCoop/solidarity-fund/pull/188",
           "pr_author": "ss251",
-          "last_updated": "2026-03-22T09:26:01Z",
+          "last_updated": "2026-03-23T14:19:46Z",
           "ci_status": "fail",
           "github_url": "https://github.com/BreadchainCoop/solidarity-fund",
           "is_draft": false,
@@ -3520,6 +3569,448 @@
     }
   },
   "issues": {
+    "crowdstake.fun": {
+      "repo_name": "crowdstake.fun",
+      "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
+      "issues": [
+        {
+          "number": 91,
+          "title": "Add per-interval linear scaling to TimeWeightedVotingPower",
+          "author": "RonTuretzky",
+          "created_at": "2026-03-19T20:24:26Z",
+          "updated_at": "2026-03-20T18:02:58Z",
+          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/91",
+          "labels": [],
+          "assignees": [],
+          "comments": [
+            {
+              "id": "IC_kwDOPeu91c7z-Axs",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "cc @rubydusa @bagelface @hudsonhrh  ended up removing it from #88 to move fast , would love ur opinons",
+              "createdAt": "2026-03-19T20:31:49Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/91#issuecomment-4093119596",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOPeu91c70N6qk",
+              "author": {
+                "login": "rubydusa"
+              },
+              "authorAssociation": "NONE",
+              "body": "Wait but flashloans have to be returned in the same transaction right? Shouldn't the area of them be zero in practice?\n\nThough yes, the problem still exists for short term loans: In practice it would be shorting ETH/BTC/whatev with leverage via a defi lending protocol.\n\nSounds like a good solution to me\n",
+              "createdAt": "2026-03-20T11:08:19Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/91#issuecomment-4097288868",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOPeu91c70YSsP",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "> Wait but flashloans have to be returned in the same transaction right? Shouldn't the area of them be zero in practice?\n> \n> Though yes, the problem still exists for short term loans: In practice it would be shorting ETH/BTC/whatev with leverage via a defi lending protocol.\n> \n> Sounds like a good solution to me\n\nI guess there's a question on if this improves the end goal which is \"you should vote on exactly how much yield you're generating\" \n\nThis means that people who are trying to gain voting power through intermittent mints are normalized somewhat, it encourges holding more over time\n\nI took this off scope because realistically these attacks are very low impact and generally generate more yield than they're worth so I think its ok to release a verison without this improvement over the original bread contracts",
+              "createdAt": "2026-03-20T18:02:58Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/91#issuecomment-4100008719",
+              "viewerDidAuthor": false
+            }
+          ]
+        },
+        {
+          "number": 85,
+          "title": "Fix dust/remainder handling in distribution strategies",
+          "author": "RonTuretzky",
+          "created_at": "2026-03-15T21:59:24Z",
+          "updated_at": "2026-03-16T11:57:09Z",
+          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/85",
+          "labels": [
+            "enhancement"
+          ],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 83,
+          "title": "Make a custom voting implementation for COVA",
+          "author": "RonTuretzky",
+          "created_at": "2026-03-13T21:49:25Z",
+          "updated_at": "2026-03-13T21:49:25Z",
+          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/83",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 77,
+          "title": "Should distros be activated with 0 voters or not?",
+          "author": "RonTuretzky",
+          "created_at": "2025-10-08T01:56:32Z",
+          "updated_at": "2025-10-08T01:56:32Z",
+          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/77",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 73,
+          "title": "Refactor automation system for generic provider payment management",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-19T00:42:48Z",
+          "updated_at": "2025-08-19T01:10:50Z",
+          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/73",
+          "labels": [],
+          "assignees": [],
+          "comments": [
+            {
+              "id": "IC_kwDOPeu91c6-qt3n",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "Ai -generated pr here #74 ",
+              "createdAt": "2025-08-19T01:10:11Z",
+              "includesCreatedEdit": true,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/73#issuecomment-3198868967",
+              "viewerDidAuthor": false
+            }
+          ]
+        },
+        {
+          "number": 72,
+          "title": "Release 0.0.2",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-19T00:23:31Z",
+          "updated_at": "2025-08-19T00:23:31Z",
+          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/72",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 70,
+          "title": "Release 0.0.1",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-19T00:23:05Z",
+          "updated_at": "2026-03-17T17:53:00Z",
+          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/70",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 64,
+          "title": "Add Fuzz Testing to BreadKit Protocol",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-18T23:33:22Z",
+          "updated_at": "2026-03-23T21:31:34Z",
+          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/64",
+          "labels": [
+            "enhancement"
+          ],
+          "assignees": [],
+          "comments": [
+            {
+              "id": "IC_kwDOPeu91c71NA2M",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "## Dependencies\n- Should be done after core modules are stable:\n  - #2 (Voting Module)\n  - #37 (Distribution Strategy Module)\n  - #36 (Factory Pattern refactor)",
+              "createdAt": "2026-03-23T21:31:34Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/64#issuecomment-4113829260",
+              "viewerDidAuthor": false
+            }
+          ]
+        },
+        {
+          "number": 63,
+          "title": "Refactor Unit Tests to Bulloak Format and Review",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-18T23:33:15Z",
+          "updated_at": "2026-03-23T21:31:35Z",
+          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/63",
+          "labels": [
+            "enhancement",
+            "good first issue"
+          ],
+          "assignees": [],
+          "comments": [
+            {
+              "id": "IC_kwDOPeu91c71NA3I",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "## Dependencies\n- Should be done after core module implementations are stable",
+              "createdAt": "2026-03-23T21:31:35Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/63#issuecomment-4113829320",
+              "viewerDidAuthor": false
+            }
+          ]
+        },
+        {
+          "number": 62,
+          "title": "Add voting functions with additional bytes parameter for downstream implementations (e.g., multipliers)",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-18T23:24:07Z",
+          "updated_at": "2026-03-19T15:08:43Z",
+          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/62",
+          "labels": [],
+          "assignees": [],
+          "comments": [
+            {
+              "id": "IC_kwDOPeu91c7zlhnn",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "Moving to TODO; a full feature spec for votiing multipliers would be more effective",
+              "createdAt": "2026-03-19T00:49:50Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/62#issuecomment-4086700519",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOPeu91c7z1Nbp",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "RonTuretzky/vote-with-params draft is in this branch",
+              "createdAt": "2026-03-19T15:08:43Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/62#issuecomment-4090812137",
+              "viewerDidAuthor": false
+            }
+          ]
+        },
+        {
+          "number": 47,
+          "title": "Add identifier emission to DistributionStrategy",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-17T05:47:30Z",
+          "updated_at": "2026-03-23T21:31:32Z",
+          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/47",
+          "labels": [
+            "enhancement"
+          ],
+          "assignees": [],
+          "comments": [
+            {
+              "id": "IC_kwDOPeu91c71NAzc",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "## Dependencies\n- Blocked by #37 (Implement Distribution Strategy Module)",
+              "createdAt": "2026-03-23T21:31:32Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/47#issuecomment-4113829084",
+              "viewerDidAuthor": false
+            }
+          ]
+        },
+        {
+          "number": 46,
+          "title": "Review and Implement Gelato Automation Integration",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-17T05:31:19Z",
+          "updated_at": "2025-08-19T00:24:32Z",
+          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/46",
+          "labels": [
+            "documentation"
+          ],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 45,
+          "title": "Optimize Recipient Queue Lookup in BaseRecipeIntRegistry for Large Queues (addition and removal)",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-17T05:25:26Z",
+          "updated_at": "2026-03-23T21:31:33Z",
+          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/45",
+          "labels": [
+            "enhancement"
+          ],
+          "assignees": [
+            "exo404"
+          ],
+          "comments": [
+            {
+              "id": "IC_kwDOPeu91c71NA07",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "## Dependencies\n- Related to #42 (Refactor QueueProcessed event) - both touch registry code",
+              "createdAt": "2026-03-23T21:31:33Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/45#issuecomment-4113829179",
+              "viewerDidAuthor": false
+            }
+          ]
+        },
+        {
+          "number": 44,
+          "title": "Add support to pay the automation as an extension of Chainlink Automation from yield",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-17T04:45:15Z",
+          "updated_at": "2025-08-17T04:45:15Z",
+          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/44",
+          "labels": [
+            "enhancement"
+          ],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 43,
+          "title": "Backlog: Store required votes at proposal creation in VotingRecipientRegistry",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-17T04:17:48Z",
+          "updated_at": "2026-03-23T21:31:31Z",
+          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/43",
+          "labels": [],
+          "assignees": [],
+          "comments": [
+            {
+              "id": "IC_kwDOPeu91c71NAyS",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "## Dependencies\n- Blocked by #2 (Implement Voting Module)",
+              "createdAt": "2026-03-23T21:31:31Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/43#issuecomment-4113829010",
+              "viewerDidAuthor": false
+            }
+          ]
+        },
+        {
+          "number": 42,
+          "title": "Refactor QueueProcessed event on Recipient Registry",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-17T04:09:26Z",
+          "updated_at": "2025-08-19T00:33:13Z",
+          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/42",
+          "labels": [
+            "good first issue"
+          ],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 36,
+          "title": "Refactor all modules and manager to Factory Pattern similar to BaseToken",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-16T23:17:11Z",
+          "updated_at": "2026-03-23T21:31:36Z",
+          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/36",
+          "labels": [],
+          "assignees": [],
+          "comments": [
+            {
+              "id": "IC_kwDOPeu91c71NA4X",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "## Dependencies\n- Blocked by core module PRs being merged first (as noted in issue description)",
+              "createdAt": "2026-03-23T21:31:36Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/36#issuecomment-4113829399",
+              "viewerDidAuthor": false
+            }
+          ]
+        },
+        {
+          "number": 24,
+          "title": "Add generic NFT awarding and burning module for base token holders during distribution",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-16T21:27:11Z",
+          "updated_at": "2026-03-23T21:31:30Z",
+          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/24",
+          "labels": [
+            "enhancement",
+            "good first issue"
+          ],
+          "assignees": [],
+          "comments": [
+            {
+              "id": "IC_kwDOPeu91c71NAxI",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "## Dependencies\n- Blocked by #37 (Implement Distribution Strategy Module) - needs distribution hooks",
+              "createdAt": "2026-03-23T21:31:30Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/24#issuecomment-4113828936",
+              "viewerDidAuthor": false
+            }
+          ]
+        },
+        {
+          "number": 10,
+          "title": "Distribution Module Implementation",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-16T06:04:13Z",
+          "updated_at": "2025-08-16T06:04:13Z",
+          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/10",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        }
+      ]
+    },
     "app-stacks": {
       "repo_name": "app-stacks",
       "github_url": "https://github.com/BreadchainCoop/app-stacks",
@@ -3529,10 +4020,12 @@
           "title": "Add email notifications for Saving Circles users",
           "author": "franrolotti",
           "created_at": "2026-03-11T17:57:07Z",
-          "updated_at": "2026-03-14T18:52:55Z",
+          "updated_at": "2026-03-23T23:12:21Z",
           "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/43",
           "labels": [],
-          "assignees": [],
+          "assignees": [
+            "Olaleye-Blessing"
+          ],
           "comments": [
             {
               "id": "IC_kwDOQBrnic7yD0wf",
@@ -3548,6 +4041,21 @@
               "reactionGroups": [],
               "url": "https://github.com/BreadchainCoop/app-stacks/issues/43#issuecomment-4061088799",
               "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOQBrnic71O1Ff",
+              "author": {
+                "login": "brendaasfjnso"
+              },
+              "authorAssociation": "NONE",
+              "body": "Here's the update on the front-end side: https://www.figma.com/design/CsleaPTgZVQXwkYnfUnUSE/Bread-Stacks?node-id=1953-28841&t=8u3JwOGgvJ5UukXN-1 @Olaleye-Blessing \n\n- Deposit reminder: remind the user 2 days before the deposit date (to give the user a grace time to deposit funds) and the exact deposit day\n\nDo we need additional information from the contract? @franrolotti @exo404 ",
+              "createdAt": "2026-03-23T23:12:21Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/app-stacks/issues/43#issuecomment-4114305375",
+              "viewerDidAuthor": false
             }
           ]
         },
@@ -3556,7 +4064,7 @@
           "title": "Explore integration for hackathon",
           "author": "franrolotti",
           "created_at": "2026-03-11T17:48:29Z",
-          "updated_at": "2026-03-14T18:50:15Z",
+          "updated_at": "2026-03-23T23:07:15Z",
           "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/42",
           "labels": [],
           "assignees": [
@@ -3598,6 +4106,21 @@
                 }
               ],
               "url": "https://github.com/BreadchainCoop/app-stacks/issues/42#issuecomment-4061084019",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOQBrnic71OwxV",
+              "author": {
+                "login": "brendaasfjnso"
+              },
+              "authorAssociation": "NONE",
+              "body": "Adding this in case it can help \n\n<img width=\"1208\" height=\"807\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/f3b749b5-5f8b-4157-a225-d2317e1fda6d\" />",
+              "createdAt": "2026-03-23T23:07:15Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/app-stacks/issues/42#issuecomment-4114287701",
               "viewerDidAuthor": false
             }
           ]
@@ -4758,336 +5281,6 @@
         }
       ]
     },
-    "crowdstake.fun": {
-      "repo_name": "crowdstake.fun",
-      "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
-      "issues": [
-        {
-          "number": 91,
-          "title": "Add per-interval linear scaling to TimeWeightedVotingPower",
-          "author": "RonTuretzky",
-          "created_at": "2026-03-19T20:24:26Z",
-          "updated_at": "2026-03-20T18:02:58Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/91",
-          "labels": [],
-          "assignees": [],
-          "comments": [
-            {
-              "id": "IC_kwDOPeu91c7z-Axs",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "cc @rubydusa @bagelface @hudsonhrh  ended up removing it from #88 to move fast , would love ur opinons",
-              "createdAt": "2026-03-19T20:31:49Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/91#issuecomment-4093119596",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOPeu91c70N6qk",
-              "author": {
-                "login": "rubydusa"
-              },
-              "authorAssociation": "NONE",
-              "body": "Wait but flashloans have to be returned in the same transaction right? Shouldn't the area of them be zero in practice?\n\nThough yes, the problem still exists for short term loans: In practice it would be shorting ETH/BTC/whatev with leverage via a defi lending protocol.\n\nSounds like a good solution to me\n",
-              "createdAt": "2026-03-20T11:08:19Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/91#issuecomment-4097288868",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOPeu91c70YSsP",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "> Wait but flashloans have to be returned in the same transaction right? Shouldn't the area of them be zero in practice?\n> \n> Though yes, the problem still exists for short term loans: In practice it would be shorting ETH/BTC/whatev with leverage via a defi lending protocol.\n> \n> Sounds like a good solution to me\n\nI guess there's a question on if this improves the end goal which is \"you should vote on exactly how much yield you're generating\" \n\nThis means that people who are trying to gain voting power through intermittent mints are normalized somewhat, it encourges holding more over time\n\nI took this off scope because realistically these attacks are very low impact and generally generate more yield than they're worth so I think its ok to release a verison without this improvement over the original bread contracts",
-              "createdAt": "2026-03-20T18:02:58Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/91#issuecomment-4100008719",
-              "viewerDidAuthor": false
-            }
-          ]
-        },
-        {
-          "number": 85,
-          "title": "Fix dust/remainder handling in distribution strategies",
-          "author": "RonTuretzky",
-          "created_at": "2026-03-15T21:59:24Z",
-          "updated_at": "2026-03-16T11:57:09Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/85",
-          "labels": [
-            "enhancement"
-          ],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 83,
-          "title": "Make a custom voting implementation for COVA",
-          "author": "RonTuretzky",
-          "created_at": "2026-03-13T21:49:25Z",
-          "updated_at": "2026-03-13T21:49:25Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/83",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 77,
-          "title": "Should distros be activated with 0 voters or not?",
-          "author": "RonTuretzky",
-          "created_at": "2025-10-08T01:56:32Z",
-          "updated_at": "2025-10-08T01:56:32Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/77",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 73,
-          "title": "Refactor automation system for generic provider payment management",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-19T00:42:48Z",
-          "updated_at": "2025-08-19T01:10:50Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/73",
-          "labels": [],
-          "assignees": [],
-          "comments": [
-            {
-              "id": "IC_kwDOPeu91c6-qt3n",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "Ai -generated pr here #74 ",
-              "createdAt": "2025-08-19T01:10:11Z",
-              "includesCreatedEdit": true,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/73#issuecomment-3198868967",
-              "viewerDidAuthor": false
-            }
-          ]
-        },
-        {
-          "number": 72,
-          "title": "Release 0.0.2",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-19T00:23:31Z",
-          "updated_at": "2025-08-19T00:23:31Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/72",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 70,
-          "title": "Release 0.0.1",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-19T00:23:05Z",
-          "updated_at": "2026-03-17T17:53:00Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/70",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 64,
-          "title": "Add Fuzz Testing to BreadKit Protocol",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-18T23:33:22Z",
-          "updated_at": "2025-08-18T23:33:22Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/64",
-          "labels": [
-            "enhancement"
-          ],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 63,
-          "title": "Refactor Unit Tests to Bulloak Format and Review",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-18T23:33:15Z",
-          "updated_at": "2025-08-19T00:42:26Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/63",
-          "labels": [
-            "enhancement",
-            "good first issue"
-          ],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 62,
-          "title": "Add voting functions with additional bytes parameter for downstream implementations (e.g., multipliers)",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-18T23:24:07Z",
-          "updated_at": "2026-03-19T15:08:43Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/62",
-          "labels": [],
-          "assignees": [],
-          "comments": [
-            {
-              "id": "IC_kwDOPeu91c7zlhnn",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "Moving to TODO; a full feature spec for votiing multipliers would be more effective",
-              "createdAt": "2026-03-19T00:49:50Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/62#issuecomment-4086700519",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOPeu91c7z1Nbp",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "RonTuretzky/vote-with-params draft is in this branch",
-              "createdAt": "2026-03-19T15:08:43Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/62#issuecomment-4090812137",
-              "viewerDidAuthor": false
-            }
-          ]
-        },
-        {
-          "number": 47,
-          "title": "Add identifier emission to DistributionStrategy",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-17T05:47:30Z",
-          "updated_at": "2025-09-22T19:11:51Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/47",
-          "labels": [
-            "enhancement"
-          ],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 46,
-          "title": "Review and Implement Gelato Automation Integration",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-17T05:31:19Z",
-          "updated_at": "2025-08-19T00:24:32Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/46",
-          "labels": [
-            "documentation"
-          ],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 45,
-          "title": "Optimize Recipient Queue Lookup in BaseRecipeIntRegistry for Large Queues (addition and removal)",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-17T05:25:26Z",
-          "updated_at": "2026-03-17T18:06:40Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/45",
-          "labels": [
-            "enhancement"
-          ],
-          "assignees": [
-            "exo404"
-          ],
-          "comments": []
-        },
-        {
-          "number": 44,
-          "title": "Add support to pay the automation as an extension of Chainlink Automation from yield",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-17T04:45:15Z",
-          "updated_at": "2025-08-17T04:45:15Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/44",
-          "labels": [
-            "enhancement"
-          ],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 43,
-          "title": "Backlog: Store required votes at proposal creation in VotingRecipientRegistry",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-17T04:17:48Z",
-          "updated_at": "2025-08-19T00:30:13Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/43",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 42,
-          "title": "Refactor QueueProcessed event on Recipient Registry",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-17T04:09:26Z",
-          "updated_at": "2025-08-19T00:33:13Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/42",
-          "labels": [
-            "good first issue"
-          ],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 36,
-          "title": "Refactor all modules and manager to Factory Pattern similar to BaseToken",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-16T23:17:11Z",
-          "updated_at": "2025-08-19T00:38:18Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/36",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 24,
-          "title": "Add generic NFT awarding and burning module for base token holders during distribution",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-16T21:27:11Z",
-          "updated_at": "2025-08-19T00:38:38Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/24",
-          "labels": [
-            "enhancement",
-            "good first issue"
-          ],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 10,
-          "title": "Distribution Module Implementation",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-16T06:04:13Z",
-          "updated_at": "2025-08-16T06:04:13Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/10",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        }
-      ]
-    },
     "etherform": {
       "repo_name": "etherform",
       "github_url": "https://github.com/BreadchainCoop/etherform",
@@ -5724,11 +5917,42 @@
       "github_url": "https://github.com/BreadchainCoop/saving-circles",
       "issues": [
         {
+          "number": 134,
+          "title": "Create user flows for the desired public release version of the app",
+          "author": "brendaasfjnso",
+          "created_at": "2026-03-23T23:25:23Z",
+          "updated_at": "2026-03-23T23:25:23Z",
+          "html_url": "https://github.com/BreadchainCoop/saving-circles/issues/134",
+          "labels": [
+            "documentation"
+          ],
+          "assignees": [
+            "brendaasfjnso"
+          ],
+          "comments": []
+        },
+        {
+          "number": 133,
+          "title": "Create UI components and user flows for the Gelato Automation",
+          "author": "brendaasfjnso",
+          "created_at": "2026-03-23T23:19:59Z",
+          "updated_at": "2026-03-23T23:20:17Z",
+          "html_url": "https://github.com/BreadchainCoop/saving-circles/issues/133",
+          "labels": [
+            "enhancement"
+          ],
+          "assignees": [
+            "Olaleye-Blessing",
+            "brendaasfjnso"
+          ],
+          "comments": []
+        },
+        {
           "number": 130,
           "title": "Countdown started even tho not everyone joined and no deposits have been made yet",
           "author": "brendaasfjnso",
           "created_at": "2026-03-11T17:18:35Z",
-          "updated_at": "2026-03-12T19:20:06Z",
+          "updated_at": "2026-03-23T23:13:34Z",
           "html_url": "https://github.com/BreadchainCoop/saving-circles/issues/130",
           "labels": [
             "bug"
@@ -5752,6 +5976,21 @@
               "minimizedReason": "",
               "reactionGroups": [],
               "url": "https://github.com/BreadchainCoop/saving-circles/issues/130#issuecomment-4049395943",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDONW6FcM71O3Bv",
+              "author": {
+                "login": "brendaasfjnso"
+              },
+              "authorAssociation": "NONE",
+              "body": "> [@brendaasfjnso](https://github.com/brendaasfjnso) [@diterra-code](https://github.com/diterra-code) this was solved by me in the [127-fix-circle-not-started-but-round-countdown-going-on](https://github.com/BreadchainCoop/saving-circles/tree/127-fix-circle-not-started-but-round-countdown-going-on) PR. Can we get a feedback on this?\n\nDid the user said anything about it? @diterra-code ",
+              "createdAt": "2026-03-23T23:13:34Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/saving-circles/issues/130#issuecomment-4114313327",
               "viewerDidAuthor": false
             }
           ]
