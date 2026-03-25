@@ -1,217 +1,305 @@
 {
   "organization": "BreadchainCoop",
-  "generated_at": "2026-03-24T00:16:30.201410+00:00",
-  "generation_time_seconds": 150.62,
+  "generated_at": "2026-03-25T00:17:54.468194+00:00",
+  "generation_time_seconds": 110.93,
   "stats": {
     "total_repos": 40,
     "repos_with_prs": 20,
     "repos_with_issues": 24,
-    "total_open_prs": 81,
+    "total_open_prs": 80,
     "total_open_issues": 180
   },
   "trees": {
-    "crowdstake.fun": {
-      "name": "crowdstake.fun",
+    "etherform": {
+      "name": "etherform",
       "branch": "main",
-      "repo_name": "crowdstake.fun",
+      "repo_name": "etherform",
       "pr_number": null,
       "pr_title": null,
       "pr_url": null,
       "pr_author": null,
-      "last_updated": "2026-03-23T21:32:29Z",
+      "last_updated": "2026-03-24T15:51:42Z",
       "ci_status": "",
-      "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
+      "github_url": "https://github.com/BreadchainCoop/etherform",
       "is_draft": false,
       "labels": [],
       "commits_from_parent": [],
       "parent_branch_name": null,
       "children": [
         {
-          "name": "refactor: implement EIP-7201 namespaced storage",
-          "branch": "RonTuretzky/eip7201-storage",
-          "repo_name": "crowdstake.fun",
-          "pr_number": 93,
-          "pr_title": "refactor: implement EIP-7201 namespaced storage",
-          "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/93",
-          "pr_author": "RonTuretzky",
-          "last_updated": "2026-03-20T18:08:25Z",
-          "ci_status": "pass",
-          "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
+          "name": "feat: Node.js deps, RPC passthrough, coverage gating, Halmos",
+          "branch": "hudsonhrh/saving-circles-features",
+          "repo_name": "etherform",
+          "pr_number": 26,
+          "pr_title": "feat: Node.js deps, RPC passthrough, coverage gating, Halmos, commitlint",
+          "pr_url": "https://github.com/BreadchainCoop/etherform/pull/26",
+          "pr_author": "hudsonhrh",
+          "last_updated": "2026-03-19T10:22:10Z",
+          "ci_status": "",
+          "github_url": "https://github.com/BreadchainCoop/etherform",
           "is_draft": false,
           "labels": [],
           "commits_from_parent": [
             {
-              "sha": "d662763686c69ddfe6435b977664399c8a29d426",
-              "short_sha": "d662763",
-              "message": "refactor: implement EIP-7201 namespaced storage",
+              "sha": "b4983415255f91b621a92bd933ea5a4ba8d61d8f",
+              "short_sha": "b498341",
+              "message": "feat: add Node.js deps, RPC passthrough, coverage gating, Halmos, commitlint, co",
+              "author": "hudsonhrh",
+              "author_login": "hudsonhrh",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/76409831?v=4",
+              "date": "2026-03-17",
+              "html_url": "https://github.com/BreadchainCoop/etherform/commit/b4983415255f91b621a92bd933ea5a4ba8d61d8f"
+            }
+          ],
+          "parent_branch_name": "main",
+          "children": []
+        },
+        {
+          "name": "feat: add deployment-foundry-profile input",
+          "branch": "hudsonhrh/deployment-foundry-profile",
+          "repo_name": "etherform",
+          "pr_number": 24,
+          "pr_title": "feat: add deployment-foundry-profile input",
+          "pr_url": "https://github.com/BreadchainCoop/etherform/pull/24",
+          "pr_author": "hudsonhrh",
+          "last_updated": "2026-03-01T22:11:01Z",
+          "ci_status": "",
+          "github_url": "https://github.com/BreadchainCoop/etherform",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "e4ef95fbf0a980a069587c729a34bd1947e88bd9",
+              "short_sha": "e4ef95f",
+              "message": "feat: add deployment-foundry-profile input for deploy steps",
+              "author": "hudsonhrh",
+              "author_login": "hudsonhrh",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/76409831?v=4",
+              "date": "2026-03-01",
+              "html_url": "https://github.com/BreadchainCoop/etherform/commit/e4ef95fbf0a980a069587c729a34bd1947e88bd9"
+            }
+          ],
+          "parent_branch_name": "main",
+          "children": []
+        },
+        {
+          "name": "fix: Resolve all 13 reported issues",
+          "branch": "feat/all-issues",
+          "repo_name": "etherform",
+          "pr_number": 21,
+          "pr_title": "fix: Resolve all 13 reported issues",
+          "pr_url": "https://github.com/BreadchainCoop/etherform/pull/21",
+          "pr_author": "RonTuretzky",
+          "last_updated": "2026-02-12T19:16:47Z",
+          "ci_status": "",
+          "github_url": "https://github.com/BreadchainCoop/etherform",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "bfe2da1afc2f05f455fb7a796595e78e193c2383",
+              "short_sha": "bfe2da1",
+              "message": "fix: resolve all 13 reported issues",
               "author": "Ron Turetzky",
               "author_login": "RonTuretzky",
               "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2026-03-20",
-              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/d662763686c69ddfe6435b977664399c8a29d426"
-            },
+              "date": "2026-02-12",
+              "html_url": "https://github.com/BreadchainCoop/etherform/commit/bfe2da1afc2f05f455fb7a796595e78e193c2383"
+            }
+          ],
+          "parent_branch_name": "main",
+          "children": []
+        },
+        {
+          "name": "fix: address PR #13 review comments on CI/CD workflow",
+          "branch": "RonTuretzky/pr13-file-rename",
+          "repo_name": "etherform",
+          "pr_number": 18,
+          "pr_title": "fix: address PR #13 review comments on CI/CD workflow",
+          "pr_url": "https://github.com/BreadchainCoop/etherform/pull/18",
+          "pr_author": "RonTuretzky",
+          "last_updated": "2026-01-26T19:10:34Z",
+          "ci_status": "",
+          "github_url": "https://github.com/BreadchainCoop/etherform",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
             {
-              "sha": "12641118c0656a5f2698dd2039692672d1dff4d4",
-              "short_sha": "1264111",
-              "message": "chore: auto-format code with forge fmt [auto-format]",
-              "author": "github-actions[bot]",
-              "author_login": "github-actions[bot]",
-              "author_avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
-              "date": "2026-03-20",
-              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/12641118c0656a5f2698dd2039692672d1dff4d4"
-            },
-            {
-              "sha": "0f14dc6e51a3b7d12e74ea6eb37d52ce0a87cb62",
-              "short_sha": "0f14dc6",
-              "message": "fix: add array length getters for RecipientRegistry",
+              "sha": "7ecbc928e85f4d855d32973b1e42045d1c9b34bc",
+              "short_sha": "7ecbc92",
+              "message": "fix: address PR #13 review comments",
               "author": "Ron Turetzky",
               "author_login": "RonTuretzky",
               "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2026-03-20",
-              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/0f14dc6e51a3b7d12e74ea6eb37d52ce0a87cb62"
+              "date": "2026-01-26",
+              "html_url": "https://github.com/BreadchainCoop/etherform/commit/7ecbc928e85f4d855d32973b1e42045d1c9b34bc"
+            }
+          ],
+          "parent_branch_name": "main",
+          "children": []
+        },
+        {
+          "name": "Update Main ",
+          "branch": "implement-cicd-spec",
+          "repo_name": "etherform",
+          "pr_number": 13,
+          "pr_title": "Update Main ",
+          "pr_url": "https://github.com/BreadchainCoop/etherform/pull/13",
+          "pr_author": "RonTuretzky",
+          "last_updated": "2026-01-12T18:09:43Z",
+          "ci_status": "pass",
+          "github_url": "https://github.com/BreadchainCoop/etherform",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "c8aa306894ad43d1eab73984b85dd546f309504d",
+              "short_sha": "c8aa306",
+              "message": "feat: add all-in-one foundry-cicd reusable workflow",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-11-30",
+              "html_url": "https://github.com/BreadchainCoop/etherform/commit/c8aa306894ad43d1eab73984b85dd546f309504d"
+            },
+            {
+              "sha": "be6eb8ba4d7ca5c3837da5f432708867a96efbfa",
+              "short_sha": "be6eb8b",
+              "message": "fix: verification step passes RPC_URL and fails properly",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-11-30",
+              "html_url": "https://github.com/BreadchainCoop/etherform/commit/be6eb8ba4d7ca5c3837da5f432708867a96efbfa"
+            },
+            {
+              "sha": "a02d53b3cd2179cd5a3b019bba8376838c106e69",
+              "short_sha": "a02d53b",
+              "message": "fix: use fully qualified contract names for verification",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-11-30",
+              "html_url": "https://github.com/BreadchainCoop/etherform/commit/a02d53b3cd2179cd5a3b019bba8376838c106e69"
+            },
+            {
+              "sha": "7edff3542ddf395eaab8135104d56e63318722ff",
+              "short_sha": "7edff35",
+              "message": "fix: use upgrades-path for fallback to fix path resolution",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-11-30",
+              "html_url": "https://github.com/BreadchainCoop/etherform/commit/7edff3542ddf395eaab8135104d56e63318722ff"
+            },
+            {
+              "sha": "89122db37219be5ff24f96db3484031ee6106212",
+              "short_sha": "89122db",
+              "message": "refactor: run upgrade validation via OZ CLI instead of script",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-11-30",
+              "html_url": "https://github.com/BreadchainCoop/etherform/commit/89122db37219be5ff24f96db3484031ee6106212"
             }
           ],
           "parent_branch_name": "main",
           "children": [
             {
-              "name": "Add identifier emission to DistributionStrategy",
-              "branch": "RonTuretzky/fix-issue-47",
-              "repo_name": "crowdstake.fun",
-              "pr_number": 94,
-              "pr_title": "Add identifier emission to DistributionStrategy",
-              "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/94",
+              "name": "refactor: replace submodule with local testing framework",
+              "branch": "refactor/workflow-testing-framework",
+              "repo_name": "etherform",
+              "pr_number": 15,
+              "pr_title": "refactor: replace submodule with local testing framework",
+              "pr_url": "https://github.com/BreadchainCoop/etherform/pull/15",
               "pr_author": "RonTuretzky",
-              "last_updated": "2026-03-23T21:32:33Z",
+              "last_updated": "2025-12-27T21:36:05Z",
               "ci_status": "pass",
-              "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
+              "github_url": "https://github.com/BreadchainCoop/etherform",
               "is_draft": false,
               "labels": [],
               "commits_from_parent": [
                 {
-                  "sha": "de17ff876d69ebae60c3185f3df335eb49b855a7",
-                  "short_sha": "de17ff8",
-                  "message": "Add distribution identifier emission to DistributionStrategy",
+                  "sha": "87e5c78d1cb2f207c0e589d0c80c305bcb69d5b8",
+                  "short_sha": "87e5c78",
+                  "message": "refactor: replace submodule with local testing framework",
                   "author": "Ron Turetzky",
                   "author_login": "RonTuretzky",
                   "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-                  "date": "2026-03-23",
-                  "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/de17ff876d69ebae60c3185f3df335eb49b855a7"
+                  "date": "2025-12-27",
+                  "html_url": "https://github.com/BreadchainCoop/etherform/commit/87e5c78d1cb2f207c0e589d0c80c305bcb69d5b8"
                 }
               ],
-              "parent_branch_name": "RonTuretzky/eip7201-storage",
+              "parent_branch_name": "implement-cicd-spec",
               "children": []
             }
           ]
         },
         {
-          "name": "Refactor modules to factory pattern",
-          "branch": "RonTuretzky/factory-pattern",
-          "repo_name": "crowdstake.fun",
-          "pr_number": 92,
-          "pr_title": "Refactor modules to factory pattern",
-          "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/92",
-          "pr_author": "RonTuretzky",
-          "last_updated": "2026-03-20T17:55:55Z",
+          "name": "feat: Etherform workflow improvements",
+          "branch": "foundry-profile-input",
+          "repo_name": "etherform",
+          "pr_number": 6,
+          "pr_title": "feat: Etherform workflow improvements",
+          "pr_url": "https://github.com/BreadchainCoop/etherform/pull/6",
+          "pr_author": "hudsonhrh",
+          "last_updated": "2025-12-07T01:02:48Z",
           "ci_status": "",
-          "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
-          "is_draft": true,
+          "github_url": "https://github.com/BreadchainCoop/etherform",
+          "is_draft": false,
           "labels": [],
           "commits_from_parent": [
             {
-              "sha": "5e406d3ac6d959565ccb0d9239e9f620adf6f20f",
-              "short_sha": "5e406d3",
-              "message": "Implement factory pattern for modules and manager",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2026-03-19",
-              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/5e406d3ac6d959565ccb0d9239e9f620adf6f20f"
+              "sha": "3c3048e7fc3f988abb7dfc9e9bba8933874013e2",
+              "short_sha": "3c3048e",
+              "message": "feat: add deployment-foundry-profile input to workflows",
+              "author": "hudsonhrh",
+              "author_login": "hudsonhrh",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/76409831?v=4",
+              "date": "2025-12-04",
+              "html_url": "https://github.com/BreadchainCoop/etherform/commit/3c3048e7fc3f988abb7dfc9e9bba8933874013e2"
             },
             {
-              "sha": "c1378b3ccb3607f39fa06b144cb72d5334e66aad",
-              "short_sha": "c1378b3",
-              "message": "chore: auto-format code with forge fmt [auto-format]",
-              "author": "github-actions[bot]",
-              "author_login": "github-actions[bot]",
-              "author_avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
-              "date": "2026-03-19",
-              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/c1378b3ccb3607f39fa06b144cb72d5334e66aad"
-            }
-          ],
-          "parent_branch_name": "main",
-          "children": []
-        },
-        {
-          "name": "feat: switch to mapping instead of linear search",
-          "branch": "45-optimize-recipient-queue-lookup-in-baserecipeintregistry-for-large-queues-addition-and-removal",
-          "repo_name": "crowdstake.fun",
-          "pr_number": 90,
-          "pr_title": "feat: switch to mapping instead of linear search",
-          "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/90",
-          "pr_author": "exo404",
-          "last_updated": "2026-03-19T21:12:37Z",
-          "ci_status": "",
-          "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
-          "is_draft": false,
-          "labels": [
-            "enhancement"
-          ],
-          "commits_from_parent": [
-            {
-              "sha": "d833f1d0717da0ed2be5878f061ebdff55268e55",
-              "short_sha": "d833f1d",
-              "message": "feat: switch to mapping instead of linear search-",
-              "author": "exo404",
-              "author_login": "exo404",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/115696623?v=4",
-              "date": "2026-03-17",
-              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/d833f1d0717da0ed2be5878f061ebdff55268e55"
+              "sha": "58ddecdeca58e81eae1e18b3bd67dd6fa69e57c6",
+              "short_sha": "58ddecd",
+              "message": "docs: add deployment-foundry-profile documentation",
+              "author": "hudsonhrh",
+              "author_login": "hudsonhrh",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/76409831?v=4",
+              "date": "2025-12-04",
+              "html_url": "https://github.com/BreadchainCoop/etherform/commit/58ddecdeca58e81eae1e18b3bd67dd6fa69e57c6"
             },
             {
-              "sha": "2aa49219596d7fd2a3a9d820d54a2a49eeffbbe9",
-              "short_sha": "2aa4921",
-              "message": "chore: auto-format code with forge fmt [auto-format]",
-              "author": "github-actions[bot]",
-              "author_login": "github-actions[bot]",
-              "author_avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
-              "date": "2026-03-17",
-              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/2aa49219596d7fd2a3a9d820d54a2a49eeffbbe9"
+              "sha": "77f745e35ab0b03b5fe28d796eee0c038f985973",
+              "short_sha": "77f745e",
+              "message": "feat: make blockscout verification optional",
+              "author": "hudsonhrh",
+              "author_login": "hudsonhrh",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/76409831?v=4",
+              "date": "2025-12-04",
+              "html_url": "https://github.com/BreadchainCoop/etherform/commit/77f745e35ab0b03b5fe28d796eee0c038f985973"
+            },
+            {
+              "sha": "9d2381f8705656677e90ac6c8ab851711331e357",
+              "short_sha": "9d2381f",
+              "message": "fix: fail verification step when all retries exhausted",
+              "author": "hudsonhrh",
+              "author_login": "hudsonhrh",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/76409831?v=4",
+              "date": "2025-12-04",
+              "html_url": "https://github.com/BreadchainCoop/etherform/commit/9d2381f8705656677e90ac6c8ab851711331e357"
+            },
+            {
+              "sha": "7b38f11d9441b5110ef8ed5361e8277c63d9f774",
+              "short_sha": "7b38f11",
+              "message": "fix: pass RPC_URL to verification for --guess-constructor-args",
+              "author": "hudsonhrh",
+              "author_login": "hudsonhrh",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/76409831?v=4",
+              "date": "2025-12-04",
+              "html_url": "https://github.com/BreadchainCoop/etherform/commit/7b38f11d9441b5110ef8ed5361e8277c63d9f774"
             }
           ],
-          "parent_branch_name": "main",
-          "children": []
-        },
-        {
-          "name": "feat: add standalone DistributionNFTModule for Issue #24",
-          "branch": "feat/issue-24-nft-module",
-          "repo_name": "crowdstake.fun",
-          "pr_number": 82,
-          "pr_title": "feat: add standalone DistributionNFTModule for Issue #24",
-          "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/82",
-          "pr_author": "PasqualePaoloSilvenni",
-          "last_updated": "2026-03-23T22:23:36Z",
-          "ci_status": "",
-          "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
-          "is_draft": true,
-          "labels": [],
-          "commits_from_parent": [],
-          "parent_branch_name": "main",
-          "children": []
-        },
-        {
-          "name": "refactor: enhance QueueProcessed event with detailed recipie",
-          "branch": "refactor/queue-processed-event",
-          "repo_name": "crowdstake.fun",
-          "pr_number": 79,
-          "pr_title": "refactor: enhance QueueProcessed event with detailed recipient information (issue #42)",
-          "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/79",
-          "pr_author": "ss251",
-          "last_updated": "2026-03-13T20:17:32Z",
-          "ci_status": "",
-          "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [],
           "parent_branch_name": "main",
           "children": []
         }
@@ -225,7 +313,7 @@
       "pr_title": null,
       "pr_url": null,
       "pr_author": null,
-      "last_updated": "2026-03-23T13:20:18Z",
+      "last_updated": "2026-03-24T15:10:36Z",
       "ci_status": "",
       "github_url": "https://github.com/BreadchainCoop/app-stacks",
       "is_draft": false,
@@ -401,7 +489,7 @@
               "pr_title": "Privy embedded wallet funding",
               "pr_url": "https://github.com/BreadchainCoop/app-stacks/pull/36",
               "pr_author": "franrolotti",
-              "last_updated": "2026-03-08T02:55:59Z",
+              "last_updated": "2026-03-24T15:14:07Z",
               "ci_status": "pass",
               "github_url": "https://github.com/BreadchainCoop/app-stacks",
               "is_draft": false,
@@ -462,6 +550,213 @@
               "children": []
             }
           ]
+        }
+      ]
+    },
+    "crowdstake.fun": {
+      "name": "crowdstake.fun",
+      "branch": "main",
+      "repo_name": "crowdstake.fun",
+      "pr_number": null,
+      "pr_title": null,
+      "pr_url": null,
+      "pr_author": null,
+      "last_updated": "2026-03-23T21:32:29Z",
+      "ci_status": "",
+      "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
+      "is_draft": false,
+      "labels": [],
+      "commits_from_parent": [],
+      "parent_branch_name": null,
+      "children": [
+        {
+          "name": "refactor: implement EIP-7201 namespaced storage",
+          "branch": "RonTuretzky/eip7201-storage",
+          "repo_name": "crowdstake.fun",
+          "pr_number": 93,
+          "pr_title": "refactor: implement EIP-7201 namespaced storage",
+          "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/93",
+          "pr_author": "RonTuretzky",
+          "last_updated": "2026-03-20T18:08:25Z",
+          "ci_status": "pass",
+          "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "d662763686c69ddfe6435b977664399c8a29d426",
+              "short_sha": "d662763",
+              "message": "refactor: implement EIP-7201 namespaced storage",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2026-03-20",
+              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/d662763686c69ddfe6435b977664399c8a29d426"
+            },
+            {
+              "sha": "12641118c0656a5f2698dd2039692672d1dff4d4",
+              "short_sha": "1264111",
+              "message": "chore: auto-format code with forge fmt [auto-format]",
+              "author": "github-actions[bot]",
+              "author_login": "github-actions[bot]",
+              "author_avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+              "date": "2026-03-20",
+              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/12641118c0656a5f2698dd2039692672d1dff4d4"
+            },
+            {
+              "sha": "0f14dc6e51a3b7d12e74ea6eb37d52ce0a87cb62",
+              "short_sha": "0f14dc6",
+              "message": "fix: add array length getters for RecipientRegistry",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2026-03-20",
+              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/0f14dc6e51a3b7d12e74ea6eb37d52ce0a87cb62"
+            }
+          ],
+          "parent_branch_name": "main",
+          "children": [
+            {
+              "name": "Add identifier emission to DistributionStrategy",
+              "branch": "RonTuretzky/fix-issue-47",
+              "repo_name": "crowdstake.fun",
+              "pr_number": 94,
+              "pr_title": "Add identifier emission to DistributionStrategy",
+              "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/94",
+              "pr_author": "RonTuretzky",
+              "last_updated": "2026-03-23T21:32:33Z",
+              "ci_status": "pass",
+              "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
+              "is_draft": false,
+              "labels": [],
+              "commits_from_parent": [
+                {
+                  "sha": "de17ff876d69ebae60c3185f3df335eb49b855a7",
+                  "short_sha": "de17ff8",
+                  "message": "Add distribution identifier emission to DistributionStrategy",
+                  "author": "Ron Turetzky",
+                  "author_login": "RonTuretzky",
+                  "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+                  "date": "2026-03-23",
+                  "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/de17ff876d69ebae60c3185f3df335eb49b855a7"
+                }
+              ],
+              "parent_branch_name": "RonTuretzky/eip7201-storage",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Refactor modules to factory pattern",
+          "branch": "RonTuretzky/factory-pattern",
+          "repo_name": "crowdstake.fun",
+          "pr_number": 92,
+          "pr_title": "Refactor modules to factory pattern",
+          "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/92",
+          "pr_author": "RonTuretzky",
+          "last_updated": "2026-03-20T17:55:55Z",
+          "ci_status": "",
+          "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
+          "is_draft": true,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "5e406d3ac6d959565ccb0d9239e9f620adf6f20f",
+              "short_sha": "5e406d3",
+              "message": "Implement factory pattern for modules and manager",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2026-03-19",
+              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/5e406d3ac6d959565ccb0d9239e9f620adf6f20f"
+            },
+            {
+              "sha": "c1378b3ccb3607f39fa06b144cb72d5334e66aad",
+              "short_sha": "c1378b3",
+              "message": "chore: auto-format code with forge fmt [auto-format]",
+              "author": "github-actions[bot]",
+              "author_login": "github-actions[bot]",
+              "author_avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+              "date": "2026-03-19",
+              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/c1378b3ccb3607f39fa06b144cb72d5334e66aad"
+            }
+          ],
+          "parent_branch_name": "main",
+          "children": []
+        },
+        {
+          "name": "feat: switch to mapping instead of linear search",
+          "branch": "45-optimize-recipient-queue-lookup-in-baserecipeintregistry-for-large-queues-addition-and-removal",
+          "repo_name": "crowdstake.fun",
+          "pr_number": 90,
+          "pr_title": "feat: switch to mapping instead of linear search",
+          "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/90",
+          "pr_author": "exo404",
+          "last_updated": "2026-03-19T21:12:37Z",
+          "ci_status": "",
+          "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
+          "is_draft": false,
+          "labels": [
+            "enhancement"
+          ],
+          "commits_from_parent": [
+            {
+              "sha": "d833f1d0717da0ed2be5878f061ebdff55268e55",
+              "short_sha": "d833f1d",
+              "message": "feat: switch to mapping instead of linear search-",
+              "author": "exo404",
+              "author_login": "exo404",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/115696623?v=4",
+              "date": "2026-03-17",
+              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/d833f1d0717da0ed2be5878f061ebdff55268e55"
+            },
+            {
+              "sha": "2aa49219596d7fd2a3a9d820d54a2a49eeffbbe9",
+              "short_sha": "2aa4921",
+              "message": "chore: auto-format code with forge fmt [auto-format]",
+              "author": "github-actions[bot]",
+              "author_login": "github-actions[bot]",
+              "author_avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+              "date": "2026-03-17",
+              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/2aa49219596d7fd2a3a9d820d54a2a49eeffbbe9"
+            }
+          ],
+          "parent_branch_name": "main",
+          "children": []
+        },
+        {
+          "name": "feat: implement VotingStreakNFTStrategy for Issue #24",
+          "branch": "feat/issue-24-nft-module",
+          "repo_name": "crowdstake.fun",
+          "pr_number": 82,
+          "pr_title": "feat: implement VotingStreakNFTStrategy for Issue #24",
+          "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/82",
+          "pr_author": "PasqualePaoloSilvenni",
+          "last_updated": "2026-03-24T07:21:29Z",
+          "ci_status": "",
+          "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
+          "is_draft": true,
+          "labels": [],
+          "commits_from_parent": [],
+          "parent_branch_name": "main",
+          "children": []
+        },
+        {
+          "name": "refactor: enhance QueueProcessed event with detailed recipie",
+          "branch": "refactor/queue-processed-event",
+          "repo_name": "crowdstake.fun",
+          "pr_number": 79,
+          "pr_title": "refactor: enhance QueueProcessed event with detailed recipient information (issue #42)",
+          "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/79",
+          "pr_author": "ss251",
+          "last_updated": "2026-03-13T20:17:32Z",
+          "ci_status": "",
+          "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [],
+          "parent_branch_name": "main",
+          "children": []
         }
       ]
     },
@@ -752,339 +1047,6 @@
               "author_avatar_url": "https://avatars.githubusercontent.com/in/1143301?v=4",
               "date": "2025-09-29",
               "html_url": "https://github.com/BreadchainCoop/commonware-restaking/commit/22b07b3cbd99596b780840c86206e00976b52a12"
-            }
-          ],
-          "parent_branch_name": "main",
-          "children": []
-        }
-      ]
-    },
-    "etherform": {
-      "name": "etherform",
-      "branch": "main",
-      "repo_name": "etherform",
-      "pr_number": null,
-      "pr_title": null,
-      "pr_url": null,
-      "pr_author": null,
-      "last_updated": "2026-03-19T15:12:12Z",
-      "ci_status": "",
-      "github_url": "https://github.com/BreadchainCoop/etherform",
-      "is_draft": false,
-      "labels": [],
-      "commits_from_parent": [],
-      "parent_branch_name": null,
-      "children": [
-        {
-          "name": "Rubydusa/separate verification job from deployment",
-          "branch": "Rubydusa/separate-verification-job-from-deployment",
-          "repo_name": "etherform",
-          "pr_number": 28,
-          "pr_title": "Rubydusa/separate verification job from deployment",
-          "pr_url": "https://github.com/BreadchainCoop/etherform/pull/28",
-          "pr_author": "rubydusa",
-          "last_updated": "2026-03-19T16:00:00Z",
-          "ci_status": "",
-          "github_url": "https://github.com/BreadchainCoop/etherform",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "2a37320f46659a1ed2a62e28bed43aef90959467",
-              "short_sha": "2a37320",
-              "message": "feat: verification job is separate",
-              "author": "rubydusa",
-              "author_login": "rubydusa",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/97784987?v=4",
-              "date": "2026-03-19",
-              "html_url": "https://github.com/BreadchainCoop/etherform/commit/2a37320f46659a1ed2a62e28bed43aef90959467"
-            },
-            {
-              "sha": "190430ff5123d6e42eb63a257529638f2dc3c7c3",
-              "short_sha": "190430f",
-              "message": "fix: correct blockscout url in workflows",
-              "author": "rubydusa",
-              "author_login": "rubydusa",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/97784987?v=4",
-              "date": "2026-03-19",
-              "html_url": "https://github.com/BreadchainCoop/etherform/commit/190430ff5123d6e42eb63a257529638f2dc3c7c3"
-            }
-          ],
-          "parent_branch_name": "main",
-          "children": []
-        },
-        {
-          "name": "feat: Node.js deps, RPC passthrough, coverage gating, Halmos",
-          "branch": "hudsonhrh/saving-circles-features",
-          "repo_name": "etherform",
-          "pr_number": 26,
-          "pr_title": "feat: Node.js deps, RPC passthrough, coverage gating, Halmos, commitlint",
-          "pr_url": "https://github.com/BreadchainCoop/etherform/pull/26",
-          "pr_author": "hudsonhrh",
-          "last_updated": "2026-03-19T10:22:10Z",
-          "ci_status": "",
-          "github_url": "https://github.com/BreadchainCoop/etherform",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "b4983415255f91b621a92bd933ea5a4ba8d61d8f",
-              "short_sha": "b498341",
-              "message": "feat: add Node.js deps, RPC passthrough, coverage gating, Halmos, commitlint, co",
-              "author": "hudsonhrh",
-              "author_login": "hudsonhrh",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/76409831?v=4",
-              "date": "2026-03-17",
-              "html_url": "https://github.com/BreadchainCoop/etherform/commit/b4983415255f91b621a92bd933ea5a4ba8d61d8f"
-            }
-          ],
-          "parent_branch_name": "main",
-          "children": []
-        },
-        {
-          "name": "feat: add deployment-foundry-profile input",
-          "branch": "hudsonhrh/deployment-foundry-profile",
-          "repo_name": "etherform",
-          "pr_number": 24,
-          "pr_title": "feat: add deployment-foundry-profile input",
-          "pr_url": "https://github.com/BreadchainCoop/etherform/pull/24",
-          "pr_author": "hudsonhrh",
-          "last_updated": "2026-03-01T22:11:01Z",
-          "ci_status": "",
-          "github_url": "https://github.com/BreadchainCoop/etherform",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "e4ef95fbf0a980a069587c729a34bd1947e88bd9",
-              "short_sha": "e4ef95f",
-              "message": "feat: add deployment-foundry-profile input for deploy steps",
-              "author": "hudsonhrh",
-              "author_login": "hudsonhrh",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/76409831?v=4",
-              "date": "2026-03-01",
-              "html_url": "https://github.com/BreadchainCoop/etherform/commit/e4ef95fbf0a980a069587c729a34bd1947e88bd9"
-            }
-          ],
-          "parent_branch_name": "main",
-          "children": []
-        },
-        {
-          "name": "fix: Resolve all 13 reported issues",
-          "branch": "feat/all-issues",
-          "repo_name": "etherform",
-          "pr_number": 21,
-          "pr_title": "fix: Resolve all 13 reported issues",
-          "pr_url": "https://github.com/BreadchainCoop/etherform/pull/21",
-          "pr_author": "RonTuretzky",
-          "last_updated": "2026-02-12T19:16:47Z",
-          "ci_status": "",
-          "github_url": "https://github.com/BreadchainCoop/etherform",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "bfe2da1afc2f05f455fb7a796595e78e193c2383",
-              "short_sha": "bfe2da1",
-              "message": "fix: resolve all 13 reported issues",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2026-02-12",
-              "html_url": "https://github.com/BreadchainCoop/etherform/commit/bfe2da1afc2f05f455fb7a796595e78e193c2383"
-            }
-          ],
-          "parent_branch_name": "main",
-          "children": []
-        },
-        {
-          "name": "fix: address PR #13 review comments on CI/CD workflow",
-          "branch": "RonTuretzky/pr13-file-rename",
-          "repo_name": "etherform",
-          "pr_number": 18,
-          "pr_title": "fix: address PR #13 review comments on CI/CD workflow",
-          "pr_url": "https://github.com/BreadchainCoop/etherform/pull/18",
-          "pr_author": "RonTuretzky",
-          "last_updated": "2026-01-26T19:10:34Z",
-          "ci_status": "",
-          "github_url": "https://github.com/BreadchainCoop/etherform",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "7ecbc928e85f4d855d32973b1e42045d1c9b34bc",
-              "short_sha": "7ecbc92",
-              "message": "fix: address PR #13 review comments",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2026-01-26",
-              "html_url": "https://github.com/BreadchainCoop/etherform/commit/7ecbc928e85f4d855d32973b1e42045d1c9b34bc"
-            }
-          ],
-          "parent_branch_name": "main",
-          "children": []
-        },
-        {
-          "name": "Update Main ",
-          "branch": "implement-cicd-spec",
-          "repo_name": "etherform",
-          "pr_number": 13,
-          "pr_title": "Update Main ",
-          "pr_url": "https://github.com/BreadchainCoop/etherform/pull/13",
-          "pr_author": "RonTuretzky",
-          "last_updated": "2026-01-12T18:09:43Z",
-          "ci_status": "pass",
-          "github_url": "https://github.com/BreadchainCoop/etherform",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "c8aa306894ad43d1eab73984b85dd546f309504d",
-              "short_sha": "c8aa306",
-              "message": "feat: add all-in-one foundry-cicd reusable workflow",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-11-30",
-              "html_url": "https://github.com/BreadchainCoop/etherform/commit/c8aa306894ad43d1eab73984b85dd546f309504d"
-            },
-            {
-              "sha": "be6eb8ba4d7ca5c3837da5f432708867a96efbfa",
-              "short_sha": "be6eb8b",
-              "message": "fix: verification step passes RPC_URL and fails properly",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-11-30",
-              "html_url": "https://github.com/BreadchainCoop/etherform/commit/be6eb8ba4d7ca5c3837da5f432708867a96efbfa"
-            },
-            {
-              "sha": "a02d53b3cd2179cd5a3b019bba8376838c106e69",
-              "short_sha": "a02d53b",
-              "message": "fix: use fully qualified contract names for verification",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-11-30",
-              "html_url": "https://github.com/BreadchainCoop/etherform/commit/a02d53b3cd2179cd5a3b019bba8376838c106e69"
-            },
-            {
-              "sha": "7edff3542ddf395eaab8135104d56e63318722ff",
-              "short_sha": "7edff35",
-              "message": "fix: use upgrades-path for fallback to fix path resolution",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-11-30",
-              "html_url": "https://github.com/BreadchainCoop/etherform/commit/7edff3542ddf395eaab8135104d56e63318722ff"
-            },
-            {
-              "sha": "89122db37219be5ff24f96db3484031ee6106212",
-              "short_sha": "89122db",
-              "message": "refactor: run upgrade validation via OZ CLI instead of script",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-11-30",
-              "html_url": "https://github.com/BreadchainCoop/etherform/commit/89122db37219be5ff24f96db3484031ee6106212"
-            }
-          ],
-          "parent_branch_name": "main",
-          "children": [
-            {
-              "name": "refactor: replace submodule with local testing framework",
-              "branch": "refactor/workflow-testing-framework",
-              "repo_name": "etherform",
-              "pr_number": 15,
-              "pr_title": "refactor: replace submodule with local testing framework",
-              "pr_url": "https://github.com/BreadchainCoop/etherform/pull/15",
-              "pr_author": "RonTuretzky",
-              "last_updated": "2025-12-27T21:36:05Z",
-              "ci_status": "pass",
-              "github_url": "https://github.com/BreadchainCoop/etherform",
-              "is_draft": false,
-              "labels": [],
-              "commits_from_parent": [
-                {
-                  "sha": "87e5c78d1cb2f207c0e589d0c80c305bcb69d5b8",
-                  "short_sha": "87e5c78",
-                  "message": "refactor: replace submodule with local testing framework",
-                  "author": "Ron Turetzky",
-                  "author_login": "RonTuretzky",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-                  "date": "2025-12-27",
-                  "html_url": "https://github.com/BreadchainCoop/etherform/commit/87e5c78d1cb2f207c0e589d0c80c305bcb69d5b8"
-                }
-              ],
-              "parent_branch_name": "implement-cicd-spec",
-              "children": []
-            }
-          ]
-        },
-        {
-          "name": "feat: Etherform workflow improvements",
-          "branch": "foundry-profile-input",
-          "repo_name": "etherform",
-          "pr_number": 6,
-          "pr_title": "feat: Etherform workflow improvements",
-          "pr_url": "https://github.com/BreadchainCoop/etherform/pull/6",
-          "pr_author": "hudsonhrh",
-          "last_updated": "2025-12-07T01:02:48Z",
-          "ci_status": "",
-          "github_url": "https://github.com/BreadchainCoop/etherform",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "3c3048e7fc3f988abb7dfc9e9bba8933874013e2",
-              "short_sha": "3c3048e",
-              "message": "feat: add deployment-foundry-profile input to workflows",
-              "author": "hudsonhrh",
-              "author_login": "hudsonhrh",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/76409831?v=4",
-              "date": "2025-12-04",
-              "html_url": "https://github.com/BreadchainCoop/etherform/commit/3c3048e7fc3f988abb7dfc9e9bba8933874013e2"
-            },
-            {
-              "sha": "58ddecdeca58e81eae1e18b3bd67dd6fa69e57c6",
-              "short_sha": "58ddecd",
-              "message": "docs: add deployment-foundry-profile documentation",
-              "author": "hudsonhrh",
-              "author_login": "hudsonhrh",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/76409831?v=4",
-              "date": "2025-12-04",
-              "html_url": "https://github.com/BreadchainCoop/etherform/commit/58ddecdeca58e81eae1e18b3bd67dd6fa69e57c6"
-            },
-            {
-              "sha": "77f745e35ab0b03b5fe28d796eee0c038f985973",
-              "short_sha": "77f745e",
-              "message": "feat: make blockscout verification optional",
-              "author": "hudsonhrh",
-              "author_login": "hudsonhrh",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/76409831?v=4",
-              "date": "2025-12-04",
-              "html_url": "https://github.com/BreadchainCoop/etherform/commit/77f745e35ab0b03b5fe28d796eee0c038f985973"
-            },
-            {
-              "sha": "9d2381f8705656677e90ac6c8ab851711331e357",
-              "short_sha": "9d2381f",
-              "message": "fix: fail verification step when all retries exhausted",
-              "author": "hudsonhrh",
-              "author_login": "hudsonhrh",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/76409831?v=4",
-              "date": "2025-12-04",
-              "html_url": "https://github.com/BreadchainCoop/etherform/commit/9d2381f8705656677e90ac6c8ab851711331e357"
-            },
-            {
-              "sha": "7b38f11d9441b5110ef8ed5361e8277c63d9f774",
-              "short_sha": "7b38f11",
-              "message": "fix: pass RPC_URL to verification for --guess-constructor-args",
-              "author": "hudsonhrh",
-              "author_login": "hudsonhrh",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/76409831?v=4",
-              "date": "2025-12-04",
-              "html_url": "https://github.com/BreadchainCoop/etherform/commit/7b38f11d9441b5110ef8ed5361e8277c63d9f774"
             }
           ],
           "parent_branch_name": "main",
@@ -3569,6 +3531,294 @@
     }
   },
   "issues": {
+    "etherform": {
+      "repo_name": "etherform",
+      "github_url": "https://github.com/BreadchainCoop/etherform",
+      "issues": [
+        {
+          "number": 27,
+          "title": "Separate contract verification job from deployment job",
+          "author": "rubydusa",
+          "created_at": "2026-03-19T13:43:19Z",
+          "updated_at": "2026-03-19T13:43:19Z",
+          "html_url": "https://github.com/BreadchainCoop/etherform/issues/27",
+          "labels": [],
+          "assignees": [
+            "rubydusa"
+          ],
+          "comments": []
+        },
+        {
+          "number": 23,
+          "title": "Support --ir-minimum flag for forge coverage",
+          "author": "hudsonhrh",
+          "created_at": "2026-03-01T19:38:36Z",
+          "updated_at": "2026-03-01T19:38:36Z",
+          "html_url": "https://github.com/BreadchainCoop/etherform/issues/23",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 17,
+          "title": "Add constructor args and method call params to deployment summary",
+          "author": "RonTuretzky",
+          "created_at": "2026-01-09T22:41:54Z",
+          "updated_at": "2026-01-09T22:41:54Z",
+          "html_url": "https://github.com/BreadchainCoop/etherform/issues/17",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 5,
+          "title": "Better integration docs",
+          "author": "hudsonhrh",
+          "created_at": "2025-12-04T17:13:13Z",
+          "updated_at": "2025-12-04T17:13:13Z",
+          "html_url": "https://github.com/BreadchainCoop/etherform/issues/5",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 4,
+          "title": "Accept different profiles",
+          "author": "hudsonhrh",
+          "created_at": "2025-12-04T17:10:54Z",
+          "updated_at": "2025-12-04T17:10:54Z",
+          "html_url": "https://github.com/BreadchainCoop/etherform/issues/4",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 2,
+          "title": "Expose optional `ADMIN_ADDRESS` env var to deploy scripts",
+          "author": "franrolotti",
+          "created_at": "2025-12-04T12:58:06Z",
+          "updated_at": "2025-12-04T12:58:06Z",
+          "html_url": "https://github.com/BreadchainCoop/etherform/issues/2",
+          "labels": [],
+          "assignees": [],
+          "comments": []
+        }
+      ]
+    },
+    "app-stacks": {
+      "repo_name": "app-stacks",
+      "github_url": "https://github.com/BreadchainCoop/app-stacks",
+      "issues": [
+        {
+          "number": 43,
+          "title": "Add email notifications for Saving Circles users",
+          "author": "franrolotti",
+          "created_at": "2026-03-11T17:57:07Z",
+          "updated_at": "2026-03-23T23:12:21Z",
+          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/43",
+          "labels": [],
+          "assignees": [
+            "Olaleye-Blessing"
+          ],
+          "comments": [
+            {
+              "id": "IC_kwDOQBrnic7yD0wf",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "NONE",
+              "body": "Low hanging fruit for notifications that doesn't require a backend: \n\nCreate an ICS file in the frontend that can be downloaded by the user that has reminders for the deposit events. This allows them to add it to whatever calendar app they have and get reminders",
+              "createdAt": "2026-03-14T18:52:55Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/app-stacks/issues/43#issuecomment-4061088799",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOQBrnic71O1Ff",
+              "author": {
+                "login": "brendaasfjnso"
+              },
+              "authorAssociation": "NONE",
+              "body": "Here's the update on the front-end side: https://www.figma.com/design/CsleaPTgZVQXwkYnfUnUSE/Bread-Stacks?node-id=1953-28841&t=8u3JwOGgvJ5UukXN-1 @Olaleye-Blessing \n\n- Deposit reminder: remind the user 2 days before the deposit date (to give the user a grace time to deposit funds) and the exact deposit day\n\nDo we need additional information from the contract? @franrolotti @exo404 ",
+              "createdAt": "2026-03-23T23:12:21Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/app-stacks/issues/43#issuecomment-4114305375",
+              "viewerDidAuthor": false
+            }
+          ]
+        },
+        {
+          "number": 42,
+          "title": "Explore integration for hackathon",
+          "author": "franrolotti",
+          "created_at": "2026-03-11T17:48:29Z",
+          "updated_at": "2026-03-23T23:07:15Z",
+          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/42",
+          "labels": [],
+          "assignees": [
+            "franrolotti"
+          ],
+          "comments": [
+            {
+              "id": "IC_kwDOQBrnic7yDyCa",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "NONE",
+              "body": "@franrolotti seems kind of urgent? how can I help?",
+              "createdAt": "2026-03-14T18:46:52Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/app-stacks/issues/42#issuecomment-4061077658",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOQBrnic7yDzlz",
+              "author": {
+                "login": "franrolotti"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "@RonTuretzky the deadline was extended to march the 31st so we have more time to work on a nice application for this. I'll dm you our first idea... It would be nice to have your feedback and ideas for this",
+              "createdAt": "2026-03-14T18:50:15Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [
+                {
+                  "content": "THUMBS_UP",
+                  "users": {
+                    "totalCount": 1
+                  }
+                }
+              ],
+              "url": "https://github.com/BreadchainCoop/app-stacks/issues/42#issuecomment-4061084019",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOQBrnic71OwxV",
+              "author": {
+                "login": "brendaasfjnso"
+              },
+              "authorAssociation": "NONE",
+              "body": "Adding this in case it can help \n\n<img width=\"1208\" height=\"807\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/f3b749b5-5f8b-4157-a225-d2317e1fda6d\" />",
+              "createdAt": "2026-03-23T23:07:15Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/app-stacks/issues/42#issuecomment-4114287701",
+              "viewerDidAuthor": false
+            }
+          ]
+        },
+        {
+          "number": 34,
+          "title": "Implement funding flow for Privy embedded wallets",
+          "author": "franrolotti",
+          "created_at": "2026-02-25T17:47:26Z",
+          "updated_at": "2026-03-14T18:51:28Z",
+          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/34",
+          "labels": [],
+          "assignees": [
+            "franrolotti"
+          ],
+          "comments": [
+            {
+              "id": "IC_kwDOQBrnic7yD0Hz",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "NONE",
+              "body": "why not just link to fund.bread.coop?",
+              "createdAt": "2026-03-14T18:51:28Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/app-stacks/issues/34#issuecomment-4061086195",
+              "viewerDidAuthor": false
+            }
+          ]
+        },
+        {
+          "number": 22,
+          "title": "Implement the deposit module",
+          "author": "Olaleye-Blessing",
+          "created_at": "2026-02-12T23:43:52Z",
+          "updated_at": "2026-02-12T23:43:52Z",
+          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/22",
+          "labels": [
+            "not-ready"
+          ],
+          "assignees": [],
+          "comments": []
+        },
+        {
+          "number": 1,
+          "title": "Abstract BREAD Token \u2014 Show Only USD Balances on Frontend (Inspired by Hyperliquid & Polymarket)",
+          "author": "diterra-code",
+          "created_at": "2025-10-15T21:14:26Z",
+          "updated_at": "2025-10-16T04:28:41Z",
+          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/1",
+          "labels": [
+            "documentation",
+            "help wanted"
+          ],
+          "assignees": [
+            "diterra-code",
+            "RonTuretzky",
+            "tbsoc"
+          ],
+          "comments": [
+            {
+              "id": "IC_kwDOQBrnic7LJut_",
+              "author": {
+                "login": "diterra-code"
+              },
+              "authorAssociation": "NONE",
+              "body": "Dropping this here @RonTuretzky @tbsoc @bagelface for further discussion.\n\n@RonTuretzky what do you think of my mermaid diagram skills? \n\nThe idea is to maybe after MVP of Stacks/Safety Net try to work on this UX.",
+              "createdAt": "2025-10-15T21:17:43Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [
+                {
+                  "content": "HEART",
+                  "users": {
+                    "totalCount": 1
+                  }
+                }
+              ],
+              "url": "https://github.com/BreadchainCoop/app-stacks/issues/1#issuecomment-3408325503",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOQBrnic7LMzo-",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "NONE",
+              "body": "> Dropping this here @RonTuretzky @tbsoc @bagelface for further discussion.\n> \n> @RonTuretzky what do you think of my mermaid diagram skills? \n> \n> The idea is to maybe after MVP of Stacks/Safety Net try to work on this UX.\n\n\n\n\ud83d\ude0d\ud83d\ude0d\ud83d\ude0d\ud83d\ude0d\ud83d\ude0d\n\n\nI think with the lifi widget like we have in the crowdstaking app this is quite doable. ",
+              "createdAt": "2025-10-16T04:28:41Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/app-stacks/issues/1#issuecomment-3409132094",
+              "viewerDidAuthor": false
+            }
+          ]
+        }
+      ]
+    },
     "crowdstake.fun": {
       "repo_name": "crowdstake.fun",
       "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
@@ -4008,220 +4258,6 @@
           "labels": [],
           "assignees": [],
           "comments": []
-        }
-      ]
-    },
-    "app-stacks": {
-      "repo_name": "app-stacks",
-      "github_url": "https://github.com/BreadchainCoop/app-stacks",
-      "issues": [
-        {
-          "number": 43,
-          "title": "Add email notifications for Saving Circles users",
-          "author": "franrolotti",
-          "created_at": "2026-03-11T17:57:07Z",
-          "updated_at": "2026-03-23T23:12:21Z",
-          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/43",
-          "labels": [],
-          "assignees": [
-            "Olaleye-Blessing"
-          ],
-          "comments": [
-            {
-              "id": "IC_kwDOQBrnic7yD0wf",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "NONE",
-              "body": "Low hanging fruit for notifications that doesn't require a backend: \n\nCreate an ICS file in the frontend that can be downloaded by the user that has reminders for the deposit events. This allows them to add it to whatever calendar app they have and get reminders",
-              "createdAt": "2026-03-14T18:52:55Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/app-stacks/issues/43#issuecomment-4061088799",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOQBrnic71O1Ff",
-              "author": {
-                "login": "brendaasfjnso"
-              },
-              "authorAssociation": "NONE",
-              "body": "Here's the update on the front-end side: https://www.figma.com/design/CsleaPTgZVQXwkYnfUnUSE/Bread-Stacks?node-id=1953-28841&t=8u3JwOGgvJ5UukXN-1 @Olaleye-Blessing \n\n- Deposit reminder: remind the user 2 days before the deposit date (to give the user a grace time to deposit funds) and the exact deposit day\n\nDo we need additional information from the contract? @franrolotti @exo404 ",
-              "createdAt": "2026-03-23T23:12:21Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/app-stacks/issues/43#issuecomment-4114305375",
-              "viewerDidAuthor": false
-            }
-          ]
-        },
-        {
-          "number": 42,
-          "title": "Explore integration for hackathon",
-          "author": "franrolotti",
-          "created_at": "2026-03-11T17:48:29Z",
-          "updated_at": "2026-03-23T23:07:15Z",
-          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/42",
-          "labels": [],
-          "assignees": [
-            "franrolotti"
-          ],
-          "comments": [
-            {
-              "id": "IC_kwDOQBrnic7yDyCa",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "NONE",
-              "body": "@franrolotti seems kind of urgent? how can I help?",
-              "createdAt": "2026-03-14T18:46:52Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/app-stacks/issues/42#issuecomment-4061077658",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOQBrnic7yDzlz",
-              "author": {
-                "login": "franrolotti"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "@RonTuretzky the deadline was extended to march the 31st so we have more time to work on a nice application for this. I'll dm you our first idea... It would be nice to have your feedback and ideas for this",
-              "createdAt": "2026-03-14T18:50:15Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [
-                {
-                  "content": "THUMBS_UP",
-                  "users": {
-                    "totalCount": 1
-                  }
-                }
-              ],
-              "url": "https://github.com/BreadchainCoop/app-stacks/issues/42#issuecomment-4061084019",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOQBrnic71OwxV",
-              "author": {
-                "login": "brendaasfjnso"
-              },
-              "authorAssociation": "NONE",
-              "body": "Adding this in case it can help \n\n<img width=\"1208\" height=\"807\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/f3b749b5-5f8b-4157-a225-d2317e1fda6d\" />",
-              "createdAt": "2026-03-23T23:07:15Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/app-stacks/issues/42#issuecomment-4114287701",
-              "viewerDidAuthor": false
-            }
-          ]
-        },
-        {
-          "number": 34,
-          "title": "Implement funding flow for Privy embedded wallets",
-          "author": "franrolotti",
-          "created_at": "2026-02-25T17:47:26Z",
-          "updated_at": "2026-03-14T18:51:28Z",
-          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/34",
-          "labels": [],
-          "assignees": [
-            "franrolotti"
-          ],
-          "comments": [
-            {
-              "id": "IC_kwDOQBrnic7yD0Hz",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "NONE",
-              "body": "why not just link to fund.bread.coop?",
-              "createdAt": "2026-03-14T18:51:28Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/app-stacks/issues/34#issuecomment-4061086195",
-              "viewerDidAuthor": false
-            }
-          ]
-        },
-        {
-          "number": 22,
-          "title": "Implement the deposit module",
-          "author": "Olaleye-Blessing",
-          "created_at": "2026-02-12T23:43:52Z",
-          "updated_at": "2026-02-12T23:43:52Z",
-          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/22",
-          "labels": [
-            "not-ready"
-          ],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 1,
-          "title": "Abstract BREAD Token \u2014 Show Only USD Balances on Frontend (Inspired by Hyperliquid & Polymarket)",
-          "author": "diterra-code",
-          "created_at": "2025-10-15T21:14:26Z",
-          "updated_at": "2025-10-16T04:28:41Z",
-          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/1",
-          "labels": [
-            "documentation",
-            "help wanted"
-          ],
-          "assignees": [
-            "diterra-code",
-            "RonTuretzky",
-            "tbsoc"
-          ],
-          "comments": [
-            {
-              "id": "IC_kwDOQBrnic7LJut_",
-              "author": {
-                "login": "diterra-code"
-              },
-              "authorAssociation": "NONE",
-              "body": "Dropping this here @RonTuretzky @tbsoc @bagelface for further discussion.\n\n@RonTuretzky what do you think of my mermaid diagram skills? \n\nThe idea is to maybe after MVP of Stacks/Safety Net try to work on this UX.",
-              "createdAt": "2025-10-15T21:17:43Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [
-                {
-                  "content": "HEART",
-                  "users": {
-                    "totalCount": 1
-                  }
-                }
-              ],
-              "url": "https://github.com/BreadchainCoop/app-stacks/issues/1#issuecomment-3408325503",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOQBrnic7LMzo-",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "NONE",
-              "body": "> Dropping this here @RonTuretzky @tbsoc @bagelface for further discussion.\n> \n> @RonTuretzky what do you think of my mermaid diagram skills? \n> \n> The idea is to maybe after MVP of Stacks/Safety Net try to work on this UX.\n\n\n\n\ud83d\ude0d\ud83d\ude0d\ud83d\ude0d\ud83d\ude0d\ud83d\ude0d\n\n\nI think with the lifi widget like we have in the crowdstaking app this is quite doable. ",
-              "createdAt": "2025-10-16T04:28:41Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/app-stacks/issues/1#issuecomment-3409132094",
-              "viewerDidAuthor": false
-            }
-          ]
         }
       ]
     },
@@ -5278,80 +5314,6 @@
               "viewerDidAuthor": false
             }
           ]
-        }
-      ]
-    },
-    "etherform": {
-      "repo_name": "etherform",
-      "github_url": "https://github.com/BreadchainCoop/etherform",
-      "issues": [
-        {
-          "number": 27,
-          "title": "Separate contract verification job from deployment job",
-          "author": "rubydusa",
-          "created_at": "2026-03-19T13:43:19Z",
-          "updated_at": "2026-03-19T13:43:19Z",
-          "html_url": "https://github.com/BreadchainCoop/etherform/issues/27",
-          "labels": [],
-          "assignees": [
-            "rubydusa"
-          ],
-          "comments": []
-        },
-        {
-          "number": 23,
-          "title": "Support --ir-minimum flag for forge coverage",
-          "author": "hudsonhrh",
-          "created_at": "2026-03-01T19:38:36Z",
-          "updated_at": "2026-03-01T19:38:36Z",
-          "html_url": "https://github.com/BreadchainCoop/etherform/issues/23",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 17,
-          "title": "Add constructor args and method call params to deployment summary",
-          "author": "RonTuretzky",
-          "created_at": "2026-01-09T22:41:54Z",
-          "updated_at": "2026-01-09T22:41:54Z",
-          "html_url": "https://github.com/BreadchainCoop/etherform/issues/17",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 5,
-          "title": "Better integration docs",
-          "author": "hudsonhrh",
-          "created_at": "2025-12-04T17:13:13Z",
-          "updated_at": "2025-12-04T17:13:13Z",
-          "html_url": "https://github.com/BreadchainCoop/etherform/issues/5",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 4,
-          "title": "Accept different profiles",
-          "author": "hudsonhrh",
-          "created_at": "2025-12-04T17:10:54Z",
-          "updated_at": "2025-12-04T17:10:54Z",
-          "html_url": "https://github.com/BreadchainCoop/etherform/issues/4",
-          "labels": [],
-          "assignees": [],
-          "comments": []
-        },
-        {
-          "number": 2,
-          "title": "Expose optional `ADMIN_ADDRESS` env var to deploy scripts",
-          "author": "franrolotti",
-          "created_at": "2025-12-04T12:58:06Z",
-          "updated_at": "2025-12-04T12:58:06Z",
-          "html_url": "https://github.com/BreadchainCoop/etherform/issues/2",
-          "labels": [],
-          "assignees": [],
-          "comments": []
         }
       ]
     },
