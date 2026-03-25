@@ -1670,13 +1670,25 @@
         const cols = Math.ceil(Math.sqrt(numRepos));
         const spacing = 25; // Larger spacing for radial PR layout
 
+        // First pass: compute repo positions and overall center
+        const repoPositions = [];
         repos.forEach(([repoName, tree], index) => {
             const col = index % cols;
             const row = Math.floor(index / cols);
             const x = (col - (cols - 1) / 2) * spacing;
             const z = (row - Math.floor(numRepos / cols) / 2) * spacing;
+            repoPositions.push({ repoName, tree, x, z });
+        });
 
-            buildRepoTree(tree, x, 0, z, repoName, themeColors);
+        // Compute center of all repos
+        const centerX = repoPositions.reduce((s, r) => s + r.x, 0) / numRepos;
+        const centerZ = repoPositions.reduce((s, r) => s + r.z, 0) / numRepos;
+
+        // Second pass: build each repo with outward angle
+        repoPositions.forEach(({ repoName, tree, x, z }) => {
+            // Outward angle from overall center to this repo
+            const outwardAngle = Math.atan2(z - centerZ, x - centerX);
+            buildRepoTree(tree, x, 0, z, repoName, themeColors, outwardAngle);
         });
     }
 
@@ -1693,17 +1705,26 @@
         const cols = Math.ceil(Math.sqrt(numRepos));
         const spacing = 25;
 
+        // Compute repo positions and center
+        const repoPositions = [];
         repos.forEach(([repoName, repoData], index) => {
             const col = index % cols;
             const row = Math.floor(index / cols);
             const x = (col - (cols - 1) / 2) * spacing;
             const z = (row - Math.floor(numRepos / cols) / 2) * spacing;
+            repoPositions.push({ repoName, repoData, x, z });
+        });
 
-            buildIssueRepoTree(repoData, x, 0, z, repoName, themeColors);
+        const centerX = repoPositions.reduce((s, r) => s + r.x, 0) / numRepos;
+        const centerZ = repoPositions.reduce((s, r) => s + r.z, 0) / numRepos;
+
+        repoPositions.forEach(({ repoName, repoData, x, z }) => {
+            const outwardAngle = Math.atan2(z - centerZ, x - centerX);
+            buildIssueRepoTree(repoData, x, 0, z, repoName, themeColors, outwardAngle);
         });
     }
 
-    function buildIssueRepoTree(repoData, x, y, z, repoName, themeColors) {
+    function buildIssueRepoTree(repoData, x, y, z, repoName, themeColors, outwardAngle = 0) {
         // Repo center sphere (same as PRs)
         const repoGeom = new THREE.SphereGeometry(1.2, 32, 32);
         const repoMat = new THREE.MeshPhongMaterial({
@@ -1724,13 +1745,16 @@
         repoLabel.userData.isDataObject = true;
         scene.add(repoLabel);
 
-        // Build issues radially around the repo as SQUARES
+        // Build issues radially outward from the repo (away from center)
         const issues = repoData.issues || [];
         if (issues.length > 0) {
             const baseRadius = 5;
+            const numIssues = issues.length;
+            const maxSpread = Math.min(Math.PI, numIssues * 0.25);
 
             issues.forEach((issue, index) => {
-                const angle = (index / issues.length) * Math.PI * 2;
+                const t = numIssues > 1 ? (index / (numIssues - 1) - 0.5) : 0;
+                const angle = outwardAngle + t * maxSpread;
                 const issueX = x + Math.cos(angle) * baseRadius;
                 const issueZ = z + Math.sin(angle) * baseRadius;
                 const issueY = y + 1.5;
@@ -1796,7 +1820,7 @@
         return 0xeab308; // default yellow/orange for issues
     }
 
-    function buildRepoTree(tree, x, y, z, repoName, themeColors) {
+    function buildRepoTree(tree, x, y, z, repoName, themeColors, outwardAngle = 0) {
         // Repo center sphere
         const repoGeom = new THREE.SphereGeometry(1.2, 32, 32);
         const repoMat = new THREE.MeshPhongMaterial({
@@ -1817,14 +1841,18 @@
         repoLabel.userData.isDataObject = true;
         scene.add(repoLabel);
 
-        // Build PRs radially around the repo
+        // Build PRs radially outward from the repo (away from center of all repos)
         if (tree.children?.length > 0) {
             const numChildren = tree.children.length;
             const baseRadius = 5; // Distance from repo center
 
+            // Spread PRs in an arc facing outward, max 180 degrees (PI radians)
+            const maxSpread = Math.min(Math.PI, numChildren * 0.25);
+
             tree.children.forEach((child, index) => {
-                // Distribute PRs radially around the repo (full circle)
-                const angle = (index / numChildren) * Math.PI * 2;
+                // Distribute PRs in an arc centered on the outward direction
+                const t = numChildren > 1 ? (index / (numChildren - 1) - 0.5) : 0;
+                const angle = outwardAngle + t * maxSpread;
 
                 const childX = x + Math.cos(angle) * baseRadius;
                 const childZ = z + Math.sin(angle) * baseRadius;
@@ -2030,17 +2058,25 @@
         const cols = Math.ceil(Math.sqrt(numRepos));
         const spacing = 25;
 
+        const repoPositions = [];
         repos.forEach(([repoName, tree], index) => {
             const col = index % cols;
             const row = Math.floor(index / cols);
             const x = (col - (cols - 1) / 2) * spacing;
             const z = (row - Math.floor(numRepos / cols) / 2) * spacing;
+            repoPositions.push({ repoName, tree, x, z });
+        });
 
-            buildGardenTree(tree, x, 0, z, repoName, themeColors);
+        const centerX = repoPositions.reduce((s, r) => s + r.x, 0) / numRepos;
+        const centerZ = repoPositions.reduce((s, r) => s + r.z, 0) / numRepos;
+
+        repoPositions.forEach(({ repoName, tree, x, z }) => {
+            const outwardAngle = Math.atan2(z - centerZ, x - centerX);
+            buildGardenTree(tree, x, 0, z, repoName, themeColors, outwardAngle);
         });
     }
 
-    function buildGardenTree(tree, x, y, z, repoName, themeColors) {
+    function buildGardenTree(tree, x, y, z, repoName, themeColors, outwardAngle = 0) {
         const treeGroup = new THREE.Group();
 
         // Trunk colors
@@ -2111,10 +2147,14 @@
             treeGroup.add(sideFoliage);
         });
 
-        // 3. Branches for each PR
+        // 3. Branches for each PR - spread outward from center
         if (tree.children?.length > 0) {
+            const numChildren = tree.children.length;
+            const maxSpread = Math.min(Math.PI, numChildren * 0.25);
+
             tree.children.forEach((pr, index) => {
-                const angle = (index / tree.children.length) * Math.PI * 2;
+                const t = numChildren > 1 ? (index / (numChildren - 1) - 0.5) : 0;
+                const angle = outwardAngle + t * maxSpread;
                 const branch = buildGardenBranch(pr, angle, repoName, themeColors, 0);
                 treeGroup.add(branch);
             });
