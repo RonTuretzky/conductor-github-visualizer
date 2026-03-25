@@ -414,7 +414,13 @@
             border-color: rgba(234, 179, 8, 0.5);
         }
 
-        .zen-button { right: 530px; }
+        .garden-toggle { right: 530px; }
+        .garden-toggle.active {
+            background: rgba(34, 139, 34, 0.3);
+            border-color: rgba(34, 139, 34, 0.5);
+        }
+
+        .zen-button { right: 605px; }
 
         /* Zen mode transitions */
         #header, #status-panel, #legend-panel, #footer, .controls-hint,
@@ -600,7 +606,8 @@
             .fit-button { right: 50px; top: 60px; }
             .lock-button { right: 90px; top: 60px; }
             .view-toggle { right: 130px; top: 60px; }
-            .zen-button { right: 170px; top: 60px; }
+            .garden-toggle { right: 170px; top: 60px; }
+            .zen-button { right: 210px; top: 60px; }
         }
     </style>
 </head>
@@ -617,6 +624,11 @@
         <button class="top-button zen-button" id="zen-button" onclick="toggleZen()">
             <span id="zen-icon">◉</span>
             <span id="zen-label">Zen</span>
+        </button>
+
+        <button class="top-button garden-toggle" id="garden-toggle" onclick="toggleGardenMode()">
+            <span id="garden-icon">🌳</span>
+            <span id="garden-label">Garden</span>
         </button>
 
         <button class="top-button view-toggle" id="view-toggle" onclick="toggleView()">
@@ -747,6 +759,21 @@
             fail: 0xef4444,
             pending: 0xeab308,
             default: 0x6366f1,
+            garden: {
+                trunk: 0x8B4513,
+                trunkDark: 0x5D3A1A,
+                foliage: 0x228B22,
+                foliageDark: 0x006400,
+                branchHealthy: 0x2E8B57,
+                branchWarning: 0xDAA520,
+                branchDying: 0x8B4513,
+                branchStale: 0x696969,
+                leafNew: 0x90EE90,
+                leafOld: 0x6B8E23,
+                flowerPink: 0xFFB6C1,
+                flowerYellow: 0xFFD700,
+                flowerRed: 0xDC143C,
+            },
         },
         scene: {
             dark: {
@@ -763,12 +790,28 @@
                 gridColor: 0xccccdd,
                 lineColor: 0x8888aa,
             },
+            garden: {
+                // Daytime sky
+                skyTop: 0x87CEEB,      // Light sky blue
+                skyBottom: 0xB0E0E6,   // Powder blue (horizon)
+                // Night sky (for dark mode)
+                nightTop: 0x0a1628,    // Dark blue
+                nightBottom: 0x1a2a4a, // Slightly lighter blue
+                // Ground
+                grass: 0x228B22,       // Forest green
+                grassDark: 0x1a6b1a,   // Darker grass for night
+                dirt: 0x8B4513,        // Saddle brown (paths)
+                // Atmosphere
+                fogDay: 0xB0E0E6,
+                fogNight: 0x1a2a4a,
+            },
         }
     };
 
     // State
     let isDarkMode = true;
     let isLocked = false;
+    let isGardenMode = false;
     let scene, camera, renderer;
     let raycaster, mouse;
     let clickableObjects = [];
@@ -777,6 +820,408 @@
     let hiddenRepos = new Set();
     let hideMenuOpen = false;
     let viewMode = 'prs';  // 'prs' or 'issues'
+
+    // Garden mode shared geometries
+    const GARDEN_GEOMETRIES = {
+        trunkBase: null,
+        trunkMid: null,
+        trunkTop: null,
+        foliageMain: null,
+        foliageTop: null,
+        foliageSide: null,
+        leaf: null,
+        flower: null,
+        init() {
+            // Multi-part trunk for realistic tree shape
+            this.trunkBase = new THREE.CylinderGeometry(0.5, 0.8, 2, 8);  // Wide base with root flare
+            this.trunkMid = new THREE.CylinderGeometry(0.4, 0.5, 2, 8);   // Middle section
+            this.trunkTop = new THREE.CylinderGeometry(0.25, 0.4, 1.5, 8); // Narrowing top
+            // Multi-layer foliage for fuller canopy
+            this.foliageMain = new THREE.IcosahedronGeometry(2.2, 1);     // Main canopy
+            this.foliageTop = new THREE.IcosahedronGeometry(1.4, 1);      // Top tuft
+            this.foliageSide = new THREE.IcosahedronGeometry(1.2, 1);     // Side clusters
+            this.leaf = new THREE.PlaneGeometry(0.3, 0.4);
+            this.flower = new THREE.SphereGeometry(0.45, 12, 12);
+        },
+        isShared(geometry) {
+            return geometry === this.trunkBase || geometry === this.trunkMid || geometry === this.trunkTop ||
+                geometry === this.foliageMain || geometry === this.foliageTop || geometry === this.foliageSide ||
+                geometry === this.leaf || geometry === this.flower;
+        }
+    };
+
+    // Garden background elements
+    let gardenBackground = {
+        sky: null,
+        ground: null,
+        clouds: [],
+        decorations: [], // flowers, bushes, grass tufts
+    };
+
+    function createGardenBackground() {
+        removeGardenBackground();
+
+        const gardenColors = CONFIG.scene.garden;
+        const skyTop = isDarkMode ? gardenColors.nightTop : gardenColors.skyTop;
+        const skyBottom = isDarkMode ? gardenColors.nightBottom : gardenColors.skyBottom;
+        const grassColor = isDarkMode ? gardenColors.grassDark : gardenColors.grass;
+
+        // Create sky dome with gradient
+        const skyGeom = new THREE.SphereGeometry(450, 32, 32);
+        // Flip normals to render inside
+        skyGeom.scale(-1, 1, 1);
+
+        // Create gradient shader material for sky
+        const skyMat = new THREE.ShaderMaterial({
+            uniforms: {
+                topColor: { value: new THREE.Color(skyTop) },
+                bottomColor: { value: new THREE.Color(skyBottom) },
+                offset: { value: 50 },
+                exponent: { value: 0.6 }
+            },
+            vertexShader: `
+                varying vec3 vWorldPosition;
+                void main() {
+                    vec4 worldPosition = modelMatrix * vec4(position, 1.0);
+                    vWorldPosition = worldPosition.xyz;
+                    gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+                }
+            `,
+            fragmentShader: `
+                uniform vec3 topColor;
+                uniform vec3 bottomColor;
+                uniform float offset;
+                uniform float exponent;
+                varying vec3 vWorldPosition;
+                void main() {
+                    float h = normalize(vWorldPosition + offset).y;
+                    gl_FragColor = vec4(mix(bottomColor, topColor, max(pow(max(h, 0.0), exponent), 0.0)), 1.0);
+                }
+            `,
+            side: THREE.BackSide,
+            depthWrite: false
+        });
+
+        gardenBackground.sky = new THREE.Mesh(skyGeom, skyMat);
+        gardenBackground.sky.name = 'gardenSky';
+        scene.add(gardenBackground.sky);
+
+        // Create ground plane
+        const groundGeom = new THREE.CircleGeometry(300, 64);
+        const groundMat = new THREE.MeshPhongMaterial({
+            color: grassColor,
+            side: THREE.DoubleSide,
+        });
+        gardenBackground.ground = new THREE.Mesh(groundGeom, groundMat);
+        gardenBackground.ground.rotation.x = -Math.PI / 2;
+        gardenBackground.ground.position.y = -3.1;
+        gardenBackground.ground.name = 'gardenGround';
+        gardenBackground.ground.receiveShadow = true;
+        scene.add(gardenBackground.ground);
+
+        // Add some subtle cloud puffs (only in day mode)
+        if (!isDarkMode) {
+            const cloudPositions = [
+                { x: 80, y: 100, z: -50 },
+                { x: -60, y: 120, z: -80 },
+                { x: 40, y: 90, z: 60 },
+                { x: -100, y: 110, z: 30 },
+                { x: 20, y: 130, z: -120 },
+            ];
+            cloudPositions.forEach(pos => {
+                const cloud = createCloud(pos);
+                gardenBackground.clouds.push(cloud);
+                scene.add(cloud);
+            });
+        } else {
+            // Add stars for night mode
+            const starsGeom = new THREE.BufferGeometry();
+            const starPositions = [];
+            for (let i = 0; i < 500; i++) {
+                const theta = Math.random() * Math.PI * 2;
+                const phi = Math.random() * Math.PI * 0.4 + 0.1; // Upper hemisphere only
+                const r = 400;
+                starPositions.push(
+                    r * Math.sin(phi) * Math.cos(theta),
+                    r * Math.cos(phi),
+                    r * Math.sin(phi) * Math.sin(theta)
+                );
+            }
+            starsGeom.setAttribute('position', new THREE.Float32BufferAttribute(starPositions, 3));
+            const starsMat = new THREE.PointsMaterial({
+                color: 0xffffff,
+                size: 1.5,
+                transparent: true,
+                opacity: 0.8
+            });
+            const stars = new THREE.Points(starsGeom, starsMat);
+            stars.name = 'gardenStars';
+            gardenBackground.clouds.push(stars);
+            scene.add(stars);
+        }
+
+        // Update fog for garden
+        const fogColor = isDarkMode ? gardenColors.fogNight : gardenColors.fogDay;
+        scene.fog = new THREE.Fog(fogColor, 100, 350);
+
+        // Hide the standard grid
+        const grid = scene.getObjectByName('gridHelper');
+        if (grid) grid.visible = false;
+
+        // Add ground decorations (flowers, grass tufts, small bushes)
+        addGroundDecorations();
+    }
+
+    function addGroundDecorations() {
+        const groundY = -3.0;
+
+        // Flower colors - more variety
+        const flowerColors = [
+            0xFFB6C1, 0xFFD700, 0xFF69B4, 0xFFA07A, 0xE6E6FA, 0x98FB98,
+            0xFF6B6B, 0xFFE66D, 0x4ECDC4, 0xC44D58, 0xF8B500, 0xDDA0DD,
+            0xFF7F50, 0x87CEEB, 0xF0E68C, 0xDEB887, 0xFFDAB9, 0xB0E0E6
+        ];
+
+        // Create a LOT of decorations - spread everywhere
+        const decorCount = 2000;
+
+        for (let i = 0; i < decorCount; i++) {
+            const angle = Math.random() * Math.PI * 2;
+            // Cover entire ground area from very close to very far
+            const radius = 5 + Math.random() * 200;
+            const x = Math.cos(angle) * radius;
+            const z = Math.sin(angle) * radius;
+
+            const decorType = Math.random();
+
+            if (decorType < 0.5) {
+                // Flowers - most common (50%)
+                const flower = createGroundFlower(x, groundY, z, flowerColors[Math.floor(Math.random() * flowerColors.length)]);
+                gardenBackground.decorations.push(flower);
+                scene.add(flower);
+            } else if (decorType < 0.8) {
+                // Grass tufts (30%)
+                const grass = createGrassTuft(x, groundY, z);
+                gardenBackground.decorations.push(grass);
+                scene.add(grass);
+            } else if (decorType < 0.95) {
+                // Small bushes (15%)
+                const bush = createSmallBush(x, groundY, z);
+                gardenBackground.decorations.push(bush);
+                scene.add(bush);
+            } else {
+                // Tiny saplings (5%)
+                const sapling = createSapling(x, groundY, z);
+                gardenBackground.decorations.push(sapling);
+                scene.add(sapling);
+            }
+        }
+    }
+
+    function createGroundFlower(x, y, z, color) {
+        const flowerGroup = new THREE.Group();
+
+        // Stem
+        const stemGeom = new THREE.CylinderGeometry(0.05, 0.08, 0.8, 4);
+        const stemMat = new THREE.MeshPhongMaterial({ color: 0x228B22 });
+        const stem = new THREE.Mesh(stemGeom, stemMat);
+        stem.position.y = 0.4;
+        flowerGroup.add(stem);
+
+        // Flower head (small sphere cluster)
+        const petalMat = new THREE.MeshPhongMaterial({
+            color: color,
+            emissive: color,
+            emissiveIntensity: 0.15
+        });
+        const centerGeom = new THREE.SphereGeometry(0.15, 8, 8);
+        const center = new THREE.Mesh(centerGeom, new THREE.MeshPhongMaterial({ color: 0xFFD700 }));
+        center.position.y = 0.85;
+        flowerGroup.add(center);
+
+        // Petals around center
+        for (let i = 0; i < 5; i++) {
+            const petalAngle = (i / 5) * Math.PI * 2;
+            const petalGeom = new THREE.SphereGeometry(0.12, 6, 6);
+            const petal = new THREE.Mesh(petalGeom, petalMat);
+            petal.position.set(
+                Math.cos(petalAngle) * 0.18,
+                0.85,
+                Math.sin(petalAngle) * 0.18
+            );
+            petal.scale.set(1, 0.6, 1);
+            flowerGroup.add(petal);
+        }
+
+        flowerGroup.position.set(x, y, z);
+        flowerGroup.rotation.y = Math.random() * Math.PI * 2;
+        return flowerGroup;
+    }
+
+    function createGrassTuft(x, y, z) {
+        const grassGroup = new THREE.Group();
+        const grassColor = isDarkMode ? 0x1a5a1a : 0x32CD32;
+        const grassMat = new THREE.MeshPhongMaterial({
+            color: grassColor,
+            side: THREE.DoubleSide
+        });
+
+        // Several grass blades
+        const bladeCount = 5 + Math.floor(Math.random() * 4);
+        for (let i = 0; i < bladeCount; i++) {
+            const bladeGeom = new THREE.PlaneGeometry(0.1, 0.6 + Math.random() * 0.4);
+            const blade = new THREE.Mesh(bladeGeom, grassMat);
+            blade.position.set(
+                (Math.random() - 0.5) * 0.3,
+                0.3 + Math.random() * 0.2,
+                (Math.random() - 0.5) * 0.3
+            );
+            blade.rotation.y = Math.random() * Math.PI;
+            blade.rotation.x = -0.2 + Math.random() * 0.4;
+            grassGroup.add(blade);
+        }
+
+        grassGroup.position.set(x, y, z);
+        return grassGroup;
+    }
+
+    function createSmallBush(x, y, z) {
+        const bushGroup = new THREE.Group();
+        const bushColor = isDarkMode ? 0x1a5a1a : 0x228B22;
+        const bushMat = new THREE.MeshPhongMaterial({
+            color: bushColor,
+            emissive: bushColor,
+            emissiveIntensity: 0.05
+        });
+
+        // Small cluster of spheres
+        const puffCount = 3 + Math.floor(Math.random() * 3);
+        for (let i = 0; i < puffCount; i++) {
+            const puffSize = 0.3 + Math.random() * 0.3;
+            const puffGeom = new THREE.IcosahedronGeometry(puffSize, 1);
+            const puff = new THREE.Mesh(puffGeom, bushMat);
+            puff.position.set(
+                (Math.random() - 0.5) * 0.5,
+                puffSize * 0.8,
+                (Math.random() - 0.5) * 0.5
+            );
+            bushGroup.add(puff);
+        }
+
+        bushGroup.position.set(x, y, z);
+        return bushGroup;
+    }
+
+    function createSapling(x, y, z) {
+        const saplingGroup = new THREE.Group();
+
+        // Thin trunk
+        const trunkGeom = new THREE.CylinderGeometry(0.08, 0.12, 1.5, 6);
+        const trunkMat = new THREE.MeshPhongMaterial({ color: 0x8B4513 });
+        const trunk = new THREE.Mesh(trunkGeom, trunkMat);
+        trunk.position.y = 0.75;
+        saplingGroup.add(trunk);
+
+        // Small foliage
+        const foliageColor = isDarkMode ? 0x1a5a1a : 0x228B22;
+        const foliageMat = new THREE.MeshPhongMaterial({
+            color: foliageColor,
+            emissive: foliageColor,
+            emissiveIntensity: 0.1
+        });
+        const foliageGeom = new THREE.IcosahedronGeometry(0.6, 1);
+        const foliage = new THREE.Mesh(foliageGeom, foliageMat);
+        foliage.position.y = 1.8;
+        saplingGroup.add(foliage);
+
+        saplingGroup.position.set(x, y, z);
+        return saplingGroup;
+    }
+
+    function createCloud(pos) {
+        const cloudGroup = new THREE.Group();
+        const cloudMat = new THREE.MeshPhongMaterial({
+            color: 0xffffff,
+            transparent: true,
+            opacity: 0.8,
+            emissive: 0xffffff,
+            emissiveIntensity: 0.1
+        });
+
+        // Create cloud from multiple spheres
+        const puffCount = 5 + Math.floor(Math.random() * 4);
+        for (let i = 0; i < puffCount; i++) {
+            const puffGeom = new THREE.SphereGeometry(8 + Math.random() * 6, 8, 8);
+            const puff = new THREE.Mesh(puffGeom, cloudMat);
+            puff.position.set(
+                (Math.random() - 0.5) * 25,
+                (Math.random() - 0.5) * 8,
+                (Math.random() - 0.5) * 15
+            );
+            puff.scale.y = 0.6; // Flatten slightly
+            cloudGroup.add(puff);
+        }
+
+        cloudGroup.position.set(pos.x, pos.y, pos.z);
+        cloudGroup.name = 'cloud';
+        return cloudGroup;
+    }
+
+    function removeGardenBackground() {
+        if (gardenBackground.sky) {
+            scene.remove(gardenBackground.sky);
+            gardenBackground.sky.geometry.dispose();
+            gardenBackground.sky.material.dispose();
+            gardenBackground.sky = null;
+        }
+        if (gardenBackground.ground) {
+            scene.remove(gardenBackground.ground);
+            gardenBackground.ground.geometry.dispose();
+            gardenBackground.ground.material.dispose();
+            gardenBackground.ground = null;
+        }
+        gardenBackground.clouds.forEach(cloud => {
+            scene.remove(cloud);
+            cloud.traverse(child => {
+                if (child.geometry) child.geometry.dispose();
+                if (child.material) child.material.dispose();
+            });
+        });
+        gardenBackground.clouds = [];
+
+        // Remove ground decorations
+        gardenBackground.decorations.forEach(decor => {
+            scene.remove(decor);
+            // Dispose of all children's geometries and materials
+            decor.traverse(child => {
+                if (child.geometry) child.geometry.dispose();
+                if (child.material) {
+                    if (Array.isArray(child.material)) {
+                        child.material.forEach(m => m.dispose());
+                    } else {
+                        child.material.dispose();
+                    }
+                }
+            });
+        });
+        gardenBackground.decorations = [];
+
+        // Show the grid again
+        const grid = scene.getObjectByName('gridHelper');
+        if (grid) grid.visible = true;
+    }
+
+    function updateGardenBackground() {
+        if (isGardenMode) {
+            createGardenBackground();
+        } else {
+            removeGardenBackground();
+            // Restore normal background
+            const themeColors = getThemeColors();
+            scene.background = new THREE.Color(themeColors.background);
+            scene.fog = new THREE.Fog(themeColors.background, 150, 400);
+        }
+    }
 
     // Avatar texture cache and pending materials waiting for textures
     const avatarTextureCache = new Map();
@@ -872,6 +1317,8 @@
             toggleLock();
         } else if (event.key === 'f' || event.key === 'F') {
             fitToScreen();
+        } else if (event.key === 'g' || event.key === 'G') {
+            toggleGardenMode();
         } else if (event.key === 'z' || event.key === 'Z') {
             toggleZen();
         }
@@ -957,7 +1404,41 @@
     function updateLegend() {
         const legendPanel = document.getElementById('legend-panel');
 
-        if (viewMode === 'prs') {
+        if (viewMode === 'prs' && isGardenMode) {
+            legendPanel.innerHTML = `
+                <h3>Garden Legend</h3>
+                <div class="legend-section">
+                    <h4>Branch Health</h4>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #2E8B57; width: 14px; height: 6px; border-radius: 3px;"></div>
+                        <span>Healthy (CI Pass)</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #DAA520; width: 14px; height: 6px; border-radius: 3px;"></div>
+                        <span>Warning (Pending)</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #8B4513; width: 14px; height: 6px; border-radius: 3px;"></div>
+                        <span>Dying (CI Fail)</span>
+                    </div>
+                </div>
+                <div class="legend-section">
+                    <h4>Garden Elements</h4>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #228B22; width: 20px; height: 20px; border-radius: 50%;"></div>
+                        <span>Tree (Repository)</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #FFB6C1; width: 14px; height: 14px; border-radius: 50%;"></div>
+                        <span>Flower (PR)</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #90EE90; width: 10px; height: 12px;"></div>
+                        <span>Leaf (Commit)</span>
+                    </div>
+                </div>
+            `;
+        } else if (viewMode === 'prs') {
             legendPanel.innerHTML = `
                 <h3>Legend</h3>
                 <div class="legend-section">
@@ -1157,7 +1638,7 @@
         });
         toRemove.forEach(obj => {
             scene.remove(obj);
-            if (obj.geometry) obj.geometry.dispose();
+            if (obj.geometry && !GARDEN_GEOMETRIES.isShared(obj.geometry)) obj.geometry.dispose();
             if (obj.material) {
                 if (Array.isArray(obj.material)) obj.material.forEach(m => m.dispose());
                 else obj.material.dispose();
@@ -1167,7 +1648,9 @@
         clickableObjects = [];
         hoverableObjects = [];
 
-        if (viewMode === 'prs') {
+        if (isGardenMode && viewMode === 'prs') {
+            buildGardenPRsScene();
+        } else if (viewMode === 'prs') {
             buildPRsScene();
         } else {
             buildIssuesScene();
@@ -1521,6 +2004,431 @@
     }
 
     // ============================================================================
+    // Garden Mode Scene Building
+    // ============================================================================
+
+    function buildGardenPRsScene() {
+        if (!currentData?.trees) return;
+
+        // Initialize geometries if needed
+        if (!GARDEN_GEOMETRIES.trunkBase) {
+            GARDEN_GEOMETRIES.init();
+        }
+
+        // Ensure garden background is set up
+        if (!gardenBackground.sky) {
+            createGardenBackground();
+        }
+
+        const themeColors = getThemeColors();
+        const repos = Object.entries(currentData.trees).filter(([name]) => !hiddenRepos.has(name));
+        const numRepos = repos.length;
+
+        if (numRepos === 0) return;
+
+        // Same grid layout as standard view
+        const cols = Math.ceil(Math.sqrt(numRepos));
+        const spacing = 25;
+
+        repos.forEach(([repoName, tree], index) => {
+            const col = index % cols;
+            const row = Math.floor(index / cols);
+            const x = (col - (cols - 1) / 2) * spacing;
+            const z = (row - Math.floor(numRepos / cols) / 2) * spacing;
+
+            buildGardenTree(tree, x, 0, z, repoName, themeColors);
+        });
+    }
+
+    function buildGardenTree(tree, x, y, z, repoName, themeColors) {
+        const treeGroup = new THREE.Group();
+
+        // Trunk colors
+        const trunkColor = isDarkMode ? CONFIG.colors.garden.trunkDark : CONFIG.colors.garden.trunk;
+        const trunkMat = new THREE.MeshPhongMaterial({
+            color: trunkColor,
+            emissive: trunkColor,
+            emissiveIntensity: 0.1
+        });
+
+        // 1. Multi-part trunk for realistic tree shape
+        // Base (wide, with root flare effect)
+        const trunkBase = new THREE.Mesh(GARDEN_GEOMETRIES.trunkBase, trunkMat);
+        trunkBase.position.set(0, 1, 0);
+        trunkBase.userData = { isDataObject: true };
+        treeGroup.add(trunkBase);
+
+        // Middle section
+        const trunkMid = new THREE.Mesh(GARDEN_GEOMETRIES.trunkMid, trunkMat);
+        trunkMid.position.set(0, 3, 0);
+        trunkMid.userData = { isDataObject: true };
+        treeGroup.add(trunkMid);
+
+        // Top section (narrower)
+        const trunkTop = new THREE.Mesh(GARDEN_GEOMETRIES.trunkTop, trunkMat);
+        trunkTop.position.set(0, 4.75, 0);
+        trunkTop.userData = { isDataObject: true };
+        treeGroup.add(trunkTop);
+
+        // 2. Multi-layer foliage canopy
+        const foliageColor = isDarkMode ? CONFIG.colors.garden.foliageDark : CONFIG.colors.garden.foliage;
+        const foliageMat = new THREE.MeshPhongMaterial({
+            color: foliageColor,
+            emissive: foliageColor,
+            emissiveIntensity: 0.15
+        });
+
+        // Main canopy (center)
+        const foliageMain = new THREE.Mesh(GARDEN_GEOMETRIES.foliageMain, foliageMat);
+        foliageMain.position.set(0, 6.5, 0);
+        foliageMain.userData = {
+            isDataObject: true,
+            type: 'repo',
+            name: repoName,
+            url: tree.github_url
+        };
+        treeGroup.add(foliageMain);
+        clickableObjects.push(foliageMain);
+        hoverableObjects.push(foliageMain);
+
+        // Top tuft
+        const foliageTop = new THREE.Mesh(GARDEN_GEOMETRIES.foliageTop, foliageMat);
+        foliageTop.position.set(0, 8.5, 0);
+        foliageTop.userData = { isDataObject: true };
+        treeGroup.add(foliageTop);
+
+        // Side clusters for fuller look
+        const sideOffsets = [
+            { x: 1.5, y: 5.8, z: 0.5 },
+            { x: -1.3, y: 6, z: 0.8 },
+            { x: 0.5, y: 5.5, z: -1.4 },
+            { x: -0.8, y: 6.2, z: -1 }
+        ];
+        sideOffsets.forEach(offset => {
+            const sideFoliage = new THREE.Mesh(GARDEN_GEOMETRIES.foliageSide, foliageMat);
+            sideFoliage.position.set(offset.x, offset.y, offset.z);
+            sideFoliage.userData = { isDataObject: true };
+            treeGroup.add(sideFoliage);
+        });
+
+        // 3. Branches for each PR
+        if (tree.children?.length > 0) {
+            tree.children.forEach((pr, index) => {
+                const angle = (index / tree.children.length) * Math.PI * 2;
+                const branch = buildGardenBranch(pr, angle, repoName, themeColors, 0);
+                treeGroup.add(branch);
+            });
+        }
+
+        // 4. Repo label above tree
+        const label = createTextSprite(repoName, 0.8, isDarkMode ? '#ffffff' : '#1a1a1a');
+        label.position.set(0, 10.5, 0);
+        label.userData.isDataObject = true;
+        treeGroup.add(label);
+
+        treeGroup.position.set(x, y, z);
+        treeGroup.userData = { isDataObject: true, isGardenElement: true };
+        scene.add(treeGroup);
+    }
+
+    function buildGardenBranch(prNode, angle, repoName, themeColors, depth) {
+        const branchGroup = new THREE.Group();
+
+        // Calculate organic branch curve
+        // depth 0: main branches from tree trunk (start at trunk height)
+        // depth 1+: sub-branches from bush junction (start at bush top)
+        const startY = depth === 0 ? 3.5 : 0.3; // Sub-branches start from bush top
+        const endRadius = depth === 0 ? 6 : 4;  // Sub-branches are shorter
+        const endY = startY + 2 + Math.random() * 0.8;
+
+        const start = new THREE.Vector3(0, startY, 0);
+        const end = new THREE.Vector3(
+            Math.cos(angle) * endRadius,
+            endY,
+            Math.sin(angle) * endRadius
+        );
+        // Control point creates the upward curve
+        const control = new THREE.Vector3(
+            Math.cos(angle) * (endRadius * 0.4),
+            startY + 1.0,
+            Math.sin(angle) * (endRadius * 0.4)
+        );
+
+        // Create curved wooden branch (TubeGeometry replaces straight line)
+        const curve = new THREE.CatmullRomCurve3([start, control, end]);
+        const branchRadius = Math.max(0.06, 0.12 - depth * 0.03);
+        const branchGeom = new THREE.TubeGeometry(curve, 16, branchRadius, 8, false);
+
+        // Brown bark color, tinted by health status
+        const branchColor = getGardenBranchColor(prNode);
+        const branchMat = new THREE.MeshPhongMaterial({
+            color: branchColor,
+            emissive: branchColor,
+            emissiveIntensity: 0.08
+        });
+        const branch = new THREE.Mesh(branchGeom, branchMat);
+        branch.userData = { isDataObject: true };
+        branchGroup.add(branch);
+
+        // Add leaves for commits along the branch - alternating sides
+        const commits = prNode.commits_from_parent || [];
+        const maxLeaves = Math.min(commits.length, 8);
+        commits.slice(0, maxLeaves).forEach((commit, i) => {
+            const t = (i + 1) / (maxLeaves + 1);
+            const branchPoint = curve.getPoint(t);
+            const tangent = curve.getTangent(t);
+
+            // Alternate left/right (-1 or 1)
+            const side = (i % 2 === 0) ? 1 : -1;
+
+            // Calculate perpendicular direction (cross with up vector)
+            const up = new THREE.Vector3(0, 1, 0);
+            const perpendicular = new THREE.Vector3().crossVectors(tangent, up).normalize();
+
+            // Create leaf group with stem and avatar
+            const leafGroup = createGardenLeafWithStem(commit, branchPoint, perpendicular, side, prNode.ci_status);
+            branchGroup.add(leafGroup);
+        });
+
+        // Check if this PR has children (stacked PRs)
+        const hasChildren = prNode.children?.length > 0 && depth < 2;
+
+        if (hasChildren) {
+            // Create a bush/mini-tree for PRs with stacked children
+            const bush = createPRBush(prNode, end, repoName);
+            branchGroup.add(bush);
+
+            // Sub-branches grow from the bush
+            prNode.children.forEach((child, idx) => {
+                const spreadAngle = Math.PI * 0.4;
+                const childAngleOffset = prNode.children.length > 1
+                    ? (idx / (prNode.children.length - 1) - 0.5) * spreadAngle
+                    : 0;
+                const childAngle = angle + childAngleOffset;
+                const subBranch = buildGardenBranch(child, childAngle, repoName, themeColors, depth + 1);
+                subBranch.position.copy(end);
+                branchGroup.add(subBranch);
+            });
+        } else {
+            // Leaf node - just a flower
+            const flower = createPRFlower(prNode, end, repoName);
+            branchGroup.add(flower);
+        }
+
+        // PR label near the flower/bush
+        const labelText = prNode.pr_number ? `#${prNode.pr_number}` : prNode.branch?.slice(0, 12);
+        const ciIcon = getCIIcon(prNode.ci_status);
+        const label = createTextSprite(`${labelText} ${ciIcon}`, 0.4, getLabelColor(prNode.ci_status));
+        label.position.set(end.x, end.y + (hasChildren ? 1.0 : 1), end.z);
+        label.userData.isDataObject = true;
+        branchGroup.add(label);
+
+        branchGroup.userData = { isDataObject: true, isGardenElement: true, gardenType: 'branch' };
+        return branchGroup;
+    }
+
+    function getGardenBranchColor(node) {
+        if (node.ci_status === 'pass') return CONFIG.colors.garden.branchHealthy;
+        if (node.ci_status === 'pending') return CONFIG.colors.garden.branchWarning;
+        if (node.ci_status === 'fail') return CONFIG.colors.garden.branchDying;
+        return CONFIG.colors.garden.branchStale;
+    }
+
+    function createGardenLeafWithStem(commit, branchPoint, perpendicular, side, ciStatus) {
+        const leafGroup = new THREE.Group();
+        const avatarUrl = commit.author_avatar_url;
+
+        // Stem length and leaf offset - stagger positions to avoid overlap
+        const stemLength = 0.5 + Math.random() * 0.3;
+        const leafOffset = perpendicular.clone().multiplyScalar(side * stemLength);
+        // Add slight vertical variation to prevent z-fighting between adjacent leaves
+        const verticalOffset = (Math.random() - 0.5) * 0.3;
+
+        // Create small stem (thin cylinder from branch to leaf)
+        const stemColor = isDarkMode ? CONFIG.colors.garden.trunkDark : CONFIG.colors.garden.trunk;
+        const stemGeom = new THREE.CylinderGeometry(0.02, 0.03, stemLength, 4);
+        const stemMat = new THREE.MeshPhongMaterial({ color: stemColor });
+        const stem = new THREE.Mesh(stemGeom, stemMat);
+
+        // Position stem halfway between branch and leaf position
+        const stemMidpoint = branchPoint.clone().add(leafOffset.clone().multiplyScalar(0.5));
+        stemMidpoint.y += verticalOffset;
+        stem.position.copy(stemMidpoint);
+        // Rotate stem to point toward leaf
+        stem.lookAt(branchPoint.clone().add(leafOffset));
+        stem.rotateX(Math.PI / 2);
+        leafGroup.add(stem);
+
+        // Calculate leaf position (end of stem)
+        const leafPos = branchPoint.clone().add(leafOffset);
+        leafPos.y += verticalOffset;
+
+        // Create clickable mesh for the commit (sphere is more reliably raycastable than sprite)
+        const sphereGeom = new THREE.SphereGeometry(0.25, 16, 16);
+
+        let sphereMat;
+        if (avatarUrl) {
+            // Load avatar texture onto sphere
+            sphereMat = new THREE.MeshBasicMaterial({
+                color: 0xffffff,
+                transparent: true,
+            });
+
+            // Load avatar texture
+            const sizedUrl = avatarUrl.includes('?') ? `${avatarUrl}&s=64` : `${avatarUrl}?s=64`;
+            const textureLoader = new THREE.TextureLoader();
+            textureLoader.crossOrigin = 'anonymous';
+            textureLoader.load(sizedUrl, (texture) => {
+                sphereMat.map = texture;
+                sphereMat.needsUpdate = true;
+            }, undefined, () => {
+                // On error, use fallback color
+                sphereMat.color.setHex(isDarkMode ? 0x88aaff : 0x5577dd);
+            });
+        } else {
+            // Colored sphere as fallback
+            sphereMat = new THREE.MeshPhongMaterial({
+                color: isDarkMode ? 0x88aaff : 0x5577dd,
+                emissive: isDarkMode ? 0x88aaff : 0x5577dd,
+                emissiveIntensity: 0.2
+            });
+        }
+
+        const avatarNode = new THREE.Mesh(sphereGeom, sphereMat);
+        avatarNode.position.copy(leafPos);
+
+        // Store commit data for clicking/hovering
+        avatarNode.userData = {
+            isDataObject: true,
+            type: 'commit',
+            sha: commit.sha,
+            shortSha: commit.short_sha,
+            message: commit.message,
+            author: commit.author,
+            authorLogin: commit.author_login,
+            date: commit.date,
+            url: commit.html_url,
+            hasAvatar: !!avatarUrl,
+        };
+        leafGroup.add(avatarNode);
+        clickableObjects.push(avatarNode);
+        hoverableObjects.push(avatarNode);
+
+        return leafGroup;
+    }
+
+    function createPRFlower(prNode, position, repoName) {
+        const flowerColor = prNode.ci_status === 'pass' ? CONFIG.colors.garden.flowerPink
+            : prNode.ci_status === 'pending' ? CONFIG.colors.garden.flowerYellow
+            : CONFIG.colors.garden.flowerRed;
+
+        const flowerMat = new THREE.MeshPhongMaterial({
+            color: flowerColor,
+            emissive: flowerColor,
+            emissiveIntensity: 0.25,
+            transparent: prNode.is_draft,
+            opacity: prNode.is_draft ? 0.6 : 1.0
+        });
+        const flower = new THREE.Mesh(GARDEN_GEOMETRIES.flower, flowerMat);
+        flower.position.copy(position);
+        flower.userData = {
+            isDataObject: true,
+            type: 'pr',
+            name: prNode.name,
+            repoName: repoName,
+            prNumber: prNode.pr_number,
+            prTitle: prNode.pr_title,
+            prUrl: prNode.pr_url,
+            prAuthor: prNode.pr_author,
+            lastUpdated: prNode.last_updated,
+            ciStatus: prNode.ci_status,
+            labels: prNode.labels || [],
+            isDraft: prNode.is_draft,
+        };
+        clickableObjects.push(flower);
+        hoverableObjects.push(flower);
+        return flower;
+    }
+
+    // Small bush cluster for PRs that have stacked children (junction point)
+    function createPRBush(prNode, position, repoName) {
+        const bushGroup = new THREE.Group();
+        bushGroup.position.copy(position);
+
+        // Bush foliage color based on CI status
+        const foliageColor = prNode.ci_status === 'pass' ? CONFIG.colors.garden.foliage
+            : prNode.ci_status === 'pending' ? CONFIG.colors.garden.branchWarning
+            : CONFIG.colors.garden.branchDying;
+
+        const foliageMat = new THREE.MeshPhongMaterial({
+            color: foliageColor,
+            emissive: foliageColor,
+            emissiveIntensity: 0.2,
+            transparent: prNode.is_draft,
+            opacity: prNode.is_draft ? 0.7 : 1.0
+        });
+
+        // Small compact bush - just clustered spheres, no trunk
+        // Central ball
+        const mainFoliage = new THREE.Mesh(
+            new THREE.IcosahedronGeometry(0.35, 1),
+            foliageMat
+        );
+        mainFoliage.position.y = 0.1;
+        bushGroup.add(mainFoliage);
+
+        // Small surrounding puffs for fullness (lower and tighter)
+        const puffPositions = [
+            { x: 0.22, y: 0, z: 0.12 },
+            { x: -0.2, y: 0.05, z: 0.15 },
+            { x: 0.1, y: 0, z: -0.22 },
+            { x: -0.15, y: 0.08, z: -0.18 },
+        ];
+        puffPositions.forEach(pos => {
+            const puff = new THREE.Mesh(
+                new THREE.IcosahedronGeometry(0.2, 1),
+                foliageMat
+            );
+            puff.position.set(pos.x, pos.y, pos.z);
+            bushGroup.add(puff);
+        });
+
+        // Small flower on top to indicate PR
+        const flowerColor = prNode.ci_status === 'pass' ? CONFIG.colors.garden.flowerPink
+            : prNode.ci_status === 'pending' ? CONFIG.colors.garden.flowerYellow
+            : CONFIG.colors.garden.flowerRed;
+        const flowerMat = new THREE.MeshPhongMaterial({
+            color: flowerColor,
+            emissive: flowerColor,
+            emissiveIntensity: 0.35
+        });
+        const flower = new THREE.Mesh(new THREE.SphereGeometry(0.15, 8, 8), flowerMat);
+        flower.position.y = 0.45;
+        bushGroup.add(flower);
+
+        // Make clickable
+        mainFoliage.userData = {
+            isDataObject: true,
+            type: 'pr',
+            name: prNode.name,
+            repoName: repoName,
+            prNumber: prNode.pr_number,
+            prTitle: prNode.pr_title,
+            prUrl: prNode.pr_url,
+            prAuthor: prNode.pr_author,
+            lastUpdated: prNode.last_updated,
+            ciStatus: prNode.ci_status,
+            labels: prNode.labels || [],
+            isDraft: prNode.is_draft,
+            hasStackedPRs: true,
+        };
+        clickableObjects.push(mainFoliage);
+        hoverableObjects.push(mainFoliage);
+
+        return bushGroup;
+    }
+
+    // ============================================================================
     // Hide Menu
     // ============================================================================
 
@@ -1817,8 +2725,6 @@
         document.getElementById('theme-label').textContent = isDarkMode ? 'Light' : 'Dark';
 
         const themeColors = getThemeColors();
-        scene.background = new THREE.Color(themeColors.background);
-        scene.fog.color = new THREE.Color(themeColors.background);
 
         // Update grid
         const oldGrid = scene.getObjectByName('gridHelper');
@@ -1829,7 +2735,15 @@
             const newGrid = new THREE.GridHelper(100, 50, themeColors.gridColor, themeColors.gridColor);
             newGrid.position.y = -3;
             newGrid.name = 'gridHelper';
-            scene.add(newGrid);
+            if (!isGardenMode) scene.add(newGrid);
+        }
+
+        // Update background based on mode
+        if (isGardenMode) {
+            updateGardenBackground();
+        } else {
+            scene.background = new THREE.Color(themeColors.background);
+            scene.fog.color = new THREE.Color(themeColors.background);
         }
 
         buildScene();
@@ -1850,16 +2764,43 @@
         document.getElementById('view-icon').textContent = viewMode === 'prs' ? '⬡' : '⬢';
         document.getElementById('view-label').textContent = viewMode === 'prs' ? 'PRs' : 'Issues';
 
-        // Update subtitle
-        document.querySelector('#header .subtitle').textContent =
-            viewMode === 'prs'
-                ? '3D Visualization - Open PRs by Repository'
-                : '3D Visualization - Open Issues by Repository';
+        // Update subtitle (respect garden mode for PRs view)
+        if (viewMode === 'prs' && isGardenMode) {
+            document.querySelector('#header .subtitle').textContent = '3D Visualization - Garden View';
+        } else {
+            document.querySelector('#header .subtitle').textContent =
+                viewMode === 'prs'
+                    ? '3D Visualization - Open PRs by Repository'
+                    : '3D Visualization - Open Issues by Repository';
+        }
 
         // Update footer counts and legend for new view mode
         updateFooterCounts();
         updateLegend();
         buildHideMenu();
+
+        if (!isLocked) buildScene();
+    }
+
+    function toggleGardenMode() {
+        isGardenMode = !isGardenMode;
+        const btn = document.getElementById('garden-toggle');
+        btn.classList.toggle('active', isGardenMode);
+        document.getElementById('garden-icon').textContent = isGardenMode ? '🏙️' : '🌳';
+        document.getElementById('garden-label').textContent = isGardenMode ? 'Standard' : 'Garden';
+
+        // Update subtitle to reflect garden mode
+        if (viewMode === 'prs') {
+            document.querySelector('#header .subtitle').textContent = isGardenMode
+                ? '3D Visualization - Garden View'
+                : '3D Visualization - Open PRs by Repository';
+        }
+
+        // Update legend for garden mode
+        updateLegend();
+
+        // Apply garden background (sky, ground, clouds)
+        updateGardenBackground();
 
         if (!isLocked) buildScene();
     }
