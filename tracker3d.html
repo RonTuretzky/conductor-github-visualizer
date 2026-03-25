@@ -1539,6 +1539,7 @@
                     <button onclick="navigateToOrg()">View</button>
                 </div>
                 <div class="recent-orgs" id="recent-orgs"></div>
+                <a id="triage-link" href="open-issues.html" style="display:inline-block;margin-top:16px;color:#58a6ff;font-size:13px;text-decoration:none;">Triage unassigned issues →</a>
             </div>
         </div>
 
@@ -4825,8 +4826,16 @@
             container.appendChild(link);
         });
 
+        // Update triage link when input changes
+        const triageLink = document.getElementById('triage-link');
+        const orgInput = document.getElementById('org-input');
+        orgInput.addEventListener('input', () => {
+            const val = orgInput.value.trim();
+            triageLink.href = val ? 'open-issues.html?org=' + encodeURIComponent(val) : 'open-issues.html';
+        });
+
         // Enter key submits
-        document.getElementById('org-input').addEventListener('keydown', e => {
+        orgInput.addEventListener('keydown', e => {
             if (e.key === 'Enter') navigateToOrg();
         });
     }
