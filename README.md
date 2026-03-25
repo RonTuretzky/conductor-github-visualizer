@@ -101,7 +101,7 @@ Runs every 15 minutes to refresh PR and CI data:
 
 Deploys to GitHub Pages on every push to main:
 - Uses GitHub Pages artifact deployment
-- Serves `index.html` and `data/` directory
+- `index.html` redirects to `tracker3d.html?org=breadchaincoop` which loads from `data/` directory
 
 ## Visual Indicators
 

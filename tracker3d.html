@@ -1636,8 +1636,9 @@
     // Org viewer mode
     const urlParams = new URLSearchParams(window.location.search);
     const orgName = urlParams.get('org');
-    const isOrgMode = window.location.pathname === '/org';
+    const isOrgMode = window.location.pathname === '/org' || !!orgName;
     let viewMode = 'prs'; // 'prs' or 'issues' (org mode only)
+    let isStaticMode = false; // true when served from GitHub Pages (no server)
 
     if (isOrgMode && orgName) {
         CONFIG.apiUrl = '/api/org?org=' + encodeURIComponent(orgName);
@@ -4605,9 +4606,36 @@
             }
 
         } catch (error) {
-            console.log('API not available, using demo data');
-            // Show demo data for testing without backend
+            // Org mode: fall back to static data file (GitHub Pages deployment)
+            if (isOrgMode && !isStaticMode && !state.trackerData) {
+                console.log('API not available, falling back to static data/org_data.json');
+                isStaticMode = true;
+                try {
+                    const staticResp = await fetch('./data/org_data.json');
+                    if (!staticResp.ok) throw new Error('Static data not found');
+                    const data = await staticResp.json();
+                    state.trackerData = data;
+                    state.useDemo = false;
+                    if (data.stale_minutes) CONFIG.staleMinutes = data.stale_minutes;
+                    document.getElementById('loading').style.display = 'none';
+                    const subtitle = isGardenMode ? '3D Garden View' : 'GitHub Org Viewer';
+                    document.querySelector('#header .subtitle').textContent = state.locked
+                        ? subtitle + ' (Locked)' : subtitle;
+                    if (!state.locked) {
+                        buildScene();
+                        updateOrgStatusPanel();
+                        updateOrgFooter();
+                    }
+                } catch (staticError) {
+                    console.error('Static data also unavailable:', staticError);
+                    document.getElementById('loading-text').textContent =
+                        'Unable to load org data. No server or static data available.';
+                }
+                return;
+            }
+            // Conductor mode: show demo data for testing without backend
             if (!isOrgMode && (!state.trackerData || state.useDemo)) {
+                console.log('API not available, using demo data');
                 state.trackerData = generateDemoData();
                 state.useDemo = true;
                 document.getElementById('loading').style.display = 'none';
@@ -4996,13 +5024,13 @@
     // ============================================================================
     // Initialization
     // ============================================================================
-    function init() {
+    async function init() {
         loadSavedTheme();
         loadSavedColorblind();
         loadSavedGardenMode();
 
-        // Org mode: show landing page if no org specified
-        if (isOrgMode && !orgName) {
+        // Org mode: show landing page if no org specified (server mode only)
+        if (window.location.pathname === '/org' && !orgName) {
             showOrgLanding();
             return;
         }
@@ -5013,10 +5041,12 @@
         }
 
         initThree();
-        fetchData();
+        await fetchData();
 
-        // Start polling
-        setInterval(fetchData, CONFIG.pollInterval);
+        // Start polling (skip in static mode — data won't change)
+        if (!isStaticMode) {
+            setInterval(fetchData, CONFIG.pollInterval);
+        }
 
         // Start animation loop
         animate();
