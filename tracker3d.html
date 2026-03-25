@@ -2541,6 +2541,9 @@
             scene.remove(group);
         });
         state.repoGroups.clear();
+
+        // Clear pending avatar materials so in-flight loads don't update disposed materials
+        pendingAvatarMaterials.clear();
     }
 
     function buildScene() {
@@ -2652,12 +2655,12 @@
     }
 
     function buildWorkspaceNodes(nodes, group, parentX, parentZ, depth, baseAngle, childIndex, githubUrl) {
+        // Cap total spread to PI (180°) so children don't wrap around toward other repos
+        const maxSpread = Math.PI;
+        const totalSpread = Math.min((nodes.length - 1) * 0.6, maxSpread);
+        const spreadFactor = nodes.length > 1 ? totalSpread / (nodes.length - 1) : 0;
+
         nodes.forEach((node, index) => {
-            // Calculate position for this node (used for both workspace nodes and intermediate PR nodes)
-            // Cap total spread to PI (180°) so children don't wrap around toward other repos
-            const maxSpread = Math.PI;
-            const totalSpread = Math.min((nodes.length - 1) * 0.6, maxSpread);
-            const spreadFactor = nodes.length > 1 ? totalSpread / (nodes.length - 1) : 0;
             const angleOffset = (index - (nodes.length - 1) / 2) * spreadFactor;
             const nodeAngle = baseAngle + angleOffset;
             const distance = state.prSpacing + depth * 2;
@@ -2974,11 +2977,12 @@
     }
 
     function buildGardenBranches(nodes, group, parentX, parentZ, parentY, depth, baseAngle, githubUrl) {
+        // Cap total spread to PI (180°) so branches don't wrap toward other repos
+        const maxSpread = Math.PI;
+        const totalSpread = Math.min((nodes.length - 1) * 0.6, maxSpread);
+        const spreadFactor = nodes.length > 1 ? totalSpread / (nodes.length - 1) : 0;
+
         nodes.forEach((node, index) => {
-            // Cap total spread to PI (180°) so branches don't wrap toward other repos
-            const maxSpread = Math.PI;
-            const totalSpread = Math.min((nodes.length - 1) * 0.6, maxSpread);
-            const spreadFactor = nodes.length > 1 ? totalSpread / (nodes.length - 1) : 0;
             const angleOffset = (index - (nodes.length - 1) / 2) * spreadFactor;
             const nodeAngle = baseAngle + angleOffset;
             const distance = state.prSpacing + depth * 1.5;

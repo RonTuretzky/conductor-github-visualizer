@@ -347,7 +347,7 @@ def get_commits_between_branches(
     # Include author avatar URL in the query
     output = run_gh_command([
         "api", f"repos/{repo_full_name}/compare/{base_branch}...{head_branch}",
-        "--jq", '.commits[:10] | .[] | {sha: .sha, message: .commit.message, author: .commit.author.name, date: .commit.author.date, html_url: .html_url, author_login: .author.login, author_avatar_url: .author.avatar_url}'
+        "--jq", '.commits[:10] | .[] | {sha: .sha, message: .commit.message, author: .commit.author.name, date: .commit.author.date, html_url: .html_url, author_login: (.author.login // ""), author_avatar_url: (.author.avatar_url // "")}'
     ])
 
     if not output:
