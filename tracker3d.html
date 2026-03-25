@@ -1137,6 +1137,165 @@
             border-color: rgba(0, 0, 0, 0.1);
             border-top-color: #39ff14;
         }
+
+        /* Org viewer landing page */
+        #org-landing {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #0a0a0f;
+        }
+
+        body.light-mode #org-landing {
+            background: #f0f0f5;
+        }
+
+        .org-landing-card {
+            background: rgba(20, 20, 30, 0.95);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 40px 50px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            max-width: 480px;
+            width: 90%;
+        }
+
+        body.light-mode .org-landing-card {
+            background: rgba(255, 255, 255, 0.95);
+            border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .org-landing-card h1 {
+            font-size: 22px;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 8px;
+        }
+
+        body.light-mode .org-landing-card h1 {
+            color: #111;
+        }
+
+        .org-landing-card .landing-subtitle {
+            font-size: 13px;
+            color: #888;
+            margin-bottom: 28px;
+        }
+
+        .org-input-row {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .org-input-row input {
+            flex: 1;
+            padding: 10px 16px;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            background: rgba(255, 255, 255, 0.05);
+            color: #fff;
+            font-size: 15px;
+            outline: none;
+        }
+
+        body.light-mode .org-input-row input {
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            background: rgba(0, 0, 0, 0.03);
+            color: #111;
+        }
+
+        .org-input-row input::placeholder { color: #666; }
+
+        .org-input-row button {
+            padding: 10px 24px;
+            border-radius: 8px;
+            border: none;
+            background: #39ff14;
+            color: #000;
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .org-input-row button:hover { opacity: 0.85; }
+
+        .recent-orgs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: center;
+        }
+
+        .recent-orgs .recent-org {
+            padding: 5px 14px;
+            border-radius: 6px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.04);
+            color: #aaa;
+            font-size: 13px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .recent-orgs .recent-org:hover {
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+        }
+
+        body.light-mode .recent-orgs .recent-org {
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            background: rgba(0, 0, 0, 0.03);
+            color: #666;
+        }
+
+        body.light-mode .recent-orgs .recent-org:hover {
+            background: rgba(0, 0, 0, 0.08);
+            color: #111;
+        }
+
+        /* Org mode status panel overrides */
+        .org-status-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        /* View toggle button (org mode) */
+        .view-button {
+            position: absolute;
+            top: 420px;
+            left: 20px;
+            z-index: 100;
+            background: rgba(10, 10, 15, 0.85);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #e0e0e0;
+            padding: 8px 14px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 13px;
+            display: none;
+            gap: 6px;
+            align-items: center;
+            backdrop-filter: blur(10px);
+        }
+
+        .view-button.active { border-color: #39ff14; }
+        .view-button:hover { background: rgba(20, 20, 30, 0.95); }
+
+        body.light-mode .view-button {
+            background: rgba(255, 255, 255, 0.9);
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            color: #333;
+        }
+
+        body.zen-mode .view-button { display: none !important; }
     </style>
 </head>
 <body>
@@ -1371,13 +1530,30 @@
             <div class="close-hint">Press <kbd>`</kbd> or <kbd>Esc</kbd> to close | <kbd>0</kbd> show all</div>
         </div>
 
+        <div id="org-landing" style="display:none;">
+            <div class="org-landing-card">
+                <h1>GITHUB ORG VIEWER</h1>
+                <div class="landing-subtitle">Enter a GitHub organization to visualize its activity</div>
+                <div class="org-input-row">
+                    <input type="text" id="org-input" placeholder="e.g., facebook, BreadchainCoop" autocomplete="off" />
+                    <button onclick="navigateToOrg()">View</button>
+                </div>
+                <div class="recent-orgs" id="recent-orgs"></div>
+            </div>
+        </div>
+
+        <button class="view-button" id="view-button" onclick="toggleView()" style="display:none;">
+            <span class="icon" id="view-icon">&#x2B21;</span>
+            <span id="view-label">PRs</span>
+        </button>
+
         <div class="loading" id="loading">
             <div class="loading-spinner"></div>
-            <div>Connecting to Conductor...</div>
+            <div id="loading-text">Connecting to Conductor...</div>
         </div>
 
         <div class="controls-hint">
-            Drag to rotate | Shift+drag to pan | Scroll to zoom | Hover for details | Click to open | T theme | F fit | L lock | C a11y | Z zen
+            Drag to rotate | Shift+drag to pan | Scroll to zoom | Hover for details | Click to open | T theme | G garden | F fit | L lock | C a11y | Z zen
         </div>
     </div>
 
@@ -1456,6 +1632,18 @@
     // Theme state
     let isDarkMode = true;
     let isGardenMode = false;
+
+    // Org viewer mode
+    const urlParams = new URLSearchParams(window.location.search);
+    const orgName = urlParams.get('org');
+    const isOrgMode = window.location.pathname === '/org';
+    let viewMode = 'prs'; // 'prs' or 'issues' (org mode only)
+
+    if (isOrgMode && orgName) {
+        CONFIG.apiUrl = '/api/org?org=' + encodeURIComponent(orgName);
+        CONFIG.pollInterval = 60000; // Poll every 60s for org data (changes slowly)
+        document.title = orgName + ' - GitHub Org Viewer';
+    }
 
     // Garden mode shared geometries
     const GARDEN_GEOMETRIES = {
@@ -1990,7 +2178,10 @@
         label.textContent = '...';
 
         try {
-            const response = await fetch(CONFIG.apiUrl + '?refresh_ci=true', {
+            const refreshUrl = isOrgMode
+                ? CONFIG.apiUrl + '&refresh=true'
+                : CONFIG.apiUrl + '?refresh_ci=true';
+            const response = await fetch(refreshUrl, {
                 method: 'GET',
             });
 
@@ -2046,9 +2237,15 @@
         document.getElementById('garden-label').textContent = isGardenMode ? 'Standard' : 'Garden';
 
         // Update subtitle
-        document.querySelector('#header .subtitle').textContent = isGardenMode
-            ? '3D Garden View'
-            : '3D Visualization';
+        if (isOrgMode) {
+            document.querySelector('#header .subtitle').textContent = isGardenMode
+                ? '3D Garden View'
+                : 'GitHub Org Viewer';
+        } else {
+            document.querySelector('#header .subtitle').textContent = isGardenMode
+                ? '3D Garden View'
+                : '3D Visualization';
+        }
 
         // Apply garden background (sky, ground, clouds)
         updateGardenBackground();
@@ -2400,10 +2597,17 @@
             }
         }
 
-        // Check workspace nodes - click to open PR on GitHub
+        // Check workspace/issue nodes - click to open on GitHub
         const workspaceIntersects = raycaster.intersectObjects(Array.from(state.nodes.values()), true);
         if (workspaceIntersects.length > 0) {
             let targetMesh = workspaceIntersects[0].object;
+
+            // Handle org mode issue clicks
+            if (targetMesh.userData && targetMesh.userData.type === 'issue' && targetMesh.userData.issueUrl) {
+                window.open(targetMesh.userData.issueUrl, '_blank');
+                return;
+            }
+
             // Walk up to find workspace mesh
             while (targetMesh && (!targetMesh.userData || targetMesh.userData.type !== 'workspace')) {
                 targetMesh = targetMesh.parent;
@@ -2413,6 +2617,10 @@
                 if (data.pr_number && data.github_url) {
                     // Open PR page
                     window.open(`${data.github_url}/pull/${data.pr_number}`, '_blank');
+                    return;
+                } else if (data.pr_url) {
+                    // Org mode: use pr_url directly
+                    window.open(data.pr_url, '_blank');
                     return;
                 } else if (data.github_url && data.branch) {
                     // Open branch page
@@ -2479,8 +2687,11 @@
             // Toggle fullscreen with 's' key
             toggleFullscreen();
         } else if (event.key === 'g' || event.key === 'G') {
-            // Toggle garden mode with 'g' key
-            toggleGardenMode();
+            // Toggle garden mode with 'g' key (only for PRs view)
+            if (!isOrgMode || viewMode === 'prs') toggleGardenMode();
+        } else if ((event.key === 'v' || event.key === 'V') && isOrgMode) {
+            // Toggle view mode with 'v' key (org mode only)
+            toggleView();
         } else if (event.key === 'z' || event.key === 'Z') {
             // Toggle zen mode with 'z' key
             toggleZen();
@@ -2546,7 +2757,16 @@
     function buildScene() {
         if (!state.trackerData) return;
 
+        // Handle loading state for org mode
+        if (state.trackerData.loading) return;
+
         clearScene();
+
+        // Org mode issues view
+        if (isOrgMode && viewMode === 'issues') {
+            buildIssuesScene();
+            return;
+        }
 
         const { trees } = state.trackerData;
         if (!trees || Object.keys(trees).length === 0) return;
@@ -2663,7 +2883,7 @@
             const z = parentZ + Math.sin(nodeAngle) * distance;
             const y = depth * 0.3;
 
-            if (!node.workspace_id) {
+            if (!node.workspace_id && !isOrgMode) {
                 // Node without worktree (intermediate PR) - create a dimmed placeholder node
                 // and use its position for children so hierarchy is visually correct
                 if (node.pr_number) {
@@ -2722,13 +2942,14 @@
                 return;
             }
 
-            if (state.hiddenWorkspaces.has(node.workspace_id)) return;
+            const nodeId = node.workspace_id || ('org-' + (node.repo_name || '') + '-' + (node.pr_number || node.branch));
+            if (state.hiddenWorkspaces.has(nodeId)) return;
 
             // Create workspace node
             const mesh = createWorkspaceNode(node, githubUrl);
             mesh.position.set(x, y, z);
             group.add(mesh);
-            state.nodes.set(node.workspace_id, mesh);
+            state.nodes.set(nodeId, mesh);
 
             // Parent position
             const parentY = depth > 0 ? (depth - 1) * 0.3 : 0;
@@ -3265,6 +3486,15 @@
     // Get status score for a node (used for coloring)
     // Returns 0-1 where 0 = fresh/green, 1 = stale/red
     function getNodeStatusScore(node) {
+        // Org mode: use last_updated field from PR data
+        if (isOrgMode) {
+            const lastUpdated = node.last_updated;
+            if (!lastUpdated) return 1;
+            const staleMin = (state.trackerData && state.trackerData.stale_minutes) || CONFIG.staleMinutes;
+            const minutesAgo = (Date.now() - new Date(lastUpdated).getTime()) / 60000;
+            return Math.min(1, minutesAgo / staleMin);
+        }
+
         const click = node.click_record;
         if (!click || !click.last_seen) {
             return 1; // No data = stale
@@ -3397,6 +3627,8 @@
         let minutesAgo = 0;
         if (click && click.last_seen) {
             minutesAgo = (Date.now() - new Date(click.last_seen).getTime()) / 60000;
+        } else if (isOrgMode && node.last_updated) {
+            minutesAgo = (Date.now() - new Date(node.last_updated).getTime()) / 60000;
         }
 
         // Create main sphere with vibrant color (or grayscale in colorblind mode)
@@ -3419,22 +3651,25 @@
         };
 
         // Add model indicator for working sessions (no ring, just the label)
-        if (status && status.status === 'working' && status.model) {
-            const modelLabel = createTextSprite(status.model, {
-                fontsize: 10,
-                backgroundColor: 'rgba(34, 197, 94, 0.8)',
-                textColor: '#ffffff',
-                padding: 6
-            });
-            modelLabel.position.set(0.5, 0.2, 0);
-            modelLabel.scale.set(0.5, 0.25, 1);
-            mesh.add(modelLabel);
-        } else if (!status || status.status !== 'working') {
-            // Add awaiting icon for non-working sessions
-            const awaitingIcon = createAwaitingIcon();
-            awaitingIcon.position.set(0, 0, 0.35);  // Positioned in front of the ball
-            awaitingIcon.userData.isAwaitingIcon = true;
-            mesh.add(awaitingIcon);
+        // Skip session indicators in org mode (no sessions)
+        if (!isOrgMode) {
+            if (status && status.status === 'working' && status.model) {
+                const modelLabel = createTextSprite(status.model, {
+                    fontsize: 10,
+                    backgroundColor: 'rgba(34, 197, 94, 0.8)',
+                    textColor: '#ffffff',
+                    padding: 6
+                });
+                modelLabel.position.set(0.5, 0.2, 0);
+                modelLabel.scale.set(0.5, 0.25, 1);
+                mesh.add(modelLabel);
+            } else if (!status || status.status !== 'working') {
+                // Add awaiting icon for non-working sessions
+                const awaitingIcon = createAwaitingIcon();
+                awaitingIcon.position.set(0, 0, 0.35);  // Positioned in front of the ball
+                awaitingIcon.userData.isAwaitingIcon = true;
+                mesh.add(awaitingIcon);
+            }
         }
 
         // In colorblind mode, add emoji indicator for freshness
@@ -3950,17 +4185,26 @@
 
             if (intersects.length > 0) {
                 let targetMesh = intersects[0].object;
-                // Walk up to find workspace mesh
-                while (targetMesh && (!targetMesh.userData || targetMesh.userData.type !== 'workspace')) {
-                    targetMesh = targetMesh.parent;
-                }
-
-                if (targetMesh && targetMesh.userData.type === 'workspace') {
+                // Check for issue nodes first (org mode)
+                if (targetMesh.userData && targetMesh.userData.type === 'issue') {
                     if (state.hoveredNode !== targetMesh) {
                         state.hoveredNode = targetMesh;
-                        showTooltip(targetMesh.userData.data);
+                        showTooltip(targetMesh.userData);
                     }
                     foundHover = true;
+                } else {
+                    // Walk up to find workspace mesh
+                    while (targetMesh && (!targetMesh.userData || targetMesh.userData.type !== 'workspace')) {
+                        targetMesh = targetMesh.parent;
+                    }
+
+                    if (targetMesh && targetMesh.userData.type === 'workspace') {
+                        if (state.hoveredNode !== targetMesh) {
+                            state.hoveredNode = targetMesh;
+                            showTooltip(targetMesh.userData.data);
+                        }
+                        foundHover = true;
+                    }
                 }
             }
         }
@@ -3978,6 +4222,47 @@
     // ============================================================================
     function showTooltip(node) {
         const tooltip = document.getElementById('tooltip');
+
+        // Handle issue nodes (org mode)
+        if (node.type === 'issue') {
+            tooltip.querySelector('.tooltip-title').textContent = '#' + node.issueNumber + ' ' + node.issueTitle;
+            tooltip.querySelector('.tooltip-repo').textContent = node.repoName;
+            if (node.lastUpdated) {
+                const minutesAgo = Math.floor((Date.now() - new Date(node.lastUpdated).getTime()) / 60000);
+                tooltip.querySelector('.tooltip-time').textContent = formatTimeAgo(minutesAgo);
+            } else {
+                tooltip.querySelector('.tooltip-time').textContent = '';
+            }
+            const labels = (node.labels || []).join(', ');
+            tooltip.querySelector('.tooltip-status').innerHTML = labels ? `<span>Labels: ${labels}</span>` : '';
+            tooltip.style.display = 'block';
+            return;
+        }
+
+        // Org mode: use pr_author and last_updated
+        if (isOrgMode) {
+            tooltip.querySelector('.tooltip-title').textContent = node.name || node.pr_title || '';
+            const author = node.pr_author || node.pr_author_login || '';
+            tooltip.querySelector('.tooltip-repo').textContent = author ? 'by ' + author : (node.repo_name || '');
+            if (node.last_updated || node.lastUpdated) {
+                const ts = node.last_updated || node.lastUpdated;
+                const minutesAgo = Math.floor((Date.now() - new Date(ts).getTime()) / 60000);
+                tooltip.querySelector('.tooltip-time').textContent = formatTimeAgo(minutesAgo);
+            } else {
+                tooltip.querySelector('.tooltip-time').textContent = '';
+            }
+            const ci = node.ci_status || node.ciStatus;
+            if (ci) {
+                const ciColor = ci === 'pass' ? '#39ff14' : ci === 'fail' ? '#ef4444' : '#eab308';
+                tooltip.querySelector('.tooltip-status').innerHTML =
+                    `<span style="color:${ciColor};">CI: ${ci}</span>`;
+            } else {
+                tooltip.querySelector('.tooltip-status').innerHTML = '';
+            }
+            tooltip.style.display = 'block';
+            return;
+        }
+
         const click = node.click_record;
         const status = node.session_status;
 
@@ -4093,8 +4378,10 @@
         const reposList = document.getElementById('repos-list');
         const workspacesList = document.getElementById('workspaces-list');
 
-        // Build repos list
-        const repos = Object.keys(state.trackerData.trees || {}).sort();
+        // Build repos list (include issues repos in org mode)
+        const treeRepos = Object.keys(state.trackerData.trees || {});
+        const issueRepos = isOrgMode ? Object.keys(state.trackerData.issues || {}) : [];
+        const repos = [...new Set([...treeRepos, ...issueRepos])].sort();
         reposList.innerHTML = repos.map((name, i) => {
             const key = String.fromCharCode(65 + i); // A, B, C...
             const isHidden = state.hiddenRepos.has(name);
@@ -4107,12 +4394,17 @@
             `;
         }).join('');
 
-        // Build workspaces list
+        // Build workspaces list (not applicable in org mode)
+        if (isOrgMode) {
+            document.getElementById('workspaces-section').style.display = 'none';
+        }
         const workspaces = [];
-        Object.values(state.trackerData.trees || {}).forEach(tree => {
-            collectWorkspaces(tree, workspaces);
-        });
-        workspaces.sort((a, b) => a.name.localeCompare(b.name));
+        if (!isOrgMode) {
+            Object.values(state.trackerData.trees || {}).forEach(tree => {
+                collectWorkspaces(tree, workspaces);
+            });
+            workspaces.sort((a, b) => a.name.localeCompare(b.name));
+        }
 
         workspacesList.innerHTML = workspaces.slice(0, 26).map((ws, i) => {
             const key = String.fromCharCode(97 + i); // a, b, c...
@@ -4256,27 +4548,50 @@
             const data = await response.json();
 
             // Detect working -> non-working transitions before updating state
-            detectStatusTransitions(data);
+            if (!isOrgMode) detectStatusTransitions(data);
+
+            // Handle org mode loading state
+            if (data.loading) {
+                document.getElementById('loading').style.display = 'flex';
+                document.getElementById('loading-text').textContent =
+                    'Fetching ' + (data.organization || orgName) + ' data (this may take a minute)...';
+                return;
+            }
 
             state.trackerData = data;
             state.useDemo = false;
 
+            // Update staleMinutes from server data
+            if (data.stale_minutes) CONFIG.staleMinutes = data.stale_minutes;
+
             document.getElementById('loading').style.display = 'none';
-            document.querySelector('#header .subtitle').textContent = state.locked
-                ? '3D Visualization (Locked)'
-                : '3D Visualization';
+
+            if (isOrgMode) {
+                const subtitle = isGardenMode ? '3D Garden View' : 'GitHub Org Viewer';
+                document.querySelector('#header .subtitle').textContent = state.locked
+                    ? subtitle + ' (Locked)' : subtitle;
+            } else {
+                document.querySelector('#header .subtitle').textContent = state.locked
+                    ? '3D Visualization (Locked)'
+                    : '3D Visualization';
+            }
 
             // Skip scene rebuild if locked
             if (!state.locked) {
                 buildScene();
-                updateStatusPanel();
-                updateFooter();
+                if (isOrgMode) {
+                    updateOrgStatusPanel();
+                    updateOrgFooter();
+                } else {
+                    updateStatusPanel();
+                    updateFooter();
+                }
             }
 
         } catch (error) {
             console.log('API not available, using demo data');
             // Show demo data for testing without backend
-            if (!state.trackerData || state.useDemo) {
+            if (!isOrgMode && (!state.trackerData || state.useDemo)) {
                 state.trackerData = generateDemoData();
                 state.useDemo = true;
                 document.getElementById('loading').style.display = 'none';
@@ -4413,12 +4728,266 @@
     }
 
     // ============================================================================
+    // Org Viewer Functions
+    // ============================================================================
+
+    function navigateToOrg() {
+        const input = document.getElementById('org-input');
+        const org = input.value.trim();
+        if (org) {
+            // Save to recent orgs
+            const recent = JSON.parse(localStorage.getItem('recent-orgs') || '[]');
+            const updated = [org, ...recent.filter(o => o !== org)].slice(0, 8);
+            localStorage.setItem('recent-orgs', JSON.stringify(updated));
+            window.location.href = '/org?org=' + encodeURIComponent(org);
+        }
+    }
+
+    function showOrgLanding() {
+        document.getElementById('org-landing').style.display = 'flex';
+        document.getElementById('loading').style.display = 'none';
+
+        // Populate recent orgs
+        const recent = JSON.parse(localStorage.getItem('recent-orgs') || '[]');
+        const container = document.getElementById('recent-orgs');
+        container.innerHTML = recent.map(org =>
+            `<a class="recent-org" href="/org?org=${encodeURIComponent(org)}">${org}</a>`
+        ).join('');
+
+        // Enter key submits
+        document.getElementById('org-input').addEventListener('keydown', e => {
+            if (e.key === 'Enter') navigateToOrg();
+        });
+    }
+
+    function setupOrgMode() {
+        // Update header
+        document.querySelector('#header h1').textContent = orgName.toUpperCase();
+        document.querySelector('#header .subtitle').textContent = 'GitHub Org Viewer';
+        document.getElementById('loading-text').textContent = 'Fetching ' + orgName + ' data...';
+
+        // Show view toggle button
+        const viewBtn = document.getElementById('view-button');
+        viewBtn.style.display = 'flex';
+
+        // Update status panel for org mode
+        document.querySelector('#status-panel h3').textContent = 'CI Status';
+        document.getElementById('status-counts').innerHTML = `
+            <div class="org-status-item">
+                <div class="status-icon" style="background:#39ff14;box-shadow:0 0 10px #39ff14;"></div>
+                <span><span id="ci-pass-count">0</span> passing</span>
+            </div>
+            <div class="org-status-item">
+                <div class="status-icon" style="background:#ef4444;"></div>
+                <span><span id="ci-fail-count">0</span> failing</span>
+            </div>
+            <div class="org-status-item">
+                <div class="status-icon" style="background:#eab308;"></div>
+                <span><span id="ci-pending-count">0</span> pending</span>
+            </div>
+        `;
+
+        // Update legend for org mode
+        const legendSections = document.querySelectorAll('#legend-panel .legend-section');
+        legendSections.forEach(section => {
+            const h4 = section.querySelector('h4');
+            if (h4 && h4.textContent.includes('Worktree')) h4.textContent = 'PR Freshness';
+            if (h4 && h4.textContent.includes('Session Status')) section.style.display = 'none';
+        });
+
+        // Update footer for org mode
+        document.querySelector('#footer .tracking-info').innerHTML =
+            'Repos: <span id="org-repo-count">0</span> | ' +
+            'PRs: <span id="org-pr-count">0</span> | ' +
+            'Issues: <span id="org-issue-count">0</span> | ' +
+            '<span id="hidden-info"></span>';
+
+        // Save org to recent
+        const recent = JSON.parse(localStorage.getItem('recent-orgs') || '[]');
+        const updated = [orgName, ...recent.filter(o => o !== orgName)].slice(0, 8);
+        localStorage.setItem('recent-orgs', JSON.stringify(updated));
+    }
+
+    function toggleView() {
+        viewMode = viewMode === 'prs' ? 'issues' : 'prs';
+        const btn = document.getElementById('view-button');
+        btn.classList.toggle('active', viewMode === 'issues');
+        document.getElementById('view-icon').textContent = viewMode === 'prs' ? '\u2B21' : '\u2B22';
+        document.getElementById('view-label').textContent = viewMode === 'prs' ? 'PRs' : 'Issues';
+
+        // Garden mode only works with PRs
+        if (viewMode === 'issues' && isGardenMode) {
+            toggleGardenMode();
+        }
+
+        clearScene();
+        buildScene();
+    }
+
+    function updateOrgStatusPanel() {
+        if (!state.trackerData || !state.trackerData.trees) return;
+        const trees = state.trackerData.trees;
+        let pass = 0, fail = 0, pending = 0;
+
+        function countCI(node) {
+            if (node.ci_status === 'pass') pass++;
+            else if (node.ci_status === 'fail') fail++;
+            else if (node.ci_status === 'pending') pending++;
+            (node.children || []).forEach(countCI);
+        }
+
+        Object.values(trees).forEach(countCI);
+
+        const passEl = document.getElementById('ci-pass-count');
+        const failEl = document.getElementById('ci-fail-count');
+        const pendingEl = document.getElementById('ci-pending-count');
+        if (passEl) passEl.textContent = pass;
+        if (failEl) failEl.textContent = fail;
+        if (pendingEl) pendingEl.textContent = pending;
+    }
+
+    function updateOrgFooter() {
+        const data = state.trackerData;
+        if (!data) return;
+
+        const stats = data.stats || {};
+        const repoEl = document.getElementById('org-repo-count');
+        const prEl = document.getElementById('org-pr-count');
+        const issueEl = document.getElementById('org-issue-count');
+        if (repoEl) repoEl.textContent = stats.total_repos || Object.keys(data.trees || {}).length;
+        if (prEl) prEl.textContent = stats.total_open_prs || 0;
+        if (issueEl) issueEl.textContent = stats.total_open_issues || 0;
+
+        const hiddenRepos = state.hiddenRepos.size;
+        let hiddenInfo = '';
+        if (hiddenRepos > 0) hiddenInfo = `(${hiddenRepos} repos hidden)`;
+        const hiddenEl = document.getElementById('hidden-info');
+        if (hiddenEl) hiddenEl.textContent = hiddenInfo;
+    }
+
+    function getIssueLabelColor(labels) {
+        if (labels.some(l => l.toLowerCase().includes('bug'))) return 0xef4444;
+        if (labels.some(l => l.toLowerCase().includes('enhancement') || l.toLowerCase().includes('feature'))) return 0x22c55e;
+        if (labels.some(l => l.toLowerCase().includes('help') || l.toLowerCase().includes('good first'))) return 0x8b5cf6;
+        if (labels.some(l => l.toLowerCase().includes('documentation'))) return 0x3b82f6;
+        return 0xeab308;
+    }
+
+    function buildIssuesScene() {
+        if (!state.trackerData || !state.trackerData.issues) return;
+
+        const themeColors = getThemeColors();
+        const issues = state.trackerData.issues;
+        const repos = Object.entries(issues).filter(([name]) => !state.hiddenRepos.has(name));
+        const numRepos = repos.length;
+        if (numRepos === 0) return;
+
+        const cols = Math.ceil(Math.sqrt(numRepos));
+        const spacing = 12;
+
+        repos.forEach(([repoName, repoData], index) => {
+            const col = index % cols;
+            const row = Math.floor(index / cols);
+            const x = (col - (cols - 1) / 2) * spacing;
+            const z = (row - Math.floor(numRepos / cols) / 2) * spacing;
+
+            // Repo group
+            const repoGroup = new THREE.Group();
+            repoGroup.userData = { type: 'repo', name: repoName, github_url: repoData.github_url };
+            scene.add(repoGroup);
+            state.repoGroups.set(repoName, repoGroup);
+
+            // Repo sphere
+            const repoGeom = new THREE.SphereGeometry(0.5, 32, 32);
+            const repoColor = state.colorblind ? 0x888888 : 0x6366f1;
+            const repoMat = new THREE.MeshStandardMaterial({
+                color: repoColor, emissive: repoColor, emissiveIntensity: 0.3,
+                metalness: 0.1, roughness: 0.8,
+            });
+            const repoBall = new THREE.Mesh(repoGeom, repoMat);
+            repoBall.position.set(x, 0, z);
+            repoBall.userData = { type: 'repo', name: repoName, github_url: repoData.github_url };
+            repoGroup.add(repoBall);
+            state.nodes.set('repo-' + repoName, repoBall);
+
+            // Repo label
+            const label = createTextSprite(repoName, 0.5, '#ffffff');
+            label.position.set(x, -1.5, z);
+            repoGroup.add(label);
+
+            // Issues radially around repo
+            const issueList = repoData.issues || [];
+            const baseRadius = 3;
+
+            issueList.forEach((issue, i) => {
+                const angle = (i / issueList.length) * Math.PI * 2;
+                const ix = x + Math.cos(angle) * baseRadius;
+                const iz = z + Math.sin(angle) * baseRadius;
+                const iy = 1;
+
+                const issueColor = getIssueLabelColor(issue.labels || []);
+                const issueGeom = new THREE.BoxGeometry(0.5, 0.5, 0.5);
+                const issueMat = new THREE.MeshStandardMaterial({
+                    color: issueColor, emissive: issueColor, emissiveIntensity: 0.3,
+                    metalness: 0.1, roughness: 0.8,
+                });
+                const issueCube = new THREE.Mesh(issueGeom, issueMat);
+                issueCube.position.set(ix, iy, iz);
+                issueCube.rotation.y = Math.PI / 4;
+                issueCube.userData = {
+                    type: 'issue',
+                    name: issue.title,
+                    repoName: repoName,
+                    issueNumber: issue.number,
+                    issueTitle: issue.title,
+                    issueUrl: issue.html_url,
+                    issueAuthor: issue.author,
+                    lastUpdated: issue.updated_at,
+                    labels: issue.labels || [],
+                    assignees: issue.assignees || [],
+                    comments: issue.comments || 0,
+                };
+                repoGroup.add(issueCube);
+                state.nodes.set('issue-' + repoName + '-' + issue.number, issueCube);
+
+                // Connection line
+                const lineGeom = new THREE.BufferGeometry();
+                lineGeom.setAttribute('position', new THREE.BufferAttribute(new Float32Array([
+                    x, 0, z, ix, iy, iz
+                ]), 3));
+                const lineMat = new THREE.LineBasicMaterial({
+                    color: themeColors.lineColor, transparent: true, opacity: 0.4,
+                });
+                const line = new THREE.Line(lineGeom, lineMat);
+                repoGroup.add(line);
+
+                // Issue number label
+                const issueLabel = createTextSprite('#' + issue.number, 0.3, '#eab308');
+                issueLabel.position.set(ix, iy + 0.7, iz);
+                repoGroup.add(issueLabel);
+            });
+        });
+    }
+
+    // ============================================================================
     // Initialization
     // ============================================================================
     function init() {
         loadSavedTheme();
         loadSavedColorblind();
         loadSavedGardenMode();
+
+        // Org mode: show landing page if no org specified
+        if (isOrgMode && !orgName) {
+            showOrgLanding();
+            return;
+        }
+
+        // Org mode: configure UI
+        if (isOrgMode && orgName) {
+            setupOrgMode();
+        }
+
         initThree();
         fetchData();
 
