@@ -1024,6 +1024,7 @@ class OrgViewerState:
 
     def get_org_data(self, org_name: str, force_refresh: bool = False) -> dict:
         """Get org data, returning cached data or triggering a background fetch."""
+        org_name = org_name.lower()
         with self._lock:
             now = time.time()
             cached = self._cache.get(org_name)
@@ -1064,11 +1065,17 @@ class OrgViewerState:
         try:
             config = ORG_DEFAULT_CONFIG.copy()
             config["organization"] = org_name
+            config["fetch_commits"] = False
             data = _fetch_org_data(config, quiet=True)
 
             with self._lock:
                 self._cache[org_name] = data
                 self._cache_time[org_name] = time.time()
+                # Evict oldest entry if cache exceeds max size
+                if len(self._cache) > 50:
+                    oldest_org = min(self._cache_time, key=self._cache_time.get)
+                    del self._cache[oldest_org]
+                    del self._cache_time[oldest_org]
         except Exception as e:
             with self._lock:
                 self._cache[org_name] = {
@@ -1103,10 +1110,10 @@ class TrackerHandler(http.server.SimpleHTTPRequestHandler):
         elif parsed.path == "/api/org":
             org_name = query_params.get("org", [""])[0]
             if not org_name:
-                self.send_json({"error": "Missing 'org' query parameter"})
+                self.send_json({"error": "Missing 'org' query parameter"}, cors=False)
                 return
             force = query_params.get("refresh", [""])[0] == "true"
-            self.send_json(self.org_state.get_org_data(org_name, force_refresh=force))
+            self.send_json(self.org_state.get_org_data(org_name, force_refresh=force), cors=False)
         elif parsed.path == "/org":
             self.serve_html()
         elif parsed.path == "/" or parsed.path == "/index.html":
@@ -1114,13 +1121,14 @@ class TrackerHandler(http.server.SimpleHTTPRequestHandler):
         else:
             super().do_GET()
 
-    def send_json(self, data: dict):
-        """Send JSON response with CORS headers."""
+    def send_json(self, data: dict, cors: bool = True):
+        """Send JSON response, optionally with CORS headers."""
         content = json.dumps(data).encode("utf-8")
         self.send_response(200)
         self.send_header("Content-Type", "application/json")
         self.send_header("Content-Length", len(content))
-        self.send_header("Access-Control-Allow-Origin", "*")
+        if cors:
+            self.send_header("Access-Control-Allow-Origin", "*")
         self.send_header("Cache-Control", "no-cache")
         self.end_headers()
         self.wfile.write(content)

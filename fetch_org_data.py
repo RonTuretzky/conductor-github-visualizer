@@ -149,6 +149,9 @@ class TreeNode:
 # GitHub API Functions
 # ============================================================================
 
+_log = print
+
+
 def run_gh_command(args: list, timeout: int = 30) -> Optional[str]:
     """Run a gh CLI command and return stdout."""
     try:
@@ -165,7 +168,7 @@ def run_gh_command(args: list, timeout: int = 30) -> Optional[str]:
             return None
         return result.stdout
     except (subprocess.TimeoutExpired, FileNotFoundError) as e:
-        print(f"Error running gh command: {e}", file=sys.stderr)
+        _log(f"Error running gh command: {e}", file=sys.stderr)
         return None
 
 
@@ -180,7 +183,7 @@ def get_org_repos(org: str, config: dict, log=print) -> list[RepoInfo]:
     ])
 
     if not output:
-        print(f"Failed to fetch repos for {org}", file=sys.stderr)
+        log(f"Failed to fetch repos for {org}", file=sys.stderr)
         return []
 
     repos = []
@@ -515,7 +518,9 @@ def fetch_org_data(config: dict, quiet: bool = False) -> dict:
         config: Configuration dict with organization name and settings.
         quiet: If True, suppress print output (for library use).
     """
+    global _log
     log = (lambda *a, **kw: None) if quiet else print
+    _log = log
 
     org = config["organization"]
     fetch_prs = config.get("fetch_prs", True)

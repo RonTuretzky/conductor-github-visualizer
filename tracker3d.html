@@ -3540,7 +3540,11 @@
     function collectStatusScores(nodes, scores = []) {
         if (!nodes) return scores;
         for (const node of nodes) {
-            if (node.workspace_id && !state.hiddenWorkspaces.has(node.workspace_id)) {
+            if (isOrgMode) {
+                if (node.last_updated) {
+                    scores.push(getNodeStatusScore(node));
+                }
+            } else if (node.workspace_id && !state.hiddenWorkspaces.has(node.workspace_id)) {
                 scores.push(getNodeStatusScore(node));
             }
             if (node.children) {
@@ -4234,7 +4238,13 @@
                 tooltip.querySelector('.tooltip-time').textContent = '';
             }
             const labels = (node.labels || []).join(', ');
-            tooltip.querySelector('.tooltip-status').innerHTML = labels ? `<span>Labels: ${labels}</span>` : '';
+            const parts = [];
+            if (labels) parts.push('Labels: ' + labels);
+            const assignees = (node.assignees || []).join(', ');
+            if (assignees) parts.push('Assignees: ' + assignees);
+            if (node.comments > 0) parts.push(node.comments + ' comments');
+            const statusEl = tooltip.querySelector('.tooltip-status');
+            statusEl.textContent = parts.join(' | ');
             tooltip.style.display = 'block';
             return;
         }
@@ -4254,10 +4264,14 @@
             const ci = node.ci_status || node.ciStatus;
             if (ci) {
                 const ciColor = ci === 'pass' ? '#39ff14' : ci === 'fail' ? '#ef4444' : '#eab308';
-                tooltip.querySelector('.tooltip-status').innerHTML =
-                    `<span style="color:${ciColor};">CI: ${ci}</span>`;
+                const statusEl = tooltip.querySelector('.tooltip-status');
+                statusEl.textContent = '';
+                const span = document.createElement('span');
+                span.style.color = ciColor;
+                span.textContent = 'CI: ' + ci;
+                statusEl.appendChild(span);
             } else {
-                tooltip.querySelector('.tooltip-status').innerHTML = '';
+                tooltip.querySelector('.tooltip-status').textContent = '';
             }
             tooltip.style.display = 'block';
             return;
@@ -4449,7 +4463,9 @@
     function handleHideMenuKey(key) {
         if (!state.trackerData) return;
 
-        const repos = Object.keys(state.trackerData.trees || {}).sort();
+        const treeRepos = Object.keys(state.trackerData.trees || {});
+        const issueRepos = isOrgMode ? Object.keys(state.trackerData.issues || {}) : [];
+        const repos = [...new Set([...treeRepos, ...issueRepos])].sort();
         const workspaces = [];
         Object.values(state.trackerData.trees || {}).forEach(tree => {
             collectWorkspaces(tree, workspaces);
@@ -4750,9 +4766,14 @@
         // Populate recent orgs
         const recent = JSON.parse(localStorage.getItem('recent-orgs') || '[]');
         const container = document.getElementById('recent-orgs');
-        container.innerHTML = recent.map(org =>
-            `<a class="recent-org" href="/org?org=${encodeURIComponent(org)}">${org}</a>`
-        ).join('');
+        container.innerHTML = '';
+        recent.forEach(org => {
+            const link = document.createElement('a');
+            link.className = 'recent-org';
+            link.href = '/org?org=' + encodeURIComponent(org);
+            link.textContent = org;
+            container.appendChild(link);
+        });
 
         // Enter key submits
         document.getElementById('org-input').addEventListener('keydown', e => {
@@ -4911,7 +4932,9 @@
             state.nodes.set('repo-' + repoName, repoBall);
 
             // Repo label
-            const label = createTextSprite(repoName, 0.5, '#ffffff');
+            const label = createTextSprite(repoName, { fontsize: 22, backgroundColor: 'rgba(0,0,0,0.8)', textColor: '#ffffff', padding: 20 });
+            const repoLabelWidth = (label.userData.canvasWidth || 256) / 90;
+            label.scale.set(repoLabelWidth, 0.6, 1);
             label.position.set(x, -1.5, z);
             repoGroup.add(label);
 
@@ -4962,7 +4985,8 @@
                 repoGroup.add(line);
 
                 // Issue number label
-                const issueLabel = createTextSprite('#' + issue.number, 0.3, '#eab308');
+                const issueLabel = createTextSprite('#' + issue.number, { fontsize: 18, backgroundColor: 'transparent', textColor: '#eab308', padding: 10 });
+                issueLabel.scale.set(0.8, 0.35, 1);
                 issueLabel.position.set(ix, iy + 0.7, iz);
                 repoGroup.add(issueLabel);
             });
