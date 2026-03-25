@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Open Issues — Triage</title>
+    <title>Open Issues — Pick What Interests You</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -50,10 +50,10 @@
         }
         .dir { display: flex; align-items: center; gap: 4px; }
         .dir .arrow { font-weight: bold; font-size: 16px; }
-        .dir-1 .arrow { color: #f85149; }
-        .dir-2 .arrow { color: #d29922; }
-        .dir-3 .arrow { color: #58a6ff; }
-        .dir-4 .arrow { color: #3fb950; }
+        .dir-1 .arrow { color: #3fb950; }
+        .dir-2 .arrow { color: #58a6ff; }
+        .dir-3 .arrow { color: #d29922; }
+        .dir-4 .arrow { color: #f85149; }
 
         .card-container {
             position: relative;
@@ -199,10 +199,10 @@
             padding-bottom: 6px;
             border-bottom: 1px solid #30363d;
         }
-        .results-group.p1 h3 { color: #f85149; }
-        .results-group.p2 h3 { color: #d29922; }
-        .results-group.p3 h3 { color: #58a6ff; }
-        .results-group.p4 h3 { color: #3fb950; }
+        .results-group.p1 h3 { color: #3fb950; }
+        .results-group.p2 h3 { color: #58a6ff; }
+        .results-group.p3 h3 { color: #d29922; }
+        .results-group.p4 h3 { color: #f85149; }
         .results-item {
             padding: 8px 0;
             font-size: 13px;
@@ -276,16 +276,16 @@
         <div class="stats" id="stats"></div>
     </div>
     <div class="directions">
-        <div class="dir dir-1"><span class="arrow">←</span> P1 Critical</div>
-        <div class="dir dir-2"><span class="arrow">↑</span> P2 Important</div>
-        <div class="dir dir-3"><span class="arrow">↓</span> P3 Nice-to-have</div>
-        <div class="dir dir-4"><span class="arrow">→</span> P4 Backlog</div>
+        <div class="dir dir-1"><span class="arrow">←</span> Love it!</div>
+        <div class="dir dir-2"><span class="arrow">↑</span> Interested</div>
+        <div class="dir dir-3"><span class="arrow">↓</span> Maybe</div>
+        <div class="dir dir-4"><span class="arrow">→</span> Pass</div>
     </div>
     <div class="card-container" id="card-container">
         <div class="loading" id="loading">Loading issues...</div>
     </div>
     <div class="counter" id="counter"></div>
-    <div class="keyboard-hint">Arrow keys or drag to swipe · C to copy · U to undo</div>
+    <div class="keyboard-hint">Arrow keys or drag to swipe · C to copy · U to undo · ← love it · ↑ interested · ↓ maybe · → pass</div>
 
     <div class="results-overlay" id="results">
         <div class="results-content" id="results-content"></div>
@@ -327,7 +327,7 @@
 
             const orgName = data.organization || orgParam || 'org';
             document.getElementById('page-title').textContent = orgName + ' — Unassigned Issues';
-            document.title = orgName + ' — Triage Unassigned Issues';
+            document.title = orgName + ' — Pick What Interests You';
 
             // Extract unassigned issues
             for (const [repoName, repoData] of Object.entries(data.issues)) {
@@ -532,11 +532,11 @@
 
             let label, color;
             if (absX > absY) {
-                if (dx < 0) { label = '← P1'; color = '#f85149'; }
-                else { label = 'P4 →'; color = '#3fb950'; }
+                if (dx < 0) { label = '← Love it!'; color = '#3fb950'; }
+                else { label = 'Pass →'; color = '#f85149'; }
             } else {
-                if (dy < 0) { label = '↑ P2'; color = '#d29922'; }
-                else { label = 'P3 ↓'; color = '#58a6ff'; }
+                if (dy < 0) { label = '↑ Interested'; color = '#58a6ff'; }
+                else { label = 'Maybe ↓'; color = '#d29922'; }
             }
 
             ind.textContent = label;
@@ -587,7 +587,7 @@
         function updateCounter() {
             const el = document.getElementById('counter');
             if (currentIndex >= issues.length) {
-                el.textContent = 'Done — ' + issues.length + ' issues triaged';
+                el.textContent = 'Done — ' + issues.length + ' issues reviewed';
             } else {
                 el.textContent = (currentIndex + 1) + ' / ' + issues.length;
             }
@@ -602,10 +602,10 @@
             content.innerHTML = '';
 
             const h2 = document.createElement('h2');
-            h2.textContent = 'Triage Results';
+            h2.textContent = 'Your Picks';
             content.appendChild(h2);
 
-            const labels = { 1: 'P1 — Critical', 2: 'P2 — Important', 3: 'P3 — Nice-to-have', 4: 'P4 — Backlog' };
+            const labels = { 1: 'Love it!', 2: 'Interested', 3: 'Maybe', 4: 'Pass' };
             const classes = { 1: 'p1', 2: 'p2', 3: 'p3', 4: 'p4' };
             let hasAny = false;
 
@@ -650,7 +650,7 @@
             copyAllBtn.className = 'primary';
             copyAllBtn.textContent = 'Copy All as Markdown';
             copyAllBtn.addEventListener('click', function() {
-                let md = '# Triage Results\n\n';
+                let md = '# My Issue Picks\n\n';
                 for (let p = 1; p <= 4; p++) {
                     if (triaged[p].length === 0) continue;
                     md += '## ' + labels[p] + '\n\n';
