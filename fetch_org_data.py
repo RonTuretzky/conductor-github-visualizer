@@ -350,7 +350,7 @@ def get_commits_between_branches(
     # Include author avatar URL in the query
     output = run_gh_command([
         "api", f"repos/{repo_full_name}/compare/{base_branch}...{head_branch}",
-        "--jq", '.commits[:10] | .[] | {sha: .sha, message: .commit.message, author: .commit.author.name, date: .commit.author.date, html_url: .html_url, author_login: .author.login, author_avatar_url: .author.avatar_url}'
+        "--jq", '.commits[:10] | .[] | {sha: .sha, message: .commit.message, author: .commit.author.name, date: .commit.author.date, html_url: .html_url, author_login: (.author.login // ""), author_avatar_url: (.author.avatar_url // "")}'
     ])
 
     if not output:
@@ -366,9 +366,9 @@ def get_commits_between_branches(
                 "sha": data["sha"],
                 "short_sha": data["sha"][:7],
                 "message": data["message"].split('\n')[0][:80],
-                "author": data["author"],
-                "author_login": data.get("author_login", ""),
-                "author_avatar_url": data.get("author_avatar_url", ""),
+                "author": data.get("author") or "",
+                "author_login": data.get("author_login") or "",
+                "author_avatar_url": data.get("author_avatar_url") or "",
                 "date": data["date"][:10],
                 "html_url": data["html_url"],
             })

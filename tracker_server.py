@@ -356,7 +356,7 @@ def fetch_commit_avatars(owner: str, repo: str, base_branch: str, head_branch: s
             [
                 "gh", "api",
                 f"repos/{owner}/{repo}/compare/{base_branch}...{head_branch}",
-                "--jq", ".commits | .[] | [.sha, .author.login, .author.avatar_url] | @tsv"
+                "--jq", ".commits | .[] | [.sha, (.author.login // \"\"), (.author.avatar_url // \"\")] | @tsv"
             ],
             capture_output=True,
             text=True,

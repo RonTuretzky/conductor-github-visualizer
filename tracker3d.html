@@ -2753,6 +2753,9 @@
             scene.remove(group);
         });
         state.repoGroups.clear();
+
+        // Clear pending avatar materials so in-flight loads don't update disposed materials
+        pendingAvatarMaterials.clear();
     }
 
     function buildScene() {
@@ -2873,9 +2876,12 @@
     }
 
     function buildWorkspaceNodes(nodes, group, parentX, parentZ, depth, baseAngle, childIndex, githubUrl) {
+        // Cap total spread to PI (180°) so children don't wrap around toward other repos
+        const maxSpread = Math.PI;
+        const totalSpread = Math.min((nodes.length - 1) * 0.6, maxSpread);
+        const spreadFactor = nodes.length > 1 ? totalSpread / (nodes.length - 1) : 0;
+
         nodes.forEach((node, index) => {
-            // Calculate position for this node (used for both workspace nodes and intermediate PR nodes)
-            const spreadFactor = 0.6;
             const angleOffset = (index - (nodes.length - 1) / 2) * spreadFactor;
             const nodeAngle = baseAngle + angleOffset;
             const distance = state.prSpacing + depth * 2;
@@ -3193,8 +3199,12 @@
     }
 
     function buildGardenBranches(nodes, group, parentX, parentZ, parentY, depth, baseAngle, githubUrl) {
+        // Cap total spread to PI (180°) so branches don't wrap toward other repos
+        const maxSpread = Math.PI;
+        const totalSpread = Math.min((nodes.length - 1) * 0.6, maxSpread);
+        const spreadFactor = nodes.length > 1 ? totalSpread / (nodes.length - 1) : 0;
+
         nodes.forEach((node, index) => {
-            const spreadFactor = 0.6;
             const angleOffset = (index - (nodes.length - 1) / 2) * spreadFactor;
             const nodeAngle = baseAngle + angleOffset;
             const distance = state.prSpacing + depth * 1.5;
@@ -3877,6 +3887,7 @@
     // Avatar Sprites for Commits
     // ============================================================================
     const avatarTextureCache = new Map();
+    const pendingAvatarMaterials = new Map();
 
     function createCircularPlaceholder() {
         // Create a circular placeholder canvas
@@ -3941,6 +3952,7 @@
         // Load the actual avatar image
         if (avatarUrl && !avatarTextureCache.has(avatarUrl)) {
             avatarTextureCache.set(avatarUrl, 'loading');
+            pendingAvatarMaterials.set(avatarUrl, [material]);
 
             // Load image with size parameter for smaller download
             const sizedUrl = avatarUrl.includes('?') ? `${avatarUrl}&s=64` : `${avatarUrl}?s=64`;
@@ -3951,15 +3963,25 @@
                 const texture = createCircularAvatarTexture(img);
                 avatarTextureCache.set(avatarUrl, texture);
 
-                // Update the material with the circular texture
-                material.map = texture;
-                material.needsUpdate = true;
+                // Update ALL pending materials waiting for this texture
+                const pending = pendingAvatarMaterials.get(avatarUrl) || [];
+                pending.forEach(mat => {
+                    mat.map = texture;
+                    mat.needsUpdate = true;
+                });
+                pendingAvatarMaterials.delete(avatarUrl);
             };
             img.onerror = function() {
                 avatarTextureCache.set(avatarUrl, 'error');
+                pendingAvatarMaterials.delete(avatarUrl);
             };
             img.src = sizedUrl;
-        } else if (avatarUrl && avatarTextureCache.get(avatarUrl) !== 'loading' && avatarTextureCache.get(avatarUrl) !== 'error') {
+        } else if (avatarUrl && avatarTextureCache.get(avatarUrl) === 'loading') {
+            // Texture is still loading — queue this material for update when ready
+            const pending = pendingAvatarMaterials.get(avatarUrl) || [];
+            pending.push(material);
+            pendingAvatarMaterials.set(avatarUrl, pending);
+        } else if (avatarUrl && avatarTextureCache.get(avatarUrl) !== 'error') {
             // Use cached texture
             material.map = avatarTextureCache.get(avatarUrl);
             material.needsUpdate = true;
