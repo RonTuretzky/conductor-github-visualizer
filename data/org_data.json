@@ -1,12 +1,12 @@
 {
   "organization": "BreadchainCoop",
-  "generated_at": "2026-03-25T22:53:04.969309+00:00",
-  "generation_time_seconds": 124.64,
+  "generated_at": "2026-03-26T00:19:43.704539+00:00",
+  "generation_time_seconds": 117.09,
   "stats": {
     "total_repos": 40,
-    "repos_with_prs": 19,
+    "repos_with_prs": 20,
     "repos_with_issues": 24,
-    "total_open_prs": 80,
+    "total_open_prs": 82,
     "total_open_issues": 181
   },
   "trees": {
@@ -3153,6 +3153,160 @@
               "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
               "date": "2025-11-30",
               "html_url": "https://github.com/BreadchainCoop/foundry-upgradeable-counter-example/commit/ab34afb56d50c67eb0a10174cc3f0f17b4084a71"
+            }
+          ],
+          "parent_branch_name": "main",
+          "children": []
+        }
+      ]
+    },
+    "sp1-contract-call": {
+      "name": "sp1-contract-call",
+      "branch": "main",
+      "repo_name": "sp1-contract-call",
+      "pr_number": null,
+      "pr_title": null,
+      "pr_url": null,
+      "pr_author": null,
+      "last_updated": "2025-11-30T01:54:07Z",
+      "ci_status": "",
+      "github_url": "https://github.com/BreadchainCoop/sp1-contract-call",
+      "is_draft": false,
+      "labels": [],
+      "commits_from_parent": [],
+      "parent_branch_name": null,
+      "children": [
+        {
+          "name": "External storage slots",
+          "branch": "external-storage-slots",
+          "repo_name": "sp1-contract-call",
+          "pr_number": 8,
+          "pr_title": "External storage slots",
+          "pr_url": "https://github.com/BreadchainCoop/sp1-contract-call/pull/8",
+          "pr_author": "RonTuretzky",
+          "last_updated": "2026-01-26T19:29:21Z",
+          "ci_status": "",
+          "github_url": "https://github.com/BreadchainCoop/sp1-contract-call",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "22e8d6b24ae9397992c248d46e8a9b623c3f6be6",
+              "short_sha": "22e8d6b",
+              "message": "feat: Refactor to use revm-inspectors 0.32 and add opcode-tracer crate",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-11-28",
+              "html_url": "https://github.com/BreadchainCoop/sp1-contract-call/commit/22e8d6b24ae9397992c248d46e8a9b623c3f6be6"
+            },
+            {
+              "sha": "a2165127b9ad68dda6ac0c64d27870eaee8cb2c6",
+              "short_sha": "a216512",
+              "message": "chore: restore original plonk-fixture.json",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-11-28",
+              "html_url": "https://github.com/BreadchainCoop/sp1-contract-call/commit/a2165127b9ad68dda6ac0c64d27870eaee8cb2c6"
+            },
+            {
+              "sha": "fe04206381db3c57b9876f6f2ad057444dc6c39e",
+              "short_sha": "fe04206",
+              "message": "feat: add stack, memory, and storage_change to OpcodeExecution",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-11-28",
+              "html_url": "https://github.com/BreadchainCoop/sp1-contract-call/commit/fe04206381db3c57b9876f6f2ad057444dc6c39e"
+            },
+            {
+              "sha": "1623114b031acad1f4b280f8408cfbf8e4cc17b6",
+              "short_sha": "1623114",
+              "message": "fix: improve error handling in trace CLI and add doc comments",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-11-29",
+              "html_url": "https://github.com/BreadchainCoop/sp1-contract-call/commit/1623114b031acad1f4b280f8408cfbf8e4cc17b6"
+            },
+            {
+              "sha": "b788c397547e200ac06dea2df2e2e012e51811e2",
+              "short_sha": "b788c39",
+              "message": "feat: add opcode hash commitment to contract execution proofs",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-11-29",
+              "html_url": "https://github.com/BreadchainCoop/sp1-contract-call/commit/b788c397547e200ac06dea2df2e2e012e51811e2"
+            }
+          ],
+          "parent_branch_name": "main",
+          "children": []
+        },
+        {
+          "name": "feat: Opcode tracing with revm-inspectors and opcode-tracer ",
+          "branch": "cancun-v1",
+          "repo_name": "sp1-contract-call",
+          "pr_number": 1,
+          "pr_title": "feat: Opcode tracing with revm-inspectors and opcode-tracer crate",
+          "pr_url": "https://github.com/BreadchainCoop/sp1-contract-call/pull/1",
+          "pr_author": "RonTuretzky",
+          "last_updated": "2026-01-23T18:28:13Z",
+          "ci_status": "",
+          "github_url": "https://github.com/BreadchainCoop/sp1-contract-call",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "22e8d6b24ae9397992c248d46e8a9b623c3f6be6",
+              "short_sha": "22e8d6b",
+              "message": "feat: Refactor to use revm-inspectors 0.32 and add opcode-tracer crate",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-11-28",
+              "html_url": "https://github.com/BreadchainCoop/sp1-contract-call/commit/22e8d6b24ae9397992c248d46e8a9b623c3f6be6"
+            },
+            {
+              "sha": "a2165127b9ad68dda6ac0c64d27870eaee8cb2c6",
+              "short_sha": "a216512",
+              "message": "chore: restore original plonk-fixture.json",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-11-28",
+              "html_url": "https://github.com/BreadchainCoop/sp1-contract-call/commit/a2165127b9ad68dda6ac0c64d27870eaee8cb2c6"
+            },
+            {
+              "sha": "fe04206381db3c57b9876f6f2ad057444dc6c39e",
+              "short_sha": "fe04206",
+              "message": "feat: add stack, memory, and storage_change to OpcodeExecution",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-11-28",
+              "html_url": "https://github.com/BreadchainCoop/sp1-contract-call/commit/fe04206381db3c57b9876f6f2ad057444dc6c39e"
+            },
+            {
+              "sha": "1623114b031acad1f4b280f8408cfbf8e4cc17b6",
+              "short_sha": "1623114",
+              "message": "fix: improve error handling in trace CLI and add doc comments",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-11-29",
+              "html_url": "https://github.com/BreadchainCoop/sp1-contract-call/commit/1623114b031acad1f4b280f8408cfbf8e4cc17b6"
+            },
+            {
+              "sha": "9b045a19002f7f06ddb5adbaee16cb7854ed8cbc",
+              "short_sha": "9b045a1",
+              "message": "feat: add depth field to OpcodeExecution (#5)",
+              "author": "RonTuretzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-11-29",
+              "html_url": "https://github.com/BreadchainCoop/sp1-contract-call/commit/9b045a19002f7f06ddb5adbaee16cb7854ed8cbc"
             }
           ],
           "parent_branch_name": "main",
