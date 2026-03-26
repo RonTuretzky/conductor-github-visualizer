@@ -1019,6 +1019,7 @@ class OrgViewerState:
         self._cache: dict[str, dict] = {}  # org_name -> data
         self._cache_time: dict[str, float] = {}  # org_name -> timestamp
         self._fetching: set[str] = set()  # orgs currently being fetched
+        self._progress: dict[str, dict] = {}  # org_name -> {current, total, repo}
         self._lock = threading.Lock()
         self.cache_ttl = 300  # 5 minutes
 
@@ -1047,7 +1048,7 @@ class OrgViewerState:
             if org_name in self._fetching:
                 if cached:
                     return cached
-                return {"loading": True, "organization": org_name}
+                return self._loading_response(org_name)
 
             # Start background fetch
             self._fetching.add(org_name)
@@ -1058,15 +1059,29 @@ class OrgViewerState:
 
             if cached:
                 return cached
-            return {"loading": True, "organization": org_name}
+            return self._loading_response(org_name)
+
+    def _loading_response(self, org_name: str) -> dict:
+        """Build a loading response with progress info if available."""
+        resp = {"loading": True, "organization": org_name}
+        progress = self._progress.get(org_name)
+        if progress:
+            resp["progress"] = progress.copy()
+        return resp
 
     def _fetch_in_background(self, org_name: str):
         """Fetch org data in a background thread."""
+        def on_progress(current, total, repo):
+            with self._lock:
+                self._progress[org_name] = {
+                    "current": current, "total": total, "repo": repo
+                }
+
         try:
             config = ORG_DEFAULT_CONFIG.copy()
             config["organization"] = org_name
             config["fetch_commits"] = False
-            data = _fetch_org_data(config, quiet=True)
+            data = _fetch_org_data(config, quiet=True, progress_callback=on_progress)
 
             with self._lock:
                 self._cache[org_name] = data
@@ -1086,6 +1101,7 @@ class OrgViewerState:
         finally:
             with self._lock:
                 self._fetching.discard(org_name)
+                self._progress.pop(org_name, None)
 
 
 # ============================================================================

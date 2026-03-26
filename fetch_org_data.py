@@ -511,12 +511,13 @@ def tree_node_to_dict(node: TreeNode) -> dict:
 # Main Data Fetching
 # ============================================================================
 
-def fetch_org_data(config: dict, quiet: bool = False) -> dict:
+def fetch_org_data(config: dict, quiet: bool = False, progress_callback=None) -> dict:
     """Fetch all data for an organization.
 
     Args:
         config: Configuration dict with organization name and settings.
         quiet: If True, suppress print output (for library use).
+        progress_callback: Optional callable(current, total, repo_name) for progress.
     """
     global _log
     log = (lambda *a, **kw: None) if quiet else print
@@ -541,6 +542,8 @@ def fetch_org_data(config: dict, quiet: bool = False) -> dict:
 
     for i, repo in enumerate(repos):
         log(f"[{i+1}/{len(repos)}] Processing {repo.name}...")
+        if progress_callback:
+            progress_callback(i + 1, len(repos), repo.name)
 
         # Get PRs for this repo
         if fetch_prs:

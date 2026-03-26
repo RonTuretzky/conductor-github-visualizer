@@ -421,6 +421,39 @@
             to { transform: rotate(360deg); }
         }
 
+        .loading-progress {
+            width: 200px;
+            margin: 12px auto 0;
+            display: none;
+        }
+        .loading-progress-bar {
+            height: 4px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 2px;
+            overflow: hidden;
+        }
+        .loading-progress-fill {
+            height: 100%;
+            background: #39ff14;
+            border-radius: 2px;
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+        .loading-progress-label {
+            font-size: 11px;
+            color: rgba(255, 255, 255, 0.5);
+            margin-top: 6px;
+        }
+        body.light-mode .loading-progress-bar {
+            background: rgba(0, 0, 0, 0.1);
+        }
+        body.light-mode .loading-progress-fill {
+            background: #16a34a;
+        }
+        body.light-mode .loading-progress-label {
+            color: rgba(0, 0, 0, 0.5);
+        }
+
         .controls-hint {
             position: absolute;
             bottom: 80px;
@@ -1551,6 +1584,12 @@
         <div class="loading" id="loading">
             <div class="loading-spinner"></div>
             <div id="loading-text">Connecting to Conductor...</div>
+            <div class="loading-progress" id="loading-progress">
+                <div class="loading-progress-bar">
+                    <div class="loading-progress-fill" id="loading-progress-fill"></div>
+                </div>
+                <div class="loading-progress-label" id="loading-progress-label"></div>
+            </div>
         </div>
 
         <div class="controls-hint">
@@ -4593,10 +4632,34 @@
             // Handle org mode loading state
             if (data.loading) {
                 document.getElementById('loading').style.display = 'flex';
-                document.getElementById('loading-text').textContent =
-                    'Fetching ' + (data.organization || orgName) + ' data (this may take a minute)...';
+                const progressEl = document.getElementById('loading-progress');
+                const fillEl = document.getElementById('loading-progress-fill');
+                const labelEl = document.getElementById('loading-progress-label');
+                if (data.progress) {
+                    const pct = Math.round((data.progress.current / data.progress.total) * 100);
+                    document.getElementById('loading-text').textContent =
+                        'Fetching ' + (data.organization || orgName) + ' data (' + data.progress.current + '/' + data.progress.total + ' repos)...';
+                    progressEl.style.display = 'block';
+                    fillEl.style.width = pct + '%';
+                    labelEl.textContent = data.progress.repo;
+                } else {
+                    document.getElementById('loading-text').textContent =
+                        'Fetching ' + (data.organization || orgName) + ' data (this may take a minute)...';
+                    progressEl.style.display = 'none';
+                }
+                // Poll faster while loading
+                if (!state._loadingPoll) {
+                    state._loadingPoll = setInterval(fetchData, 2000);
+                }
                 return;
             }
+
+            // Stop fast polling once loaded
+            if (state._loadingPoll) {
+                clearInterval(state._loadingPoll);
+                state._loadingPoll = null;
+            }
+            document.getElementById('loading-progress').style.display = 'none';
 
             state.trackerData = data;
             state.useDemo = false;
