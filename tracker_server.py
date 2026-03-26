@@ -15,12 +15,15 @@ import socketserver
 import sqlite3
 import subprocess
 import sys
+import threading
 import time
 from dataclasses import asdict, dataclass, field
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from typing import Optional
 from urllib.parse import parse_qs, urlparse
+
+from fetch_org_data import fetch_org_data as _fetch_org_data, DEFAULT_CONFIG as ORG_DEFAULT_CONFIG
 
 
 # ============================================================================
@@ -1006,6 +1009,102 @@ class TrackerState:
 
 
 # ============================================================================
+# GitHub Organization Viewer State
+# ============================================================================
+
+class OrgViewerState:
+    """Manages cached GitHub org data for the org viewer mode."""
+
+    def __init__(self):
+        self._cache: dict[str, dict] = {}  # org_name -> data
+        self._cache_time: dict[str, float] = {}  # org_name -> timestamp
+        self._fetching: set[str] = set()  # orgs currently being fetched
+        self._progress: dict[str, dict] = {}  # org_name -> {current, total, repo}
+        self._lock = threading.Lock()
+        self.cache_ttl = 300  # 5 minutes
+
+    def get_org_data(self, org_name: str, force_refresh: bool = False) -> dict:
+        """Get org data, returning cached data or triggering a background fetch."""
+        org_name = org_name.lower()
+        with self._lock:
+            now = time.time()
+            cached = self._cache.get(org_name)
+            cache_age = now - self._cache_time.get(org_name, 0)
+
+            # Return cached data if fresh enough
+            if cached and not force_refresh and cache_age < self.cache_ttl:
+                return cached
+
+            # If we have stale cache data, return it but trigger background refresh
+            if cached and not force_refresh and org_name not in self._fetching:
+                self._fetching.add(org_name)
+                thread = threading.Thread(
+                    target=self._fetch_in_background, args=(org_name,), daemon=True
+                )
+                thread.start()
+                return cached
+
+            # No cache at all - check if already fetching
+            if org_name in self._fetching:
+                if cached:
+                    return cached
+                return self._loading_response(org_name)
+
+            # Start background fetch
+            self._fetching.add(org_name)
+            thread = threading.Thread(
+                target=self._fetch_in_background, args=(org_name,), daemon=True
+            )
+            thread.start()
+
+            if cached:
+                return cached
+            return self._loading_response(org_name)
+
+    def _loading_response(self, org_name: str) -> dict:
+        """Build a loading response with progress info if available."""
+        resp = {"loading": True, "organization": org_name}
+        progress = self._progress.get(org_name)
+        if progress:
+            resp["progress"] = progress.copy()
+        return resp
+
+    def _fetch_in_background(self, org_name: str):
+        """Fetch org data in a background thread."""
+        def on_progress(current, total, repo):
+            with self._lock:
+                self._progress[org_name] = {
+                    "current": current, "total": total, "repo": repo
+                }
+
+        try:
+            config = ORG_DEFAULT_CONFIG.copy()
+            config["organization"] = org_name
+            config["fetch_commits"] = False
+            data = _fetch_org_data(config, quiet=True, progress_callback=on_progress)
+
+            with self._lock:
+                self._cache[org_name] = data
+                self._cache_time[org_name] = time.time()
+                # Evict oldest entry if cache exceeds max size
+                if len(self._cache) > 50:
+                    oldest_org = min(self._cache_time, key=self._cache_time.get)
+                    del self._cache[oldest_org]
+                    del self._cache_time[oldest_org]
+        except Exception as e:
+            with self._lock:
+                self._cache[org_name] = {
+                    "error": f"Failed to fetch data for {org_name}: {e}",
+                    "organization": org_name,
+                }
+                self._cache_time[org_name] = time.time()
+        finally:
+            with self._lock:
+                self._fetching.discard(org_name)
+                self._progress.pop(org_name, None)
+
+
+# ============================================================================
 # HTTP Server
 # ============================================================================
 
@@ -1013,6 +1112,7 @@ class TrackerHandler(http.server.SimpleHTTPRequestHandler):
     """HTTP request handler for tracker API."""
 
     tracker_state: Optional[TrackerState] = None
+    org_state: Optional[OrgViewerState] = None
 
     def do_GET(self):
         parsed = urlparse(self.path)
@@ -1023,18 +1123,28 @@ class TrackerHandler(http.server.SimpleHTTPRequestHandler):
             if query_params.get("refresh_ci", [""])[0] == "true":
                 self.tracker_state.force_refresh_ci()
             self.send_json(self.tracker_state.get_api_data())
+        elif parsed.path == "/api/org":
+            org_name = query_params.get("org", [""])[0]
+            if not org_name:
+                self.send_json({"error": "Missing 'org' query parameter"}, cors=False)
+                return
+            force = query_params.get("refresh", [""])[0] == "true"
+            self.send_json(self.org_state.get_org_data(org_name, force_refresh=force), cors=False)
+        elif parsed.path == "/org":
+            self.serve_html()
         elif parsed.path == "/" or parsed.path == "/index.html":
             self.serve_html()
         else:
             super().do_GET()
 
-    def send_json(self, data: dict):
-        """Send JSON response with CORS headers."""
+    def send_json(self, data: dict, cors: bool = True):
+        """Send JSON response, optionally with CORS headers."""
         content = json.dumps(data).encode("utf-8")
         self.send_response(200)
         self.send_header("Content-Type", "application/json")
         self.send_header("Content-Length", len(content))
-        self.send_header("Access-Control-Allow-Origin", "*")
+        if cors:
+            self.send_header("Access-Control-Allow-Origin", "*")
         self.send_header("Cache-Control", "no-cache")
         self.end_headers()
         self.wfile.write(content)
@@ -1066,6 +1176,7 @@ def run_server(port: int = 8765):
     """Run the HTTP server."""
     config = load_config()
     TrackerHandler.tracker_state = TrackerState(config)
+    TrackerHandler.org_state = OrgViewerState()
 
     # Set the directory for serving static files
     os.chdir(Path(__file__).parent)
@@ -1075,6 +1186,7 @@ def run_server(port: int = 8765):
         print(f"=" * 40)
         print(f"Server running at: http://localhost:{port}")
         print(f"API endpoint: http://localhost:{port}/api/tracker")
+        print(f"Org viewer:   http://localhost:{port}/org")
         print(f"Database: {CONDUCTOR_DB}")
         print()
         print(f"Press Ctrl+C to stop")

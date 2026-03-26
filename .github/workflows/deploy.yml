@@ -32,7 +32,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository (index.html + data folder)
+          # Upload entire repository (index.html redirects to tracker3d.html + data folder)
           path: '.'
 
       - name: Deploy to GitHub Pages

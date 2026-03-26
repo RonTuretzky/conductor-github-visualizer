@@ -149,6 +149,9 @@ class TreeNode:
 # GitHub API Functions
 # ============================================================================
 
+_log = print
+
+
 def run_gh_command(args: list, timeout: int = 30) -> Optional[str]:
     """Run a gh CLI command and return stdout."""
     try:
@@ -165,13 +168,13 @@ def run_gh_command(args: list, timeout: int = 30) -> Optional[str]:
             return None
         return result.stdout
     except (subprocess.TimeoutExpired, FileNotFoundError) as e:
-        print(f"Error running gh command: {e}", file=sys.stderr)
+        _log(f"Error running gh command: {e}", file=sys.stderr)
         return None
 
 
-def get_org_repos(org: str, config: dict) -> list[RepoInfo]:
+def get_org_repos(org: str, config: dict, log=print) -> list[RepoInfo]:
     """Fetch all repositories for an organization."""
-    print(f"Fetching repositories for {org}...")
+    log(f"Fetching repositories for {org}...")
 
     output = run_gh_command([
         "api", f"orgs/{org}/repos",
@@ -180,7 +183,7 @@ def get_org_repos(org: str, config: dict) -> list[RepoInfo]:
     ])
 
     if not output:
-        print(f"Failed to fetch repos for {org}", file=sys.stderr)
+        log(f"Failed to fetch repos for {org}", file=sys.stderr)
         return []
 
     repos = []
@@ -228,10 +231,10 @@ def get_org_repos(org: str, config: dict) -> list[RepoInfo]:
 
     # Limit number of repos
     if len(repos) > max_repos:
-        print(f"Limiting to {max_repos} most recently active repos (from {len(repos)} total)")
+        log(f"Limiting to {max_repos} most recently active repos (from {len(repos)} total)")
         repos = repos[:max_repos]
 
-    print(f"Found {len(repos)} active repositories")
+    log(f"Found {len(repos)} active repositories")
     return repos
 
 
@@ -508,8 +511,18 @@ def tree_node_to_dict(node: TreeNode) -> dict:
 # Main Data Fetching
 # ============================================================================
 
-def fetch_org_data(config: dict) -> dict:
-    """Fetch all data for an organization."""
+def fetch_org_data(config: dict, quiet: bool = False, progress_callback=None) -> dict:
+    """Fetch all data for an organization.
+
+    Args:
+        config: Configuration dict with organization name and settings.
+        quiet: If True, suppress print output (for library use).
+        progress_callback: Optional callable(current, total, repo_name) for progress.
+    """
+    global _log
+    log = (lambda *a, **kw: None) if quiet else print
+    _log = log
+
     org = config["organization"]
     fetch_prs = config.get("fetch_prs", True)
     fetch_ci = config.get("fetch_ci", True)
@@ -518,7 +531,7 @@ def fetch_org_data(config: dict) -> dict:
     start_time = time.time()
 
     # Get all repos
-    repos = get_org_repos(org, config)
+    repos = get_org_repos(org, config, log=log)
     if not repos:
         return {"error": f"No repositories found for {org}"}
 
@@ -528,7 +541,9 @@ def fetch_org_data(config: dict) -> dict:
     total_issues = 0
 
     for i, repo in enumerate(repos):
-        print(f"[{i+1}/{len(repos)}] Processing {repo.name}...")
+        log(f"[{i+1}/{len(repos)}] Processing {repo.name}...")
+        if progress_callback:
+            progress_callback(i + 1, len(repos), repo.name)
 
         # Get PRs for this repo
         if fetch_prs:
@@ -592,12 +607,12 @@ def fetch_org_data(config: dict) -> dict:
         "stale_minutes": config.get("stale_minutes", 60),
     }
 
-    print(f"\nCompleted in {elapsed:.1f}s")
-    print(f"Repos processed: {len(repos)}")
-    print(f"Repos with open PRs: {len(trees)}")
-    print(f"Total open PRs: {total_prs}")
-    print(f"Repos with open issues: {len(issues_by_repo)}")
-    print(f"Total open issues: {total_issues}")
+    log(f"\nCompleted in {elapsed:.1f}s")
+    log(f"Repos processed: {len(repos)}")
+    log(f"Repos with open PRs: {len(trees)}")
+    log(f"Total open PRs: {total_prs}")
+    log(f"Repos with open issues: {len(issues_by_repo)}")
+    log(f"Total open issues: {total_issues}")
 
     return result
 

@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Issues — Pick What Interests You</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0d1117;
+            color: #c9d1d9;
+            height: 100vh;
+            overflow: hidden;
+            user-select: none;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 20px;
+            background: #161b22;
+            border-bottom: 1px solid #30363d;
+        }
+        .header h1 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #e6edf3;
+        }
+        .header .stats {
+            font-size: 13px;
+            color: #8b949e;
+        }
+        .back-link {
+            color: #58a6ff;
+            text-decoration: none;
+            font-size: 13px;
+        }
+        .back-link:hover { text-decoration: underline; }
+
+        .directions {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            padding: 10px 20px;
+            background: #161b22;
+            border-bottom: 1px solid #30363d;
+            font-size: 12px;
+        }
+        .dir { display: flex; align-items: center; gap: 4px; }
+        .dir .arrow { font-weight: bold; font-size: 16px; }
+        .dir-1 .arrow { color: #3fb950; }
+        .dir-2 .arrow { color: #58a6ff; }
+        .dir-3 .arrow { color: #d29922; }
+        .dir-4 .arrow { color: #f85149; }
+
+        .card-container {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: calc(100vh - 140px);
+            padding: 20px;
+        }
+
+        .card {
+            position: absolute;
+            width: min(500px, 90vw);
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            padding: 28px;
+            cursor: grab;
+            transition: box-shadow 0.2s;
+            touch-action: none;
+        }
+        .card:active { cursor: grabbing; }
+        .card.dragging { transition: none; }
+        .card.animating {
+            transition: transform 0.4s ease-out, opacity 0.4s ease-out;
+        }
+
+        .card .repo {
+            font-size: 12px;
+            color: #8b949e;
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .card .repo a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        .card .repo a:hover { text-decoration: underline; }
+        .card .issue-number {
+            color: #8b949e;
+            font-size: 13px;
+        }
+        .card .title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #e6edf3;
+            margin-bottom: 12px;
+            line-height: 1.3;
+        }
+        .card .title a {
+            color: inherit;
+            text-decoration: none;
+        }
+        .card .title a:hover { color: #58a6ff; }
+        .card .labels {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-bottom: 12px;
+        }
+        .card .label {
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: 500;
+            background: #30363d;
+            color: #c9d1d9;
+        }
+        .card .meta {
+            font-size: 12px;
+            color: #8b949e;
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .card .actions {
+            margin-top: 16px;
+            display: flex;
+            gap: 8px;
+        }
+        .card .actions button {
+            padding: 6px 12px;
+            border-radius: 6px;
+            border: 1px solid #30363d;
+            background: #21262d;
+            color: #c9d1d9;
+            font-size: 12px;
+            cursor: pointer;
+        }
+        .card .actions button:hover {
+            background: #30363d;
+        }
+
+        .swipe-indicator {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            padding: 6px 14px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 700;
+            opacity: 0;
+            pointer-events: none;
+            border: 2px solid;
+        }
+
+        .empty-state {
+            text-align: center;
+            color: #8b949e;
+            font-size: 16px;
+        }
+        .empty-state h2 { color: #e6edf3; margin-bottom: 12px; }
+
+        .results-overlay {
+            position: fixed;
+            inset: 0;
+            background: #0d1117ee;
+            z-index: 100;
+            display: none;
+            overflow-y: auto;
+        }
+        .results-overlay.visible { display: block; }
+        .results-content {
+            max-width: 700px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+        .results-content h2 {
+            color: #e6edf3;
+            margin-bottom: 20px;
+            font-size: 22px;
+        }
+        .results-group {
+            margin-bottom: 24px;
+        }
+        .results-group h3 {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            padding-bottom: 6px;
+            border-bottom: 1px solid #30363d;
+        }
+        .results-group.p1 h3 { color: #3fb950; }
+        .results-group.p2 h3 { color: #58a6ff; }
+        .results-group.p3 h3 { color: #d29922; }
+        .results-group.p4 h3 { color: #f85149; }
+        .results-item {
+            padding: 8px 0;
+            font-size: 13px;
+            border-bottom: 1px solid #21262d;
+        }
+        .results-item a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        .results-item a:hover { text-decoration: underline; }
+        .results-item .ri-repo { color: #8b949e; font-size: 11px; }
+
+        .results-actions {
+            margin-top: 20px;
+            display: flex;
+            gap: 10px;
+        }
+        .results-actions button {
+            padding: 8px 16px;
+            border-radius: 6px;
+            border: 1px solid #30363d;
+            background: #21262d;
+            color: #c9d1d9;
+            font-size: 13px;
+            cursor: pointer;
+        }
+        .results-actions button:hover { background: #30363d; }
+        .results-actions button.primary {
+            background: #238636;
+            border-color: #238636;
+            color: #fff;
+        }
+        .results-actions button.primary:hover { background: #2ea043; }
+
+        .loading {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80vh;
+            font-size: 16px;
+            color: #8b949e;
+        }
+
+        .counter {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 13px;
+            color: #8b949e;
+            background: #161b22;
+            padding: 6px 14px;
+            border-radius: 20px;
+            border: 1px solid #30363d;
+        }
+
+        .keyboard-hint {
+            font-size: 11px;
+            color: #484f58;
+            text-align: center;
+            padding: 6px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div>
+            <a class="back-link" href="tracker3d.html">← Back to tracker</a>
+        </div>
+        <h1 id="page-title">Open Unassigned Issues</h1>
+        <div class="stats" id="stats"></div>
+    </div>
+    <div class="directions">
+        <div class="dir dir-1"><span class="arrow">←</span> Love it!</div>
+        <div class="dir dir-2"><span class="arrow">↑</span> Interested</div>
+        <div class="dir dir-3"><span class="arrow">↓</span> Maybe</div>
+        <div class="dir dir-4"><span class="arrow">→</span> Pass</div>
+    </div>
+    <div class="card-container" id="card-container">
+        <div class="loading" id="loading">Loading issues...</div>
+    </div>
+    <div class="counter" id="counter"></div>
+    <div class="keyboard-hint">Arrow keys or drag to swipe · C to copy · U to undo · ← love it · ↑ interested · ↓ maybe · → pass</div>
+
+    <div class="results-overlay" id="results">
+        <div class="results-content" id="results-content"></div>
+    </div>
+
+    <script>
+    (function() {
+        let issues = [];
+        let currentIndex = 0;
+        let triaged = { 1: [], 2: [], 3: [], 4: [] };
+        let history = [];
+        let cardEl = null;
+        let startX = 0, startY = 0, currentX = 0, currentY = 0;
+        let isDragging = false;
+
+        const orgParam = new URLSearchParams(location.search).get('org');
+
+        async function loadData() {
+            let data;
+            // Try API first (local server), fall back to static JSON
+            try {
+                if (orgParam) {
+                    const resp = await fetch('/api/org/' + encodeURIComponent(orgParam));
+                    if (resp.ok) data = await resp.json();
+                }
+            } catch (e) {}
+
+            if (!data) {
+                try {
+                    const resp = await fetch('data/org_data.json');
+                    if (resp.ok) data = await resp.json();
+                } catch (e) {}
+            }
+
+            if (!data || !data.issues) {
+                document.getElementById('loading').textContent = 'No issue data found.';
+                return;
+            }
+
+            const orgName = data.organization || orgParam || 'org';
+            document.getElementById('page-title').textContent = orgName + ' — Unassigned Issues';
+            document.title = orgName + ' — Pick What Interests You';
+
+            // Extract unassigned issues
+            for (const [repoName, repoData] of Object.entries(data.issues)) {
+                for (const issue of (repoData.issues || [])) {
+                    if (!issue.assignees || issue.assignees.length === 0) {
+                        issues.push({
+                            repo: repoName,
+                            repoUrl: repoData.github_url,
+                            number: issue.number,
+                            title: issue.title,
+                            author: issue.author,
+                            createdAt: issue.created_at,
+                            updatedAt: issue.updated_at,
+                            url: issue.html_url,
+                            labels: issue.labels || [],
+                            commentCount: Array.isArray(issue.comments) ? issue.comments.length : (issue.comments || 0)
+                        });
+                    }
+                }
+            }
+
+            // Sort: most recently updated first
+            issues.sort((a, b) => new Date(b.updatedAt) - new Date(a.updatedAt));
+
+            document.getElementById('stats').textContent = issues.length + ' unassigned issues';
+            document.getElementById('loading').remove();
+            updateCounter();
+
+            if (issues.length === 0) {
+                document.getElementById('card-container').innerHTML =
+                    '<div class="empty-state"><h2>No unassigned issues</h2><p>All issues have assignees.</p></div>';
+                return;
+            }
+
+            renderCard();
+        }
+
+        function timeAgo(dateStr) {
+            const diff = Date.now() - new Date(dateStr).getTime();
+            const days = Math.floor(diff / 86400000);
+            if (days > 30) return Math.floor(days / 30) + 'mo ago';
+            if (days > 0) return days + 'd ago';
+            const hours = Math.floor(diff / 3600000);
+            if (hours > 0) return hours + 'h ago';
+            return 'just now';
+        }
+
+        function renderCard() {
+            if (cardEl) cardEl.remove();
+            if (currentIndex >= issues.length) {
+                showResults();
+                return;
+            }
+
+            const issue = issues[currentIndex];
+            const card = document.createElement('div');
+            card.className = 'card';
+
+            const indicator = document.createElement('div');
+            indicator.className = 'swipe-indicator';
+            card.appendChild(indicator);
+
+            const repo = document.createElement('div');
+            repo.className = 'repo';
+            const repoLink = document.createElement('a');
+            repoLink.href = issue.repoUrl;
+            repoLink.target = '_blank';
+            repoLink.textContent = issue.repo;
+            repo.appendChild(repoLink);
+            const numSpan = document.createElement('span');
+            numSpan.className = 'issue-number';
+            numSpan.textContent = ' #' + issue.number;
+            repo.appendChild(numSpan);
+            card.appendChild(repo);
+
+            const title = document.createElement('div');
+            title.className = 'title';
+            const titleLink = document.createElement('a');
+            titleLink.href = issue.url;
+            titleLink.target = '_blank';
+            titleLink.textContent = issue.title;
+            title.appendChild(titleLink);
+            card.appendChild(title);
+
+            if (issue.labels.length > 0) {
+                const labels = document.createElement('div');
+                labels.className = 'labels';
+                for (const lbl of issue.labels) {
+                    const span = document.createElement('span');
+                    span.className = 'label';
+                    span.textContent = typeof lbl === 'string' ? lbl : lbl.name || lbl;
+                    labels.appendChild(span);
+                }
+                card.appendChild(labels);
+            }
+
+            const meta = document.createElement('div');
+            meta.className = 'meta';
+            meta.textContent = 'by ' + issue.author + ' · created ' + timeAgo(issue.createdAt) +
+                ' · updated ' + timeAgo(issue.updatedAt) +
+                (issue.commentCount > 0 ? ' · ' + issue.commentCount + ' comments' : '');
+            card.appendChild(meta);
+
+            const actions = document.createElement('div');
+            actions.className = 'actions';
+            const copyBtn = document.createElement('button');
+            copyBtn.textContent = 'Copy (C)';
+            copyBtn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                copyIssue(issue);
+            });
+            const openBtn = document.createElement('button');
+            openBtn.textContent = 'Open in GitHub';
+            openBtn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                window.open(issue.url, '_blank');
+            });
+            actions.appendChild(copyBtn);
+            actions.appendChild(openBtn);
+            card.appendChild(actions);
+
+            // Touch/mouse drag
+            card.addEventListener('pointerdown', onPointerDown);
+
+            document.getElementById('card-container').appendChild(card);
+            cardEl = card;
+        }
+
+        function copyIssue(issue) {
+            const text = issue.repo + '#' + issue.number + ': ' + issue.title + '\n' + issue.url;
+            navigator.clipboard.writeText(text).then(function() {
+                showToast('Copied!');
+            });
+        }
+
+        function showToast(msg) {
+            const t = document.createElement('div');
+            t.textContent = msg;
+            t.style.cssText = 'position:fixed;bottom:60px;left:50%;transform:translateX(-50%);background:#238636;color:#fff;padding:6px 16px;border-radius:6px;font-size:13px;z-index:200;';
+            document.body.appendChild(t);
+            setTimeout(function() { t.remove(); }, 1200);
+        }
+
+        function onPointerDown(e) {
+            if (e.target.tagName === 'A' || e.target.tagName === 'BUTTON') return;
+            isDragging = true;
+            startX = e.clientX;
+            startY = e.clientY;
+            currentX = 0;
+            currentY = 0;
+            cardEl.classList.add('dragging');
+            cardEl.setPointerCapture(e.pointerId);
+            cardEl.addEventListener('pointermove', onPointerMove);
+            cardEl.addEventListener('pointerup', onPointerUp);
+        }
+
+        function onPointerMove(e) {
+            if (!isDragging) return;
+            currentX = e.clientX - startX;
+            currentY = e.clientY - startY;
+            cardEl.style.transform = 'translate(' + currentX + 'px, ' + currentY + 'px) rotate(' + (currentX * 0.05) + 'deg)';
+            updateIndicator(currentX, currentY);
+        }
+
+        function onPointerUp(e) {
+            if (!isDragging) return;
+            isDragging = false;
+            cardEl.classList.remove('dragging');
+            cardEl.removeEventListener('pointermove', onPointerMove);
+            cardEl.removeEventListener('pointerup', onPointerUp);
+
+            const threshold = 100;
+            const absX = Math.abs(currentX);
+            const absY = Math.abs(currentY);
+
+            if (absX > threshold || absY > threshold) {
+                let priority;
+                if (absX > absY) {
+                    priority = currentX < 0 ? 1 : 4;
+                } else {
+                    priority = currentY < 0 ? 2 : 3;
+                }
+                swipeOut(priority, currentX, currentY);
+            } else {
+                cardEl.style.transform = '';
+                const ind = cardEl.querySelector('.swipe-indicator');
+                if (ind) ind.style.opacity = '0';
+            }
+        }
+
+        function updateIndicator(dx, dy) {
+            const ind = cardEl.querySelector('.swipe-indicator');
+            if (!ind) return;
+            const absX = Math.abs(dx);
+            const absY = Math.abs(dy);
+            const threshold = 60;
+
+            if (absX < threshold && absY < threshold) {
+                ind.style.opacity = '0';
+                return;
+            }
+
+            let label, color;
+            if (absX > absY) {
+                if (dx < 0) { label = '← Love it!'; color = '#3fb950'; }
+                else { label = 'Pass →'; color = '#f85149'; }
+            } else {
+                if (dy < 0) { label = '↑ Interested'; color = '#58a6ff'; }
+                else { label = 'Maybe ↓'; color = '#d29922'; }
+            }
+
+            ind.textContent = label;
+            ind.style.color = color;
+            ind.style.borderColor = color;
+            ind.style.opacity = Math.min(1, (Math.max(absX, absY) - threshold) / 60);
+        }
+
+        function swipeOut(priority, dx, dy) {
+            const issue = issues[currentIndex];
+            triaged[priority].push(issue);
+            history.push({ index: currentIndex, priority: priority });
+
+            // Animate out
+            const mult = 3;
+            const tx = dx ? dx * mult : 0;
+            const ty = dy ? dy * mult : 0;
+            cardEl.classList.add('animating');
+            cardEl.style.transform = 'translate(' + tx + 'px, ' + ty + 'px) rotate(' + (tx * 0.03) + 'deg)';
+            cardEl.style.opacity = '0';
+
+            setTimeout(function() {
+                currentIndex++;
+                updateCounter();
+                renderCard();
+            }, 350);
+        }
+
+        function swipeByKey(priority) {
+            if (currentIndex >= issues.length || !cardEl) return;
+            let dx = 0, dy = 0;
+            if (priority === 1) dx = -200;
+            else if (priority === 4) dx = 200;
+            else if (priority === 2) dy = -200;
+            else if (priority === 3) dy = 200;
+            swipeOut(priority, dx, dy);
+        }
+
+        function undo() {
+            if (history.length === 0) return;
+            const last = history.pop();
+            triaged[last.priority].pop();
+            currentIndex = last.index;
+            updateCounter();
+            renderCard();
+        }
+
+        function updateCounter() {
+            const el = document.getElementById('counter');
+            if (currentIndex >= issues.length) {
+                el.textContent = 'Done — ' + issues.length + ' issues reviewed';
+            } else {
+                el.textContent = (currentIndex + 1) + ' / ' + issues.length;
+            }
+        }
+
+        function showResults() {
+            if (cardEl) cardEl.remove();
+            cardEl = null;
+
+            const overlay = document.getElementById('results');
+            const content = document.getElementById('results-content');
+            content.innerHTML = '';
+
+            const h2 = document.createElement('h2');
+            h2.textContent = 'Your Picks';
+            content.appendChild(h2);
+
+            const labels = { 1: 'Love it!', 2: 'Interested', 3: 'Maybe', 4: 'Pass' };
+            const classes = { 1: 'p1', 2: 'p2', 3: 'p3', 4: 'p4' };
+            let hasAny = false;
+
+            for (let p = 1; p <= 4; p++) {
+                if (triaged[p].length === 0) continue;
+                hasAny = true;
+
+                const group = document.createElement('div');
+                group.className = 'results-group ' + classes[p];
+                const h3 = document.createElement('h3');
+                h3.textContent = labels[p] + ' (' + triaged[p].length + ')';
+                group.appendChild(h3);
+
+                for (const issue of triaged[p]) {
+                    const item = document.createElement('div');
+                    item.className = 'results-item';
+                    const link = document.createElement('a');
+                    link.href = issue.url;
+                    link.target = '_blank';
+                    link.textContent = issue.title;
+                    item.appendChild(link);
+                    const repoSpan = document.createElement('span');
+                    repoSpan.className = 'ri-repo';
+                    repoSpan.textContent = ' — ' + issue.repo + '#' + issue.number;
+                    item.appendChild(repoSpan);
+                    group.appendChild(item);
+                }
+
+                content.appendChild(group);
+            }
+
+            if (!hasAny) {
+                const p = document.createElement('p');
+                p.textContent = 'No issues triaged.';
+                content.appendChild(p);
+            }
+
+            const actions = document.createElement('div');
+            actions.className = 'results-actions';
+
+            const copyAllBtn = document.createElement('button');
+            copyAllBtn.className = 'primary';
+            copyAllBtn.textContent = 'Copy All as Markdown';
+            copyAllBtn.addEventListener('click', function() {
+                let md = '# My Issue Picks\n\n';
+                for (let p = 1; p <= 4; p++) {
+                    if (triaged[p].length === 0) continue;
+                    md += '## ' + labels[p] + '\n\n';
+                    for (const issue of triaged[p]) {
+                        md += '- [' + issue.repo + '#' + issue.number + ': ' + issue.title + '](' + issue.url + ')\n';
+                    }
+                    md += '\n';
+                }
+                navigator.clipboard.writeText(md).then(function() { showToast('Copied markdown!'); });
+            });
+
+            const resetBtn = document.createElement('button');
+            resetBtn.textContent = 'Start Over';
+            resetBtn.addEventListener('click', function() {
+                overlay.classList.remove('visible');
+                currentIndex = 0;
+                triaged = { 1: [], 2: [], 3: [], 4: [] };
+                history = [];
+                updateCounter();
+                renderCard();
+            });
+
+            const closeBtn = document.createElement('button');
+            closeBtn.textContent = 'Close';
+            closeBtn.addEventListener('click', function() {
+                overlay.classList.remove('visible');
+            });
+
+            actions.appendChild(copyAllBtn);
+            actions.appendChild(resetBtn);
+            actions.appendChild(closeBtn);
+            content.appendChild(actions);
+
+            overlay.classList.add('visible');
+        }
+
+        // Keyboard controls
+        document.addEventListener('keydown', function(e) {
+            if (document.getElementById('results').classList.contains('visible')) {
+                if (e.key === 'Escape') document.getElementById('results').classList.remove('visible');
+                return;
+            }
+            switch (e.key) {
+                case 'ArrowLeft':  swipeByKey(1); break;
+                case 'ArrowUp':    swipeByKey(2); e.preventDefault(); break;
+                case 'ArrowDown':  swipeByKey(3); e.preventDefault(); break;
+                case 'ArrowRight': swipeByKey(4); break;
+                case 'c': case 'C':
+                    if (currentIndex < issues.length) copyIssue(issues[currentIndex]);
+                    break;
+                case 'u': case 'U': undo(); break;
+            }
+        });
+
+        loadData();
+    })();
+    </script>
+</body>
+</html>
