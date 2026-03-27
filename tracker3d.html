@@ -4307,7 +4307,44 @@
             if (assignees) parts.push('Assignees: ' + assignees);
             if (node.comments > 0) parts.push(node.comments + ' comments');
             const statusEl = tooltip.querySelector('.tooltip-status');
-            statusEl.textContent = parts.join(' | ');
+            statusEl.innerHTML = '';
+            if (parts.length) {
+                const textSpan = document.createElement('span');
+                textSpan.textContent = parts.join(' | ');
+                statusEl.appendChild(textSpan);
+            }
+            // Add avatar row for creator and assignees
+            const avatarRow = document.createElement('div');
+            avatarRow.style.cssText = 'display:flex;align-items:center;gap:6px;margin-top:4px;';
+            if (node.issueAuthor && node.issueAuthor !== 'unknown') {
+                const authorImg = document.createElement('img');
+                authorImg.src = 'https://github.com/' + node.issueAuthor + '.png?size=32';
+                authorImg.style.cssText = 'width:20px;height:20px;border-radius:50%;border:1px solid #58a6ff;';
+                authorImg.title = 'Creator: ' + node.issueAuthor;
+                authorImg.onerror = function() { this.style.display = 'none'; };
+                avatarRow.appendChild(authorImg);
+                const authorLabel = document.createElement('span');
+                authorLabel.style.cssText = 'font-size:11px;color:#8b949e;';
+                authorLabel.textContent = node.issueAuthor;
+                avatarRow.appendChild(authorLabel);
+            }
+            (node.assignees || []).forEach(function(login) {
+                const sep = document.createElement('span');
+                sep.style.cssText = 'font-size:11px;color:#484f58;';
+                sep.textContent = '·';
+                avatarRow.appendChild(sep);
+                const img = document.createElement('img');
+                img.src = 'https://github.com/' + login + '.png?size=32';
+                img.style.cssText = 'width:20px;height:20px;border-radius:50%;border:1px solid #3fb950;';
+                img.title = 'Assignee: ' + login;
+                img.onerror = function() { this.style.display = 'none'; };
+                avatarRow.appendChild(img);
+                const lbl = document.createElement('span');
+                lbl.style.cssText = 'font-size:11px;color:#8b949e;';
+                lbl.textContent = login;
+                avatarRow.appendChild(lbl);
+            });
+            statusEl.appendChild(avatarRow);
             tooltip.style.display = 'block';
             return;
         }
@@ -5111,6 +5148,28 @@
                 issueLabel.scale.set(0.8, 0.35, 1);
                 issueLabel.position.set(ix, iy + 0.7, iz);
                 repoGroup.add(issueLabel);
+
+                // Creator avatar
+                const avatarOffset = 0.45;
+                if (issue.author && issue.author !== 'unknown') {
+                    const authorAvatarUrl = 'https://github.com/' + issue.author + '.png?size=64';
+                    const authorSprite = createAvatarSprite(authorAvatarUrl);
+                    authorSprite.scale.set(0.35, 0.35, 0.35);
+                    authorSprite.position.set(ix - avatarOffset, iy - 0.55, iz);
+                    authorSprite.userData = { type: 'issue-avatar', label: 'Creator: ' + issue.author };
+                    repoGroup.add(authorSprite);
+                }
+
+                // Assignee avatars
+                const assignees = issue.assignees || [];
+                assignees.forEach((login, ai) => {
+                    const assigneeAvatarUrl = 'https://github.com/' + login + '.png?size=64';
+                    const assigneeSprite = createAvatarSprite(assigneeAvatarUrl);
+                    assigneeSprite.scale.set(0.35, 0.35, 0.35);
+                    assigneeSprite.position.set(ix + avatarOffset * (ai + 1), iy - 0.55, iz);
+                    assigneeSprite.userData = { type: 'issue-avatar', label: 'Assignee: ' + login };
+                    repoGroup.add(assigneeSprite);
+                });
             });
         });
     }

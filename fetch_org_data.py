@@ -114,6 +114,7 @@ class IssueInfo:
     labels: list = field(default_factory=list)
     assignees: list = field(default_factory=list)
     comments: int = 0
+    body: str = ""
 
 
 @dataclass
@@ -280,7 +281,7 @@ def get_repo_issues(repo_full_name: str) -> list[IssueInfo]:
         "issue", "list",
         "--repo", repo_full_name,
         "--state", "open",
-        "--json", "number,title,author,createdAt,updatedAt,url,state,labels,assignees,comments"
+        "--json", "number,title,author,createdAt,updatedAt,url,state,labels,assignees,comments,body"
     ])
 
     if not output:
@@ -303,6 +304,7 @@ def get_repo_issues(repo_full_name: str) -> list[IssueInfo]:
                 labels=labels,
                 assignees=assignees,
                 comments=issue.get("comments", 0),
+                body=issue.get("body", ""),
             ))
         return issues
     except json.JSONDecodeError:
@@ -577,6 +579,7 @@ def fetch_org_data(config: dict, quiet: bool = False, progress_callback=None) ->
                             "labels": issue.labels,
                             "assignees": issue.assignees,
                             "comments": issue.comments,
+                            "body": issue.body,
                         }
                         for issue in issues
                     ]
