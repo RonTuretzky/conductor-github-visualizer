@@ -4329,10 +4329,12 @@
                 avatarRow.appendChild(authorLabel);
             }
             (node.assignees || []).forEach(function(login) {
-                const sep = document.createElement('span');
-                sep.style.cssText = 'font-size:11px;color:#484f58;';
-                sep.textContent = '·';
-                avatarRow.appendChild(sep);
+                if (avatarRow.childNodes.length > 0) {
+                    const sep = document.createElement('span');
+                    sep.style.cssText = 'font-size:11px;color:#484f58;';
+                    sep.textContent = '·';
+                    avatarRow.appendChild(sep);
+                }
                 const img = document.createElement('img');
                 img.src = 'https://github.com/' + login + '.png?size=32';
                 img.style.cssText = 'width:20px;height:20px;border-radius:50%;border:1px solid #3fb950;';
@@ -4344,7 +4346,9 @@
                 lbl.textContent = login;
                 avatarRow.appendChild(lbl);
             });
-            statusEl.appendChild(avatarRow);
+            if (avatarRow.childNodes.length > 0) {
+                statusEl.appendChild(avatarRow);
+            }
             tooltip.style.display = 'block';
             return;
         }
@@ -5160,8 +5164,8 @@
                     repoGroup.add(authorSprite);
                 }
 
-                // Assignee avatars
-                const assignees = issue.assignees || [];
+                // Assignee avatars (cap at 3 to limit sprite count)
+                const assignees = (issue.assignees || []).slice(0, 3);
                 assignees.forEach((login, ai) => {
                     const assigneeAvatarUrl = 'https://github.com/' + login + '.png?size=64';
                     const assigneeSprite = createAvatarSprite(assigneeAvatarUrl);

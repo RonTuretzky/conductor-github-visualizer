@@ -304,7 +304,7 @@ def get_repo_issues(repo_full_name: str) -> list[IssueInfo]:
                 labels=labels,
                 assignees=assignees,
                 comments=issue.get("comments", 0),
-                body=issue.get("body", ""),
+                body=(issue.get("body", "") or "")[:2000],
             ))
         return issues
     except json.JSONDecodeError:

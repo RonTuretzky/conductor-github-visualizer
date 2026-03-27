@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Open Issues — Pick What Interests You</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -76,7 +76,7 @@
             padding: 24px;
             cursor: grab;
             transition: box-shadow 0.2s;
-            touch-action: none;
+            touch-action: pan-y;
             -webkit-overflow-scrolling: touch;
         }
         .card:active { cursor: grabbing; }
@@ -188,21 +188,6 @@
             display: flex;
             align-items: center;
             gap: 4px;
-        }
-
-        .card .assignees-row {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            margin-top: 8px;
-            font-size: 12px;
-            color: #8b949e;
-        }
-        .card .assignee-avatar {
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            border: 1px solid #3fb950;
         }
 
         .card .open-gh {
@@ -456,7 +441,6 @@
         let cardEl = null;
         let startX = 0, startY = 0, currentX = 0, currentY = 0;
         let isDragging = false;
-        let dragStartTime = 0;
 
         const orgParam = new URLSearchParams(location.search).get('org');
         const isMobile = /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent);
@@ -468,8 +452,10 @@
 
         function updateFabBadge() {
             const count = getTriagedCount();
+            const shouldShow = count > 0 || currentIndex > 0;
             document.getElementById('fab-badge').textContent = count;
-            document.getElementById('fab-copy').style.display = count > 0 || currentIndex > 0 ? '' : 'none';
+            document.getElementById('fab-copy').style.display = shouldShow ? '' : 'none';
+            document.getElementById('fab-instruction').style.display = shouldShow ? '' : 'none';
         }
 
         async function loadData() {
@@ -510,7 +496,6 @@
                             updatedAt: issue.updated_at,
                             url: issue.html_url,
                             labels: issue.labels || [],
-                            assignees: issue.assignees || [],
                             commentCount: Array.isArray(issue.comments) ? issue.comments.length : (issue.comments || 0),
                             body: issue.body || ''
                         });
@@ -680,28 +665,6 @@
             }
             card.appendChild(meta);
 
-            // Assignees row (if any)
-            if (issue.assignees && issue.assignees.length > 0) {
-                const assigneesRow = document.createElement('div');
-                assigneesRow.className = 'assignees-row';
-                const label = document.createElement('span');
-                label.textContent = 'Assigned to:';
-                assigneesRow.appendChild(label);
-                for (const login of issue.assignees) {
-                    const img = document.createElement('img');
-                    img.className = 'assignee-avatar';
-                    img.src = 'https://github.com/' + login + '.png?size=40';
-                    img.alt = login;
-                    img.title = login;
-                    img.onerror = function() { this.style.display = 'none'; };
-                    assigneesRow.appendChild(img);
-                    const nameSpan = document.createElement('span');
-                    nameSpan.textContent = login;
-                    assigneesRow.appendChild(nameSpan);
-                }
-                card.appendChild(assigneesRow);
-            }
-
             // Open in GitHub link
             const openLink = document.createElement('a');
             openLink.className = 'open-gh';
@@ -742,6 +705,8 @@
             }
             navigator.clipboard.writeText(md).then(function() {
                 showToast('Copied ' + getTriagedCount() + ' picks as markdown!');
+            }).catch(function() {
+                showToast('Copy failed — your browser may block clipboard access');
             });
         }
 
@@ -756,9 +721,8 @@
         // ---- Drag / swipe handling (works for mouse + touch via pointer events) ----
 
         function onPointerDown(e) {
-            if (e.target.tagName === 'A' || e.target.closest('.body-toggle')) return;
+            if (e.target.tagName === 'A' || e.target.closest('.body-toggle') || e.target.closest('.body-preview')) return;
             isDragging = true;
-            dragStartTime = Date.now();
             startX = e.clientX;
             startY = e.clientY;
             currentX = 0;
