@@ -159,22 +159,9 @@
             background: #0d1117;
             border-radius: 8px;
             border: 1px solid #21262d;
-            max-height: 150px;
-            overflow-y: auto;
             white-space: pre-wrap;
             word-break: break-word;
         }
-        .card .body-preview.expanded {
-            max-height: none;
-        }
-        .card .body-toggle {
-            font-size: 11px;
-            color: #58a6ff;
-            cursor: pointer;
-            margin-bottom: 10px;
-            display: inline-block;
-        }
-        .card .body-toggle:hover { text-decoration: underline; }
 
         .card .meta {
             font-size: 12px;
@@ -394,7 +381,7 @@
             .directions { gap: 10px; padding: 8px 14px; font-size: 11px; }
             .card { padding: 18px; }
             .card .title { font-size: 17px; }
-            .card .body-preview { max-height: 120px; font-size: 12px; }
+            .card .body-preview { font-size: 12px; }
             .keyboard-hint { display: none; }
             .fab-copy { bottom: 60px; right: 14px; }
         }
@@ -622,25 +609,13 @@
                 card.appendChild(labels);
             }
 
-            // Body / description
+            // Body / description (truncated preview)
             if (issue.body && issue.body.trim()) {
                 const bodyPreview = document.createElement('div');
                 bodyPreview.className = 'body-preview';
-                bodyPreview.textContent = issue.body;
+                const trimmed = issue.body.trim();
+                bodyPreview.textContent = trimmed.length > 280 ? trimmed.slice(0, 280) + '…' : trimmed;
                 card.appendChild(bodyPreview);
-
-                // Show toggle only if body is long
-                if (issue.body.length > 300) {
-                    const toggle = document.createElement('span');
-                    toggle.className = 'body-toggle';
-                    toggle.textContent = 'Show more';
-                    toggle.addEventListener('click', function(e) {
-                        e.stopPropagation();
-                        bodyPreview.classList.toggle('expanded');
-                        toggle.textContent = bodyPreview.classList.contains('expanded') ? 'Show less' : 'Show more';
-                    });
-                    card.appendChild(toggle);
-                }
             }
 
             // Meta row
@@ -721,7 +696,7 @@
         // ---- Drag / swipe handling (works for mouse + touch via pointer events) ----
 
         function onPointerDown(e) {
-            if (e.target.tagName === 'A' || e.target.closest('.body-toggle') || e.target.closest('.body-preview')) return;
+            if (e.target.tagName === 'A') return;
             isDragging = true;
             startX = e.clientX;
             startY = e.clientY;
