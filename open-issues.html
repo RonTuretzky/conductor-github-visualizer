@@ -13,6 +13,7 @@
             height: 100vh;
             overflow: hidden;
             user-select: none;
+            -webkit-user-select: none;
         }
 
         .header {
@@ -66,17 +67,20 @@
 
         .card {
             position: absolute;
-            width: min(500px, 90vw);
+            width: min(520px, 90vw);
+            max-height: calc(100vh - 200px);
+            overflow-y: auto;
             background: #161b22;
             border: 1px solid #30363d;
             border-radius: 12px;
-            padding: 28px;
+            padding: 24px;
             cursor: grab;
             transition: box-shadow 0.2s;
-            touch-action: none;
+            touch-action: pan-y;
+            -webkit-overflow-scrolling: touch;
         }
         .card:active { cursor: grabbing; }
-        .card.dragging { transition: none; }
+        .card.dragging { transition: none; overflow: hidden; }
         .card.animating {
             transition: transform 0.4s ease-out, opacity 0.4s ease-out;
         }
@@ -102,7 +106,7 @@
             font-size: 20px;
             font-weight: 600;
             color: #e6edf3;
-            margin-bottom: 12px;
+            margin-bottom: 10px;
             line-height: 1.3;
         }
         .card .title a {
@@ -110,45 +114,77 @@
             text-decoration: none;
         }
         .card .title a:hover { color: #58a6ff; }
+
+        .card .author-row {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+        .card .author-avatar {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            border: 1px solid #30363d;
+        }
+        .card .author-name {
+            font-size: 13px;
+            color: #8b949e;
+        }
+        .card .author-name a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        .card .author-name a:hover { text-decoration: underline; }
+
         .card .labels {
             display: flex;
             flex-wrap: wrap;
             gap: 6px;
-            margin-bottom: 12px;
+            margin-bottom: 10px;
         }
         .card .label {
             padding: 2px 8px;
             border-radius: 12px;
             font-size: 11px;
             font-weight: 500;
-            background: #30363d;
-            color: #c9d1d9;
         }
+
+        .card .body-preview {
+            font-size: 13px;
+            color: #8b949e;
+            line-height: 1.5;
+            margin-bottom: 12px;
+            padding: 10px 12px;
+            background: #0d1117;
+            border-radius: 8px;
+            border: 1px solid #21262d;
+            white-space: pre-wrap;
+            word-break: break-word;
+        }
+
         .card .meta {
             font-size: 12px;
             color: #8b949e;
             display: flex;
-            gap: 16px;
+            gap: 12px;
             flex-wrap: wrap;
+            align-items: center;
+        }
+        .card .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 4px;
         }
 
-        .card .actions {
-            margin-top: 16px;
-            display: flex;
-            gap: 8px;
-        }
-        .card .actions button {
-            padding: 6px 12px;
-            border-radius: 6px;
-            border: 1px solid #30363d;
-            background: #21262d;
-            color: #c9d1d9;
+        .card .open-gh {
+            display: inline-block;
+            margin-top: 12px;
             font-size: 12px;
-            cursor: pointer;
+            color: #58a6ff;
+            text-decoration: none;
         }
-        .card .actions button:hover {
-            background: #30363d;
-        }
+        .card .open-gh:hover { text-decoration: underline; }
 
         .swipe-indicator {
             position: absolute;
@@ -161,6 +197,7 @@
             opacity: 0;
             pointer-events: none;
             border: 2px solid;
+            z-index: 5;
         }
 
         .empty-state {
@@ -169,6 +206,76 @@
             font-size: 16px;
         }
         .empty-state h2 { color: #e6edf3; margin-bottom: 12px; }
+
+        /* Floating side button for copying picks */
+        .fab-copy {
+            position: fixed;
+            bottom: 70px;
+            right: 20px;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: #238636;
+            border: none;
+            color: #fff;
+            font-size: 20px;
+            cursor: pointer;
+            z-index: 50;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+            transition: background 0.2s, transform 0.15s;
+        }
+        .fab-copy:hover { background: #2ea043; transform: scale(1.08); }
+        .fab-copy:active { transform: scale(0.95); }
+        .fab-copy .fab-badge {
+            position: absolute;
+            top: -4px;
+            right: -4px;
+            background: #58a6ff;
+            color: #fff;
+            font-size: 10px;
+            font-weight: 700;
+            min-width: 18px;
+            height: 18px;
+            border-radius: 9px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 4px;
+        }
+        .fab-copy .fab-tooltip {
+            position: absolute;
+            right: 56px;
+            white-space: nowrap;
+            background: #161b22;
+            border: 1px solid #30363d;
+            color: #c9d1d9;
+            font-size: 12px;
+            padding: 4px 10px;
+            border-radius: 6px;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.15s;
+        }
+        .fab-copy:hover .fab-tooltip { opacity: 1; }
+
+        .fab-instruction {
+            position: fixed;
+            bottom: 126px;
+            right: 20px;
+            max-width: 180px;
+            font-size: 11px;
+            color: #8b949e;
+            text-align: right;
+            line-height: 1.4;
+            z-index: 50;
+            pointer-events: none;
+        }
+        @media (max-width: 600px) {
+            .fab-instruction { bottom: 116px; right: 14px; max-width: 150px; font-size: 10px; }
+        }
 
         .results-overlay {
             position: fixed;
@@ -219,6 +326,7 @@
             margin-top: 20px;
             display: flex;
             gap: 10px;
+            flex-wrap: wrap;
         }
         .results-actions button {
             padding: 8px 16px;
@@ -265,6 +373,18 @@
             text-align: center;
             padding: 6px;
         }
+
+        /* Mobile adjustments */
+        @media (max-width: 600px) {
+            .header { padding: 10px 14px; }
+            .header h1 { font-size: 14px; }
+            .directions { gap: 10px; padding: 8px 14px; font-size: 11px; }
+            .card { padding: 18px; }
+            .card .title { font-size: 17px; }
+            .card .body-preview { font-size: 12px; }
+            .keyboard-hint { display: none; }
+            .fab-copy { bottom: 60px; right: 14px; }
+        }
     </style>
 </head>
 <body>
@@ -285,7 +405,15 @@
         <div class="loading" id="loading">Loading issues...</div>
     </div>
     <div class="counter" id="counter"></div>
-    <div class="keyboard-hint">Arrow keys or drag to swipe · C to copy · U to undo · ← love it · ↑ interested · ↓ maybe · → pass</div>
+    <div class="keyboard-hint">Drag/swipe or arrow keys · U to undo · C to copy picks</div>
+
+    <!-- Floating copy-picks button -->
+    <div class="fab-instruction" id="fab-instruction">When you've gone through enough issues, tap here to copy your picks and send to the Bread co-op team</div>
+    <button class="fab-copy" id="fab-copy" title="Copy all picks as markdown">
+        <span style="font-size:18px;">&#128203;</span>
+        <span class="fab-badge" id="fab-badge">0</span>
+        <span class="fab-tooltip">Copy picks (C)</span>
+    </button>
 
     <div class="results-overlay" id="results">
         <div class="results-content" id="results-content"></div>
@@ -302,10 +430,23 @@
         let isDragging = false;
 
         const orgParam = new URLSearchParams(location.search).get('org');
+        const isMobile = /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent);
+        const SWIPE_THRESHOLD = isMobile ? 60 : 100;
+
+        function getTriagedCount() {
+            return triaged[1].length + triaged[2].length + triaged[3].length + triaged[4].length;
+        }
+
+        function updateFabBadge() {
+            const count = getTriagedCount();
+            const shouldShow = count > 0 || currentIndex > 0;
+            document.getElementById('fab-badge').textContent = count;
+            document.getElementById('fab-copy').style.display = shouldShow ? '' : 'none';
+            document.getElementById('fab-instruction').style.display = shouldShow ? '' : 'none';
+        }
 
         async function loadData() {
             let data;
-            // Try API first (local server), fall back to static JSON
             try {
                 if (orgParam) {
                     const resp = await fetch('/api/org/' + encodeURIComponent(orgParam));
@@ -329,7 +470,6 @@
             document.getElementById('page-title').textContent = orgName + ' — Unassigned Issues';
             document.title = orgName + ' — Pick What Interests You';
 
-            // Extract unassigned issues
             for (const [repoName, repoData] of Object.entries(data.issues)) {
                 for (const issue of (repoData.issues || [])) {
                     if (!issue.assignees || issue.assignees.length === 0) {
@@ -343,18 +483,19 @@
                             updatedAt: issue.updated_at,
                             url: issue.html_url,
                             labels: issue.labels || [],
-                            commentCount: Array.isArray(issue.comments) ? issue.comments.length : (issue.comments || 0)
+                            commentCount: Array.isArray(issue.comments) ? issue.comments.length : (issue.comments || 0),
+                            body: issue.body || ''
                         });
                     }
                 }
             }
 
-            // Sort: most recently updated first
             issues.sort((a, b) => new Date(b.updatedAt) - new Date(a.updatedAt));
 
             document.getElementById('stats').textContent = issues.length + ' unassigned issues';
             document.getElementById('loading').remove();
             updateCounter();
+            updateFabBadge();
 
             if (issues.length === 0) {
                 document.getElementById('card-container').innerHTML =
@@ -366,6 +507,7 @@
         }
 
         function timeAgo(dateStr) {
+            if (!dateStr) return '';
             const diff = Date.now() - new Date(dateStr).getTime();
             const days = Math.floor(diff / 86400000);
             if (days > 30) return Math.floor(days / 30) + 'mo ago';
@@ -373,6 +515,21 @@
             const hours = Math.floor(diff / 3600000);
             if (hours > 0) return hours + 'h ago';
             return 'just now';
+        }
+
+        // Attempt to derive a readable color for label text based on background
+        function labelColors(label) {
+            if (typeof label === 'object' && label.color) {
+                const bg = '#' + label.color;
+                // Compute luminance to pick text color
+                const hex = label.color.replace('#', '');
+                const r = parseInt(hex.substr(0, 2), 16);
+                const g = parseInt(hex.substr(2, 2), 16);
+                const b = parseInt(hex.substr(4, 2), 16);
+                const lum = (0.299 * r + 0.587 * g + 0.114 * b) / 255;
+                return { bg: bg, fg: lum > 0.5 ? '#000' : '#fff' };
+            }
+            return { bg: '#30363d', fg: '#c9d1d9' };
         }
 
         function renderCard() {
@@ -390,6 +547,7 @@
             indicator.className = 'swipe-indicator';
             card.appendChild(indicator);
 
+            // Repo + issue number
             const repo = document.createElement('div');
             repo.className = 'repo';
             const repoLink = document.createElement('a');
@@ -403,6 +561,7 @@
             repo.appendChild(numSpan);
             card.appendChild(repo);
 
+            // Title
             const title = document.createElement('div');
             title.className = 'title';
             const titleLink = document.createElement('a');
@@ -412,67 +571,132 @@
             title.appendChild(titleLink);
             card.appendChild(title);
 
+            // Author row with avatar
+            const authorRow = document.createElement('div');
+            authorRow.className = 'author-row';
+            if (issue.author && issue.author !== 'unknown') {
+                const avatar = document.createElement('img');
+                avatar.className = 'author-avatar';
+                avatar.src = 'https://github.com/' + issue.author + '.png?size=48';
+                avatar.alt = issue.author;
+                avatar.onerror = function() { this.style.display = 'none'; };
+                authorRow.appendChild(avatar);
+                const nameSpan = document.createElement('span');
+                nameSpan.className = 'author-name';
+                const nameLink = document.createElement('a');
+                nameLink.href = 'https://github.com/' + issue.author;
+                nameLink.target = '_blank';
+                nameLink.textContent = issue.author;
+                nameSpan.appendChild(nameLink);
+                authorRow.appendChild(nameSpan);
+            }
+            card.appendChild(authorRow);
+
+            // Labels
             if (issue.labels.length > 0) {
                 const labels = document.createElement('div');
                 labels.className = 'labels';
                 for (const lbl of issue.labels) {
                     const span = document.createElement('span');
                     span.className = 'label';
-                    span.textContent = typeof lbl === 'string' ? lbl : lbl.name || lbl;
+                    const name = typeof lbl === 'string' ? lbl : lbl.name || lbl;
+                    span.textContent = name;
+                    const colors = labelColors(lbl);
+                    span.style.background = colors.bg;
+                    span.style.color = colors.fg;
                     labels.appendChild(span);
                 }
                 card.appendChild(labels);
             }
 
+            // Body / description (truncated preview)
+            if (issue.body && issue.body.trim()) {
+                const bodyPreview = document.createElement('div');
+                bodyPreview.className = 'body-preview';
+                const trimmed = issue.body.trim();
+                bodyPreview.textContent = trimmed.length > 280 ? trimmed.slice(0, 280) + '…' : trimmed;
+                card.appendChild(bodyPreview);
+            }
+
+            // Meta row
             const meta = document.createElement('div');
             meta.className = 'meta';
-            meta.textContent = 'by ' + issue.author + ' · created ' + timeAgo(issue.createdAt) +
-                ' · updated ' + timeAgo(issue.updatedAt) +
-                (issue.commentCount > 0 ? ' · ' + issue.commentCount + ' comments' : '');
+
+            const created = document.createElement('span');
+            created.className = 'meta-item';
+            created.textContent = 'Created ' + timeAgo(issue.createdAt);
+            meta.appendChild(created);
+
+            const updated = document.createElement('span');
+            updated.className = 'meta-item';
+            updated.textContent = 'Updated ' + timeAgo(issue.updatedAt);
+            meta.appendChild(updated);
+
+            if (issue.commentCount > 0) {
+                const comments = document.createElement('span');
+                comments.className = 'meta-item';
+                comments.textContent = issue.commentCount + ' comment' + (issue.commentCount !== 1 ? 's' : '');
+                meta.appendChild(comments);
+            }
             card.appendChild(meta);
 
-            const actions = document.createElement('div');
-            actions.className = 'actions';
-            const copyBtn = document.createElement('button');
-            copyBtn.textContent = 'Copy (C)';
-            copyBtn.addEventListener('click', function(e) {
-                e.stopPropagation();
-                copyIssue(issue);
-            });
-            const openBtn = document.createElement('button');
-            openBtn.textContent = 'Open in GitHub';
-            openBtn.addEventListener('click', function(e) {
-                e.stopPropagation();
-                window.open(issue.url, '_blank');
-            });
-            actions.appendChild(copyBtn);
-            actions.appendChild(openBtn);
-            card.appendChild(actions);
+            // Open in GitHub link
+            const openLink = document.createElement('a');
+            openLink.className = 'open-gh';
+            openLink.href = issue.url;
+            openLink.target = '_blank';
+            openLink.textContent = 'Open in GitHub →';
+            card.appendChild(openLink);
 
-            // Touch/mouse drag
+            // Drag handler
             card.addEventListener('pointerdown', onPointerDown);
 
             document.getElementById('card-container').appendChild(card);
             cardEl = card;
         }
 
-        function copyIssue(issue) {
-            const text = issue.repo + '#' + issue.number + ': ' + issue.title + '\n' + issue.url;
-            navigator.clipboard.writeText(text).then(function() {
-                showToast('Copied!');
+        function buildPicksMarkdown() {
+            const labels = { 1: 'Love it!', 2: 'Interested', 3: 'Maybe', 4: 'Pass' };
+            let md = '# My Issue Picks\n\n';
+            let hasAny = false;
+            for (let p = 1; p <= 4; p++) {
+                if (triaged[p].length === 0) continue;
+                hasAny = true;
+                md += '## ' + labels[p] + '\n\n';
+                for (const issue of triaged[p]) {
+                    md += '- [' + issue.repo + '#' + issue.number + ': ' + issue.title + '](' + issue.url + ')\n';
+                }
+                md += '\n';
+            }
+            if (!hasAny) return '';
+            return md;
+        }
+
+        function copyPicks() {
+            const md = buildPicksMarkdown();
+            if (!md) {
+                showToast('No picks yet — swipe some issues first');
+                return;
+            }
+            navigator.clipboard.writeText(md).then(function() {
+                showToast('Copied ' + getTriagedCount() + ' picks as markdown!');
+            }).catch(function() {
+                showToast('Copy failed — your browser may block clipboard access');
             });
         }
 
         function showToast(msg) {
             const t = document.createElement('div');
             t.textContent = msg;
-            t.style.cssText = 'position:fixed;bottom:60px;left:50%;transform:translateX(-50%);background:#238636;color:#fff;padding:6px 16px;border-radius:6px;font-size:13px;z-index:200;';
+            t.style.cssText = 'position:fixed;bottom:60px;left:50%;transform:translateX(-50%);background:#238636;color:#fff;padding:8px 18px;border-radius:6px;font-size:13px;z-index:200;pointer-events:none;';
             document.body.appendChild(t);
-            setTimeout(function() { t.remove(); }, 1200);
+            setTimeout(function() { t.remove(); }, 1500);
         }
 
+        // ---- Drag / swipe handling (works for mouse + touch via pointer events) ----
+
         function onPointerDown(e) {
-            if (e.target.tagName === 'A' || e.target.tagName === 'BUTTON') return;
+            if (e.target.tagName === 'A') return;
             isDragging = true;
             startX = e.clientX;
             startY = e.clientY;
@@ -482,6 +706,7 @@
             cardEl.setPointerCapture(e.pointerId);
             cardEl.addEventListener('pointermove', onPointerMove);
             cardEl.addEventListener('pointerup', onPointerUp);
+            cardEl.addEventListener('pointercancel', onPointerUp);
         }
 
         function onPointerMove(e) {
@@ -498,12 +723,12 @@
             cardEl.classList.remove('dragging');
             cardEl.removeEventListener('pointermove', onPointerMove);
             cardEl.removeEventListener('pointerup', onPointerUp);
+            cardEl.removeEventListener('pointercancel', onPointerUp);
 
-            const threshold = 100;
             const absX = Math.abs(currentX);
             const absY = Math.abs(currentY);
 
-            if (absX > threshold || absY > threshold) {
+            if (absX > SWIPE_THRESHOLD || absY > SWIPE_THRESHOLD) {
                 let priority;
                 if (absX > absY) {
                     priority = currentX < 0 ? 1 : 4;
@@ -523,7 +748,7 @@
             if (!ind) return;
             const absX = Math.abs(dx);
             const absY = Math.abs(dy);
-            const threshold = 60;
+            const threshold = SWIPE_THRESHOLD * 0.6;
 
             if (absX < threshold && absY < threshold) {
                 ind.style.opacity = '0';
@@ -550,7 +775,6 @@
             triaged[priority].push(issue);
             history.push({ index: currentIndex, priority: priority });
 
-            // Animate out
             const mult = 3;
             const tx = dx ? dx * mult : 0;
             const ty = dy ? dy * mult : 0;
@@ -561,6 +785,7 @@
             setTimeout(function() {
                 currentIndex++;
                 updateCounter();
+                updateFabBadge();
                 renderCard();
             }, 350);
         }
@@ -581,6 +806,7 @@
             triaged[last.priority].pop();
             currentIndex = last.index;
             updateCounter();
+            updateFabBadge();
             renderCard();
         }
 
@@ -650,16 +876,7 @@
             copyAllBtn.className = 'primary';
             copyAllBtn.textContent = 'Copy All as Markdown';
             copyAllBtn.addEventListener('click', function() {
-                let md = '# My Issue Picks\n\n';
-                for (let p = 1; p <= 4; p++) {
-                    if (triaged[p].length === 0) continue;
-                    md += '## ' + labels[p] + '\n\n';
-                    for (const issue of triaged[p]) {
-                        md += '- [' + issue.repo + '#' + issue.number + ': ' + issue.title + '](' + issue.url + ')\n';
-                    }
-                    md += '\n';
-                }
-                navigator.clipboard.writeText(md).then(function() { showToast('Copied markdown!'); });
+                copyPicks();
             });
 
             const resetBtn = document.createElement('button');
@@ -670,6 +887,7 @@
                 triaged = { 1: [], 2: [], 3: [], 4: [] };
                 history = [];
                 updateCounter();
+                updateFabBadge();
                 renderCard();
             });
 
@@ -698,12 +916,21 @@
                 case 'ArrowUp':    swipeByKey(2); e.preventDefault(); break;
                 case 'ArrowDown':  swipeByKey(3); e.preventDefault(); break;
                 case 'ArrowRight': swipeByKey(4); break;
-                case 'c': case 'C':
-                    if (currentIndex < issues.length) copyIssue(issues[currentIndex]);
-                    break;
+                case 'c': case 'C': copyPicks(); break;
                 case 'u': case 'U': undo(); break;
             }
         });
+
+        // Floating copy button
+        document.getElementById('fab-copy').addEventListener('click', function(e) {
+            e.stopPropagation();
+            copyPicks();
+        });
+
+        // Prevent body scroll on mobile when swiping
+        document.addEventListener('touchmove', function(e) {
+            if (isDragging) e.preventDefault();
+        }, { passive: false });
 
         loadData();
     })();
