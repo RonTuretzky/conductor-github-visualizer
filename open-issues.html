@@ -577,9 +577,11 @@
             if (issue.author && issue.author !== 'unknown') {
                 const avatar = document.createElement('img');
                 avatar.className = 'author-avatar';
-                avatar.src = 'https://github.com/' + issue.author + '.png?size=48';
+                avatar.referrerPolicy = 'no-referrer';
+                avatar.crossOrigin = 'anonymous';
                 avatar.alt = issue.author;
                 avatar.onerror = function() { this.style.display = 'none'; };
+                avatar.src = 'https://avatars.githubusercontent.com/' + issue.author + '?s=48';
                 authorRow.appendChild(avatar);
                 const nameSpan = document.createElement('span');
                 nameSpan.className = 'author-name';
