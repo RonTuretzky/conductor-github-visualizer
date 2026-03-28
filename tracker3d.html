@@ -4318,7 +4318,9 @@
             avatarRow.style.cssText = 'display:flex;align-items:center;gap:6px;margin-top:4px;';
             if (node.issueAuthor && node.issueAuthor !== 'unknown') {
                 const authorImg = document.createElement('img');
-                authorImg.src = 'https://github.com/' + node.issueAuthor + '.png?size=32';
+                authorImg.referrerPolicy = 'no-referrer';
+                authorImg.crossOrigin = 'anonymous';
+                authorImg.src = 'https://avatars.githubusercontent.com/' + node.issueAuthor + '?s=32';
                 authorImg.style.cssText = 'width:20px;height:20px;border-radius:50%;border:1px solid #58a6ff;';
                 authorImg.title = 'Creator: ' + node.issueAuthor;
                 authorImg.onerror = function() { this.style.display = 'none'; };
@@ -4336,7 +4338,9 @@
                     avatarRow.appendChild(sep);
                 }
                 const img = document.createElement('img');
-                img.src = 'https://github.com/' + login + '.png?size=32';
+                img.referrerPolicy = 'no-referrer';
+                img.crossOrigin = 'anonymous';
+                img.src = 'https://avatars.githubusercontent.com/' + login + '?s=32';
                 img.style.cssText = 'width:20px;height:20px;border-radius:50%;border:1px solid #3fb950;';
                 img.title = 'Assignee: ' + login;
                 img.onerror = function() { this.style.display = 'none'; };
@@ -5156,7 +5160,7 @@
                 // Creator avatar
                 const avatarOffset = 0.45;
                 if (issue.author && issue.author !== 'unknown') {
-                    const authorAvatarUrl = 'https://github.com/' + issue.author + '.png?size=64';
+                    const authorAvatarUrl = 'https://avatars.githubusercontent.com/' + issue.author + '?s=64';
                     const authorSprite = createAvatarSprite(authorAvatarUrl);
                     authorSprite.scale.set(0.35, 0.35, 0.35);
                     authorSprite.position.set(ix - avatarOffset, iy - 0.55, iz);
@@ -5167,7 +5171,7 @@
                 // Assignee avatars (cap at 3 to limit sprite count)
                 const assignees = (issue.assignees || []).slice(0, 3);
                 assignees.forEach((login, ai) => {
-                    const assigneeAvatarUrl = 'https://github.com/' + login + '.png?size=64';
+                    const assigneeAvatarUrl = 'https://avatars.githubusercontent.com/' + login + '?s=64';
                     const assigneeSprite = createAvatarSprite(assigneeAvatarUrl);
                     assigneeSprite.scale.set(0.35, 0.35, 0.35);
                     assigneeSprite.position.set(ix + avatarOffset * (ai + 1), iy - 0.55, iz);
