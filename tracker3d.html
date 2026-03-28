@@ -5164,7 +5164,7 @@
                 // Creator avatar
                 const avatarOffset = 0.45;
                 if (issue.author && issue.author !== 'unknown') {
-                    const authorAvatarUrl = 'https://avatars.githubusercontent.com/' + issue.author + '?s=64';
+                    const authorAvatarUrl = 'https://avatars.githubusercontent.com/' + issue.author;
                     const authorSprite = createAvatarSprite(authorAvatarUrl);
                     authorSprite.scale.set(0.35, 0.35, 0.35);
                     authorSprite.position.set(ix - avatarOffset, iy - 0.55, iz);
@@ -5175,7 +5175,7 @@
                 // Assignee avatars (cap at 3 to limit sprite count)
                 const assignees = (issue.assignees || []).slice(0, 3);
                 assignees.forEach((login, ai) => {
-                    const assigneeAvatarUrl = 'https://avatars.githubusercontent.com/' + login + '?s=64';
+                    const assigneeAvatarUrl = 'https://avatars.githubusercontent.com/' + login;
                     const assigneeSprite = createAvatarSprite(assigneeAvatarUrl);
                     assigneeSprite.scale.set(0.35, 0.35, 0.35);
                     assigneeSprite.position.set(ix + avatarOffset * (ai + 1), iy - 0.55, iz);
