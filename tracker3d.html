@@ -4994,6 +4994,24 @@
             'Issues: <span id="org-issue-count">0</span> | ' +
             '<span id="hidden-info"></span>';
 
+        // Add contribute buttons to footer
+        const footer = document.getElementById('footer');
+        const contributeDiv = document.createElement('div');
+        contributeDiv.style.cssText = 'display:flex;align-items:center;gap:8px;margin-top:4px;';
+        const issuesLink = document.createElement('a');
+        issuesLink.href = 'open-issues.html' + (orgName ? '?org=' + encodeURIComponent(orgName) : '');
+        issuesLink.textContent = 'Want to contribute?';
+        issuesLink.style.cssText = 'padding:4px 12px;background:#238636;color:#fff;font-size:12px;font-weight:600;border-radius:6px;text-decoration:none;';
+        contributeDiv.appendChild(issuesLink);
+        const breadLink = document.createElement('a');
+        breadLink.href = 'https://docs.google.com/forms/d/e/1FAIpQLSfOWubPChHH14LpV4GwgXrrot0Smqd1rmypN4MEULdw7n1o4g/viewform';
+        breadLink.target = '_blank';
+        breadLink.rel = 'noopener noreferrer';
+        breadLink.textContent = 'Join Breadchain';
+        breadLink.style.cssText = 'padding:4px 12px;background:#21262d;color:#c9d1d9;font-size:12px;font-weight:600;border-radius:6px;text-decoration:none;border:1px solid #30363d;';
+        contributeDiv.appendChild(breadLink);
+        footer.appendChild(contributeDiv);
+
         // Save org to recent
         const recent = JSON.parse(localStorage.getItem('recent-orgs') || '[]');
         const updated = [orgName, ...recent.filter(o => o !== orgName)].slice(0, 8);

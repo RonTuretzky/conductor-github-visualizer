@@ -582,7 +582,6 @@
                 const avatar = document.createElement('img');
                 avatar.className = 'author-avatar';
                 avatar.referrerPolicy = 'no-referrer';
-                avatar.crossOrigin = 'anonymous';
                 avatar.alt = issue.author;
                 avatar.onerror = function() { this.style.display = 'none'; };
                 avatar.src = 'https://avatars.githubusercontent.com/' + issue.author + '?s=48';
