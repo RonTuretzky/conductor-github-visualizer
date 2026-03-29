@@ -1573,6 +1573,7 @@
                 </div>
                 <div class="recent-orgs" id="recent-orgs"></div>
                 <a id="triage-link" href="open-issues.html" style="display:inline-block;margin-top:16px;color:#58a6ff;font-size:13px;text-decoration:none;">Triage unassigned issues →</a>
+                <a id="contribute-link" href="open-issues.html" style="display:inline-block;margin-top:10px;padding:8px 18px;background:#238636;color:#fff;font-size:13px;font-weight:600;border-radius:6px;text-decoration:none;transition:background 0.2s;">Want to contribute?</a>
             </div>
         </div>
 
@@ -4318,7 +4319,9 @@
             avatarRow.style.cssText = 'display:flex;align-items:center;gap:6px;margin-top:4px;';
             if (node.issueAuthor && node.issueAuthor !== 'unknown') {
                 const authorImg = document.createElement('img');
-                authorImg.src = 'https://github.com/' + node.issueAuthor + '.png?size=32';
+                authorImg.referrerPolicy = 'no-referrer';
+                authorImg.crossOrigin = 'anonymous';
+                authorImg.src = 'https://avatars.githubusercontent.com/' + node.issueAuthor + '?s=32';
                 authorImg.style.cssText = 'width:20px;height:20px;border-radius:50%;border:1px solid #58a6ff;';
                 authorImg.title = 'Creator: ' + node.issueAuthor;
                 authorImg.onerror = function() { this.style.display = 'none'; };
@@ -4336,7 +4339,9 @@
                     avatarRow.appendChild(sep);
                 }
                 const img = document.createElement('img');
-                img.src = 'https://github.com/' + login + '.png?size=32';
+                img.referrerPolicy = 'no-referrer';
+                img.crossOrigin = 'anonymous';
+                img.src = 'https://avatars.githubusercontent.com/' + login + '?s=32';
                 img.style.cssText = 'width:20px;height:20px;border-radius:50%;border:1px solid #3fb950;';
                 img.title = 'Assignee: ' + login;
                 img.onerror = function() { this.style.display = 'none'; };
@@ -4930,12 +4935,15 @@
             container.appendChild(link);
         });
 
-        // Update triage link when input changes
+        // Update triage + contribute links when input changes
         const triageLink = document.getElementById('triage-link');
+        const contributeLink = document.getElementById('contribute-link');
         const orgInput = document.getElementById('org-input');
         orgInput.addEventListener('input', () => {
             const val = orgInput.value.trim();
-            triageLink.href = val ? 'open-issues.html?org=' + encodeURIComponent(val) : 'open-issues.html';
+            const issuesUrl = val ? 'open-issues.html?org=' + encodeURIComponent(val) : 'open-issues.html';
+            triageLink.href = issuesUrl;
+            contributeLink.href = issuesUrl;
         });
 
         // Enter key submits
@@ -5156,7 +5164,7 @@
                 // Creator avatar
                 const avatarOffset = 0.45;
                 if (issue.author && issue.author !== 'unknown') {
-                    const authorAvatarUrl = 'https://github.com/' + issue.author + '.png?size=64';
+                    const authorAvatarUrl = 'https://avatars.githubusercontent.com/' + issue.author;
                     const authorSprite = createAvatarSprite(authorAvatarUrl);
                     authorSprite.scale.set(0.35, 0.35, 0.35);
                     authorSprite.position.set(ix - avatarOffset, iy - 0.55, iz);
@@ -5167,7 +5175,7 @@
                 // Assignee avatars (cap at 3 to limit sprite count)
                 const assignees = (issue.assignees || []).slice(0, 3);
                 assignees.forEach((login, ai) => {
-                    const assigneeAvatarUrl = 'https://github.com/' + login + '.png?size=64';
+                    const assigneeAvatarUrl = 'https://avatars.githubusercontent.com/' + login;
                     const assigneeSprite = createAvatarSprite(assigneeAvatarUrl);
                     assigneeSprite.scale.set(0.35, 0.35, 0.35);
                     assigneeSprite.position.set(ix + avatarOffset * (ai + 1), iy - 0.55, iz);
