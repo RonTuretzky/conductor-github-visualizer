@@ -1,7 +1,7 @@
 {
   "organization": "BreadchainCoop",
-  "generated_at": "2026-03-28T00:18:01.071813+00:00",
-  "generation_time_seconds": 115.63,
+  "generated_at": "2026-03-29T00:20:09.324820+00:00",
+  "generation_time_seconds": 144.23,
   "stats": {
     "total_repos": 39,
     "repos_with_prs": 20,
@@ -190,7 +190,7 @@
           "pr_title": "feat: implement VotingStreakNFTStrategy for Issue #24",
           "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/82",
           "pr_author": "PasqualePaoloSilvenni",
-          "last_updated": "2026-03-27T22:14:00Z",
+          "last_updated": "2026-03-28T13:04:28Z",
           "ci_status": "",
           "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
           "is_draft": true,
