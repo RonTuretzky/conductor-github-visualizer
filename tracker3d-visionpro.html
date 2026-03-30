@@ -92,40 +92,144 @@
         #vr-button:hover { background: rgba(57, 255, 20, 0.2); }
         #vr-button:disabled { border-color: #555; color: #555; background: transparent; cursor: default; }
 
-        #detail-panel {
-            position: absolute;
-            bottom: 90px;
-            right: 20px;
-            z-index: 100;
-            background: rgba(10, 10, 15, 0.88);
-            padding: 15px 20px;
-            border-radius: 12px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            min-width: 260px;
-            max-width: 340px;
-            display: none;
-        }
-
-        #detail-panel h3 { font-size: 14px; color: #fff; margin-bottom: 8px; }
-        #detail-panel .detail-row { font-size: 12px; color: #aaa; margin-bottom: 4px; }
-        #detail-panel .detail-row span { color: #ddd; }
-
-        #legend {
+        /* Status panel (top-right) */
+        #status-panel {
             position: absolute;
             top: 20px;
             right: 20px;
             z-index: 100;
-            background: rgba(10, 10, 15, 0.75);
-            padding: 12px 16px;
+            background: rgba(10, 10, 15, 0.85);
+            padding: 15px 20px;
             border-radius: 12px;
-            border: 1px solid rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(10px);
-            font-size: 12px;
+            min-width: 180px;
         }
 
-        .legend-item { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; }
+        #status-panel h3 {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #888;
+            margin-bottom: 10px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 8px;
+        }
+
+        .status-item { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; font-size: 14px; }
+        .status-icon { width: 12px; height: 12px; border-radius: 50%; }
+        .status-working { background: #39ff14; box-shadow: 0 0 10px #39ff14; }
+        .status-idle { background: #666; }
+        .status-error { background: #ef4444; }
+
+        /* Legend panel (right side) */
+        #legend-panel {
+            position: absolute;
+            bottom: 80px;
+            right: 20px;
+            z-index: 100;
+            background: rgba(10, 10, 15, 0.85);
+            padding: 15px 20px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            min-width: 200px;
+        }
+
+        #legend-panel h3 {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #888;
+            margin-bottom: 10px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 8px;
+        }
+
+        .legend-section { margin-bottom: 12px; }
+        .legend-section:last-child { margin-bottom: 0; }
+        .legend-section h4 { font-size: 11px; color: #666; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px; }
+        .legend-item { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; font-size: 13px; }
         .legend-dot { width: 10px; height: 10px; border-radius: 50%; }
+
+        .legend-gradient {
+            width: 100%;
+            height: 12px;
+            border-radius: 6px;
+            background: linear-gradient(to right, #39ff14, #eab308, #f97316, #ef4444);
+            margin-bottom: 4px;
+        }
+        .legend-gradient-labels { display: flex; justify-content: space-between; font-size: 10px; color: #888; }
+
+        .pr-badge { padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; color: white; flex-shrink: 0; }
+        .pr-pass { background: rgba(34, 197, 94, 0.9); }
+        .pr-fail { background: rgba(239, 68, 68, 0.9); }
+        .pr-pending { background: rgba(234, 179, 8, 0.9); }
+        .pr-none { background: rgba(80, 80, 220, 0.9); }
+
+        .time-badge { padding: 2px 6px; border-radius: 4px; font-size: 11px; font-weight: 500; background: rgba(0,0,0,0.7); flex-shrink: 0; }
+        .time-fresh { color: #88ff88; }
+        .time-aging { color: #ffcc44; }
+        .time-stale { color: #ff6666; }
+
+        /* Tooltip */
+        #tooltip {
+            position: absolute;
+            background: rgba(20, 20, 30, 0.95);
+            padding: 12px 16px;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            pointer-events: none;
+            display: none;
+            z-index: 1000;
+            max-width: 300px;
+            backdrop-filter: blur(10px);
+        }
+
+        #tooltip .tooltip-title { font-weight: 600; font-size: 14px; color: #fff; margin-bottom: 6px; }
+        #tooltip .tooltip-repo { font-size: 11px; color: #888; margin-bottom: 8px; }
+        #tooltip .tooltip-time { font-size: 12px; color: #aaa; }
+        #tooltip .tooltip-status { display: flex; align-items: center; gap: 6px; margin-top: 6px; font-size: 12px; }
+
+        /* Footer */
+        #footer {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+            z-index: 100;
+            background: rgba(10, 10, 15, 0.85);
+            padding: 12px 20px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #footer .tracking-info { font-size: 13px; color: #aaa; }
+        #footer .session-time { font-size: 13px; color: #888; }
+
+        /* Toolbar buttons */
+        .toolbar-btn {
+            position: absolute;
+            left: 20px;
+            z-index: 100;
+            background: rgba(10, 10, 15, 0.85);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #e0e0e0;
+            padding: 8px 14px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 13px;
+            display: flex;
+            gap: 6px;
+            align-items: center;
+            backdrop-filter: blur(10px);
+        }
+        .toolbar-btn.active { border-color: #39ff14; }
+        .toolbar-btn:hover { background: rgba(20, 20, 30, 0.95); }
     </style>
 </head>
 <body>
@@ -133,28 +237,93 @@
         <canvas id="canvas"></canvas>
     </div>
 
+    <!-- Header -->
     <div id="info-panel">
-        <h1>Conductor Tracker</h1>
+        <h1>CONDUCTOR WORKTREE TRACKER</h1>
         <div class="subtitle">Spatial Environment</div>
         <div class="status" id="status-text">Loading data...</div>
     </div>
 
-    <div id="legend">
-        <div class="legend-item"><div class="legend-dot" style="background:#39ff14;box-shadow:0 0 6px #39ff14"></div> Fresh</div>
-        <div class="legend-item"><div class="legend-dot" style="background:#eab308"></div> Recent</div>
-        <div class="legend-item"><div class="legend-dot" style="background:#f97316"></div> Aging</div>
-        <div class="legend-item"><div class="legend-dot" style="background:#ef4444"></div> Stale</div>
+    <!-- Toolbar buttons (left side) -->
+    <button class="toolbar-btn" id="btn-zen" style="top: 110px" title="Zen mode — hide all UI">
+        <span class="icon">&#9673;</span><span>Zen</span>
+    </button>
+    <button class="toolbar-btn" id="btn-fullscreen" style="top: 155px" title="Fullscreen">
+        <span class="icon">&#9974;</span><span>Full</span>
+    </button>
+    <button class="toolbar-btn active" id="btn-rotate" style="top: 200px" title="Auto-rotate camera">
+        <span class="icon">&#8634;</span><span>Orbit</span>
+    </button>
+    <button class="toolbar-btn" id="btn-layout" style="top: 245px" title="Toggle surround vs flat layout">
+        <span class="icon">&#9673;</span><span>Surround</span>
+    </button>
+    <button class="toolbar-btn" id="btn-fit" style="top: 290px" title="Fit camera to content">
+        <span class="icon">&#8865;</span><span>Fit</span>
+    </button>
+
+    <!-- Status panel (top-right) -->
+    <div id="status-panel">
+        <h3>Status</h3>
+        <div id="status-counts">
+            <div class="status-item">
+                <div class="status-icon status-working"></div>
+                <span><span id="working-count">0</span> working</span>
+            </div>
+            <div class="status-item">
+                <div class="status-icon status-idle"></div>
+                <span><span id="idle-count">0</span> idle</span>
+            </div>
+            <div class="status-item">
+                <div class="status-icon status-error"></div>
+                <span><span id="error-count">0</span> error</span>
+            </div>
+        </div>
     </div>
 
+    <!-- Legend panel (right side) -->
+    <div id="legend-panel">
+        <h3>Legend</h3>
+        <div class="legend-section">
+            <h4>Worktree Freshness</h4>
+            <div class="legend-gradient"></div>
+            <div class="legend-gradient-labels"><span>Fresh</span><span>Stale</span></div>
+        </div>
+        <div class="legend-section">
+            <h4>PR Label (above ball)</h4>
+            <div class="legend-item"><div class="pr-badge pr-pass">#123 ✓</div><span>CI Passing</span></div>
+            <div class="legend-item"><div class="pr-badge pr-fail">#123 ✗</div><span>CI Failing</span></div>
+            <div class="legend-item"><div class="pr-badge pr-pending">#123 ⋯</div><span>CI Pending</span></div>
+            <div class="legend-item"><div class="pr-badge pr-none">#123 ◌</div><span>CI Unknown</span></div>
+        </div>
+        <div class="legend-section">
+            <h4>Time Indicator</h4>
+            <div class="legend-item"><div class="time-badge time-fresh">5m</div><span>Recently active</span></div>
+            <div class="legend-item"><div class="time-badge time-aging">2h</div><span>Getting stale</span></div>
+            <div class="legend-item"><div class="time-badge time-stale">1d</div><span>Stale</span></div>
+        </div>
+    </div>
+
+    <!-- Controls bar (bottom center) -->
     <div id="controls-bar">
-        <button class="ctrl-btn active" id="btn-rotate" title="Auto-rotate camera">Orbit</button>
-        <button class="ctrl-btn" id="btn-layout" title="Toggle surround vs flat layout">Layout: Surround</button>
         <button id="vr-button" disabled>Checking WebXR...</button>
     </div>
 
-    <div id="detail-panel">
-        <h3 id="detail-title"></h3>
-        <div class="detail-row" id="detail-body"></div>
+    <!-- Footer -->
+    <div id="footer">
+        <div class="tracking-info">
+            Tracking: <span id="worktree-count">0</span> worktrees
+        </div>
+        <div class="session-time">
+            Session: <span id="session-duration">0m</span>
+        </div>
+    </div>
+
+    <!-- Tooltip (follows cursor) -->
+    <div id="tooltip">
+        <div class="tooltip-title"></div>
+        <div class="tooltip-repo"></div>
+        <div class="tooltip-time"></div>
+        <div class="tooltip-status"></div>
     </div>
 
     <!-- Three.js r167 with WebXR support -->
@@ -217,7 +386,7 @@
         const customUrl = getDataUrl();
         const urls = customUrl
             ? [customUrl]
-            : ['http://localhost:8765/api/tracker', 'data/org_data.json'];
+            : ['/api/tracker', 'http://localhost:8765/api/tracker', 'data/org_data.json'];
 
         for (const url of urls) {
             try {
@@ -730,7 +899,7 @@
         scene.background = null;
         controls.autoRotate = false;
 
-        document.querySelectorAll('#info-panel, #legend, #controls-bar, #detail-panel')
+        document.querySelectorAll('#info-panel, #status-panel, #legend-panel, #controls-bar, #footer, #tooltip, .toolbar-btn')
             .forEach(el => el.style.display = 'none');
 
         setupControllers();
@@ -744,9 +913,8 @@
         scene.background = new THREE.Color(0x050510);
         controls.autoRotate = autoRotate;
 
-        document.getElementById('info-panel').style.display = '';
-        document.getElementById('legend').style.display = '';
-        document.getElementById('controls-bar').style.display = '';
+        document.querySelectorAll('#info-panel, #status-panel, #legend-panel, #controls-bar, #footer, .toolbar-btn')
+            .forEach(el => el.style.display = '');
     }
 
     function setupControllers() {
@@ -813,6 +981,7 @@
 
         if (intersects.length > 0) {
             highlightNode(intersects[0].object);
+            updateTooltip(e);
             renderer.domElement.style.cursor = 'pointer';
         } else {
             clearHighlight();
@@ -838,24 +1007,6 @@
             mesh.material.emissiveIntensity = 1.0;
         }
         mesh.scale.set(1.4, 1.4, 1.4);
-
-        if (!isImmersive && mesh.userData.data) {
-            const node = mesh.userData.data;
-            const panel = document.getElementById('detail-panel');
-            document.getElementById('detail-title').textContent = node.pr_title || node.name || node.branch;
-
-            const esc = s => { const d = document.createElement('div'); d.textContent = s; return d.innerHTML; };
-            let body = '';
-            if (node.pr_number) body += `<div class="detail-row">PR: <span>#${esc(String(node.pr_number))}</span></div>`;
-            if (node.branch) body += `<div class="detail-row">Branch: <span>${esc(node.branch)}</span></div>`;
-            if (node.pr_author) body += `<div class="detail-row">Author: <span>${esc(node.pr_author)}</span></div>`;
-            if (node.ci_status) body += `<div class="detail-row">CI: <span>${esc(node.ci_status)}</span></div>`;
-            if (node.last_updated) body += `<div class="detail-row">Updated: <span>${esc(getTimeText(node))} ago</span></div>`;
-            if (node.repo_name) body += `<div class="detail-row">Repo: <span>${esc(node.repo_name)}</span></div>`;
-
-            document.getElementById('detail-body').innerHTML = body;
-            panel.style.display = 'block';
-        }
     }
 
     function clearHighlight() {
@@ -865,8 +1016,36 @@
             }
             hoveredNode.scale.set(1, 1, 1);
             hoveredNode = null;
-            if (!isImmersive) document.getElementById('detail-panel').style.display = 'none';
+            document.getElementById('tooltip').style.display = 'none';
         }
+    }
+
+    function updateTooltip(e) {
+        if (!hoveredNode || isImmersive) return;
+        const tooltip = document.getElementById('tooltip');
+        const node = hoveredNode.userData.data || hoveredNode.userData;
+
+        const esc = s => { const d = document.createElement('div'); d.textContent = s || ''; return d.innerHTML; };
+        tooltip.querySelector('.tooltip-title').textContent = node.pr_title || node.name || node.branch || hoveredNode.userData.name || '';
+        tooltip.querySelector('.tooltip-repo').textContent = node.repo_name || '';
+        tooltip.querySelector('.tooltip-time').textContent = node.last_updated ? `Updated ${getTimeText(node)} ago` : '';
+
+        let statusHtml = '';
+        if (node.ci_status === 'pass') statusHtml = '<span style="color:#39ff14">✓ CI Passing</span>';
+        else if (node.ci_status === 'fail') statusHtml = '<span style="color:#ef4444">✗ CI Failing</span>';
+        else if (node.ci_status === 'pending') statusHtml = '<span style="color:#eab308">⋯ CI Pending</span>';
+        if (node.pr_number) statusHtml = `PR #${esc(String(node.pr_number))} ${statusHtml}`;
+        if (node.pr_author) statusHtml += statusHtml ? ` · ${esc(node.pr_author)}` : esc(node.pr_author);
+        tooltip.querySelector('.tooltip-status').innerHTML = statusHtml;
+
+        tooltip.style.display = 'block';
+        tooltip.style.left = (e.clientX + 16) + 'px';
+        tooltip.style.top = (e.clientY + 16) + 'px';
+
+        // Keep tooltip on screen
+        const rect = tooltip.getBoundingClientRect();
+        if (rect.right > window.innerWidth) tooltip.style.left = (e.clientX - rect.width - 8) + 'px';
+        if (rect.bottom > window.innerHeight) tooltip.style.top = (e.clientY - rect.height - 8) + 'px';
     }
 
     function onResize() {
@@ -918,9 +1097,15 @@
     // UI controls
     // ========================================================================
 
+    let zenMode = false;
+    const sessionStart = Date.now();
+
     function setupControls() {
         const btnRotate = document.getElementById('btn-rotate');
         const btnLayout = document.getElementById('btn-layout');
+        const btnZen = document.getElementById('btn-zen');
+        const btnFull = document.getElementById('btn-fullscreen');
+        const btnFit = document.getElementById('btn-fit');
 
         btnRotate.addEventListener('click', () => {
             autoRotate = !autoRotate;
@@ -930,10 +1115,9 @@
 
         btnLayout.addEventListener('click', () => {
             surroundMode = !surroundMode;
-            btnLayout.textContent = surroundMode ? 'Layout: Surround' : 'Layout: Flat';
+            btnLayout.querySelector('span:last-child').textContent = surroundMode ? 'Surround' : 'Flat';
             btnLayout.classList.toggle('active', !surroundMode);
 
-            // Reset camera for new layout
             if (surroundMode) {
                 camera.position.set(0, 1.0, 0.1);
                 controls.target.set(0, 0, 0);
@@ -941,9 +1125,72 @@
                 camera.position.set(0, 8, 15);
                 controls.target.set(0, 0, 0);
             }
-
             buildScene();
         });
+
+        btnZen.addEventListener('click', () => {
+            zenMode = !zenMode;
+            btnZen.classList.toggle('active', zenMode);
+            const els = ['#info-panel', '#status-panel', '#legend-panel', '#footer', '#controls-bar',
+                         '#btn-zen', '#btn-fullscreen', '#btn-rotate', '#btn-layout', '#btn-fit'];
+            if (zenMode) {
+                els.forEach(s => { const el = document.querySelector(s); if (el && el !== btnZen) el.style.display = 'none'; });
+                btnZen.style.opacity = '0.3';
+            } else {
+                els.forEach(s => { const el = document.querySelector(s); if (el) el.style.display = ''; });
+                btnZen.style.opacity = '';
+            }
+        });
+
+        btnFull.addEventListener('click', () => {
+            if (!document.fullscreenElement) {
+                document.documentElement.requestFullscreen();
+                btnFull.classList.add('active');
+            } else {
+                document.exitFullscreen();
+                btnFull.classList.remove('active');
+            }
+        });
+
+        btnFit.addEventListener('click', () => {
+            // Compute bounding box of all nodes and fit camera
+            const box = new THREE.Box3();
+            nodes.forEach(mesh => box.expandByObject(mesh));
+            if (box.isEmpty()) return;
+
+            const center = box.getCenter(new THREE.Vector3());
+            const size = box.getSize(new THREE.Vector3()).length();
+            const dist = size / (2 * Math.tan(camera.fov * Math.PI / 360));
+
+            controls.target.copy(center);
+            camera.position.copy(center).add(new THREE.Vector3(0, dist * 0.3, dist));
+            controls.update();
+        });
+
+        // Session timer
+        setInterval(() => {
+            const min = Math.floor((Date.now() - sessionStart) / 60000);
+            if (min < 60) document.getElementById('session-duration').textContent = `${min}m`;
+            else document.getElementById('session-duration').textContent = `${Math.floor(min/60)}h ${min%60}m`;
+        }, 10000);
+    }
+
+    function updateStatusCounts() {
+        if (!trackerData) return;
+
+        const statuses = trackerData.session_statuses || {};
+        let working = 0, idle = 0, error = 0;
+
+        Object.values(statuses).forEach(s => {
+            if (s.status === 'working') working++;
+            else if (s.status === 'error') error++;
+            else idle++;
+        });
+
+        document.getElementById('working-count').textContent = working;
+        document.getElementById('idle-count').textContent = idle;
+        document.getElementById('error-count').textContent = error;
+        document.getElementById('worktree-count').textContent = trackerData.worktree_count || nodes.size;
     }
 
     // ========================================================================
@@ -959,6 +1206,7 @@
         if (data) {
             trackerData = data;
             buildScene();
+            updateStatusCounts();
 
             const treeCount = Object.keys(data.trees || {}).length;
             let nodeCount = 0;
