@@ -1167,9 +1167,10 @@ class TrackerHandler(http.server.SimpleHTTPRequestHandler):
         pass
 
 
-class ReusableTCPServer(socketserver.TCPServer):
-    """TCP server that allows address reuse to avoid 'Address already in use' errors."""
+class ReusableTCPServer(socketserver.ThreadingTCPServer):
+    """Threaded TCP server that allows address reuse and concurrent requests."""
     allow_reuse_address = True
+    daemon_threads = True
 
 
 def run_server(port: int = 8765):

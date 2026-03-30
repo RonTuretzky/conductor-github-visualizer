@@ -507,14 +507,13 @@
                     const data = await resp.json();
                     if (!data.loading) return data;
                 }
-            } catch { /* fall through to full search */ }
-            // Live source failed — clear it and try all sources
-            liveSourceUrl = null;
+            } catch { /* transient failure — keep the lock, just skip this cycle */ }
+            return null;
         }
 
         const urls = customUrl
             ? [customUrl]
-            : ['/api/tracker', 'http://localhost:8765/api/tracker', 'data/org_data.json'];
+            : ['/api/tracker', 'http://localhost:8765/api/tracker'];
 
         for (const url of urls) {
             try {
