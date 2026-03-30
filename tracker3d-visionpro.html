@@ -230,6 +230,88 @@
         }
         .toolbar-btn.active { border-color: #39ff14; }
         .toolbar-btn:hover { background: rgba(20, 20, 30, 0.95); }
+
+        #hide-menu {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 200;
+            background: rgba(10, 10, 20, 0.95);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 16px;
+            backdrop-filter: blur(15px);
+            padding: 24px 28px;
+            min-width: 380px;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+        #hide-menu h2 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 16px;
+        }
+        #hide-menu .menu-section { margin-bottom: 16px; }
+        #hide-menu .menu-section h4 {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        #hide-menu .menu-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 6px 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.15s;
+        }
+        #hide-menu .menu-item:hover { background: rgba(255,255,255,0.06); }
+        #hide-menu .menu-item.hidden { opacity: 0.4; }
+        #hide-menu .menu-item .key {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 22px; height: 22px;
+            border-radius: 4px;
+            background: rgba(255,255,255,0.08);
+            font-size: 11px;
+            font-weight: 600;
+            color: #aaa;
+            flex-shrink: 0;
+        }
+        #hide-menu .menu-item .name {
+            flex: 1;
+            font-size: 13px;
+            color: #ddd;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        #hide-menu .menu-item .status-badge {
+            font-size: 10px;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+        #hide-menu .menu-item .status-badge.visible { background: rgba(57,255,20,0.15); color: #39ff14; }
+        #hide-menu .menu-item .status-badge.hidden { background: rgba(239,68,68,0.15); color: #ef4444; }
+        #hide-menu .close-hint {
+            margin-top: 12px;
+            font-size: 11px;
+            color: #555;
+            text-align: center;
+        }
+        #hide-menu .close-hint kbd {
+            background: rgba(255,255,255,0.08);
+            padding: 1px 6px;
+            border-radius: 3px;
+            font-size: 11px;
+        }
     </style>
 </head>
 <body>
@@ -312,10 +394,34 @@
     <div id="footer">
         <div class="tracking-info">
             Tracking: <span id="worktree-count">0</span> worktrees
+            <span id="hidden-info"></span>
         </div>
         <div class="session-time">
-            Session: <span id="session-duration">0m</span>
+            Session: <span id="session-duration">0m</span> |
+            Press <kbd>`</kbd> to hide/show
         </div>
+    </div>
+
+    <!-- Hide/Show Menu -->
+    <!-- Zen mode: minimal working count -->
+    <div id="zen-badge" style="display:none; position:absolute; top:20px; right:20px; z-index:100;
+        background:rgba(10,10,15,0.6); padding:8px 14px; border-radius:10px;
+        border:1px solid rgba(255,255,255,0.06); backdrop-filter:blur(10px);
+        font-size:13px; color:#888;">
+        <span id="zen-working-count" style="color:#39ff14; font-weight:600;">0</span> working
+    </div>
+
+    <div id="hide-menu">
+        <h2>Hide/Show Workspaces &amp; Repos</h2>
+        <div id="repos-section" class="menu-section">
+            <h4>Repositories</h4>
+            <div id="repos-list"></div>
+        </div>
+        <div id="workspaces-section" class="menu-section">
+            <h4>Workspaces</h4>
+            <div id="workspaces-list"></div>
+        </div>
+        <div class="close-hint">Press <kbd>`</kbd> or <kbd>Esc</kbd> to close | <kbd>0</kbd> show all</div>
     </div>
 
     <!-- Tooltip (follows cursor) -->
@@ -370,6 +476,9 @@
 
     let autoRotate = true;
     let surroundMode = true;  // true = sphere shell, false = flat circle
+    let hiddenRepos = new Set();
+    let hiddenWorkspaces = new Set();
+    let hideMenuOpen = false;
 
     // ========================================================================
     // Data loading
@@ -382,8 +491,27 @@
         return null;
     }
 
+    let liveSourceUrl = null; // once we find a live source, stick with it
+
     async function fetchData() {
         const customUrl = getDataUrl();
+
+        // If we've already found a working live source, only try that
+        if (liveSourceUrl) {
+            try {
+                const ctrl = new AbortController();
+                const tid = setTimeout(() => ctrl.abort(), 10000);
+                const resp = await fetch(liveSourceUrl, { signal: ctrl.signal });
+                clearTimeout(tid);
+                if (resp.ok) {
+                    const data = await resp.json();
+                    if (!data.loading) return data;
+                }
+            } catch { /* fall through to full search */ }
+            // Live source failed — clear it and try all sources
+            liveSourceUrl = null;
+        }
+
         const urls = customUrl
             ? [customUrl]
             : ['/api/tracker', 'http://localhost:8765/api/tracker', 'data/org_data.json'];
@@ -391,12 +519,14 @@
         for (const url of urls) {
             try {
                 const ctrl = new AbortController();
-                const tid = setTimeout(() => ctrl.abort(), 3000);
+                const tid = setTimeout(() => ctrl.abort(), 8000);
                 const resp = await fetch(url, { signal: ctrl.signal });
                 clearTimeout(tid);
                 if (!resp.ok) continue;
                 const data = await resp.json();
                 if (data.loading) continue;
+                // Lock onto this source if it's a live API (not static file)
+                if (url.includes('/api/')) liveSourceUrl = url;
                 return data;
             } catch { /* try next */ }
         }
@@ -656,7 +786,7 @@
         clearScene();
 
         const trees = trackerData.trees;
-        const repoNames = Object.keys(trees);
+        const repoNames = Object.keys(trees).filter(name => !hiddenRepos.has(name));
         const numRepos = repoNames.length;
 
         repoNames.forEach((repoName, i) => {
@@ -771,11 +901,17 @@
     }
 
     function buildNodes(nodeList, group, parentX, parentY, parentZ, depth, baseAngle, githubUrl, outDir) {
-        const maxSpread = Math.PI * 0.8;
-        const totalSpread = Math.min((nodeList.length - 1) * 0.5, maxSpread);
-        const spreadFactor = nodeList.length > 1 ? totalSpread / (nodeList.length - 1) : 0;
+        // Filter out hidden workspaces
+        const visible = nodeList.filter(node => {
+            const wsId = node.workspace_id || `org-${node.repo_name || ''}-${node.pr_number || node.branch}`;
+            return !hiddenWorkspaces.has(wsId);
+        });
 
-        nodeList.forEach((node, idx) => {
+        const maxSpread = Math.PI * 0.8;
+        const totalSpread = Math.min((visible.length - 1) * 0.5, maxSpread);
+        const spreadFactor = visible.length > 1 ? totalSpread / (visible.length - 1) : 0;
+
+        visible.forEach((node, idx) => {
             const angleOffset = (idx - (nodeList.length - 1) / 2) * spreadFactor;
             const nodeAngle = baseAngle + angleOffset;
             const distance = CONFIG.prSpacing;
@@ -1285,9 +1421,12 @@
             if (zenMode) {
                 els.forEach(s => { const el = document.querySelector(s); if (el && el !== btnZen) el.style.display = 'none'; });
                 btnZen.style.opacity = '0.3';
+                document.getElementById('zen-badge').style.display = 'block';
+                updateZenBadge();
             } else {
                 els.forEach(s => { const el = document.querySelector(s); if (el) el.style.display = ''; });
                 btnZen.style.opacity = '';
+                document.getElementById('zen-badge').style.display = 'none';
             }
         });
 
@@ -1324,6 +1463,145 @@
         }, 10000);
     }
 
+    // ========================================================================
+    // Hide/Show menu
+    // ========================================================================
+
+    function openHideMenu() {
+        hideMenuOpen = true;
+        updateHideMenu();
+        document.getElementById('hide-menu').style.display = 'block';
+    }
+
+    function closeHideMenu() {
+        hideMenuOpen = false;
+        document.getElementById('hide-menu').style.display = 'none';
+    }
+
+    function collectAllWorkspaces(node, list) {
+        if (node.workspace_id) list.push(node);
+        if (node.children) node.children.forEach(c => collectAllWorkspaces(c, list));
+    }
+
+    function updateHideMenu() {
+        if (!trackerData) return;
+
+        const reposList = document.getElementById('repos-list');
+        const workspacesList = document.getElementById('workspaces-list');
+
+        const repos = Object.keys(trackerData.trees || {}).sort();
+        reposList.innerHTML = repos.map((name, i) => {
+            const key = String.fromCharCode(65 + i);
+            const isHidden = hiddenRepos.has(name);
+            return `
+                <div class="menu-item ${isHidden ? 'hidden' : ''}" data-type="repo" data-name="${name}">
+                    <span class="key">${key}</span>
+                    <span class="name">${name}</span>
+                    <span class="status-badge ${isHidden ? 'hidden' : 'visible'}">${isHidden ? 'hidden' : 'visible'}</span>
+                </div>`;
+        }).join('');
+
+        const workspaces = [];
+        Object.values(trackerData.trees || {}).forEach(tree => collectAllWorkspaces(tree, workspaces));
+        workspaces.sort((a, b) => (a.name || a.branch || '').localeCompare(b.name || b.branch || ''));
+
+        workspacesList.innerHTML = workspaces.slice(0, 26).map((ws, i) => {
+            const key = String.fromCharCode(97 + i);
+            const wsId = ws.workspace_id || `org-${ws.repo_name || ''}-${ws.pr_number || ws.branch}`;
+            const isHidden = hiddenWorkspaces.has(wsId);
+            const displayName = ws.pr_title || ws.name || ws.branch || wsId;
+            return `
+                <div class="menu-item ${isHidden ? 'hidden' : ''}" data-type="workspace" data-id="${wsId}">
+                    <span class="key">${key}</span>
+                    <span class="name">${displayName}</span>
+                    <span class="status-badge ${isHidden ? 'hidden' : 'visible'}">${isHidden ? 'hidden' : 'visible'}</span>
+                </div>`;
+        }).join('');
+
+        // Click handlers
+        reposList.querySelectorAll('.menu-item').forEach(item => {
+            item.addEventListener('click', () => {
+                const name = item.dataset.name;
+                if (hiddenRepos.has(name)) hiddenRepos.delete(name);
+                else hiddenRepos.add(name);
+                updateHideMenu();
+                buildScene();
+                updateHiddenInfo();
+            });
+        });
+
+        workspacesList.querySelectorAll('.menu-item').forEach(item => {
+            item.addEventListener('click', () => {
+                const id = item.dataset.id;
+                if (hiddenWorkspaces.has(id)) hiddenWorkspaces.delete(id);
+                else hiddenWorkspaces.add(id);
+                updateHideMenu();
+                buildScene();
+                updateHiddenInfo();
+            });
+        });
+    }
+
+    function handleHideMenuKey(key) {
+        if (!trackerData) return;
+
+        const repos = Object.keys(trackerData.trees || {}).sort();
+        const workspaces = [];
+        Object.values(trackerData.trees || {}).forEach(tree => collectAllWorkspaces(tree, workspaces));
+        workspaces.sort((a, b) => (a.name || a.branch || '').localeCompare(b.name || b.branch || ''));
+
+        if (key >= 'A' && key <= 'Z') {
+            const index = key.charCodeAt(0) - 65;
+            if (index < repos.length) {
+                const name = repos[index];
+                if (hiddenRepos.has(name)) hiddenRepos.delete(name);
+                else hiddenRepos.add(name);
+                updateHideMenu();
+                buildScene();
+                updateHiddenInfo();
+            }
+        }
+
+        if (key >= 'a' && key <= 'z') {
+            const index = key.charCodeAt(0) - 97;
+            if (index < workspaces.length) {
+                const ws = workspaces[index];
+                const wsId = ws.workspace_id || `org-${ws.repo_name || ''}-${ws.pr_number || ws.branch}`;
+                if (hiddenWorkspaces.has(wsId)) hiddenWorkspaces.delete(wsId);
+                else hiddenWorkspaces.add(wsId);
+                updateHideMenu();
+                buildScene();
+                updateHiddenInfo();
+            }
+        }
+    }
+
+    function updateHiddenInfo() {
+        const total = hiddenRepos.size + hiddenWorkspaces.size;
+        const el = document.getElementById('hidden-info');
+        el.textContent = total > 0 ? `| ${total} hidden` : '';
+    }
+
+    function setupHideMenuKeyboard() {
+        window.addEventListener('keydown', (e) => {
+            if (e.key === '`') {
+                e.preventDefault();
+                if (hideMenuOpen) closeHideMenu();
+                else openHideMenu();
+            } else if (e.key === 'Escape' && hideMenuOpen) {
+                closeHideMenu();
+            } else if (e.key === '0' && hideMenuOpen) {
+                hiddenRepos.clear();
+                hiddenWorkspaces.clear();
+                updateHideMenu();
+                buildScene();
+                updateHiddenInfo();
+            } else if (hideMenuOpen) {
+                handleHideMenuKey(e.key);
+            }
+        });
+    }
+
     function updateStatusCounts() {
         if (!trackerData) return;
 
@@ -1340,6 +1618,15 @@
         document.getElementById('idle-count').textContent = idle;
         document.getElementById('error-count').textContent = error;
         document.getElementById('worktree-count').textContent = trackerData.worktree_count || nodes.size;
+        updateZenBadge();
+    }
+
+    function updateZenBadge() {
+        if (!trackerData) return;
+        const statuses = trackerData.session_statuses || {};
+        let working = 0;
+        Object.values(statuses).forEach(s => { if (s.status === 'working') working++; });
+        document.getElementById('zen-working-count').textContent = working;
     }
 
     // ========================================================================
@@ -1389,6 +1676,7 @@
     async function init() {
         initScene();
         setupControls();
+        setupHideMenuKeyboard();
         renderer.setAnimationLoop(animate);
 
         await refreshData();
