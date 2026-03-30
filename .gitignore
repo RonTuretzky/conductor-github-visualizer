@@ -2,3 +2,4 @@ __pycache__/
 .nginx/*.pem
 .nginx/*.log
 .nginx/*.pid
+.nginx/nginx.generated.conf
