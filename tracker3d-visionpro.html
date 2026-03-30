@@ -494,6 +494,134 @@
     }
 
     // ========================================================================
+    // Avatar sprites for commits
+    // ========================================================================
+
+    const avatarTextureCache = new Map();
+    const pendingAvatarMaterials = new Map();
+    let commitNodes = [];
+
+    function createCircularPlaceholder() {
+        const canvas = document.createElement('canvas');
+        const size = 64;
+        canvas.width = size;
+        canvas.height = size;
+        const ctx = canvas.getContext('2d');
+        ctx.beginPath();
+        ctx.arc(size/2, size/2, size/2 - 2, 0, Math.PI * 2);
+        ctx.fillStyle = '#4488ff';
+        ctx.fill();
+        ctx.strokeStyle = '#ffffff';
+        ctx.lineWidth = 2;
+        ctx.stroke();
+        return canvas;
+    }
+
+    function createCircularAvatarTexture(img) {
+        const canvas = document.createElement('canvas');
+        const size = 64;
+        canvas.width = size;
+        canvas.height = size;
+        const ctx = canvas.getContext('2d');
+        ctx.beginPath();
+        ctx.arc(size/2, size/2, size/2 - 2, 0, Math.PI * 2);
+        ctx.closePath();
+        ctx.clip();
+        ctx.drawImage(img, 0, 0, size, size);
+        ctx.beginPath();
+        ctx.arc(size/2, size/2, size/2 - 2, 0, Math.PI * 2);
+        ctx.strokeStyle = '#ffffff';
+        ctx.lineWidth = 2;
+        ctx.stroke();
+        const texture = new THREE.CanvasTexture(canvas);
+        texture.needsUpdate = true;
+        return texture;
+    }
+
+    function createAvatarSprite(avatarUrl) {
+        const placeholderCanvas = createCircularPlaceholder();
+        const placeholderTexture = new THREE.CanvasTexture(placeholderCanvas);
+        const material = new THREE.SpriteMaterial({ map: placeholderTexture, transparent: true });
+        const sprite = new THREE.Sprite(material);
+
+        if (avatarUrl && !avatarTextureCache.has(avatarUrl)) {
+            avatarTextureCache.set(avatarUrl, 'loading');
+            pendingAvatarMaterials.set(avatarUrl, [material]);
+
+            const sizedUrl = avatarUrl.includes('?') ? `${avatarUrl}&s=64` : `${avatarUrl}?s=64`;
+            const img = new Image();
+            img.crossOrigin = 'anonymous';
+            img.onload = function() {
+                const texture = createCircularAvatarTexture(img);
+                avatarTextureCache.set(avatarUrl, texture);
+                const pending = pendingAvatarMaterials.get(avatarUrl) || [];
+                pending.forEach(mat => { mat.map = texture; mat.needsUpdate = true; });
+                pendingAvatarMaterials.delete(avatarUrl);
+            };
+            img.onerror = function() {
+                avatarTextureCache.set(avatarUrl, 'error');
+                pendingAvatarMaterials.delete(avatarUrl);
+            };
+            img.src = sizedUrl;
+        } else if (avatarUrl && avatarTextureCache.get(avatarUrl) === 'loading') {
+            const pending = pendingAvatarMaterials.get(avatarUrl) || [];
+            pending.push(material);
+            pendingAvatarMaterials.set(avatarUrl, pending);
+        } else if (avatarUrl && avatarTextureCache.get(avatarUrl) !== 'error') {
+            material.map = avatarTextureCache.get(avatarUrl);
+            material.needsUpdate = true;
+        }
+
+        return sprite;
+    }
+
+    function createCommitPoints(x1, y1, z1, x2, y2, z2, commits, githubUrl, group) {
+        const numCommits = Math.min(commits.length, 10);
+
+        for (let i = 0; i < numCommits; i++) {
+            const commit = commits[i];
+            const t = (i + 1) / (numCommits + 1);
+            const cx = x1 + (x2 - x1) * t;
+            const cy = y1 + (y2 - y1) * t;
+            const cz = z1 + (z2 - z1) * t;
+
+            const avatarUrl = commit.author_avatar_url;
+            let commitNode;
+
+            if (avatarUrl) {
+                commitNode = createAvatarSprite(avatarUrl);
+                commitNode.scale.set(0.3, 0.3, 0.3);
+            } else {
+                const geo = new THREE.SphereGeometry(0.1, 12, 12);
+                const mat = new THREE.MeshBasicMaterial({ color: 0x4488ff });
+                commitNode = new THREE.Mesh(geo, mat);
+            }
+            commitNode.position.set(cx, cy, cz);
+            commitNode.userData = {
+                type: 'commit',
+                commit: commit,
+                github_url: commit.github_url,
+                hasAvatar: !!avatarUrl
+            };
+            group.add(commitNode);
+            commitNodes.push(commitNode);
+        }
+
+        if (commits.length > numCommits) {
+            const label = createTextSprite(`+${commits.length - numCommits} more`, {
+                fontSize: 12, bgColor: 'rgba(100,100,200,0.7)', padding: 8,
+            });
+            label.position.set(
+                (x1 + x2) / 2,
+                (y1 + y2) / 2 + 0.25,
+                (z1 + z2) / 2
+            );
+            label.scale.set(0.5, 0.25, 1);
+            group.add(label);
+        }
+    }
+
+    // ========================================================================
     // Scene building
     // ========================================================================
 
@@ -520,6 +648,7 @@
         keep.forEach(c => sceneRoot.add(c));
         nodes.clear();
         repoGroups.clear();
+        commitNodes = [];
     }
 
     function buildScene() {
@@ -699,6 +828,12 @@
                 color: 0x444466, transparent: true, opacity: 0.4
             });
             group.add(new THREE.Line(lineGeo, lineMat));
+
+            // Commit avatars along the connection line
+            const commits = node.commits_from_parent || [];
+            if (commits.length > 0) {
+                createCommitPoints(parentX, parentY, parentZ, x, y, z, commits, githubUrl, group);
+            }
 
             // Name label
             const displayName = node.pr_title || node.name || node.branch;
@@ -977,6 +1112,7 @@
         raycaster.setFromCamera(pointer, camera);
         const allMeshes = [];
         nodes.forEach(m => allMeshes.push(m));
+        commitNodes.forEach(m => allMeshes.push(m));
         const intersects = raycaster.intersectObjects(allMeshes, false);
 
         if (intersects.length > 0) {
@@ -990,10 +1126,13 @@
     }
 
     function onPointerDown(e) {
-        if (hoveredNode && hoveredNode.userData.data) {
-            const node = hoveredNode.userData.data;
-            const url = node.pr_url || hoveredNode.userData.githubUrl;
-            if (url && e.button === 0) window.open(url, '_blank');
+        if (!hoveredNode || e.button !== 0) return;
+        const ud = hoveredNode.userData;
+        if (ud.type === 'commit' && ud.github_url) {
+            window.open(ud.github_url, '_blank');
+        } else if (ud.data) {
+            const url = ud.data.pr_url || ud.githubUrl;
+            if (url) window.open(url, '_blank');
         }
     }
 
@@ -1023,20 +1162,30 @@
     function updateTooltip(e) {
         if (!hoveredNode || isImmersive) return;
         const tooltip = document.getElementById('tooltip');
-        const node = hoveredNode.userData.data || hoveredNode.userData;
+        const ud = hoveredNode.userData;
 
         const esc = s => { const d = document.createElement('div'); d.textContent = s || ''; return d.innerHTML; };
-        tooltip.querySelector('.tooltip-title').textContent = node.pr_title || node.name || node.branch || hoveredNode.userData.name || '';
-        tooltip.querySelector('.tooltip-repo').textContent = node.repo_name || '';
-        tooltip.querySelector('.tooltip-time').textContent = node.last_updated ? `Updated ${getTimeText(node)} ago` : '';
 
-        let statusHtml = '';
-        if (node.ci_status === 'pass') statusHtml = '<span style="color:#39ff14">✓ CI Passing</span>';
-        else if (node.ci_status === 'fail') statusHtml = '<span style="color:#ef4444">✗ CI Failing</span>';
-        else if (node.ci_status === 'pending') statusHtml = '<span style="color:#eab308">⋯ CI Pending</span>';
-        if (node.pr_number) statusHtml = `PR #${esc(String(node.pr_number))} ${statusHtml}`;
-        if (node.pr_author) statusHtml += statusHtml ? ` · ${esc(node.pr_author)}` : esc(node.pr_author);
-        tooltip.querySelector('.tooltip-status').innerHTML = statusHtml;
+        if (ud.type === 'commit' && ud.commit) {
+            const c = ud.commit;
+            tooltip.querySelector('.tooltip-title').textContent = c.message || c.short_sha;
+            tooltip.querySelector('.tooltip-repo').textContent = `${c.author || ''} · ${c.short_sha || ''}`;
+            tooltip.querySelector('.tooltip-time').textContent = c.date || '';
+            tooltip.querySelector('.tooltip-status').innerHTML = '';
+        } else {
+            const node = ud.data || ud;
+            tooltip.querySelector('.tooltip-title').textContent = node.pr_title || node.name || node.branch || ud.name || '';
+            tooltip.querySelector('.tooltip-repo').textContent = node.repo_name || '';
+            tooltip.querySelector('.tooltip-time').textContent = node.last_updated ? `Updated ${getTimeText(node)} ago` : '';
+
+            let statusHtml = '';
+            if (node.ci_status === 'pass') statusHtml = '<span style="color:#39ff14">✓ CI Passing</span>';
+            else if (node.ci_status === 'fail') statusHtml = '<span style="color:#ef4444">✗ CI Failing</span>';
+            else if (node.ci_status === 'pending') statusHtml = '<span style="color:#eab308">⋯ CI Pending</span>';
+            if (node.pr_number) statusHtml = `PR #${esc(String(node.pr_number))} ${statusHtml}`;
+            if (node.pr_author) statusHtml += statusHtml ? ` · ${esc(node.pr_author)}` : esc(node.pr_author);
+            tooltip.querySelector('.tooltip-status').innerHTML = statusHtml;
+        }
 
         tooltip.style.display = 'block';
         tooltip.style.left = (e.clientX + 16) + 'px';
@@ -1197,28 +1346,61 @@
     // Init
     // ========================================================================
 
+    const REFRESH_INTERVAL = 5000; // 5 seconds
+    let lastDataHash = '';
+
+    function hashData(data) {
+        // Quick fingerprint: tree keys + node count + session statuses
+        const treeKeys = Object.keys(data.trees || {}).sort().join(',');
+        const statuses = JSON.stringify(data.session_statuses || {});
+        let nodeCount = 0;
+        for (const tree of Object.values(data.trees || {})) {
+            const count = (arr) => { if (!arr) return; for (const n of arr) { nodeCount++; if (n.children) count(n.children); } };
+            count(tree.children);
+        }
+        return `${treeKeys}|${nodeCount}|${statuses}`;
+    }
+
+    async function refreshData() {
+        const data = await fetchData();
+        if (!data) return;
+
+        const newHash = hashData(data);
+        const treeChanged = lastDataHash !== '' && newHash !== lastDataHash;
+        const firstLoad = lastDataHash === '';
+        lastDataHash = newHash;
+
+        trackerData = data;
+        updateStatusCounts();
+
+        // Only rebuild the 3D scene if the tree structure actually changed
+        if (firstLoad || treeChanged) {
+            buildScene();
+        }
+
+        const treeCount = Object.keys(data.trees || {}).length;
+        let nodeCount = 0;
+        nodes.forEach(() => nodeCount++);
+        const org = data.organization ? `${data.organization} · ` : '';
+        document.getElementById('status-text').textContent =
+            `${org}${treeCount} repos · ${nodeCount} PRs`;
+    }
+
     async function init() {
         initScene();
         setupControls();
         renderer.setAnimationLoop(animate);
 
-        const data = await fetchData();
-        if (data) {
-            trackerData = data;
-            buildScene();
-            updateStatusCounts();
+        await refreshData();
 
-            const treeCount = Object.keys(data.trees || {}).length;
-            let nodeCount = 0;
-            nodes.forEach(() => nodeCount++);
-            const org = data.organization ? `${data.organization} · ` : '';
-            document.getElementById('status-text').textContent =
-                `${org}${treeCount} repos · ${nodeCount} PRs`;
-        } else {
+        if (!trackerData) {
             document.getElementById('status-text').textContent = 'No data found — use ?data=path/to/file.json';
         }
 
         await setupXR();
+
+        // Auto-refresh every 5s to stay in sync
+        setInterval(refreshData, REFRESH_INTERVAL);
     }
 
     init();
