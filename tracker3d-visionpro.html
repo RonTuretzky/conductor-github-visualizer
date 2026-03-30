@@ -844,13 +844,14 @@
             const panel = document.getElementById('detail-panel');
             document.getElementById('detail-title').textContent = node.pr_title || node.name || node.branch;
 
+            const esc = s => { const d = document.createElement('div'); d.textContent = s; return d.innerHTML; };
             let body = '';
-            if (node.pr_number) body += `<div class="detail-row">PR: <span>#${node.pr_number}</span></div>`;
-            if (node.branch) body += `<div class="detail-row">Branch: <span>${node.branch}</span></div>`;
-            if (node.pr_author) body += `<div class="detail-row">Author: <span>${node.pr_author}</span></div>`;
-            if (node.ci_status) body += `<div class="detail-row">CI: <span>${node.ci_status}</span></div>`;
-            if (node.last_updated) body += `<div class="detail-row">Updated: <span>${getTimeText(node)} ago</span></div>`;
-            if (node.repo_name) body += `<div class="detail-row">Repo: <span>${node.repo_name}</span></div>`;
+            if (node.pr_number) body += `<div class="detail-row">PR: <span>#${esc(String(node.pr_number))}</span></div>`;
+            if (node.branch) body += `<div class="detail-row">Branch: <span>${esc(node.branch)}</span></div>`;
+            if (node.pr_author) body += `<div class="detail-row">Author: <span>${esc(node.pr_author)}</span></div>`;
+            if (node.ci_status) body += `<div class="detail-row">CI: <span>${esc(node.ci_status)}</span></div>`;
+            if (node.last_updated) body += `<div class="detail-row">Updated: <span>${esc(getTimeText(node))} ago</span></div>`;
+            if (node.repo_name) body += `<div class="detail-row">Repo: <span>${esc(node.repo_name)}</span></div>`;
 
             document.getElementById('detail-body').innerHTML = body;
             panel.style.display = 'block';
