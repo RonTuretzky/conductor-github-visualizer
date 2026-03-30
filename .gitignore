@@ -1,1 +1,4 @@
 __pycache__/
+.nginx/*.pem
+.nginx/*.log
+.nginx/*.pid

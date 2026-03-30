@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conductor Tracker – Vision Pro</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #050510;
+            color: #e0e0e0;
+            overflow: hidden;
+        }
+
+        #container { width: 100vw; height: 100vh; position: relative; }
+
+        #info-panel {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 100;
+            background: rgba(10, 10, 15, 0.75);
+            padding: 15px 25px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(10px);
+            max-width: 360px;
+        }
+
+        #info-panel h1 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 5px;
+        }
+
+        #info-panel .subtitle {
+            font-size: 12px;
+            color: #888;
+            margin-bottom: 10px;
+        }
+
+        #info-panel .status {
+            font-size: 13px;
+            color: #39ff14;
+        }
+
+        #controls-bar {
+            position: absolute;
+            bottom: 24px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 100;
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .ctrl-btn {
+            padding: 10px 20px;
+            font-size: 13px;
+            font-weight: 600;
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 10px;
+            background: rgba(10, 10, 20, 0.7);
+            color: #ccc;
+            cursor: pointer;
+            backdrop-filter: blur(10px);
+            transition: all 0.2s;
+            white-space: nowrap;
+        }
+
+        .ctrl-btn:hover { background: rgba(30, 30, 50, 0.8); color: #fff; }
+        .ctrl-btn.active { border-color: #39ff14; color: #39ff14; }
+        .ctrl-btn:disabled { opacity: 0.35; cursor: default; }
+
+        #vr-button {
+            padding: 12px 28px;
+            font-size: 14px;
+            font-weight: 600;
+            border: 2px solid #39ff14;
+            border-radius: 10px;
+            background: rgba(57, 255, 20, 0.08);
+            color: #39ff14;
+            cursor: pointer;
+            backdrop-filter: blur(10px);
+            transition: all 0.2s;
+        }
+
+        #vr-button:hover { background: rgba(57, 255, 20, 0.2); }
+        #vr-button:disabled { border-color: #555; color: #555; background: transparent; cursor: default; }
+
+        #detail-panel {
+            position: absolute;
+            bottom: 90px;
+            right: 20px;
+            z-index: 100;
+            background: rgba(10, 10, 15, 0.88);
+            padding: 15px 20px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            min-width: 260px;
+            max-width: 340px;
+            display: none;
+        }
+
+        #detail-panel h3 { font-size: 14px; color: #fff; margin-bottom: 8px; }
+        #detail-panel .detail-row { font-size: 12px; color: #aaa; margin-bottom: 4px; }
+        #detail-panel .detail-row span { color: #ddd; }
+
+        #legend {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 100;
+            background: rgba(10, 10, 15, 0.75);
+            padding: 12px 16px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(10px);
+            font-size: 12px;
+        }
+
+        .legend-item { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; }
+        .legend-dot { width: 10px; height: 10px; border-radius: 50%; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <canvas id="canvas"></canvas>
+    </div>
+
+    <div id="info-panel">
+        <h1>Conductor Tracker</h1>
+        <div class="subtitle">Spatial Environment</div>
+        <div class="status" id="status-text">Loading data...</div>
+    </div>
+
+    <div id="legend">
+        <div class="legend-item"><div class="legend-dot" style="background:#39ff14;box-shadow:0 0 6px #39ff14"></div> Fresh</div>
+        <div class="legend-item"><div class="legend-dot" style="background:#eab308"></div> Recent</div>
+        <div class="legend-item"><div class="legend-dot" style="background:#f97316"></div> Aging</div>
+        <div class="legend-item"><div class="legend-dot" style="background:#ef4444"></div> Stale</div>
+    </div>
+
+    <div id="controls-bar">
+        <button class="ctrl-btn active" id="btn-rotate" title="Auto-rotate camera">Orbit</button>
+        <button class="ctrl-btn" id="btn-layout" title="Toggle surround vs flat layout">Layout: Surround</button>
+        <button id="vr-button" disabled>Checking WebXR...</button>
+    </div>
+
+    <div id="detail-panel">
+        <h3 id="detail-title"></h3>
+        <div class="detail-row" id="detail-body"></div>
+    </div>
+
+    <!-- Three.js r167 with WebXR support -->
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.167.0/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.167.0/examples/jsm/"
+        }
+    }
+    </script>
+
+    <script type="module">
+    import * as THREE from 'three';
+    import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+    import { XRControllerModelFactory } from 'three/addons/webxr/XRControllerModelFactory.js';
+
+    // ========================================================================
+    // Config
+    // ========================================================================
+    const CONFIG = {
+        staleMinutes: 30 * 24 * 60,
+        colors: { fresh: 0x39ff14, recent: 0xeab308, aging: 0xf97316, stale: 0xef4444 },
+        // Surround layout: repos on a sphere shell around the viewer
+        surroundRadius: 8,     // distance from center to repos
+        prSpacing: 2.0,        // branch distance outward
+        nodeRadius: 0.2,
+        repoRadius: 0.35,
+    };
+
+    // ========================================================================
+    // State
+    // ========================================================================
+    let scene, camera, renderer, controls;
+    let raycaster, tempMatrix;
+    let trackerData = null;
+    let nodes = new Map();
+    let repoGroups = new Map();
+    let hoveredNode = null;
+    let xrSession = null;
+    let controller1, controller2;
+    let isImmersive = false;
+    let sceneRoot;
+
+    let autoRotate = true;
+    let surroundMode = true;  // true = sphere shell, false = flat circle
+
+    // ========================================================================
+    // Data loading
+    // ========================================================================
+
+    function getDataUrl() {
+        const params = new URLSearchParams(window.location.search);
+        if (params.get('api')) return params.get('api');
+        if (params.get('data')) return params.get('data');
+        return null;
+    }
+
+    async function fetchData() {
+        const customUrl = getDataUrl();
+        const urls = customUrl
+            ? [customUrl]
+            : ['http://localhost:8765/api/tracker', 'data/org_data.json'];
+
+        for (const url of urls) {
+            try {
+                const ctrl = new AbortController();
+                const tid = setTimeout(() => ctrl.abort(), 3000);
+                const resp = await fetch(url, { signal: ctrl.signal });
+                clearTimeout(tid);
+                if (!resp.ok) continue;
+                const data = await resp.json();
+                if (data.loading) continue;
+                return data;
+            } catch { /* try next */ }
+        }
+        return null;
+    }
+
+    // ========================================================================
+    // Color helpers
+    // ========================================================================
+
+    function lerpColor(c1, c2, t) {
+        const r1 = (c1 >> 16) & 0xff, g1 = (c1 >> 8) & 0xff, b1 = c1 & 0xff;
+        const r2 = (c2 >> 16) & 0xff, g2 = (c2 >> 8) & 0xff, b2 = c2 & 0xff;
+        return (Math.round(r1 + (r2 - r1) * t) << 16) |
+               (Math.round(g1 + (g2 - g1) * t) << 8) |
+               Math.round(b1 + (b2 - b1) * t);
+    }
+
+    function scoreToColor(score) {
+        if (score < 0.33) return lerpColor(CONFIG.colors.fresh, CONFIG.colors.recent, score / 0.33);
+        if (score < 0.66) return lerpColor(CONFIG.colors.recent, CONFIG.colors.aging, (score - 0.33) / 0.33);
+        return lerpColor(CONFIG.colors.aging, CONFIG.colors.stale, (score - 0.66) / 0.34);
+    }
+
+    function getNodeScore(node) {
+        const ts = node.last_updated || (node.click_record && node.click_record.last_seen);
+        if (!ts) return 1;
+        const minutesAgo = (Date.now() - new Date(ts).getTime()) / 60000;
+        const staleMin = (trackerData && trackerData.stale_minutes) || CONFIG.staleMinutes;
+        return Math.min(1, minutesAgo / staleMin);
+    }
+
+    function collectScores(nodes, scores = []) {
+        if (!nodes) return scores;
+        for (const n of nodes) {
+            if (n.last_updated || (n.click_record && n.click_record.last_seen)) scores.push(getNodeScore(n));
+            if (n.children) collectScores(n.children, scores);
+        }
+        return scores;
+    }
+
+    // ========================================================================
+    // Text sprite
+    // ========================================================================
+
+    function createTextSprite(text, opts = {}) {
+        const fontSize = opts.fontSize || 24;
+        const bgColor = opts.bgColor || 'rgba(0,0,0,0.8)';
+        const textColor = opts.textColor || '#ffffff';
+        const padding = opts.padding || 16;
+        const maxWidth = opts.maxWidth || 360;
+
+        const canvas = document.createElement('canvas');
+        const ctx = canvas.getContext('2d');
+        ctx.font = `${fontSize}px -apple-system, BlinkMacSystemFont, sans-serif`;
+
+        const words = text.split(' ');
+        const lines = [];
+        let line = '';
+        for (const w of words) {
+            const test = line ? line + ' ' + w : w;
+            if (ctx.measureText(test).width > maxWidth && line) { lines.push(line); line = w; }
+            else line = test;
+        }
+        if (line) lines.push(line);
+
+        const lineHeight = fontSize * 1.3;
+        let maxW = 0;
+        for (const l of lines) maxW = Math.max(maxW, ctx.measureText(l).width);
+
+        canvas.width = Math.max(128, maxW + padding * 2);
+        canvas.height = lines.length * lineHeight + padding * 2;
+
+        ctx.font = `${fontSize}px -apple-system, BlinkMacSystemFont, sans-serif`;
+        if (bgColor !== 'transparent') {
+            ctx.fillStyle = bgColor;
+            ctx.roundRect(0, 0, canvas.width, canvas.height, 8);
+            ctx.fill();
+        }
+        ctx.fillStyle = textColor;
+        ctx.textBaseline = 'top';
+        lines.forEach((l, i) => {
+            const x = (canvas.width - ctx.measureText(l).width) / 2;
+            ctx.fillText(l, x, padding + i * lineHeight);
+        });
+
+        const tex = new THREE.CanvasTexture(canvas);
+        tex.minFilter = THREE.LinearFilter;
+        const mat = new THREE.SpriteMaterial({ map: tex, transparent: true, depthTest: false });
+        const sprite = new THREE.Sprite(mat);
+        sprite.userData.isLabel = true;
+        sprite.userData.canvasWidth = canvas.width;
+        sprite.userData.numLines = lines.length;
+        return sprite;
+    }
+
+    // ========================================================================
+    // Scene building
+    // ========================================================================
+
+    function clearScene() {
+        if (!sceneRoot) return;
+        // Remove everything except the grid and particle field
+        const keep = [];
+        sceneRoot.children.forEach(c => {
+            if (c.userData.isGrid || c.userData.isParticles) keep.push(c);
+        });
+        while (sceneRoot.children.length > 0) {
+            const child = sceneRoot.children[0];
+            sceneRoot.remove(child);
+            if (!keep.includes(child)) {
+                child.traverse(obj => {
+                    if (obj.geometry) obj.geometry.dispose();
+                    if (obj.material) {
+                        if (obj.material.map) obj.material.map.dispose();
+                        obj.material.dispose();
+                    }
+                });
+            }
+        }
+        keep.forEach(c => sceneRoot.add(c));
+        nodes.clear();
+        repoGroups.clear();
+    }
+
+    function buildScene() {
+        if (!trackerData || !trackerData.trees) return;
+        clearScene();
+
+        const trees = trackerData.trees;
+        const repoNames = Object.keys(trees);
+        const numRepos = repoNames.length;
+
+        repoNames.forEach((repoName, i) => {
+            const tree = trees[repoName];
+            const group = new THREE.Group();
+            group.userData = { type: 'repo', name: repoName, github_url: tree.github_url };
+            sceneRoot.add(group);
+            repoGroups.set(repoName, group);
+
+            let repoX, repoY, repoZ;
+
+            if (surroundMode) {
+                // SURROUND: distribute repos on a sphere shell around the viewer
+                // Use fibonacci sphere for even distribution
+                const golden = (1 + Math.sqrt(5)) / 2;
+                const theta = 2 * Math.PI * i / golden;
+                // phi: distribute from 30deg above to 30deg below horizon
+                const phi = Math.acos(1 - 2 * (i + 0.5) / numRepos);
+                // Clamp to a band (don't put repos directly above or below)
+                const clampedPhi = 0.6 + (phi / Math.PI) * (Math.PI - 1.2);
+
+                const r = CONFIG.surroundRadius;
+                repoX = r * Math.sin(clampedPhi) * Math.cos(theta);
+                repoY = r * Math.cos(clampedPhi);
+                repoZ = r * Math.sin(clampedPhi) * Math.sin(theta);
+            } else {
+                // FLAT: classic circle layout on the XZ plane
+                if (numRepos === 1) {
+                    repoX = 0; repoY = 0; repoZ = 0;
+                } else {
+                    const angle = (i / numRepos) * Math.PI * 2 - Math.PI / 2;
+                    const radius = 5 * Math.max(1, numRepos / 8);
+                    repoX = Math.cos(angle) * radius;
+                    repoY = 0;
+                    repoZ = Math.sin(angle) * radius;
+                }
+            }
+
+            // Repo color from children
+            const childScores = collectScores(tree.children);
+            let repoColor = 0x6366f1;
+            if (childScores.length > 0) {
+                const avg = childScores.reduce((a, b) => a + b, 0) / childScores.length;
+                repoColor = scoreToColor(avg);
+            }
+
+            // Repo sphere
+            const geo = new THREE.SphereGeometry(CONFIG.repoRadius, 32, 32);
+            const mat = new THREE.MeshStandardMaterial({
+                color: repoColor, emissive: repoColor,
+                emissiveIntensity: 0.5, metalness: 0.2, roughness: 0.6,
+            });
+            const ball = new THREE.Mesh(geo, mat);
+            ball.position.set(repoX, repoY, repoZ);
+            ball.userData = { type: 'repo', name: repoName, github_url: tree.github_url };
+            group.add(ball);
+
+            // Repo label — face toward center
+            const label = createTextSprite(repoName, { fontSize: 26, bgColor: 'rgba(0,0,0,0.85)' });
+            const lw = (label.userData.canvasWidth || 256) / 80;
+            label.scale.set(lw, 0.8, 1);
+            // Position label slightly toward center from the repo ball
+            const labelOffset = surroundMode ? -0.8 : 2.2;
+            if (surroundMode) {
+                const dir = new THREE.Vector3(repoX, repoY, repoZ).normalize();
+                label.position.set(
+                    repoX - dir.x * 0.9,
+                    repoY + 0.7,
+                    repoZ - dir.z * 0.9
+                );
+            } else {
+                label.position.set(repoX, repoY + 2.2, repoZ);
+            }
+            group.add(label);
+
+            // Connection line from center to repo (surround mode only)
+            if (surroundMode) {
+                const lineGeo = new THREE.BufferGeometry().setFromPoints([
+                    new THREE.Vector3(0, 0, 0),
+                    new THREE.Vector3(repoX, repoY, repoZ),
+                ]);
+                const lineMat = new THREE.LineBasicMaterial({
+                    color: repoColor, transparent: true, opacity: 0.12
+                });
+                group.add(new THREE.Line(lineGeo, lineMat));
+            }
+
+            // Build PR nodes — branch outward from repo
+            if (tree.children) {
+                const outDir = surroundMode
+                    ? new THREE.Vector3(repoX, repoY, repoZ).normalize()
+                    : null;
+                const baseAngle = surroundMode
+                    ? Math.atan2(repoZ, repoX)
+                    : (numRepos <= 1 ? 0 : (i / numRepos) * Math.PI * 2 - Math.PI / 2);
+
+                buildNodes(tree.children, group, repoX, repoY, repoZ, 0, baseAngle, tree.github_url, outDir);
+            }
+        });
+
+        // Add a subtle center marker
+        if (surroundMode) {
+            const centerGeo = new THREE.IcosahedronGeometry(0.15, 2);
+            const centerMat = new THREE.MeshStandardMaterial({
+                color: 0x6366f1, emissive: 0x6366f1,
+                emissiveIntensity: 0.6, transparent: true, opacity: 0.6,
+            });
+            const center = new THREE.Mesh(centerGeo, centerMat);
+            center.userData.isCenter = true;
+            sceneRoot.add(center);
+        }
+    }
+
+    function buildNodes(nodeList, group, parentX, parentY, parentZ, depth, baseAngle, githubUrl, outDir) {
+        const maxSpread = Math.PI * 0.8;
+        const totalSpread = Math.min((nodeList.length - 1) * 0.5, maxSpread);
+        const spreadFactor = nodeList.length > 1 ? totalSpread / (nodeList.length - 1) : 0;
+
+        nodeList.forEach((node, idx) => {
+            const angleOffset = (idx - (nodeList.length - 1) / 2) * spreadFactor;
+            const nodeAngle = baseAngle + angleOffset;
+            const distance = CONFIG.prSpacing;
+
+            let x, y, z;
+            if (surroundMode && outDir) {
+                // Branch outward from repo, away from center
+                // Create a perpendicular basis for spreading
+                const up = new THREE.Vector3(0, 1, 0);
+                const right = new THREE.Vector3().crossVectors(outDir, up).normalize();
+                const fwd = new THREE.Vector3().copy(outDir);
+
+                // Spread children in a fan perpendicular to the outward direction
+                const spreadDir = new THREE.Vector3()
+                    .addScaledVector(fwd, distance * (depth + 1))
+                    .addScaledVector(right, angleOffset * 1.5)
+                    .addScaledVector(up, depth * 0.3);
+
+                x = parentX + spreadDir.x * 0.5;
+                y = parentY + spreadDir.y * 0.5;
+                z = parentZ + spreadDir.z * 0.5;
+            } else {
+                // Flat mode
+                x = parentX + Math.cos(nodeAngle) * (distance + depth * 1.5);
+                z = parentZ + Math.sin(nodeAngle) * (distance + depth * 1.5);
+                y = depth * 0.25;
+            }
+
+            const nodeId = node.workspace_id || `org-${node.repo_name || ''}-${node.pr_number || node.branch}`;
+            const score = getNodeScore(node);
+            const color = scoreToColor(score);
+
+            const geo = new THREE.SphereGeometry(CONFIG.nodeRadius, 20, 20);
+            const mat = new THREE.MeshStandardMaterial({
+                color, emissive: color,
+                emissiveIntensity: 0.45, metalness: 0.15, roughness: 0.7,
+            });
+            const mesh = new THREE.Mesh(geo, mat);
+            mesh.position.set(x, y, z);
+            mesh.userData = { type: 'workspace', data: node, nodeId, score, githubUrl };
+            group.add(mesh);
+            nodes.set(nodeId, mesh);
+
+            // Connection line
+            const lineGeo = new THREE.BufferGeometry().setFromPoints([
+                new THREE.Vector3(parentX, parentY, parentZ),
+                new THREE.Vector3(x, y, z),
+            ]);
+            const lineMat = new THREE.LineBasicMaterial({
+                color: 0x444466, transparent: true, opacity: 0.4
+            });
+            group.add(new THREE.Line(lineGeo, lineMat));
+
+            // Name label
+            const displayName = node.pr_title || node.name || node.branch;
+            if (displayName) {
+                const nameLabel = createTextSprite(displayName, { fontSize: 18, maxWidth: 240 });
+                const nlw = (nameLabel.userData.canvasWidth || 200) / 100;
+                const nlh = 0.35 + ((nameLabel.userData.numLines || 1) - 1) * 0.18;
+                nameLabel.scale.set(nlw, nlh, 1);
+                nameLabel.position.set(x, y - 0.55, z);
+                group.add(nameLabel);
+            }
+
+            // PR status label
+            if (node.pr_number) {
+                let ciSymbol = '';
+                let bgColor = 'rgba(100,100,140,0.9)';
+                if (node.ci_status === 'pass') { ciSymbol = ' ✓'; bgColor = 'rgba(34,197,94,0.9)'; }
+                else if (node.ci_status === 'fail') { ciSymbol = ' ✗'; bgColor = 'rgba(239,68,68,0.9)'; }
+                else if (node.ci_status === 'pending') { ciSymbol = ' ⋯'; bgColor = 'rgba(234,179,8,0.9)'; }
+
+                const timeText = getTimeText(node);
+                const statusLabel = createTextSprite(`#${node.pr_number}${ciSymbol} · ${timeText}`, {
+                    fontSize: 14, bgColor, padding: 8,
+                });
+                statusLabel.scale.set(0.85, 0.3, 1);
+                statusLabel.position.set(x, y + 0.5, z);
+                group.add(statusLabel);
+            }
+
+            if (node.children && node.children.length > 0) {
+                buildNodes(node.children, group, x, y, z, depth + 1, nodeAngle, githubUrl, outDir);
+            }
+        });
+    }
+
+    function getTimeText(node) {
+        const ts = node.last_updated || (node.click_record && node.click_record.last_seen);
+        if (!ts) return '';
+        const min = (Date.now() - new Date(ts).getTime()) / 60000;
+        if (min < 1) return 'now';
+        if (min < 60) return `${Math.floor(min)}m`;
+        if (min < 1440) return `${Math.floor(min / 60)}h`;
+        return `${Math.floor(min / 1440)}d`;
+    }
+
+    // ========================================================================
+    // Three.js init
+    // ========================================================================
+
+    function initScene() {
+        const canvas = document.getElementById('canvas');
+
+        scene = new THREE.Scene();
+        scene.background = new THREE.Color(0x050510);
+
+        sceneRoot = new THREE.Group();
+        scene.add(sceneRoot);
+
+        // Camera starts at center, looking outward — you're INSIDE the environment
+        camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.05, 300);
+        camera.position.set(0, 1.0, 0.1);  // Slightly above origin, looking outward
+
+        renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+        renderer.xr.enabled = true;
+        renderer.toneMapping = THREE.ACESFilmicToneMapping;
+        renderer.toneMappingExposure = 1.2;
+
+        // Orbit controls — target stays at center, camera orbits around it
+        controls = new OrbitControls(camera, renderer.domElement);
+        controls.enableDamping = true;
+        controls.dampingFactor = 0.05;
+        controls.target.set(0, 0, 0);
+        controls.autoRotate = true;
+        controls.autoRotateSpeed = 0.3;  // Very slow ambient rotation
+        controls.minDistance = 0.5;
+        controls.maxDistance = 30;
+        controls.enablePan = true;
+
+        // Lighting — from multiple directions for surround view
+        scene.add(new THREE.AmbientLight(0x303050, 0.6));
+
+        const lights = [
+            { color: 0xffffff, intensity: 0.8, pos: [10, 15, 10] },
+            { color: 0x8888ff, intensity: 0.4, pos: [-10, -5, -10] },
+            { color: 0xff8844, intensity: 0.2, pos: [5, -10, 15] },
+        ];
+        lights.forEach(l => {
+            const dl = new THREE.DirectionalLight(l.color, l.intensity);
+            dl.position.set(...l.pos);
+            scene.add(dl);
+        });
+
+        // Ambient particle field (subtle floating particles)
+        addParticleField();
+
+        // Starfield backdrop
+        addStarfield();
+
+        raycaster = new THREE.Raycaster();
+        tempMatrix = new THREE.Matrix4();
+
+        window.addEventListener('resize', onResize);
+        canvas.addEventListener('pointermove', onPointerMove);
+        canvas.addEventListener('pointerdown', onPointerDown);
+    }
+
+    function addParticleField() {
+        const geo = new THREE.BufferGeometry();
+        const positions = [];
+        const colors = [];
+
+        for (let i = 0; i < 400; i++) {
+            const r = 3 + Math.random() * 12;
+            const theta = Math.random() * Math.PI * 2;
+            const phi = Math.acos(2 * Math.random() - 1);
+            positions.push(
+                r * Math.sin(phi) * Math.cos(theta),
+                r * Math.sin(phi) * Math.sin(theta),
+                r * Math.cos(phi)
+            );
+            // Faint blue-white particles
+            const brightness = 0.3 + Math.random() * 0.4;
+            colors.push(brightness * 0.7, brightness * 0.75, brightness);
+        }
+        geo.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3));
+        geo.setAttribute('color', new THREE.Float32BufferAttribute(colors, 3));
+        const mat = new THREE.PointsMaterial({
+            size: 0.04, vertexColors: true,
+            transparent: true, opacity: 0.5,
+            sizeAttenuation: true,
+        });
+        const particles = new THREE.Points(geo, mat);
+        particles.userData.isParticles = true;
+        sceneRoot.add(particles);
+    }
+
+    function addStarfield() {
+        const geo = new THREE.BufferGeometry();
+        const positions = [];
+        for (let i = 0; i < 3000; i++) {
+            const r = 80 + Math.random() * 120;
+            const theta = Math.random() * Math.PI * 2;
+            const phi = Math.acos(2 * Math.random() - 1);
+            positions.push(
+                r * Math.sin(phi) * Math.cos(theta),
+                r * Math.sin(phi) * Math.sin(theta),
+                r * Math.cos(phi)
+            );
+        }
+        geo.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3));
+        const mat = new THREE.PointsMaterial({ color: 0xffffff, size: 0.12, sizeAttenuation: true });
+        scene.add(new THREE.Points(geo, mat));
+    }
+
+    // ========================================================================
+    // WebXR — opt-in immersive (takes over, hides other windows)
+    // ========================================================================
+
+    async function setupXR() {
+        const vrButton = document.getElementById('vr-button');
+
+        if (!navigator.xr) {
+            vrButton.textContent = 'WebXR not available';
+            vrButton.disabled = true;
+            return;
+        }
+
+        const supported = await navigator.xr.isSessionSupported('immersive-vr').catch(() => false);
+        if (!supported) {
+            vrButton.textContent = 'Immersive N/A';
+            vrButton.disabled = true;
+            return;
+        }
+
+        vrButton.textContent = 'Go Immersive (Full Space)';
+        vrButton.disabled = false;
+
+        vrButton.addEventListener('click', async () => {
+            if (xrSession) { xrSession.end(); return; }
+            try {
+                const session = await navigator.xr.requestSession('immersive-vr', {
+                    optionalFeatures: ['local-floor', 'bounded-floor', 'hand-tracking', 'layers'],
+                });
+                onSessionStarted(session);
+            } catch (e) {
+                console.error('Failed to start XR session:', e);
+            }
+        });
+    }
+
+    function onSessionStarted(session) {
+        xrSession = session;
+        isImmersive = true;
+
+        renderer.xr.setSession(session);
+        scene.background = null;
+        controls.autoRotate = false;
+
+        document.querySelectorAll('#info-panel, #legend, #controls-bar, #detail-panel')
+            .forEach(el => el.style.display = 'none');
+
+        setupControllers();
+        session.addEventListener('end', onSessionEnded);
+    }
+
+    function onSessionEnded() {
+        xrSession = null;
+        isImmersive = false;
+
+        scene.background = new THREE.Color(0x050510);
+        controls.autoRotate = autoRotate;
+
+        document.getElementById('info-panel').style.display = '';
+        document.getElementById('legend').style.display = '';
+        document.getElementById('controls-bar').style.display = '';
+    }
+
+    function setupControllers() {
+        const factory = new XRControllerModelFactory();
+
+        controller1 = renderer.xr.getController(0);
+        controller1.addEventListener('selectstart', e => performXRRaycast(e.target, true));
+        scene.add(controller1);
+
+        const grip1 = renderer.xr.getControllerGrip(0);
+        grip1.add(factory.createControllerModel(grip1));
+        scene.add(grip1);
+
+        controller2 = renderer.xr.getController(1);
+        scene.add(controller2);
+
+        const grip2 = renderer.xr.getControllerGrip(1);
+        grip2.add(factory.createControllerModel(grip2));
+        scene.add(grip2);
+
+        // Ray indicators
+        const rayGeo = new THREE.BufferGeometry().setFromPoints([
+            new THREE.Vector3(0, 0, 0), new THREE.Vector3(0, 0, -5),
+        ]);
+        const rayMat = new THREE.LineBasicMaterial({ color: 0x39ff14, transparent: true, opacity: 0.4 });
+        controller1.add(new THREE.Line(rayGeo.clone(), rayMat.clone()));
+        controller2.add(new THREE.Line(rayGeo.clone(), rayMat.clone()));
+    }
+
+    function performXRRaycast(controller, isClick = false) {
+        tempMatrix.identity().extractRotation(controller.matrixWorld);
+        raycaster.ray.origin.setFromMatrixPosition(controller.matrixWorld);
+        raycaster.ray.direction.set(0, 0, -1).applyMatrix4(tempMatrix);
+
+        const allMeshes = [];
+        nodes.forEach(m => allMeshes.push(m));
+        const intersects = raycaster.intersectObjects(allMeshes, false);
+
+        if (intersects.length > 0) {
+            const hit = intersects[0].object;
+            if (isClick && hit.userData.data) {
+                console.log('Selected:', hit.userData.data.pr_title || hit.userData.data.name);
+            }
+            highlightNode(hit);
+        } else {
+            clearHighlight();
+        }
+    }
+
+    // ========================================================================
+    // Interaction (flat screen / window mode)
+    // ========================================================================
+
+    const pointer = new THREE.Vector2();
+
+    function onPointerMove(e) {
+        pointer.x = (e.clientX / window.innerWidth) * 2 - 1;
+        pointer.y = -(e.clientY / window.innerHeight) * 2 + 1;
+
+        raycaster.setFromCamera(pointer, camera);
+        const allMeshes = [];
+        nodes.forEach(m => allMeshes.push(m));
+        const intersects = raycaster.intersectObjects(allMeshes, false);
+
+        if (intersects.length > 0) {
+            highlightNode(intersects[0].object);
+            renderer.domElement.style.cursor = 'pointer';
+        } else {
+            clearHighlight();
+            renderer.domElement.style.cursor = 'default';
+        }
+    }
+
+    function onPointerDown(e) {
+        if (hoveredNode && hoveredNode.userData.data) {
+            const node = hoveredNode.userData.data;
+            const url = node.pr_url || hoveredNode.userData.githubUrl;
+            if (url && e.button === 0) window.open(url, '_blank');
+        }
+    }
+
+    function highlightNode(mesh) {
+        if (hoveredNode === mesh) return;
+        clearHighlight();
+        hoveredNode = mesh;
+
+        if (mesh.material) {
+            mesh.userData._origEmissive = mesh.material.emissiveIntensity;
+            mesh.material.emissiveIntensity = 1.0;
+        }
+        mesh.scale.set(1.4, 1.4, 1.4);
+
+        if (!isImmersive && mesh.userData.data) {
+            const node = mesh.userData.data;
+            const panel = document.getElementById('detail-panel');
+            document.getElementById('detail-title').textContent = node.pr_title || node.name || node.branch;
+
+            let body = '';
+            if (node.pr_number) body += `<div class="detail-row">PR: <span>#${node.pr_number}</span></div>`;
+            if (node.branch) body += `<div class="detail-row">Branch: <span>${node.branch}</span></div>`;
+            if (node.pr_author) body += `<div class="detail-row">Author: <span>${node.pr_author}</span></div>`;
+            if (node.ci_status) body += `<div class="detail-row">CI: <span>${node.ci_status}</span></div>`;
+            if (node.last_updated) body += `<div class="detail-row">Updated: <span>${getTimeText(node)} ago</span></div>`;
+            if (node.repo_name) body += `<div class="detail-row">Repo: <span>${node.repo_name}</span></div>`;
+
+            document.getElementById('detail-body').innerHTML = body;
+            panel.style.display = 'block';
+        }
+    }
+
+    function clearHighlight() {
+        if (hoveredNode) {
+            if (hoveredNode.material && hoveredNode.userData._origEmissive !== undefined) {
+                hoveredNode.material.emissiveIntensity = hoveredNode.userData._origEmissive;
+            }
+            hoveredNode.scale.set(1, 1, 1);
+            hoveredNode = null;
+            if (!isImmersive) document.getElementById('detail-panel').style.display = 'none';
+        }
+    }
+
+    function onResize() {
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+    }
+
+    // ========================================================================
+    // Animation
+    // ========================================================================
+
+    const clock = new THREE.Clock();
+
+    function animate() {
+        const dt = clock.getDelta();
+        const elapsed = clock.elapsedTime;
+
+        if (!isImmersive) {
+            controls.update();
+        }
+
+        // Gentle bobbing of particle field
+        sceneRoot.children.forEach(c => {
+            if (c.userData.isParticles) {
+                c.rotation.y = elapsed * 0.02;
+                c.rotation.x = Math.sin(elapsed * 0.01) * 0.05;
+            }
+        });
+
+        // Subtle pulse on the center marker
+        sceneRoot.children.forEach(c => {
+            if (c.userData.isCenter) {
+                const s = 1 + Math.sin(elapsed * 2) * 0.15;
+                c.scale.set(s, s, s);
+                c.rotation.y = elapsed * 0.5;
+            }
+        });
+
+        // XR controller hover
+        if (isImmersive && controller1) {
+            performXRRaycast(controller1, false);
+        }
+
+        renderer.render(scene, camera);
+    }
+
+    // ========================================================================
+    // UI controls
+    // ========================================================================
+
+    function setupControls() {
+        const btnRotate = document.getElementById('btn-rotate');
+        const btnLayout = document.getElementById('btn-layout');
+
+        btnRotate.addEventListener('click', () => {
+            autoRotate = !autoRotate;
+            controls.autoRotate = autoRotate;
+            btnRotate.classList.toggle('active', autoRotate);
+        });
+
+        btnLayout.addEventListener('click', () => {
+            surroundMode = !surroundMode;
+            btnLayout.textContent = surroundMode ? 'Layout: Surround' : 'Layout: Flat';
+            btnLayout.classList.toggle('active', !surroundMode);
+
+            // Reset camera for new layout
+            if (surroundMode) {
+                camera.position.set(0, 1.0, 0.1);
+                controls.target.set(0, 0, 0);
+            } else {
+                camera.position.set(0, 8, 15);
+                controls.target.set(0, 0, 0);
+            }
+
+            buildScene();
+        });
+    }
+
+    // ========================================================================
+    // Init
+    // ========================================================================
+
+    async function init() {
+        initScene();
+        setupControls();
+        renderer.setAnimationLoop(animate);
+
+        const data = await fetchData();
+        if (data) {
+            trackerData = data;
+            buildScene();
+
+            const treeCount = Object.keys(data.trees || {}).length;
+            let nodeCount = 0;
+            nodes.forEach(() => nodeCount++);
+            const org = data.organization ? `${data.organization} · ` : '';
+            document.getElementById('status-text').textContent =
+                `${org}${treeCount} repos · ${nodeCount} PRs`;
+        } else {
+            document.getElementById('status-text').textContent = 'No data found — use ?data=path/to/file.json';
+        }
+
+        await setupXR();
+    }
+
+    init();
+    </script>
+</body>
+</html>
