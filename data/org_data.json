@@ -1,13 +1,13 @@
 {
   "organization": "BreadchainCoop",
-  "generated_at": "2026-03-30T00:20:44.791032+00:00",
-  "generation_time_seconds": 154.07,
+  "generated_at": "2026-03-31T00:19:41.383227+00:00",
+  "generation_time_seconds": 102.81,
   "stats": {
     "total_repos": 38,
     "repos_with_prs": 20,
     "repos_with_issues": 24,
     "total_open_prs": 80,
-    "total_open_issues": 181
+    "total_open_issues": 177
   },
   "trees": {
     "crowdstake.fun": {
@@ -18,7 +18,7 @@
       "pr_title": null,
       "pr_url": null,
       "pr_author": null,
-      "last_updated": "2026-03-29T17:03:38Z",
+      "last_updated": "2026-03-30T23:38:56Z",
       "ci_status": "",
       "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
       "is_draft": false,
@@ -27,116 +27,145 @@
       "parent_branch_name": null,
       "children": [
         {
-          "name": "Snapshot requiredVotes at proposal creation time",
-          "branch": "RonTuretzky/fix-issue-43",
+          "name": "refactor: add generic factory pattern for all modules (#36)",
+          "branch": "RonTuretzky/fix-issue-36",
           "repo_name": "crowdstake.fun",
-          "pr_number": 95,
-          "pr_title": "Snapshot requiredVotes at proposal creation time",
-          "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/95",
+          "pr_number": 100,
+          "pr_title": "refactor: add generic factory pattern for all modules (#36)",
+          "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/100",
           "pr_author": "RonTuretzky",
-          "last_updated": "2026-03-29T17:00:36Z",
+          "last_updated": "2026-03-30T22:39:22Z",
           "ci_status": "pass",
           "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
           "is_draft": false,
           "labels": [],
           "commits_from_parent": [
             {
-              "sha": "b87b05d8201f3fe0f1e61c5b32a18d7f3dab2af5",
-              "short_sha": "b87b05d",
-              "message": "Snapshot requiredVotes at proposal creation in VotingRecipientRegistry",
+              "sha": "4af644d3ecf2930807719dd759105b828a687b9c",
+              "short_sha": "4af644d",
+              "message": "refactor: add generic factory pattern for all modules and manager",
               "author": "Ron Turetzky",
               "author_login": "RonTuretzky",
               "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2026-03-25",
-              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/b87b05d8201f3fe0f1e61c5b32a18d7f3dab2af5"
+              "date": "2026-03-30",
+              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/4af644d3ecf2930807719dd759105b828a687b9c"
             },
             {
-              "sha": "10fc42c05e94732782b3c27003ceddef6e97d177",
-              "short_sha": "10fc42c",
+              "sha": "77c532b0750b36f9fb311689393444c8d55e93ca",
+              "short_sha": "77c532b",
               "message": "chore: auto-format code with forge fmt [auto-format]",
               "author": "github-actions[bot]",
               "author_login": "github-actions[bot]",
               "author_avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
-              "date": "2026-03-25",
-              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/10fc42c05e94732782b3c27003ceddef6e97d177"
+              "date": "2026-03-30",
+              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/77c532b0750b36f9fb311689393444c8d55e93ca"
             },
             {
-              "sha": "d5b22563ffccd4911f7c3337730ffae5792489a2",
-              "short_sha": "d5b2256",
-              "message": "Move requiredVotes to end of Proposal struct and add ProposalNotFound check to g",
+              "sha": "2b38a71b919185ca759bbbc6311bc710d328ad30",
+              "short_sha": "2b38a71",
+              "message": "address copilot review feedback",
               "author": "Ron Turetzky",
               "author_login": "RonTuretzky",
               "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2026-03-26",
-              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/d5b22563ffccd4911f7c3337730ffae5792489a2"
+              "date": "2026-03-30",
+              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/2b38a71b919185ca759bbbc6311bc710d328ad30"
+            },
+            {
+              "sha": "19e6b5e826529e994b78d20c48119e9dd2aee7a3",
+              "short_sha": "19e6b5e",
+              "message": "chore: auto-format code with forge fmt [auto-format]",
+              "author": "github-actions[bot]",
+              "author_login": "github-actions[bot]",
+              "author_avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+              "date": "2026-03-30",
+              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/19e6b5e826529e994b78d20c48119e9dd2aee7a3"
+            },
+            {
+              "sha": "e4d319bb3ae7a047ecb726ba5300a0945b8fb6fd",
+              "short_sha": "e4d319b",
+              "message": "Merge branch 'main' of https://github.com/BreadchainCoop/crowdstake.fun into Ron",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2026-03-30",
+              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/e4d319bb3ae7a047ecb726ba5300a0945b8fb6fd"
             }
           ],
           "parent_branch_name": "main",
-          "children": []
+          "children": [
+            {
+              "name": "refactor: rename blacklist/whitelist to denylist/allowlist, ",
+              "branch": "RonTuretzky/natspec-denylist",
+              "repo_name": "crowdstake.fun",
+              "pr_number": 101,
+              "pr_title": "refactor: rename blacklist/whitelist to denylist/allowlist, add NatSpec",
+              "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/101",
+              "pr_author": "RonTuretzky",
+              "last_updated": "2026-03-30T23:42:59Z",
+              "ci_status": "pass",
+              "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
+              "is_draft": false,
+              "labels": [],
+              "commits_from_parent": [
+                {
+                  "sha": "05703b65b4daafaae279de3ff20a7bfebe0a62c1",
+                  "short_sha": "05703b6",
+                  "message": "refactor: rename blacklist/whitelist to denylist/allowlist and add NatSpec to Cr",
+                  "author": "Ron Turetzky",
+                  "author_login": "RonTuretzky",
+                  "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+                  "date": "2026-03-30",
+                  "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/05703b65b4daafaae279de3ff20a7bfebe0a62c1"
+                }
+              ],
+              "parent_branch_name": "RonTuretzky/fix-issue-36",
+              "children": []
+            }
+          ]
         },
         {
-          "name": "refactor: implement EIP-7201 namespaced storage",
-          "branch": "RonTuretzky/eip7201-storage",
+          "name": "Refactor all modules to factory pattern (fixes #36)",
+          "branch": "RonTuretzky/factory-refactor",
           "repo_name": "crowdstake.fun",
-          "pr_number": 93,
-          "pr_title": "refactor: implement EIP-7201 namespaced storage",
-          "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/93",
+          "pr_number": 97,
+          "pr_title": "Refactor all modules to factory pattern (fixes #36)",
+          "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/97",
           "pr_author": "RonTuretzky",
-          "last_updated": "2026-03-29T17:03:39Z",
+          "last_updated": "2026-03-30T21:40:46Z",
           "ci_status": "pass",
           "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
           "is_draft": false,
           "labels": [],
           "commits_from_parent": [
             {
-              "sha": "d662763686c69ddfe6435b977664399c8a29d426",
-              "short_sha": "d662763",
-              "message": "refactor: implement EIP-7201 namespaced storage",
+              "sha": "3a61c496649a825f59e151b71262bb867bbbaba4",
+              "short_sha": "3a61c49",
+              "message": "refactor: add factory pattern for all modules and make CycleModule proxy-compati",
               "author": "Ron Turetzky",
               "author_login": "RonTuretzky",
               "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2026-03-20",
-              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/d662763686c69ddfe6435b977664399c8a29d426"
+              "date": "2026-03-30",
+              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/3a61c496649a825f59e151b71262bb867bbbaba4"
             },
             {
-              "sha": "12641118c0656a5f2698dd2039692672d1dff4d4",
-              "short_sha": "1264111",
+              "sha": "bd98757da45b966541ea1b35ee536996422729d6",
+              "short_sha": "bd98757",
               "message": "chore: auto-format code with forge fmt [auto-format]",
               "author": "github-actions[bot]",
               "author_login": "github-actions[bot]",
               "author_avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
-              "date": "2026-03-20",
-              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/12641118c0656a5f2698dd2039692672d1dff4d4"
+              "date": "2026-03-30",
+              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/bd98757da45b966541ea1b35ee536996422729d6"
             },
             {
-              "sha": "0f14dc6e51a3b7d12e74ea6eb37d52ce0a87cb62",
-              "short_sha": "0f14dc6",
-              "message": "fix: add array length getters for RecipientRegistry",
+              "sha": "f8f301584ad8f0e86dafc9065245d23244f8347e",
+              "short_sha": "f8f3015",
+              "message": "fix: address PR review comments",
               "author": "Ron Turetzky",
               "author_login": "RonTuretzky",
               "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2026-03-20",
-              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/0f14dc6e51a3b7d12e74ea6eb37d52ce0a87cb62"
-            },
-            {
-              "sha": "3689979423a84c77144fc06511b1c450541a7e4d",
-              "short_sha": "3689979",
-              "message": "fix: enforce timelock in finalizeNewYieldClaimer",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2026-03-25",
-              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/3689979423a84c77144fc06511b1c450541a7e4d"
-            },
-            {
-              "sha": "86d407871aef5551b766c03478afc3e907301517",
-              "short_sha": "86d4078",
-              "message": "fix: add zero-address checks in AbstractVotingModule init",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2026-03-25",
-              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/86d407871aef5551b766c03478afc3e907301517"
+              "date": "2026-03-30",
+              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/f8f301584ad8f0e86dafc9065245d23244f8347e"
             }
           ],
           "parent_branch_name": "main",
@@ -190,7 +219,7 @@
           "pr_title": "feat: implement VotingStreakNFTStrategy for Issue #24",
           "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/82",
           "pr_author": "PasqualePaoloSilvenni",
-          "last_updated": "2026-03-29T17:11:29Z",
+          "last_updated": "2026-03-30T20:50:45Z",
           "ci_status": "",
           "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
           "is_draft": true,
@@ -218,157 +247,6 @@
         }
       ]
     },
-    "solidarity-fund": {
-      "name": "solidarity-fund",
-      "branch": "dev",
-      "repo_name": "solidarity-fund",
-      "pr_number": null,
-      "pr_title": null,
-      "pr_url": null,
-      "pr_author": null,
-      "last_updated": "2026-03-27T19:41:26Z",
-      "ci_status": "",
-      "github_url": "https://github.com/BreadchainCoop/solidarity-fund",
-      "is_draft": false,
-      "labels": [],
-      "commits_from_parent": [],
-      "parent_branch_name": null,
-      "children": [
-        {
-          "name": "Ss251fix/187 fee on transfer accounting",
-          "branch": "ss251fix/187-fee-on-transfer-accounting",
-          "repo_name": "solidarity-fund",
-          "pr_number": 194,
-          "pr_title": "Ss251fix/187 fee on transfer accounting",
-          "pr_url": "https://github.com/BreadchainCoop/solidarity-fund/pull/194",
-          "pr_author": "bagelface",
-          "last_updated": "2026-03-27T19:43:32Z",
-          "ci_status": "pass",
-          "github_url": "https://github.com/BreadchainCoop/solidarity-fund",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "64eb38a7c79d3c34fede7d10a71adace8c91e722",
-              "short_sha": "64eb38a",
-              "message": "fix: use balance-before/after pattern in _deposit for fee-on-transfer tokens (#1",
-              "author": "ss251",
-              "author_login": "ss251",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/32437884?v=4",
-              "date": "2026-03-01",
-              "html_url": "https://github.com/BreadchainCoop/solidarity-fund/commit/64eb38a7c79d3c34fede7d10a71adace8c91e722"
-            },
-            {
-              "sha": "8219bffebac1baff4b5f483310f8afc8debd17ff",
-              "short_sha": "8219bff",
-              "message": "Merge pull request #188 from ss251/fix/187-fee-on-transfer-accounting",
-              "author": "bagelface.eth",
-              "author_login": "bagelface",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
-              "date": "2026-03-26",
-              "html_url": "https://github.com/BreadchainCoop/solidarity-fund/commit/8219bffebac1baff4b5f483310f8afc8debd17ff"
-            },
-            {
-              "sha": "a5fd7f099ecafb85ea92e9d5eb1284e8b9d874a6",
-              "short_sha": "a5fd7f0",
-              "message": "refactor: rename test, add natspec comment detail, and rename local variables fo",
-              "author": "bagelface",
-              "author_login": "bagelface",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
-              "date": "2026-03-27",
-              "html_url": "https://github.com/BreadchainCoop/solidarity-fund/commit/a5fd7f099ecafb85ea92e9d5eb1284e8b9d874a6"
-            }
-          ],
-          "parent_branch_name": "dev",
-          "children": []
-        },
-        {
-          "name": "Staging deployment",
-          "branch": "staging-deployment",
-          "repo_name": "solidarity-fund",
-          "pr_number": 163,
-          "pr_title": "Staging deployment",
-          "pr_url": "https://github.com/BreadchainCoop/solidarity-fund/pull/163",
-          "pr_author": "RonTuretzky",
-          "last_updated": "2025-08-10T19:05:35Z",
-          "ci_status": "pass",
-          "github_url": "https://github.com/BreadchainCoop/solidarity-fund",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "8d88aace1f68e8552a66fe58b9dc452cf4feffc7",
-              "short_sha": "8d88aac",
-              "message": "Add GitHub Actions workflow for automatic testnet deployment",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-07-22",
-              "html_url": "https://github.com/BreadchainCoop/solidarity-fund/commit/8d88aace1f68e8552a66fe58b9dc452cf4feffc7"
-            },
-            {
-              "sha": "da1e2954166c86a817fa3034670d99f8812ffe98",
-              "short_sha": "da1e295",
-              "message": "Add staging branch trigger to testnet deployment workflow",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-07-22",
-              "html_url": "https://github.com/BreadchainCoop/solidarity-fund/commit/da1e2954166c86a817fa3034670d99f8812ffe98"
-            },
-            {
-              "sha": "dabe818ed1450e9c762af7ae358801e9645d6cf6",
-              "short_sha": "dabe818",
-              "message": "Add comprehensive testnet deployment documentation",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-07-22",
-              "html_url": "https://github.com/BreadchainCoop/solidarity-fund/commit/dabe818ed1450e9c762af7ae358801e9645d6cf6"
-            },
-            {
-              "sha": "cfee5d8886590311335da0444bcdeed518b54af0",
-              "short_sha": "cfee5d8",
-              "message": "Add deployment tracking, verification, and artifact generation",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-07-22",
-              "html_url": "https://github.com/BreadchainCoop/solidarity-fund/commit/cfee5d8886590311335da0444bcdeed518b54af0"
-            },
-            {
-              "sha": "41f20d519b705573ec7a880b68e4bc2a35071d1d",
-              "short_sha": "41f20d5",
-              "message": "Update documentation with verification and artifact details",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2025-07-22",
-              "html_url": "https://github.com/BreadchainCoop/solidarity-fund/commit/41f20d519b705573ec7a880b68e4bc2a35071d1d"
-            }
-          ],
-          "parent_branch_name": "dev",
-          "children": []
-        },
-        {
-          "name": "feat: add timelock for upgrades",
-          "branch": "issue-132-fix",
-          "repo_name": "solidarity-fund",
-          "pr_number": 145,
-          "pr_title": "feat: add timelock for upgrades",
-          "pr_url": "https://github.com/BreadchainCoop/solidarity-fund/pull/145",
-          "pr_author": "RonTuretzky",
-          "last_updated": "2025-07-22T17:29:02Z",
-          "ci_status": "",
-          "github_url": "https://github.com/BreadchainCoop/solidarity-fund",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [],
-          "parent_branch_name": "dev",
-          "children": []
-        }
-      ]
-    },
     "etherform": {
       "name": "etherform",
       "branch": "main",
@@ -377,7 +255,7 @@
       "pr_title": null,
       "pr_url": null,
       "pr_author": null,
-      "last_updated": "2026-03-26T12:23:42Z",
+      "last_updated": "2026-03-30T16:49:44Z",
       "ci_status": "",
       "github_url": "https://github.com/BreadchainCoop/etherform",
       "is_draft": false,
@@ -386,28 +264,68 @@
       "parent_branch_name": null,
       "children": [
         {
-          "name": "feat: Node.js deps, RPC passthrough, coverage gating, Halmos",
-          "branch": "hudsonhrh/saving-circles-features",
+          "name": "Rubydusa/saving circles with upgrade safety no baseline",
+          "branch": "Rubydusa/saving-circles-with-upgrade-safety-no-baseline",
           "repo_name": "etherform",
-          "pr_number": 26,
-          "pr_title": "feat: Node.js deps, RPC passthrough, coverage gating, Halmos, commitlint",
-          "pr_url": "https://github.com/BreadchainCoop/etherform/pull/26",
-          "pr_author": "hudsonhrh",
-          "last_updated": "2026-03-19T10:22:10Z",
+          "pr_number": 29,
+          "pr_title": "Rubydusa/saving circles with upgrade safety no baseline",
+          "pr_url": "https://github.com/BreadchainCoop/etherform/pull/29",
+          "pr_author": "rubydusa",
+          "last_updated": "2026-03-30T16:49:44Z",
           "ci_status": "",
           "github_url": "https://github.com/BreadchainCoop/etherform",
           "is_draft": false,
           "labels": [],
           "commits_from_parent": [
             {
-              "sha": "b4983415255f91b621a92bd933ea5a4ba8d61d8f",
-              "short_sha": "b498341",
-              "message": "feat: add Node.js deps, RPC passthrough, coverage gating, Halmos, commitlint, co",
-              "author": "hudsonhrh",
-              "author_login": "hudsonhrh",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/76409831?v=4",
-              "date": "2026-03-17",
-              "html_url": "https://github.com/BreadchainCoop/etherform/commit/b4983415255f91b621a92bd933ea5a4ba8d61d8f"
+              "sha": "3d25b83dcecd48d2ecd9e31d15f02ec03f0883f6",
+              "short_sha": "3d25b83",
+              "message": "feat: upgrade safety validation",
+              "author": "rubydusa",
+              "author_login": "rubydusa",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/97784987?v=4",
+              "date": "2026-03-24",
+              "html_url": "https://github.com/BreadchainCoop/etherform/commit/3d25b83dcecd48d2ecd9e31d15f02ec03f0883f6"
+            },
+            {
+              "sha": "e720e1fb592d8b005a474500e45015f8be7c1a9d",
+              "short_sha": "e720e1f",
+              "message": "refactor: derive baseline path from upgrades path",
+              "author": "rubydusa",
+              "author_login": "rubydusa",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/97784987?v=4",
+              "date": "2026-03-24",
+              "html_url": "https://github.com/BreadchainCoop/etherform/commit/e720e1fb592d8b005a474500e45015f8be7c1a9d"
+            },
+            {
+              "sha": "899182adf8810ed00a4c9d683b2e093feaa282ee",
+              "short_sha": "899182a",
+              "message": "feat: check blockscout api url is actually blockscout api",
+              "author": "rubydusa",
+              "author_login": "rubydusa",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/97784987?v=4",
+              "date": "2026-03-25",
+              "html_url": "https://github.com/BreadchainCoop/etherform/commit/899182adf8810ed00a4c9d683b2e093feaa282ee"
+            },
+            {
+              "sha": "cd7f8d68e05307bf9b0844e78d04622cf44e184c",
+              "short_sha": "cd7f8d6",
+              "message": "fix: check appropriately that the blockscout api works",
+              "author": "rubydusa",
+              "author_login": "rubydusa",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/97784987?v=4",
+              "date": "2026-03-25",
+              "html_url": "https://github.com/BreadchainCoop/etherform/commit/cd7f8d68e05307bf9b0844e78d04622cf44e184c"
+            },
+            {
+              "sha": "87517cf74ae669d5345af5f4350688c90bb6056d",
+              "short_sha": "87517cf",
+              "message": "Merge branch 'Rubydusa/upgrade-safety-validation' into Rubydusa/saving-circles-w",
+              "author": "rubydusa",
+              "author_login": "rubydusa",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/97784987?v=4",
+              "date": "2026-03-25",
+              "html_url": "https://github.com/BreadchainCoop/etherform/commit/87517cf74ae669d5345af5f4350688c90bb6056d"
             }
           ],
           "parent_branch_name": "main",
@@ -572,7 +490,7 @@
               "pr_title": "refactor: replace submodule with local testing framework",
               "pr_url": "https://github.com/BreadchainCoop/etherform/pull/15",
               "pr_author": "RonTuretzky",
-              "last_updated": "2025-12-27T21:36:05Z",
+              "last_updated": "2026-03-30T10:45:24Z",
               "ci_status": "pass",
               "github_url": "https://github.com/BreadchainCoop/etherform",
               "is_draft": false,
@@ -672,7 +590,7 @@
       "pr_title": null,
       "pr_url": null,
       "pr_author": null,
-      "last_updated": "2026-03-26T12:21:02Z",
+      "last_updated": "2026-03-30T16:26:25Z",
       "ci_status": "",
       "github_url": "https://github.com/BreadchainCoop/saving-circles",
       "is_draft": false,
@@ -688,8 +606,8 @@
           "pr_title": "[DRAFT] etherform integration",
           "pr_url": "https://github.com/BreadchainCoop/saving-circles/pull/135",
           "pr_author": "rubydusa",
-          "last_updated": "2026-03-26T12:21:03Z",
-          "ci_status": "fail",
+          "last_updated": "2026-03-30T16:26:26Z",
+          "ci_status": "pass",
           "github_url": "https://github.com/BreadchainCoop/saving-circles",
           "is_draft": true,
           "labels": [],
@@ -853,72 +771,155 @@
           ],
           "parent_branch_name": "dev",
           "children": []
-        },
+        }
+      ]
+    },
+    "solidarity-fund": {
+      "name": "solidarity-fund",
+      "branch": "dev",
+      "repo_name": "solidarity-fund",
+      "pr_number": null,
+      "pr_title": null,
+      "pr_url": null,
+      "pr_author": null,
+      "last_updated": "2026-03-27T19:41:26Z",
+      "ci_status": "",
+      "github_url": "https://github.com/BreadchainCoop/solidarity-fund",
+      "is_draft": false,
+      "labels": [],
+      "commits_from_parent": [],
+      "parent_branch_name": null,
+      "children": [
         {
-          "name": "Integrate Etherform to saving-circles repo",
-          "branch": "71-integrate-etherform-cicd-deployment-into-savingcircles",
-          "repo_name": "saving-circles",
-          "pr_number": 72,
-          "pr_title": "Integrate Etherform to saving-circles repo",
-          "pr_url": "https://github.com/BreadchainCoop/saving-circles/pull/72",
-          "pr_author": "franrolotti",
-          "last_updated": "2026-02-10T14:59:58Z",
+          "name": "Ss251fix/187 fee on transfer accounting",
+          "branch": "ss251fix/187-fee-on-transfer-accounting",
+          "repo_name": "solidarity-fund",
+          "pr_number": 194,
+          "pr_title": "Ss251fix/187 fee on transfer accounting",
+          "pr_url": "https://github.com/BreadchainCoop/solidarity-fund/pull/194",
+          "pr_author": "bagelface",
+          "last_updated": "2026-03-27T19:43:32Z",
           "ci_status": "pass",
-          "github_url": "https://github.com/BreadchainCoop/saving-circles",
+          "github_url": "https://github.com/BreadchainCoop/solidarity-fund",
           "is_draft": false,
           "labels": [],
           "commits_from_parent": [
             {
-              "sha": "7df19e0e94687967223a133353938bc632227853",
-              "short_sha": "7df19e0",
-              "message": "feat: integrate etherform CI/CD pipeline",
-              "author": "Francisco Rolotti",
-              "author_login": "franrolotti",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-              "date": "2025-12-04",
-              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/7df19e0e94687967223a133353938bc632227853"
+              "sha": "64eb38a7c79d3c34fede7d10a71adace8c91e722",
+              "short_sha": "64eb38a",
+              "message": "fix: use balance-before/after pattern in _deposit for fee-on-transfer tokens (#1",
+              "author": "ss251",
+              "author_login": "ss251",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/32437884?v=4",
+              "date": "2026-03-01",
+              "html_url": "https://github.com/BreadchainCoop/solidarity-fund/commit/64eb38a7c79d3c34fede7d10a71adace8c91e722"
             },
             {
-              "sha": "1e19dc66255832a31794622fdf1dd81b0f723db9",
-              "short_sha": "1e19dc6",
-              "message": "refactor(script): rename Deploy.sol to Deploy.s.sol",
-              "author": "Francisco Rolotti",
-              "author_login": "franrolotti",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-              "date": "2025-12-04",
-              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/1e19dc66255832a31794622fdf1dd81b0f723db9"
+              "sha": "8219bffebac1baff4b5f483310f8afc8debd17ff",
+              "short_sha": "8219bff",
+              "message": "Merge pull request #188 from ss251/fix/187-fee-on-transfer-accounting",
+              "author": "bagelface.eth",
+              "author_login": "bagelface",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
+              "date": "2026-03-26",
+              "html_url": "https://github.com/BreadchainCoop/solidarity-fund/commit/8219bffebac1baff4b5f483310f8afc8debd17ff"
             },
             {
-              "sha": "9b7f59a6411be01110ea4a9901d2b2437ddadb18",
-              "short_sha": "9b7f59a",
-              "message": "chore: fix OZ remappings for lib submodules",
-              "author": "Francisco Rolotti",
-              "author_login": "franrolotti",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-              "date": "2025-12-08",
-              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/9b7f59a6411be01110ea4a9901d2b2437ddadb18"
-            },
-            {
-              "sha": "164a515d974c16d06fe14b47d9a1a80977303e4a",
-              "short_sha": "164a515",
-              "message": "chore: enable Sepolia deploy on PRs",
-              "author": "Francisco Rolotti",
-              "author_login": "franrolotti",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-              "date": "2025-12-08",
-              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/164a515d974c16d06fe14b47d9a1a80977303e4a"
-            },
-            {
-              "sha": "ad366ada0e3c2de2d73751aee80215570fc95145",
-              "short_sha": "ad366ad",
-              "message": "chore(ci): pass ADMIN_ADDRESS for testnet deploy",
-              "author": "Francisco Rolotti",
-              "author_login": "franrolotti",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/102830313?v=4",
-              "date": "2025-12-08",
-              "html_url": "https://github.com/BreadchainCoop/saving-circles/commit/ad366ada0e3c2de2d73751aee80215570fc95145"
+              "sha": "a5fd7f099ecafb85ea92e9d5eb1284e8b9d874a6",
+              "short_sha": "a5fd7f0",
+              "message": "refactor: rename test, add natspec comment detail, and rename local variables fo",
+              "author": "bagelface",
+              "author_login": "bagelface",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/87501783?v=4",
+              "date": "2026-03-27",
+              "html_url": "https://github.com/BreadchainCoop/solidarity-fund/commit/a5fd7f099ecafb85ea92e9d5eb1284e8b9d874a6"
             }
           ],
+          "parent_branch_name": "dev",
+          "children": []
+        },
+        {
+          "name": "Staging deployment",
+          "branch": "staging-deployment",
+          "repo_name": "solidarity-fund",
+          "pr_number": 163,
+          "pr_title": "Staging deployment",
+          "pr_url": "https://github.com/BreadchainCoop/solidarity-fund/pull/163",
+          "pr_author": "RonTuretzky",
+          "last_updated": "2025-08-10T19:05:35Z",
+          "ci_status": "pass",
+          "github_url": "https://github.com/BreadchainCoop/solidarity-fund",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "8d88aace1f68e8552a66fe58b9dc452cf4feffc7",
+              "short_sha": "8d88aac",
+              "message": "Add GitHub Actions workflow for automatic testnet deployment",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-07-22",
+              "html_url": "https://github.com/BreadchainCoop/solidarity-fund/commit/8d88aace1f68e8552a66fe58b9dc452cf4feffc7"
+            },
+            {
+              "sha": "da1e2954166c86a817fa3034670d99f8812ffe98",
+              "short_sha": "da1e295",
+              "message": "Add staging branch trigger to testnet deployment workflow",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-07-22",
+              "html_url": "https://github.com/BreadchainCoop/solidarity-fund/commit/da1e2954166c86a817fa3034670d99f8812ffe98"
+            },
+            {
+              "sha": "dabe818ed1450e9c762af7ae358801e9645d6cf6",
+              "short_sha": "dabe818",
+              "message": "Add comprehensive testnet deployment documentation",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-07-22",
+              "html_url": "https://github.com/BreadchainCoop/solidarity-fund/commit/dabe818ed1450e9c762af7ae358801e9645d6cf6"
+            },
+            {
+              "sha": "cfee5d8886590311335da0444bcdeed518b54af0",
+              "short_sha": "cfee5d8",
+              "message": "Add deployment tracking, verification, and artifact generation",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-07-22",
+              "html_url": "https://github.com/BreadchainCoop/solidarity-fund/commit/cfee5d8886590311335da0444bcdeed518b54af0"
+            },
+            {
+              "sha": "41f20d519b705573ec7a880b68e4bc2a35071d1d",
+              "short_sha": "41f20d5",
+              "message": "Update documentation with verification and artifact details",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2025-07-22",
+              "html_url": "https://github.com/BreadchainCoop/solidarity-fund/commit/41f20d519b705573ec7a880b68e4bc2a35071d1d"
+            }
+          ],
+          "parent_branch_name": "dev",
+          "children": []
+        },
+        {
+          "name": "feat: add timelock for upgrades",
+          "branch": "issue-132-fix",
+          "repo_name": "solidarity-fund",
+          "pr_number": 145,
+          "pr_title": "feat: add timelock for upgrades",
+          "pr_url": "https://github.com/BreadchainCoop/solidarity-fund/pull/145",
+          "pr_author": "RonTuretzky",
+          "last_updated": "2025-07-22T17:29:02Z",
+          "ci_status": "",
+          "github_url": "https://github.com/BreadchainCoop/solidarity-fund",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [],
           "parent_branch_name": "dev",
           "children": []
         }
@@ -3900,36 +3901,6 @@
           "body": "## Feature Request: Voting with Additional Bytes for Downstream Implementations\n\n### Motivation\n\nEnable voting modules to accept arbitrary `bytes` data that can be handled by downstream implementations, providing flexibility for features like custom multipliers, metadata, or other protocol-specific parameters.\n\nThis follows the pattern established in the [Breadchain repository](https://github.com/BreadchainCoop/breadchain), which implements a sophisticated voting multipliers system through `castVoteWithMultipliers` function. However, the current BreadKit voting module implementation lacks a generic mechanism to pass additional data to voting functions.\n\n### Context from Breadchain\n\nThe Breadchain repo demonstrates advanced voting features:\n- **VotingMultipliers.sol**: Manages allowlisted multipliers for voting power calculation\n- **castVoteWithMultipliers**: Accepts multiplier indices to apply different voting power modifiers\n- Multiple multiplier types: NFT-based, proveable, cross-chain, etc.\n\nReference: [Breadchain VotingMultipliers Implementation](https://github.com/BreadchainCoop/breadchain/blob/main/src/VotingMultipliers.sol)\n\n### Current Limitation\n\nThe current BreadKit voting module only supports:\n```solidity\nfunction castVoteWithSignature(\n    address voter, \n    uint256[] calldata points, \n    uint256 nonce, \n    bytes calldata signature\n) external;\n```\n\nThere's no mechanism to pass additional protocol-specific data that downstream implementations might need.\n\n### Proposed Solution\n\nAdd new voting functions that accept an additional `bytes` parameter, following OpenZeppelin Governor patterns:\n\n```solidity\n// In AbstractVotingModule or concrete implementations\nfunction castVoteWithSignatureAndParams(\n    address voter,\n    uint256[] calldata points,\n    uint256 nonce,\n    bytes calldata signature,\n    bytes calldata additionalData\n) external virtual;\n\n// Internal processing\nfunction _processVoteWithParams(\n    address voter,\n    uint256[] calldata points,\n  "
         },
         {
-          "number": 47,
-          "title": "Add identifier emission to DistributionStrategy",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-17T05:47:30Z",
-          "updated_at": "2026-03-23T21:31:32Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/47",
-          "labels": [
-            "enhancement"
-          ],
-          "assignees": [],
-          "comments": [
-            {
-              "id": "IC_kwDOPeu91c71NAzc",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "## Dependencies\n- Blocked by #37 (Implement Distribution Strategy Module)",
-              "createdAt": "2026-03-23T21:31:32Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/47#issuecomment-4113829084",
-              "viewerDidAuthor": false
-            }
-          ],
-          "body": "## Introduction\nThe DistributionStrategy is a core component in Breadkit, responsible for determining how distributions are handled. Currently, it lacks a mechanism to emit an identifier for each distribution event, which is important for tracking and referencing distributions.\n\n## Problem Statement\nThere is no way to uniquely identify distribution events within the DistributionStrategy. This absence makes it difficult to audit, track, or reference specific distributions, especially when integrating with external systems or when troubleshooting issues.\n\n## Proposed Solution\nAdd an identifier property to DistributionStrategy and emit this identifier whenever a distribution occurs.\n\n---\n\n## Mermaid Diagrams\n\n### Sequence Diagram\n```mermaid\nsequenceDiagram\n  participant User\n  participant DistributionStrategy\n  participant ExternalSystem\n\n  User->>DistributionStrategy: initiateDistribution()\n  DistributionStrategy->>DistributionStrategy: generateIdentifier()\n  DistributionStrategy->>ExternalSystem: emit(identifier)\n```\n\n### Class Diagram\n```mermaid\nclassDiagram\n  class DistributionStrategy {\n    +distribute()\n    +generateIdentifier()\n    +emit(identifier)\n    -identifier\n  }\n```\n\n---\n\n## Code Snippets\n```solidity\ncontract DistributionStrategy {\n    uint256 private _identifier;\n\n    event DistributionEmitted(uint256 identifier);\n\n    function distribute() public {\n        _identifier++;\n        emit DistributionEmitted(_identifier);\n        // distribution logic\n    }\n}\n```\n"
-        },
-        {
           "number": 46,
           "title": "Review and Implement Gelato Automation Integration",
           "author": "RonTuretzky",
@@ -3988,48 +3959,6 @@
           "assignees": [],
           "comments": [],
           "body": "## Introduction\n\nThis issue proposes adding support to pay Chainlink Automation fees directly from yield generated within Breadkit, extending the current integration to allow programmatic upkeep registration and management.\n\n## Problem Statement\n\nCurrently, Breadkit integrates Chainlink Automation for yield strategies, but payment of automation fees is not automated and requires manual funding. This limits the protocol's ability to dynamically register, fund, and manage upkeeps based on yield performance and strategy execution.\n\n## Solution Overview\n\nImplement programmatic upkeep registration and funding, enabling Breadkit contracts to automatically pay automation fees from yield and manage upkeeps lifecycle (register, fund, edit, cancel) via the Chainlink Automation registry.\n\n### Registration Flow\n- Ensure contract is Automation Compatible.\n- Maintain upgradable references to LINK token, registry, and registrar addresses.\n- Use interface definitions for LINK, Registrar, and Registry.\n- Register upkeeps programmatically using LINK approval and `registerUpkeep` functions.\n\n## Mermaid Diagrams\n\n### Class Diagram\n```mermaid\nclassDiagram\n  BreadkitYieldStrategy <|-- AutomationRegistrarInterface\n  BreadkitYieldStrategy <|-- LinkTokenInterface\n  AutomationRegistrarInterface <|-- Registry\n```\n\n### Sequence Diagram\n```mermaid\nsequenceDiagram\n  participant BreadkitContract\n  participant LINKToken\n  participant AutomationRegistrar\n  BreadkitContract->>LINKToken: approve(registrar, amount)\n  BreadkitContract->>AutomationRegistrar: registerUpkeep(params)\n  AutomationRegistrar-->>BreadkitContract: upkeepID\n```\n\n## Example Code Snippet\n```solidity\n// SPDX-License-Identifier: MIT\npragma solidity 0.8.19;\n\nimport {LinkTokenInterface} from \"@chainlink/contracts/src/v0.8/shared/interfaces/LinkTokenInterface.sol\";\n\nstruct RegistrationParams {\n    string name;\n    bytes encryptedEmail;\n    address upkeepContract;\n    uint32 gasLimit;\n    address adminAddress;\n    uint8 triggerType;\n   "
-        },
-        {
-          "number": 43,
-          "title": "Backlog: Store required votes at proposal creation in VotingRecipientRegistry",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-17T04:17:48Z",
-          "updated_at": "2026-03-23T21:31:31Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/43",
-          "labels": [],
-          "assignees": [],
-          "comments": [
-            {
-              "id": "IC_kwDOPeu91c71NAyS",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "## Dependencies\n- Blocked by #2 (Implement Voting Module)",
-              "createdAt": "2026-03-23T21:31:31Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/43#issuecomment-4113829010",
-              "viewerDidAuthor": false
-            }
-          ],
-          "body": "## Introduction\n\nCurrently, the VotingRecipientRegistry calculates the required votes for a proposal during execution based on the current number of recipients. This logic is found at line 198:\n\n```solidity\nuint256 requiredVotes = proposal.isAddition ? recipients.length : recipients.length - 1;\n```\n\n## Problem Statement\n\nThe required votes calculation may change between voting and execution if recipients are added or removed during the proposal period. This dynamic behavior can result in:\n- Proposals being auto-executed when they shouldn't be (if the required votes decrease after creation).\n- Proposals failing to execute when they should (if the required votes increase after creation).\n\nThis undermines the reliability and predictability of proposal outcomes.\n\n## Suggested Solution\n\nStore the required votes calculation at the time of proposal creation, rather than recalculating at execution. This ensures that the threshold remains consistent throughout the proposal's lifecycle.\n\n### Example Code Snippet\n\nAt proposal creation:\n```solidity\nproposal.requiredVotes = proposal.isAddition ? recipients.length : recipients.length - 1;\n```\n\nDuring execution:\n```solidity\nrequire(proposal.votes >= proposal.requiredVotes, \"Not enough votes\");\n```\n\n## Mermaid Sequence Diagram\n Current Implementation (threshold recalculated at execution)\n```mermaid\nsequenceDiagram\n    participant U as User\n    participant C as Contract (VotingRecipientRegistry)\n\n    U->>C: createProposal(isAddition, target)\n    Note over C: Does NOT snapshot requiredVotes\n\n    loop Voting period\n        U->>C: castVote(proposalId)\n        alt Other proposals execute in parallel\n            U->>C: executeOtherProposal()\n            Note over C: recipients.length may change\n        end\n    end\n\n    U->>C: execute(proposalId)\n    C->>C: requiredVotes = isAddition ? recipients.length : recipients.length - 1\n    alt votes >= requiredVotes (computed now)\n        C->>C: apply change (add/remove target)\n        C-->>U: suc"
-        },
-        {
-          "number": 42,
-          "title": "Refactor QueueProcessed event on Recipient Registry",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-17T04:09:26Z",
-          "updated_at": "2025-08-19T00:33:13Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/42",
-          "labels": [
-            "good first issue"
-          ],
-          "assignees": [],
-          "comments": [],
-          "body": "This backlog issue proposes a refactor of the `QueueProcessed` event in the Recipient Registry module to include the added list, the removed list, and the new list.. The goal is to improve maintainability, readability, and possibly performance of the event logic. \n\n\n\n- [ ] Update the event to include those  parameters\n- [ ] remove duplicate implementations in test files \n\nThis refactor will help streamline future development and reduce technical debt.\n"
         },
         {
           "number": 36,
@@ -4104,585 +4033,6 @@
         }
       ]
     },
-    "solidarity-fund": {
-      "repo_name": "solidarity-fund",
-      "github_url": "https://github.com/BreadchainCoop/solidarity-fund",
-      "issues": [
-        {
-          "number": 187,
-          "title": "Fee-on-Transfer Token Drains ButteredBread",
-          "author": "bagelface",
-          "created_at": "2026-02-19T01:01:01Z",
-          "updated_at": "2026-02-19T01:01:01Z",
-          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/187",
-          "labels": [
-            "bug"
-          ],
-          "assignees": [],
-          "comments": [],
-          "body": "### Summary\n\n`ButteredBread._deposit()` trusts the `_amount` parameter for internal accounting without verifying how many tokens were actually received. If an allowlisted LP token has a transfer fee (fee-on-transfer token), the contract's recorded balances will exceed its actual token holdings, allowing users to drain other depositors' funds.\n\n**Note: This becomes an active vulnerability only if we allowlist a token pair that has transfer fees.**\n\n### Details\n\n\"src/ButteredBread.sol:145-158\" \u2014 `_deposit`:\n\n```solidity\nfunction _deposit(address _account, address _lp, uint256 _amount) internal {\n    bool success = IERC20(_lp).transferFrom(_account, address(this), _amount);\n    if (!success) revert TransferFailed();\n    // ...\n    _accountToLPData[_account][_lp].balance += _amount;          // records requested amount\n    _mint(_account, _amount * scalingFactors[_lp] / FIXED_POINT_PERCENT); // mints based on requested amount\n}\n```\n\nThe contract records `_amount` (the requested transfer amount), not the actual amount received. For a fee-on-transfer token, `transferFrom(sender, address(this), 1000)` might only deliver 950 tokens to the contract, but the accounting records 1000.\n\n### Steps to Produce\n\n1. **Setup:** Admin allowlists an LP token that has a 5% transfer fee (or a previously-normal token upgrades to add a fee).\n2. **Deposits inflate accounting:** Alice deposits 1000 LP tokens. ButteredBread receives 950 tokens (50 taken as fee), but records balance = 1000 and mints ButteredBread tokens for the full 1000.\n3. **Repeat:** Multiple users deposit, each time the contract's actual balance falls further behind its recorded balance.\n4. **Drain via withdrawal** (\"src/ButteredBread.sol:161-174\"):\n```solidity\nfunction _withdraw(address _account, address _lp, uint256 _amount) internal {\n  if (_amount > _accountToLPData[_account][_lp].balance) revert InsufficientFunds();\n  _accountToLPData[_account][_lp].balance -= _amount;\n  _burn(_account, _amount * scalingFactors[_lp] / "
-        },
-        {
-          "number": 186,
-          "title": "Voting power can be amplified by repeating multiplier indexes",
-          "author": "bagelface",
-          "created_at": "2026-02-19T00:16:18Z",
-          "updated_at": "2026-02-19T00:16:18Z",
-          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/186",
-          "labels": [
-            "bug"
-          ],
-          "assignees": [],
-          "comments": [],
-          "body": "### Summary\n\nA voter can pass the same allowlisted multiplier index multiple times to stack its bonus repeatedly, inflating voting power and diverting $BREAD yield to attacker-favored projects.\n\n### Impact\n\nAny voter can artificially inflate their voting power when using `castVoteWithMultipliers()`. If the attacker (or a colluding party) controls any address in `projects`, they can allocate disproportionate votes to that project and siphon a correspondingly disproportionate share of the contract's $BREAD balance during `distributeYield()`/`distributeYieldGK()`, reducing payouts to legitimate member projects.\n\n### Steps to Produce\n\nLet `i` be the allowlisted index of any multiplier that returns `factor > 1e18` for the attacker (e.g., an NFT-based multiplier). Call `castVoteWithMultipliers(points, multiplierIndices)` with `multiplierIndices = [i, i, i, ..., i]` (repeated many times) and `points` allocating nearly all points to the attacker's chosen project. The computed `_multiplier` grows linearly with the number of repeats, scaling `_currentVotingPower` and shifting yield toward the targeted project.\n\n### Fix\n\nEnforce uniqueness of `_multiplierIndexes` (e.g., require strict ascending order and reject duplicates, or track seen indexes in a temporary bitmap/mapping). Optionally cap the maximum number of multipliers that can be applied per vote to bound worst-case voting power amplification and gas usage."
-        },
-        {
-          "number": 185,
-          "title": "Voting streak multiplier can be maxed in one cycle by spamming `updateMultiplyingFactor`",
-          "author": "bagelface",
-          "created_at": "2026-02-18T23:44:19Z",
-          "updated_at": "2026-02-18T23:44:19Z",
-          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/185",
-          "labels": [
-            "bug"
-          ],
-          "assignees": [],
-          "comments": [],
-          "body": "### Summary\n\n`VotingStreakMultiplier.updateMultiplyingFactor()` can be called repeatedly before voting in a cycle to ratchet `userToMultiplier` up to its maximum immediately, enabling users to artificially inflate voting power and divert yield distributions.\n\n### Impact\n\nA user can obtain the maximum streak multiplier without maintaining an actual streak by calling `updateMultiplyingFactor()` in a loop before submitting their vote for the current cycle. This artificially increases their voting weight and can redirect a larger portion of the distributor's $BREAD yield to their preferred project(s). If the attacker controls (or economically benefits from) an eligible project address, this becomes a direct loss of platform assets from the distributor to the attacker-controlled recipient.\n\n### Steps to Produce\n\nWithin a single transaction (or across multiple), call `VotingStreakMultiplier.updateMultiplyingFactor(attacker)` repeatedly up to the cap while `yieldDistributor.accountLastVoted(attacker) <= yieldDistributor.lastClaimedBlockNumber()` remains true. Then call `YieldDistributor.castVoteWithMultipliers(points, [votingStreakMultiplierIndex])` to apply the inflated multiplier and skew the next yield distribution.\n\n### Fix\n\nTrack and enforce a single multiplier update per voting cycle (e.g., `lastUpdatedCycle[user]`) or require a verifiable condition tied to completing the previous cycle's vote (and only increment once per cycle transition). Consider moving streak tracking into \"YieldDistributor\" contract (or another canonical source of cycle state) and making the multiplier computation purely view-based to remove externally spammable state transitions."
-        },
-        {
-          "number": 184,
-          "title": "Calling `distributeYieldGK` bypasses multipliers",
-          "author": "bagelface",
-          "created_at": "2026-02-18T23:41:22Z",
-          "updated_at": "2026-02-18T23:45:41Z",
-          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/184",
-          "labels": [
-            "bug"
-          ],
-          "assignees": [],
-          "comments": [],
-          "body": "### Summary\n\n`distributeYieldGK()` recomputes voting weights without applying vote multipliers, letting any caller force a yield distribution that ignores the multiplier rules and misallocates platform yield funds.\n\n### Impact\n\nDuring a cycle where some voters legitimately increase their voting power via allowlisted multipliers, any external account can call `distributeYieldGK()` and force distribution using an alternate computation that ignores those multipliers. This can divert $BREAD yield away from projects that should receive the multiplier-influenced allocation and toward other projects, directly changing who receives funds from the distributor in that cycle.\n\n### Steps to Produce\n\n1. Have at least one voter use `castVoteWithMultipliers()` to boost voting power for Project A (by selecting allowlisted multipliers).\n2. Once `resolveYieldDistribution()` conditions are satisfied, an attacker calls `distributeYieldGK()` instead of `distributeYield()`.\n3. Yield is distributed using `_computeVotedDistribution()` (no multipliers), reducing Project A's payout compared to the multiplier-aware distribution.\n\n### Fix\n\nEnsure both distribution paths use the same multiplier-aware vote weights. If the goal is to avoid OOG, store each voter's effective (multiplier-adjusted) voting power at vote time and use it in any recomputation path, or apply the selected multipliers during `_computeVotedDistribution()` in a way that cannot be bypassed by choosing a different entrypoint."
-        },
-        {
-          "number": 172,
-          "title": "Test Upgrade Simulation for Latest Release",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-10T13:16:58Z",
-          "updated_at": "2025-08-10T13:16:58Z",
-          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/172",
-          "labels": [
-            "question"
-          ],
-          "assignees": [],
-          "comments": [],
-          "body": "## Description\nCreate a comprehensive test that simulates an upgrade from the latest release tag and executes a hardcoded flow covering key user and system interactions:\n\n### Flows to Simulate\n- Users voting on proposals\n- Yield distribution to participants\n- Adding multipliers to system parameters\n- Usage of buttered bread in relevant scenarios\n- Any other core user flows or edge cases involved in upgrade\n\n## Acceptance Criteria\n- Test should initialize from the latest tagged release\n- All listed flows must be executed and validated\n\n## Rationale\nThis simulation ensures that critical user and system flows continue to function correctly after upgrades, reducing risk of regressions and unexpected errors.\n\n## Additional Notes\n- Please specify any assumptions or limitations in the test script/comments.\n- Consider using existing test frameworks and utilities where possible.\n"
-        },
-        {
-          "number": 171,
-          "title": "Release v1.0.5",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-10T13:00:36Z",
-          "updated_at": "2025-08-10T13:00:36Z",
-          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/171",
-          "labels": [],
-          "assignees": [],
-          "comments": [],
-          "body": "## Introduction\nThis issue tracks the release of version v1.0.5 for breadchain.\nAdd all relevant issues as subissues here \n"
-        },
-        {
-          "number": 170,
-          "title": "Voting Boost for Users with BREAD Transactions",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-10T12:55:47Z",
-          "updated_at": "2025-08-10T13:12:44Z",
-          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/170",
-          "labels": [
-            "enhancement"
-          ],
-          "assignees": [],
-          "comments": [
-            {
-              "id": "IC_kwDOLJ8tZs69GmIf",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "COLLABORATOR",
-              "body": "This may be trivially accounted for by summing up the amount of checkpoints the user has in the last voting cycle, can be easily gamed so unclear if this issue should specify additional parameters, include sybil detection , etc. ",
-              "createdAt": "2025-08-10T13:12:44Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/170#issuecomment-3172622879",
-              "viewerDidAuthor": false
-            }
-          ],
-          "body": "## Introduction\nEncourage ecosystem engagement by providing a voting boost to users who have made any BREAD transactions.\n\n## Problem Statement\nUsers who actively participate in BREAD transactions should be acknowledged in the voting system to incentivize further activity.\n\n## Background\nActivity-based boosts are widely used to grow participation and foster healthy ecosystems.\n\n## Solution Overview\nImplement a check for any BREAD transaction activity and grant a voting boost to qualifying users.\n\n```mermaid\nsequenceDiagram\n    participant User\n    participant TransactionSystem\n    participant VotingSystem\n    User->>TransactionSystem: Make BREAD transaction\n    TransactionSystem->>VotingSystem: Report transaction\n    VotingSystem->>User: Grant voting boost\n```\n\n"
-        },
-        {
-          "number": 169,
-          "title": "Boost for Never Burning BREAD in Previous Cycle",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-10T12:55:44Z",
-          "updated_at": "2025-08-10T13:11:18Z",
-          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/169",
-          "labels": [
-            "enhancement"
-          ],
-          "assignees": [],
-          "comments": [
-            {
-              "id": "IC_kwDOLJ8tZs69Gl6b",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "COLLABORATOR",
-              "body": "This issue is non trivial, as ERC20Votes does not specify whether a balance decrease is a burn or a transfer, but by cross-referencing with `getPastTotalSupply` , we may be able to ascertain whether a balance decrease is a burn or a transfer (as a transfer should not decrease the total supply). there may be conflicts with other users burns at the same `timepoint` potentially creating a obfuscation , needs to be looked into further. ",
-              "createdAt": "2025-08-10T13:11:18Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/169#issuecomment-3172621979",
-              "viewerDidAuthor": false
-            }
-          ],
-          "body": "## Introduction\nEncourage positive contributions by offering a voting boost to users who have not burned any BREAD in the previous cycle.\n\n## Problem Statement\nDiscouraging destructive actions (burning BREAD) can help maintain a healthy ecosystem.\n\n## Background\nIncentivizing retaining TVL may lead to more stable growth and participation.\n\n## Solution Overview\nCheck user activity in the previous cycle; if no BREAD was burned, grant a voting boost.\n\n```mermaid\nsequenceDiagram\n    participant User\n    participant TransactionSystem\n    participant VotingSystem\n    User->>TransactionSystem: Check burn activity\n    TransactionSystem->>VotingSystem: Report burn status\n    VotingSystem->>User: Grant boost if no burns\n```\n"
-        },
-        {
-          "number": 168,
-          "title": "Boost for Baking at Least 10 BREAD in Previous Cycle",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-10T12:55:43Z",
-          "updated_at": "2025-08-10T13:04:50Z",
-          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/168",
-          "labels": [
-            "enhancement"
-          ],
-          "assignees": [],
-          "comments": [
-            {
-              "id": "IC_kwDOLJ8tZs69Gk6S",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "COLLABORATOR",
-              "body": "Open questions: \n\n- what if they baked 10 $BREAD but then burned it? should we account for net $BREAD balance gain?\n- should we use the last ERC20Votes checkpoint to get the balance in the last cycle for reference? \n- is 10 really the number we want to incentivize?",
-              "createdAt": "2025-08-10T13:04:50Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/168#issuecomment-3172617874",
-              "viewerDidAuthor": false
-            }
-          ],
-          "body": "## Introduction\nReward active bakers by providing a voting boost to those who baked at least 10 BREAD in the previous cycle.\n\n## Problem Statement\nHigh contributors to the Breadchain ecosystem should be incentivized to continue their activity.\n\n## Background\nRecognizing top contributors in each cycle encourages ongoing engagement and participation in the ecosystem.\n\n## Solution Overview\nImplement a check for users who baked 10+ BREAD in the previous cycle and grant them a voting boost.\n\n```mermaid\nsequenceDiagram\n    participant User\n    participant TransactionSystem\n    participant VotingSystem\n    User->>TransactionSystem: Bake BREAD\n    TransactionSystem->>VotingSystem: Report baking totals\n    VotingSystem->>User: Grant boost if threshold met\n```\n"
-        },
-        {
-          "number": 167,
-          "title": "Add POAP Boost for Attending Community Calls",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-10T12:55:41Z",
-          "updated_at": "2025-08-10T13:03:25Z",
-          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/167",
-          "labels": [
-            "enhancement"
-          ],
-          "assignees": [],
-          "comments": [
-            {
-              "id": "IC_kwDOLJ8tZs69Gkrh",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "COLLABORATOR",
-              "body": "seems this would be as simple as #166 ",
-              "createdAt": "2025-08-10T13:03:25Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/167#issuecomment-3172616929",
-              "viewerDidAuthor": false
-            }
-          ],
-          "body": "## Introduction\nEncourage participation in community calls by rewarding users with a POAP boost for attending.\n\n## Problem Statement\nCommunity call attendance can be sporadic. A direct incentive tied to voting could increase engagement.\n\n## Background\nPOAP (Proof of Attendance Protocol) NFTs are commonly used to verify event attendance. Integrating POAP into voting boosts can gamify community involvement.\n\n## Solution Overview\nGrant a voting boost to users who hold a POAP NFT for a Breadchain community call.\n\n```mermaid\nsequenceDiagram\n    participant User\n    participant EventSystem\n    participant VotingSystem\n    User->>EventSystem: Attend community call\n    EventSystem->>User: Issue POAP\n    User->>VotingSystem: Present POAP\n    VotingSystem->>User: Grant voting boost\n```\n"
-        },
-        {
-          "number": 166,
-          "title": "Voting Boost for TBS NFT Holders",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-10T12:55:37Z",
-          "updated_at": "2025-08-10T13:02:50Z",
-          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/166",
-          "labels": [
-            "enhancement"
-          ],
-          "assignees": [],
-          "comments": [
-            {
-              "id": "IC_kwDOLJ8tZs69Gkl3",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "COLLABORATOR",
-              "body": "@secbajor please advise, with the current impl is it as simple as just using [this](https://github.com/BreadchainCoop/breadchain/blob/dev/script/deploy/DeployNFTMultiplier.s.sol) script and then calling [this](https://github.com/BreadchainCoop/breadchain/blob/d74a84c8c8dce4187040edced2160c828eafb938/src/VotingMultipliers.sol#L49) ? I assume there would be frontend changes necessary as well ",
-              "createdAt": "2025-08-10T13:02:50Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/166#issuecomment-3172616567",
-              "viewerDidAuthor": false
-            }
-          ],
-          "body": "## Introduction\nProvide a voting boost for users holding a TBS NFT to encourage NFT participation and holding.\n\n## Problem Statement\nNFT holders may not currently receive direct benefits in the voting system, which can reduce incentive to participate.\n\n## Background\nNFT-based boosts have become a popular method to encourage participation and engagement in various platforms.\n\n## Solution Overview\nGrant a voting boost to users who hold a TBS NFT.\n\n"
-        },
-        {
-          "number": 164,
-          "title": "Release v1.0.4",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-10T12:44:12Z",
-          "updated_at": "2025-08-10T12:44:12Z",
-          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/164",
-          "labels": [],
-          "assignees": [],
-          "comments": [],
-          "body": "Prepare and publish release v1.0.4 for the breadchaincoop/breadchain repository.\n\n\nThis issue tracks all tasks required to complete and publicize v1.0.4.\nPlease track all issues for the next release as sub-issues here "
-        },
-        {
-          "number": 156,
-          "title": "Explore Extending VotesExtendedUpgradeable for Variable Delegations",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-06T04:37:13Z",
-          "updated_at": "2025-08-06T04:37:13Z",
-          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/156",
-          "labels": [
-            "enhancement"
-          ],
-          "assignees": [],
-          "comments": [],
-          "body": "Investigate the feasibility and design of extending [OpenZeppelin's VotesExtendedUpgradeable](https://github.com/OpenZeppelin/openzeppelin-contracts-upgradeable/blob/master/contracts/governance/utils/VotesExtendedUpgradeable.sol) to support variable delegations within the breadchain project. \n\n**Goals:**\n- Assess current delegation limitations in VotesExtendedUpgradeable\n- Propose and discuss potential approaches for enabling variable delegation amounts\n- Evaluate compatibility and upgradeability concerns\n- Draft a proof-of-concept or outline next steps for implementation\n\n**Background:**\nThe current VotesExtendedUpgradeable contract primarily supports fixed or all-or-nothing delegation. Enabling variable delegations could allow more flexible governance models, such as partial vote splitting or proportional delegation, which may be more human and less vc washed governance bullshit. \n\n**References:**\n- [VotesExtendedUpgradeable.sol](https://github.com/OpenZeppelin/openzeppelin-contracts-upgradeable/blob/master/contracts/governance/utils/VotesExtendedUpgradeable.sol)\n\n**Next Steps:**\n- Scope technical requirements\n- Draft implementation plan or prototype\n- Effort estimation and value add analysis \n- UX research to validate value \n"
-        },
-        {
-          "number": 142,
-          "title": "Add CI/CD to automatically deploy all contracts to testnet on merge to dev",
-          "author": "RonTuretzky",
-          "created_at": "2025-07-20T01:18:44Z",
-          "updated_at": "2025-07-20T01:18:44Z",
-          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/142",
-          "labels": [],
-          "assignees": [],
-          "comments": [],
-          "body": "Add a GitHub Actions workflow to automate deployment of all smart contracts to the testnet (e.g., Gnosis Chain testnet) upon merge to the `dev` branch. Deployment should use all the deployment scripts found in `script/deploy/`:\n\n- `DeployButteredBread.s.sol`\n- `DeployYieldDistributor.s.sol`\n- `DeployNFTMultiplier.s.sol`\n- `DeployVotingStreakMultiplier.s.sol`\n\nThe workflow should:\n- Trigger on push to `dev`\n- Install Foundry (forge)\n- Build the contracts with `forge build`\n- Run tests with `forge test --fork-url $TESTNET_RPC_URL -vvvv`\n- Run each deploy script, for example:\n\n  ```shell\n  forge script script/deploy/DeployButteredBread.s.sol:DeployButteredBread --rpc-url \"$TESTNET_RPC_URL\" --broadcast --private-key \"$PRIVATE_KEY\"\n  forge script script/deploy/DeployYieldDistributor.s.sol:DeployYieldDistributor --rpc-url \"$TESTNET_RPC_URL\" --broadcast --private-key \"$PRIVATE_KEY\"\n  forge script script/deploy/DeployNFTMultiplier.s.sol:DeployNFTMultiplier --rpc-url \"$TESTNET_RPC_URL\" --broadcast --private-key \"$PRIVATE_KEY\"\n  forge script script/deploy/DeployVotingStreakMultiplier.s.sol:DeployVotingStreakMultiplier --rpc-url \"$TESTNET_RPC_URL\" --broadcast --private-key \"$PRIVATE_KEY\"\n  ```\n\n- Ensure all sensitive values (private key, testnet RPC URL, etc.) are stored as GitHub Secrets.\n\nExample GitHub Actions job for deployment:\n\n```yaml\nname: Deploy All Contracts to Testnet\n\non:\n  push:\n    branches:\n      - dev\n\njobs:\n  build-and-deploy:\n    runs-on: ubuntu-latest\n\n    steps:\n      - name: Checkout code\n        uses: actions/checkout@v4\n\n      - name: Setup Foundry\n        uses: foundry-rs/foundry-toolchain@v1\n        with:\n          version: nightly\n\n      - name: Build contracts\n        run: forge build\n\n      - name: Run tests\n        run: forge test --fork-url ${{ secrets.TESTNET_RPC_URL }} -vvvv\n\n      - name: Deploy ButteredBread\n        env:\n          TESTNET_RPC_URL: ${{ secrets.TESTNET_RPC_URL }}\n          PRIVATE_KEY: ${{ secrets.TESTNET_PRIVATE_KEY }}\n        "
-        },
-        {
-          "number": 141,
-          "title": "Automate Upgrade Safety Check in CI Pipeline",
-          "author": "RonTuretzky",
-          "created_at": "2025-07-20T01:16:40Z",
-          "updated_at": "2025-07-20T01:16:40Z",
-          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/141",
-          "labels": [],
-          "assignees": [],
-          "comments": [],
-          "body": "## Problem\n\nCurrently, the upgrade safety check is a manual process as described in the README. This involves flattening contracts, updating a script, and running a sequence of commands to validate upgrade safety before deployment. Automating this process in the CI pipeline would help prevent human error, ensure consistency, and streamline the upgrade process.\n\n## Proposed Solution\n\nAdd a CI step that automatically performs the upgrade safety check based on the current workflow described in the README:\n\n1. Flatten `YieldDistributor` and `ButteredBread` contracts for the new version.\n2. Update the version in `script/upgrades/ValidateUpgrade.s.sol` (could be parameterized or detected automatically).\n3. Run the validation script and fail the CI if safety checks do not pass.\n\n## Example CI Snippet\n\nHere's a suggested approach using GitHub Actions and assuming the use of Foundry:\n\n```yaml\n- name: Flatten contracts\n  run: |\n    forge flatten src/YieldDistributor.sol > test/upgrades/ci/YieldDistributor.sol\n    forge flatten src/ButteredBread.sol > test/upgrades/ci/ButteredBread.sol\n\n- name: Run upgrade safety validation\n  run: |\n    forge clean && forge build\n    forge script script/upgrades/ValidateUpgrade.s.sol\n```\n\n- The above should be integrated as a distinct job or step in the existing CI workflow.\n- Optionally, parameterize the version to match tags or PR data.\n\n## References\n- [Upgrade Safety Validation in README](https://github.com/BreadchainCoop/breadchain/blob/dev/README.md#validate-upgrade-safety)\n\n## Acceptance Criteria\n- CI fails if upgrade safety checks do not pass\n- Steps mirror those described in the README, but are automated\n- Documentation in the repo updated to reflect the new CI process\n\n---\n\nLet me know if any additional details or context are needed.\n"
-        },
-        {
-          "number": 136,
-          "title": "Gelato Automation",
-          "author": "RonTuretzky",
-          "created_at": "2025-06-26T18:35:52Z",
-          "updated_at": "2025-08-10T14:49:16Z",
-          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/136",
-          "labels": [],
-          "assignees": [
-            "lirona"
-          ],
-          "comments": [
-            {
-              "id": "IC_kwDOLJ8tZs652kP-",
-              "author": {
-                "login": "lirona"
-              },
-              "authorAssociation": "COLLABORATOR",
-              "body": "so will create an automation that will check daily for available yield and distribute if possible",
-              "createdAt": "2025-07-25T14:30:32Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/136#issuecomment-3118089214",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOLJ8tZs6566_X",
-              "author": {
-                "login": "diterra-code"
-              },
-              "authorAssociation": "NONE",
-              "body": "@lirona should be monthly i assume. @RonTuretzky ",
-              "createdAt": "2025-07-25T16:29:28Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/136#issuecomment-3119230935",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOLJ8tZs659m3U",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "COLLABORATOR",
-              "body": "yea but it's safer to just check once a day over like once an hour or whatever \ntheoretically someone can distribute ahead of the automation but it doesn't really matter @diterra-code \n\nthe distribution frequency is determined at the smart contract level that automation doesn't affect it anyways ",
-              "createdAt": "2025-07-25T18:35:29Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [
-                {
-                  "content": "THUMBS_UP",
-                  "users": {
-                    "totalCount": 1
-                  }
-                }
-              ],
-              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/136#issuecomment-3119934932",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOLJ8tZs69G1pS",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "COLLABORATOR",
-              "body": "yd is deployed [here](https://gnosisscan.io/address/0xeE95A62b749d8a2520E0128D9b3aCa241269024b)",
-              "createdAt": "2025-08-10T14:49:16Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/136#issuecomment-3172686418",
-              "viewerDidAuthor": false
-            }
-          ],
-          "body": "Requirements:\n\n-  Automation should activate when yield distribution is eligible (this is indicated by the [`resolveYieldDistribution`](https://github.com/BreadchainCoop/breadchain/blob/006c2006e8e37c7a15f4c2c10c600449fa3918e1/src/YieldDistributor.sol#L177) function ,which will return `true,<selector>` when yield should be distributed \n- Automation should activate the [`distributeYield`](https://github.com/BreadchainCoop/breadchain/blob/006c2006e8e37c7a15f4c2c10c600449fa3918e1/src/YieldDistributor.sol#L196) function \n"
-        },
-        {
-          "number": 132,
-          "title": "Add timelock for upgrades ",
-          "author": "RonTuretzky",
-          "created_at": "2025-06-18T17:59:15Z",
-          "updated_at": "2025-08-06T16:26:27Z",
-          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/132",
-          "labels": [
-            "enhancement",
-            "help wanted"
-          ],
-          "assignees": [],
-          "comments": [
-            {
-              "id": "IC_kwDOLJ8tZs67j3uD",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "COLLABORATOR",
-              "body": "Reccomending adding this add the multisig level instead of at the smart contract level through a zodiac safe module (can be seen [here](https://app.safe.global/apps/open?safe=gno:0x918dEf5d593F46735f74F9E2B280Fe51AF3A99ad&appUrl=https%3A%2F%2Fzodiac.gnosisguild.org%2F) \n\nthoughts @bagelface @hudsonhrh @lirona ?",
-              "createdAt": "2025-08-02T21:44:44Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/132#issuecomment-3146742659",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOLJ8tZs67j9Xx",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "COLLABORATOR",
-              "body": "This could possibly require us to create another nested multsig for upgrades so that we don't incur the timelock delay on standard multisig operations but is still simpler than the implementation cost of implementing this at the smart contract level ",
-              "createdAt": "2025-08-02T22:02:59Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/132#issuecomment-3146765809",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOLJ8tZs674U4y",
-              "author": {
-                "login": "hudsonhrh"
-              },
-              "authorAssociation": "NONE",
-              "body": "> Reccomending adding this add the multisig level instead of at the smart contract level through a zodiac safe module (can be seen [here](https://app.safe.global/apps/open?safe=gno:0x918dEf5d593F46735f74F9E2B280Fe51AF3A99ad&appUrl=https%3A%2F%2Fzodiac.gnosisguild.org%2F)\n> \n> thoughts [@bagelface](https://github.com/bagelface) [@hudsonhrh](https://github.com/hudsonhrh) [@lirona](https://github.com/lirona) ?\n\nI think it would be better practice to do it at the smart contract level. Better guarantee for bread holders that the time lock will actually happen. multisig could always remove the time lock on the multisig for upgrades",
-              "createdAt": "2025-08-04T19:39:05Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/132#issuecomment-3152105010",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOLJ8tZs68Fx3G",
-              "author": {
-                "login": "bagelface"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "Sorry, can you elaborate on this? \"Ensure upgrades can only go through after q timelock\" isn't very descriptive and I'm trying to understand the motivation and mechanism being proposed.\n\nUPDATE: Talked with Ron about this async. The proposal is to add a \"timelock\" (i.e. delayed execution or a period of time where an upgrade is easily revertable) to the upgrade functionality of the contract. For example, a transaction is initiated, signers sign the tx, when the threshold is met a countdown timer starts (of, say 48 hours), and only after the timer has expired can the transaction be executed. The motivation is increased security so that we can't all be held hostage at a conference or something and forced to sign and execute a malicious upgrade.",
-              "createdAt": "2025-08-05T15:13:54Z",
-              "includesCreatedEdit": true,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/132#issuecomment-3155631558",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOLJ8tZs68IMda",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "COLLABORATOR",
-              "body": "me and @bagelface talked async",
-              "createdAt": "2025-08-05T19:02:25Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/132#issuecomment-3156264794",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOLJ8tZs68IM_P",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "COLLABORATOR",
-              "body": "step 1 seems easy to add to the safe and we should prob add timelocks at the sc level at a later date as @hudsonhrh reccomends",
-              "createdAt": "2025-08-05T19:03:17Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/132#issuecomment-3156266959",
-              "viewerDidAuthor": false
-            }
-          ],
-          "body": "Ensure upgrades can only go through after a timelock \n\n[chatgpt explanation of timelocks](https://chatgpt.com/share/689271a6-5f30-8013-b606-4e0af01a448d)"
-        },
-        {
-          "number": 122,
-          "title": "Update Foundry Template",
-          "author": "RonTuretzky",
-          "created_at": "2025-01-02T12:07:29Z",
-          "updated_at": "2025-01-03T16:47:35Z",
-          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/122",
-          "labels": [
-            "enhancement",
-            "good first issue"
-          ],
-          "assignees": [],
-          "comments": [
-            {
-              "id": "IC_kwDOLJ8tZs6ZJ3V0",
-              "author": {
-                "login": "HMSagar2701"
-              },
-              "authorAssociation": "NONE",
-              "body": "Hi @RonTuretzky , Can I work on this issue ?\r\n",
-              "createdAt": "2025-01-03T16:28:32Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/122#issuecomment-2569500020",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOLJ8tZs6ZJ9wb",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "COLLABORATOR",
-              "body": "> Hi @RonTuretzky , Can I work on this issue ?\n> \n\nYes please! ",
-              "createdAt": "2025-01-03T16:47:34Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/122#issuecomment-2569526299",
-              "viewerDidAuthor": false
-            }
-          ],
-          "body": "Include [new changes](https://github.com/BreadchainCoop/solidity-foundry-boilerplate/compare/main...defi-wonderland%3Asolidity-foundry-boilerplate%3Amain ) to foundry template \r\n\r\nPossibly also bump to 0.8.28 as was implemented in saving-circles "
-        },
-        {
-          "number": 112,
-          "title": "Refactor contracts to use namespaced storage layouts (ERC-7201)",
-          "author": "bagelface",
-          "created_at": "2024-12-12T21:13:49Z",
-          "updated_at": "2024-12-12T21:13:49Z",
-          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/112",
-          "labels": [
-            "enhancement"
-          ],
-          "assignees": [],
-          "comments": [],
-          "body": "Refactor the contracts to use namespace storage layouts in accordance the specification defined by [ERC-7201](https://eips.ethereum.org/EIPS/eip-7201). This will require a refactor of all non-pure functions to load the contract state into memory.\r\n\r\n**This will require proxy contracts to be redeployed to new addresses since it will reorganize storage layout**\r\n\r\nPlease approve with a \ud83d\udc4d @RonTuretzky @daopunk "
-        },
-        {
-          "number": 111,
-          "title": "Documentation Scope",
-          "author": "RonTuretzky",
-          "created_at": "2024-12-12T14:58:58Z",
-          "updated_at": "2024-12-12T14:58:58Z",
-          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/111",
-          "labels": [
-            "documentation"
-          ],
-          "assignees": [
-            "daopunk",
-            "diterra-code",
-            "RonTuretzky",
-            "tbsoc"
-          ],
-          "comments": [],
-          "body": "#36 was rejected by multiple reviewers, a clear scope and direction needs to be discussed by the core team "
-        },
-        {
-          "number": 97,
-          "title": "Testing refactor ",
-          "author": "RonTuretzky",
-          "created_at": "2024-09-22T10:27:17Z",
-          "updated_at": "2024-09-22T10:27:17Z",
-          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/97",
-          "labels": [],
-          "assignees": [],
-          "comments": [],
-          "body": "- [ ] Inheriting the deployment script from the Scripts folder into the test setup (that way the actual script is tested.)\r\n- [ ] Cleanup and reformatting \r\n- [ ]  Dedicated contract to setuping up and configuring contracts for testing\r\n- [ ]  test modifiers to constrain fuzzing \r\n- [ ] Branching Tree Testing (optional) "
-        },
-        {
-          "number": 81,
-          "title": "Coupling project addresses and project distributions ",
-          "author": "RonTuretzky",
-          "created_at": "2024-08-23T08:48:03Z",
-          "updated_at": "2024-08-23T09:13:51Z",
-          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/81",
-          "labels": [],
-          "assignees": [],
-          "comments": [],
-          "body": "As suggested by #65 , the current pattern lends itself to mismatch mistakes and administrative errors, is less readable and opens an \"evil frontend\" opportunity. \r\n\r\n- [ ] A struct with address and uint256 should be made for submitting the vote itself \r\n- [ ] The project distributions can then be a mapping between address and uint256 \r\n- [ ] Queuing for addition/removal will have to be refactored to accommodate for changes (should simplify implementation) "
-        }
-      ]
-    },
     "etherform": {
       "repo_name": "etherform",
       "github_url": "https://github.com/BreadchainCoop/etherform",
@@ -4748,18 +4098,6 @@
           "assignees": [],
           "comments": [],
           "body": "example I have a production profile I use for deploying \n\nill flush out this issue more later"
-        },
-        {
-          "number": 2,
-          "title": "Expose optional `ADMIN_ADDRESS` env var to deploy scripts",
-          "author": "franrolotti",
-          "created_at": "2025-12-04T12:58:06Z",
-          "updated_at": "2025-12-04T12:58:06Z",
-          "html_url": "https://github.com/BreadchainCoop/etherform/issues/2",
-          "labels": [],
-          "assignees": [],
-          "comments": [],
-          "body": "Some projects using etherform (e.g. SavingCircles) could read the admin address for upgradeable contracts from an environment variable via `vm.envAddress(\"ADMIN_ADDRESS\")` in their deploy scripts.\n\nRight now, the reusable workflows only forward `PRIVATE_KEY` and `RPC_URL` into the deploy steps, so `ADMIN_ADDRESS` is not available to forge script. This issue proposes adding an optional `ADMIN_ADDRESS` secret and wiring it through to the deploy jobs.\n"
         }
       ]
     },
@@ -5454,6 +4792,585 @@
             }
           ],
           "body": "- [ ] Add a view function that iterates through all circles and returns an encoded array of a tuple of user/circleID  for which it is possible to claim for in the automation to use \n- [ ] Add a function that claims for multiple users in multiple circles \n- [ ] Add a view function that returns an array of tuples of user/circleID for which the user has given a sufficient allowance for the circleManager contract, has not yet deposited the amount for the interval, and has enough balance of the circle token to deposit for. \n- [ ] Add a function that attempts to transferFrom a user which has sufficient allowance, balance , and has not deposited yet for a circle in some interval \n- [ ] add user to boolean mapping for automation \n- [ ] add checks for `depositFor` and `withdrawFor` to see if user allows automation \n- [ ] in view functions add check that user has allowed automation before invoking "
+        }
+      ]
+    },
+    "solidarity-fund": {
+      "repo_name": "solidarity-fund",
+      "github_url": "https://github.com/BreadchainCoop/solidarity-fund",
+      "issues": [
+        {
+          "number": 187,
+          "title": "Fee-on-Transfer Token Drains ButteredBread",
+          "author": "bagelface",
+          "created_at": "2026-02-19T01:01:01Z",
+          "updated_at": "2026-02-19T01:01:01Z",
+          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/187",
+          "labels": [
+            "bug"
+          ],
+          "assignees": [],
+          "comments": [],
+          "body": "### Summary\n\n`ButteredBread._deposit()` trusts the `_amount` parameter for internal accounting without verifying how many tokens were actually received. If an allowlisted LP token has a transfer fee (fee-on-transfer token), the contract's recorded balances will exceed its actual token holdings, allowing users to drain other depositors' funds.\n\n**Note: This becomes an active vulnerability only if we allowlist a token pair that has transfer fees.**\n\n### Details\n\n\"src/ButteredBread.sol:145-158\" \u2014 `_deposit`:\n\n```solidity\nfunction _deposit(address _account, address _lp, uint256 _amount) internal {\n    bool success = IERC20(_lp).transferFrom(_account, address(this), _amount);\n    if (!success) revert TransferFailed();\n    // ...\n    _accountToLPData[_account][_lp].balance += _amount;          // records requested amount\n    _mint(_account, _amount * scalingFactors[_lp] / FIXED_POINT_PERCENT); // mints based on requested amount\n}\n```\n\nThe contract records `_amount` (the requested transfer amount), not the actual amount received. For a fee-on-transfer token, `transferFrom(sender, address(this), 1000)` might only deliver 950 tokens to the contract, but the accounting records 1000.\n\n### Steps to Produce\n\n1. **Setup:** Admin allowlists an LP token that has a 5% transfer fee (or a previously-normal token upgrades to add a fee).\n2. **Deposits inflate accounting:** Alice deposits 1000 LP tokens. ButteredBread receives 950 tokens (50 taken as fee), but records balance = 1000 and mints ButteredBread tokens for the full 1000.\n3. **Repeat:** Multiple users deposit, each time the contract's actual balance falls further behind its recorded balance.\n4. **Drain via withdrawal** (\"src/ButteredBread.sol:161-174\"):\n```solidity\nfunction _withdraw(address _account, address _lp, uint256 _amount) internal {\n  if (_amount > _accountToLPData[_account][_lp].balance) revert InsufficientFunds();\n  _accountToLPData[_account][_lp].balance -= _amount;\n  _burn(_account, _amount * scalingFactors[_lp] / "
+        },
+        {
+          "number": 186,
+          "title": "Voting power can be amplified by repeating multiplier indexes",
+          "author": "bagelface",
+          "created_at": "2026-02-19T00:16:18Z",
+          "updated_at": "2026-02-19T00:16:18Z",
+          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/186",
+          "labels": [
+            "bug"
+          ],
+          "assignees": [],
+          "comments": [],
+          "body": "### Summary\n\nA voter can pass the same allowlisted multiplier index multiple times to stack its bonus repeatedly, inflating voting power and diverting $BREAD yield to attacker-favored projects.\n\n### Impact\n\nAny voter can artificially inflate their voting power when using `castVoteWithMultipliers()`. If the attacker (or a colluding party) controls any address in `projects`, they can allocate disproportionate votes to that project and siphon a correspondingly disproportionate share of the contract's $BREAD balance during `distributeYield()`/`distributeYieldGK()`, reducing payouts to legitimate member projects.\n\n### Steps to Produce\n\nLet `i` be the allowlisted index of any multiplier that returns `factor > 1e18` for the attacker (e.g., an NFT-based multiplier). Call `castVoteWithMultipliers(points, multiplierIndices)` with `multiplierIndices = [i, i, i, ..., i]` (repeated many times) and `points` allocating nearly all points to the attacker's chosen project. The computed `_multiplier` grows linearly with the number of repeats, scaling `_currentVotingPower` and shifting yield toward the targeted project.\n\n### Fix\n\nEnforce uniqueness of `_multiplierIndexes` (e.g., require strict ascending order and reject duplicates, or track seen indexes in a temporary bitmap/mapping). Optionally cap the maximum number of multipliers that can be applied per vote to bound worst-case voting power amplification and gas usage."
+        },
+        {
+          "number": 185,
+          "title": "Voting streak multiplier can be maxed in one cycle by spamming `updateMultiplyingFactor`",
+          "author": "bagelface",
+          "created_at": "2026-02-18T23:44:19Z",
+          "updated_at": "2026-02-18T23:44:19Z",
+          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/185",
+          "labels": [
+            "bug"
+          ],
+          "assignees": [],
+          "comments": [],
+          "body": "### Summary\n\n`VotingStreakMultiplier.updateMultiplyingFactor()` can be called repeatedly before voting in a cycle to ratchet `userToMultiplier` up to its maximum immediately, enabling users to artificially inflate voting power and divert yield distributions.\n\n### Impact\n\nA user can obtain the maximum streak multiplier without maintaining an actual streak by calling `updateMultiplyingFactor()` in a loop before submitting their vote for the current cycle. This artificially increases their voting weight and can redirect a larger portion of the distributor's $BREAD yield to their preferred project(s). If the attacker controls (or economically benefits from) an eligible project address, this becomes a direct loss of platform assets from the distributor to the attacker-controlled recipient.\n\n### Steps to Produce\n\nWithin a single transaction (or across multiple), call `VotingStreakMultiplier.updateMultiplyingFactor(attacker)` repeatedly up to the cap while `yieldDistributor.accountLastVoted(attacker) <= yieldDistributor.lastClaimedBlockNumber()` remains true. Then call `YieldDistributor.castVoteWithMultipliers(points, [votingStreakMultiplierIndex])` to apply the inflated multiplier and skew the next yield distribution.\n\n### Fix\n\nTrack and enforce a single multiplier update per voting cycle (e.g., `lastUpdatedCycle[user]`) or require a verifiable condition tied to completing the previous cycle's vote (and only increment once per cycle transition). Consider moving streak tracking into \"YieldDistributor\" contract (or another canonical source of cycle state) and making the multiplier computation purely view-based to remove externally spammable state transitions."
+        },
+        {
+          "number": 184,
+          "title": "Calling `distributeYieldGK` bypasses multipliers",
+          "author": "bagelface",
+          "created_at": "2026-02-18T23:41:22Z",
+          "updated_at": "2026-02-18T23:45:41Z",
+          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/184",
+          "labels": [
+            "bug"
+          ],
+          "assignees": [],
+          "comments": [],
+          "body": "### Summary\n\n`distributeYieldGK()` recomputes voting weights without applying vote multipliers, letting any caller force a yield distribution that ignores the multiplier rules and misallocates platform yield funds.\n\n### Impact\n\nDuring a cycle where some voters legitimately increase their voting power via allowlisted multipliers, any external account can call `distributeYieldGK()` and force distribution using an alternate computation that ignores those multipliers. This can divert $BREAD yield away from projects that should receive the multiplier-influenced allocation and toward other projects, directly changing who receives funds from the distributor in that cycle.\n\n### Steps to Produce\n\n1. Have at least one voter use `castVoteWithMultipliers()` to boost voting power for Project A (by selecting allowlisted multipliers).\n2. Once `resolveYieldDistribution()` conditions are satisfied, an attacker calls `distributeYieldGK()` instead of `distributeYield()`.\n3. Yield is distributed using `_computeVotedDistribution()` (no multipliers), reducing Project A's payout compared to the multiplier-aware distribution.\n\n### Fix\n\nEnsure both distribution paths use the same multiplier-aware vote weights. If the goal is to avoid OOG, store each voter's effective (multiplier-adjusted) voting power at vote time and use it in any recomputation path, or apply the selected multipliers during `_computeVotedDistribution()` in a way that cannot be bypassed by choosing a different entrypoint."
+        },
+        {
+          "number": 172,
+          "title": "Test Upgrade Simulation for Latest Release",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-10T13:16:58Z",
+          "updated_at": "2025-08-10T13:16:58Z",
+          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/172",
+          "labels": [
+            "question"
+          ],
+          "assignees": [],
+          "comments": [],
+          "body": "## Description\nCreate a comprehensive test that simulates an upgrade from the latest release tag and executes a hardcoded flow covering key user and system interactions:\n\n### Flows to Simulate\n- Users voting on proposals\n- Yield distribution to participants\n- Adding multipliers to system parameters\n- Usage of buttered bread in relevant scenarios\n- Any other core user flows or edge cases involved in upgrade\n\n## Acceptance Criteria\n- Test should initialize from the latest tagged release\n- All listed flows must be executed and validated\n\n## Rationale\nThis simulation ensures that critical user and system flows continue to function correctly after upgrades, reducing risk of regressions and unexpected errors.\n\n## Additional Notes\n- Please specify any assumptions or limitations in the test script/comments.\n- Consider using existing test frameworks and utilities where possible.\n"
+        },
+        {
+          "number": 171,
+          "title": "Release v1.0.5",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-10T13:00:36Z",
+          "updated_at": "2025-08-10T13:00:36Z",
+          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/171",
+          "labels": [],
+          "assignees": [],
+          "comments": [],
+          "body": "## Introduction\nThis issue tracks the release of version v1.0.5 for breadchain.\nAdd all relevant issues as subissues here \n"
+        },
+        {
+          "number": 170,
+          "title": "Voting Boost for Users with BREAD Transactions",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-10T12:55:47Z",
+          "updated_at": "2025-08-10T13:12:44Z",
+          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/170",
+          "labels": [
+            "enhancement"
+          ],
+          "assignees": [],
+          "comments": [
+            {
+              "id": "IC_kwDOLJ8tZs69GmIf",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "COLLABORATOR",
+              "body": "This may be trivially accounted for by summing up the amount of checkpoints the user has in the last voting cycle, can be easily gamed so unclear if this issue should specify additional parameters, include sybil detection , etc. ",
+              "createdAt": "2025-08-10T13:12:44Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/170#issuecomment-3172622879",
+              "viewerDidAuthor": false
+            }
+          ],
+          "body": "## Introduction\nEncourage ecosystem engagement by providing a voting boost to users who have made any BREAD transactions.\n\n## Problem Statement\nUsers who actively participate in BREAD transactions should be acknowledged in the voting system to incentivize further activity.\n\n## Background\nActivity-based boosts are widely used to grow participation and foster healthy ecosystems.\n\n## Solution Overview\nImplement a check for any BREAD transaction activity and grant a voting boost to qualifying users.\n\n```mermaid\nsequenceDiagram\n    participant User\n    participant TransactionSystem\n    participant VotingSystem\n    User->>TransactionSystem: Make BREAD transaction\n    TransactionSystem->>VotingSystem: Report transaction\n    VotingSystem->>User: Grant voting boost\n```\n\n"
+        },
+        {
+          "number": 169,
+          "title": "Boost for Never Burning BREAD in Previous Cycle",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-10T12:55:44Z",
+          "updated_at": "2025-08-10T13:11:18Z",
+          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/169",
+          "labels": [
+            "enhancement"
+          ],
+          "assignees": [],
+          "comments": [
+            {
+              "id": "IC_kwDOLJ8tZs69Gl6b",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "COLLABORATOR",
+              "body": "This issue is non trivial, as ERC20Votes does not specify whether a balance decrease is a burn or a transfer, but by cross-referencing with `getPastTotalSupply` , we may be able to ascertain whether a balance decrease is a burn or a transfer (as a transfer should not decrease the total supply). there may be conflicts with other users burns at the same `timepoint` potentially creating a obfuscation , needs to be looked into further. ",
+              "createdAt": "2025-08-10T13:11:18Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/169#issuecomment-3172621979",
+              "viewerDidAuthor": false
+            }
+          ],
+          "body": "## Introduction\nEncourage positive contributions by offering a voting boost to users who have not burned any BREAD in the previous cycle.\n\n## Problem Statement\nDiscouraging destructive actions (burning BREAD) can help maintain a healthy ecosystem.\n\n## Background\nIncentivizing retaining TVL may lead to more stable growth and participation.\n\n## Solution Overview\nCheck user activity in the previous cycle; if no BREAD was burned, grant a voting boost.\n\n```mermaid\nsequenceDiagram\n    participant User\n    participant TransactionSystem\n    participant VotingSystem\n    User->>TransactionSystem: Check burn activity\n    TransactionSystem->>VotingSystem: Report burn status\n    VotingSystem->>User: Grant boost if no burns\n```\n"
+        },
+        {
+          "number": 168,
+          "title": "Boost for Baking at Least 10 BREAD in Previous Cycle",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-10T12:55:43Z",
+          "updated_at": "2025-08-10T13:04:50Z",
+          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/168",
+          "labels": [
+            "enhancement"
+          ],
+          "assignees": [],
+          "comments": [
+            {
+              "id": "IC_kwDOLJ8tZs69Gk6S",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "COLLABORATOR",
+              "body": "Open questions: \n\n- what if they baked 10 $BREAD but then burned it? should we account for net $BREAD balance gain?\n- should we use the last ERC20Votes checkpoint to get the balance in the last cycle for reference? \n- is 10 really the number we want to incentivize?",
+              "createdAt": "2025-08-10T13:04:50Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/168#issuecomment-3172617874",
+              "viewerDidAuthor": false
+            }
+          ],
+          "body": "## Introduction\nReward active bakers by providing a voting boost to those who baked at least 10 BREAD in the previous cycle.\n\n## Problem Statement\nHigh contributors to the Breadchain ecosystem should be incentivized to continue their activity.\n\n## Background\nRecognizing top contributors in each cycle encourages ongoing engagement and participation in the ecosystem.\n\n## Solution Overview\nImplement a check for users who baked 10+ BREAD in the previous cycle and grant them a voting boost.\n\n```mermaid\nsequenceDiagram\n    participant User\n    participant TransactionSystem\n    participant VotingSystem\n    User->>TransactionSystem: Bake BREAD\n    TransactionSystem->>VotingSystem: Report baking totals\n    VotingSystem->>User: Grant boost if threshold met\n```\n"
+        },
+        {
+          "number": 167,
+          "title": "Add POAP Boost for Attending Community Calls",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-10T12:55:41Z",
+          "updated_at": "2025-08-10T13:03:25Z",
+          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/167",
+          "labels": [
+            "enhancement"
+          ],
+          "assignees": [],
+          "comments": [
+            {
+              "id": "IC_kwDOLJ8tZs69Gkrh",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "COLLABORATOR",
+              "body": "seems this would be as simple as #166 ",
+              "createdAt": "2025-08-10T13:03:25Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/167#issuecomment-3172616929",
+              "viewerDidAuthor": false
+            }
+          ],
+          "body": "## Introduction\nEncourage participation in community calls by rewarding users with a POAP boost for attending.\n\n## Problem Statement\nCommunity call attendance can be sporadic. A direct incentive tied to voting could increase engagement.\n\n## Background\nPOAP (Proof of Attendance Protocol) NFTs are commonly used to verify event attendance. Integrating POAP into voting boosts can gamify community involvement.\n\n## Solution Overview\nGrant a voting boost to users who hold a POAP NFT for a Breadchain community call.\n\n```mermaid\nsequenceDiagram\n    participant User\n    participant EventSystem\n    participant VotingSystem\n    User->>EventSystem: Attend community call\n    EventSystem->>User: Issue POAP\n    User->>VotingSystem: Present POAP\n    VotingSystem->>User: Grant voting boost\n```\n"
+        },
+        {
+          "number": 166,
+          "title": "Voting Boost for TBS NFT Holders",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-10T12:55:37Z",
+          "updated_at": "2025-08-10T13:02:50Z",
+          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/166",
+          "labels": [
+            "enhancement"
+          ],
+          "assignees": [],
+          "comments": [
+            {
+              "id": "IC_kwDOLJ8tZs69Gkl3",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "COLLABORATOR",
+              "body": "@secbajor please advise, with the current impl is it as simple as just using [this](https://github.com/BreadchainCoop/breadchain/blob/dev/script/deploy/DeployNFTMultiplier.s.sol) script and then calling [this](https://github.com/BreadchainCoop/breadchain/blob/d74a84c8c8dce4187040edced2160c828eafb938/src/VotingMultipliers.sol#L49) ? I assume there would be frontend changes necessary as well ",
+              "createdAt": "2025-08-10T13:02:50Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/166#issuecomment-3172616567",
+              "viewerDidAuthor": false
+            }
+          ],
+          "body": "## Introduction\nProvide a voting boost for users holding a TBS NFT to encourage NFT participation and holding.\n\n## Problem Statement\nNFT holders may not currently receive direct benefits in the voting system, which can reduce incentive to participate.\n\n## Background\nNFT-based boosts have become a popular method to encourage participation and engagement in various platforms.\n\n## Solution Overview\nGrant a voting boost to users who hold a TBS NFT.\n\n"
+        },
+        {
+          "number": 164,
+          "title": "Release v1.0.4",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-10T12:44:12Z",
+          "updated_at": "2025-08-10T12:44:12Z",
+          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/164",
+          "labels": [],
+          "assignees": [],
+          "comments": [],
+          "body": "Prepare and publish release v1.0.4 for the breadchaincoop/breadchain repository.\n\n\nThis issue tracks all tasks required to complete and publicize v1.0.4.\nPlease track all issues for the next release as sub-issues here "
+        },
+        {
+          "number": 156,
+          "title": "Explore Extending VotesExtendedUpgradeable for Variable Delegations",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-06T04:37:13Z",
+          "updated_at": "2025-08-06T04:37:13Z",
+          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/156",
+          "labels": [
+            "enhancement"
+          ],
+          "assignees": [],
+          "comments": [],
+          "body": "Investigate the feasibility and design of extending [OpenZeppelin's VotesExtendedUpgradeable](https://github.com/OpenZeppelin/openzeppelin-contracts-upgradeable/blob/master/contracts/governance/utils/VotesExtendedUpgradeable.sol) to support variable delegations within the breadchain project. \n\n**Goals:**\n- Assess current delegation limitations in VotesExtendedUpgradeable\n- Propose and discuss potential approaches for enabling variable delegation amounts\n- Evaluate compatibility and upgradeability concerns\n- Draft a proof-of-concept or outline next steps for implementation\n\n**Background:**\nThe current VotesExtendedUpgradeable contract primarily supports fixed or all-or-nothing delegation. Enabling variable delegations could allow more flexible governance models, such as partial vote splitting or proportional delegation, which may be more human and less vc washed governance bullshit. \n\n**References:**\n- [VotesExtendedUpgradeable.sol](https://github.com/OpenZeppelin/openzeppelin-contracts-upgradeable/blob/master/contracts/governance/utils/VotesExtendedUpgradeable.sol)\n\n**Next Steps:**\n- Scope technical requirements\n- Draft implementation plan or prototype\n- Effort estimation and value add analysis \n- UX research to validate value \n"
+        },
+        {
+          "number": 142,
+          "title": "Add CI/CD to automatically deploy all contracts to testnet on merge to dev",
+          "author": "RonTuretzky",
+          "created_at": "2025-07-20T01:18:44Z",
+          "updated_at": "2025-07-20T01:18:44Z",
+          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/142",
+          "labels": [],
+          "assignees": [],
+          "comments": [],
+          "body": "Add a GitHub Actions workflow to automate deployment of all smart contracts to the testnet (e.g., Gnosis Chain testnet) upon merge to the `dev` branch. Deployment should use all the deployment scripts found in `script/deploy/`:\n\n- `DeployButteredBread.s.sol`\n- `DeployYieldDistributor.s.sol`\n- `DeployNFTMultiplier.s.sol`\n- `DeployVotingStreakMultiplier.s.sol`\n\nThe workflow should:\n- Trigger on push to `dev`\n- Install Foundry (forge)\n- Build the contracts with `forge build`\n- Run tests with `forge test --fork-url $TESTNET_RPC_URL -vvvv`\n- Run each deploy script, for example:\n\n  ```shell\n  forge script script/deploy/DeployButteredBread.s.sol:DeployButteredBread --rpc-url \"$TESTNET_RPC_URL\" --broadcast --private-key \"$PRIVATE_KEY\"\n  forge script script/deploy/DeployYieldDistributor.s.sol:DeployYieldDistributor --rpc-url \"$TESTNET_RPC_URL\" --broadcast --private-key \"$PRIVATE_KEY\"\n  forge script script/deploy/DeployNFTMultiplier.s.sol:DeployNFTMultiplier --rpc-url \"$TESTNET_RPC_URL\" --broadcast --private-key \"$PRIVATE_KEY\"\n  forge script script/deploy/DeployVotingStreakMultiplier.s.sol:DeployVotingStreakMultiplier --rpc-url \"$TESTNET_RPC_URL\" --broadcast --private-key \"$PRIVATE_KEY\"\n  ```\n\n- Ensure all sensitive values (private key, testnet RPC URL, etc.) are stored as GitHub Secrets.\n\nExample GitHub Actions job for deployment:\n\n```yaml\nname: Deploy All Contracts to Testnet\n\non:\n  push:\n    branches:\n      - dev\n\njobs:\n  build-and-deploy:\n    runs-on: ubuntu-latest\n\n    steps:\n      - name: Checkout code\n        uses: actions/checkout@v4\n\n      - name: Setup Foundry\n        uses: foundry-rs/foundry-toolchain@v1\n        with:\n          version: nightly\n\n      - name: Build contracts\n        run: forge build\n\n      - name: Run tests\n        run: forge test --fork-url ${{ secrets.TESTNET_RPC_URL }} -vvvv\n\n      - name: Deploy ButteredBread\n        env:\n          TESTNET_RPC_URL: ${{ secrets.TESTNET_RPC_URL }}\n          PRIVATE_KEY: ${{ secrets.TESTNET_PRIVATE_KEY }}\n        "
+        },
+        {
+          "number": 141,
+          "title": "Automate Upgrade Safety Check in CI Pipeline",
+          "author": "RonTuretzky",
+          "created_at": "2025-07-20T01:16:40Z",
+          "updated_at": "2025-07-20T01:16:40Z",
+          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/141",
+          "labels": [],
+          "assignees": [],
+          "comments": [],
+          "body": "## Problem\n\nCurrently, the upgrade safety check is a manual process as described in the README. This involves flattening contracts, updating a script, and running a sequence of commands to validate upgrade safety before deployment. Automating this process in the CI pipeline would help prevent human error, ensure consistency, and streamline the upgrade process.\n\n## Proposed Solution\n\nAdd a CI step that automatically performs the upgrade safety check based on the current workflow described in the README:\n\n1. Flatten `YieldDistributor` and `ButteredBread` contracts for the new version.\n2. Update the version in `script/upgrades/ValidateUpgrade.s.sol` (could be parameterized or detected automatically).\n3. Run the validation script and fail the CI if safety checks do not pass.\n\n## Example CI Snippet\n\nHere's a suggested approach using GitHub Actions and assuming the use of Foundry:\n\n```yaml\n- name: Flatten contracts\n  run: |\n    forge flatten src/YieldDistributor.sol > test/upgrades/ci/YieldDistributor.sol\n    forge flatten src/ButteredBread.sol > test/upgrades/ci/ButteredBread.sol\n\n- name: Run upgrade safety validation\n  run: |\n    forge clean && forge build\n    forge script script/upgrades/ValidateUpgrade.s.sol\n```\n\n- The above should be integrated as a distinct job or step in the existing CI workflow.\n- Optionally, parameterize the version to match tags or PR data.\n\n## References\n- [Upgrade Safety Validation in README](https://github.com/BreadchainCoop/breadchain/blob/dev/README.md#validate-upgrade-safety)\n\n## Acceptance Criteria\n- CI fails if upgrade safety checks do not pass\n- Steps mirror those described in the README, but are automated\n- Documentation in the repo updated to reflect the new CI process\n\n---\n\nLet me know if any additional details or context are needed.\n"
+        },
+        {
+          "number": 136,
+          "title": "Gelato Automation",
+          "author": "RonTuretzky",
+          "created_at": "2025-06-26T18:35:52Z",
+          "updated_at": "2025-08-10T14:49:16Z",
+          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/136",
+          "labels": [],
+          "assignees": [
+            "lirona"
+          ],
+          "comments": [
+            {
+              "id": "IC_kwDOLJ8tZs652kP-",
+              "author": {
+                "login": "lirona"
+              },
+              "authorAssociation": "COLLABORATOR",
+              "body": "so will create an automation that will check daily for available yield and distribute if possible",
+              "createdAt": "2025-07-25T14:30:32Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/136#issuecomment-3118089214",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOLJ8tZs6566_X",
+              "author": {
+                "login": "diterra-code"
+              },
+              "authorAssociation": "NONE",
+              "body": "@lirona should be monthly i assume. @RonTuretzky ",
+              "createdAt": "2025-07-25T16:29:28Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/136#issuecomment-3119230935",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOLJ8tZs659m3U",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "COLLABORATOR",
+              "body": "yea but it's safer to just check once a day over like once an hour or whatever \ntheoretically someone can distribute ahead of the automation but it doesn't really matter @diterra-code \n\nthe distribution frequency is determined at the smart contract level that automation doesn't affect it anyways ",
+              "createdAt": "2025-07-25T18:35:29Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [
+                {
+                  "content": "THUMBS_UP",
+                  "users": {
+                    "totalCount": 1
+                  }
+                }
+              ],
+              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/136#issuecomment-3119934932",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOLJ8tZs69G1pS",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "COLLABORATOR",
+              "body": "yd is deployed [here](https://gnosisscan.io/address/0xeE95A62b749d8a2520E0128D9b3aCa241269024b)",
+              "createdAt": "2025-08-10T14:49:16Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/136#issuecomment-3172686418",
+              "viewerDidAuthor": false
+            }
+          ],
+          "body": "Requirements:\n\n-  Automation should activate when yield distribution is eligible (this is indicated by the [`resolveYieldDistribution`](https://github.com/BreadchainCoop/breadchain/blob/006c2006e8e37c7a15f4c2c10c600449fa3918e1/src/YieldDistributor.sol#L177) function ,which will return `true,<selector>` when yield should be distributed \n- Automation should activate the [`distributeYield`](https://github.com/BreadchainCoop/breadchain/blob/006c2006e8e37c7a15f4c2c10c600449fa3918e1/src/YieldDistributor.sol#L196) function \n"
+        },
+        {
+          "number": 132,
+          "title": "Add timelock for upgrades ",
+          "author": "RonTuretzky",
+          "created_at": "2025-06-18T17:59:15Z",
+          "updated_at": "2025-08-06T16:26:27Z",
+          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/132",
+          "labels": [
+            "enhancement",
+            "help wanted"
+          ],
+          "assignees": [],
+          "comments": [
+            {
+              "id": "IC_kwDOLJ8tZs67j3uD",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "COLLABORATOR",
+              "body": "Reccomending adding this add the multisig level instead of at the smart contract level through a zodiac safe module (can be seen [here](https://app.safe.global/apps/open?safe=gno:0x918dEf5d593F46735f74F9E2B280Fe51AF3A99ad&appUrl=https%3A%2F%2Fzodiac.gnosisguild.org%2F) \n\nthoughts @bagelface @hudsonhrh @lirona ?",
+              "createdAt": "2025-08-02T21:44:44Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/132#issuecomment-3146742659",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOLJ8tZs67j9Xx",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "COLLABORATOR",
+              "body": "This could possibly require us to create another nested multsig for upgrades so that we don't incur the timelock delay on standard multisig operations but is still simpler than the implementation cost of implementing this at the smart contract level ",
+              "createdAt": "2025-08-02T22:02:59Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/132#issuecomment-3146765809",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOLJ8tZs674U4y",
+              "author": {
+                "login": "hudsonhrh"
+              },
+              "authorAssociation": "NONE",
+              "body": "> Reccomending adding this add the multisig level instead of at the smart contract level through a zodiac safe module (can be seen [here](https://app.safe.global/apps/open?safe=gno:0x918dEf5d593F46735f74F9E2B280Fe51AF3A99ad&appUrl=https%3A%2F%2Fzodiac.gnosisguild.org%2F)\n> \n> thoughts [@bagelface](https://github.com/bagelface) [@hudsonhrh](https://github.com/hudsonhrh) [@lirona](https://github.com/lirona) ?\n\nI think it would be better practice to do it at the smart contract level. Better guarantee for bread holders that the time lock will actually happen. multisig could always remove the time lock on the multisig for upgrades",
+              "createdAt": "2025-08-04T19:39:05Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/132#issuecomment-3152105010",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOLJ8tZs68Fx3G",
+              "author": {
+                "login": "bagelface"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "Sorry, can you elaborate on this? \"Ensure upgrades can only go through after q timelock\" isn't very descriptive and I'm trying to understand the motivation and mechanism being proposed.\n\nUPDATE: Talked with Ron about this async. The proposal is to add a \"timelock\" (i.e. delayed execution or a period of time where an upgrade is easily revertable) to the upgrade functionality of the contract. For example, a transaction is initiated, signers sign the tx, when the threshold is met a countdown timer starts (of, say 48 hours), and only after the timer has expired can the transaction be executed. The motivation is increased security so that we can't all be held hostage at a conference or something and forced to sign and execute a malicious upgrade.",
+              "createdAt": "2025-08-05T15:13:54Z",
+              "includesCreatedEdit": true,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/132#issuecomment-3155631558",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOLJ8tZs68IMda",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "COLLABORATOR",
+              "body": "me and @bagelface talked async",
+              "createdAt": "2025-08-05T19:02:25Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/132#issuecomment-3156264794",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOLJ8tZs68IM_P",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "COLLABORATOR",
+              "body": "step 1 seems easy to add to the safe and we should prob add timelocks at the sc level at a later date as @hudsonhrh reccomends",
+              "createdAt": "2025-08-05T19:03:17Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/132#issuecomment-3156266959",
+              "viewerDidAuthor": false
+            }
+          ],
+          "body": "Ensure upgrades can only go through after a timelock \n\n[chatgpt explanation of timelocks](https://chatgpt.com/share/689271a6-5f30-8013-b606-4e0af01a448d)"
+        },
+        {
+          "number": 122,
+          "title": "Update Foundry Template",
+          "author": "RonTuretzky",
+          "created_at": "2025-01-02T12:07:29Z",
+          "updated_at": "2025-01-03T16:47:35Z",
+          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/122",
+          "labels": [
+            "enhancement",
+            "good first issue"
+          ],
+          "assignees": [],
+          "comments": [
+            {
+              "id": "IC_kwDOLJ8tZs6ZJ3V0",
+              "author": {
+                "login": "HMSagar2701"
+              },
+              "authorAssociation": "NONE",
+              "body": "Hi @RonTuretzky , Can I work on this issue ?\r\n",
+              "createdAt": "2025-01-03T16:28:32Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/122#issuecomment-2569500020",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOLJ8tZs6ZJ9wb",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "COLLABORATOR",
+              "body": "> Hi @RonTuretzky , Can I work on this issue ?\n> \n\nYes please! ",
+              "createdAt": "2025-01-03T16:47:34Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/solidarity-fund/issues/122#issuecomment-2569526299",
+              "viewerDidAuthor": false
+            }
+          ],
+          "body": "Include [new changes](https://github.com/BreadchainCoop/solidity-foundry-boilerplate/compare/main...defi-wonderland%3Asolidity-foundry-boilerplate%3Amain ) to foundry template \r\n\r\nPossibly also bump to 0.8.28 as was implemented in saving-circles "
+        },
+        {
+          "number": 112,
+          "title": "Refactor contracts to use namespaced storage layouts (ERC-7201)",
+          "author": "bagelface",
+          "created_at": "2024-12-12T21:13:49Z",
+          "updated_at": "2024-12-12T21:13:49Z",
+          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/112",
+          "labels": [
+            "enhancement"
+          ],
+          "assignees": [],
+          "comments": [],
+          "body": "Refactor the contracts to use namespace storage layouts in accordance the specification defined by [ERC-7201](https://eips.ethereum.org/EIPS/eip-7201). This will require a refactor of all non-pure functions to load the contract state into memory.\r\n\r\n**This will require proxy contracts to be redeployed to new addresses since it will reorganize storage layout**\r\n\r\nPlease approve with a \ud83d\udc4d @RonTuretzky @daopunk "
+        },
+        {
+          "number": 111,
+          "title": "Documentation Scope",
+          "author": "RonTuretzky",
+          "created_at": "2024-12-12T14:58:58Z",
+          "updated_at": "2024-12-12T14:58:58Z",
+          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/111",
+          "labels": [
+            "documentation"
+          ],
+          "assignees": [
+            "daopunk",
+            "diterra-code",
+            "RonTuretzky",
+            "tbsoc"
+          ],
+          "comments": [],
+          "body": "#36 was rejected by multiple reviewers, a clear scope and direction needs to be discussed by the core team "
+        },
+        {
+          "number": 97,
+          "title": "Testing refactor ",
+          "author": "RonTuretzky",
+          "created_at": "2024-09-22T10:27:17Z",
+          "updated_at": "2024-09-22T10:27:17Z",
+          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/97",
+          "labels": [],
+          "assignees": [],
+          "comments": [],
+          "body": "- [ ] Inheriting the deployment script from the Scripts folder into the test setup (that way the actual script is tested.)\r\n- [ ] Cleanup and reformatting \r\n- [ ]  Dedicated contract to setuping up and configuring contracts for testing\r\n- [ ]  test modifiers to constrain fuzzing \r\n- [ ] Branching Tree Testing (optional) "
+        },
+        {
+          "number": 81,
+          "title": "Coupling project addresses and project distributions ",
+          "author": "RonTuretzky",
+          "created_at": "2024-08-23T08:48:03Z",
+          "updated_at": "2024-08-23T09:13:51Z",
+          "html_url": "https://github.com/BreadchainCoop/solidarity-fund/issues/81",
+          "labels": [],
+          "assignees": [],
+          "comments": [],
+          "body": "As suggested by #65 , the current pattern lends itself to mismatch mistakes and administrative errors, is less readable and opens an \"evil frontend\" opportunity. \r\n\r\n- [ ] A struct with address and uint256 should be made for submitting the vote itself \r\n- [ ] The project distributions can then be a mapping between address and uint256 \r\n- [ ] Queuing for addition/removal will have to be refactored to accommodate for changes (should simplify implementation) "
         }
       ]
     },
