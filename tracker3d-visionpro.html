@@ -1632,11 +1632,18 @@
     // Init
     // ========================================================================
 
-    const REFRESH_INTERVAL = 5000; // 5 seconds
+    // ========================================================================
+    // Data sync — WebSocket first, HTTP polling fallback
+    // ========================================================================
+
+    const POLL_INTERVAL = 5000;
+    const WS_RECONNECT_DELAY = 3000;
     let lastDataHash = '';
+    let ws = null;
+    let wsConnected = false;
+    let pollingInterval = null;
 
     function hashData(data) {
-        // Quick fingerprint: tree keys + node count + session statuses
         const treeKeys = Object.keys(data.trees || {}).sort().join(',');
         const statuses = JSON.stringify(data.session_statuses || {});
         let nodeCount = 0;
@@ -1647,10 +1654,7 @@
         return `${treeKeys}|${nodeCount}|${statuses}`;
     }
 
-    async function refreshData() {
-        const data = await fetchData();
-        if (!data) return;
-
+    function handleNewData(data) {
         const newHash = hashData(data);
         const treeChanged = lastDataHash !== '' && newHash !== lastDataHash;
         const firstLoad = lastDataHash === '';
@@ -1659,7 +1663,6 @@
         trackerData = data;
         updateStatusCounts();
 
-        // Only rebuild the 3D scene if the tree structure actually changed
         if (firstLoad || treeChanged) {
             buildScene();
         }
@@ -1672,12 +1675,86 @@
             `${org}${treeCount} repos · ${nodeCount} PRs`;
     }
 
+    async function refreshData() {
+        const data = await fetchData();
+        if (data) handleNewData(data);
+    }
+
+    // WebSocket connection with fallback
+    function getWsUrl() {
+        const loc = window.location;
+        const proto = loc.protocol === 'https:' ? 'wss:' : 'ws:';
+        return `${proto}//${loc.host}/ws/`;
+    }
+
+    function connectWebSocket() {
+        const urls = [getWsUrl(), 'ws://localhost:8766'];
+        tryWsConnect(urls, 0);
+    }
+
+    function tryWsConnect(urls, index) {
+        if (index >= urls.length) {
+            console.log('WebSocket unavailable, using HTTP polling');
+            startPolling();
+            setTimeout(connectWebSocket, 15000);
+            return;
+        }
+
+        const url = urls[index];
+        const socket = new WebSocket(url);
+        const timeout = setTimeout(() => { socket.close(); tryWsConnect(urls, index + 1); }, 5000);
+
+        socket.onopen = () => {
+            clearTimeout(timeout);
+            console.log('WebSocket connected:', url);
+            ws = socket;
+            wsConnected = true;
+            stopPolling();
+        };
+
+        socket.onmessage = (event) => {
+            try {
+                const data = JSON.parse(event.data);
+                if (!data.loading) handleNewData(data);
+            } catch (e) { console.error('WS parse error:', e); }
+        };
+
+        socket.onclose = () => {
+            clearTimeout(timeout);
+            if (wsConnected) {
+                wsConnected = false;
+                ws = null;
+                console.log('WebSocket disconnected, falling back to polling');
+                startPolling();
+                setTimeout(connectWebSocket, WS_RECONNECT_DELAY);
+            } else {
+                tryWsConnect(urls, index + 1);
+            }
+        };
+
+        socket.onerror = () => { clearTimeout(timeout); };
+    }
+
+    function startPolling() {
+        if (pollingInterval) return;
+        pollingInterval = setInterval(refreshData, POLL_INTERVAL);
+    }
+
+    function stopPolling() {
+        if (pollingInterval) { clearInterval(pollingInterval); pollingInterval = null; }
+    }
+
+    // ========================================================================
+    // Init
+    // ========================================================================
+
     async function init() {
         initScene();
         setupControls();
         setupHideMenuKeyboard();
         renderer.setAnimationLoop(animate);
 
+        // Initial load via HTTP (fast, guaranteed)
         await refreshData();
 
         if (!trackerData) {
@@ -1686,8 +1763,9 @@
 
         await setupXR();
 
-        // Auto-refresh every 5s to stay in sync
-        setInterval(refreshData, REFRESH_INTERVAL);
+        // Try WebSocket for real-time, fall back to polling
+        connectWebSocket();
+        startPolling(); // immediate fallback — stopped if WS connects
     }
 
     init();
