@@ -1,15 +1,252 @@
 {
   "organization": "BreadchainCoop",
-  "generated_at": "2026-04-01T00:22:20.937790+00:00",
-  "generation_time_seconds": 153.96,
+  "generated_at": "2026-04-02T00:19:07.286086+00:00",
+  "generation_time_seconds": 153.42,
   "stats": {
-    "total_repos": 38,
+    "total_repos": 39,
     "repos_with_prs": 20,
     "repos_with_issues": 24,
-    "total_open_prs": 83,
-    "total_open_issues": 181
+    "total_open_prs": 84,
+    "total_open_issues": 180
   },
   "trees": {
+    "crowdstake.fun": {
+      "name": "crowdstake.fun",
+      "branch": "main",
+      "repo_name": "crowdstake.fun",
+      "pr_number": null,
+      "pr_title": null,
+      "pr_url": null,
+      "pr_author": null,
+      "last_updated": "2026-04-01T23:02:29Z",
+      "ci_status": "",
+      "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
+      "is_draft": false,
+      "labels": [],
+      "commits_from_parent": [],
+      "parent_branch_name": null,
+      "children": [
+        {
+          "name": "refactor: add generic factory pattern for all modules (#36)",
+          "branch": "RonTuretzky/fix-issue-36",
+          "repo_name": "crowdstake.fun",
+          "pr_number": 100,
+          "pr_title": "refactor: add generic factory pattern for all modules (#36)",
+          "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/100",
+          "pr_author": "RonTuretzky",
+          "last_updated": "2026-04-01T23:18:19Z",
+          "ci_status": "",
+          "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "4af644d3ecf2930807719dd759105b828a687b9c",
+              "short_sha": "4af644d",
+              "message": "refactor: add generic factory pattern for all modules and manager",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2026-03-30",
+              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/4af644d3ecf2930807719dd759105b828a687b9c"
+            },
+            {
+              "sha": "77c532b0750b36f9fb311689393444c8d55e93ca",
+              "short_sha": "77c532b",
+              "message": "chore: auto-format code with forge fmt [auto-format]",
+              "author": "github-actions[bot]",
+              "author_login": "github-actions[bot]",
+              "author_avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+              "date": "2026-03-30",
+              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/77c532b0750b36f9fb311689393444c8d55e93ca"
+            },
+            {
+              "sha": "2b38a71b919185ca759bbbc6311bc710d328ad30",
+              "short_sha": "2b38a71",
+              "message": "address copilot review feedback",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2026-03-30",
+              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/2b38a71b919185ca759bbbc6311bc710d328ad30"
+            },
+            {
+              "sha": "19e6b5e826529e994b78d20c48119e9dd2aee7a3",
+              "short_sha": "19e6b5e",
+              "message": "chore: auto-format code with forge fmt [auto-format]",
+              "author": "github-actions[bot]",
+              "author_login": "github-actions[bot]",
+              "author_avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+              "date": "2026-03-30",
+              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/19e6b5e826529e994b78d20c48119e9dd2aee7a3"
+            },
+            {
+              "sha": "e4d319bb3ae7a047ecb726ba5300a0945b8fb6fd",
+              "short_sha": "e4d319b",
+              "message": "Merge branch 'main' of https://github.com/BreadchainCoop/crowdstake.fun into Ron",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2026-03-30",
+              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/e4d319bb3ae7a047ecb726ba5300a0945b8fb6fd"
+            }
+          ],
+          "parent_branch_name": "main",
+          "children": [
+            {
+              "name": "docs: add NatSpec to CrowdStakeFactory",
+              "branch": "RonTuretzky/natspec-factory",
+              "repo_name": "crowdstake.fun",
+              "pr_number": 102,
+              "pr_title": "docs: add NatSpec to CrowdStakeFactory",
+              "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/102",
+              "pr_author": "RonTuretzky",
+              "last_updated": "2026-04-01T23:05:49Z",
+              "ci_status": "pass",
+              "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
+              "is_draft": false,
+              "labels": [],
+              "commits_from_parent": [
+                {
+                  "sha": "e50bb90d6193b9e1c609e41967a04c79fb210a5c",
+                  "short_sha": "e50bb90",
+                  "message": "docs: add NatSpec documentation to CrowdStakeFactory",
+                  "author": "Ron Turetzky",
+                  "author_login": "RonTuretzky",
+                  "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+                  "date": "2026-04-01",
+                  "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/e50bb90d6193b9e1c609e41967a04c79fb210a5c"
+                }
+              ],
+              "parent_branch_name": "RonTuretzky/fix-issue-36",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Refactor all modules to factory pattern (fixes #36)",
+          "branch": "RonTuretzky/factory-refactor",
+          "repo_name": "crowdstake.fun",
+          "pr_number": 97,
+          "pr_title": "Refactor all modules to factory pattern (fixes #36)",
+          "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/97",
+          "pr_author": "RonTuretzky",
+          "last_updated": "2026-03-30T21:40:46Z",
+          "ci_status": "pass",
+          "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "3a61c496649a825f59e151b71262bb867bbbaba4",
+              "short_sha": "3a61c49",
+              "message": "refactor: add factory pattern for all modules and make CycleModule proxy-compati",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2026-03-30",
+              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/3a61c496649a825f59e151b71262bb867bbbaba4"
+            },
+            {
+              "sha": "bd98757da45b966541ea1b35ee536996422729d6",
+              "short_sha": "bd98757",
+              "message": "chore: auto-format code with forge fmt [auto-format]",
+              "author": "github-actions[bot]",
+              "author_login": "github-actions[bot]",
+              "author_avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+              "date": "2026-03-30",
+              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/bd98757da45b966541ea1b35ee536996422729d6"
+            },
+            {
+              "sha": "f8f301584ad8f0e86dafc9065245d23244f8347e",
+              "short_sha": "f8f3015",
+              "message": "fix: address PR review comments",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2026-03-30",
+              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/f8f301584ad8f0e86dafc9065245d23244f8347e"
+            }
+          ],
+          "parent_branch_name": "main",
+          "children": []
+        },
+        {
+          "name": "feat: switch to mapping instead of linear search",
+          "branch": "45-optimize-recipient-queue-lookup-in-baserecipeintregistry-for-large-queues-addition-and-removal",
+          "repo_name": "crowdstake.fun",
+          "pr_number": 90,
+          "pr_title": "feat: switch to mapping instead of linear search",
+          "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/90",
+          "pr_author": "exo404",
+          "last_updated": "2026-03-31T17:34:18Z",
+          "ci_status": "pass",
+          "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
+          "is_draft": false,
+          "labels": [
+            "enhancement"
+          ],
+          "commits_from_parent": [
+            {
+              "sha": "4d95fb91d3f8afcfbaff6a2dd2d0abe661d38a97",
+              "short_sha": "4d95fb9",
+              "message": "feat: switch to mapping instead of linear search-",
+              "author": "exo404",
+              "author_login": "exo404",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/115696623?v=4",
+              "date": "2026-03-17",
+              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/4d95fb91d3f8afcfbaff6a2dd2d0abe661d38a97"
+            },
+            {
+              "sha": "f9080c13306ede49de9d85191ddb3c49f8bbc196",
+              "short_sha": "f9080c1",
+              "message": "fix: add natspec to recipient mapping",
+              "author": "exo404",
+              "author_login": "exo404",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/115696623?v=4",
+              "date": "2026-03-31",
+              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/f9080c13306ede49de9d85191ddb3c49f8bbc196"
+            }
+          ],
+          "parent_branch_name": "main",
+          "children": []
+        },
+        {
+          "name": "feat: implement VotingStreakNFTStrategy for Issue #24",
+          "branch": "feat/issue-24-nft-module",
+          "repo_name": "crowdstake.fun",
+          "pr_number": 82,
+          "pr_title": "feat: implement VotingStreakNFTStrategy for Issue #24",
+          "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/82",
+          "pr_author": "PasqualePaoloSilvenni",
+          "last_updated": "2026-04-01T08:51:02Z",
+          "ci_status": "",
+          "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [],
+          "parent_branch_name": "main",
+          "children": []
+        },
+        {
+          "name": "refactor: enhance QueueProcessed event with detailed recipie",
+          "branch": "refactor/queue-processed-event",
+          "repo_name": "crowdstake.fun",
+          "pr_number": 79,
+          "pr_title": "refactor: enhance QueueProcessed event with detailed recipient information (issue #42)",
+          "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/79",
+          "pr_author": "ss251",
+          "last_updated": "2026-03-13T20:17:32Z",
+          "ci_status": "",
+          "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [],
+          "parent_branch_name": "main",
+          "children": []
+        }
+      ]
+    },
     "safety-net": {
       "name": "safety-net",
       "branch": "dev",
@@ -18,7 +255,7 @@
       "pr_title": null,
       "pr_url": null,
       "pr_author": null,
-      "last_updated": "2026-03-31T21:59:08Z",
+      "last_updated": "2026-04-01T18:37:08Z",
       "ci_status": "",
       "github_url": "https://github.com/BreadchainCoop/safety-net",
       "is_draft": false,
@@ -26,6 +263,54 @@
       "commits_from_parent": [],
       "parent_branch_name": null,
       "children": [
+        {
+          "name": "feat: monorepo restructure with Next.js frontend app",
+          "branch": "RonTuretzky/houston-v2-app",
+          "repo_name": "safety-net",
+          "pr_number": 72,
+          "pr_title": "feat: monorepo restructure with Next.js frontend app",
+          "pr_url": "https://github.com/BreadchainCoop/safety-net/pull/72",
+          "pr_author": "RonTuretzky",
+          "last_updated": "2026-04-01T18:37:09Z",
+          "ci_status": "pass",
+          "github_url": "https://github.com/BreadchainCoop/safety-net",
+          "is_draft": false,
+          "labels": [],
+          "commits_from_parent": [
+            {
+              "sha": "e3291e0b77f9fee554643a6ab44ae70531f03448",
+              "short_sha": "e3291e0",
+              "message": "feat: monorepo restructure with Next.js frontend app",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2026-04-01",
+              "html_url": "https://github.com/BreadchainCoop/safety-net/commit/e3291e0b77f9fee554643a6ab44ae70531f03448"
+            },
+            {
+              "sha": "64f03a10cb515ea1aa43e6e2f64c19d4db7b059e",
+              "short_sha": "64f03a1",
+              "message": "fix: address Copilot PR review comments",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2026-04-01",
+              "html_url": "https://github.com/BreadchainCoop/safety-net/commit/64f03a10cb515ea1aa43e6e2f64c19d4db7b059e"
+            },
+            {
+              "sha": "63a855779d089af8872f119dd3b4e7f9c5ae986d",
+              "short_sha": "63a8557",
+              "message": "fix: coverage CI failing due to lcov source paths after monorepo move",
+              "author": "Ron Turetzky",
+              "author_login": "RonTuretzky",
+              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
+              "date": "2026-04-01",
+              "html_url": "https://github.com/BreadchainCoop/safety-net/commit/63a855779d089af8872f119dd3b4e7f9c5ae986d"
+            }
+          ],
+          "parent_branch_name": "dev",
+          "children": []
+        },
         {
           "name": "fix: use SafeERC20 for all token transfers",
           "branch": "70-replace-all-ierc20-transfer-with-safeerc20-safetransfer",
@@ -692,253 +977,6 @@
               "html_url": "https://github.com/BreadchainCoop/etherform/commit/7b38f11d9441b5110ef8ed5361e8277c63d9f774"
             }
           ],
-          "parent_branch_name": "main",
-          "children": []
-        }
-      ]
-    },
-    "crowdstake.fun": {
-      "name": "crowdstake.fun",
-      "branch": "main",
-      "repo_name": "crowdstake.fun",
-      "pr_number": null,
-      "pr_title": null,
-      "pr_url": null,
-      "pr_author": null,
-      "last_updated": "2026-03-31T17:31:02Z",
-      "ci_status": "",
-      "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
-      "is_draft": false,
-      "labels": [],
-      "commits_from_parent": [],
-      "parent_branch_name": null,
-      "children": [
-        {
-          "name": "refactor: add generic factory pattern for all modules (#36)",
-          "branch": "RonTuretzky/fix-issue-36",
-          "repo_name": "crowdstake.fun",
-          "pr_number": 100,
-          "pr_title": "refactor: add generic factory pattern for all modules (#36)",
-          "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/100",
-          "pr_author": "RonTuretzky",
-          "last_updated": "2026-03-31T17:48:32Z",
-          "ci_status": "pass",
-          "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "4af644d3ecf2930807719dd759105b828a687b9c",
-              "short_sha": "4af644d",
-              "message": "refactor: add generic factory pattern for all modules and manager",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2026-03-30",
-              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/4af644d3ecf2930807719dd759105b828a687b9c"
-            },
-            {
-              "sha": "77c532b0750b36f9fb311689393444c8d55e93ca",
-              "short_sha": "77c532b",
-              "message": "chore: auto-format code with forge fmt [auto-format]",
-              "author": "github-actions[bot]",
-              "author_login": "github-actions[bot]",
-              "author_avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
-              "date": "2026-03-30",
-              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/77c532b0750b36f9fb311689393444c8d55e93ca"
-            },
-            {
-              "sha": "2b38a71b919185ca759bbbc6311bc710d328ad30",
-              "short_sha": "2b38a71",
-              "message": "address copilot review feedback",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2026-03-30",
-              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/2b38a71b919185ca759bbbc6311bc710d328ad30"
-            },
-            {
-              "sha": "19e6b5e826529e994b78d20c48119e9dd2aee7a3",
-              "short_sha": "19e6b5e",
-              "message": "chore: auto-format code with forge fmt [auto-format]",
-              "author": "github-actions[bot]",
-              "author_login": "github-actions[bot]",
-              "author_avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
-              "date": "2026-03-30",
-              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/19e6b5e826529e994b78d20c48119e9dd2aee7a3"
-            },
-            {
-              "sha": "e4d319bb3ae7a047ecb726ba5300a0945b8fb6fd",
-              "short_sha": "e4d319b",
-              "message": "Merge branch 'main' of https://github.com/BreadchainCoop/crowdstake.fun into Ron",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2026-03-30",
-              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/e4d319bb3ae7a047ecb726ba5300a0945b8fb6fd"
-            }
-          ],
-          "parent_branch_name": "main",
-          "children": [
-            {
-              "name": "refactor: rename blacklist/whitelist to denylist/allowlist, ",
-              "branch": "RonTuretzky/natspec-denylist",
-              "repo_name": "crowdstake.fun",
-              "pr_number": 101,
-              "pr_title": "refactor: rename blacklist/whitelist to denylist/allowlist, add NatSpec",
-              "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/101",
-              "pr_author": "RonTuretzky",
-              "last_updated": "2026-03-31T01:53:36Z",
-              "ci_status": "pass",
-              "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
-              "is_draft": false,
-              "labels": [],
-              "commits_from_parent": [
-                {
-                  "sha": "05703b65b4daafaae279de3ff20a7bfebe0a62c1",
-                  "short_sha": "05703b6",
-                  "message": "refactor: rename blacklist/whitelist to denylist/allowlist and add NatSpec to Cr",
-                  "author": "Ron Turetzky",
-                  "author_login": "RonTuretzky",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-                  "date": "2026-03-30",
-                  "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/05703b65b4daafaae279de3ff20a7bfebe0a62c1"
-                },
-                {
-                  "sha": "e065fe7feb8f55d7f69a53eaed774944209774c2",
-                  "short_sha": "e065fe7",
-                  "message": "docs: address Copilot review feedback on NatSpec and README",
-                  "author": "Ron Turetzky",
-                  "author_login": "RonTuretzky",
-                  "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-                  "date": "2026-03-31",
-                  "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/e065fe7feb8f55d7f69a53eaed774944209774c2"
-                }
-              ],
-              "parent_branch_name": "RonTuretzky/fix-issue-36",
-              "children": []
-            }
-          ]
-        },
-        {
-          "name": "Refactor all modules to factory pattern (fixes #36)",
-          "branch": "RonTuretzky/factory-refactor",
-          "repo_name": "crowdstake.fun",
-          "pr_number": 97,
-          "pr_title": "Refactor all modules to factory pattern (fixes #36)",
-          "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/97",
-          "pr_author": "RonTuretzky",
-          "last_updated": "2026-03-30T21:40:46Z",
-          "ci_status": "pass",
-          "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [
-            {
-              "sha": "3a61c496649a825f59e151b71262bb867bbbaba4",
-              "short_sha": "3a61c49",
-              "message": "refactor: add factory pattern for all modules and make CycleModule proxy-compati",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2026-03-30",
-              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/3a61c496649a825f59e151b71262bb867bbbaba4"
-            },
-            {
-              "sha": "bd98757da45b966541ea1b35ee536996422729d6",
-              "short_sha": "bd98757",
-              "message": "chore: auto-format code with forge fmt [auto-format]",
-              "author": "github-actions[bot]",
-              "author_login": "github-actions[bot]",
-              "author_avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
-              "date": "2026-03-30",
-              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/bd98757da45b966541ea1b35ee536996422729d6"
-            },
-            {
-              "sha": "f8f301584ad8f0e86dafc9065245d23244f8347e",
-              "short_sha": "f8f3015",
-              "message": "fix: address PR review comments",
-              "author": "Ron Turetzky",
-              "author_login": "RonTuretzky",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/74178515?v=4",
-              "date": "2026-03-30",
-              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/f8f301584ad8f0e86dafc9065245d23244f8347e"
-            }
-          ],
-          "parent_branch_name": "main",
-          "children": []
-        },
-        {
-          "name": "feat: switch to mapping instead of linear search",
-          "branch": "45-optimize-recipient-queue-lookup-in-baserecipeintregistry-for-large-queues-addition-and-removal",
-          "repo_name": "crowdstake.fun",
-          "pr_number": 90,
-          "pr_title": "feat: switch to mapping instead of linear search",
-          "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/90",
-          "pr_author": "exo404",
-          "last_updated": "2026-03-31T17:34:18Z",
-          "ci_status": "pass",
-          "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
-          "is_draft": false,
-          "labels": [
-            "enhancement"
-          ],
-          "commits_from_parent": [
-            {
-              "sha": "4d95fb91d3f8afcfbaff6a2dd2d0abe661d38a97",
-              "short_sha": "4d95fb9",
-              "message": "feat: switch to mapping instead of linear search-",
-              "author": "exo404",
-              "author_login": "exo404",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/115696623?v=4",
-              "date": "2026-03-17",
-              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/4d95fb91d3f8afcfbaff6a2dd2d0abe661d38a97"
-            },
-            {
-              "sha": "f9080c13306ede49de9d85191ddb3c49f8bbc196",
-              "short_sha": "f9080c1",
-              "message": "fix: add natspec to recipient mapping",
-              "author": "exo404",
-              "author_login": "exo404",
-              "author_avatar_url": "https://avatars.githubusercontent.com/u/115696623?v=4",
-              "date": "2026-03-31",
-              "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/commit/f9080c13306ede49de9d85191ddb3c49f8bbc196"
-            }
-          ],
-          "parent_branch_name": "main",
-          "children": []
-        },
-        {
-          "name": "feat: implement VotingStreakNFTStrategy for Issue #24",
-          "branch": "feat/issue-24-nft-module",
-          "repo_name": "crowdstake.fun",
-          "pr_number": 82,
-          "pr_title": "feat: implement VotingStreakNFTStrategy for Issue #24",
-          "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/82",
-          "pr_author": "PasqualePaoloSilvenni",
-          "last_updated": "2026-03-31T19:26:19Z",
-          "ci_status": "",
-          "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [],
-          "parent_branch_name": "main",
-          "children": []
-        },
-        {
-          "name": "refactor: enhance QueueProcessed event with detailed recipie",
-          "branch": "refactor/queue-processed-event",
-          "repo_name": "crowdstake.fun",
-          "pr_number": 79,
-          "pr_title": "refactor: enhance QueueProcessed event with detailed recipient information (issue #42)",
-          "pr_url": "https://github.com/BreadchainCoop/crowdstake.fun/pull/79",
-          "pr_author": "ss251",
-          "last_updated": "2026-03-13T20:17:32Z",
-          "ci_status": "",
-          "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
-          "is_draft": false,
-          "labels": [],
-          "commits_from_parent": [],
           "parent_branch_name": "main",
           "children": []
         }
@@ -3779,6 +3817,407 @@
     }
   },
   "issues": {
+    "crowdstake.fun": {
+      "repo_name": "crowdstake.fun",
+      "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
+      "issues": [
+        {
+          "number": 96,
+          "title": "Derive redundant addresses from distributionManager across all modules",
+          "author": "RonTuretzky",
+          "created_at": "2026-03-25T21:35:35Z",
+          "updated_at": "2026-03-31T20:12:26Z",
+          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/96",
+          "labels": [],
+          "assignees": [],
+          "comments": [],
+          "body": "Multiple contracts take a `distributionManager`/`distributionModule` reference **and** separately accept sub-addresses that are already exposed as getters on `AbstractDistributionManager` (`recipientRegistry()`, `cycleManager()`, `votingModule()`). These redundant parameters should be derived instead.\n\n## Affected contracts\n\n### 1. AbstractVotingModule\nTakes `distributionModule`, `recipientRegistry`, and `cycleModule` as separate init params.\n- **Redundant:** `_recipientRegistry`, `_cycleModule` \u2014 derivable via `IDistributionModule(_distributionModule).recipientRegistry()` / `.cycleManager()`\n\n### 2. VotingDistributionStrategy\nTakes `distributionManager`, `recipientRegistry`, and `votingModule` as separate init params.\n- **Redundant:** `_recipientRegistry`, `_votingModule` \u2014 derivable via `IDistributionManager(_distributionManager).recipientRegistry()` / `.votingModule()`\n\n### 3. EqualDistributionStrategy\nTakes `distributionManager` and `recipientRegistry` as separate init params.\n- **Redundant:** `_recipientRegistry` \u2014 derivable via `IDistributionManager(_distributionManager).recipientRegistry()`\n\n## Proposed changes\n\n1. Add `recipientRegistry()`, `cycleManager()`, and `votingModule()` to `IDistributionModule` if not already present\n2. Remove redundant params from each contract's init function\n3. Derive them at init time from the distribution manager/module reference\n4. Update all call sites (factories, tests, deploy scripts)\n\n## Benefits\n\n- Fewer init parameters, less room for misconfiguration\n- Single source of truth for module references\n- Eliminates the risk of passing inconsistent addresses across modules\n- Consistent pattern across the entire module system"
+        },
+        {
+          "number": 91,
+          "title": "Add per-interval linear scaling to TimeWeightedVotingPower",
+          "author": "RonTuretzky",
+          "created_at": "2026-03-19T20:24:26Z",
+          "updated_at": "2026-03-20T18:02:58Z",
+          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/91",
+          "labels": [],
+          "assignees": [],
+          "comments": [
+            {
+              "id": "IC_kwDOPeu91c7z-Axs",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "cc @rubydusa @bagelface @hudsonhrh  ended up removing it from #88 to move fast , would love ur opinons",
+              "createdAt": "2026-03-19T20:31:49Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/91#issuecomment-4093119596",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOPeu91c70N6qk",
+              "author": {
+                "login": "rubydusa"
+              },
+              "authorAssociation": "NONE",
+              "body": "Wait but flashloans have to be returned in the same transaction right? Shouldn't the area of them be zero in practice?\n\nThough yes, the problem still exists for short term loans: In practice it would be shorting ETH/BTC/whatev with leverage via a defi lending protocol.\n\nSounds like a good solution to me\n",
+              "createdAt": "2026-03-20T11:08:19Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/91#issuecomment-4097288868",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOPeu91c70YSsP",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "> Wait but flashloans have to be returned in the same transaction right? Shouldn't the area of them be zero in practice?\n> \n> Though yes, the problem still exists for short term loans: In practice it would be shorting ETH/BTC/whatev with leverage via a defi lending protocol.\n> \n> Sounds like a good solution to me\n\nI guess there's a question on if this improves the end goal which is \"you should vote on exactly how much yield you're generating\" \n\nThis means that people who are trying to gain voting power through intermittent mints are normalized somewhat, it encourges holding more over time\n\nI took this off scope because realistically these attacks are very low impact and generally generate more yield than they're worth so I think its ok to release a verison without this improvement over the original bread contracts",
+              "createdAt": "2026-03-20T18:02:58Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/91#issuecomment-4100008719",
+              "viewerDidAuthor": false
+            }
+          ],
+          "body": "## Context\n\nThe current `TimeWeightedVotingPower` implementation computes a lossless time-weighted average over the cycle window, which dilutes flash loan attacks proportionally to `1/periodLength`. However, late in a cycle when `periodLength` is large, an attacker can still gain disproportionate voting power with a single-block flash loan.\n\nFor example, with a 500-block period:\n- Legitimate user holds 100 ETH for 499 blocks \u2192 ~99.8 ETH voting power\n- Attacker flash loans 500,000 ETH for 1 block \u2192 1,000 ETH voting power (10x the legitimate user)\n\n## Proposal\n\nAdd a configurable **scaling period** (previously called \"min holding period\") that applies a linear penalty **per checkpoint interval** rather than on the total period. Each segment where `duration < scalingPeriod` would have its contribution scaled by `duration / scalingPeriod`, producing a quadratic penalty on short-lived balance spikes:\n\n- Contribution becomes `value * duration\u00b2 / scalingPeriod` instead of `value * duration`\n- The same attacker scenario above would yield ~20 ETH instead of 1,000 ETH\n\n### Tradeoff\n\nLegitimate mid-cycle balance increases also get penalized until held for `scalingPeriod` blocks. This is arguably desirable \u2014 it's the same \"prove you're holding\" logic applied granularly.\n\n## Removed code to restore\n\nThe previous total-period penalty implementation was removed in this PR. Below is the code for reference \u2014 it should be adapted to apply per-interval instead:\n\n### Contract additions\n\n```solidity\n// Event\nevent ScalingPeriodUpdated(uint256 newPeriod);\n\n// State variable\nuint256 public scalingPeriod;\n\n// Constructor parameter\nconstructor(IVotesCheckpoints _votingToken, ICycleModule _cycleModule, uint256 _scalingPeriod) {\n    // ...existing checks...\n    scalingPeriod = _scalingPeriod;\n}\n\n// Admin setter\nfunction setScalingPeriod(uint256 _scalingPeriod) external onlyOwner {\n    scalingPeriod = _scalingPeriod;\n    emit ScalingPeriodUpdated(_scalingPeriod);\n}\n\n// Per-interval penalty (to"
+        },
+        {
+          "number": 85,
+          "title": "Fix dust/remainder handling in distribution strategies",
+          "author": "RonTuretzky",
+          "created_at": "2026-03-15T21:59:24Z",
+          "updated_at": "2026-03-16T11:57:09Z",
+          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/85",
+          "labels": [
+            "enhancement"
+          ],
+          "assignees": [],
+          "comments": [],
+          "body": "## Summary\nInteger division remainders (dust) can accumulate in contracts and never get distributed.\n\n## Affected locations\n\n### 1. VotingDistributionStrategy.sol \u2014 remainder left in contract\n`(amount * currentVotes[i]) / totalVotes` for each recipient drops fractional wei. Dust accumulates in the strategy contract over time.\n\n### 2. MultiStrategyDistributionManager.sol \u2014 remainder discarded entirely\n`yieldAmount / strategies.length` drops the remainder. For example, 100 / 3 = 33 each, 1 wei lost. Should give the last strategy `yieldAmount - (amountPerStrategy * (strategies.length - 1))`.\n\n### 3. EqualDistributionStrategy.sol \u2014 remainder left in contract\n`amount / recipients.length` drops the remainder. Dust accumulates in the strategy contract over time.\n\n## Source\nIdentified via Copilot review on PR #37."
+        },
+        {
+          "number": 83,
+          "title": "Make a custom voting implementation for COVA",
+          "author": "RonTuretzky",
+          "created_at": "2026-03-13T21:49:25Z",
+          "updated_at": "2026-03-13T21:49:25Z",
+          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/83",
+          "labels": [],
+          "assignees": [],
+          "comments": [],
+          "body": "https://docs.google.com/document/d/1eZZqVwMJuPoFi0jfwwf89F7KX6eDyB_b/edit"
+        },
+        {
+          "number": 77,
+          "title": "Should distros be activated with 0 voters or not?",
+          "author": "RonTuretzky",
+          "created_at": "2025-10-08T01:56:32Z",
+          "updated_at": "2025-10-08T01:56:32Z",
+          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/77",
+          "labels": [],
+          "assignees": [],
+          "comments": [],
+          "body": "I honestly think it shouldnt prevent distro people do not like to vote lmao in small communities this could be an issue for bread kit. but ill change it to match the normal bread contracts\r\n\r\n_Originally posted by @hudsonhrh in https://github.com/BreadchainCoop/gk-breadchain/pull/9#discussion_r2411630471_\r\n            "
+        },
+        {
+          "number": 73,
+          "title": "Refactor automation system for generic provider payment management",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-19T00:42:48Z",
+          "updated_at": "2025-08-19T01:10:50Z",
+          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/73",
+          "labels": [],
+          "assignees": [],
+          "comments": [
+            {
+              "id": "IC_kwDOPeu91c6-qt3n",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "Ai -generated pr here #74 ",
+              "createdAt": "2025-08-19T01:10:11Z",
+              "includesCreatedEdit": true,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/73#issuecomment-3198868967",
+              "viewerDidAuthor": false
+            }
+          ],
+          "body": "# Generic Automation Provider Payment Implementation\n\n## Introduction\n\nThis issue proposes a refactoring of the current automation system (issue #44) to create a generic, extensible solution for managing automation provider payments from yield distributions. The system will ensure that yield distributions are only executed when there's sufficient accumulated yield to cover the automation provider's execution costs, preventing unprofitable distributions and ensuring sustainable automation operations.\n\n## Problem Statement\n\n### Current Limitations\n\n1. **No Cost Management**: The current automation implementation doesn't account for execution costs charged by automation providers (Chainlink, Gelato, etc.)\n2. **Unprofitable Distributions**: Small yield amounts may trigger distributions where gas costs exceed the yield value\n3. **Provider-Specific Logic**: Each automation provider requires custom implementation without a unified payment interface\n4. **No Minimum Threshold**: Distributions can execute regardless of accumulated yield amount\n5. **Manual Fee Handling**: No automated mechanism to reserve and pay automation provider fees\n\n### Requirements\n\n- Generic interface for automation provider payment configuration\n- Yield threshold validation before distribution execution\n- Automatic fee reservation from yield\n- Support for multiple automation providers (Chainlink, Gelato, custom)\n- Configurable payment strategies (fixed fee, percentage, dynamic)\n- Protection against unprofitable distributions\n\n## Proposed Solution\n\n### Architecture Overview\n\n```mermaid\nsequenceDiagram\n    participant User\n    participant AutomationProvider\n    participant AutomationBase\n    participant PaymentManager\n    participant YieldModule\n    participant DistributionManager\n    participant Recipients\n\n    User->>AutomationProvider: Configure automation\n    \n    Note over AutomationProvider: Periodic check\n    AutomationProvider->>AutomationBase: checkUpkeep()\n    AutomationBase->>PaymentManager: "
+        },
+        {
+          "number": 72,
+          "title": "Release 0.0.2",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-19T00:23:31Z",
+          "updated_at": "2025-08-19T00:23:31Z",
+          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/72",
+          "labels": [],
+          "assignees": [],
+          "comments": [],
+          "body": ""
+        },
+        {
+          "number": 70,
+          "title": "Release 0.0.1",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-19T00:23:05Z",
+          "updated_at": "2026-03-17T17:53:00Z",
+          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/70",
+          "labels": [],
+          "assignees": [],
+          "comments": [],
+          "body": "# MVP-First Issue Parallelization Strategy\n\nMore info on Hackathon Sheets [Doc](https://docs.google.com/spreadsheets/d/1WEIxOiq5LCXlkBncUM0Tnp7BDYHZOL08nV-iP083nGU/edit?usp=sharing)\n\n## Overview\nShip a feature-complete MVP fast, then iterate on quality. This strategy prioritizes core functionality and user-facing features over testing infrastructure.\n\n## Gitgraph Visualization\n\n```mermaid\ngitGraph\n    commit id: \"main branch\"\n    \n    branch mvp-core\n    checkout mvp-core\n    commit id: \"#38: Yield Validation\" tag: \"MVP\"\n    commit id: \"#9: Distribution Strategy\" tag: \"MVP\"\n    commit id: \"#45: O(1) Queue Optimization\" tag: \"MVP\"\n    \n    checkout main\n    branch mvp-features\n    checkout mvp-features\n    commit id: \"#48: Time-Weighted Voting\" tag: \"MVP\"\n    commit id: \"#46: Gelato Automation\" tag: \"MVP\"\n    \n    checkout main\n    branch mvp-polish\n    checkout mvp-polish\n    commit id: \"#47: Distribution Identifiers\" tag: \"MVP\"\n    commit id: \"#42: Event Refactor\" tag: \"MVP\"\n    \n    checkout main\n    merge mvp-core\n    merge mvp-features\n    merge mvp-polish\n    \n    branch mvp-validation\n    checkout mvp-validation\n    commit id: \"#65: E2E Testing\" tag: \"MVP\"\n    \n    checkout main\n    merge mvp-validation\n    commit tag: \"\ud83d\ude80 MVP COMPLETE\"\n    \n    branch v2-optimization\n    checkout v2-optimization\n    commit id: \"#73: Provider Payment System\" tag: \"V2\"\n    \n    checkout main\n    branch v2-quality\n    checkout v2-quality\n    commit id: \"#63: Bulloak Test Migration\" tag: \"V2\"\n    commit id: \"#64: Fuzz Testing Suite\" tag: \"V2\"\n    \n    checkout main\n    merge v2-optimization\n    merge v2-quality\n    commit tag: \"v2.0 Professional\"\n\n```\n\n## MVP Scope - Get to Market Fast\n\n### Core Infrastructure [High Priority]\nThese make the system work properly:\n\n- **#38: Yield Validation** [Low Effort]\n  - Prevent distribution failures\n  - Essential safety checks\n  - Quick to implement\n\n- **#9: Distribution Strategy Module** [High Effort]\n  - Core yield distribution logic\n  - The"
+        },
+        {
+          "number": 64,
+          "title": "Add Fuzz Testing to BreadKit Protocol",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-18T23:33:22Z",
+          "updated_at": "2026-03-23T21:31:34Z",
+          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/64",
+          "labels": [
+            "enhancement"
+          ],
+          "assignees": [],
+          "comments": [
+            {
+              "id": "IC_kwDOPeu91c71NA2M",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "## Dependencies\n- Should be done after core modules are stable:\n  - #2 (Voting Module)\n  - #37 (Distribution Strategy Module)\n  - #36 (Factory Pattern refactor)",
+              "createdAt": "2026-03-23T21:31:34Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/64#issuecomment-4113829260",
+              "viewerDidAuthor": false
+            }
+          ],
+          "body": "# Add Fuzz Testing to BreadKit Protocol\n\n## Introduction\n\nFuzz testing (property-based testing) is a crucial security practice for smart contract development that automatically generates random inputs to test contract invariants and edge cases. The BreadKit protocol would benefit significantly from comprehensive fuzz testing to ensure robustness against unexpected inputs and maintain critical invariants across all possible states.\n\n## Problem Statement\n\n### Current State\n- Tests primarily use hardcoded values and specific scenarios\n- Limited coverage of edge cases and boundary conditions\n- No systematic testing of invariants across random state transitions\n- Potential for undiscovered vulnerabilities in arithmetic operations and state transitions\n\n### Challenges\n1. **Incomplete Edge Case Coverage**: Manual test cases cannot cover all possible input combinations\n2. **Arithmetic Vulnerabilities**: Complex yield calculations and distribution logic may have overflow/underflow risks\n3. **State Machine Violations**: Cycle transitions and voting mechanisms need invariant validation\n4. **Economic Security**: Token minting/burning and yield distribution require robust economic invariant testing\n\n### Impact\n- Potential security vulnerabilities in production\n- Risk of economic exploits in yield distribution\n- Possible DoS vectors through edge case inputs\n- Reduced confidence in protocol safety\n\n## Proposed Solution\n\nImplement comprehensive fuzz testing using Foundry's built-in fuzzing capabilities, focusing on critical protocol invariants, arithmetic operations, and state transitions.\n\n## Mermaid Diagrams\n\n### Sequence Diagram - Fuzz Testing Flow\n\n```mermaid\nsequenceDiagram\n    participant Fuzzer as Foundry Fuzzer\n    participant Test as Fuzz Test\n    participant Contract as BreadKit Contract\n    participant Invariant as Invariant Checker\n    \n    Fuzzer->>Fuzzer: Generate random inputs\n    \n    loop For N iterations\n        Fuzzer->>Test: Provide random inputs\n        Test->>"
+        },
+        {
+          "number": 63,
+          "title": "Refactor Unit Tests to Bulloak Format and Review",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-18T23:33:15Z",
+          "updated_at": "2026-03-23T21:31:35Z",
+          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/63",
+          "labels": [
+            "enhancement",
+            "good first issue"
+          ],
+          "assignees": [],
+          "comments": [
+            {
+              "id": "IC_kwDOPeu91c71NA3I",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "## Dependencies\n- Should be done after core module implementations are stable",
+              "createdAt": "2026-03-23T21:31:35Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/63#issuecomment-4113829320",
+              "viewerDidAuthor": false
+            }
+          ],
+          "body": "# Refactor Unit Tests to Bulloak Format and Review\n\n## Introduction\n- video demo [here](https://www.youtube.com/watch?v=0-EmbNVgFA4)\nThe BreadKit protocol currently has a comprehensive test suite written in standard Forge format. To improve test organization, readability, and maintainability, we should refactor these tests to follow the Bulloak testing framework pattern. Bulloak provides a tree-based test organization structure that makes tests more discoverable and easier to reason about.\n\n## Problem Statement\n\n### Current State\n- Tests are written in traditional flat Forge test format\n- Test organization follows basic naming conventions but lacks hierarchical structure\n- Difficult to visualize test coverage at a glance\n- No standardized approach to test organization across different contracts\n\n### Challenges\n1. **Test Discoverability**: Current flat structure makes it difficult to understand what scenarios are being tested\n2. **Coverage Gaps**: Hard to identify missing test cases without clear organizational structure\n3. **Maintenance Burden**: Tests for complex contracts become unwieldy as they grow\n4. **Documentation**: Test structure doesn't self-document the expected behavior clearly\n\n### Impact\n- Slower onboarding for new developers\n- Potential gaps in test coverage\n- Increased cognitive load when adding new tests\n- Difficulty in maintaining test quality standards\n\n## Proposed Solution\n\nRefactor all existing unit tests to follow the Bulloak pattern, which uses a tree-based structure for organizing tests based on contract functions and their various states/conditions.\n\n## Mermaid Diagrams\n\n### Sequence Diagram - Test Execution Flow\n\n```mermaid\nsequenceDiagram\n    participant Dev as Developer\n    participant Bulloak as Bulloak Framework\n    participant Forge as Forge Test Runner\n    participant Contract as Smart Contract\n    participant Assert as Assertion Library\n\n    Dev->>Bulloak: Write tree-structured tests\n    Bulloak->>Bulloak: Parse tree structure\n    Bu"
+        },
+        {
+          "number": 62,
+          "title": "Add voting functions with additional bytes parameter for downstream implementations (e.g., multipliers)",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-18T23:24:07Z",
+          "updated_at": "2026-03-19T15:08:43Z",
+          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/62",
+          "labels": [],
+          "assignees": [],
+          "comments": [
+            {
+              "id": "IC_kwDOPeu91c7zlhnn",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "Moving to TODO; a full feature spec for votiing multipliers would be more effective",
+              "createdAt": "2026-03-19T00:49:50Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/62#issuecomment-4086700519",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDOPeu91c7z1Nbp",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "RonTuretzky/vote-with-params draft is in this branch",
+              "createdAt": "2026-03-19T15:08:43Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/62#issuecomment-4090812137",
+              "viewerDidAuthor": false
+            }
+          ],
+          "body": "## Feature Request: Voting with Additional Bytes for Downstream Implementations\n\n### Motivation\n\nEnable voting modules to accept arbitrary `bytes` data that can be handled by downstream implementations, providing flexibility for features like custom multipliers, metadata, or other protocol-specific parameters.\n\nThis follows the pattern established in the [Breadchain repository](https://github.com/BreadchainCoop/breadchain), which implements a sophisticated voting multipliers system through `castVoteWithMultipliers` function. However, the current BreadKit voting module implementation lacks a generic mechanism to pass additional data to voting functions.\n\n### Context from Breadchain\n\nThe Breadchain repo demonstrates advanced voting features:\n- **VotingMultipliers.sol**: Manages allowlisted multipliers for voting power calculation\n- **castVoteWithMultipliers**: Accepts multiplier indices to apply different voting power modifiers\n- Multiple multiplier types: NFT-based, proveable, cross-chain, etc.\n\nReference: [Breadchain VotingMultipliers Implementation](https://github.com/BreadchainCoop/breadchain/blob/main/src/VotingMultipliers.sol)\n\n### Current Limitation\n\nThe current BreadKit voting module only supports:\n```solidity\nfunction castVoteWithSignature(\n    address voter, \n    uint256[] calldata points, \n    uint256 nonce, \n    bytes calldata signature\n) external;\n```\n\nThere's no mechanism to pass additional protocol-specific data that downstream implementations might need.\n\n### Proposed Solution\n\nAdd new voting functions that accept an additional `bytes` parameter, following OpenZeppelin Governor patterns:\n\n```solidity\n// In AbstractVotingModule or concrete implementations\nfunction castVoteWithSignatureAndParams(\n    address voter,\n    uint256[] calldata points,\n    uint256 nonce,\n    bytes calldata signature,\n    bytes calldata additionalData\n) external virtual;\n\n// Internal processing\nfunction _processVoteWithParams(\n    address voter,\n    uint256[] calldata points,\n  "
+        },
+        {
+          "number": 46,
+          "title": "Review and Implement Gelato Automation Integration",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-17T05:31:19Z",
+          "updated_at": "2025-08-19T00:24:32Z",
+          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/46",
+          "labels": [
+            "documentation"
+          ],
+          "assignees": [],
+          "comments": [],
+          "body": "## Introduction\nGelato Network provides a decentralized automation platform that can be integrated to automate yield distribution in smart contracts. The Breadkit project aims to leverage Gelato for managing automated yield distributions via compatible interfaces.\n\n## Problem Statement\nThe current implementation requires a thorough review and integration of Gelato's automation interface within Breadkit. Ensuring compatibility, security, and maintainability is essential for reliable yield distribution. The provided `GelatoAutomation` contract is intended to interface with Gelato's executors and automate the distribution process, but its integration, logic, and edge cases need to be validated and completed.\n\n## Mermaid Sequence Diagram\n```mermaid\nsequenceDiagram\n    participant G as Gelato Executor\n    participant GA as GelatoAutomation\n    participant DM as DistributionManager\n    G->>GA: checker()\n    GA->>GA: isDistributionReady()\n    alt Distribution ready\n        GA->>G: return (true, execPayload)\n        G->>GA: execute(execPayload)\n        GA->>DM: executeDistribution()\n    else Not ready\n        GA->>G: return (false, empty)\n    end\n```\n\n## Mermaid Class Diagram\n```mermaid\nclassDiagram\n    class GelatoAutomation {\n        +checker() bool, bytes\n        +execute(bytes)\n    }\n    class AutomationBase {\n        +isDistributionReady() bool\n        +getAutomationData() bytes\n        +executeDistribution()\n    }\n    GelatoAutomation --|> AutomationBase\n```\n\n## Code Snippet\n```\n// SPDX-License-Identifier: MIT\npragma solidity ^0.8.20;\n\nimport \"./AutomationBase.sol\";\n\n/// @title GelatoAutomation\n/// @notice Gelato Network compatible automation implementation\n/// @dev Implements Gelato automation interface for yield distribution\ncontract GelatoAutomation is AutomationBase {\n    constructor(address _distributionManager) AutomationBase(_distributionManager) {}\n\n    /// @notice Gelato-compatible resolver function\n    /// @dev Called by Gelato executors to check if work nee"
+        },
+        {
+          "number": 45,
+          "title": "Optimize Recipient Queue Lookup in BaseRecipeIntRegistry for Large Queues (addition and removal)",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-17T05:25:26Z",
+          "updated_at": "2026-03-23T21:31:33Z",
+          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/45",
+          "labels": [
+            "enhancement"
+          ],
+          "assignees": [
+            "exo404"
+          ],
+          "comments": [
+            {
+              "id": "IC_kwDOPeu91c71NA07",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "## Dependencies\n- Related to #42 (Refactor QueueProcessed event) - both touch registry code",
+              "createdAt": "2026-03-23T21:31:33Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/45#issuecomment-4113829179",
+              "viewerDidAuthor": false
+            }
+          ],
+          "body": "## Introduction\nThe `BaseRecipeIntRegistry` in this repository manages recipient queuing using an array called `queuedRecipientsForAddition`. As the number of queued recipients grows, the current linear search approach for checking duplicates can become a performance bottleneck. This issue also applies to the removal queue entries lookup.\n\n## Problem Statement\nCurrently, recipient addresses are checked for duplicates in the queue using a linear search through the `queuedRecipientsForAddition` array. For large queues, this results in O(n) time complexity for each lookup, which can significantly impact performance in high-volume scenarios.\n\n## Proposed Solution\nUse a mapping (hash table) to track queued addresses, enabling O(1) time complexity for duplicate checks. This approach improves efficiency especially as the queue size increases.\n\n## Mermaid Sequence Diagram\n```mermaid\nsequenceDiagram\n    participant User\n    participant Registry\n    User->>Registry: Add recipient address\n    Registry->>Registry: Check if address is queued (linear search)\n    alt Current: Array search\n        Registry-->>User: O(n) time (inefficient)\n    else Proposed: Mapping check\n        Registry-->>User: O(1) time (efficient)\n    end\n```\n\n## Mermaid Class Diagram\n```mermaid\nclassDiagram\n    class BaseRecipeIntRegistry {\n        +address[] queuedRecipientsForAddition\n        +mapping(address => bool) isQueued\n        +addRecipient(address)\n    }\n```\n\n## Code Snippets\n**Current Implementation:**\n```solidity\nfunction addRecipient(address recipient) public {\n    for(uint i = 0; i < queuedRecipientsForAddition.length; i++) {\n        require(queuedRecipientsForAddition[i] != recipient, \"Already queued\");\n    }\n    queuedRecipientsForAddition.push(recipient);\n}\n```\n\n**Proposed Implementation:**\n```solidity\nmapping(address => bool) isQueued;\n\nfunction addRecipient(address recipient) public {\n    require(!isQueued[recipient], \"Already queued\");\n    isQueued[recipient] = true;\n    queuedRecipientsFo"
+        },
+        {
+          "number": 44,
+          "title": "Add support to pay the automation as an extension of Chainlink Automation from yield",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-17T04:45:15Z",
+          "updated_at": "2025-08-17T04:45:15Z",
+          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/44",
+          "labels": [
+            "enhancement"
+          ],
+          "assignees": [],
+          "comments": [],
+          "body": "## Introduction\n\nThis issue proposes adding support to pay Chainlink Automation fees directly from yield generated within Breadkit, extending the current integration to allow programmatic upkeep registration and management.\n\n## Problem Statement\n\nCurrently, Breadkit integrates Chainlink Automation for yield strategies, but payment of automation fees is not automated and requires manual funding. This limits the protocol's ability to dynamically register, fund, and manage upkeeps based on yield performance and strategy execution.\n\n## Solution Overview\n\nImplement programmatic upkeep registration and funding, enabling Breadkit contracts to automatically pay automation fees from yield and manage upkeeps lifecycle (register, fund, edit, cancel) via the Chainlink Automation registry.\n\n### Registration Flow\n- Ensure contract is Automation Compatible.\n- Maintain upgradable references to LINK token, registry, and registrar addresses.\n- Use interface definitions for LINK, Registrar, and Registry.\n- Register upkeeps programmatically using LINK approval and `registerUpkeep` functions.\n\n## Mermaid Diagrams\n\n### Class Diagram\n```mermaid\nclassDiagram\n  BreadkitYieldStrategy <|-- AutomationRegistrarInterface\n  BreadkitYieldStrategy <|-- LinkTokenInterface\n  AutomationRegistrarInterface <|-- Registry\n```\n\n### Sequence Diagram\n```mermaid\nsequenceDiagram\n  participant BreadkitContract\n  participant LINKToken\n  participant AutomationRegistrar\n  BreadkitContract->>LINKToken: approve(registrar, amount)\n  BreadkitContract->>AutomationRegistrar: registerUpkeep(params)\n  AutomationRegistrar-->>BreadkitContract: upkeepID\n```\n\n## Example Code Snippet\n```solidity\n// SPDX-License-Identifier: MIT\npragma solidity 0.8.19;\n\nimport {LinkTokenInterface} from \"@chainlink/contracts/src/v0.8/shared/interfaces/LinkTokenInterface.sol\";\n\nstruct RegistrationParams {\n    string name;\n    bytes encryptedEmail;\n    address upkeepContract;\n    uint32 gasLimit;\n    address adminAddress;\n    uint8 triggerType;\n   "
+        },
+        {
+          "number": 36,
+          "title": "Refactor all modules and manager to Factory Pattern similar to BaseToken",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-16T23:17:11Z",
+          "updated_at": "2026-03-25T21:40:21Z",
+          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/36",
+          "labels": [],
+          "assignees": [],
+          "comments": [
+            {
+              "id": "IC_kwDOPeu91c71NA4X",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "## Dependencies\n- Blocked by core module PRs being merged first (as noted in issue description)",
+              "createdAt": "2026-03-23T21:31:36Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/36#issuecomment-4113829399",
+              "viewerDidAuthor": false
+            }
+          ],
+          "body": "# WARNING MAY NEED TO BE REFACTORED AFTER #4  and #2  are merged!\n\n### Introduction\nBreadkit currently utilizes various modules and a manager pattern for its token and contract logic. The BaseToken implementation has been migrated to a factory pattern, providing greater extensibility, composability, and maintainability. To align with this architectural improvement and unify the codebase, all modules and the manager should be refactored to follow a similar factory pattern.\n\n## Problem Statement\n- Existing modules and manager implementations do not follow the factory pattern, leading to inconsistencies in instantiation and configuration.\n- This may result in code duplication, less modularity, and more complex testing and deployment processes.\n- The BaseToken refactor has shown benefits in scalability and maintainability that should be adopted across all components.\n\n## Proposed Solution\n- Refactor all modules and the manager to implement the factory pattern as demonstrated by BaseToken.\n- Ensure that the construction, initialization, and dependency injection of modules is standardized via factories.\n- Update documentation and tests to reflect these changes.\n\n## Sequence Diagram (Mermaid)\n```mermaid\nsequenceDiagram\n    participant Factory\n    participant Manager\n    participant ModuleA\n    participant ModuleB\n    Factory->>Manager: Create Manager Instance\n    Factory->>ModuleA: Create ModuleA Instance\n    Factory->>ModuleB: Create ModuleB Instance\n    Manager->>ModuleA: Register ModuleA\n    Manager->>ModuleB: Register ModuleB\n    Manager->>Factory: Report readiness\n```\n\n## Class Diagram (Mermaid)\n```mermaid\nclassDiagram\n    class Factory {\n        +createManager()\n        +createModuleA()\n        +createModuleB()\n    }\n    class Manager {\n        +registerModule(Module)\n        +modules: Module[]\n    }\n    class ModuleA {\n        +initialize()\n    }\n    class ModuleB {\n        +initialize()\n    }\n    Factory --> Manager\n    Factory --> ModuleA\n    Factory --> ModuleB\n "
+        },
+        {
+          "number": 24,
+          "title": "Add generic NFT awarding and burning module for base token holders during distribution",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-16T21:27:11Z",
+          "updated_at": "2026-03-23T21:31:30Z",
+          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/24",
+          "labels": [
+            "enhancement",
+            "good first issue"
+          ],
+          "assignees": [],
+          "comments": [
+            {
+              "id": "IC_kwDOPeu91c71NAxI",
+              "author": {
+                "login": "RonTuretzky"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "body": "## Dependencies\n- Blocked by #37 (Implement Distribution Strategy Module) - needs distribution hooks",
+              "createdAt": "2026-03-23T21:31:30Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/24#issuecomment-4113828936",
+              "viewerDidAuthor": false
+            }
+          ],
+          "body": "## Introduction\nBreadkit enables flexible token distribution and module extension. However, a common use case is to reward users with NFTs based on their holdings during distribution events, and potentially burn those NFTs if criteria are not met. A generic module for this would support a variety of distribution strategies and facilitate community incentives.\n\n## Problem Statement\nCurrently, Breadkit does not provide a built-in module for automatically awarding (minting) and burning NFTs for users who hold a minimum amount of the base token during distribution execution. This feature would enable:\n- Automated recognition and incentivization of engaged users\n- Flexible configuration for minimum holdings and NFT logic\n- Streamlined integration into existing distribution workflows\n\n## Proposed Solution\nImplement a Breadkit module that:\n- Checks user holdings of the base token during distribution\n- Mints NFTs to eligible users\n- Optionally burns NFTs for users who no longer meet holding criteria\n- Provides configuration for thresholds, NFT metadata, and hooks in distribution lifecycle\n\n## Mermaid Diagrams\n\n**Class Diagram:**\n```mermaid\nclassDiagram\n    class DistributionModule {\n      +executeDistribution()\n      +checkEligibility()\n      +awardNFT()\n      +burnNFT()\n    }\n    class User {\n      +address\n      +baseTokenBalance\n      +nftsOwned\n    }\n    class NFTContract {\n      +mint(address)\n      +burn(tokenId)\n    }\n    DistributionModule --> User\n    DistributionModule --> NFTContract\n```\n\n**Sequence Diagram:**\n```mermaid\nsequenceDiagram\n    participant D as DistributionModule\n    participant U as User\n    participant NFT as NFTContract\n    D->>U: checkEligibility(baseTokenBalance)\n    alt eligible\n        D->>NFT: mint(userAddress)\n        NFT-->>U: NFT awarded\n    else not eligible\n        D->>NFT: burn(userNFT)\n        NFT-->>U: NFT burned\n    end\n```\n\n## Code Snippets\n\n**Solidity Skeleton:**\n```solidity\ncontract DistributionNFTModule {\n    IERC20 public baseTo"
+        },
+        {
+          "number": 10,
+          "title": "Distribution Module Implementation",
+          "author": "RonTuretzky",
+          "created_at": "2025-08-16T06:04:13Z",
+          "updated_at": "2025-08-16T06:04:13Z",
+          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/10",
+          "labels": [],
+          "assignees": [],
+          "comments": [],
+          "body": "# Distribution Module Implementation\n\n## Introduction\n\nThe Distribution Module is the central orchestrating component of the BreadKit protocol that handles yield collection and allocation. It coordinates all aspects of the distribution process, from yield harvesting to final fund transfers, ensuring fair and transparent distributions while maintaining security against various attack vectors and providing the core functionality that ties together all other modules.\n\n## Problem Statement\n\nExecuting fair and transparent yield distributions is complex, requiring precise calculations, secure fund transfers, and protection against various attack vectors. Without proper safeguards, distributions could be manipulated through front-running, sandwich attacks, or calculation errors. The system must ensure accurate proportional distributions while maintaining gas efficiency and preventing both accidental and malicious fund loss.\n\nThe Distribution Module addresses these challenges by providing:\n1. **Secure Distribution Orchestration**: Coordinated execution across all modules\n2. **Attack Resistance**: Protection against MEV and manipulation attempts\n3. **Accurate Calculations**: Precise proportional distributions based on votes\n4. **Transparent Operations**: Full auditability of all distribution decisions\n\n## Architecture\n\n### Class Diagram\n\n```mermaid\nclassDiagram\n    class DistributionManager {\n        +address[] recipients\n        +uint256[] recipientDistributions\n        +uint256 cycleLength\n        +uint256 lastClaimedBlockNumber\n        +uint256 yieldFixedSplitDivisor\n        +distributeYield()\n        +queueRecipientAddition()\n        +queueRecipientRemoval()\n        +getCurrentDistributionState()\n        +validateDistribution()\n    }\n    \n    class IDistributionModule {\n        <<interface>>\n        +distributeYield()\n        +getCurrentDistributionState() returns(DistributionState)\n    }\n    \n    class YieldCollector {\n        +mintTokensBeforeCollection()\n        +coll"
+        }
+      ]
+    },
     "safety-net": {
       "repo_name": "safety-net",
       "github_url": "https://github.com/BreadchainCoop/safety-net",
@@ -4468,7 +4907,7 @@
           "title": "Add email notifications for Saving Circles users",
           "author": "franrolotti",
           "created_at": "2026-03-11T17:57:07Z",
-          "updated_at": "2026-03-26T20:51:43Z",
+          "updated_at": "2026-04-01T14:33:37Z",
           "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/43",
           "labels": [],
           "assignees": [
@@ -4521,74 +4960,7 @@
               "viewerDidAuthor": false
             }
           ],
-          "body": "### Summary\n\nExplore and implement email notifications for key user events in the Stacks app.\n\nThe goal is to improve UX by keeping users informed about important circle activity such as upcoming deposits, successful contributions, payout availability, missed payments, and other relevant status changes.\n\n### Why\n\nStacks depends on timely user actions and clear communication. Email notifications can reduce missed deposits, improve participation, and make the product easier to use, especially for users who are not checking the app constantly.\n\nThis could also become a useful UX improvement for demos, pilots, and future integrations.\n\n### Scope\n\n* Identify the most important notification events in the current app flow\n* Define which notifications should be sent and when\n* Review current backend / app architecture to determine where notification triggers should live\n* Choose an initial delivery approach for sending emails\n* Implement a minimal but extensible notification flow\n"
-        },
-        {
-          "number": 42,
-          "title": "Explore integration for hackathon",
-          "author": "franrolotti",
-          "created_at": "2026-03-11T17:48:29Z",
-          "updated_at": "2026-03-23T23:07:15Z",
-          "html_url": "https://github.com/BreadchainCoop/app-stacks/issues/42",
-          "labels": [],
-          "assignees": [
-            "franrolotti"
-          ],
-          "comments": [
-            {
-              "id": "IC_kwDOQBrnic7yDyCa",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "NONE",
-              "body": "@franrolotti seems kind of urgent? how can I help?",
-              "createdAt": "2026-03-14T18:46:52Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/app-stacks/issues/42#issuecomment-4061077658",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOQBrnic7yDzlz",
-              "author": {
-                "login": "franrolotti"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "@RonTuretzky the deadline was extended to march the 31st so we have more time to work on a nice application for this. I'll dm you our first idea... It would be nice to have your feedback and ideas for this",
-              "createdAt": "2026-03-14T18:50:15Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [
-                {
-                  "content": "THUMBS_UP",
-                  "users": {
-                    "totalCount": 1
-                  }
-                }
-              ],
-              "url": "https://github.com/BreadchainCoop/app-stacks/issues/42#issuecomment-4061084019",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOQBrnic71OwxV",
-              "author": {
-                "login": "brendaasfjnso"
-              },
-              "authorAssociation": "NONE",
-              "body": "Adding this in case it can help \n\n<img width=\"1208\" height=\"807\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/f3b749b5-5f8b-4157-a225-d2317e1fda6d\" />",
-              "createdAt": "2026-03-23T23:07:15Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/app-stacks/issues/42#issuecomment-4114287701",
-              "viewerDidAuthor": false
-            }
-          ],
-          "body": "### Summary\n\nReview Stacks to identify what **hackathon-friendly integration** could fit naturally for the hackathon with deadline on march 16th.\n\nImplement the integration. "
+          "body": "## Summary\n\nImplement a minimal notification solution for Stacks so users know when they need to make a deposit and (not MVP) can confirm when a deposit has been made.\n\nThe MVP should follow the lowest-friction approach discussed by the team: generate an `.ics` calendar file in the frontend that users can download and import into their calendar app. The calendar should include deposit-related events and reminders so users receive notifications through their own calendar system without requiring a backend notification service.\n\nAs a follow-up, we should also evaluate a more direct notification channel using email, ideally leveraging Privy emails for users who signed in with email or explicitly choose to share one.\n\n## Why\n\nUser research and testing showed that users often forget when they need to deposit and feel unsure about upcoming round activity. This creates avoidable confusion and missed actions in a flow that depends on timely participation.\n\nA downloadable calendar file is a low-effort way to improve this immediately without backend work. It also leaves room for future notification channels, such as email or messaging, if we decide the UX needs something more proactive.\n\n## Context\n\nFrom the current product discussion, the main user problem is:\n\n- Users do not always know when they need to deposit\n- Users may want a clear reminder before the deposit deadline\n- Users also benefit from confirmation that a deposit was successfully made\n\nThere is already an idea in circulation to let users download an `.ics` file and sync it with their calendar. That should be the minimum deliverable for this issue.\n\nThere is also interest in exploring email notifications as a possible improvement, especially for users authenticated with Privy via email.\n\n## Goals\n\n- Give users a way to receive reminders before they need to deposit\n- Ship a solution that does not require backend infrastructure\n\n## Proposed MVP\n\nBuild frontend-generated `.ics` calendar export for each user / stack"
         },
         {
           "number": 34,
@@ -4761,407 +5133,6 @@
         }
       ]
     },
-    "crowdstake.fun": {
-      "repo_name": "crowdstake.fun",
-      "github_url": "https://github.com/BreadchainCoop/crowdstake.fun",
-      "issues": [
-        {
-          "number": 96,
-          "title": "Derive redundant addresses from distributionManager across all modules",
-          "author": "RonTuretzky",
-          "created_at": "2026-03-25T21:35:35Z",
-          "updated_at": "2026-03-31T20:12:26Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/96",
-          "labels": [],
-          "assignees": [],
-          "comments": [],
-          "body": "Multiple contracts take a `distributionManager`/`distributionModule` reference **and** separately accept sub-addresses that are already exposed as getters on `AbstractDistributionManager` (`recipientRegistry()`, `cycleManager()`, `votingModule()`). These redundant parameters should be derived instead.\n\n## Affected contracts\n\n### 1. AbstractVotingModule\nTakes `distributionModule`, `recipientRegistry`, and `cycleModule` as separate init params.\n- **Redundant:** `_recipientRegistry`, `_cycleModule` \u2014 derivable via `IDistributionModule(_distributionModule).recipientRegistry()` / `.cycleManager()`\n\n### 2. VotingDistributionStrategy\nTakes `distributionManager`, `recipientRegistry`, and `votingModule` as separate init params.\n- **Redundant:** `_recipientRegistry`, `_votingModule` \u2014 derivable via `IDistributionManager(_distributionManager).recipientRegistry()` / `.votingModule()`\n\n### 3. EqualDistributionStrategy\nTakes `distributionManager` and `recipientRegistry` as separate init params.\n- **Redundant:** `_recipientRegistry` \u2014 derivable via `IDistributionManager(_distributionManager).recipientRegistry()`\n\n## Proposed changes\n\n1. Add `recipientRegistry()`, `cycleManager()`, and `votingModule()` to `IDistributionModule` if not already present\n2. Remove redundant params from each contract's init function\n3. Derive them at init time from the distribution manager/module reference\n4. Update all call sites (factories, tests, deploy scripts)\n\n## Benefits\n\n- Fewer init parameters, less room for misconfiguration\n- Single source of truth for module references\n- Eliminates the risk of passing inconsistent addresses across modules\n- Consistent pattern across the entire module system"
-        },
-        {
-          "number": 91,
-          "title": "Add per-interval linear scaling to TimeWeightedVotingPower",
-          "author": "RonTuretzky",
-          "created_at": "2026-03-19T20:24:26Z",
-          "updated_at": "2026-03-20T18:02:58Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/91",
-          "labels": [],
-          "assignees": [],
-          "comments": [
-            {
-              "id": "IC_kwDOPeu91c7z-Axs",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "cc @rubydusa @bagelface @hudsonhrh  ended up removing it from #88 to move fast , would love ur opinons",
-              "createdAt": "2026-03-19T20:31:49Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/91#issuecomment-4093119596",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOPeu91c70N6qk",
-              "author": {
-                "login": "rubydusa"
-              },
-              "authorAssociation": "NONE",
-              "body": "Wait but flashloans have to be returned in the same transaction right? Shouldn't the area of them be zero in practice?\n\nThough yes, the problem still exists for short term loans: In practice it would be shorting ETH/BTC/whatev with leverage via a defi lending protocol.\n\nSounds like a good solution to me\n",
-              "createdAt": "2026-03-20T11:08:19Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/91#issuecomment-4097288868",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOPeu91c70YSsP",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "> Wait but flashloans have to be returned in the same transaction right? Shouldn't the area of them be zero in practice?\n> \n> Though yes, the problem still exists for short term loans: In practice it would be shorting ETH/BTC/whatev with leverage via a defi lending protocol.\n> \n> Sounds like a good solution to me\n\nI guess there's a question on if this improves the end goal which is \"you should vote on exactly how much yield you're generating\" \n\nThis means that people who are trying to gain voting power through intermittent mints are normalized somewhat, it encourges holding more over time\n\nI took this off scope because realistically these attacks are very low impact and generally generate more yield than they're worth so I think its ok to release a verison without this improvement over the original bread contracts",
-              "createdAt": "2026-03-20T18:02:58Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/91#issuecomment-4100008719",
-              "viewerDidAuthor": false
-            }
-          ],
-          "body": "## Context\n\nThe current `TimeWeightedVotingPower` implementation computes a lossless time-weighted average over the cycle window, which dilutes flash loan attacks proportionally to `1/periodLength`. However, late in a cycle when `periodLength` is large, an attacker can still gain disproportionate voting power with a single-block flash loan.\n\nFor example, with a 500-block period:\n- Legitimate user holds 100 ETH for 499 blocks \u2192 ~99.8 ETH voting power\n- Attacker flash loans 500,000 ETH for 1 block \u2192 1,000 ETH voting power (10x the legitimate user)\n\n## Proposal\n\nAdd a configurable **scaling period** (previously called \"min holding period\") that applies a linear penalty **per checkpoint interval** rather than on the total period. Each segment where `duration < scalingPeriod` would have its contribution scaled by `duration / scalingPeriod`, producing a quadratic penalty on short-lived balance spikes:\n\n- Contribution becomes `value * duration\u00b2 / scalingPeriod` instead of `value * duration`\n- The same attacker scenario above would yield ~20 ETH instead of 1,000 ETH\n\n### Tradeoff\n\nLegitimate mid-cycle balance increases also get penalized until held for `scalingPeriod` blocks. This is arguably desirable \u2014 it's the same \"prove you're holding\" logic applied granularly.\n\n## Removed code to restore\n\nThe previous total-period penalty implementation was removed in this PR. Below is the code for reference \u2014 it should be adapted to apply per-interval instead:\n\n### Contract additions\n\n```solidity\n// Event\nevent ScalingPeriodUpdated(uint256 newPeriod);\n\n// State variable\nuint256 public scalingPeriod;\n\n// Constructor parameter\nconstructor(IVotesCheckpoints _votingToken, ICycleModule _cycleModule, uint256 _scalingPeriod) {\n    // ...existing checks...\n    scalingPeriod = _scalingPeriod;\n}\n\n// Admin setter\nfunction setScalingPeriod(uint256 _scalingPeriod) external onlyOwner {\n    scalingPeriod = _scalingPeriod;\n    emit ScalingPeriodUpdated(_scalingPeriod);\n}\n\n// Per-interval penalty (to"
-        },
-        {
-          "number": 85,
-          "title": "Fix dust/remainder handling in distribution strategies",
-          "author": "RonTuretzky",
-          "created_at": "2026-03-15T21:59:24Z",
-          "updated_at": "2026-03-16T11:57:09Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/85",
-          "labels": [
-            "enhancement"
-          ],
-          "assignees": [],
-          "comments": [],
-          "body": "## Summary\nInteger division remainders (dust) can accumulate in contracts and never get distributed.\n\n## Affected locations\n\n### 1. VotingDistributionStrategy.sol \u2014 remainder left in contract\n`(amount * currentVotes[i]) / totalVotes` for each recipient drops fractional wei. Dust accumulates in the strategy contract over time.\n\n### 2. MultiStrategyDistributionManager.sol \u2014 remainder discarded entirely\n`yieldAmount / strategies.length` drops the remainder. For example, 100 / 3 = 33 each, 1 wei lost. Should give the last strategy `yieldAmount - (amountPerStrategy * (strategies.length - 1))`.\n\n### 3. EqualDistributionStrategy.sol \u2014 remainder left in contract\n`amount / recipients.length` drops the remainder. Dust accumulates in the strategy contract over time.\n\n## Source\nIdentified via Copilot review on PR #37."
-        },
-        {
-          "number": 83,
-          "title": "Make a custom voting implementation for COVA",
-          "author": "RonTuretzky",
-          "created_at": "2026-03-13T21:49:25Z",
-          "updated_at": "2026-03-13T21:49:25Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/83",
-          "labels": [],
-          "assignees": [],
-          "comments": [],
-          "body": "https://docs.google.com/document/d/1eZZqVwMJuPoFi0jfwwf89F7KX6eDyB_b/edit"
-        },
-        {
-          "number": 77,
-          "title": "Should distros be activated with 0 voters or not?",
-          "author": "RonTuretzky",
-          "created_at": "2025-10-08T01:56:32Z",
-          "updated_at": "2025-10-08T01:56:32Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/77",
-          "labels": [],
-          "assignees": [],
-          "comments": [],
-          "body": "I honestly think it shouldnt prevent distro people do not like to vote lmao in small communities this could be an issue for bread kit. but ill change it to match the normal bread contracts\r\n\r\n_Originally posted by @hudsonhrh in https://github.com/BreadchainCoop/gk-breadchain/pull/9#discussion_r2411630471_\r\n            "
-        },
-        {
-          "number": 73,
-          "title": "Refactor automation system for generic provider payment management",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-19T00:42:48Z",
-          "updated_at": "2025-08-19T01:10:50Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/73",
-          "labels": [],
-          "assignees": [],
-          "comments": [
-            {
-              "id": "IC_kwDOPeu91c6-qt3n",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "Ai -generated pr here #74 ",
-              "createdAt": "2025-08-19T01:10:11Z",
-              "includesCreatedEdit": true,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/73#issuecomment-3198868967",
-              "viewerDidAuthor": false
-            }
-          ],
-          "body": "# Generic Automation Provider Payment Implementation\n\n## Introduction\n\nThis issue proposes a refactoring of the current automation system (issue #44) to create a generic, extensible solution for managing automation provider payments from yield distributions. The system will ensure that yield distributions are only executed when there's sufficient accumulated yield to cover the automation provider's execution costs, preventing unprofitable distributions and ensuring sustainable automation operations.\n\n## Problem Statement\n\n### Current Limitations\n\n1. **No Cost Management**: The current automation implementation doesn't account for execution costs charged by automation providers (Chainlink, Gelato, etc.)\n2. **Unprofitable Distributions**: Small yield amounts may trigger distributions where gas costs exceed the yield value\n3. **Provider-Specific Logic**: Each automation provider requires custom implementation without a unified payment interface\n4. **No Minimum Threshold**: Distributions can execute regardless of accumulated yield amount\n5. **Manual Fee Handling**: No automated mechanism to reserve and pay automation provider fees\n\n### Requirements\n\n- Generic interface for automation provider payment configuration\n- Yield threshold validation before distribution execution\n- Automatic fee reservation from yield\n- Support for multiple automation providers (Chainlink, Gelato, custom)\n- Configurable payment strategies (fixed fee, percentage, dynamic)\n- Protection against unprofitable distributions\n\n## Proposed Solution\n\n### Architecture Overview\n\n```mermaid\nsequenceDiagram\n    participant User\n    participant AutomationProvider\n    participant AutomationBase\n    participant PaymentManager\n    participant YieldModule\n    participant DistributionManager\n    participant Recipients\n\n    User->>AutomationProvider: Configure automation\n    \n    Note over AutomationProvider: Periodic check\n    AutomationProvider->>AutomationBase: checkUpkeep()\n    AutomationBase->>PaymentManager: "
-        },
-        {
-          "number": 72,
-          "title": "Release 0.0.2",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-19T00:23:31Z",
-          "updated_at": "2025-08-19T00:23:31Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/72",
-          "labels": [],
-          "assignees": [],
-          "comments": [],
-          "body": ""
-        },
-        {
-          "number": 70,
-          "title": "Release 0.0.1",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-19T00:23:05Z",
-          "updated_at": "2026-03-17T17:53:00Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/70",
-          "labels": [],
-          "assignees": [],
-          "comments": [],
-          "body": "# MVP-First Issue Parallelization Strategy\n\nMore info on Hackathon Sheets [Doc](https://docs.google.com/spreadsheets/d/1WEIxOiq5LCXlkBncUM0Tnp7BDYHZOL08nV-iP083nGU/edit?usp=sharing)\n\n## Overview\nShip a feature-complete MVP fast, then iterate on quality. This strategy prioritizes core functionality and user-facing features over testing infrastructure.\n\n## Gitgraph Visualization\n\n```mermaid\ngitGraph\n    commit id: \"main branch\"\n    \n    branch mvp-core\n    checkout mvp-core\n    commit id: \"#38: Yield Validation\" tag: \"MVP\"\n    commit id: \"#9: Distribution Strategy\" tag: \"MVP\"\n    commit id: \"#45: O(1) Queue Optimization\" tag: \"MVP\"\n    \n    checkout main\n    branch mvp-features\n    checkout mvp-features\n    commit id: \"#48: Time-Weighted Voting\" tag: \"MVP\"\n    commit id: \"#46: Gelato Automation\" tag: \"MVP\"\n    \n    checkout main\n    branch mvp-polish\n    checkout mvp-polish\n    commit id: \"#47: Distribution Identifiers\" tag: \"MVP\"\n    commit id: \"#42: Event Refactor\" tag: \"MVP\"\n    \n    checkout main\n    merge mvp-core\n    merge mvp-features\n    merge mvp-polish\n    \n    branch mvp-validation\n    checkout mvp-validation\n    commit id: \"#65: E2E Testing\" tag: \"MVP\"\n    \n    checkout main\n    merge mvp-validation\n    commit tag: \"\ud83d\ude80 MVP COMPLETE\"\n    \n    branch v2-optimization\n    checkout v2-optimization\n    commit id: \"#73: Provider Payment System\" tag: \"V2\"\n    \n    checkout main\n    branch v2-quality\n    checkout v2-quality\n    commit id: \"#63: Bulloak Test Migration\" tag: \"V2\"\n    commit id: \"#64: Fuzz Testing Suite\" tag: \"V2\"\n    \n    checkout main\n    merge v2-optimization\n    merge v2-quality\n    commit tag: \"v2.0 Professional\"\n\n```\n\n## MVP Scope - Get to Market Fast\n\n### Core Infrastructure [High Priority]\nThese make the system work properly:\n\n- **#38: Yield Validation** [Low Effort]\n  - Prevent distribution failures\n  - Essential safety checks\n  - Quick to implement\n\n- **#9: Distribution Strategy Module** [High Effort]\n  - Core yield distribution logic\n  - The"
-        },
-        {
-          "number": 64,
-          "title": "Add Fuzz Testing to BreadKit Protocol",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-18T23:33:22Z",
-          "updated_at": "2026-03-23T21:31:34Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/64",
-          "labels": [
-            "enhancement"
-          ],
-          "assignees": [],
-          "comments": [
-            {
-              "id": "IC_kwDOPeu91c71NA2M",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "## Dependencies\n- Should be done after core modules are stable:\n  - #2 (Voting Module)\n  - #37 (Distribution Strategy Module)\n  - #36 (Factory Pattern refactor)",
-              "createdAt": "2026-03-23T21:31:34Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/64#issuecomment-4113829260",
-              "viewerDidAuthor": false
-            }
-          ],
-          "body": "# Add Fuzz Testing to BreadKit Protocol\n\n## Introduction\n\nFuzz testing (property-based testing) is a crucial security practice for smart contract development that automatically generates random inputs to test contract invariants and edge cases. The BreadKit protocol would benefit significantly from comprehensive fuzz testing to ensure robustness against unexpected inputs and maintain critical invariants across all possible states.\n\n## Problem Statement\n\n### Current State\n- Tests primarily use hardcoded values and specific scenarios\n- Limited coverage of edge cases and boundary conditions\n- No systematic testing of invariants across random state transitions\n- Potential for undiscovered vulnerabilities in arithmetic operations and state transitions\n\n### Challenges\n1. **Incomplete Edge Case Coverage**: Manual test cases cannot cover all possible input combinations\n2. **Arithmetic Vulnerabilities**: Complex yield calculations and distribution logic may have overflow/underflow risks\n3. **State Machine Violations**: Cycle transitions and voting mechanisms need invariant validation\n4. **Economic Security**: Token minting/burning and yield distribution require robust economic invariant testing\n\n### Impact\n- Potential security vulnerabilities in production\n- Risk of economic exploits in yield distribution\n- Possible DoS vectors through edge case inputs\n- Reduced confidence in protocol safety\n\n## Proposed Solution\n\nImplement comprehensive fuzz testing using Foundry's built-in fuzzing capabilities, focusing on critical protocol invariants, arithmetic operations, and state transitions.\n\n## Mermaid Diagrams\n\n### Sequence Diagram - Fuzz Testing Flow\n\n```mermaid\nsequenceDiagram\n    participant Fuzzer as Foundry Fuzzer\n    participant Test as Fuzz Test\n    participant Contract as BreadKit Contract\n    participant Invariant as Invariant Checker\n    \n    Fuzzer->>Fuzzer: Generate random inputs\n    \n    loop For N iterations\n        Fuzzer->>Test: Provide random inputs\n        Test->>"
-        },
-        {
-          "number": 63,
-          "title": "Refactor Unit Tests to Bulloak Format and Review",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-18T23:33:15Z",
-          "updated_at": "2026-03-23T21:31:35Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/63",
-          "labels": [
-            "enhancement",
-            "good first issue"
-          ],
-          "assignees": [],
-          "comments": [
-            {
-              "id": "IC_kwDOPeu91c71NA3I",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "## Dependencies\n- Should be done after core module implementations are stable",
-              "createdAt": "2026-03-23T21:31:35Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/63#issuecomment-4113829320",
-              "viewerDidAuthor": false
-            }
-          ],
-          "body": "# Refactor Unit Tests to Bulloak Format and Review\n\n## Introduction\n- video demo [here](https://www.youtube.com/watch?v=0-EmbNVgFA4)\nThe BreadKit protocol currently has a comprehensive test suite written in standard Forge format. To improve test organization, readability, and maintainability, we should refactor these tests to follow the Bulloak testing framework pattern. Bulloak provides a tree-based test organization structure that makes tests more discoverable and easier to reason about.\n\n## Problem Statement\n\n### Current State\n- Tests are written in traditional flat Forge test format\n- Test organization follows basic naming conventions but lacks hierarchical structure\n- Difficult to visualize test coverage at a glance\n- No standardized approach to test organization across different contracts\n\n### Challenges\n1. **Test Discoverability**: Current flat structure makes it difficult to understand what scenarios are being tested\n2. **Coverage Gaps**: Hard to identify missing test cases without clear organizational structure\n3. **Maintenance Burden**: Tests for complex contracts become unwieldy as they grow\n4. **Documentation**: Test structure doesn't self-document the expected behavior clearly\n\n### Impact\n- Slower onboarding for new developers\n- Potential gaps in test coverage\n- Increased cognitive load when adding new tests\n- Difficulty in maintaining test quality standards\n\n## Proposed Solution\n\nRefactor all existing unit tests to follow the Bulloak pattern, which uses a tree-based structure for organizing tests based on contract functions and their various states/conditions.\n\n## Mermaid Diagrams\n\n### Sequence Diagram - Test Execution Flow\n\n```mermaid\nsequenceDiagram\n    participant Dev as Developer\n    participant Bulloak as Bulloak Framework\n    participant Forge as Forge Test Runner\n    participant Contract as Smart Contract\n    participant Assert as Assertion Library\n\n    Dev->>Bulloak: Write tree-structured tests\n    Bulloak->>Bulloak: Parse tree structure\n    Bu"
-        },
-        {
-          "number": 62,
-          "title": "Add voting functions with additional bytes parameter for downstream implementations (e.g., multipliers)",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-18T23:24:07Z",
-          "updated_at": "2026-03-19T15:08:43Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/62",
-          "labels": [],
-          "assignees": [],
-          "comments": [
-            {
-              "id": "IC_kwDOPeu91c7zlhnn",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "Moving to TODO; a full feature spec for votiing multipliers would be more effective",
-              "createdAt": "2026-03-19T00:49:50Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/62#issuecomment-4086700519",
-              "viewerDidAuthor": false
-            },
-            {
-              "id": "IC_kwDOPeu91c7z1Nbp",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "RonTuretzky/vote-with-params draft is in this branch",
-              "createdAt": "2026-03-19T15:08:43Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/62#issuecomment-4090812137",
-              "viewerDidAuthor": false
-            }
-          ],
-          "body": "## Feature Request: Voting with Additional Bytes for Downstream Implementations\n\n### Motivation\n\nEnable voting modules to accept arbitrary `bytes` data that can be handled by downstream implementations, providing flexibility for features like custom multipliers, metadata, or other protocol-specific parameters.\n\nThis follows the pattern established in the [Breadchain repository](https://github.com/BreadchainCoop/breadchain), which implements a sophisticated voting multipliers system through `castVoteWithMultipliers` function. However, the current BreadKit voting module implementation lacks a generic mechanism to pass additional data to voting functions.\n\n### Context from Breadchain\n\nThe Breadchain repo demonstrates advanced voting features:\n- **VotingMultipliers.sol**: Manages allowlisted multipliers for voting power calculation\n- **castVoteWithMultipliers**: Accepts multiplier indices to apply different voting power modifiers\n- Multiple multiplier types: NFT-based, proveable, cross-chain, etc.\n\nReference: [Breadchain VotingMultipliers Implementation](https://github.com/BreadchainCoop/breadchain/blob/main/src/VotingMultipliers.sol)\n\n### Current Limitation\n\nThe current BreadKit voting module only supports:\n```solidity\nfunction castVoteWithSignature(\n    address voter, \n    uint256[] calldata points, \n    uint256 nonce, \n    bytes calldata signature\n) external;\n```\n\nThere's no mechanism to pass additional protocol-specific data that downstream implementations might need.\n\n### Proposed Solution\n\nAdd new voting functions that accept an additional `bytes` parameter, following OpenZeppelin Governor patterns:\n\n```solidity\n// In AbstractVotingModule or concrete implementations\nfunction castVoteWithSignatureAndParams(\n    address voter,\n    uint256[] calldata points,\n    uint256 nonce,\n    bytes calldata signature,\n    bytes calldata additionalData\n) external virtual;\n\n// Internal processing\nfunction _processVoteWithParams(\n    address voter,\n    uint256[] calldata points,\n  "
-        },
-        {
-          "number": 46,
-          "title": "Review and Implement Gelato Automation Integration",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-17T05:31:19Z",
-          "updated_at": "2025-08-19T00:24:32Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/46",
-          "labels": [
-            "documentation"
-          ],
-          "assignees": [],
-          "comments": [],
-          "body": "## Introduction\nGelato Network provides a decentralized automation platform that can be integrated to automate yield distribution in smart contracts. The Breadkit project aims to leverage Gelato for managing automated yield distributions via compatible interfaces.\n\n## Problem Statement\nThe current implementation requires a thorough review and integration of Gelato's automation interface within Breadkit. Ensuring compatibility, security, and maintainability is essential for reliable yield distribution. The provided `GelatoAutomation` contract is intended to interface with Gelato's executors and automate the distribution process, but its integration, logic, and edge cases need to be validated and completed.\n\n## Mermaid Sequence Diagram\n```mermaid\nsequenceDiagram\n    participant G as Gelato Executor\n    participant GA as GelatoAutomation\n    participant DM as DistributionManager\n    G->>GA: checker()\n    GA->>GA: isDistributionReady()\n    alt Distribution ready\n        GA->>G: return (true, execPayload)\n        G->>GA: execute(execPayload)\n        GA->>DM: executeDistribution()\n    else Not ready\n        GA->>G: return (false, empty)\n    end\n```\n\n## Mermaid Class Diagram\n```mermaid\nclassDiagram\n    class GelatoAutomation {\n        +checker() bool, bytes\n        +execute(bytes)\n    }\n    class AutomationBase {\n        +isDistributionReady() bool\n        +getAutomationData() bytes\n        +executeDistribution()\n    }\n    GelatoAutomation --|> AutomationBase\n```\n\n## Code Snippet\n```\n// SPDX-License-Identifier: MIT\npragma solidity ^0.8.20;\n\nimport \"./AutomationBase.sol\";\n\n/// @title GelatoAutomation\n/// @notice Gelato Network compatible automation implementation\n/// @dev Implements Gelato automation interface for yield distribution\ncontract GelatoAutomation is AutomationBase {\n    constructor(address _distributionManager) AutomationBase(_distributionManager) {}\n\n    /// @notice Gelato-compatible resolver function\n    /// @dev Called by Gelato executors to check if work nee"
-        },
-        {
-          "number": 45,
-          "title": "Optimize Recipient Queue Lookup in BaseRecipeIntRegistry for Large Queues (addition and removal)",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-17T05:25:26Z",
-          "updated_at": "2026-03-23T21:31:33Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/45",
-          "labels": [
-            "enhancement"
-          ],
-          "assignees": [
-            "exo404"
-          ],
-          "comments": [
-            {
-              "id": "IC_kwDOPeu91c71NA07",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "## Dependencies\n- Related to #42 (Refactor QueueProcessed event) - both touch registry code",
-              "createdAt": "2026-03-23T21:31:33Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/45#issuecomment-4113829179",
-              "viewerDidAuthor": false
-            }
-          ],
-          "body": "## Introduction\nThe `BaseRecipeIntRegistry` in this repository manages recipient queuing using an array called `queuedRecipientsForAddition`. As the number of queued recipients grows, the current linear search approach for checking duplicates can become a performance bottleneck. This issue also applies to the removal queue entries lookup.\n\n## Problem Statement\nCurrently, recipient addresses are checked for duplicates in the queue using a linear search through the `queuedRecipientsForAddition` array. For large queues, this results in O(n) time complexity for each lookup, which can significantly impact performance in high-volume scenarios.\n\n## Proposed Solution\nUse a mapping (hash table) to track queued addresses, enabling O(1) time complexity for duplicate checks. This approach improves efficiency especially as the queue size increases.\n\n## Mermaid Sequence Diagram\n```mermaid\nsequenceDiagram\n    participant User\n    participant Registry\n    User->>Registry: Add recipient address\n    Registry->>Registry: Check if address is queued (linear search)\n    alt Current: Array search\n        Registry-->>User: O(n) time (inefficient)\n    else Proposed: Mapping check\n        Registry-->>User: O(1) time (efficient)\n    end\n```\n\n## Mermaid Class Diagram\n```mermaid\nclassDiagram\n    class BaseRecipeIntRegistry {\n        +address[] queuedRecipientsForAddition\n        +mapping(address => bool) isQueued\n        +addRecipient(address)\n    }\n```\n\n## Code Snippets\n**Current Implementation:**\n```solidity\nfunction addRecipient(address recipient) public {\n    for(uint i = 0; i < queuedRecipientsForAddition.length; i++) {\n        require(queuedRecipientsForAddition[i] != recipient, \"Already queued\");\n    }\n    queuedRecipientsForAddition.push(recipient);\n}\n```\n\n**Proposed Implementation:**\n```solidity\nmapping(address => bool) isQueued;\n\nfunction addRecipient(address recipient) public {\n    require(!isQueued[recipient], \"Already queued\");\n    isQueued[recipient] = true;\n    queuedRecipientsFo"
-        },
-        {
-          "number": 44,
-          "title": "Add support to pay the automation as an extension of Chainlink Automation from yield",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-17T04:45:15Z",
-          "updated_at": "2025-08-17T04:45:15Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/44",
-          "labels": [
-            "enhancement"
-          ],
-          "assignees": [],
-          "comments": [],
-          "body": "## Introduction\n\nThis issue proposes adding support to pay Chainlink Automation fees directly from yield generated within Breadkit, extending the current integration to allow programmatic upkeep registration and management.\n\n## Problem Statement\n\nCurrently, Breadkit integrates Chainlink Automation for yield strategies, but payment of automation fees is not automated and requires manual funding. This limits the protocol's ability to dynamically register, fund, and manage upkeeps based on yield performance and strategy execution.\n\n## Solution Overview\n\nImplement programmatic upkeep registration and funding, enabling Breadkit contracts to automatically pay automation fees from yield and manage upkeeps lifecycle (register, fund, edit, cancel) via the Chainlink Automation registry.\n\n### Registration Flow\n- Ensure contract is Automation Compatible.\n- Maintain upgradable references to LINK token, registry, and registrar addresses.\n- Use interface definitions for LINK, Registrar, and Registry.\n- Register upkeeps programmatically using LINK approval and `registerUpkeep` functions.\n\n## Mermaid Diagrams\n\n### Class Diagram\n```mermaid\nclassDiagram\n  BreadkitYieldStrategy <|-- AutomationRegistrarInterface\n  BreadkitYieldStrategy <|-- LinkTokenInterface\n  AutomationRegistrarInterface <|-- Registry\n```\n\n### Sequence Diagram\n```mermaid\nsequenceDiagram\n  participant BreadkitContract\n  participant LINKToken\n  participant AutomationRegistrar\n  BreadkitContract->>LINKToken: approve(registrar, amount)\n  BreadkitContract->>AutomationRegistrar: registerUpkeep(params)\n  AutomationRegistrar-->>BreadkitContract: upkeepID\n```\n\n## Example Code Snippet\n```solidity\n// SPDX-License-Identifier: MIT\npragma solidity 0.8.19;\n\nimport {LinkTokenInterface} from \"@chainlink/contracts/src/v0.8/shared/interfaces/LinkTokenInterface.sol\";\n\nstruct RegistrationParams {\n    string name;\n    bytes encryptedEmail;\n    address upkeepContract;\n    uint32 gasLimit;\n    address adminAddress;\n    uint8 triggerType;\n   "
-        },
-        {
-          "number": 36,
-          "title": "Refactor all modules and manager to Factory Pattern similar to BaseToken",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-16T23:17:11Z",
-          "updated_at": "2026-03-25T21:40:21Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/36",
-          "labels": [],
-          "assignees": [],
-          "comments": [
-            {
-              "id": "IC_kwDOPeu91c71NA4X",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "## Dependencies\n- Blocked by core module PRs being merged first (as noted in issue description)",
-              "createdAt": "2026-03-23T21:31:36Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/36#issuecomment-4113829399",
-              "viewerDidAuthor": false
-            }
-          ],
-          "body": "# WARNING MAY NEED TO BE REFACTORED AFTER #4  and #2  are merged!\n\n### Introduction\nBreadkit currently utilizes various modules and a manager pattern for its token and contract logic. The BaseToken implementation has been migrated to a factory pattern, providing greater extensibility, composability, and maintainability. To align with this architectural improvement and unify the codebase, all modules and the manager should be refactored to follow a similar factory pattern.\n\n## Problem Statement\n- Existing modules and manager implementations do not follow the factory pattern, leading to inconsistencies in instantiation and configuration.\n- This may result in code duplication, less modularity, and more complex testing and deployment processes.\n- The BaseToken refactor has shown benefits in scalability and maintainability that should be adopted across all components.\n\n## Proposed Solution\n- Refactor all modules and the manager to implement the factory pattern as demonstrated by BaseToken.\n- Ensure that the construction, initialization, and dependency injection of modules is standardized via factories.\n- Update documentation and tests to reflect these changes.\n\n## Sequence Diagram (Mermaid)\n```mermaid\nsequenceDiagram\n    participant Factory\n    participant Manager\n    participant ModuleA\n    participant ModuleB\n    Factory->>Manager: Create Manager Instance\n    Factory->>ModuleA: Create ModuleA Instance\n    Factory->>ModuleB: Create ModuleB Instance\n    Manager->>ModuleA: Register ModuleA\n    Manager->>ModuleB: Register ModuleB\n    Manager->>Factory: Report readiness\n```\n\n## Class Diagram (Mermaid)\n```mermaid\nclassDiagram\n    class Factory {\n        +createManager()\n        +createModuleA()\n        +createModuleB()\n    }\n    class Manager {\n        +registerModule(Module)\n        +modules: Module[]\n    }\n    class ModuleA {\n        +initialize()\n    }\n    class ModuleB {\n        +initialize()\n    }\n    Factory --> Manager\n    Factory --> ModuleA\n    Factory --> ModuleB\n "
-        },
-        {
-          "number": 24,
-          "title": "Add generic NFT awarding and burning module for base token holders during distribution",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-16T21:27:11Z",
-          "updated_at": "2026-03-23T21:31:30Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/24",
-          "labels": [
-            "enhancement",
-            "good first issue"
-          ],
-          "assignees": [],
-          "comments": [
-            {
-              "id": "IC_kwDOPeu91c71NAxI",
-              "author": {
-                "login": "RonTuretzky"
-              },
-              "authorAssociation": "CONTRIBUTOR",
-              "body": "## Dependencies\n- Blocked by #37 (Implement Distribution Strategy Module) - needs distribution hooks",
-              "createdAt": "2026-03-23T21:31:30Z",
-              "includesCreatedEdit": false,
-              "isMinimized": false,
-              "minimizedReason": "",
-              "reactionGroups": [],
-              "url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/24#issuecomment-4113828936",
-              "viewerDidAuthor": false
-            }
-          ],
-          "body": "## Introduction\nBreadkit enables flexible token distribution and module extension. However, a common use case is to reward users with NFTs based on their holdings during distribution events, and potentially burn those NFTs if criteria are not met. A generic module for this would support a variety of distribution strategies and facilitate community incentives.\n\n## Problem Statement\nCurrently, Breadkit does not provide a built-in module for automatically awarding (minting) and burning NFTs for users who hold a minimum amount of the base token during distribution execution. This feature would enable:\n- Automated recognition and incentivization of engaged users\n- Flexible configuration for minimum holdings and NFT logic\n- Streamlined integration into existing distribution workflows\n\n## Proposed Solution\nImplement a Breadkit module that:\n- Checks user holdings of the base token during distribution\n- Mints NFTs to eligible users\n- Optionally burns NFTs for users who no longer meet holding criteria\n- Provides configuration for thresholds, NFT metadata, and hooks in distribution lifecycle\n\n## Mermaid Diagrams\n\n**Class Diagram:**\n```mermaid\nclassDiagram\n    class DistributionModule {\n      +executeDistribution()\n      +checkEligibility()\n      +awardNFT()\n      +burnNFT()\n    }\n    class User {\n      +address\n      +baseTokenBalance\n      +nftsOwned\n    }\n    class NFTContract {\n      +mint(address)\n      +burn(tokenId)\n    }\n    DistributionModule --> User\n    DistributionModule --> NFTContract\n```\n\n**Sequence Diagram:**\n```mermaid\nsequenceDiagram\n    participant D as DistributionModule\n    participant U as User\n    participant NFT as NFTContract\n    D->>U: checkEligibility(baseTokenBalance)\n    alt eligible\n        D->>NFT: mint(userAddress)\n        NFT-->>U: NFT awarded\n    else not eligible\n        D->>NFT: burn(userNFT)\n        NFT-->>U: NFT burned\n    end\n```\n\n## Code Snippets\n\n**Solidity Skeleton:**\n```solidity\ncontract DistributionNFTModule {\n    IERC20 public baseTo"
-        },
-        {
-          "number": 10,
-          "title": "Distribution Module Implementation",
-          "author": "RonTuretzky",
-          "created_at": "2025-08-16T06:04:13Z",
-          "updated_at": "2025-08-16T06:04:13Z",
-          "html_url": "https://github.com/BreadchainCoop/crowdstake.fun/issues/10",
-          "labels": [],
-          "assignees": [],
-          "comments": [],
-          "body": "# Distribution Module Implementation\n\n## Introduction\n\nThe Distribution Module is the central orchestrating component of the BreadKit protocol that handles yield collection and allocation. It coordinates all aspects of the distribution process, from yield harvesting to final fund transfers, ensuring fair and transparent distributions while maintaining security against various attack vectors and providing the core functionality that ties together all other modules.\n\n## Problem Statement\n\nExecuting fair and transparent yield distributions is complex, requiring precise calculations, secure fund transfers, and protection against various attack vectors. Without proper safeguards, distributions could be manipulated through front-running, sandwich attacks, or calculation errors. The system must ensure accurate proportional distributions while maintaining gas efficiency and preventing both accidental and malicious fund loss.\n\nThe Distribution Module addresses these challenges by providing:\n1. **Secure Distribution Orchestration**: Coordinated execution across all modules\n2. **Attack Resistance**: Protection against MEV and manipulation attempts\n3. **Accurate Calculations**: Precise proportional distributions based on votes\n4. **Transparent Operations**: Full auditability of all distribution decisions\n\n## Architecture\n\n### Class Diagram\n\n```mermaid\nclassDiagram\n    class DistributionManager {\n        +address[] recipients\n        +uint256[] recipientDistributions\n        +uint256 cycleLength\n        +uint256 lastClaimedBlockNumber\n        +uint256 yieldFixedSplitDivisor\n        +distributeYield()\n        +queueRecipientAddition()\n        +queueRecipientRemoval()\n        +getCurrentDistributionState()\n        +validateDistribution()\n    }\n    \n    class IDistributionModule {\n        <<interface>>\n        +distributeYield()\n        +getCurrentDistributionState() returns(DistributionState)\n    }\n    \n    class YieldCollector {\n        +mintTokensBeforeCollection()\n        +coll"
-        }
-      ]
-    },
     "saving-circles": {
       "repo_name": "saving-circles",
       "github_url": "https://github.com/BreadchainCoop/saving-circles",
@@ -5270,7 +5241,7 @@
           "title": "Countdown started even tho not everyone joined and no deposits have been made yet",
           "author": "brendaasfjnso",
           "created_at": "2026-03-11T17:18:35Z",
-          "updated_at": "2026-03-23T23:13:34Z",
+          "updated_at": "2026-04-02T00:15:07Z",
           "html_url": "https://github.com/BreadchainCoop/saving-circles/issues/130",
           "labels": [
             "bug"
@@ -5316,6 +5287,21 @@
                 }
               ],
               "url": "https://github.com/BreadchainCoop/saving-circles/issues/130#issuecomment-4114313327",
+              "viewerDidAuthor": false
+            },
+            {
+              "id": "IC_kwDONW6FcM74xb9i",
+              "author": {
+                "login": "brendaasfjnso"
+              },
+              "authorAssociation": "NONE",
+              "body": "> [@brendaasfjnso](https://github.com/brendaasfjnso) [@diterra-code](https://github.com/diterra-code) this was solved by me in the [127-fix-circle-not-started-but-round-countdown-going-on](https://github.com/BreadchainCoop/saving-circles/tree/127-fix-circle-not-started-but-round-countdown-going-on) PR. Can we get a feedback on this?\n\nI think it's this one https://dev.stacks.bread.coop/stacks/4 and if you click from the dashboard you can see there's an error in the progress bar (maybe in the calculations)? https://dev.stacks.bread.coop/",
+              "createdAt": "2026-04-02T00:15:07Z",
+              "includesCreatedEdit": false,
+              "isMinimized": false,
+              "minimizedReason": "",
+              "reactionGroups": [],
+              "url": "https://github.com/BreadchainCoop/saving-circles/issues/130#issuecomment-4173709154",
               "viewerDidAuthor": false
             }
           ],
