@@ -58,5 +58,5 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add data/org_data.json
-          git commit -m "Update organization data [skip ci]"
+          git commit -m "Update organization data"
           git push
