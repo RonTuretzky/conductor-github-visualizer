@@ -7,6 +7,8 @@ Serves the tracker data including workspaces, PRs, session statuses, and hierarc
 """
 
 import argparse
+import asyncio
+import hashlib
 import http.server
 import json
 import os
@@ -22,6 +24,12 @@ from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from typing import Optional
 from urllib.parse import parse_qs, urlparse
+
+try:
+    import websockets
+    HAS_WEBSOCKETS = True
+except ImportError:
+    HAS_WEBSOCKETS = False
 
 from fetch_org_data import fetch_org_data as _fetch_org_data, DEFAULT_CONFIG as ORG_DEFAULT_CONFIG
 
@@ -1167,25 +1175,115 @@ class TrackerHandler(http.server.SimpleHTTPRequestHandler):
         pass
 
 
-class ReusableTCPServer(socketserver.TCPServer):
-    """TCP server that allows address reuse to avoid 'Address already in use' errors."""
+class ReusableTCPServer(socketserver.ThreadingTCPServer):
+    """Threaded TCP server that allows address reuse and concurrent requests."""
     allow_reuse_address = True
+    daemon_threads = True
+
+
+# ============================================================================
+# WebSocket broadcaster
+# ============================================================================
+
+class WebSocketBroadcaster:
+    """Polls TrackerState and pushes updates to connected WebSocket clients."""
+
+    def __init__(self, tracker_state, poll_interval: float = 3.0):
+        self.tracker_state = tracker_state
+        self.poll_interval = poll_interval
+        self.clients: set = set()
+        self.last_hash = ""
+
+    def _compute_hash(self, data: dict) -> str:
+        raw = json.dumps(data, sort_keys=True)
+        return hashlib.md5(raw.encode()).hexdigest()
+
+    async def register(self, websocket):
+        self.clients.add(websocket)
+        try:
+            data = self.tracker_state.get_api_data()
+            await websocket.send(json.dumps(data))
+        except Exception:
+            self.clients.discard(websocket)
+
+    async def unregister(self, websocket):
+        self.clients.discard(websocket)
+
+    async def handler(self, websocket):
+        await self.register(websocket)
+        try:
+            async for message in websocket:
+                try:
+                    msg = json.loads(message)
+                    if msg.get("action") == "refresh_ci":
+                        self.tracker_state.force_refresh_ci()
+                        data = self.tracker_state.get_api_data()
+                        await websocket.send(json.dumps(data))
+                except json.JSONDecodeError:
+                    pass
+        except websockets.ConnectionClosed:
+            pass
+        finally:
+            await self.unregister(websocket)
+
+    async def poll_and_broadcast(self):
+        while True:
+            await asyncio.sleep(self.poll_interval)
+            if not self.clients:
+                continue
+            try:
+                data = self.tracker_state.get_api_data()
+                new_hash = self._compute_hash(data)
+                if new_hash != self.last_hash:
+                    self.last_hash = new_hash
+                    payload = json.dumps(data)
+                    disconnected = set()
+                    for ws in self.clients:
+                        try:
+                            await ws.send(payload)
+                        except Exception:
+                            disconnected.add(ws)
+                    self.clients -= disconnected
+            except Exception as e:
+                print(f"WebSocket broadcast error: {e}")
+
+
+async def run_websocket_server(tracker_state, port: int = 8766):
+    broadcaster = WebSocketBroadcaster(tracker_state)
+    async with websockets.serve(broadcaster.handler, "0.0.0.0", port):
+        print(f"WebSocket server running at: ws://localhost:{port}")
+        await broadcaster.poll_and_broadcast()
 
 
 def run_server(port: int = 8765):
     """Run the HTTP server."""
     config = load_config()
-    TrackerHandler.tracker_state = TrackerState(config)
+    tracker_state = TrackerState(config)
+    TrackerHandler.tracker_state = tracker_state
     TrackerHandler.org_state = OrgViewerState()
 
     # Set the directory for serving static files
     os.chdir(Path(__file__).parent)
 
+    # Start WebSocket server in background thread
+    ws_port = port + 1
+    if HAS_WEBSOCKETS:
+        def start_ws():
+            loop = asyncio.new_event_loop()
+            asyncio.set_event_loop(loop)
+            loop.run_until_complete(run_websocket_server(tracker_state, ws_port))
+        ws_thread = threading.Thread(target=start_ws, daemon=True)
+        ws_thread.start()
+    else:
+        print("WARNING: 'websockets' not installed. WebSocket disabled. pip install websockets")
+
     with ReusableTCPServer(("", port), TrackerHandler) as httpd:
         print(f"Conductor Worktree Tracker 3D Server")
         print(f"=" * 40)
-        print(f"Server running at: http://localhost:{port}")
+        print(f"HTTP server:  http://localhost:{port}")
         print(f"API endpoint: http://localhost:{port}/api/tracker")
+        if HAS_WEBSOCKETS:
+            print(f"WebSocket:    ws://localhost:{ws_port}")
         print(f"Org viewer:   http://localhost:{port}/org")
         print(f"Database: {CONDUCTOR_DB}")
         print()
