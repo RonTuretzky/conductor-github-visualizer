@@ -1,4 +1,4 @@
-# GitHub Organization Activity Tracker
+# GitHub Organization Activity Tracker.
 
 A 3D visualization tool for tracking GitHub organization activity - open PRs, CI status, and repository health. Originally forked from the Conductor Worktree Tracker, this version works with any GitHub organization and can be hosted on GitHub Pages.
 
